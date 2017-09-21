@@ -1,6 +1,6 @@
 .portfolio-header {
-  position: relative;
-  background-image: url(images/header-bg.jpg);
+  position: center;
+  background-image: url(images/couverture.png);
 }
 
 .portfolio-header .mdl-layout__header-row {
@@ -9,6 +9,67 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+/*Social Sharing Buttons for Material Design Lite
+thanks to Brandon Himpfen http://www.himpfen.com/*/
+
+$twitter: #00acee;
+$facebook: #3b5998;
+$linkedin: #0e76a8;
+$youtube: red;
+
+$md-colour-list: (
+twitter $twitter,
+facebook $facebook,
+linkedin $linkedin,
+youtube $youtube,
+orcid $orcid,
+github $github,
+researchgate $researchgate;
+);
+
+@each $colour-name, $md-colour in $md-colour-list {
+  .mdl-button.mdl-button--#{$colour-name} {
+      color: rgb(63, 81, 181)
+  }
+  .mdl-button.mdl-button--#{$colour-name}:focus:not(:active) {
+      background-color: $md-colour
+  }
+  .mdl-button--raised.mdl-button--#{$colour-name} {
+      background: $md-colour;
+      color: rgb(255, 255, 255)
+  }
+  .mdl-button--raised.mdl-button--#{$colour-name}:hover {
+      background-color: $md-colour
+  }
+  .mdl-button--raised.mdl-button--#{$colour-name}:active {
+      background-color: $md-colour
+  }
+  .mdl-button--raised.mdl-button--#{$colour-name}:focus:not(:active) {
+      background-color: $md-colour
+  }
+  .mdl-button--raised.mdl-button--#{$colour-name} .mdl-ripple {
+      background: rgb(255, 255, 255)
+  }
+  .mdl-button--fab.mdl-button--#{$colour-name} {
+      background: $md-colour;
+      color: rgb(255, 255, 255)
+  }
+  .mdl-button--fab.mdl-button--#{$colour-name}:hover {
+      background-color: $md-colour
+  }
+  .mdl-button--fab.mdl-button--#{$colour-name}:focus:not(:active) {
+      background-color: $md-colour
+  }
+  .mdl-button--fab.mdl-button--#{$colour-name}:active {
+      background-color: $md-colour
+  }
+  .mdl-button--fab.mdl-button--#{$colour-name} .mdl-ripple {
+      background: rgb(255, 255, 255)
+  }
+}
+
+
 
 .mdl-layout__title {
   font-size: 14px;
@@ -22,14 +83,15 @@
 
 .portfolio-logo-row {
   min-height: 200px;
-}
+} 
+
 
 .is-compact .portfolio-logo-row {
   min-height: auto;
 }
 
 .portfolio-logo {
-  background: url(images/logo.png) 50% no-repeat;
+  background: url(images/id.png) 50% no-repeat;
   background-size: cover;
   height: 150px;
   width: 150px;
@@ -167,4 +229,9 @@ footer {
   background-image: url(images/footer-background.png);
   background-size: cover;
 }
+
+
+
+
+
 

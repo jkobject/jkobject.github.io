@@ -93,6 +93,10 @@ img.article-image {
   top: -4px;
 }
 
+.mdl-layout__title{
+  color: #E91E63;
+}
+
 .demo-card-event > .mdl-card__actions {
     -webkit-align-items: center;
         -ms-flex-align: center;

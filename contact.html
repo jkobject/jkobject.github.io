@@ -22,37 +22,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A portfolio template that uses Material Design Lite.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>MDL-Static Website</title>
+    <title>Jérémie KALFON</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-pink.min.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
+<!--
+            HEADER
+
+        -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
             <div class="mdl-layout__header-row portfolio-logo-row">
                 <span class="mdl-layout__title">
                     <div class="portfolio-logo"></div>
-                <span class="mdl-layout__title">Simple portfolio website</span>
+                    <span class="mdl-layout__title" style="color: #E91E63;">Jérémie KALFON</span>
                 </span>
             </div>
             <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
                 <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                    <a class="mdl-navigation__link " href="index.html">Portfolio</a>
-                    <a class="mdl-navigation__link" href="blog.html">Blog</a>
-                    <a class="mdl-navigation__link" href="about.html">About</a>
+                    <a class="mdl-navigation__link" href="project.html">Projects</a>
+                    <a class="mdl-navigation__link" href="papers.html">Papers</a>
+                    <a class="mdl-navigation__link" href="index.html">About</a>
                     <a class="mdl-navigation__link is-active" href="contact.html">Contact</a>
                 </nav>
             </div>
         </header>
         <div class="mdl-layout__drawer mdl-layout--small-screen-only">
             <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                <a class="mdl-navigation__link is-active" href="index.html">Portfolio</a>
-                <a class="mdl-navigation__link" href="blog.html">Blog</a>
-                <a class="mdl-navigation__link" href="about.html">About</a>
-                <a class="mdl-navigation__link" href="contact.html">Contact</a>
+                <a class="mdl-navigation__link" href="project.html">Projects</a>
+                <a class="mdl-navigation__link" href="papers.html">Papers</a>
+                <a class="mdl-navigation__link" href="index.html">About</a>
+                <a class="mdl-navigation__link is-active" href="contact.html">Contact</a>
             </nav>
         </div>
         <main class="mdl-layout__content">
@@ -62,35 +69,32 @@
                         <h2 class="mdl-card__title-text">Contact</h2>
                     </div>
                     <div class="mdl-card__media">
-                        <img class="article-image" src=" images/contact-image.jpg" border="0" alt="">
+                        <img class="article-image" src=" images/propotable/contactme.jpg" border="0" alt="">
                     </div>
                     <div class="mdl-card__supporting-text">
                         <p>
-                            Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+                            There is many place where you can find me. I would let you understand that some of them are more about my personal life but I do think that it can helps you understand who I am ad how I could help you.  
                         </p>
                         <p>
-                            Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet.
+                            You will maybe find some redundancies in those website and that is on purpose. Please select accordingly. <a href="mailto:jkobject@gmail.com"> Here is my email address. </a>
                         </p>
-                        <form action="#" class="">
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name">
-                                <label class="mdl-textfield__label" for="Name">Name...</label>
-                                <span class="mdl-textfield__error">Letters and spaces only</span>
+                            <div style="margin-top:40px;margin-bottom:40px;margin-left:auto;margin-right:auto;text-align:center;">
+
+                                <!-- Twitter -->
+                                <a href="https://twitter.com/JKobject" title="Share on Twitter" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--twitter"><i class="fa fa-twitter fa-fw"></i> Twitter</a>
+                                 <!-- Facebook -->
+                                <a href="https://www.facebook.com/jkobject" title="Share on Facebook" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--facebook"><i class="fa fa-facebook fa-fw"></i> Facebook</a>
+                                <!-- LinkedIn --> 
+                                <a href="https://www.linkedin.com/in/jkobject/" title="Share on LinkedIn" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--linkedin"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a>
+                                <!-- orcid --> 
+                                <a href="https://orcid.org/0000-0002-2818-9728" title="Share on orcid" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--orcid"><i class="fa fa-orcid fa-fw"></i> orcid</a>
+                                <!-- github --> 
+                                <a href="https://github.com/jkobject" title="Share on github" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--github"><i class="fa fa-github fa-fw"></i> github</a>
+                                <!-- researchgate --> 
+                                <a href="https://www.researchgate.net/profile/Jeremie_Kalfon" title="Share on researchgate" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--researchgate"><i class="fa fa-researchgate fa-fw"></i> researchgate</a>
+
                             </div>
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <input class="mdl-textfield__input" type="text" id="Email">
-                                <label class="mdl-textfield__label" for="Email">Email...</label>
-                            </div>
-                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                <textarea class="mdl-textfield__input" type="text" rows="5" id="note"></textarea>
-                                <label class="mdl-textfield__label" for="note">Enter note</label>
-                            </div>
-                            <p>
-                                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
-                                    Submit
-                                </button>
-                            </p>
-                        </form>
+
                     </div>
                 </div>
             </div>
