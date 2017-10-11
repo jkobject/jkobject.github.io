@@ -2,31 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b246da98-42c2-4b6d-af4e-29067475e8ba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/fluoroct.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/hbpconectome.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/hbplogo.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/hbplogo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/heartct.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/highlife.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/nlflogo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/nolwide.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/solution1.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/solution2.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/spinnaker.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/valve.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/papers/books.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/papers/papers.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/hbp.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/nolarsen.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/project/piple.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/logo.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/caiman.html" afterPath="$PROJECT_DIR$/project/caiman.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/piple.html" afterPath="$PROJECT_DIR$/project/highlife.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact.html" afterPath="$PROJECT_DIR$/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/example-blog01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/example-blog03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/example-blog04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/example-blog05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/example-blog06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/example-blog07.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/example-work01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/example-work02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/example-work03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/example-work04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/example-work05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/example-work06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/example-work07.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/example-work08.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/example-work09.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/propotable/IMG_0190.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/propotable/IMG_0900.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/propotable/IMG_1190.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/propotable/IMG_20150716_214321009.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/propotable/IMG_20151220_144532444.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/propotable/IMG_20160415_193145240_HDR.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/propotable/IMG_20160522_173715024.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/propotable/IMG_20160820_163810361.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/propotable/IMG_20170305_121642504.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/propotable/IMG_20170412_161955341.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/propotable/IMG_20170702_114819115.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/propotable/IMG_20170715_184909569_TOP.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/propotable/about.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/propotable/contactme.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/propotable/profile.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/propotable/received_10207070543982557.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/propotable/received_10207070544822578.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/propotable/received_10210132845658185.jpg" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/images/example-blog02.jpg" afterPath="$PROJECT_DIR$/images/books.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tutorial/step05-individual-pages/blog.html" afterPath="$PROJECT_DIR$/Tutorial/step05-individual-pages/blog.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/papers.html" afterPath="$PROJECT_DIR$/papers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.html" afterPath="$PROJECT_DIR$/project.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/papers/books.html" afterPath="$PROJECT_DIR$/papers/books.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/papers/papers.html" afterPath="$PROJECT_DIR$/papers/papers.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/nolarsen.html" afterPath="$PROJECT_DIR$/project/nolarsen.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,8 +55,8 @@
       <file leaf-file-name="papers.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/papers.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="73" column="30" lean-forward="false" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
+            <state relative-caret-position="591">
+              <caret line="131" column="32" lean-forward="false" selection-start-line="131" selection-start-column="32" selection-end-line="131" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -63,28 +78,38 @@
       <file leaf-file-name="books.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/papers/books.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="91" column="97" lean-forward="false" selection-start-line="91" selection-start-column="97" selection-end-line="91" selection-end-column="97" />
+            <state relative-caret-position="189">
+              <caret line="52" column="56" lean-forward="false" selection-start-line="52" selection-start-column="56" selection-end-line="52" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="papers.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="papers.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/papers/papers.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1410">
-              <caret line="94" column="24" lean-forward="false" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
+            <state relative-caret-position="163">
+              <caret line="257" column="84" lean-forward="false" selection-start-line="257" selection-start-column="84" selection-end-line="257" selection-end-column="84" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nolarsen.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="paperIread.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Google Drive/CV/paperIread.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="32" column="7" lean-forward="false" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nolarsen.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/nolarsen.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="105" column="86" lean-forward="false" selection-start-line="105" selection-start-column="86" selection-end-line="105" selection-end-column="86" />
+            <state relative-caret-position="1365">
+              <caret line="91" column="82" lean-forward="false" selection-start-line="91" selection-start-column="82" selection-end-line="91" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -110,14 +135,15 @@
         <option value="$PROJECT_DIR$/project/piple.html" />
         <option value="$PROJECT_DIR$/contact.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/papers.html" />
-        <option value="$PROJECT_DIR$/papers/papers.html" />
-        <option value="$PROJECT_DIR$/papers/books.html" />
         <option value="$PROJECT_DIR$/project/highlife.html" />
         <option value="$PROJECT_DIR$/project/caiman.html" />
         <option value="$PROJECT_DIR$/project/hbp.html" />
         <option value="$PROJECT_DIR$/project.html" />
         <option value="$PROJECT_DIR$/project/nolarsen.html" />
+        <option value="$PROJECT_DIR$/papers.html" />
+        <option value="$PROJECT_DIR$/papers/books.html" />
+        <option value="$USER_HOME$/Google Drive/CV/paperIread.txt" />
+        <option value="$PROJECT_DIR$/papers/papers.html" />
       </list>
     </option>
   </component>
@@ -308,12 +334,12 @@
       <option name="presentableId" value="Default" />
       <updated>1507644674894</updated>
       <workItem from="1507644680909" duration="2121000" />
-      <workItem from="1507647457375" duration="12393000" />
+      <workItem from="1507647457375" duration="16922000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14514000" />
+    <option name="totallyTimeSpent" value="19043000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -454,30 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/papers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="73" column="30" lean-forward="false" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/papers/books.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="91" column="97" lean-forward="false" selection-start-line="91" selection-start-column="97" selection-end-line="91" selection-end-column="97" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/papers/papers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="94" column="24" lean-forward="false" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="610">
@@ -489,10 +491,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/papers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="131" column="32" lean-forward="false" selection-start-line="131" selection-start-column="32" selection-end-line="131" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/project/nolarsen.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="105" column="86" lean-forward="false" selection-start-line="105" selection-start-column="86" selection-end-line="105" selection-end-column="86" />
+        <state relative-caret-position="1365">
+          <caret line="91" column="82" lean-forward="false" selection-start-line="91" selection-start-column="82" selection-end-line="91" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/papers/books.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="52" column="56" lean-forward="false" selection-start-line="52" selection-start-column="56" selection-end-line="52" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Google Drive/CV/paperIread.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="7" lean-forward="false" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/papers/papers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="257" column="84" lean-forward="false" selection-start-line="257" selection-start-column="84" selection-end-line="257" selection-end-column="84" />
           <folding />
         </state>
       </provider>
