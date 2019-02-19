@@ -1,1 +1,1 @@
-Sitemap: https://jkobject.com/me/sitemap.xml
+Sitemap: https://jkobject.com/sitemap.xml

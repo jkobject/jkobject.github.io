@@ -11,7 +11,7 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                    : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
+remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -21,7 +21,7 @@ title_separator          : "|"
 name                     : "Jérémie Kalfon"
 description              : "My website and blog."
 url                      : "https://jkobject.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/me" # the subpath of your site, e.g. "/blog"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "jkobject/jkobject.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "assets/images/couverture.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/id-88.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -391,6 +391,3 @@ defaults:
       sitemap: true
       published: true
       toc: true
-
-# source: /src
-remote_theme: "mmistakes/minimal-mistakes@4.15.1"

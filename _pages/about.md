@@ -121,7 +121,7 @@ When I was young, I quickly became conscious that my passion for astrophysics wa
 
 It nourished my passion for understanding the intricate mechanisms of our beings, from the networks of our brains to the networks of pathways in our cells. 
 
-I was lucky enough to discover my interest early thanks to trips to foreign countries and to the infinite amount of knowledge I found on the web and my computer (see [blogs](/me/papers/) & [culture](/me/culture/). 
+I was lucky enough to discover my interest early thanks to trips to foreign countries and to the infinite amount of knowledge I found on the web and my computer (see [blogs](/papers/) & [culture](/culture/). 
 
 This interest was always interdisciplinary, ranging from mathematics and computer science to genetics, physics and neuroscience (see [papers](###)).
 
