@@ -261,7 +261,14 @@ But let's throw in a <b>tag</b>.
 - sharing social media
 - links in about
 - parenthesis in about
-- 
+
+## TODO
+
+- add more images and link in my description in about 
+- have wiki preview for role models https://github.com/aleks/jekyll_preview_tag
+- have better book and paper citation model https://github.com/aleks/jekyll_preview_tag
+- add papers that I have not yet read..
+- add a code to transform level of reading/following (\*\*\*) into an nice image 
 
 contact :  jkobject@gmail.com 
 MIT LICENCE ®

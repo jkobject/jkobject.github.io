@@ -20,7 +20,7 @@ header:
 ### videos
 
 - [ML to see](https://www.youtube.com/playlist?list=PLXH5-WxRNyUXgpUG3-XLsrErywMlnR5vQ): (100) -- 10
-- [mathematical monk](https://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA): 14.6-12; 15.3-7; 16.3-13; 17.8-14; 19.1-11 (35) -- 50
+- [mathematical monk](https://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA): 16.3-13; 17.8-14; 19.1-11 -- 29
 - [MIT Computational Biology](https://www.youtube.com/playlist?list=PLypiXJdtIca6GBQwDTo4bIEDV8F4RcAgt): Genomes, Networks, Evolution, Health
 - [dev to see](https://www.youtube.com/playlist?list=PLXH5-WxRNyUVNi-5u5gUv4Vt77fdmz7t6)
 - [DeepMind's DL and RL course](https://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs)
