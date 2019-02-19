@@ -207,26 +207,11 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 - Or minuses
 + Or pluses
 
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
- 
-```python
-s = "Python syntax highlighting"
-print s
-```
- 
-```
-No language indicated, so no syntax highlighting. 
-But let's throw in a <b>tag</b>.
-```
 
 Markdown | Less | Pretty
 --- | --- | ---
 *Still* | `renders` | **nicely**
 1 | 2 | 3
-
 
 $-b \pm \sqrt{b^2 - 4ac} \over 2a$
 $x = a_0 + \frac{1}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + a_4}}}$
@@ -249,8 +234,34 @@ ____
   </div>
 </div>
 
-
 ```
+
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+ 
+```python
+s = "Python syntax highlighting"
+print s
+```
+ 
+```
+No language indicated, so no syntax highlighting. 
+But let's throw in a <b>tag</b>.
+```
+
+
+
+
+
+## Debug 
+
+
+- sharing social media
+- links in about
+- parenthesis in about
+- 
 
 contact :  jkobject@gmail.com 
 MIT LICENCE ®

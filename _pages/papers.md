@@ -119,7 +119,7 @@ header:
 
 ### I have read (with presentations)
 
-[Go check a draft version here](/me/papers-reviewed-draft/){: .btn .btn--primary .align-center}
+[Go check a draft version here](/papers-reviewed-draft/){: .btn .btn--primary .align-center}
 
 
 ### I have read (without any)
