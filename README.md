@@ -58,7 +58,7 @@ The templates and architecture might be reused at will.
 
 ## Example data
 
-```MD
+```markdown
 ---
 date:
 title: "Home"

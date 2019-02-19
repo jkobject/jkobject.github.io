@@ -264,20 +264,21 @@ collections:
 
 # Plugins (previously gems:)
 plugins:
- - jekyll-paginate
- - jekyll-sitemap
- - jekyll-gist
- - jekyll-feed
- - jemoji
- - jekyll
- - jekyll-include-cache
- - jekyll-toc 
- - jekyll-seo-tag
- - jekyll/scholar
  - amp-jekyll
+ - jekyll
+ - jekyll-feed
  - jekyll-gist
+ - jekyll-gist
+ - jekyll-include-cache
  - jekyll-maps
+ - jekyll-paginate
  - jekyll-pwa-plugin
+ - jekyll-remote-theme
+ - jekyll-seo-tag
+ - jekyll-sitemap
+ - jekyll-toc 
+ - jekyll/scholar
+ - jemoji
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -289,6 +290,7 @@ whitelist:
   - jekyll-maps
   - jekyll-paginate
   - jekyll-pwa-plugin
+  - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-toc 

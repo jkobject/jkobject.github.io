@@ -26,14 +26,15 @@ gem "minimal-mistakes-jekyll"
 #
 # If you have any other plugins, put them here!
 group :jekyll_plugins do 
-	gem 'github-pages'
-	gem "jekyll-figure"
-	gem 'jekyll-admin'
-	gem 'jekyll-toc'
-	gem 'jekyll-seo-tag'
-	gem 'jekyll-scholar'
 	gem 'amp-jekyll'
+	gem 'github-pages'
+	gem 'jekyll-admin'
+	gem 'jekyll-figure'
 	gem 'jekyll-maps'
 	gem 'jekyll-pwa-plugin'
+	gem 'jekyll-remote-theme'
+	gem 'jekyll-scholar'
+	gem 'jekyll-seo-tag'
+	gem 'jekyll-toc'
 	gem 'unicode_utils'
 end
