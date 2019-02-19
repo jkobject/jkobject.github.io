@@ -313,8 +313,6 @@ DEPENDENCIES
   github-pages
   jekyll-admin
   jekyll-figure
-  jekyll-gist
-  jekyll-include-cache
   jekyll-maps
   jekyll-pwa-plugin
   jekyll-scholar

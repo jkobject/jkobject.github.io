@@ -1,12 +1,23 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "Sample Posts"
-    url: /year-archive/
-  - title: "Sample Collections"
-    url: /collection-archive/
-  - title: "Sitemap"
-    url: /sitemap/
+    url: /about/
+    description: "I am a human. I wish to make the world better with science. <3"
+  - title: "Projects"
+    url: /projects/
+    description: ""
+  - title: "Opinions"
+    url: /opinions/
+  - title: "Ideas"
+    url: /ideas/
+  - title: "Blog"
+    url: /blog/
+    description: "A short extract about my life experiences."
+  - title: "Papers"
+    url: /papers/
+  - title: "Courses"
+    url: /courses/
+    description: "Here is the list of the Courses I have received and the one I have given."
+  - title: "Culture"
+    url: /culture/
+    description: "This is my personal list of books, Comics and films I love."

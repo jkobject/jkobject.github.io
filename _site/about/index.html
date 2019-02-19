@@ -9,32 +9,34 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Layout: Header Image and Text Readability - Jérémie</title>
-<meta name="description" content="My website and blog.">
+<!-- begin _includes/seo.html --><title>About me | Jérémie</title>
+<meta name="description" content="I am a human. I wish to make the world better with science.">
 
 
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Jérémie">
-<meta property="og:title" content="Layout: Header Image and Text Readability">
-<meta property="og:url" content="http://localhost:4000/me/about/">
+<meta property="og:title" content="About me">
+<meta property="og:url" content="https://jkobject.com/me/about/">
+
+
+  <meta property="og:description" content="I am a human. I wish to make the world better with science.">
 
 
 
-
-  <meta property="og:image" content="http://localhost:4000/me/images/contact-image.jpg">
+  <meta property="og:image" content="https://jkobject.com/me/assets/images/couverture.png">
 
 
 
   <meta name="twitter:site" content="@jkobject">
-  <meta name="twitter:title" content="Layout: Header Image and Text Readability">
-  <meta name="twitter:description" content="My website and blog.">
-  <meta name="twitter:url" content="http://localhost:4000/me/about/">
+  <meta name="twitter:title" content="About me">
+  <meta name="twitter:description" content="I am a human. I wish to make the world better with science.">
+  <meta name="twitter:url" content="https://jkobject.com/me/about/">
 
   
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="http://localhost:4000/me/images/contact-image.jpg">
+    <meta name="twitter:image" content="https://jkobject.com/me/assets/images/couverture.png">
   
 
   
@@ -46,13 +48,13 @@
 
 
   
+    <meta property="article:publisher" content="https://www.facebook.com/jkobject">
+  
 
   
 
 
-<link rel="canonical" href="http://localhost:4000/me/about/">
-
-
+<link rel="canonical" href="https://jkobject.com/me/about/">
 
 
 
@@ -61,10 +63,21 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://jkobject.com/me",
+      "logo": "https://jkobject.com/me/assets/images/id.png"
+    }
+  </script>
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
       "@type": "Jeremie Kalfon",
       "name": "Jeremie Kalfon",
-      "url": "http://localhost:4000/me",
-      "sameAs": null
+      "url": "https://jkobject.com/me",
+      "sameAs": ["https://twitter.com/jkobject","https://LinkedIn.com/in/jkobject","https://ResearchGate.com/jeremie-kalfon"]
     }
   </script>
 
@@ -110,11 +123,18 @@
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
-<!-- end custom head snippets -->
+<link rel="apple-touch-icon" sizes="180x180" href="/me/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/me/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/me/favicon-16x16.png">
+<link rel="manifest" href="/me/site.webmanifest">
+<link rel="mask-icon" href="/me/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#ffffff">
 
+<!-- end custom head snippets -->
   </head>
 
-  <body class="layout--default">
+  <body class="layout--splash">
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -126,18 +146,24 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        
-        <a class="site-title" href="/me/">Jérémie</a>
+        <a class="site-logo" href="/me/"><img src="/me/assets/images/id-88.png"></a>
+        <a class="site-title" href="/me/">Jérémie K.</a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/" >Quick-Start Guide</a>
+              <a href="/me/about/" title="I am a human. I wish to make the world better with science. <3">About</a>
             </li><li class="masthead__menu-item">
-              <a href="https://mmistakes.github.io/minimal-mistakes/about/" >About</a>
+              <a href="/me/projects/" title="">Projects</a>
             </li><li class="masthead__menu-item">
-              <a href="/me/year-archive/" >Sample Posts</a>
+              <a href="/me/opinions/" >Opinions</a>
             </li><li class="masthead__menu-item">
-              <a href="/me/collection-archive/" >Sample Collections</a>
+              <a href="/me/ideas/" >Ideas</a>
             </li><li class="masthead__menu-item">
-              <a href="/me/sitemap/" >Sitemap</a>
+              <a href="/me/blog/" title="A short extract about my life experiences.">Blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/me/papers/" >Papers</a>
+            </li><li class="masthead__menu-item">
+              <a href="/me/courses/" title="Here is the list of the Courses I have received and the one I have given.">Courses</a>
+            </li><li class="masthead__menu-item">
+              <a href="/me/culture/" title="This is my personal list of books, Comics and films I love.">Culture</a>
             </li></ul>
         
         <button class="search__toggle" type="button">
@@ -159,53 +185,369 @@
 
 
     <div class="initial-content">
-      <p>This is a sample post with a large feature image<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> up top and tons of text. Odio ad blue bottle vinyl, 90’s narwhal commodo bitters pour-over nostrud. Ugh est hashtag in, fingerstache adipisicing laboris esse Pinterest shabby chic Portland. Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney’s. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.</p>
+      
+  
 
-<p>Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater ullamco quinoa ennui assumenda, sapiente occupy delectus lo-fi. <em>Ea fashion axe <a href="#">Marfa cillum aliquip</a>. Retro Bushwick keytar cliche.</em> Before they sold out sustainable gastropub Marfa readymade, ethical Williamsburg skateboard brunch qui consectetur gentrify semiotics. Mustache cillum irony, fingerstache magna pour-over keffiyeh tousled selfies.</p>
 
-<h2 id="cupidatat-90s-lo-fi-authentic-try-hard">Cupidatat 90’s lo-fi authentic try-hard</h2>
 
-<p>In pug Portland incididunt mlkshk put a bird on it vinyl quinoa. <strong><a href="#">Terry Richardson</a> shabby chic +1</strong>, scenester Tonx excepteur tempor fugiat voluptate fingerstache aliquip nisi next level. Farm-to-table hashtag Truffaut, Odd Future ex meggings gentrify single-origin coffee try-hard 90’s.</p>
+
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: url('/me/assets/images/couverture.png');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          About me
+
+        
+      </h1>
+      
+        <p class="page__lead">I am a human. I wish to make the world better with science.
+</p>
+      
+      
+      
+      
+        <p>
+        
+          
+          <a href="https://linkedin.com/in/jkobject/" class="btn btn--light-outline btn--large">LinkedIn</a>
+        
+      
+    </div>
+  
+  
+    <span class="page__hero-caption">Normandy Beach
+</span>
+  
+</div>
+
+
+
+<div id="main" role="main">
+  <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="About me">
+    <meta itemprop="description" content="I am a human. I wish to make the world better with science.">
+    
+    
+
+    <section class="page__content" itemprop="text">
+      
+<div class="feature__wrapper">
+
+  
+
+    
+
+    <div class="feature__item--center">
+      <div class="archive__item">
+        
+
+        <div class="archive__item-body">
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>I am  a graduate student in Biomed. Eng. &amp; ML. Intern in Research &amp; R&amp;D companies. I wish to do a PhD. CEO at PiPle &amp; former leader of school associations, I am keen on project development and highly independent. I am interested in improving Genomics &amp; Biomedical research thanks to data-science and machine learning.</p>
+
+            </div>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+
+</div>
+
+<div class="feature__wrapper">
+
+  
+
+    
+
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="/me/assets/images/resume.jpg" alt="my resume" />
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">Resume</h2>
+          
+
+          
+
+          
+            <p><a href="/me/assets/documents/resume.pdf" class="btn btn--primary">Get it</a></p>
+          
+        </div>
+      </div>
+    </div>
+  
+
+    
+
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="/me/assets/images/coverletter.png" alt="my coverletter" />
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">Coverletter</h2>
+          
+
+          
+
+          
+            <p><a href="/assets/documents/motivation.pdf" class="btn btn--primary">Read More</a></p>
+          
+        </div>
+      </div>
+    </div>
+  
+
+    
+
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="/me/assets/images/objectives.png" alt="" />
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">statement of research</h2>
+          
+
+          
+
+          
+            <p><a href="/me/assets/documents/researchobjectives.pdf" class="btn btn--primary">Get It</a></p>
+          
+        </div>
+      </div>
+    </div>
+  
+
+</div>
+
+<h2 id="about-this-website">About this website</h2>
+<!-- A longer presentation of what People will find in this website -->
+
+<p>This website was made with jekyll and minimal-mistake’s layout. You can see it in <a href="https://www.github.com/jkobject/jkobject.github.io">my github</a></p>
+
+<p>The goal of using this framework is to allow me to maintain both a website, a blog and a portfolio without using third party closed source code. All of it while making sure that my website will never end like so many other blogs. Having an openly maintained layout will enable that.</p>
+
+<p>I have been able to migrate my medium articles super easily using <code class="highlighter-rouge">mediumexporter</code> command.</p>
+
+<p>The goal of the website is 3-fold:</p>
 
 <ul>
-  <li>Sartorial hoodie</li>
-  <li>Labore viral forage</li>
-  <li>Tote bag selvage</li>
-  <li>DIY exercitation et id ugh tumblr church-key</li>
+  <li>
+    <p>be a open door to Jérémie Kalfon’s proffesional activity as well as some personnal information more related to a lifestyle: sharing music, books, movies, science readings etc…</p>
+  </li>
+  <li>
+    <p>share my projects, opinions and research activity and allow debates to happen here, thanks to disqus.</p>
+  </li>
+  <li>
+    <p>Gather every data that I try to maintain about my life in an open and secure fashion</p>
+  </li>
 </ul>
 
-<p>Incididunt umami sriracha, ethical fugiat VHS ex assumenda yr irure direct trade. Marfa Truffaut bicycle rights, kitsch placeat Etsy kogi asymmetrical. Beard locavore flexitarian, kitsch photo booth hoodie plaid ethical readymade leggings yr.</p>
+<p>Feel free to reuse everything not related to content on this website. 
+The content is property of Jérémie Kalfon and is under an <a href="/LICENSE">MIT license</a> and thus cannot be directly reused for commercial purposes and needs to be cited at any time.</p>
 
-<p>Aesthetic odio dolore, meggings disrupt qui readymade stumptown brunch Terry Richardson pour-over gluten-free. Banksy american apparel in selfies, biodiesel flexitarian organic meh wolf quinoa gentrify banjo kogi. Readymade tofu ex, scenester dolor umami fingerstache occaecat fashion axe Carles jean shorts minim. Keffiyeh fashion axe nisi Godard mlkshk dolore. Lomo you probably haven’t heard of them eu non, Odd Future Truffaut pug keytar meggings McSweeney’s Pinterest cred. Etsy literally aute esse, eu bicycle rights qui meggings fanny pack. Gentrify leggings pug flannel duis.</p>
+<p>Every opinions and ideas mentioned in this website are solely mine and are not related to any other entity except if explained otherwise.</p>
 
-<h2 id="forage-occaecat-cardigan-qui">Forage occaecat cardigan qui</h2>
+<h2 id="some-more-about-me">Some More about me.</h2>
 
-<p>Fashion axe hella gastropub lo-fi kogi 90’s aliquip +1 veniam delectus tousled. Cred sriracha locavore gastropub kale chips, iPhone mollit sartorial. Anim dolore 8-bit, pork belly dolor photo booth aute flannel small batch. Dolor disrupt ennui, tattooed whatever salvia Banksy sartorial roof party selfies raw denim sint meh pour-over. Ennui eu cardigan sint, gentrify iPhone cornhole.</p>
+<p>Hello ! 
+I am a French student from Paris who has always wanted to become a researcher.
+When I was young, I quickly became conscious that my passion for astrophysics was missing something fundamental. As I grew older I got this idea, that I now can relate to Socrates’: that we shall understand ourselves and our environment if we want to improve the life of every human being.</p>
 
-<blockquote>
-  <p>Whatever velit occaecat quis deserunt gastropub, leggings elit tousled roof party 3 wolf moon kogi pug blue bottle ea. Fashion axe shabby chic Austin quinoa pickled laborum bitters next level, disrupt deep v accusamus non fingerstache.</p>
-</blockquote>
+<p>It nourished my passion for understanding the intricate mechanisms of our beings, from the networks of our brains to the networks of pathways in our cells.</p>
 
-<p>Tote bag asymmetrical elit sunt. Occaecat authentic Marfa, hella McSweeney’s next level irure veniam master cleanse. Sed hoodie letterpress artisan wolf leggings, 3 wolf moon commodo ullamco. Anim occupy ea labore Terry Richardson. Tofu ex master cleanse in whatever pitchfork banh mi, occupy fugiat fanny pack Austin authentic. Magna fugiat 3 wolf moon, labore McSweeney’s sustainable vero consectetur. Gluten-free disrupt enim, aesthetic fugiat jean shorts trust fund keffiyeh magna try-hard.</p>
+<p>I was lucky enough to discover my interest early thanks to trips to foreign countries and to the infinite amount of knowledge I found on the web and my computer (see <a href="/me/papers/">blogs</a> &amp; <a href="/me/culture/">culture</a>.</p>
 
-<h2 id="hoodie-duis">Hoodie Duis</h2>
+<p>This interest was always interdisciplinary, ranging from mathematics and computer science to genetics, physics and neuroscience (see <a href="###">papers</a>).</p>
 
-<p>Actually salvia consectetur, hoodie duis lomo YOLO sunt sriracha. Aute pop-up brunch farm-to-table odio, salvia irure occaecat. Sriracha small batch literally skateboard. Echo Park nihil hoodie, aliquip forage artisan laboris. Trust fund reprehenderit nulla locavore. Stumptown raw denim kitsch, keffiyeh nulla twee dreamcatcher fanny pack ullamco 90’s pop-up est culpa farm-to-table. Selfies 8-bit do pug odio.</p>
+<p>I was also amazed at the spur given to knowledge by some visionary minds (see <a href="#Role Models">role models</a>) and I think that today, only teamwork can bring success and disruption.</p>
 
-<h3 id="thundercats-ho">Thundercats Ho!</h3>
+<p>Such an idea quickly gave me the inclination to bring people together and produce materials and tools that required the cohesion of a team : something echoed through my work in the making of the biggest music festival on my campus -<a href="###">the NoLarsen Festival</a>- as well as an award winning startup in professional messaging called <a href="###">PiPle</a>. In 2013, I went to an integrated<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> preparatory school in Paris. During my two years of PTSI<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> studies , I was given intensive courses on a broad range of subjects in mathematics, electronics, physics and computer science, which gave me the foundation I needed for the next stages of my studies. I was happy to master in Biomedical engineering and felt closer to where I wanted to be while studying data science, physiology, imaging, signal processing and robotics. I enjoyed gathering courses from friends in M.D. as well (see <a href="###">courses</a>).</p>
 
-<p>Fingerstache thundercats Williamsburg, deep v scenester Banksy ennui vinyl selfies mollit biodiesel duis odio pop-up. Banksy 3 wolf moon try-hard, sapiente enim stumptown deep v ad letterpress. Squid beard brunch, exercitation raw denim yr sint direct trade. Raw denim narwhal id, flannel DIY McSweeney’s seitan. Letterpress artisan bespoke accusamus, meggings laboris consequat Truffaut qui in seitan. Sustainable cornhole Schlitz, twee Cosby sweater banh mi deep v forage letterpress flannel whatever keffiyeh. Sartorial cred irure, semiotics ethical sed blue bottle nihil letterpress.</p>
+<p>I think it is thanks to this enlarged knowledge, together with a semester abroad in Mexico -at <a href="###">TEC de Monterrey</a> plus a particularly interesting internship in <a href="###">Highlife</a> -a R&amp;D startup in semi-biological heart valve implantologythat I have been able to make my way as an intern at the <a href="###">Flatiron Institute</a>. In this NYC computational research facility, I grasped what research life is made of and I got the opportunity of meeting many interdisciplinary researchers and discovered a lot about machine learning and data science. By working under the supervision of Andrea Giovannucci and Eftychios Pnevmatikakis, I have created a comparison function of CaImAn’s output, a -Calcium Imaging Analysis- software able to infer neurons and their activity from recordings of in vivo brain tissues, allowing better benchmarkings and debuggings. I also worked on explaining the software with a documentation &amp; description of the algorithms for our community of open source contributors and neuroscientists (see <a href="###">project</a>). This experience confirmed my wish to use machine learning to augment biomedical research. An idea that drove me to participate to <a href="###">Human Brain Project</a> workshops in Lausanne and Geneva where I learnt about neural nets modeling and the novel neuromorphic architectures like SpiNNaker and BrainScaleS.</p>
 
-<p>Occupy et selvage squid, pug brunch blog nesciunt hashtag mumblecore skateboard yr kogi. Ugh small batch swag four loko. Fap post-ironic qui tote bag farm-to-table american apparel scenester keffiyeh vero, swag non pour-over gentrify authentic pitchfork. Schlitz scenester lo-fi voluptate, tote bag irony bicycle rights pariatur vero Vice freegan wayfarers exercitation nisi shoreditch. Chambray tofu vero sed. Street art swag literally leggings, Cosby sweater mixtape PBR lomo Banksy non in pitchfork ennui McSweeney’s selfies. Odd Future Banksy non authentic.</p>
+<p>Teaching to students in my engineering school improved and matured my way of looking at topics and I realized that machine learning seemed to capture most of the complexity and potentials of my projects and ideas, I have felt I needed to focus on it. That is why I have managed to get a double degree arrangement with the University of Kent in England for an M.Sc. in Computational Intelligence, studying statistics, neural networks and data mining (see it <a href="">here</a>). I am applying this teaching at the University with a team of researchers in trying to understand the complexity of the codon usage bias through intensive statistical data exploration of thousands of genomes. All those choices and experiences, have led me to this letter.</p>
 
-<p>Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.</p>
+<p>My future work decisions ought to be driven, on the one hand by my interest in machine learning and genomics and on the other hand by my hope to work in the most promising technologies and teams to improve the life of next generations.</p>
+
+<p>It seems essential to me to understand the importance of reproducible science and of bringing researchers together into interdisciplinary projects, of making complex systems comprehensible to all and apply discoveries to real world problems.</p>
+
+<h2 id="recommandations">Recommandations</h2>
+
+<p>During my work and studies, I have met formidable people and some of them were glad to write a bit about me! You can read what they have to say:</p>
+
+<div class="feature__wrapper">
+
+  
+
+    
+
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="/me/assets/images/dominique.jpg" alt="" />
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">From Dominique Chu</h2>
+          
+
+          
+
+          
+            <p><a href="/me/assets/documents/Dominique_Chu.pdf" class="btn btn--primary">Get it</a></p>
+          
+        </div>
+      </div>
+    </div>
+  
+
+    
+
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="/me/assets/images/andrea.png" alt="" />
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">From Andrea Giovannucci</h2>
+          
+
+          
+
+          
+            <p><a href="/assets/documents/Andrea_Giovannucci.pdf" class="btn btn--primary">Get it</a></p>
+          
+        </div>
+      </div>
+    </div>
+  
+
+    
+
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="/me/assets/images/frederic.jpg" alt="" />
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">From Frederic Ravaut</h2>
+          
+
+          
+
+          
+            <p><a href="/me/assets/documents/Frederic_Ravaut.pdf" class="btn btn--primary">Get It</a></p>
+          
+        </div>
+      </div>
+    </div>
+  
+
+</div>
+
+<h2 id="role-models">Role Models</h2>
+<ul>
+  <li>adham smith</li>
+  <li>albert einstein</li>
+  <li>alex graves</li>
+  <li>archimède</li>
+  <li>arthur clark</li>
+  <li>aubrey de grey</li>
+  <li>bernard weber</li>
+  <li>bernarhd riemann</li>
+  <li>brendan frey</li>
+  <li>craig venter</li>
+  <li>demis assabi</li>
+  <li>elon musk</li>
+  <li>enrico fermi</li>
+  <li>friederick gauss</li>
+  <li>galilée</li>
+  <li>geoffrey hinton</li>
+  <li>ila stustkever</li>
+  <li>isaac asimov</li>
+  <li>Isaac newton</li>
+  <li>jim simons</li>
+  <li>john von neuman</li>
+  <li>karl marx</li>
+  <li>lang lang</li>
+  <li>larry page</li>
+  <li>mark zuckerberg</li>
+  <li>max tegmark</li>
+  <li>nandos de freitas</li>
+  <li>paul dirac</li>
+  <li>ramarujan</li>
+  <li>ray kurzweil</li>
+  <li>richard feynmann</li>
+  <li>sergey brin</li>
+  <li>socrates</li>
+  <li>stephen hawking</li>
+  <li>steve jobs</li>
+  <li>sénèque</li>
+  <li>wolfgang pauli</li>
+  <li>yann le cun</li>
+</ul>
 
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>Texture image courtesty of <a href="http://www.lovetextures.com/">Lovetextures</a> <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+      <p>PTSI - Physics Technology &amp; Engineering Sciences <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>Even if they are quite arduous, integrated preparatory schools prepare students to integrate an Engineering school to which they are associated, allowing them to succeed. Instead of preparing for two years and then choosing a college according to an exam, they take the exam first for a subset of colleges and then prepare for it for two years, thus alleviating the uncertainty of the famous French Concours. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
     </li>
   </ol>
+</div>
+
+    </section>
+  </article>
 </div>
 
     </div>
@@ -223,7 +565,46 @@
         <!-- start custom footer snippets -->
 
 <!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
         
+          <li><a href="mailto:jkobject@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://ResearchGate.net/profile/jeremie_kalfon" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+        
+      
+        
+          <li><a href="https://Scholar.google.com/citations?user=zyXiydsAAAAJ" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i> Scholar</a></li>
+        
+      
+        
+          <li><a href="https://LinkedIn.com/in/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+    
+
+    <li><a href="/me/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 Jérémie Kalfon. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
       </footer>
     </div>
 

@@ -17,21 +17,21 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 title                    : "Jérémie"
-title_separator          : "-"
+title_separator          : "|"
 name                     : "Jérémie Kalfon"
 description              : "My website and blog."
 url                      : "https://jkobject.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/me" # the subpath of your site, e.g. "/blog"
 repository               : "jkobject/jkobject.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              : true, false (default)
+teaser                   : "assets/images/couverture.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : "/assets/images/id-88.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : "Jérémie K." # overrides the website title displayed in the masthead, use " " for no title
+breadcrumbs              : true #, false (default)
 words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : jkobject
+    shortname            : "jkobject"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -75,63 +75,57 @@ algolia:
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
+github: [metadata] # For warning that it does not have github metadata
+
 # SEO Related
 google_site_verification :
 bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
 
+## scripts
+head_scripts:
+footer_scripts:
+
 # Social Sharing
 twitter:
-  username               : jkobject
+  username               : "jkobject"
 facebook:
-  username               : jkobject
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
+  username               : "jkobject"
+  app_id                 : 
+  publisher              : "https://www.facebook.com/jkobject"
+og_image                 : "/assets/images/id.png" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : Jeremie Kalfon # Person or Organization (defaults to Person)
   name                   : Jeremie Kalfon # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - "https://twitter.com/jkobject"
+    - "https://LinkedIn.com/in/jkobject"
+    - "https://ResearchGate.com/jeremie-kalfon"
 
 # Analytics
 analytics:
-  provider               : google # false (default), "google", "google-universal", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : UA-114840659-4
+    tracking_id          : "UA-114840659-4"
     anonymize_ip         : # true, false (default)
 
 
 # Site Author
 author:
   name             : "Jérémie Kalfon"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
+  avatar           : "/assets/images/id.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "I am an Engineer, Researcher and Entrepreneur. I wish to make the world a better place with science!"
   location         : "Paris - Boston"
-  email            :
+  email            : "jkobject@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:jkobject@gmail.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://jkobject.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/jkobject"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/jkobject"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/jkobject"
-    - label: "ResearchGate"
-      icon: "fab fa-fw fa-researchgate"
-      url: "https://ResearchGate.com/jeremie-kalfon"
     - label: "Scholar"
-      icon: "fab fa-fw fa-google-scholar"
+      icon: "fas fa-fw fa-graduation-cap"
       url: "https://Scholar.google.com/citations?user=zyXiydsAAAAJ"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
@@ -146,9 +140,6 @@ footer:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/jkobject"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/jkobject"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jkobject"
@@ -156,7 +147,7 @@ footer:
       icon: "fab fa-fw fa-researchgate"
       url: "https://ResearchGate.net/profile/jeremie_kalfon"
     - label: "Scholar"
-      icon: "fab fa-fw fa-google-scholar"
+      icon: "fas fa-fw fa-graduation-cap"
       url: "https://Scholar.google.com/citations?user=zyXiydsAAAAJ"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
@@ -167,6 +158,8 @@ footer:
 include:
   - .htaccess
   - _pages
+  - _posts
+  - assets
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -222,7 +215,7 @@ kramdown:
 # googlemaps
 maps:
   google:
-    api_key: AIzaSyBGJTUzfcqk_egr0hEl-bIAUwoyAb8sATM
+    api_key: "AIzaSyBGJTUzfcqk_egr0hEl-bIAUwoyAb8sATM"
 
 #citation format
 scholar:
@@ -250,61 +243,57 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+permalink: /blog/:title/
+paginate: 10 # amount of posts to show
+paginate_path: /blog/page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Collections
 collections:
-  docs:
+  projects:
     output: true
     permalink: /:collection/:path/
-  recipes:
+  opinions:
     output: true
     permalink: /:collection/:path/
-  pets:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
+  ideas:
     output: true
     permalink: /:collection/:path/
 
 
 # Plugins (previously gems:)
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll
-  - jekyll-include-cache
-  - jekyll-toc 
-  - jekyll-seo-tag
-  - jekyll/scholar
-  - amp-jekyll
-  - jekyll-gist
-  - jekyll-maps
-  - jekyll-pwa-plugin
+ - jekyll-paginate
+ - jekyll-sitemap
+ - jekyll-gist
+ - jekyll-feed
+ - jemoji
+ - jekyll
+ - jekyll-include-cache
+ - jekyll-toc 
+ - jekyll-seo-tag
+ - jekyll/scholar
+ - amp-jekyll
+ - jekyll-gist
+ - jekyll-maps
+ - jekyll-pwa-plugin
 
 # mimic GitHub Pages with --safe
 whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll
-  - jekyll-include-cache
-  - jekyll-toc 
-  - jekyll-seo-tag
-  - jekyll/scholar
   - amp-jekyll
+  - jekyll
+  - jekyll-feed
   - jekyll-gist
+  - jekyll-include-cache
   - jekyll-maps
+  - jekyll-paginate
   - jekyll-pwa-plugin
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-toc 
+  - jekyll/scholar
+  - jemoji
 
 
 # Archives
@@ -324,16 +313,6 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
 
 
 # HTML Compression
@@ -346,7 +325,42 @@ compress_html:
 
 # Defaults
 defaults:
-  # _posts
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      excerpt: "This is my website."
+      sitemap: true
+      published: true
+      toc: true
+      skip_amp: false
+      location:
+        latitude: 48.852097
+        longitude: 2.299205
+        title: "Home"
+  # ideas
+  - scope:
+      path: ""
+      type: ideas
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      excerpt: "This is my website."
+      sitemap: true
+      published: true
+      toc: true
+  # blog
   - scope:
       path: ""
       type: posts
@@ -357,6 +371,24 @@ defaults:
       comments: true
       share: true
       related: true
+      excerpt: "This is my website."
+      sitemap: true
+      published: true
+  # opinions
+  - scope:
+      path: ""
+      type: opinions
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+      excerpt: "This is my website."
+      sitemap: true
+      published: true
+      toc: true
 
 # source: /src
 remote_theme: "mmistakes/minimal-mistakes@4.15.1"
