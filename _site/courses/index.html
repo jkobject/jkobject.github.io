@@ -18,25 +18,25 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Jérémie">
 <meta property="og:title" content="Courses">
-<meta property="og:url" content="https://jkobject.com/courses/">
+<meta property="og:url" content="http://localhost:4000/courses/">
 
 
   <meta property="og:description" content="Here is the list of the Courses I have received and the one I have given.">
 
 
 
-  <meta property="og:image" content="https://jkobject.com/assets/images/feynman.jpeg">
+  <meta property="og:image" content="http://localhost:4000/assets/images/feynman.jpeg">
 
 
 
   <meta name="twitter:site" content="@jkobject">
   <meta name="twitter:title" content="Courses">
   <meta name="twitter:description" content="Here is the list of the Courses I have received and the one I have given.">
-  <meta name="twitter:url" content="https://jkobject.com/courses/">
+  <meta name="twitter:url" content="http://localhost:4000/courses/">
 
   
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://jkobject.com/assets/images/feynman.jpeg">
+    <meta name="twitter:image" content="http://localhost:4000/assets/images/feynman.jpeg">
   
 
   
@@ -54,7 +54,7 @@
   
 
 
-<link rel="canonical" href="https://jkobject.com/courses/">
+<link rel="canonical" href="http://localhost:4000/courses/">
 
 
 
@@ -64,8 +64,8 @@
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "url": "https://jkobject.com",
-      "logo": "https://jkobject.com/assets/images/id.png"
+      "url": "http://localhost:4000",
+      "logo": "http://localhost:4000/assets/images/id.png"
     }
   </script>
 
@@ -76,7 +76,7 @@
       "@context": "https://schema.org",
       "@type": "Jeremie Kalfon",
       "name": "Jeremie Kalfon",
-      "url": "https://jkobject.com",
+      "url": "http://localhost:4000",
       "sameAs": ["https://twitter.com/jkobject","https://LinkedIn.com/in/jkobject","https://ResearchGate.com/jeremie-kalfon"]
     }
   </script>
@@ -241,7 +241,7 @@
     
       
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="https://jkobject.com/" itemprop="item"><span itemprop="name">Home</span></a>
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
           <meta itemprop="position" content="1" />
         </li>
         <span class="sep">/</span>
@@ -296,7 +296,49 @@
             </nav>
           </aside>
         
-        <h2 id="courses-i-have-followed">Courses I have followed</h2>
+        <style>
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  input[type='range'] {
+    overflow: hidden;
+    width: 80px;
+    -webkit-appearance: none;
+    background-color: rgb(200,208,214);
+  }
+  
+  input[type='range']::-webkit-slider-runnable-track {
+    height: 1px;
+    -webkit-appearance: none;
+    color: rgb(44,122,146);
+  }
+  
+  input[type='range']::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;44	122	146	
+    height: 1px;
+    cursor: ew-resize;
+    background: rgb(200,208,214);
+    box-shadow: -80px 0 0 80px rgb(44,122,146);
+  }
+
+}
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: rgb(44,122,146); 
+}
+input[type="range"]::-moz-range-track {  
+  background-color: rgb(200,208,214);
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: rgb(200,208,214); 
+}
+input[type="range"]::-ms-fill-upper {  
+  background-color: rgb(44,122,146);
+}
+</style>
+
+<h2 id="courses-i-have-followed">Courses I have followed</h2>
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTFCGs4Z_9DYuzHlHExLlPDFJQfyfHOQlDbJLbBLjo6tXiplFYn5eajH3tziJZWGYE9sGP_Jrz5iAvd/pubhtml?widget=true&amp;headers=false" height="800" width="600"></iframe>
 
@@ -305,33 +347,36 @@
 <h3 id="videos">videos</h3>
 
 <ul>
-  <li><a href="https://www.youtube.com/playlist?list=PLXH5-WxRNyUXgpUG3-XLsrErywMlnR5vQ">ML to see</a>: (100) – 10</li>
-  <li><a href="https://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA">mathematical monk</a>: 14.6-12; 15.3-7; 16.3-13; 17.8-14; 19.1-11 (35) – 50</li>
-  <li><a href="https://www.youtube.com/playlist?list=PLypiXJdtIca6GBQwDTo4bIEDV8F4RcAgt">MIT Computational Biology</a>: Genomes, Networks, Evolution, Health</li>
-  <li><a href="https://www.youtube.com/playlist?list=PLXH5-WxRNyUVNi-5u5gUv4Vt77fdmz7t6">dev to see</a></li>
-  <li><a href="https://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs">DeepMind’s DL and RL course</a></li>
+  <li><a href="https://www.youtube.com/playlist?list=PLXH5-WxRNyUXgpUG3-XLsrErywMlnR5vQ">ML to see</a>: (100) <input type="range" disabled="disabled" value="80" /></li>
+  <li><a href="https://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA">mathematical monk</a>: (160) 16.3-13; 17.8-14; 19.1-11 <input type="range" disabled="disabled" value="85" /></li>
+  <li><a href="https://www.youtube.com/playlist?list=PLypiXJdtIca6GBQwDTo4bIEDV8F4RcAgt">MIT Computational Biology</a>: Genomes, Networks, Evolution, Health <input type="range" disabled="disabled" value="0" /></li>
+  <li><a href="https://www.youtube.com/playlist?list=PLXH5-WxRNyUVNi-5u5gUv4Vt77fdmz7t6">dev to see</a> (50) <input type="range" disabled="disabled" value="10" /></li>
+  <li><a href="https://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs">DeepMind’s DL and RL course</a> <input type="range" disabled="disabled" value="0" /></li>
 </ul>
 
 <h3 id="slides">Slides</h3>
-<p>_most slides here have not been made public by the authors</p>
+<p><em>most slides here have not been made public by the authors</em></p>
 
 <ul>
-  <li>Systems Biology EPFL</li>
-  <li>Baptiste ENS 3</li>
-  <li>Baptiste ENS 4</li>
-  <li>Temporal Difference</li>
-  <li>CS231</li>
-  <li>Reinforcement Learning Class</li>
+  <li>Systems Biology EPFL <input type="range" disabled="disabled" value="70" /></li>
+  <li>Baptiste ENS 3 <input type="range" disabled="disabled" value="0" /></li>
+  <li>Baptiste ENS 4 <input type="range" disabled="disabled" value="0" /></li>
+  <li>Temporal Difference <input type="range" disabled="disabled" value="0" /></li>
+  <li>CS231 <input type="range" disabled="disabled" value="0" /></li>
+  <li>Reinforcement Learning Class <input type="range" disabled="disabled" value="0" /></li>
 </ul>
 
 <h3 id="papers">Papers</h3>
 <ul>
-  <li>paper to read: (125) – 40</li>
+  <li>paper to read: (190) <input type="range" disabled="disabled" value="45" /></li>
 </ul>
 
 <h3 id="books">Books</h3>
 <ul>
-  <li>computational neuroscience, chapman chap10-19 (10)</li>
+  <li>computational neuroscience, chapman chap10-19 (10) <input type="range" disabled="disabled" value="20" /></li>
+  <li>A Riemannian Framework for Tensor Computing, Xavier Pennec, Pierre Fillard, Nicholas Ayache, HAL <input type="range" disabled="disabled" value="0" /></li>
+  <li>Attention, predictions and expectations, and their violation: attentional control in the human brain, Simone Vossel , Joy J. Geng and Karl J. Friston, frontiers. <input type="range" disabled="disabled" value="0" /></li>
+  <li>Les Nombres p-adiques, Yvette Amice, 1975. <input type="range" disabled="disabled" value="0" /></li>
 </ul>
 
 <h2 id="ece---ing5---sante-2017-2018">ECE - ING5 - SANTE 2017-2018</h2>
@@ -378,31 +423,31 @@
 <h2 id="knowledge-in-informatics">Knowledge in informatics</h2>
 
 <ul>
-  <li>VHDL **
+  <li>VHDL <input type="range" disabled="disabled" value="30" />
     <ul>
       <li>simple counting machine</li>
       <li>simple games</li>
     </ul>
   </li>
-  <li>Arduino ***
+  <li>Arduino <input type="range" disabled="disabled" value="50" />
     <ul>
       <li>robots</li>
       <li>car</li>
       <li>drones</li>
     </ul>
   </li>
-  <li>gazebo ***
+  <li>gazebo <input type="range" disabled="disabled" value="40" />
     <ul>
       <li>shapes</li>
       <li>events</li>
       <li>controls</li>
     </ul>
   </li>
-  <li>C **</li>
-  <li>OccamPi **</li>
-  <li>Google Go *</li>
-  <li>C++ **</li>
-  <li>Java <em>**</em>
+  <li>C <input type="range" disabled="disabled" value="30" /></li>
+  <li>OccamPi <input type="range" disabled="disabled" value="20" /></li>
+  <li>Google Go <input type="range" disabled="disabled" value="10" /></li>
+  <li>C++ <input type="range" disabled="disabled" value="30" /></li>
+  <li>Java <input type="range" disabled="disabled" value="70" />
     <ul>
       <li>graphics</li>
       <li>android</li>
@@ -410,8 +455,8 @@
       <li>simple J2E</li>
     </ul>
   </li>
-  <li>R **</li>
-  <li>Python <em>**</em>
+  <li>R <input type="range" disabled="disabled" value="30" /></li>
+  <li>Python <input type="range" disabled="disabled" value="90" />
     <ul>
       <li>numpy</li>
       <li>conda</li>
@@ -423,7 +468,7 @@
       <li>…</li>
     </ul>
   </li>
-  <li>Matlab ***
+  <li>Matlab <input type="range" disabled="disabled" value="70" />
     <ul>
       <li>GUI</li>
       <li>signal proc</li>
@@ -432,12 +477,12 @@
       <li>arrays</li>
     </ul>
   </li>
-  <li>computational genomics **
+  <li>computational genomics <input type="range" disabled="disabled" value="20" />
     <ul>
       <li>vcf, fasta, fastq, …</li>
     </ul>
   </li>
-  <li>CI **
+  <li>CI <input type="range" disabled="disabled" value="50" />
     <ul>
       <li>travis</li>
       <li>shipeable</li>
@@ -446,7 +491,7 @@
       <li>nose</li>
     </ul>
   </li>
-  <li>CD **
+  <li>CD <input type="range" disabled="disabled" value="70" />
     <ul>
       <li>fastlane</li>
       <li>android</li>
@@ -454,40 +499,40 @@
       <li>macOS</li>
     </ul>
   </li>
-  <li>Latex **</li>
-  <li>Markdown <em>**</em></li>
-  <li>HTML ***</li>
-  <li>CSS ***</li>
-  <li>JavaScript <em>**</em>
+  <li>Latex <input type="range" disabled="disabled" value="40" /></li>
+  <li>Markdown <input type="range" disabled="disabled" value="70" /></li>
+  <li>HTML <input type="range" disabled="disabled" value="70" /></li>
+  <li>CSS <input type="range" disabled="disabled" value="70" /></li>
+  <li>JavaScript <input type="range" disabled="disabled" value="90" />
     <ul>
-      <li>react native <em>**</em></li>
-      <li>angular.js **</li>
-      <li>react.js <em>**</em></li>
-      <li>node **</li>
+      <li>react native</li>
+      <li>angular.js</li>
+      <li>react.js</li>
+      <li>node</li>
       <li>ES6</li>
       <li>JSX</li>
       <li>flow</li>
       <li>mobx</li>
-      <li>webpack **</li>
-      <li>electron **</li>
+      <li>webpack</li>
+      <li>electron</li>
       <li>expo</li>
-      <li>async <em>**</em></li>
+      <li>async</li>
       <li>navigation</li>
       <li>npm, yarn</li>
     </ul>
   </li>
-  <li>PHP **
+  <li>PHP <input type="range" disabled="disabled" value="20" />
     <ul>
       <li>20 pages simple server</li>
     </ul>
   </li>
-  <li>DNS management <em>**</em>
+  <li>DNS management <input type="range" disabled="disabled" value="70" />
     <ul>
       <li>namecheap</li>
       <li>goDaddy</li>
     </ul>
   </li>
-  <li>Shell ***
+  <li>Shell <input type="range" disabled="disabled" value="70" />
     <ul>
       <li>basics</li>
       <li>server connection</li>
@@ -495,29 +540,29 @@
       <li>brew</li>
     </ul>
   </li>
-  <li>vim **</li>
-  <li>sublime <em>**</em></li>
+  <li>vim <input type="range" disabled="disabled" value="20" /></li>
+  <li>sublime <input type="range" disabled="disabled" value="90" /></li>
   <li>
-    <p>intelIJ ***</p>
+    <p>intelIJ <input type="range" disabled="disabled" value="70" /></p>
   </li>
-  <li>SQL **
+  <li>SQL <input type="range" disabled="disabled" value="50" />
     <ul>
-      <li>nosql ***</li>
-      <li>firebase ***</li>
-      <li>Json <em>**</em></li>
-      <li>XML ***</li>
-      <li>MySQL **</li>
-      <li>MaMp **</li>
+      <li>nosql</li>
+      <li>firebase</li>
+      <li>Json</li>
+      <li>XML</li>
+      <li>MySQL</li>
+      <li>MaMp</li>
     </ul>
   </li>
-  <li>google cloud platform *</li>
-  <li>aws **
+  <li>google cloud platform</li>
+  <li>aws <input type="range" disabled="disabled" value="50" />
     <ul>
-      <li>scientific computing <em>**</em></li>
-      <li>web hosting **</li>
+      <li>scientific computing</li>
+      <li>web hosting</li>
     </ul>
   </li>
-  <li>Versioning <em>**</em>
+  <li>Versioning
     <ul>
       <li>svn</li>
       <li>github</li>
@@ -527,25 +572,29 @@
     </ul>
   </li>
   <li>Google Suite</li>
-  <li>Adobe</li>
-  <li>AE *</li>
-  <li>XD **</li>
-  <li>PS *</li>
+  <li>Adobe <input type="range" disabled="disabled" value="40" /></li>
+  <li>AE</li>
+  <li>XD</li>
+  <li>PS</li>
   <li>
-    <p>AI *</p>
+    <p>AI</p>
   </li>
-  <li>3D printing **
+  <li>3D printing <input type="range" disabled="disabled" value="30" />
     <ul>
-      <li>preform **</li>
-      <li>solidworks **</li>
+      <li>preform</li>
+      <li>solidworks</li>
     </ul>
   </li>
-  <li>LabVIEW **</li>
-  <li>emergent *</li>
-  <li>NRP *</li>
-  <li>NMP *</li>
-  <li>FluoroCT ***</li>
-  <li>Osirix **</li>
+  <li>other software based programming
+    <ul>
+      <li>LabVIEW</li>
+      <li>emergent</li>
+      <li>NRP</li>
+      <li>NMP</li>
+      <li>FluoroCT</li>
+      <li>Osirix</li>
+    </ul>
+  </li>
 </ul>
 
         

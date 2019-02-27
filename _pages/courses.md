@@ -11,6 +11,47 @@ header:
   caption: "Feynman, my Hero..."
 ---
 
+<style>
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  input[type='range'] {
+    overflow: hidden;
+    width: 80px;
+    -webkit-appearance: none;
+    background-color: rgb(200,208,214);
+  }
+  
+  input[type='range']::-webkit-slider-runnable-track {
+    height: 1px;
+    -webkit-appearance: none;
+    color: rgb(44,122,146);
+  }
+  
+  input[type='range']::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;44	122	146	
+    height: 1px;
+    cursor: ew-resize;
+    background: rgb(200,208,214);
+    box-shadow: -80px 0 0 80px rgb(44,122,146);
+  }
+
+}
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: rgb(44,122,146); 
+}
+input[type="range"]::-moz-range-track {  
+  background-color: rgb(200,208,214);
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: rgb(200,208,214); 
+}
+input[type="range"]::-ms-fill-upper {  
+  background-color: rgb(44,122,146);
+}
+</style>
 ## Courses I have followed
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTFCGs4Z_9DYuzHlHExLlPDFJQfyfHOQlDbJLbBLjo6tXiplFYn5eajH3tziJZWGYE9sGP_Jrz5iAvd/pubhtml?widget=true&amp;headers=false" height="800" width="600"></iframe>
@@ -19,27 +60,30 @@ header:
 
 ### videos
 
-- [ML to see](https://www.youtube.com/playlist?list=PLXH5-WxRNyUXgpUG3-XLsrErywMlnR5vQ): (100) -- 10
-- [mathematical monk](https://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA): 16.3-13; 17.8-14; 19.1-11 -- 29
-- [MIT Computational Biology](https://www.youtube.com/playlist?list=PLypiXJdtIca6GBQwDTo4bIEDV8F4RcAgt): Genomes, Networks, Evolution, Health
-- [dev to see](https://www.youtube.com/playlist?list=PLXH5-WxRNyUVNi-5u5gUv4Vt77fdmz7t6)
-- [DeepMind's DL and RL course](https://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs)
+- [ML to see](https://www.youtube.com/playlist?list=PLXH5-WxRNyUXgpUG3-XLsrErywMlnR5vQ): (100) <input type="range" disabled="disabled" value="80"/>
+- [mathematical monk](https://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA): (160) 16.3-13; 17.8-14; 19.1-11 <input type="range" disabled="disabled" value="85"/>
+- [MIT Computational Biology](https://www.youtube.com/playlist?list=PLypiXJdtIca6GBQwDTo4bIEDV8F4RcAgt): Genomes, Networks, Evolution, Health <input type="range" disabled="disabled" value="0"/>
+- [dev to see](https://www.youtube.com/playlist?list=PLXH5-WxRNyUVNi-5u5gUv4Vt77fdmz7t6) (50) <input type="range" disabled="disabled" value="10"/>
+- [DeepMind's DL and RL course](https://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs) <input type="range" disabled="disabled" value="0"/>
 
 ### Slides
-_most slides here have not been made public by the authors
+_most slides here have not been made public by the authors_
 
-- Systems Biology EPFL
-- Baptiste ENS 3
-- Baptiste ENS 4
-- Temporal Difference
-- CS231
-- Reinforcement Learning Class
+- Systems Biology EPFL <input type="range" disabled="disabled" value="70"/>
+- Baptiste ENS 3 <input type="range" disabled="disabled" value="0"/>
+- Baptiste ENS 4 <input type="range" disabled="disabled" value="0"/>
+- Temporal Difference <input type="range" disabled="disabled" value="0"/>
+- CS231 <input type="range" disabled="disabled" value="0"/>
+- Reinforcement Learning Class <input type="range" disabled="disabled" value="0"/>
 
 ### Papers 
-- paper to read: (125) -- 40
+- paper to read: (190) <input type="range" disabled="disabled" value="45"/>
 
 ### Books
-- computational neuroscience, chapman chap10-19 (10)
+- computational neuroscience, chapman chap10-19 (10) <input type="range" disabled="disabled" value="20"/>
+- A Riemannian Framework for Tensor Computing, Xavier Pennec, Pierre Fillard, Nicholas Ayache, HAL <input type="range" disabled="disabled" value="0"/>
+- Attention, predictions and expectations, and their violation: attentional control in the human brain, Simone Vossel , Joy J. Geng and Karl J. Friston, frontiers. <input type="range" disabled="disabled" value="0"/>
+- Les Nombres p-adiques, Yvette Amice, 1975. <input type="range" disabled="disabled" value="0"/>
 
 ## ECE - ING5 - SANTE 2017-2018
 
@@ -79,31 +123,31 @@ _as a private teacher_
 
 ## Knowledge in informatics
 
-- VHDL **
+- VHDL <input type="range" disabled="disabled" value="30"/>
 	- simple counting machine
 	- simple games
 
-- Arduino ***
+- Arduino <input type="range" disabled="disabled" value="50"/>
 	- robots 
 	- car
 	- drones
-- gazebo ***
+- gazebo <input type="range" disabled="disabled" value="40"/>
 	- shapes 
 	- events
 	- controls
 
-- C **
-- OccamPi **
-- Google Go *
-- C++ **
-- Java ****
+- C <input type="range" disabled="disabled" value="30"/>
+- OccamPi <input type="range" disabled="disabled" value="20"/>
+- Google Go <input type="range" disabled="disabled" value="10"/>
+- C++ <input type="range" disabled="disabled" value="30"/>
+- Java <input type="range" disabled="disabled" value="70"/>
 	- graphics
 	- android
 	- server
 	- simple J2E
 
-- R **
-- Python ****
+- R <input type="range" disabled="disabled" value="30"/>
+- Python <input type="range" disabled="disabled" value="90"/>
 	- numpy
 	- conda
 	- bioconda
@@ -112,75 +156,75 @@ _as a private teacher_
 	- pandas
 	- scikit learn
 	- ...
-- Matlab ***
+- Matlab <input type="range" disabled="disabled" value="70"/>
 	- GUI
 	- signal proc
 	- functions
 	- parrallel
 	- arrays
-- computational genomics **
+- computational genomics <input type="range" disabled="disabled" value="20"/>
 	- vcf, fasta, fastq, ...
 
-- CI **
+- CI <input type="range" disabled="disabled" value="50"/>
 	- travis 
 	- shipeable 
 	- sentry 
 	- jest
 	- nose 
-- CD **
+- CD <input type="range" disabled="disabled" value="70"/>
 	- fastlane
 	- android
 	- ios
 	- macOS 
 
-- Latex **
-- Markdown ****
-- HTML ***
-- CSS ***
-- JavaScript ****
-	- react native ****
-	- angular.js **
-	- react.js ****
-	- node **
+- Latex <input type="range" disabled="disabled" value="40"/>
+- Markdown <input type="range" disabled="disabled" value="70"/>
+- HTML <input type="range" disabled="disabled" value="70"/>
+- CSS <input type="range" disabled="disabled" value="70"/>
+- JavaScript <input type="range" disabled="disabled" value="90"/>
+	- react native 
+	- angular.js
+	- react.js
+	- node
 	- ES6
 	- JSX
 	- flow
 	- mobx
-	- webpack **
-	- electron **
+	- webpack
+	- electron
 	- expo
-	- async ****
+	- async
 	- navigation
 	- npm, yarn
-- PHP **
+- PHP <input type="range" disabled="disabled" value="20"/>
 	- 20 pages simple server
 
-- DNS management ****
+- DNS management <input type="range" disabled="disabled" value="70"/>
 	- namecheap 
 	- goDaddy 
 
-- Shell ***
+- Shell <input type="range" disabled="disabled" value="70"/>
 	- basics
 	- server connection
 	- git
 	- brew 
 
-- vim **
-- sublime ****
-- intelIJ ***
+- vim <input type="range" disabled="disabled" value="20"/>
+- sublime <input type="range" disabled="disabled" value="90"/>
+- intelIJ <input type="range" disabled="disabled" value="70"/>
 
-- SQL **
-	- nosql ***
-	- firebase ***
-	- Json ****
-	- XML ***
-	- MySQL **
-	- MaMp **
-- google cloud platform *
-- aws **
-	- scientific computing ****
-	- web hosting **
-- Versioning ****
+- SQL <input type="range" disabled="disabled" value="50"/>
+	- nosql 
+	- firebase 
+	- Json 
+	- XML 
+	- MySQL
+	- MaMp
+- google cloud platform
+- aws <input type="range" disabled="disabled" value="50"/>
+	- scientific computing 
+	- web hosting
+- Versioning 
 	- svn
 	- github
 	- gitKraken
@@ -188,18 +232,19 @@ _as a private teacher_
 	- sourceTree
 
 - Google Suite
-- Adobe
- - AE *
- - XD **
- - PS *
- - AI *
+- Adobe <input type="range" disabled="disabled" value="40"/>
+ - AE
+ - XD 
+ - PS
+ - AI
 
-- 3D printing **
-	- preform **
-	- solidworks **
-- LabVIEW **
-- emergent *
-- NRP *
-- NMP *
-- FluoroCT ***
-- Osirix **
+- 3D printing <input type="range" disabled="disabled" value="30"/>
+	- preform
+	- solidworks
+- other software based programming
+	- LabVIEW 
+	- emergent
+	- NRP 
+	- NMP 
+	- FluoroCT
+	- Osirix

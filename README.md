@@ -267,8 +267,55 @@ But let's throw in a <b>tag</b>.
 - add more images and link in my description in about 
 - have wiki preview for role models https://github.com/aleks/jekyll_preview_tag
 - have better book and paper citation model https://github.com/aleks/jekyll_preview_tag
-- add papers that I have not yet read..
-- add a code to transform level of reading/following (\*\*\*) into an nice image 
+- add papers that I have not yet read.. (https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
+
+
+```css
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      width: 80px;
+      -webkit-appearance: none;
+      background-color: #9a905d;
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      color: #13bba4;
+      margin-top: -1px;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+      cursor: ew-resize;
+      background: #434343;
+      box-shadow: -80px 0 0 80px #43e5f7;
+    }
+
+}
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: #43e5f7; 
+}
+input[type="range"]::-moz-range-track {  
+  background-color: #9a905d;
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: #43e5f7; 
+}
+input[type="range"]::-ms-fill-upper {  
+  background-color: #9a905d;
+}
+<input type="range" disabled="disabled"
+value="80"/>
+or maybe "readonly"
+```
+
 
 contact :  jkobject@gmail.com 
 MIT LICENCE ®

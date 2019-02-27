@@ -20,6 +20,7 @@ toc: true
 - Philip K dick 
 - Arthur C Clarke 
 - Bernard Weber 
+- [René Barjavel](https://fr.wikipedia.org/wiki/Ren%C3%A9_Barjavel#Romans)
 
 ### Series
 
@@ -31,6 +32,9 @@ toc: true
 - Anthony Horowitz. _Alex Rider: Series_.
 - Eoin Colfer. _Artemis Fowl: Series_.
 - Stephen King. _Dome: Series_.
+- Michael Grant. Gone.
+- Mary Pope Osborne. _la cabane magique_.
+
 
 
 ### Volumes
@@ -40,15 +44,25 @@ toc: true
 - Yuval Noah Harari, Pierre-Emmanuel Dauzat. _[Sapiens: Une brève histoire de l&apos;humanité](https://books.google.fr/books?id=M89yCgAAQBAJ)
 - Voltaire, Mathilde Paris. _[Candide ou l&apos;optimisme](https://books.google.fr/books?id=XhEOAQAACAAJ)
 - Émile Zola. _[Au bonheur des dames](https://books.google.fr/books?id=I110DwAAQBAJ)
-- Victor Hugo, Marie-Henriette Bru. _[Bibliolycée - Le Dernier Jour d&apos;un condamné, Victor Hugo](https://books.google.fr/books?id=YcgwJ_c5HfsC)
+- Victor Hugo, Marie-Henriette Bru. _[Bibliolycée - Le Dernier Jour d&apos;un condamné, Victor Hugo](https://books.google.fr/books?id=YcgwJ_c5HfsC). Ruy Blas. Les misérables.
 - Aldous HUXLEY. _[Le meilleur des mondes](https://books.google.fr/books?id=EvwG_3AUzBsC)
 - George Orwell. _[1984 (Modern Classics Series): Big Brother Is Watching You - A Political Sci-Fi Dystopia](https://books.google.fr/books?id=esxxDgAAQBAJ)
 - Chris Eliasmith. _[How to Build a Brain: A Neural Architecture for Biological Cognition](https://books.google.fr/books?id=BK0YRJPmuzgC)
 - Max Tegmark. _[Life 3.0: Being Human in the Age of Artificial Intelligence](https://books.google.fr/books?id=3_otDwAAQBAJ)
+- Joshua Barkan. _[avant hiroshima](http://www.critiqueslibres.com/i.php/vcrit/50426).
+- ._en attendant Godo_.
+- Corneille .l'illusion COminque.
+- Rousseau. Discours sur l'origine et les fondements de l'inégalité parmis les hommes.
+- seneques. de la brieveté de la vie. de la tranquilité de l'ame. de la constance de l'homme sage 
+- Marcel Pagnol. La gloire de mon père.
+- sphères.
+
+
 
 
 ## To read
 
+- Douglas R. Hofstadter. _Gödel, Escher, Bach: an Eternal Golden Braid_. 1999. 
 - HP Lovecraft. _The Call of Ctulhu_. 1928.
 - Blandine le Callet. _La balade de lila K_. 2010. 
 - Neal Asher. _Dark intelligence_ 
@@ -155,40 +169,42 @@ cours d'histoire: [https://www.youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A](htt
 ## All my video Games
 
 - castle vania gameboy
+- adiboo
+- age of empire 3
+- battefront star wars 2
+- battlefield vietnam, 1942
+- beyond 2 souls
+- call of duty 2,4,5,6,7,8,9,10
+- civilization revolution, 5
+- crysis 2
+- destiny
+- fable
+- farcry
+- haze
+- heavenly sword
+- heavy rain
+- hitman contracts
+- jacky chan
+- lara croft tomb raider
+- lego starwars 1,2, batman
+- little big planet
+- loco rocco 1,2
+- lost planet
+- mafia
 - mario bros world
 - mario kart
-- jacky chan
-- call of duty 2,4,5,6,7,8,9,10
 - need for speed most wanted 1, most wanted 2, undercover, carbon, underground 2
-- loco rocco 1,2
-- battefront star wars 2
-- rayman 3
-- hitman contracts
-- heavenly sword
-- starcraft 2
-- wow
-- age of empire 3
-- sim city 5
-- civilization revolution, 5
-- prince of persia 1,2,3
-- adiboo
-- lara croft tomb raider
 - P.A.I.N
-- singstar ps3
-- farcry
-- lost planet
-- haze
-- fable
-- mafia
-- skate 2
-- destiny
+- prince of persia 1,2,3
 - ratchet et clank
-- trackmania
+- rayman 3
+- sim city 5
+- singstar ps3
+- skate 2
 - splinter cell
-- battlefield vietnam, 1942
-- lego starwars 1,2
-- heavy rain
+- starcraft 2
 - street fighter
+- trackmania
+- wow
 - Zelda gameboy
-- beyond 2 souls
 

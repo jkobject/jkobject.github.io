@@ -14,6 +14,20 @@ header:
 ---
 
 --------------------------------------------------------------
+
+## IN GENERAL
+
+1. papers are using the same expressions for things that could be said in simpler manner
+2. papers are displaying citation + p values + data. within text: should be a hoverable link. 
+summary should exist as in CELL with a table of content and nice image at the first Page. 
+3. tables should be interactive and secondary material should be within the paper. or readily available from it. 
+4. the paper, its data, its code, its bio methods and everything it cites should be accessible. 
+5. there should be a table for complicated words/acronyms with explanations.
+6. for other types of info (places/genes/labs/companies there should be links)
+7. there should always be a corresponding press release/medium article corresponding to it. with simpler explanations.
+
+
+
 #### SUMMARY
 
 What is the research problem the paper attempts to address? Consider
@@ -639,8 +653,92 @@ Some simple yet necessary ideas about how one would best use DL in healthcare an
 
 ### Mammalian Genes Are Transcribed with Widely Different Bursting Kinetics
 
+in this paper it is explained briefly (with more precision about the models in the supplementary materials) the rational behind bursting kinetics in mamlian genes. We look at a model going from in/activation; trancription rates; translation rates and degradations. using markovian prob. models. per coding genes. then correlates it with exeperimental fluo activity thanks to a poissonian noise model. the entirety of the model is then parametrized by EM algo thx to baum welsh algorithm. the computation of the states (bc it is a markov. model.) is done with the viterbi algorithm. The signal in the images were deconvolved using wavelet temporal analysis. the results described how different profiles of protein activity were highly periodic with different types of kinetics. also shown in the analysis of the states/params of the model for different mRNA. this difference could be seen also for similar genes accross cell lines.
+
+### what are super enhancers? -- Sebastian Pott & Jason D Lieb
+_very important_
+
+Explainingwhat are enhancers. open questions about them at the functional level.
+then turns out how to compute super enhancers. their possible differences with regular ones and possible similarity which would make them just reegular enhancers specific of the particular expression of the cell line.
+it turns out to display 5 questions about super enhancer and if they truly are mechanistically different.
+And a framework to find it out.
+
+> how do gene dependancy relate to SEn? using the same Crispr screening technique
+One Should Compute SEn without using merging of regular one according to the paper. Might help answering the question as well.
+
+### Super-Enhancers in the Control of Cell Identity and Disease -- Denes Hnisz, Brian J. Abraham, Tong Ihn Lee
+_very important_
+
+
+> might be interesting to reuse softs such as DeepPeakCaller and DeepBind
+
+> Maybe one might find the equivalent of superENhancer for lesser TF type when looking only at these.
+
+> Sen are concepts associated with TF master TF, enhancer, cell fate, cell differenciation/pluripotency (see for of Pr. Gioele La manno EPFL, transcription regulation (cis & trans) (also via enhancerRNAs), 
+
+> it would be valuable to identify the master transcription factors that control all cell states.
+
+> if alteration in superenhancer drive cell specificity. what if some cancer were some form of local valley in cell specificity out of which the cell can't escape. this could be seen by looking at differences in superenhancer region through stages of cancer or types of cancer from a same cell line through the eyeyes of what La Manno has done.
+
+> when you look at Senh accross cell lines and cancers and you see ~ a thiord which are cell line specific. do the other 2/3 are shared accross cell? cell types? cell groups? random noise, i.e. not acual Senh?
+
+First the discovery that super enhancer are linked with cancer hallmark, disease SNPs, specific per cell types, linked with specific core transcription factors, miRNA ncRNA. might explain cell diff, fate, etc.. they create feedback loop. can be transcribed into eRNA (which may contribute to gene activation) and are not only enriched in TF but also in RNA Polymerase II, Cofactors, and Chromatin Regulators. It is also a dataset of 86 cell type (human) 
+
+### Network In Network -- Min Lin, Qiang Chen, Shuicheng Yan
+
+putting MLP instead of regular convolution for each layer of a CNN. ReLu then finishing by a global average pooling layer feeding to a logistic regression classifier.
+
+
+### Selective Inhibition of Tumor Oncogenes by Disruption of Super-Enhancers -- Jakob Love, Heather A. Hoke, Charles Y. Lin
+
+You have some enhancer of MYC, MCL1, IRF4, PRDM1 ... which are strongly bound by BRD4 and MED1. we know that reducing the level of BRD4 by using a JQ1 tratment which will lead to a bromodomain inhibition of BRD4 and thus restrict binding of itself and its coFactors. In many types of cancer cells. this leads to a selective desctruction of them and not of regular cells. This is explained in this paper by stating that these cells are known to have very strong super enhancers to these genes and thus it is places which relies more heavily on BRD4 and which are more essential to these cell lines. Giving ideas to explain and discover more oncogenic targets.
+
+### ATARiS: Computational quantification of gene suppression phenotypes from multisample RNAi screens-- Diane D. Shao, Aviad Tsherniak, Shuba Gopal, Barbara A. Weir
+
+The beginning of the DepMap, before large scale and demeter. Discovering how a lot of data can help uncovering gene dependency in cancer from rnaI. Using  a Matrix Factorization. Moreover as many RNAi can affect a gene. After it, a refinment step is performed to find a subset of best performing ones according to the profiles found by the matrix factorization problem.
+showing ability to:
+- identify fuctional relationship between genes
+- identify nocel cancer associated genes.
+- identify genomic predictor of gene dependency
+
+> did not  get fig 4C ...
+
+
+### Pan-cancer genome and transcriptome analyses of 1,699 paediatric leukaemias and solid tumours-- Xiaotu Ma1, Yu Liu, Yanling Liu, Ludmil B. Alexandrov, Michael n. Edmonson
+
+A paper recapitulating the creation a first analysis of 1699 pediatric leukimia tumors at the transcription and genomic level. understanding similarities and differencies btween them/ them and adult leukimia. and some interesting new genes and genetic features. Additionaly a more thoruough analysis of WT1 D447N. 
+>for which I was not 100% confident on my comprehension
+
+
+### Curiosity-driven Exploration by Self-supervised Prediction-- Deepak Pathak Pulkit Agrawal
+
+> what about training on the ability to predict the distribution dynamics instead of just prediction error on the next state (else might be triggered by simple noise or stochastic distributions)
+
+agent is trained on minimizing the prediction error of state t+1 from state t and action t (*may be better with reusing all previous states in some form*)
+
+### The landscape of genomic alterations across childhood cancers--Susanne N. Gröbner, Barbara C. Worst, Joachim Weischenfeldt Ivo Buchhalter, Kortine Kleinheinz, Vasilisa A. Rudneva Pascal D. Johann
+
+Another presentation of a dataset containing a thousand tumours (most of them ALL and central nervous system related) with identification of regular driver genes, structural and CN variants and germline/somatic variants. with a study of the particular processes in childhood cancers as well as potential drug targets related to the discoveries listed here.
+
+### A Landscape of Pharmacogenomic Interactions in Cancer-- Francesco Iorio, Theo A. Knijnenburg, Daniel J. Vis
+
+A look at the pharmacogenomic landscape (response to 265 drugs) of 1,001 human cancer cell lines from 11,289 tumors points to new treatment applications for hundreds of known anti-cancer drugs. to determine:
+- the extent to which cancer cell lines recapitulate oncogenic alterations in primary tumors.
+- which oncogenic alterations associate with drug sensitivity, 
+- whether logic combinations of multiple alterations better explain drug sensitivity.
+- the relative contribution of different molecular data types, either individually or in combination, in predicting drug response
+
+> here it seems that the gene expression data only helps to infer the cell type > thus the dependancy according to that. thus a two step model (cell type > specific sensitivity) might be more appropriate
+> Here I think you need to model some of the specific proteins to understand better what explains the sensitivity and what events (SNP, CNV, ...) might help you understand that. (see work from Patrick Barth)
+ 
+---
+CFE  cancer functional events
+RACS recurrently aberrant copy number segments
+
+----
 
 ### Unsupervised embedding of single-cell Hi-C data -- Jie Liu, Galip Gu rkan Yardımcı UW
+
 
 
 ### Detecting Circular RNA from High-throughput Sequence Data with de Bruijn Graph -- Xin Li and Yufeng Wu

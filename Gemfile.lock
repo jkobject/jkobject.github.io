@@ -98,6 +98,7 @@ GEM
       octokit (~> 4.0)
       public_suffix (~> 3.0)
       typhoeus (~> 1.3)
+    guess_html_encoding (0.0.11)
     html-pipeline (2.10.0)
       activesupport (>= 2)
       nokogiri (>= 1.4)
@@ -218,6 +219,8 @@ GEM
     jekyll-theme-time-machine (0.1.1)
       jekyll (~> 3.5)
       jekyll-seo-tag (~> 2.0)
+    jekyll-timeago (0.12.3)
+      mini_i18n (>= 0.8.0)
     jekyll-titles-from-headings (0.5.1)
       jekyll (~> 3.3)
     jekyll-toc (0.9.1)
@@ -236,6 +239,7 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
     mercenary (0.3.6)
+    mini_i18n (0.8.0)
     mini_portile2 (2.4.0)
     minima (2.5.0)
       jekyll (~> 3.5)
@@ -272,6 +276,9 @@ GEM
     rouge (2.2.1)
     ruby-enum (0.7.2)
       i18n
+    ruby-readability (0.7.0)
+      guess_html_encoding (>= 0.0.4)
+      nokogiri (>= 1.6.0)
     ruby_dep (1.5.0)
     rubyzip (1.2.2)
     safe_yaml (1.0.4)
@@ -318,8 +325,11 @@ DEPENDENCIES
   jekyll-remote-theme
   jekyll-scholar
   jekyll-seo-tag
+  jekyll-timeago
   jekyll-toc
   minimal-mistakes-jekyll
+  nokogiri
+  ruby-readability
   unicode_utils
 
 BUNDLED WITH
