@@ -338,7 +338,7 @@ defaults:
       comments: true
       share: true
       related: true
-      excerpt: "This is my website."
+      excerpt: "A look at the different projects I have undertaken in my career."
       sitemap: true
       published: true
       toc: true
@@ -358,7 +358,7 @@ defaults:
       comments: true
       share: true
       related: true
-      excerpt: "This is my website."
+      excerpt: "A sneak peak at some of my ideas."
       sitemap: true
       published: true
       toc: true
@@ -373,7 +373,7 @@ defaults:
       comments: true
       share: true
       related: true
-      excerpt: "This is my website."
+      excerpt: "Short stories about my professional experiences."
       sitemap: true
       published: true
   # opinions
@@ -387,7 +387,22 @@ defaults:
       comments: true
       share: true
       related: true
-      excerpt: "This is my website."
+      excerpt: "When ideas cannot be proved. they are just opinions"
       sitemap: true
       published: true
       toc: true
+  # books
+  - scope:
+      path: ""
+      type: books
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: true
+      related: false
+      excerpt: "I might write books. If I do. Whoever is the publisher. There will be a free version here."
+      sitemap: true
+      published: true
+      toc: false

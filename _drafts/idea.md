@@ -6,6 +6,64 @@ permalink: /my_ideas/
 layout: default
 published: false
 ---
+
+### on using ML at the broad. 
+
+I kinda feel that the sheer amount of data at the broad forces the com biologist to think about using it all. So we focus on crazy inference using the entirety of the matric only to relaize that the matrix is not big enough.
+
+Maybe a better approach is to come back to the basics by trying to think about a very local and constrained problem related to the data we have but only using a very small sample of it. like prediction of one druf from one set of sequences. Here we really do not have the data to apply learning approaches. however, we now that we can create / learn a model that has a lot of prior (including basic genetic functionning. adding chemical modelling, drug information, structure. etc..)
+
+To arrive at the inference on this we would need to separate the inference into submodules. Some of them could leverage other datasets or modes, to learn the specific task they try to deal with (genomic interactio, protein interaction, etc...)
+out of this. we have a functionning model with little infernce ability.
+However we still have a ton of data left. the matter is then only to scale thee model to use all the data at our disposal to improve accuracy and especially, improve results. 
+
+
+
+
+
+### the cell program
+
+
+
+
+
+### what a research Paper Reader should have;
+
+- should read both md, ipython, pdf, txt, latex, html, websites, videos (youtube or others), files directly*
+- should be linked with a paper manager similar to zotero but simpler and with more management of your papers* instead of just citations
+- it should allow linking to all platform providing papers
+- should be linked to researcher's blogs, databases, groups
+- All the basic edition options from aperçu
+- should have all citations and remarks etc.. as hyperlinks
+- should contain a table of content on the side
+- citations on a box on the side
+- figures and additionals always retrieved and on the side
+- meta data on the side and not in the paper
+SHOULD BE A WEBPAGE
+- with interaction to twitter feeds, commentary, readers, etc...
+- should remmeber where you are at, how much of it you read.
+- many personalisation options to define yourself stuffs
+- link with reasearch profiles and with personal reading scores etc.. 
+- apps for tablets, phones and eInk readers.
+- know how much you read and where you are at by looking at your eyes.
+- 
+
+
+
+
+### Harry Potter style image: 
+
+taking a neural network like a GAN or a physical predictor to generate a 100 of images from an actual one (or two) to generate a short video.
+
+A next version is to add emoji like object and predict people's interactions with it. 
+
+next level is predict what would be the real life version of old pictures.
+
+
+
+---
+
+
 ## On the difference discuted with baptiste between correlation and causation
 
 correlation is causation without simplifying assumptions

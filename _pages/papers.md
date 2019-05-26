@@ -11,6 +11,51 @@ header:
   caption: "thanks to dribble for this amazing design"
 ---
 
+<style>
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  input[type='range'] {
+    overflow: hidden;
+    width: 80px;
+    -webkit-appearance: none;
+    background-color: rgb(200,208,214);
+  }
+  
+  input[type='range']::-webkit-slider-runnable-track {
+    height: 1px;
+    -webkit-appearance: none;
+    color: rgb(44,122,146);
+  }
+  
+  input[type='range']::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;44	122	146	
+    height: 1px;
+    cursor: ew-resize;
+    background: rgb(200,208,214);
+    box-shadow: -80px 0 0 80px rgb(44,122,146);
+  }
+
+}
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: rgb(44,122,146); 
+}
+input[type="range"]::-moz-range-track {  
+  background-color: rgb(200,208,214);
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: rgb(200,208,214); 
+}
+input[type="range"]::-ms-fill-upper {  
+  background-color: rgb(44,122,146);
+}
+</style>
+## Courses I have followed
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTFCGs4Z_9DYuzHlHExLlPDFJQfyfHOQlDbJLbBLjo6tXiplFYn5eajH3tziJZWGYE9sGP_Jrz5iAvd/pubhtml?widget=true&amp;headers=false" height="800" width="600"></iframe>
+
 ## My Papers:
 
 [See it on scholar](https://Scholar.google.com/citations?user=zyXiydsAAAAJ){: .btn .btn--primary .align-center}
@@ -119,15 +164,19 @@ header:
 
 ### I have read (with presentations)
 
-[Go check a draft version here](/papers-reviewed-draft/){: .btn .btn--primary .align-center}
+[Go check a draft version here](/papers-reviewed-draft/){: .btn .btn--primary .align-center} 
 
 
 ### I have read (without any)
 _waiting for a research app to make it easier to share and display_
 
+- paper I read: (140) <input type="range" disabled="disabled" value="37"/>
+
 
 ### To Read
-_waiting for a research app to make it easier to share and display_
+_waiting for a research app to make it easier to share and display
+
+- paper to read: (220) <input type="range" disabled="disabled" value="63"/>
 
 ## Research Books
 

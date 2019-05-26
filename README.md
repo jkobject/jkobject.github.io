@@ -55,6 +55,7 @@ The templates and architecture might be reused at will.
 -the website itself is under a basic apache licence but each project or paper have its own rights and terms
 -please use accordingly
 
+https://lingojam.com/🐌EmojiTranslator🎲
 
 ## Example data
 

@@ -61,8 +61,8 @@ input[type="range"]::-ms-fill-upper {
 ### videos
 
 - [ML to see](https://www.youtube.com/playlist?list=PLXH5-WxRNyUXgpUG3-XLsrErywMlnR5vQ): (100) <input type="range" disabled="disabled" value="80"/>
-- [mathematical monk](https://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA): (160) 16.3-13; 17.8-14; 19.1-11 <input type="range" disabled="disabled" value="85"/>
-- [MIT Computational Biology](https://www.youtube.com/playlist?list=PLypiXJdtIca6GBQwDTo4bIEDV8F4RcAgt): Genomes, Networks, Evolution, Health <input type="range" disabled="disabled" value="0"/>
+- [mathematical monk](https://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA): (160) <input type="range" disabled="disabled" value="100"/>
+- [MIT Computational Biology](https://www.youtube.com/playlist?list=PLypiXJdtIca6GBQwDTo4bIEDV8F4RcAgt): Genomes, Networks, Evolution, Health (25) <input type="range" disabled="disabled" value="20 "/>
 - [dev to see](https://www.youtube.com/playlist?list=PLXH5-WxRNyUVNi-5u5gUv4Vt77fdmz7t6) (50) <input type="range" disabled="disabled" value="10"/>
 - [DeepMind's DL and RL course](https://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs) <input type="range" disabled="disabled" value="0"/>
 
@@ -75,9 +75,6 @@ _most slides here have not been made public by the authors_
 - Temporal Difference <input type="range" disabled="disabled" value="0"/>
 - CS231 <input type="range" disabled="disabled" value="0"/>
 - Reinforcement Learning Class <input type="range" disabled="disabled" value="0"/>
-
-### Papers 
-- paper to read: (190) <input type="range" disabled="disabled" value="45"/>
 
 ### Books
 - computational neuroscience, chapman chap10-19 (10) <input type="range" disabled="disabled" value="20"/>

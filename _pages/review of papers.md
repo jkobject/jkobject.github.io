@@ -494,7 +494,7 @@ __addition of the second paper "Predicting effects of noncoding variants with de
 
 _touse_
 
-they have used a deep CNN with a lot of different Weighted patterns to predict regulatory profile (chromatin, methylation etc...) from a raw DNA sequence. using ENCODE datasets given specific cell types. this gave them the ability to predict a cell specific profile as well as to predict variation in regulatory profiles caused by variants, using a linear model (made from non linear basis function of from the different profiles data, they are able to regress how much each the regulatory features of the non coding sequence before the  Transcription Start Site (and a bit of the sequence after) influence the expression profile of different the gene.) they were able to retrieve expression for famous protein and how they change with different cells and to retrieve SNPs causing variation in expression that were also shown from GWAS information (even better than in GWAS) and to find interesting disease correlations as well.
+they have used a deep CNN with a lot of different Weighted patterns to predict regulatory profile (chromatin, methylation etc...) from a raw DNA sequence. using ENCODE datasets given specific cell types. this gave them the ability to predict a cell specific profile as well as to predict variation in regulatory profiles caused by variants, using a linear model (made from non linear basis function of from the different profiles data, they are able to regress how much each the regulatory features of the non coding sequence before the  Transcription Start Site (and a bit of the sequence after) influence the expression profile of different gene.) they were able to retrieve expression for famous protein and how they change with different cells and to retrieve SNPs causing variation in expression that were also shown from GWAS information (even better than in GWAS) and to find interesting disease correlations as well.
 
 ### One-Shot Imitation Learning -- Ilya Sutskever, Pieter Abbeel
 
@@ -606,9 +606,9 @@ this work uses a regular LSGAN to learn the important feature from a dataset of 
 
 ### Pathway perturbations in signaling networks: Linking genotype to phenotype --Babu for Barth EPFL
 
->> what about gene knockdown datasets... might be very interesting. 
+_what about gene knockdown datasets... might be very interesting. 
 drug interference data sets as well.
-I heard of central regulators which are specific and specifically expressed in specific cancer cell lines and that knowing that information allows one to understand the specificities of the cell line (like its reaction to drugs etc..)
+I heard of central regulators which are specific and specifically expressed in specific cancer cell lines and that knowing that information allows one to understand the specificities of the cell line (like its reaction to drugs etc..)_
 
 In here we look at several different signaling pathways which have highly oncogenic potentials. looking at them via a What mutation, how it should work, what happens when mutations. How can it be fixed.
 We are really looking at the causal explanation of a phenotype by a mutation/alt. splicing/ translocation/... .
@@ -617,12 +617,12 @@ We are really looking at the causal explanation of a phenotype by a mutation/alt
 
 Here we analyze how different drugs affecting primarily or secondarily the GPCR membrane receptors of cells can have different effects considering the naturally occurring mis-sense variation in the human population on these corresponding protein coding genes.
 
-> how comme they never thought of doing the same in pharmacollogy??
-> what about the non coding variants in the population it will reflect also some differential effects in the signaling pathway and even variation in the proportion of membrane receptors
+_how comme they never thought of doing the same in pharmacollogy??_
+_what about the non coding variants in the population it will reflect also some differential effects in the signaling pathway and even variation in the proportion of membrane receptors_
 
 ### 
 
-> I really want to see how the pipeline to integrate the entire G cycle looks like.
+_I really want to see how the pipeline to integrate the entire G cycle looks like._
 
 
 ### Papers Gilchrist
@@ -663,24 +663,24 @@ then turns out how to compute super enhancers. their possible differences with r
 it turns out to display 5 questions about super enhancer and if they truly are mechanistically different.
 And a framework to find it out.
 
-> how do gene dependancy relate to SEn? using the same Crispr screening technique
-One Should Compute SEn without using merging of regular one according to the paper. Might help answering the question as well.
+_how do gene dependancy relate to SEn? using the same Crispr screening technique
+One Should Compute SEn without using merging of regular one according to the paper. Might help answering the question as well_
 
 ### Super-Enhancers in the Control of Cell Identity and Disease -- Denes Hnisz, Brian J. Abraham, Tong Ihn Lee
 _very important_
 
 
-> might be interesting to reuse softs such as DeepPeakCaller and DeepBind
+_might be interesting to reuse softs such as DeepPeakCaller and DeepBind_
 
-> Maybe one might find the equivalent of superENhancer for lesser TF type when looking only at these.
+_Maybe one might find the equivalent of superENhancer for lesser TF type when looking only at these._
 
-> Sen are concepts associated with TF master TF, enhancer, cell fate, cell differenciation/pluripotency (see for of Pr. Gioele La manno EPFL, transcription regulation (cis & trans) (also via enhancerRNAs), 
+_Sen are concepts associated with TF master TF, enhancer, cell fate, cell differenciation/pluripotency (see for of Pr. Gioele La manno EPFL, transcription regulation (cis & trans) (also via enhancerRNAs), _
 
-> it would be valuable to identify the master transcription factors that control all cell states.
+_it would be valuable to identify the master transcription factors that control all cell states._
 
-> if alteration in superenhancer drive cell specificity. what if some cancer were some form of local valley in cell specificity out of which the cell can't escape. this could be seen by looking at differences in superenhancer region through stages of cancer or types of cancer from a same cell line through the eyeyes of what La Manno has done.
+_if alteration in superenhancer drive cell specificity. what if some cancer were some form of local valley in cell specificity out of which the cell can't escape. this could be seen by looking at differences in superenhancer region through stages of cancer or types of cancer from a same cell line through the eyeyes of what La Manno has done._
 
-> when you look at Senh accross cell lines and cancers and you see ~ a thiord which are cell line specific. do the other 2/3 are shared accross cell? cell types? cell groups? random noise, i.e. not acual Senh?
+_when you look at Senh accross cell lines and cancers and you see ~ a thiord which are cell line specific. do the other 2/3 are shared accross cell? cell types? cell groups? random noise, i.e. not acual Senh?_
 
 First the discovery that super enhancer are linked with cancer hallmark, disease SNPs, specific per cell types, linked with specific core transcription factors, miRNA ncRNA. might explain cell diff, fate, etc.. they create feedback loop. can be transcribed into eRNA (which may contribute to gene activation) and are not only enriched in TF but also in RNA Polymerase II, Cofactors, and Chromatin Regulators. It is also a dataset of 86 cell type (human) 
 
@@ -701,20 +701,13 @@ showing ability to:
 - identify nocel cancer associated genes.
 - identify genomic predictor of gene dependency
 
-> did not  get fig 4C ...
+_did not  get fig 4C ..._
 
 
 ### Pan-cancer genome and transcriptome analyses of 1,699 paediatric leukaemias and solid tumours-- Xiaotu Ma1, Yu Liu, Yanling Liu, Ludmil B. Alexandrov, Michael n. Edmonson
 
-A paper recapitulating the creation a first analysis of 1699 pediatric leukimia tumors at the transcription and genomic level. understanding similarities and differencies btween them/ them and adult leukimia. and some interesting new genes and genetic features. Additionaly a more thoruough analysis of WT1 D447N. 
->for which I was not 100% confident on my comprehension
+A paper recapitulating the creation a first analysis of 1699 pediatric leukimia tumors at the transcription and genomic level. understanding similarities and differencies btween them/ them and adult leukimia. and some interesting new genes and genetic features. Additionaly a more thoruough analysis of WT1 D447N. _for which I was not 100% confident on my comprehension_
 
-
-### Curiosity-driven Exploration by Self-supervised Prediction-- Deepak Pathak Pulkit Agrawal
-
-> what about training on the ability to predict the distribution dynamics instead of just prediction error on the next state (else might be triggered by simple noise or stochastic distributions)
-
-agent is trained on minimizing the prediction error of state t+1 from state t and action t (*may be better with reusing all previous states in some form*)
 
 ### The landscape of genomic alterations across childhood cancers--Susanne N. Gröbner, Barbara C. Worst, Joachim Weischenfeldt Ivo Buchhalter, Kortine Kleinheinz, Vasilisa A. Rudneva Pascal D. Johann
 
@@ -728,8 +721,8 @@ A look at the pharmacogenomic landscape (response to 265 drugs) of 1,001 human c
 - whether logic combinations of multiple alterations better explain drug sensitivity.
 - the relative contribution of different molecular data types, either individually or in combination, in predicting drug response
 
-> here it seems that the gene expression data only helps to infer the cell type > thus the dependancy according to that. thus a two step model (cell type > specific sensitivity) might be more appropriate
-> Here I think you need to model some of the specific proteins to understand better what explains the sensitivity and what events (SNP, CNV, ...) might help you understand that. (see work from Patrick Barth)
+_here it seems that the gene expression data only helps to infer the cell type > thus the dependancy according to that. thus a two step model (cell type > specific sensitivity) might be more appropriate_
+_Here I think you need to model some of the specific proteins to understand better what explains the sensitivity and what events (SNP, CNV, ...) might help you understand that. (see work from Patrick Barth)_
  
 ---
 CFE  cancer functional events
@@ -737,16 +730,511 @@ RACS recurrently aberrant copy number segments
 
 ----
 
-### Unsupervised embedding of single-cell Hi-C data -- Jie Liu, Galip Gu rkan Yardımcı UW
+### Curiosity-driven Exploration by Self-supervised Prediction-- Deepak Pathak Pulkit Agrawal
+
+_what about training on the ability to predict the distribution dynamics instead of just prediction error on the next state (else might be triggered by simple noise or stochastic distributions)_
+
+agent is trained on minimizing the prediction error of state t+1 from state t and action t (_may be better with reusing all previous states in some form_)
+
+_"the agent will be completly unperturbed by external factors" yet it seems very delicate for the agent to understand what will have future effect on him down the road. I guess the human brain does not do it this way._
+
+_They should have tried to do parameters sharing._
+
+### Master Transcription Factors and Mediator Establish Super-Enhancers at Key Cell Identity Genes-- Warren A. Whyte,1,4 David A. Orlando,1,4 Denes Hnisz
+
+Very similar to the previous papers about super enhancers. Most of the new finding is in the title. 
+
+>Super-enhancer formation appears to occur as a conse- quence of binding of large amounts of master transcription factors to clusters of DNA sequences that are relatively abundant across these large domains. Theses domains featiure CDS which are the core constituent of Cell Identity.
+
+
+_it seems that super enhancers activate cell identity by the type of genes they bind to. However it seems that it is always the same master. What plays on the differences? (initial parameters/ TF concentration?/other non master TF) can we reprogram cells using these TF value?_
+
+_given that cancer seems to be something that evolves really quickly over time from a regular cell (which in case of children might have a propension to go so). what about using a flow model on the cell's transcriptomics/genomic to understand the flow of cancerisation as a differenciation. You could see it going to a probabilistic valley with canyons and taking a path which will increase the likelyhood of turning into a cancer. Then, why not look at the cell before it become a full on cancer and see the possible differences in pathway and create things that attack cells in this particular state._
+
+----
+EPUs enhancer-promoter unit
+
+----
+MACS CHIp analysis
+BOWTIE alignment
+CAMs cell–cell adhesion molecules
+----
+
+
+### The Hallmarks of Cancer-- Douglas Hanahan* and Robert A. Weinberg
+
+the foundationnal paper presenting the 6 hallmarks of cancer:
+- limitless replication
+- evading apoptosis
+- insensitivity to antigrowth signals
+- self sufficiency in growth signals
+- tissue invasion (metastasis)
+- sustained angiogenesis
+ via a suite of possible mechanism.
+
+showing that cancer should not happen with this likely hood but that instead cells when loosing specific sets of reparing/stability genes or phagocytosising cells (which may incorporate some instable DNA)) may undergo, with much more likelyhood: cancer.
+
+> we look ahead 10 or 20 years to the time when the diagnosis of all the somatically acquired lesions present in a tumor cell genome will become a routine procedure. By then, genome-wide gene expression profiles of tumor cells will also be routine. With all this information in hand, it will become possible to test definitively our proposition that the development of all types of human tumor cells is governed by a common set of rules such as those implied by the six acquired capabilities enumerated here.
+
+*really a paper about understanding cancer 101*
+
+----
+GS growth signal
+
+----
+
+### Coming of age: ten years of next- generation sequencing technologie--Sara Goodwin, John D. McPherson and W. Richard McCombie
+
+a presentation of the sequencing technologies with their pros and cons and an explanation of how they work. Then a similar deeper presentation for all NGS technologies. a repartition according to differences and similarities.  the new long read sequencers from PACbio and Oxford nanopore seems extremelly powerfull and impressive. 	
+
+*a lot of definitions and explanations in this paper (must read)*
+
+-----
+SBL sequencing by ligation
+SBS sequencing by synthesis 
+ssDNA single strand != dsDNA
+dNTPs deoxynucleotide primer
+CRT cyclic reversible termination
+SNA single-nucleotide addition
+ZMW zero-mode waveguides 
+
+----
+
+### High-performance medicine: the convergence of human and artificial intelligence-- Eric J. Topol   
+
+presenting the use of DL for radiology, pathology, dermatology, ophthalmology, cardiology, gastroenterology, cardiology
+
+a very good categorization of current companies and techniques and a lot of actual comparative data against clinicains and with clinicians
+
+>A deep-learning algorithm for lung cancer digital pathol- ogy slides not only was able to accurately classify tumors, but also was trained to detect the pattern of several specific genomic driver mutations that would not otherwise be discernible by pathologist
+
+
+### Generating Focussed Molecule Libraries for Drug Discovery with Recurrent Neural Networks-- Marwin HS Segler1, Thierry Kogej, Christian Tyrchan and Mark P Waller
+
+using an RNN generator very similar to the ones used modelling language, to model molecules (no conformation, only placement). althought this work is nice and highlights what can be done with substantial results to show. it may lack information on conformation and it does not seem to use every information available to biochemists. It uses transfer learning and a measure of fitness which allows it to be efficient. it gives some informations of the goals in this field. 
+
+It may be problematic however that it does not provide radically new molecules but quite similar ones. ways to present and tests such data does not seem to be present yet. The author do present good future work ideas and skepticism.
+
+----
+ECFP extended connecticvity fingerprint
+TPM target prediction model
+ESC embryonic stem cells
+
+----
+
+
+### Core Transcriptional Regulatory Circuitry in Human Embryonic Stem Cells
+
+specific papers pre-Superenahncher discovery where it displays how core TF create a feedforward circuitry in ESCs and how it is the core circuitry defining their identity.
+
+### Selective gene dependencies in MYCN-amplified neuroblastoma include the core transcriptional regulatory circuitry-- Adam D. Durbin  Mark W. Zimmerman Neekesh V. Dharia
+
+this paper represent a deeper work on using CRC as tools to guess gene dependencies in a specific cancer type. It proved very efficient and puts itself in the framework of discoveries linked with super enhancers. 
+
+
+---
+CRC core regulatory circuitry
+ATAC assay of transposase accessible chromatin
+
+
+---
+
+### Neuroblastoma is composed of two super-enhancer- associated differentiation states-- Tim van Groningen, Jan Koster, Linda J Valentijn, Danny A Zwijnenburg, Nurdan Akogul, Nancy E Hasselt, Marloes Broekmans
+
+In this paper, people from the broad show that analysing tumors. two types of archetypes coexist from distinct original cell lines. They can be differentiated with Super enh profiling and by understanding their circuitry, changed from one state to another. The cells have been shown to present similar effect in vivo with one archetype being more chemoresistant. Leading path to new screenings and therapies.
+
+
+*here it seems they identified only two archetype instead of 3...*
+
+*it seems to make some sense and to be quite crazy that influencing just some TF would allow reprogramming of many cell types.*
+
+----
+IHC  Immunohistochemistry
+
+----
+
+### Interaction Networks for Learning about Objects, Relations and Physics-- DeepMind
+
+Nice paper about predicting the future of physical interaction by combining relational reasoning, simulation and NN. (no deep learning here!) It provides inexact but extremelly believable results in many different simulation tasks and could learn non newtonian dynamics. 
+*It is a first step/idea to many other interesting directions*
+
+### Precision Targeting of BFL-1/A1 and an ATM Co- dependency in Human Cancer-- Rachel M. Guerra, Gregory H. Bird, Edward P. Harvey
+
+> Guerra et al. constructed an exquisitely selective BFL-1 inhibitor capable of covalent BFL-1 targeting and cellular penetrance without membrane disruption. Mining a genetic dependency database revealed a spectrum of BFL-1 dependency in cancer and an ATM co- dependency in AML, prompting the combination of BFL-1 and ATM inhibitors to achieve synergistic cytotoxicity.
+
+*I don't understood all the nuances of the paper, especially the design and thought process displayed in the results.*
+
+*The papeer could have needed a bit more explanation on the underlying process it is trying to solve (schematics to avoid repeating long enumeration of action of protein)*
+
+
+Here the author reuse and modify a NOXA protein to create one that will very specifically bind and inhibate BFL1 (with D-NA (at N term)) and thus reactivate the apoptotic route of the cell. They use staple peptide to consolidate the protein SAHB15 and subsequently modified aa for less hydrophobic ones to create a protein that could enter the cells without destroying them. they then undertakent to test variation, precision etc.. of this protein to confirm its pharmacological relevance in BFL1 and ATM co dependant ccl
+
+---------
+ATM ataxia-telangiectasia-mutated
+
+CCL cancer cell line
+
+---------
+
+### Pioneer factors govern super-enhancer dynamics in stem cell plasticity and lineage choice-- Rene C. Adam, Hanseul Yang, Shira Rockowitz, Samantha B. Larsen, Maria Nikolova, Daniel S. Oristian
+
+
+*what about computing superenhancers from raw sequence data by using a DL tool.
+CNN on 250k bp (should reuse b&w like parameters) or maybe multiply values into one. 2^10 by combining 5 values)*
+
+Here by using Hair Folicule stem cell as a proxy. researchers showed the impact of the pionner factor SOX9 on stem cell plasticity by activating other super enhancer link to the HFSC plasticity by initiating H3K27ac. Going with more precision in the superenhancer study for a particular/different problem.
+
+----
+pioneer factors: dominant in their ability to engage silent, unmarked chromatin and initiate the recruitment of other factors, thereby imparting new function to regulatory DNA sequences. 
+
+[acetylation](https://en.wikipedia.org/wiki/Histone_acetylation_and_deacetylation)
+
+TACs Transit-amplifying cells
+
+GREAT soft(go function enrichment)
+
+HOMER soft(motif enrichment)
+
+---
+
+
+### The Evolving War on Cancer-- Daniel A. Haber, Nathanael S. Gray and Jose Baselga
+
+a review of what has been done. impacts and challenges, even reasons for the past 40yr war on cancer. what is the state of things in 2011 and what is the roadmap for the next 10-20 yrs. what will be the challenges awaiting us.
+
+
+### Statistical Methods in Integrative Genomics-- Sylvia Richardson, George C. Tseng, and Wei Sun
+
+> 1. All models have their explicit and implicit assumptions. Model fitting to the underlying data structure largely determines the success of omics data analysis.
+2. In data integration, certain biological mechanisms and prior knowledge are often known across different omics data. Proper modeling of such prior knowledge is crucial to enhance statistical power and identify biologically interpretable results.
+3. IncorporatingpriorbiologicalinformationusingBayesianhierarchicalmodelingisavery powerful method of data integration.
+4. Integration of multiple types of omics data involves ultrahigh-dimensional problems. Feature selection and its related model selection problem are major issues when devel- oping a novel method.
+5. Network-based methods are effective approaches to integrating multiple types of data and biological knowledge.
+
+*we have to know tumor purity*
+*hoizontal<->vertical* from stat to bio
+
+- Clustering
+presentation of METABRIC. foundational for tumor heterogeneity detection. MDI & BCC for bayesian clustering integrating many datasources.
+some fou
+
+- Regression
+regressing on large p small n datasets or multi omics/response models. integrating also prior (integration) information from given knowledge
+with bayesian modeling of eQTL variation impact on gene expression
+
+
+- Grahical models (same as regression, integrating structural relationship prior information)
+with the representation of a miRNA effect on gene expression
+with the representation of eQTL impact on gene expression
+
+PARADIGM: to model the DAG of the interation between CN, Gene expression, protein abundance, activity of complex, prot, etc...) and finds the value of unobserved variable given observed ones. 
+
+OmicKriging: predicting phenotype from a set of phenotype's similary matrix
+
+CONEXIC (copy number and expression in cancer) to detect modules in which copy number affects the expression of a driver gene, which in turn regulates the expression of a group of genes.
+
+HotNet: identifies significantly altered subnetworks in an interaction net- work by a network diffusion approach, which can be understood as a random walk on a gene-gene interaction graph. In other words, a somatic mutation in gene A may also affect gene A’s neighbors in the interaction graph. After network diffusion, HotNet evaluates the frequency of a subnetwork being altered across patients and find those subnetworks that were recurrently altered. Network diffusion provides a network-smoothed version of the consequences of somatic mutations. clustering the network-smoothed mutation profiles by nonnegative matrix factorization
+
+
+-----
+ Zellner’s g-prior: give $y_{i}=x_{i}^{\top }\beta +\varepsilon _{i}.$
+ Zellner's g-prior for ${\displaystyle \beta } \beta$  is a multivariate normal distribution with covariance matrix proportional to the inverse Fisher information matrix for ${\displaystyle \beta } \beta$ .
+ like so : ${\displaystyle \beta |\psi \sim {\text{MVN}}[\beta _{0},g\psi ^{-1}(X^{\top }X)^{-1}].}$
+
+-----
+
+### The Cancer Genome Atlas Pan-Cancer analysis project-- The Cancer Genome Atlas Research Network, John N Weinstein, Eric A Collisson, Gordon B Mills, Kenna R Mills Shaw5, Brad A Ozenberge...
+
+really a presentation of TCGA and its goals and objectives as of 2013. Most specifically a project to computationally analyse a set of ~3000 tumors from 6 data types (RPPA meth CN mut miRNA eRNA) from 12 tumor organ types.
+
+> • What is the spectrum of nucleotide- and dinucleotide-level changes associated with different carcinogenic etiologies (for example, tobacco, pathogens or inflammation) operating in different parts of the body?
+• Will integration of additional data sources, including additional tumor types from TCGA and other projects, increase the power of analysis in useful ways?
+• How can characterization based on molecular changes complement pathological analysis for classification of cancers into tumor lineages with potentially different clinical management?
+• Can molecular profiles effectively categorize cancers for therapeutic decision-making?
+• Are there predictive expression-based signatures for genomic events that transcend tissues, reflecting pathways disrupted by the alterations?
+• Will comprehensive protein analysis through emerging mass spectrometry approaches in the Clinical Proteomic Tumor Analysis Consortium (CPTAC) and other efforts extend the power of the genomic, transcriptomic and proteomic analyses in TCGA?
+• Will whole genome analysis demonstrate the influence of mobile elements, mutations in non-coding regions and connections to constitutional risk-associated loci?
+• How are changes in protein families distributed across different tumor types?
+• Are aberrations in specific protein domains or pathways distributed differentially across tumor lineages?
+• Beyond the known examples, including in cervical, head and neck, esophageal and hepatocellular cancers, can we identify other cancer types that show virally mediated initiation?
+• Are bacteria associated with different cancer lineages (as Fusobacteria are in colorectal cancer43)?
+• Can the answers to any of these questions help in the design of novel therapies and clinical trials, with the ultimate goal of improving patient outcomes?
+
+
+### The Cancer Cell Line Encyclopedia enables predictive modelling of anticancer drug sensitivity-- Jordi Barretina, Giordano Caponigro, Nicolas Stransky, Kavitha Venkatesan, Adam A. Margolin, Sungjoon Kim, Christopher J. Wilson4, Joseph Leha, Gregory V. Kryukov, Dmitriy Sonkin, Anupama Reddy, Manway Liu, Lauren Murray, Michael F. Berger, John E. Monahan...
+
+Here there is a presentation of CCLE and examples of what can be done by using CCLE's data (with additional experiments) to understand relationship between genes plasma cell lineage correlated with sensitivity to IGF1 receptor, AHR expression was associated with MEK inhibitor efficacy in NRAS-mutant lines and SLFN11 expression predicted sensitivity to topoisomerase inhibitors. using elastic net modelling studies identified key pre- dictors or mechanistic effectors of drug response.
 
 
 
-### Detecting Circular RNA from High-throughput Sequence Data with de Bruijn Graph -- Xin Li and Yufeng Wu
+
+### DeepNano: Deep recurrent neural networks for base calling in MinION nanopore reads--- Vladimir Boza,Broňa Brejova, Toma svinař*
+
+a simple vanilla bidirecRNN to associate bp to reading events from the oxford nanopore minION machine. it achieves similar results to oxford's LSTM algorithm while being opensource and faster. 
+it uses longrange relationships information to estimate the actual values. 
+
+*some things are not explaned nor well document (maybe in the code).*
+*further tests of the accuracy accross more data types etc would be essential to assess the actual quality of this algorithm*
+
+### Systematic investigation of genetic vulnerabilities across cancer cell lines reveals lineage-specific dependencies in ovarian cancer -- Hiu Wing Cheunga, Glenn S. Cowleyb, Barbara A. Weirb, Jesse S. Boehmb, Scott Rusinb, Justine A. Scottb, Alexandra Eastb, Levi D. Alib, Patrick H. Lizotte...
 
 
-### Advancing the aging biology toolkit -- TROY K COODY AND ADAM L HUGHES
+after using the project achilles data and making specific analyses. the researchers found that PAX8 was a specific dependency in ovarian cancers.
+
+----
+woe weight of evidence
+
+---
+
+
+### Systematic identification of genomic markers of drug sensitivity in cancer cells-- Mathew J. Garnett, Elena J. Edelman, Sonja J. Heidorn, Chris D. Greenman, Anahita Dastur, King Wai Lau, Patricia Greninger...
+
+a presentation of what will become project PRISM. using results from 130 compounds to 600 CCL. finding known and a lot of unexpected correlations. using regular MANOVA analysis, elastic net prediction to find most predictable transcriptionalvfeatures for drug sensitivty.
+
+
+*interesting use of some algos*
+
+---
+MSI: microsatelitte instability
+
+capillary sequencing: similar to electrophoresis with a laser that makes each nucleotide shine a specific color which helps in sequencing the dna
+
+PICNIC: predict copy number from microarray data
+
+RMA: Robust Multi-Array Average (for gene expression data)
+
+heteroscedasticity variability in variance
+
+---
+
+### Advancing the aging biology toolkit-- TROY K COODY AND ADAM L HUGHES
+
+a presentation from Calico of a new method to segregate old cells (here for yeast) in order to do better analysis between the two and understand what might explain aging for further research. 
+
+### Models of human core transcriptional regulatory circuitries-- Violaine Saint-André, Alexander J. Federation, Charles Y. Lin
+
+Here is described a framework to guess the CRC from simple CHIP data of various human tissues. to understand cell types and more about the CRC from this data. It shows this framework mainly in analysing ESC but also provide the same analysis on 80 different cell type.
+
+
+*can we guess CRC and SE from simple CHIP data of each cells? 
+can we infer the cell type from it? can we infer the cell type from only a small subset of RNAs which encodes CRC?*
+
+*use it for the next further trial of my data*
+https://hoffmanlab.org/proj/virchip/
+
+----
+CRC: core transcriptional regulatory circuitry
+
+hESC: human ESC
+CNA: copy number alteration
+
+RTK: receptor tyrosine kinases
+PI3K: phosphoinositide 3- kinase
+
+----
+
+
+### Pan-cancer network analysis identifies combinations of rare somatic mutations across pathways and protein complexes-- Mark D M Leiserson, Fabio Vandin, Hsin-Ta Wu, Jason R Dobson
+
+
+a network analysis using a heat diffusion model accross network of interconnected genes identifies mutation (heat) that display important network for the cancers accross thousands of cancer and tens of cancer types. this analysis focus on 3 interesting pathways: 
+- SWI/SNF chromatin-remodeling complex
+- BAP1 complex
+- cohesin and condensin complexes
+- MHC class I proteins
+- the telomerase complex
+
+they also found 92 mutated gene with usually low score in non networked single gene analysis
+
+It might be used on any gene data with a value measure for each gene!
+
+*Q: How do they guess link to cancer from only presence in the netwtork?*
+
+*N: why don't we stop looking at what is mutated and start looking at what is not mutated? like looking at what specific circuitry cancers rely upon to stay alive, that other regular cells might not need?*
+
+---
+GSEA gene set enrichment analysis
+
+---
+
+### Auto-Encoding Variational Bayes -- Diederik P. Kingma, Max Welling
+
+presentation of an estimator of variational lower bounds for approximate inference with continuous latent variables. and the presentation of an Auto Encoder (like) variational bayes which learns an even beter approximate inference using SGVB. For the case of i.i.d. datasets and continuous latent variables per datapoint.
+
+
+### Towards systematic functional characterization of cancer genome-- Jesse S. Boehm, and William C. Hahn, BroadInstitute
+
+A demonstration of the many techniques to perform functional characterization of genes: 
+- RNAI
+- ORF
+- transposons
+- small molecule
+- (now much more, like crispr screens etc...)
+
+*Q: I don't really get the concept of depleted shRNA, don't we only look at the amount of cells? do we look at how many shRNA are left to have a notion of usage?*
+
+---
+Transformation: The process by which a normal cell acquires cellular phenotypes of a cancer cell
+
+ORF: Open Reading Frame
+
+xenograft: transplanting tissue into another organism
+PDX: patient derived xenograph 
+
+primary cells: cells coming directly from living tissues
+
+---
+
+### A Combination CDK4/6 and IGF1R Inhibitor Strategy for Ewing Sarcoma -- Lillian M. Guenther, Neekesh V. Dharia, Linda Ross, Amy Conway1, Amanda L. Robichaud...
+
+using ORF resistance screens and knowledge from the achilles project with in vitro and xenograft models.
+
+*it presents a wide variety of tests used to demonstrate such things using mainly experimental wet-lab(biocell) procedures*
 
 
 
-------------
+----
+SA-b-gal staining: detecting secent cells (dying)
+nucleation: self assembly 
 
+---
+
+### Core Transcriptional Regulatory Circuit Controlled by the TAL1 Complex in Human T Cell Acute Lymphoblastic Leukemia-- Takaomi Sanda, Lee N. Lawton, M. Inmaculada Barrasa, Peng Fan, Holger Kohlhamme... 
+
+identifying it with other TF binders and position allowed to find a feedback circuit comprised of GATA3, and RUNX1 activating MYB. which shows the supreme importance of TAL1 in this case. In fine understanding some of the mechanisms behind T ALL. 
+
+---
+primagraft: xenograft without any pre in vitro culture
+
+CCRF-CEM: 	A T lymphoblastoid line obtained from the peripheral blood of a 4 year old Caucasian female with acute lymphoblastoid leukaemia. These may be grown to a high density in a spinner type suspension culture. Cells are reported to be free of virus particles as determined by electron microscopy.
+
+ectopic: abnormal
+
+
+---
+
+
+### V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation-- Fausto Milletari1, Nassir Navab, Seyed-Ahmad Ahmadi
+
+Presenting a new model that relies solely on 3D convolution/deconvolution to present a heat map of probability to be in foreground. It achieves very good results but might lack training data compared to 2D systems which can reuse learnings. It uses a lot of feature wise transformation and no maxpooling(only conv).
+
+*N: it seems that it takes too few pixels to learn interesting features (might take NxMxM pixels with N<M)
+
+
+*N: important use of [featurewise transfo](https://distill.pub/2018/feature-wise-transformations/)*
+
+---
+foreground: the ROI (else background)
+
+---
+
+
+### CRISPR-Cas9 screen reveals a MYCN-amplified neuroblastoma dependency on EZH2-- Liying Chen, Gabriela Alexe, Neekesh V. Dharia, Linda Ross, Amanda Balboni Ini...
+
+Here we can see an analysis that start to be recurrent to other related papers where results from achilles and now from crispr screens allows the test of a pathway / transcruption factor. here EZH2 in MYCN amplifyed neuroblsotame. The analsysis tries to identify druggable mechanisms, correlations to other protein expressions and TFs. 
+
+> We assessed the clinical relevance of EZH2 inhibition, both in vitro and in vivo, using multiple perturbation approaches, such as selective small-molecule EZH2 inhib- itors, shRNA-mediated knockdown, and CRISPR-Cas9 knockout. We also studied the epigenetic networks and their response to EZH2 inhibition in MYCN-amplified neuroblastoma and explored the underlying molecular mechanisms of the sensitivity to EZH2 inhibitors using biochemical, genomic, and epigenom- ic approaches.
+
+
+### The variability of expression of many genes and most functional pathways is observed to increase with age in brain transcriptome data.-- Veronika R. Kedlian, Handan Melike Donertas, Janet M. Thornton
+
+Knowing that there is evidence for increaser in variability of expression accross cell lines in the human genome with age. Researchers looked at brain cells (frontal/pre frontal) and discovered a slight increase in the variability of expression accross different techniques (measures of variations, comparisons)
+They *most importantly* did a go search and discovered that this increase in variability was mostly for genes related to 
+ageing processes.
+
+----
+BP GO – Biological Process Gene Ontology,
+DE – differentially expressed genes,
+DV – differentially variable genes,
+Dvar – measure of change in the expression variability with age, GO – Gene Ontology,
+GSEA – Gene Set Enrichment Analysis,
+IQR – interquartile range,
+KEGG – Kyoto Encyclopedia of Genes and Genomes, PMI – post-mortem interval,
+QN – quantile normalization,
+RIN – RNA integrity number,
+Rho – Spearman correlation estimate,
+SVA – Surrogate Variable Analysis
+
+-----
+
+### EWS/FLI Confers Tumor Cell Synthetic Lethality to CDK12 Inhibition in Ewing Sarcoma-- Amanda Balboni Iniguez, Bjorn Stolte, Emily Jue Wang, ...
+
+> Here we report that Ewing sarcoma is a disease with exquisite sensitivity to the covalent small-molecule CDK7/12/13 inhib- itors, THZ1 and THZ531. These compounds act, in part, through inhibition of CDK12 and the subsequent suppression of genes involved in DNA damage repair
+
+explained by the fusion protein EWS/FLI
+
+### Cell Detection in Microscopy Images with Deep Convolutional Neural Network and Compressed Sensing-- Yao Xue and Nilanjan Ray
+
+using compressed sensing in two different manners to encode the position of features in microscopy imaging of cells thus reducing dimensions and possible prediction error from a vanilla CNN. looking at theoretical proof the CNNCS works and experimental demonstration on different datasets achieving sota results.
+
+
+### COSMIC: exploring the world’s knowledge of somatic mutations in human cancer-- Simon A. Forbes, David Beare, Prasad Gunasekaran, Kenric Leung, Nidhi Bindal, Harry Boutselakis, Minjie Ding...
+
+A description of the COSMIC database
+
+
+
+### IMPACT: Genomic Annotation of Cell-State-Specific Regulatory Elements Inferred from the Epigenome of Bound Transcription Factors-- Tiffany Amariuta, Yang Luo, Steven Gazal, Emma E. Davenport...
+
+A similar work to what Brendan Frey has been doing with neural networks but with logistic regressing Except here, it is trying to infer bound AND unbound region from sequence and more explicitly, infer regulatory power of each nucleotides for a particular cell state and TF given a set of regulatory features such as open Chromatin, methylation marks etc...
+
+
+## Extensive Variation in Chromatin States Across Humans-- Maya Kasowski, Sofia Kyriazopoulou-Panagiotopoulou, Fabian Grubert, Judith B. Zaugg,Anshul Kundaje, Yuling Liu, Alan P. Boyle, Qiangfeng Cliff Zhang, Fouad Zakharia, Damek V. Spacek, Jingjing Li, Dan Xie, Anthony Olarerin-George, Lars M. Steinmetz, John B. Hogenesch, Manolis Kellis, Serafim Batzoglou
+
+Paper presenting the early finding in chromatin variation accross human genre without much variation in gene expression (can be related to cell type/state?). Some marks are highly inherited. They also showed that places of this variability are also high GWAS region. Which is a base results of enhancers and chromatin modification
+
+
+## ChromHMM: automating chromatin- state discovery and characterization-- Jason Ernst, Manolis Kellis
+
+A presentation of ChromHMM which is a markovian models to infer chromatin modification and create chrom states from reads from Chip seq of this chromatin. (denoising kinda?)
+
+## Histone modifications at human enhancers reflect global cell-type-specific gene expression-- Nathaniel D. Heintzman, Gary C. Hon, R. David Hawkins1, Pouya Kheradpour, Alexander Stark, Manolis Kellis...
+
+another landmark paper from 2009 explaining the viariability in chromatin modification, its link with TFBS regulatory power and (for some of them H3K27 for ex) its implication in specific cellular states.
+
+### Strelka2: fast and accurate calling of germline and somatic variants-- Sangtae Kim, Konrad Scheffler, Aaron L. Halpern, Mitchell A. Bekritsky
+
+a variant caller for germline and somatic sequencing. Improves liquid model analysis mainly since take in account P() of being contaminated. It models sequencing noise via e (1) the genotype probability computed by the core variant probability model, (2) root-mean-square mapping quality,(3) strand bias, (4) the fraction of reads consistent with locus haplo- type model, and (5) the complexity of the reference context.
+
+
+### STAR: ultrafast universal RNA-seq aligner--PacBio
+
+star is the first and most used algorithm specifically designed for aligning rna seq data (especially paired end reads) from 3rd gen sequencer (longer reads). it is 30 times faster than previous algo and uses a two step algo:
+- seed searching (Maximal mappable array) implemented through uncompressed suffix arrays which account for mismatches, low quality read ends, multiple solutions and gaps (introduced by splicing)
+- Clustering, stitching and scoring based on proximity of each read, accounting for overlapping reads and distant reads based on a user provided threshold
+
+### STAR-Fusion: Fast and Accurate Fusion Transcript Detection from RNA-Seq-- Brian J. Haas1, Alex Dobin, Nicolas Stransky, Bo Li, Aviv Regev...
+
+star fusion uses the output from star on porblematic mappings to reprocess the reads in order to find potential fusions, remmapping based on coordinate overlap (using interval trees). 
+Finally it filters the output by removing fusions with minimal supports (depending on the support type), merging closeby fusions, removing lowly supported isoforms. removing too similar gene fusion isoforms and when there is too many fusion for the same gene.
+
+
+### Title: Exploring genetic interaction manifolds constructed from rich phenotypes -- Thomas M. Norman, Max A. Horlbeck, Joseph M. Replogle
+
+A presentation of a vision to repoduce from perturb seq screen + transcriptome analysis, the genetic interaction of each genes. From this, guess the manifold of cell state. 
+They present a first simple and criticable example of it but address more a vision and an idea than anything else. Are perturb seq accurate enough for guessing interactions? Can all possible state be estimated from such method?
+
+
+### RSEM: accurate transcript quantification from RNA-Seq data with or without a reference genome-- Bo Li, Colin Dewey
+
+this package used in the GTEx pipeline uses EM algo to quantify gene expression given alignment or reconstructing the transcriptome from scratch. EM is mainly used to take in account isoforms and give Bayesian posterior probability. It takes in account quality score of reads and gives CI. It can also be used as a generative model from the weights learnt from each gene
+>Taking advantage of this module, we have deter- mined that a large number of short SE reads is best for gene-level quantification, while PE reads may improve within-gene isoform frequencies for the mouse and human transcript sets. 
+
+
+### [Sensitive detection of somatic point mutations in impure and heterogeneous cancer samples](https://www.nature.com/articles/nbt.2514)
+
+
+### NGSEA: network-based gene set enrichment analysis for interpreting gene expression phenotypes with functional gene sets-- Heonjong Han, Sangyoung Lee, and Insuk Lee
+
+This method is using the GSEA method (with AE) and rescore these by adding the average value of their connected gene in the network given by https://www.inetbio.org/humannet/ they then showed that it was improving on regular GSEA and discovered more data than what Broad's Cmap found for drug targets for example.   
+
+
+### An oncogenic super-enhancer formed through somatic mutation of a noncoding intergenic element-- Marc R. Mansour, Brian J. Abraham, Lars Anders, Alla Berezovskaya, Alejandro Gutierrez, Adam D. Durbin
+
+
+## Next-generation characterization of the Cancer Cell Line Encyclopedia-- CDS
+
+
+### Reproducible pharmacogenomic profiling of cancer cell line panels-- Peter m. Haverty, Eva Lin, Jenille Tan2, yihong yu...
+
+IIIIIIIIIIII
