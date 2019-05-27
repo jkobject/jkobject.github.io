@@ -1229,10 +1229,24 @@ this package used in the GTEx pipeline uses EM algo to quantify gene expression 
 This method is using the GSEA method (with AE) and rescore these by adding the average value of their connected gene in the network given by https://www.inetbio.org/humannet/ they then showed that it was improving on regular GSEA and discovered more data than what Broad's Cmap found for drug targets for example.   
 
 
+### Reverse engineering cellular networks-- Califano Lab (ARAcne)
+
+Presentation of this algorithm that can compute Mutual information between pairs of genes categorized by concentration of their related output molecules. This then NxN matrix can then be used to find networks. these are then filtered on confidence interval and DPIs to create resulting network. the more condition on the cell the better the results. *might be interesting to use on Apollo data*
+
+### Network-based inference of protein activity helps functionalize the genetic landscape of cancer-- Mariano J. Alvarez, Yao Shen, Federico M. Giorgi, Califano Lab...
+
+
+
+### limma powers differential expression analyses for RNA-sequencing and microarray studies-- Matthew E. Ritchie, Belinda Phipson, Di Wu...
+
+
+a presentation of the tool suite based on analysis of count data from gene products of different assay types. Based on a GLM taking in account a wide range of dependencies between genes, experiments, assays etc.. and allowing to analysis data at all stages of processing. 
+It is presented pre processing stage of RNA seq and micro array data. DE computations. Expr. Prof. Association, Hypthesis testing
+
 ### An oncogenic super-enhancer formed through somatic mutation of a noncoding intergenic element-- Marc R. Mansour, Brian J. Abraham, Lars Anders, Alla Berezovskaya, Alejandro Gutierrez, Adam D. Durbin
 
 
-## Next-generation characterization of the Cancer Cell Line Encyclopedia-- CDS
+### Next-generation characterization of the Cancer Cell Line Encyclopedia-- CDS
 
 
 ### Reproducible pharmacogenomic profiling of cancer cell line panels-- Peter m. Haverty, Eva Lin, Jenille Tan2, yihong yu...

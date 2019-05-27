@@ -36,4 +36,5 @@ group :jekyll_plugins do
 	gem 'jekyll-scholar'
 	gem 'jekyll-seo-tag'
 	gem 'jekyll-toc'
+	gem 'unicode'
 end
