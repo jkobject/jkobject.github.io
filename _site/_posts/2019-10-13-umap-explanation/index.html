@@ -198,38 +198,43 @@
 
 <p>And puts them back in lower dimensions. This allows for visualizing point clouds in 2D and also finding a subspace/ base / manifold in which the cloud data lies.</p>
 
-<p>This can be better visualizing in the 3D to 2D case. The reduced vector is also called an embedding of the first one.</p>
+<p>This can be better seen in the 3D to 2D case. The reduced vector is also called an embedding of the first one.</p>
 
 <p><img src="/assets/images/dimred.jpg" alt="scikit learn" class="align-center" /></p>
 
 <p><em>View of learning the shape of a “sheet of paper” only by knowing a set of points that lie on it.</em></p>
 
-<p>Unlike many other famous techniques (<a href="https://medium.com/@raghavan99o/principal-component-analysis-pca-explained-and-implemented-eeab7cb73b72">PCA</a>, <a href="d">MDS</a>…), it learns this structure by using local information about the points (neighbors), like <a href="https://medium.com/@raghavan99o/principal-component-analysis-pca-explained-and-implemented-eeab7cb73b72">t-SNE</a>.</p>
+<p>Unlike many other famous techniques (<a href="https://medium.com/@raghavan99o/principal-component-analysis-pca-explained-and-implemented-eeab7cb73b72">PCA</a>, <a href="d">MDS</a>…), it learns this structure by using local information. i.e. only looking at specific patches at a time. The neighbors of each points, like <a href="https://medium.com/@raghavan99o/principal-component-analysis-pca-explained-and-implemented-eeab7cb73b72">t-SNE</a>. This type of technique is called non linear as it can learn complex “bendy” shapes (like the S above).</p>
 
-<p>Neighbor information is better encoded into a graph with edges representing distances to nearest points.</p>
+<p>Neighbor information is better encoded into a graph. With edges representing distances between points. and only displaying the edges to the nearest points in the neighborhood.</p>
 
-<p>This distance is normalized by all distances this point has to its neighbors.</p>
+<p>This distance is normalized by all distances this point has to its neighbors, meaning now the range of possible distances is transformed into a [0,1] range where the closest point will be at a distance 0 and the furthest point will be at a distance computed such that summing all the distances between all neighbors will get to $log2(#neibors)$.</p>
 
-<p>Then for all the neighbors we create a set (a list of unique things): for all the edges. this set will be fuzzy as it also contains a value representing how much each neighbors is in the set of neighbors based on its distance to the center point.</p>
+<p>Then for all the neighbors we create a set (a list of unique things) for all edges.</p>
 
-<p>We will then merge all the sets created for each point.
-i.e. we will then merge the edges and keep only the ones with the lowest distances.</p>
+<p>This set will be “fuzzy”, as it also contains a value representing how much each neighbors to a point is in the set of neighbors to this point, based on its distance to the center point.</p>
 
-<p>We then take each edges and considers them together as a graph.</p>
+<p>We will do this for each point and then merge all the sets created for each point.
+Meaning, we will merge the edges and keep only the ones with the lowest distances.</p>
 
-<p><em>Note that we are thinking here about graph of nodes and edges but the topological logic could be applied to the faces made by each set of 3 edges and the volumes made by each set of 4 faces, etc …</em></p>
+<p>We then take each edges and consider them together as a graph or a skeleton.</p>
+
+<p><strong>Pausing for a second</strong>, we can really see that the only thing we have done here is defined edges between points and merging them together. However you have to understand that the same edge in two different set, will have two different distances as they have both been normalized by different sets of neighbors. Thus even a point far away from everything else will get one of its edges in the graph. 
+These two edges would get merged by using the <a href="https://en.wiktionary.org/wiki/t-conorm">t-conorm</a> (which a fuzzy logic way of taking the <a href="https://en.wikipedia.org/wiki/Norm_(mathematics)">norm</a> of something) on their two respective lengths.</p>
+
+<p><em>Note that we are thinking here about graph of nodes and edges but the topological logic could be applied to the faces made by each set of 3 edges and the volumes made by each set of 4 faces, etc … This would complexify the model (and render it impossible to compute) but also make it more closer to the theory underlying it</em></p>
 
 <p>We then take the core components of this graph using <a href="https://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html#sphx-glr-auto-examples-cluster-plot-cluster-comparison-py">spectral embedding</a>, where we basically take the <a href="https://www.youtube.com/watch?v=PFDu9oVAE-g">eigenvector</a> of a <a href="https://en.wikipedia.org/wiki/Adjacency_matrix">matrix of adjacency</a> (i.e. A square of numbers where rows represent the nodes of the graph and the columns represent the same nodes and the values of the matrix are the distance between, each point)</p>
 
-<p>It is a <a href="https://www.youtube.com/watch?v=PFDu9oVAE-g">decomposition</a> of the information into two things, one that define a base for the object to exist in and the other defining the layout of the object. you need both to reconstruct the object.</p>
+<p>It is a <a href="https://www.youtube.com/watch?v=PFDu9oVAE-g">decomposition</a> of the information into two things: one that define a base for the object to exist in and the other defining the layout of the object. You need both to reconstruct the object.</p>
 
-<p>Here we will only take the first 2 most important value of the base and considers it as what defines our object in 2 dimension (it can be any number lower than the initial number of dimension). The two values here are the dimensions and their dimensions are each of the different points</p>
+<p>Here we will only take the first 2 most important value of the base and considers it as what defines our object in 2 dimension (but it could be any other number, lower than the initial number of dimension). The two values here are vectors: they represent the 2 dimensions of each points (x,y) and each of their value/dimensions represent each of the different points in our point cloud.</p>
 
 <p>Finally we will try to improve this first version by a <a href="https://en.wikipedia.org/wiki/Mathematical_optimization">minimization</a> process. There, we want to apply a physical-like force between the nodes so that close connected edges get closer together (up to a minimum distance)</p>
 
 <p><img src="/assets/images/umap.png" alt="" class="align-center" /></p>
 
-<p>we can see the relation to the number of samples used and the max distance to create graph edges.</p>
+<p><em>we can see the relation to the number of samples used and the max distance to create graph edges.</em></p>
 
 <p>All in all, there is a theoretical explanation of the algorithm that can be seen in terms of learning <a href="https://en.wikipedia.org/wiki/Fuzzy_logic">fuzzy</a> <a href="https://en.wikipedia.org/wiki/Simplicial_set">simplicial sets</a> defining the local structure of the high dimensional data and of the lower dimensional one and making the two sets converge.</p>
 
