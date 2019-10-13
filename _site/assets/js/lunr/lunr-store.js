@@ -59,6 +59,11 @@ var store = [{
         "tags": ["Computational Biology","Associate","Job","Boston","Research"],
         "url": "https://jkobject.com/blog/a-month-at-the-broad/",
         "teaser":"https://jkobject.com/assets/images/advancedstudy.jpg"},{
+        "title": "UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction",
+        "excerpt":"Umap is a dimensionality reduction algorithm. It takes points defined by vectors of high dimensions: 2D vector= (x,y), 3D vector= (x,y,z), ND vector= (x,y,z,a,b,c,…n) And puts them back in lower dimensions. This allows for visualizing point clouds in 2D and also finding a subspace/ base / manifold in which the...","categories": ["explanation"],
+        "tags": ["Computational Biology","Data Science","Mathematics"],
+        "url": "https://jkobject.com/blog/umap-explanation/",
+        "teaser":"https://jkobject.com/assets/images/dimred.jpg"},{
         "title": "CaImAn",
         "excerpt":"Recent advances in calcium imaging acquisition techniques are creating data sets of the order of Terabytes/week. Memory and computationally efficient algorithms are required to analyse in reasonable amount of time terabytes of data. This projects implements a set of essential methods required in the calcium imaging movies analysis pipeline. Fast...","categories": ["Research Project"],
         "tags": ["Big Data","Matrix Factorization","ML","Python","Matlab"],

@@ -39,6 +39,10 @@ LINKERS some of them are unique page which present and links to other websites. 
 archive: Where the previous website exists
 assests: Where the images and documents are placed
 
+## publish
+
+to push a new version, just do:
+`bundle update && jekyll build && git add . && git commit -m 'new site version' && git push`
 
 
 ## legal

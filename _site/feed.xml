@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://jkobject.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jkobject.com/" rel="alternate" type="text/html" /><updated>2019-05-26T20:00:41-04:00</updated><id>https://jkobject.com/feed.xml</id><title type="html">Jérémie</title><subtitle>My website and blog.</subtitle><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><entry><title type="html">My first month at the Broad Institute</title><link href="https://jkobject.com/blog/a-month-at-the-broad/" rel="alternate" type="text/html" title="My first month at the Broad Institute" /><published>2019-05-25T00:00:00-04:00</published><updated>2019-05-25T00:00:00-04:00</updated><id>https://jkobject.com/blog/a-month-at-the-broad</id><content type="html" xml:base="https://jkobject.com/blog/a-month-at-the-broad/">&lt;p&gt;I arrived 🛬 in Boston exactly a month ago. I managed to get my Visa 5 hours🕔 before catching my plane and the next➡️ thing you know. I was in an unfurnished apartment, waiting for it all to start.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://jkobject.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jkobject.com/" rel="alternate" type="text/html" /><updated>2019-10-13T18:36:38-04:00</updated><id>https://jkobject.com/feed.xml</id><title type="html">Jérémie</title><subtitle>My website and blog.</subtitle><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><entry><title type="html">UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction</title><link href="https://jkobject.com/blog/umap-explanation/" rel="alternate" type="text/html" title="UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction" /><published>2019-10-13T00:00:00-04:00</published><updated>2019-10-13T00:00:00-04:00</updated><id>https://jkobject.com/blog/umap-explanation</id><content type="html" xml:base="https://jkobject.com/blog/umap-explanation/">&lt;p&gt;Umap is a dimensionality reduction algorithm. It takes points defined by vectors of high dimensions:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;2D vector= (x,y),&lt;/li&gt;
+  &lt;li&gt;3D vector= (x,y,z),&lt;/li&gt;
+  &lt;li&gt;ND vector= (x,y,z,a,b,c,…n)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And puts them back in lower dimensions. This allows for visualizing point clouds in 2D and also finding a subspace/ base / manifold in which the cloud data lies.&lt;/p&gt;
+
+&lt;p&gt;This can be better visualizing in the 3D to 2D case. The reduced vector is also called an embedding of the first one.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/dimred.jpg&quot; alt=&quot;scikit learn&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;View of learning the shape of a “sheet of paper” only by knowing a set of points that lie on it.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Unlike many other famous techniques (&lt;a href=&quot;https://medium.com/@raghavan99o/principal-component-analysis-pca-explained-and-implemented-eeab7cb73b72&quot;&gt;PCA&lt;/a&gt;, &lt;a href=&quot;d&quot;&gt;MDS&lt;/a&gt;…), it learns this structure by using local information about the points (neighbors), like &lt;a href=&quot;https://medium.com/@raghavan99o/principal-component-analysis-pca-explained-and-implemented-eeab7cb73b72&quot;&gt;t-SNE&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Neighbor information is better encoded into a graph with edges representing distances to nearest points.&lt;/p&gt;
+
+&lt;p&gt;This distance is normalized by all distances this point has to its neighbors.&lt;/p&gt;
+
+&lt;p&gt;Then for all the neighbors we create a set (a list of unique things): for all the edges. this set will be fuzzy as it also contains a value representing how much each neighbors is in the set of neighbors based on its distance to the center point.&lt;/p&gt;
+
+&lt;p&gt;We will then merge all the sets created for each point.
+i.e. we will then merge the edges and keep only the ones with the lowest distances.&lt;/p&gt;
+
+&lt;p&gt;We then take each edges and considers them together as a graph.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note that we are thinking here about graph of nodes and edges but the topological logic could be applied to the faces made by each set of 3 edges and the volumes made by each set of 4 faces, etc …&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;We then take the core components of this graph using &lt;a href=&quot;https://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html#sphx-glr-auto-examples-cluster-plot-cluster-comparison-py&quot;&gt;spectral embedding&lt;/a&gt;, where we basically take the &lt;a href=&quot;https://www.youtube.com/watch?v=PFDu9oVAE-g&quot;&gt;eigenvector&lt;/a&gt; of a &lt;a href=&quot;https://en.wikipedia.org/wiki/Adjacency_matrix&quot;&gt;matrix of adjacency&lt;/a&gt; (i.e. A square of numbers where rows represent the nodes of the graph and the columns represent the same nodes and the values of the matrix are the distance between, each point)&lt;/p&gt;
+
+&lt;p&gt;It is a &lt;a href=&quot;https://www.youtube.com/watch?v=PFDu9oVAE-g&quot;&gt;decomposition&lt;/a&gt; of the information into two things, one that define a base for the object to exist in and the other defining the layout of the object. you need both to reconstruct the object.&lt;/p&gt;
+
+&lt;p&gt;Here we will only take the first 2 most important value of the base and considers it as what defines our object in 2 dimension (it can be any number lower than the initial number of dimension). The two values here are the dimensions and their dimensions are each of the different points&lt;/p&gt;
+
+&lt;p&gt;Finally we will try to improve this first version by a &lt;a href=&quot;https://en.wikipedia.org/wiki/Mathematical_optimization&quot;&gt;minimization&lt;/a&gt; process. There, we want to apply a physical-like force between the nodes so that close connected edges get closer together (up to a minimum distance)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/umap.png&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;we can see the relation to the number of samples used and the max distance to create graph edges.&lt;/p&gt;
+
+&lt;p&gt;All in all, there is a theoretical explanation of the algorithm that can be seen in terms of learning &lt;a href=&quot;https://en.wikipedia.org/wiki/Fuzzy_logic&quot;&gt;fuzzy&lt;/a&gt; &lt;a href=&quot;https://en.wikipedia.org/wiki/Simplicial_set&quot;&gt;simplicial sets&lt;/a&gt; defining the local structure of the high dimensional data and of the lower dimensional one and making the two sets converge.&lt;/p&gt;
+
+&lt;p&gt;The explanation defined in part 2 of the paper can be understood by anyone after reading &lt;a href=&quot;https://books.google.com/books?id=xbL11KfgiEAC&amp;amp;printsec=frontcover&amp;amp;hl=fr&amp;amp;source=gbs_ge_summary_r&amp;amp;cad=0#v=onepage&amp;amp;q&amp;amp;f=false&quot;&gt;this book&lt;/a&gt; which will allow the reader to gain the vocabulary to understand the wikipedia pages defining the vocabulary used in the paper. :p&lt;/p&gt;
+
+&lt;p&gt;More information about Riemannian topology can then be learned &lt;a href=&quot;http://www.math.ens.fr/~feydy/Teaching/geometrie_riemannienne_espaces_de_formes.pdf&quot;&gt;here&lt;/a&gt;. It is in French however ;)&lt;/p&gt;</content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="explanation" /><category term="Computational Biology" /><category term="Data Science" /><category term="Mathematics" /><summary type="html">Short stories about my professional experiences.</summary></entry><entry><title type="html">My first month at the Broad Institute</title><link href="https://jkobject.com/blog/a-month-at-the-broad/" rel="alternate" type="text/html" title="My first month at the Broad Institute" /><published>2019-05-25T00:00:00-04:00</published><updated>2019-05-25T00:00:00-04:00</updated><id>https://jkobject.com/blog/a-month-at-the-broad</id><content type="html" xml:base="https://jkobject.com/blog/a-month-at-the-broad/">&lt;p&gt;I arrived 🛬 in Boston exactly a month ago. I managed to get my Visa 5 hours🕔 before catching my plane and the next➡️ thing you know. I was in an unfurnished apartment, waiting for it all to start.
 The  &lt;a href=&quot;https://www.jkobject.com/blog/broadinstitute-interview/&quot;&gt;Broad Institute&lt;/a&gt; is part of these institute a lot of people have never heard👂 of. Backed by billionaire philanthropist. They do cutting edge research and give their members a dream job. In that regard they compete ➕more➕ with the silicon valley unicorn🦄 than any other company.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/broad1.png&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
@@ -235,24 +281,4 @@ It was a crucial moment where I had a lot to do but mainly a lot to learn.&lt;/p
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;strong&gt;I really miss it now !&lt;/strong&gt;&lt;/p&gt;</content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="education" /><category term="Mexico" /><category term="Travel" /><category term="Study Abroad" /><category term="Life Experience" /><summary type="html">During my third year of undergraduate studies, I went on to do a semester exchange in Mexico.🇲🇽</summary></entry><entry><title type="html">A French Engineering School</title><link href="https://jkobject.com/blog/a-french-engineering-school/" rel="alternate" type="text/html" title="A French Engineering School" /><published>2013-08-03T00:00:00-04:00</published><updated>2013-08-03T00:00:00-04:00</updated><id>https://jkobject.com/blog/a-french-engineering-school</id><content type="html" xml:base="https://jkobject.com/blog/a-french-engineering-school/">&lt;p&gt;It has now been six months since I officially finished my Engineering school, 🏫 I just received my diploma of Engineering.&lt;/p&gt;
-
-&lt;p&gt;After my &lt;a href=&quot;http://www.janson-de-sailly.fr/&quot;&gt;HighSchool&lt;/a&gt;, not knowing exactly what I should do to become like my heros: famous entrepreneurs and researchers, I set out to pass a “&lt;a href=&quot;https://www.concoursavenir.fr/&quot;&gt;concours&lt;/a&gt;“ in order to enter a list of french engineering school that accepts students just after they finish highschool and integrate a preparatory school.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*FnZR2lyUlB7lqriEr2x3AA.jpeg&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The french system of &lt;a href=&quot;https://en.wikipedia.org/wiki/Grandes_%C3%A9coles&quot;&gt;Grandes Écoles&lt;/a&gt; is complex and quite specific to France, 🇫🇷 : The best french students would enter a preparatory school at the end of their secondary education (which is often still within a highschool) and work for 2 to 3 years to prepare for the “concour” to integrate French Grandes Ecoles. Each School only has a couple hundreds places per yer and tens of thousands of students enter an intellectual fight to integrate the best schools and be immediately rewarded with a bright future.&lt;/p&gt;
-
-&lt;p&gt;However great, 👍 and exciting this might seem. It is also frightening and often leads to psychological despair, 😩 and a selection of a certain type of student, 👩‍🎓 . Knowing this type of environment might not be for me and not willing to take any risks I decided to pass a first “concour” before and managed to get the best school in it: &lt;a href=&quot;https://www.ece.fr/ecole-ingenieur/&quot;&gt;ECE paris&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*I2mjypLLHp6wlY_ocRa_wA.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Proud of my achievement I entered this school and its preparatory school, knowing that I only had to pass my exams to get a degree.&lt;/p&gt;
-
-&lt;p&gt;A lot then is similar to what exists in other British schooling systems countries. We may work more with an avg. of 35h of class per week but we have also loads of events, funs etc…&lt;/p&gt;
-
-&lt;p&gt;A French Diploma of Engineering is similar to getting both an M.Sc., M.eng and B.Sc. at the same time and in a more diverse set of disciplines than what is available in other British schooling systems. However students are not well prepared for academia and do not have deep specific knowledge in a define subject.&lt;/p&gt;
-
-&lt;p&gt;In ECE students had to choose a Major and a Minor in their 4th year, to do 2 international exchanges and 4 internships, to be able to graduate.&lt;/p&gt;
-
-&lt;p&gt;I thus went to Mexico, 🇲🇽 , England, did internships in Bouygues Construction, HighLife Med, the Flatiron Institute and the University of Kent (you can know more &lt;a href=&quot;http://www.jkobject.com&quot;&gt;here&lt;/a&gt;). I choose to major in Biomedical Engineering and choose Research Engineer as a minor.&lt;/p&gt;</content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="education" /><category term="Education" /><category term="Carrier" /><category term="France" /><category term="Engineer" /><category term="Prepa" /><summary type="html">It has now been six months since I officially finished my Engineering school, 🏫 I just received my diploma of Engineering.</summary></entry></feed>
+&lt;p&gt;&lt;strong&gt;I really miss it now !&lt;/strong&gt;&lt;/p&gt;</content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="education" /><category term="Mexico" /><category term="Travel" /><category term="Study Abroad" /><category term="Life Experience" /><summary type="html">During my third year of undergraduate studies, I went on to do a semester exchange in Mexico.🇲🇽</summary></entry></feed>

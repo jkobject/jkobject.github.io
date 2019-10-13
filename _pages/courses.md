@@ -62,15 +62,24 @@ input[type="range"]::-ms-fill-upper {
 
 - [ML to see](https://www.youtube.com/playlist?list=PLXH5-WxRNyUXgpUG3-XLsrErywMlnR5vQ): (100) <input type="range" disabled="disabled" value="80"/>
 - [mathematical monk](https://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA): (160) <input type="range" disabled="disabled" value="100"/>
-- [MIT Computational Biology](https://www.youtube.com/playlist?list=PLypiXJdtIca6GBQwDTo4bIEDV8F4RcAgt): Genomes, Networks, Evolution, Health (25) <input type="range" disabled="disabled" value="20 "/>
 - [dev to see](https://www.youtube.com/playlist?list=PLXH5-WxRNyUVNi-5u5gUv4Vt77fdmz7t6) (50) <input type="range" disabled="disabled" value="10"/>
 - [DeepMind's DL and RL course](https://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs) <input type="range" disabled="disabled" value="0"/>
 
 ### Slides
 _most slides here have not been made public by the authors_
 
-- Systems Biology EPFL <input type="range" disabled="disabled" value="70"/>
-- Baptiste ENS 3 <input type="range" disabled="disabled" value="0"/>
+
+- gene duplication L3 UE genomic ENS <input type="range" disabled="disabled" value="100"/>
+- the human aging problem L3 UE genomic ENS <input type="range" disabled="disabled" value="100"/>
+- MEG eukaryotic transcription and regulation ENS <input type="range" disabled="disabled" value="100"/>
+- elements in genome and UE introduction L3 UE genomic ENS <input type="range" disabled="disabled" value="100"/>
+
+- Systems Biology EPFL <input type="range" disabled="disabled" value="0"/>
+- Signaling UE genomic L3 ENS <input type="range" disabled="disabled" value="0"/>
+- Advanced Biomed imaging ECE M2 <input type="range" disabled="disabled" value="0"/>
+- Riemannian geometry ENS Math M2 <input type="range" disabled="disabled" value="0"/>
+- Human Anatomy ECE M2 <input type="range" disabled="disabled" value="0"/>
+- Baptiste Tesson's ENS 3 <input type="range" disabled="disabled" value="0"/>
 - Baptiste ENS 4 <input type="range" disabled="disabled" value="0"/>
 - Temporal Difference <input type="range" disabled="disabled" value="0"/>
 - CS231 <input type="range" disabled="disabled" value="0"/>
@@ -152,7 +161,8 @@ _as a private teacher_
 	- tensorflow
 	- pandas
 	- scikit learn
-	- ...
+	- bokeh
+	- jupyter
 - Matlab <input type="range" disabled="disabled" value="70"/>
 	- GUI
 	- signal proc
@@ -160,7 +170,39 @@ _as a private teacher_
 	- parrallel
 	- arrays
 - computational genomics <input type="range" disabled="disabled" value="20"/>
-	- vcf, fasta, fastq, ...
+	- blast
+	- ensembl
+
+	- star 
+	- rsem
+	- absolute
+	- macs
+	- ros
+	- mutect
+	- fastqc
+	- gatk
+	- strelka
+
+	- samtools
+	- bowtie
+	- deeptools
+	- bamtools
+
+	- picard 
+
+	- terra 
+	- cromwell
+	- wdl	
+	- gcp
+	- nextflow
+
+	- gsea
+	- phylogenetics
+	- 
+	- RNAseq
+	- DNAseq (targeted/ exome / whole)
+	- Chip
+	- HiC
 
 - CI <input type="range" disabled="disabled" value="50"/>
 	- travis 

@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Interviews at EPFL | Jérémie</title>
-<meta name="description" content="During the last week of January I had the chance to enter the hiring program of EPFL’s edcb program.">
+<!-- begin _includes/seo.html --><title>UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction | Jérémie</title>
+<meta name="description" content="Short stories about my professional experiences.">
 
 
   <meta name="author" content="Jérémie Kalfon">
@@ -19,27 +19,27 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Jérémie">
-<meta property="og:title" content="Interviews at EPFL">
-<meta property="og:url" content="https://jkobject.com/blog/interviews-at-epfl/">
+<meta property="og:title" content="UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction">
+<meta property="og:url" content="https://jkobject.com/blog/umap-explanation/">
 
 
-  <meta property="og:description" content="During the last week of January I had the chance to enter the hiring program of EPFL’s edcb program.">
+  <meta property="og:description" content="Short stories about my professional experiences.">
 
 
 
-  <meta property="og:image" content="https://jkobject.com/assets/images/epflinter.jpeg">
+  <meta property="og:image" content="https://jkobject.com/assets/images/dimred.jpg">
 
 
 
   <meta name="twitter:site" content="@jkobject">
-  <meta name="twitter:title" content="Interviews at EPFL">
-  <meta name="twitter:description" content="During the last week of January I had the chance to enter the hiring program of EPFL’s edcb program.">
-  <meta name="twitter:url" content="https://jkobject.com/blog/interviews-at-epfl/">
+  <meta name="twitter:title" content="UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction">
+  <meta name="twitter:description" content="Short stories about my professional experiences.">
+  <meta name="twitter:url" content="https://jkobject.com/blog/umap-explanation/">
 
   
     <meta name="twitter:card" content="summary">
     
-      <meta name="twitter:image" content="https://jkobject.com/assets/images/epflinter.jpeg">
+      <meta name="twitter:image" content="https://jkobject.com/assets/images/dimred.jpg">
     
   
 
@@ -47,7 +47,7 @@
 
 
 
-  <meta property="article:published_time" content="2019-02-05T00:00:00-05:00">
+  <meta property="article:published_time" content="2019-10-13T00:00:00-04:00">
 
 
 
@@ -60,7 +60,7 @@
   
 
 
-<link rel="canonical" href="https://jkobject.com/blog/interviews-at-epfl/">
+<link rel="canonical" href="https://jkobject.com/blog/umap-explanation/">
 
 
 
@@ -224,7 +224,7 @@
     
       
       
-        <li class="current">Interviews at EPFL</li>
+        <li class="current">UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction</li>
       
     
   </ol>
@@ -359,15 +359,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Interviews at EPFL">
-    <meta itemprop="description" content="During the last week of January I had the chance to enter the hiring program of EPFL’s edcb program.">
-    <meta itemprop="datePublished" content="February 05, 2019">
+    <meta itemprop="headline" content="UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction">
+    <meta itemprop="description" content="Short stories about my professional experiences.">
+    <meta itemprop="datePublished" content="October 13, 2019">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Interviews at EPFL
+          <h1 id="page-title" class="page__title" itemprop="headline">UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction
 </h1>
           
             <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
@@ -375,7 +375,7 @@
 
 
 
-  1 minute read
+  2 minute read
 
 </p>
           
@@ -384,29 +384,53 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>During the last week of January I had the chance to enter the hiring program of <a href="https://www.epfl.ch/">EPFL’s</a> edcb <a href="https://phd.epfl.ch/edcb">program</a>.</p>
+        <p>Umap is a dimensionality reduction algorithm. It takes points defined by vectors of high dimensions:</p>
+<ul>
+  <li>2D vector= (x,y),</li>
+  <li>3D vector= (x,y,z),</li>
+  <li>ND vector= (x,y,z,a,b,c,…n)</li>
+</ul>
 
-<p><img src="https://cdn-images-1.medium.com/max/2000/1*-iQb86AbWwJAe200V86Kuw.png" alt="" class="align-center" /></p>
+<p>And puts them back in lower dimensions. This allows for visualizing point clouds in 2D and also finding a subspace/ base / manifold in which the cloud data lies.</p>
 
-<p>There I spent four days with many PIs and around twice as much students 👩‍🎓👨‍🎓 all over the world interested in computational biology🧪 . Each of them were extremely bright.</p>
+<p>This can be better visualizing in the 3D to 2D case. The reduced vector is also called an embedding of the first one.</p>
 
-<p>Lausanne is this unique place at the center of Europe where you feel a similar atmosphere of entrepreneurship and enthusiasm and research as one would in the US.</p>
+<p><img src="/assets/images/dimred.jpg" alt="scikit learn" class="align-center" /></p>
 
-<p><img src="https://cdn-images-1.medium.com/max/4096/1*Wll-nX_BACKgSLOxL07XvQ.jpeg" alt="" /></p>
+<p><em>View of learning the shape of a “sheet of paper” only by knowing a set of points that lie on it.</em></p>
 
-<p>Here I had the chance to meet with many great researchers such as Pr. Naef working on answering fundamental questions on cellular rhythms. 
-Pr. La <a href="https://scholar.google.com/citations?user=lwsjpbMAAAAJ&amp;hl=fr">Manno</a> who tries to understand the dynamics of cellular differentiation through methods of <a href="https://www.nature.com/articles/s41586-018-0414-6">RNA velocity</a>. 
-Pr. Rahi which tries to model the dynamical interaction of interaction networks in cells. 
-Pr. <a href="https://scholar.google.com/citations?user=H7Y-wqQAAAAJ&amp;hl=fr">Barth</a> which is using knowledge in protein conformation to membrane receptors applying it to cancer research and immunotherapies. 
-Pr. <a href="https://scholar.google.com/citations?user=bXoXq2AAAAAJ&amp;hl=fr">Manley</a>, which is using methods of <a href="https://fr.wikipedia.org/wiki/Super-r%C3%A9solution">super-resolution</a> microscopy to see more about cells and proteins.</p>
+<p>Unlike many other famous techniques (<a href="https://medium.com/@raghavan99o/principal-component-analysis-pca-explained-and-implemented-eeab7cb73b72">PCA</a>, <a href="d">MDS</a>…), it learns this structure by using local information about the points (neighbors), like <a href="https://medium.com/@raghavan99o/principal-component-analysis-pca-explained-and-implemented-eeab7cb73b72">t-SNE</a>.</p>
 
-<p>As usual most of them were initially trained physicists. Each of them had specific projects using machine learning which I have been able to relate to a lot.</p>
+<p>Neighbor information is better encoded into a graph with edges representing distances to nearest points.</p>
 
-<p><img src="https://cdn-images-1.medium.com/max/2000/1*gS6bJpTt8t-UpcHm3fI8Xg.jpeg" alt="" /></p>
+<p>This distance is normalized by all distances this point has to its neighbors.</p>
 
-<p>I also had the chance to present my past research projects (that you can find on <a href="http://www.jkobject.com">this website</a>) and which slides are available online: <a href="https://fr.slideshare.net/jkalfon/epfl-edcb-phd-candidate-presentation">here</a>.
-It seems that the researchers had a good interest in me and my background which made me very proud and enthusiastic. 
-Moreover I love skiing🎿 and Lausanne is 45mns away from “les pistes”. (Which is a nice 👍 added bonus right?).</p>
+<p>Then for all the neighbors we create a set (a list of unique things): for all the edges. this set will be fuzzy as it also contains a value representing how much each neighbors is in the set of neighbors based on its distance to the center point.</p>
+
+<p>We will then merge all the sets created for each point.
+i.e. we will then merge the edges and keep only the ones with the lowest distances.</p>
+
+<p>We then take each edges and considers them together as a graph.</p>
+
+<p><em>Note that we are thinking here about graph of nodes and edges but the topological logic could be applied to the faces made by each set of 3 edges and the volumes made by each set of 4 faces, etc …</em></p>
+
+<p>We then take the core components of this graph using <a href="https://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html#sphx-glr-auto-examples-cluster-plot-cluster-comparison-py">spectral embedding</a>, where we basically take the <a href="https://www.youtube.com/watch?v=PFDu9oVAE-g">eigenvector</a> of a <a href="https://en.wikipedia.org/wiki/Adjacency_matrix">matrix of adjacency</a> (i.e. A square of numbers where rows represent the nodes of the graph and the columns represent the same nodes and the values of the matrix are the distance between, each point)</p>
+
+<p>It is a <a href="https://www.youtube.com/watch?v=PFDu9oVAE-g">decomposition</a> of the information into two things, one that define a base for the object to exist in and the other defining the layout of the object. you need both to reconstruct the object.</p>
+
+<p>Here we will only take the first 2 most important value of the base and considers it as what defines our object in 2 dimension (it can be any number lower than the initial number of dimension). The two values here are the dimensions and their dimensions are each of the different points</p>
+
+<p>Finally we will try to improve this first version by a <a href="https://en.wikipedia.org/wiki/Mathematical_optimization">minimization</a> process. There, we want to apply a physical-like force between the nodes so that close connected edges get closer together (up to a minimum distance)</p>
+
+<p><img src="/assets/images/umap.png" alt="" class="align-center" /></p>
+
+<p>we can see the relation to the number of samples used and the max distance to create graph edges.</p>
+
+<p>All in all, there is a theoretical explanation of the algorithm that can be seen in terms of learning <a href="https://en.wikipedia.org/wiki/Fuzzy_logic">fuzzy</a> <a href="https://en.wikipedia.org/wiki/Simplicial_set">simplicial sets</a> defining the local structure of the high dimensional data and of the lower dimensional one and making the two sets converge.</p>
+
+<p>The explanation defined in part 2 of the paper can be understood by anyone after reading <a href="https://books.google.com/books?id=xbL11KfgiEAC&amp;printsec=frontcover&amp;hl=fr&amp;source=gbs_ge_summary_r&amp;cad=0#v=onepage&amp;q&amp;f=false">this book</a> which will allow the reader to gain the vocabulary to understand the wikipedia pages defining the vocabulary used in the paper. :p</p>
+
+<p>More information about Riemannian topology can then be learned <a href="http://www.math.ens.fr/~feydy/Teaching/geometrie_riemannienne_espaces_de_formes.pdf">here</a>. It is in French however ;)</p>
 
         
       </section>
@@ -431,19 +455,11 @@ Moreover I love skiing🎿 and Lausanne is 45mns away from “les pistes”. (Wh
     
       
       
-      <a href="/tags/#epfl" class="page__taxonomy-item" rel="tag">Epfl</a><span class="sep">, </span>
+      <a href="/tags/#data-science" class="page__taxonomy-item" rel="tag">Data Science</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#job-interview" class="page__taxonomy-item" rel="tag">Job Interview</a><span class="sep">, </span>
-    
-      
-      
-      <a href="/tags/#phd" class="page__taxonomy-item" rel="tag">PhD</a><span class="sep">, </span>
-    
-      
-      
-      <a href="/tags/#research" class="page__taxonomy-item" rel="tag">Research</a>
+      <a href="/tags/#mathematics" class="page__taxonomy-item" rel="tag">Mathematics</a>
     
     </span>
   </p>
@@ -464,14 +480,14 @@ Moreover I love skiing🎿 and Lausanne is 45mns away from “les pistes”. (Wh
     
       
       
-      <a href="/categories/#hirings" class="page__taxonomy-item" rel="tag">hirings</a>
+      <a href="/categories/#explanation" class="page__taxonomy-item" rel="tag">explanation</a>
     
     </span>
   </p>
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-02-05T00:00:00-05:00">February 05, 2019</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-10-13T00:00:00-04:00">October 13, 2019</time></p>
         
       </footer>
 
@@ -480,23 +496,22 @@ Moreover I love skiing🎿 and Lausanne is 45mns away from “les pistes”. (Wh
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=jkobject&text=Interviews+at+EPFL%20https%3A%2F%2Fjkobject.com%2Fblog%2Finterviews-at-epfl%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=jkobject&text=UMAP%3A+Uniform+Manifold+Approximation+and+Projection+for+Dimension+Reduction%20https%3A%2F%2Fjkobject.com%2Fblog%2Fumap-explanation%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjkobject.com%2Fblog%2Finterviews-at-epfl%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjkobject.com%2Fblog%2Fumap-explanation%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fjkobject.com%2Fblog%2Finterviews-at-epfl%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fjkobject.com%2Fblog%2Fumap-explanation%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/blog/broadinstitute-interview/" class="pagination--pager" title="Boston Interviews
+      <a href="/blog/a-month-at-the-broad/" class="pagination--pager" title="My first month at the Broad Institute
 ">Previous</a>
     
     
-      <a href="/blog/a-month-at-the-broad/" class="pagination--pager" title="My first month at the Broad Institute
-">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 
@@ -510,43 +525,6 @@ Moreover I love skiing🎿 and Lausanne is 45mns away from “les pistes”. (Wh
     <div class="page__related">
       <h4 class="page__related-title">You may also enjoy</h4>
       <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/dimred.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/blog/umap-explanation/" rel="permalink">UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  2 minute read
-
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">Short stories about my professional experiences.
-</p>
-  </article>
-</div>
-
         
           
 
@@ -580,6 +558,43 @@ Moreover I love skiing🎿 and Lausanne is 45mns away from “les pistes”. (Wh
 </p>
     
     <p class="archive__item-excerpt" itemprop="description">I arrived in Boston exactly a month ago. I managed to get my Visa 5 hours before catching…
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/epflinter.jpeg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blog/interviews-at-epfl/" rel="permalink">Interviews at EPFL
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">During the last week of January I had the chance to enter the hiring program of EPFL’s edcb program.
 </p>
   </article>
 </div>
@@ -745,8 +760,8 @@ Moreover I love skiing🎿 and Lausanne is 45mns away from “les pistes”. (Wh
     
   <script>
     var disqus_config = function () {
-      this.page.url = "https://jkobject.com/blog/interviews-at-epfl/";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/blog/interviews-at-epfl"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "https://jkobject.com/blog/umap-explanation/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/blog/umap-explanation"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');
