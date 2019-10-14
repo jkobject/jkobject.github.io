@@ -164,7 +164,7 @@ input[type="range"]::-ms-fill-upper {
 
 ### I have read (with presentations)
 
-[Go check a draft version here](/papers-reviewed-draft/){: .btn .btn--primary .align-center} 
+[Go check a draft version here](/review-of-papers/){: .btn .btn--primary .align-center} 
 
 
 ### I have read (without any)
