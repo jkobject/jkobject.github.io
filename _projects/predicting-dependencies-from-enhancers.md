@@ -95,7 +95,7 @@ We were able to computationally reproduce their results and are now sequencing o
 
 {% include plots/jq1slamseq_volcano.html %}
 
-__WIP__
+__We were able to computationally reproduce the slamseq paper's results and are now sequencing our own slamseq experiment.__
 
 
 #### RNA sequencing after CRISPR RNP experiment
@@ -131,9 +131,9 @@ PS: We also developed degrons for IRF2BP2, and will be analyzing also the transc
 
 #### CRISPR tilling of some of the enhancer region
 
-We also decided to tile through some super enhancer with intense co binding to see the effect of deletion in this region on the co-binding of TFs. The experiment is still in progress and might give us new insight on how patterns of cobinding are affected by non coding mutations.
+We also decided to tile through some super enhancer to see the effect of deletion on the co-binding of TFs. The experiment is still in progress and might give us new insight on how patterns of cobinding are affected by non coding mutations.
 
-__WIP__
+__The experiment is still in progress and might give us new insight on how patterns of cobinding are affected by non coding mutations.__
 
 #### ChIPseq analysis on AML CL
 
