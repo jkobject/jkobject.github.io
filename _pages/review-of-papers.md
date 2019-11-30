@@ -1394,27 +1394,49 @@ More information about Riemannian topology can then be learned [here](http://www
 
 ## Reproducible pharmacogenomic profiling of cancer cell line panels-- Peter m. Haverty, Eva Lin, Jenille Tan2, yihong yu...
 
+A presentation of a meta analysis and replication test of large scale pharmacogenomic profiling of CCLs both at sanger and broad by independant panel as a response to another research. It showed that flaws in the critics of the reproducibiliity existed as it was not judging on the full dataset and it was not looking at the same thing as what the large scale studies where interested in.
+
+It also shows that it is able to correlate both results by doind the analysis differently and to reproduce them (with more correlation to broad's)
 
 
+## EZH2 oncogenic mutations drive epigenetic, transcriptional, and structural changes within chromatin domains-- Maria C. Donaldson-Collier1,5, Stephanie Sungalee, EPFL
 
-## Master Transcription Factors and Mediator Establish Super-Enhancers at Key Cell Identity Genes -- Young Lab
+This group is analysing an oncogenic mutation in a gene which is implied in the presence of histone modification at key location. They show that this mutation cause the presence of this modification everywhere and mostly in some sets of genes that are within Topologically associating domains. They found that the TADs might change a bit based on this modification and thus, change the transcriptional status of genes which are themselves tied to oncogenic states.
 
+## Master Transcription Factors and Mediator Establish Super-Enhancers at Key Cell Identity Genes-- Young Lab
 
+A paper I had already read before discovering and explaining what are super enhancers and how they differ from regular ones. It is in the context of muring ESCs. We can see their analysis by size. location in TAds, circuitry binding to TF and to cell state. cobinding and Mediator content. etc.. 
 
 
 ## DIGGIT: a Bioconductor package to infer genetic variants driving cellular phenotype -- Mariano J. Alvarez, James C. Chen and Andrea Califano
 
-
+A very small paper. more of an abstract that does not explain the algorithm but shows a way to improve gwas studies by improving QTL estimation based on knowledge of master regulators and impacts of CNV on expression.
+The paper was not precise enough for me to make any judgment on the logic. It is not a good paper.
 
 
 ## Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2 -- Michael I Love, Wolfgang Huber and Simon Anders
 
+Here is a presentation of DESeq2 which improves on the previous version as it is trying to shrink the variance in the data based on the amount of support you get from the data itself. 
+This will reduce the estimate of the fold change based on fitting the data to a NB distribution in a bayesian framework where the estimates of a MaxLikelyhood round are fitted again to a distribution with a prior as a zero centered Normal with a MAP round. The confidence values and the  ah ok ones pass a Wald Test which provide a z stat.
 
+## TADs as the caller calls them-- Elzo de Wit
+
+An approach to TADs consisting as a litterature review and opinion on the origin of TADs (as extrusion of cohesin loops) and their actual mechanisms. It serves as to diminish certain claims about the role of the TADs and precise their existence as a readout of a specific biological process. Instead of as a specific process themselves.  
 
 
 ## UNDERSTANDING AND IMPROVING INTERPOLATION IN AUTOENCODERS VIA AN ADVERSARIAL REGULARIZER-- David Berthelot, Ian Goodfellow...
 
-
+This paper presented a novel strategy to better constraint the results of an autoencoder by enforcing it to produce a smooth transition between its learnt representations. This is done by using an adversarial procedure whereby a critic is trying to predict the interpolation amount and the encoder has to make the critic think that it is 0. This can help better learning the manifold of the data as shown in toy examples and MNIST results. However seems to still have some caveats in its current form.
 
 
 ## Transcriptional Amplification in Tumor Cells with Elevated c-Myc-- Charles Lin, Young Lab
+
+A paper that shows that a contrario to other TFs, cMYC promotes the expression of all expressed genes but not unexpressed ones and thus serves as a general amplifier of expression in a cell. Explaining its upregulation in many cancer genomes. <-- Has been shown as wrong in the paper SLAM-seq defines direct gene-regulatory functions of the BRD4-MYC axis
+
+## SLAM-seq defines direct gene-regulatory functions of the BRD4-MYC axis-- Matthias Muhar, Anja Ebert
+
+A paper using slamseq to show that MYC only regulates a set of house keeping genes which can however appear as a global down-regulator/upregulator on less precise time scales. 
+
+## Transcription Factors Activate Genes through the Phase-Separation Capacity of Their Activation Domains-- Ann Boija, Isaac A. Klein, Benjamin R. Sabari, Young's lab
+
+Here is presented a work showing how the TF/Co-activator transcriptional condensate is organized and composed. This allows for a precise experimental definition of this condensate and its interaction in ESCs and shows how this could explain the MLL TFtoANY fusion proteins by the reliation of this condensate on proteins disordered regions which promotes this low level interaction between one another and the formation of condensate between TFsxCoact
