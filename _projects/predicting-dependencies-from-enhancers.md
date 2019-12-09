@@ -83,7 +83,7 @@ We ran DESeq analysis on it and could not find a reliable signal after 8h as the
 However we can clearly see a transcriptional collapse of some of the CTRC members in MS2 after 2 hours and JQ1 after 8 hours. at 16 and 24 hours, the signal disappear. It can be explained by failed experimental procedures, selection of resistant CL or the low number of cells after drug targeting. Both of the drugs would target BRD4 and MYC and it can be clearly seen in the analysis. Interestingly the [MEIS1][19] Homeobox protein is also always up-regulated at these time points.  
 
 
-__We could see a downregulation of certain This first analysis revealed the difficulty of assessing a global collapse of TF in RNA, especially on a short timescale, leading us to doing a similar analysis using slamseq__
+__We could see a downregulation of certain CTRC members This first analysis revealed the difficulty of assessing a global collapse of TF in RNA, especially on a short timescale, leading us to doing a similar analysis using slamseq__
 
 ##### slamseq analysis
 
@@ -93,7 +93,7 @@ The _slamseq_ procedure will cause RNAs T bases to convert to Cs. We can then se
 
 We were able to computationally reproduce their results and are now sequencing our own slamseq experiment.
 
-{% include plots/jq1slamseq_volcano.html %}
+{% include plots/slamseq_JQ1.html %}
 
 __We were able to computationally reproduce the slamseq paper's results and are now sequencing our own slamseq experiment.__
 
@@ -140,7 +140,7 @@ __The experiment is still in progress and might give us new insight on how patte
 One of our main experiment is the consistent ChIP profiling of 25 CTRC members. The replicated were first filtered by eye, looking for clearly failed experiments.
 Given the variable number of replicates and the variable quality amongst replicate and proteins, we decided to first analyze them one by one. Then try to merge the found peaks and look for missed peak across replicates. This would allow us to get a merge quality. Given this quality metric. Either we were often able to discard a failed experiment on the basis of its total number of peaks. Good quality merging were then marked for merging at the [bam][26] file level. The merged bam file was then reprocessed. The procedure is named _ChipMerger_.
 
-![analysis scheme]() 
+![analysis scheme](/assets/images/chipmerging.png) 
 
 The processing tool used was a [containerized pipeline][27] and created using [nf-core][25] running in batch on google cloud platform (gcp) allowing for scaling and reproducibility of our results. The pipeline outputs quality metrics, [macs2][1] peaks, and [bigwig tracks][28].
 
@@ -155,7 +155,7 @@ We can see that the correlation matrix obtained on the first 40 PCs that shows s
 
 Notable cobinding was found between: 
 
-| MAX | MED1 | MYC | LMO2 | SMYND|
+| MAX | MED1 | MYC | LMO2 | SMYND |
 
 Which also matched H3k27ac marks. This likely means that these TFs are just present at every transcription sites.
 
@@ -329,7 +329,7 @@ Understanding cancer's CTRC, might be very insightful in understanding the effec
 [25]: https://nf-co.re/
 [26]: https://support.illumina.com/help/BS_App_MDProcessor_Online_1000000007932/Content/Source/Informatics/BAM-Format.htm
 [27]: https://github.com/nf-core/chipseq
-[28]: https://igv.org/app/?sessionURL=blob:3Z3rU9rcFsb_lU6.vO.Zg0EIcvGbolinYB0vp5czHSeEGFIhscmOaJ3.790hwMbzsrZZ9rTJIx.YAfIk62HxY7Mfcnk0IvfajdzAcY3dR8MfGbvG2Kt1jIoR2FP5nPE2mdrBm7.7Z92x1aqmr_1Lvnhtx8K.POuniwtxG.9Wq7FljhJ7Ip93bswk3nLlIls1057a38PAnsWmE06rvndnDqPQHvlBLHyRCNcMI6_quUE4deNq7H6bb2J.Z843IjfmByP3_o9sTN77coPOgwiHdjD6jdtMN7EvN2GKe2H8qBiT0EliY_e_hj2ZGF8qhojkVtInHg3xcJs2QkqTeZ8qRhiN3MjYlRtvdVrNjlWzGu1m3arttNx_W9tt2bvw_NYPgnQhESXuj8qjkUQTuRIvNfL1Jhx.dR1R7Y7926u9Qb8auXEyEXF1OLOrUzfy3FHfH0Z29FAd.t7M96q9_nHt6qxmTvtD05mcmPLpD773pDdBMpmsSttefX5IpRNOQrmkEXnDv7cr25Vaq51.suyJ6G5.Zez63lgYu5ZcuZ2I8NyxJ3ILqcGKMZOFhLNeEjjCDwMpnrp2IEV3fuwP_YkvHj7Ml5CvbNXk85PQW.ivZUvlCv7nLZMfcX_iPuchDpPIcS.yBqWCFI0wmtqyTCN76.QziwZmD9LKY1U5qzWBHUXh7NS1b5YNubqVD2JTvUC3pLZqyV9T28mEf_1KH.pP.7B4H__RCCdMAqHpRI43fpNL7VufLZmq1NtvB0Eo7HlRFWNq35.FM8nXzrZ0IeXCjdJ1zRF0xlE4DWMJrFxSkusaX36doKMej6D6ql2kEogg0kNxBC1KYhBkARKkcYlG0PHJ6eUFB6HGql.0FIgh2sQfhmhjdwaHvfoBpzs7q.7QUqDu0CaK.4pb1sT4jmsCfsfpbKJ9yZ1esn4ltFbtooRACFEWigMoq4iBTzr3QsOHNokGz_kpC56amhJRSiB6KAvF0ZNVxJmiqkkPDj60SzR8Ph_u11n8qAkRKQUCiPRQHEGLkjgIqUkPDkIam2gMdQ_3T_dYEKl5EK0Foog2URxGy5o4HCFOhHQ.QUGq5wdJzYVoLR5IG0wUDlKdAxLilEjnEw6ki26PNSB1FEeUFAkjykOBFGUlMSBKP_J4ENE20Rg6GJy_v2qPr95a7.ot.f5z_sdTIUOetQCRlcdOcZD9szoOb4hBRD7HqOgN9j6ysFPZxHNrAESOslI8blllHNQQA4vn3UJi9pLhTcUXz64CDbQSD2wvG9UQM40cdtFYO.z3WDl7XSUbpBSILdJDcUwtSuKwhBhraGxiMpQ_HayrVIOUwjFUqmxwURJnf0rEVENjE46hi_80OeOQpaIMUorEEOWhQIaykjgMISYVGpuYDOUfhyyVS5BSOIbKNQ5lJXEYQowgNDYxGbLyM6QyB1IKx9AGD0UzZHEYQswWNDbhDi_bu9hjhQqWChVoLdIRZqSJAg8xW9TE4QgxV9D5BAWJ8YtOJQu0Fg.kUv2mW9bEAKmBGC7ofMKBdH7IOhqjodIFUoqEEeWhQIqykjgQIaYLGpuYDOUfixoqXSClcAyVayTKSuIwhJguaGyiMfSCnRoaKmB4JfszlHNXhhftxdBATBpe1w4Mx0dHLJxU1EApkU7DQVgoDqOsIg5CiCED7RIOn3efe7ypkYoYaC0SQqSJAiFa1MTAaAcxYtD5BAUp__xoR2UMtBYPpFLNkJY1cUBCjBl0PuFAOuvV909Z_x_tqKhBp0aCSWOjQJxWVXGAQswc9E5hkWKMTip20KkRkSrXCLWqioMUYuygdwqLVP5dhXbWogeNGhGpUu0wpKriIAUZQ2idwiLVyI_UWhihUSMitcFGCZBqcE7fChlJaJ0CItXmTKSaa5kEJcWCabOHQklKS.JgBBlI0DbRGOoP3rPCiKYKI0gpEEOkh.IYWpTEYQgxg9DYxGQof_rQVOkDKYVjqFS5w6IkDkOIoYPGJhxDn_qsP2qbKm4gpUgMUR4KZCgricMQYsqgsYnGEPPEXU0VL7yCE3aV70Rd7BN0tRAjhddzYq7B4QHvijAqTiClUJdVIjwUeVWleUkchBDjBI1NPIZ69S4LIpUn0Fqwi5NtNlHsxcnSmjgcIUYKOp.gIOUPFVpPr_K3WYsHUqlihWVNHJBQL_NH.QQFKf.ODC2VLNBaPJBKtRPDsiYOSIjhgs4nHkjH57z50Vq.QGqhQKJMFAlSVhPnwpmQKYPGJxxIn_Y5GLXXYgZCiQQRYaFAhOYVcQCCzBhIl5D45J8XtdcCBkKJhk.55kTzijj4QEYLpEs8fFj5XHstViCUUPiULpubV8TBBzJQIF1C4sMYfdbCBEKJhk_JRh9mHteGjBFIl2j4nL7vHx.zxh8VItBaIIRoE8VBtKyJgVEHMUTQ.UQD6ezy5CMrjeuoGIHWAoFEmygOpGVNHJAQwwSdT0SQWEdAdFSgQGvBQCrbMRDLmjggIcYKOp9oIJ0PurwBSSULpBQII9JDcRQtSuJAhBguaGyiMfT5cJ91JFFHxQukFIgh0kNxDC1K4jCEmDBobMIxNPh0csA6LryjMgaNGIkj2kWBJC2LYrBUSz80eDDpnKLilH9Qqm2rqEGjBuTpt41My.mAex27394cydbF6.uJ3Ot5OyuLXo6FuE3bGVvmKJHlC9u5MZN4y7VjsVUz7an9PQzsWWw64bTqe3dmGHmmXIP8ZMTVsVfryLZfp1sx4zAS7sgU98L0vj9p6e_aiCmG_sa.bMlPTeROwzt7uNYW9UWQ3vRtokxt6tH_Ba4vP34C
+[28]: http://tinyurl.com/skp7rml
 [29]: https://www.nature.com/articles/nbt.3300
 [30]: https://www.ncbi.nlm.nih.gov/pubmed/30449618
 [31]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4772020/

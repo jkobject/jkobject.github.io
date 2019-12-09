@@ -495,7 +495,7 @@ __addition of the second paper "Predicting effects of noncoding variants with de
 
 _touse_
 
-they have used a deep CNN with a lot of different Weighted patterns to predict regulatory profile (chromatin, methylation etc...) from a raw DNA sequence. using ENCODE datasets given specific cell types. this gave them the ability to predict a cell specific profile as well as to predict variation in regulatory profiles caused by variants, using a linear model (made from non linear basis function of from the different profiles data, they are able to regress how much each the regulatory features of the non coding sequence before the  Transcription Start Site (and a bit of the sequence after) influence the expression profile of different gene.) they were able to retrieve expression for famous protein and how they change with different cells and to retrieve SNPs causing variation in expression that were also shown from GWAS information (even better than in GWAS) and to find interesting disease correlations as well.
+they have used a deep CNN with a lot of different Weighted patterns to predict regulatory profile (chromatin, methylation etc...) from a raw DNA sequence. using ENCODE datasets given specific cell types. this gave them the ability to predict a cell specific profile as well as to predict variation in regulatory profiles caused by variants, using a linear model (made from non linear basis function of the different profiles data, they are able to regress how much each the regulatory features of the non coding sequence before the Transcription Start Site (and a bit of the sequence after) influence the expression profile of different gene.) they were able to retrieve expression for famous protein and how they change with different cells and to retrieve SNPs causing variation in expression that were also shown from GWAS information (even better than in GWAS) and to find interesting disease correlations as well.
 
 ## One-Shot Imitation Learning -- Ilya Sutskever, Pieter Abbeel
 
@@ -1440,3 +1440,11 @@ A paper using slamseq to show that MYC only regulates a set of house keeping gen
 ## Transcription Factors Activate Genes through the Phase-Separation Capacity of Their Activation Domains-- Ann Boija, Isaac A. Klein, Benjamin R. Sabari, Young's lab
 
 Here is presented a work showing how the TF/Co-activator transcriptional condensate is organized and composed. This allows for a precise experimental definition of this condensate and its interaction in ESCs and shows how this could explain the MLL TFtoANY fusion proteins by the reliation of this condensate on proteins disordered regions which promotes this low level interaction between one another and the formation of condensate between TFsxCoact
+
+## A Blueprint for Advancing Genetics-Based Cancer Therapy -- Bill Sellers
+
+What is the problem of the drugability gap (what we now as oncogenic and what we can drug). How to do a "Human Cancer Genome"? Work on the understanding and targeting of resistance (by attacking the pathways in multiple locations). How to better use disease models (by high number of them and better model like GEM). And how that might translate to other diseases.
+
+## Genome-wide somatic variant calling
+
+## Predicting effects of noncoding variants with deep learning–based sequence model
