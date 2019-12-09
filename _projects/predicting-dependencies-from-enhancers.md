@@ -1,7 +1,7 @@
 ---
 title: "What  Enhancers can tell us about Dependencies"
 excerpt: "Influence of the Core Regulatory Circuitry on AML dependencies: Part 1."
-category: "Association"
+category: "BroadInstitute"
 tags:
  - Research
  - Broad Institute
@@ -141,6 +141,8 @@ One of our main experiment is the consistent ChIP profiling of 25 CTRC members. 
 Given the variable number of replicates and the variable quality amongst replicate and proteins, we decided to first analyze them one by one. Then try to merge the found peaks and look for missed peak across replicates. This would allow us to get a merge quality. Given this quality metric. Either we were often able to discard a failed experiment on the basis of its total number of peaks. Good quality merging were then marked for merging at the [bam][26] file level. The merged bam file was then reprocessed. The procedure is named _ChipMerger_.
 
 ![analysis scheme](/assets/images/chipmerging.png) 
+
+_for the set of replicates, we overlap the peaks and try to find whether we can find back unfound peaks by looking at the read coverage for a replicate under peaks found over other replicates. This inform us on the better action (merging bams or taking intersection). We can then create a conscensus peak region by following the same merging process and filtering given h3k27ac and ATACseq data._
 
 The processing tool used was a [containerized pipeline][27] and created using [nf-core][25] running in batch on google cloud platform (gcp) allowing for scaling and reproducibility of our results. The pipeline outputs quality metrics, [macs2][1] peaks, and [bigwig tracks][28].
 

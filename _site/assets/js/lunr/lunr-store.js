@@ -85,7 +85,7 @@ var store = [{
         "url": "https://jkobject.com/projects/piple-the-startup/",
         "teaser":"https://jkobject.com/assets/images/piple1-teaser.png"},{
         "title": "What  Enhancers can tell us about Dependencies",
-        "excerpt":"The Core Regulatory Circuitry (CRC) is a set of genes that define cell state and identity by encoding transcription factors. In certain cancers, we have shown CRC to be selective dependencies. We are now elucidating the critical CRC circuitry CTRC in acute myelogenous leukemia (AML). We have shown that BET...","categories": ["Association"],
+        "excerpt":"The Core Regulatory Circuitry (CRC) is a set of genes that define cell state and identity by encoding transcription factors. In certain cancers, we have shown CRC to be selective dependencies. We are now elucidating the critical CRC circuitry CTRC in acute myelogenous leukemia (AML). We have shown that BET...","categories": ["BroadInstitute"],
         "tags": ["Research","Broad Institute","Data Science","Cancer Dependencies","Epigenomics"],
         "url": "https://jkobject.com/projects/predicting-dependencies-from-enhancers/",
         "teaser":"https://jkobject.com/assets/images/dependency-prediction.jpg"},{

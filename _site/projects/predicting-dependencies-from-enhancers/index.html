@@ -47,7 +47,7 @@
 
 
 
-  <meta property="article:published_time" content="2019-12-09T12:24:23-05:00">
+  <meta property="article:published_time" content="2019-12-09T13:37:18-05:00">
 
 
 
@@ -1109,6 +1109,8 @@ Given the variable number of replicates and the variable quality amongst replica
 
 <p><img src="/assets/images/chipmerging.png" alt="analysis scheme" /></p>
 
+<p><em>for the set of replicates, we overlap the peaks and try to find whether we can find back unfound peaks by looking at the read coverage for a replicate under peaks found over other replicates. This inform us on the better action (merging bams or taking intersection). We can then create a conscensus peak region by following the same merging process and filtering given h3k27ac and ATACseq data.</em></p>
+
 <p>The processing tool used was a <a href="https://github.com/nf-core/chipseq">containerized pipeline</a> and created using <a href="https://nf-co.re/">nf-core</a> running in batch on google cloud platform (gcp) allowing for scaling and reproducibility of our results. The pipeline outputs quality metrics, <a href="https://www.ncbi.nlm.nih.gov/pubmed?cmd=search&amp;term=18798982%5Bpmid%5D">macs2</a> peaks, and <a href="http://tinyurl.com/skp7rml">bigwig tracks</a>.</p>
 
 <p>We then use our the set of binding profiles to find a consensus set of peaks. We compute back the AUC under each peaks, stitched with <a href="https://www.cell.com/abstract/S0092-8674(13)00392-9">ROSE</a>, to get a matrix of TFpresence x samples.</p>
@@ -1423,14 +1425,14 @@ Given the variable number of replicates and the variable quality amongst replica
     
       
       
-      <a href="/categories/#association" class="page__taxonomy-item" rel="tag">Association</a>
+      <a href="/categories/#broadinstitute" class="page__taxonomy-item" rel="tag">BroadInstitute</a>
     
     </span>
   </p>
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-12-09T12:24:23-05:00">December 09, 2019</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-12-09T13:37:18-05:00">December 09, 2019</time></p>
         
       </footer>
 
