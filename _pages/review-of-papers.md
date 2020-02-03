@@ -1445,6 +1445,30 @@ Here is presented a work showing how the TF/Co-activator transcriptional condens
 
 What is the problem of the drugability gap (what we now as oncogenic and what we can drug). How to do a "Human Cancer Genome"? Work on the understanding and targeting of resistance (by attacking the pathways in multiple locations). How to better use disease models (by high number of them and better model like GEM). And how that might translate to other diseases.
 
-## Genome-wide somatic variant calling
+## Genome-wide somatic variant calling via colored debrujin graphs- Giuseppe Narzisi 1, André Corvelo1, Kanika Arora
 
-## Predicting effects of noncoding variants with deep learning–based sequence model
+This is a new tool, similar to strelka2 which does not yet work on tumor only. It also shows a great analysis of the performance of each other main algorithms mutect2/1 strelka2/1 LoFreq.
+
+
+## AtomNet: A Deep Convolutional Neural Network for Bioactivity Prediction in Structure-based Drug Discovery-- atomwise team
+
+Achieves sota results on predicting bioactivity of small molecules in binding sites of proteins, based on a set of bioactivity databases. Issues of measuring quality since AUC is not perfect given the data type. The issue is of using this 3D data and converting it into something that can be used by the algo. Also having very similar inputs with very dissimilar activity (need to correct for this bias and other when processing your data) They are using a 3D small conv net.
+
+
+## Evaluating Variant Calling Tools for Non-Matched Next-Generation Sequencing Data--
+--> for reproducibility little care in speed and overall consitence in accuracy through datasets noise level and read depth, we will still stick to the HaplotypeCaller from the GATK server in tumor only mode.
+
+## Identifying Gene Expression Programs of Cell-type Identity and Cellular Activity with Single-Cell RNA-Seq-- Dylan Kotliar, Adrian Veres, M. Aurel Nagy
+
+They showed that NMF is the better tool overall to detect Genetic expression programs from test scRNAseq data when run many times and combinating the results. They call this combination cNMF. 
+> Are they just trying to show me what NMF and bagging is?  
+
+
+## DeepCpG: accurate prediction of single-cell DNA methylation states using deep learning-- Christof Angermueller1, Heather J. Lee, Wolf Reik
+
+A tools  to impute low-coverage methylation profiles for sets of cells
+and to discover DNA sequence motifs that are associated with methylation states and cell-to-cell variability from a bi input (CPG | Mut -> GRU | CONV -> FC-> CPG)
+
+## Massively multiplex chemical transcriptomics at      single-cell resolution-- Sanjay R. Srivatsan, José L. McFaline-Figueroa
+
+

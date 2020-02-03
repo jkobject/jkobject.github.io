@@ -14,7 +14,7 @@ header:
 
 ![teaser](/assets/images/dependency-prediction.jpg)
 
-The Core Regulatory Circuitry (CRC) is a set of genes that define cell state and identity by encoding transcription factors. In certain cancers, we have shown CRC to be selective dependencies. We are now elucidating the critical CRC circuitry CTRC in acute myelogenous leukemia (AML). We have shown that BET inhibitors trigger CRC transcriptional collapse in AML cell lines. We have integrated multiple sources of epigenomics data including ChipSeq, HiC seq, HiChip, DNase, Degron, WGS, RNAseq and PerturbSeq, to uncover patterns of co-binding that might explain selective AML dependencies. We will present a data integration pipeline and show early results on CRC co-occupancy mapping in AML cell lines. Additionally, we discuss the lessons learned in quality control and bias correction that may prove useful for deep epigenomics analysis. 
+The Core Regulatory Circuitry (CRC) is a set of genes that define cell state and identity by encoding transcription factors. In certain cancers, we have shown CRC to be selective dependencies. We are now elucidating the critical CRC circuitry CTRC in acute myelogenous leukemia (AML). We have shown that BET inhibitors trigger CRC transcriptional collapse in AML cell lines. We have integrated multiple sources of epigenomics data including ChIPSeq, HiC seq, HiChIP, DNase, Degron, WGS, RNAseq and PerturbSeq, to uncover patterns of co-binding that might explain selective AML dependencies. We will present a data integration pipeline and show early results on CRC co-occupancy mapping in AML cell lines. Additionally, we discuss the lessons learned in quality control and bias correction that may prove useful for deep epigenomics analysis. 
 
 ## Intro
 
@@ -38,7 +38,7 @@ These aggregates help create and are found in 3D structures of the genome called
 
 _Principles of genome folding into topologically associating domains, [szabo et. al.][32]_
 
-In certain cancers, like [Neuroblastoma][12] drugs that target transcription have been shown to first [disrupt the expression of CRC members][11] before triggering transcriptional collapse and cancer cell death. One of the cancer type known to be targetable by such JQ1-like drugs. These drugs, called Drugs called BET inhibitors interact with the bromodomains of BRDx proteins and prevent them from binding to H3k27ac and inhibit transcriptional activation, impacting [mainly the expression of MYC][0].
+In certain cancers, like [Neuroblastoma][12] drugs that target transcription have been shown to first [disrupt the expression of CRC members][11] before triggering transcriptional collapse and cancer cell death. AML is one of the cancer types known to be targetable by such JQ1-like drugs. These drugs, called Drugs called BET inhibitors interact with the bromodomains of BRDx proteins and prevent them from binding to H3k27ac and inhibit transcriptional activation, impacting [mainly the expression of MYC][0].
 
 ![transcription machinery](/assets/images/transcription-model-1-2-3.jpg)
 
@@ -100,7 +100,7 @@ __We were able to computationally reproduce the slamseq paper's results and are 
 
 #### RNA sequencing after CRISPR RNP experiment
 
-We used RNP induced CRISPR to target CTRC of MV411 and then RNA sequenced it in triplicate. 
+We used RNP induced CRISPR to target CTRC of MV411 and after 72h, RNA sequenced it in triplicate. 
 
 However sequencing and targets were made by different groups and found a batch effect. We did not corrected for it (see my soon to be [released blog][21] post on why correcting for batch effect -especially in computational biology- is most often not a good idea). We continued our analysis and applied [DESeq][20] to the data. We found out some interesting relations and tried to display it in a correlation matrix of each experiment over its differential expression. 
 
@@ -138,7 +138,7 @@ __The experiment is still in progress and might give us new insight on how patte
 #### ChIPseq analysis on AML CL
 
 One of our main experiment is the consistent ChIP profiling of 25 CTRC members. The replicated were first filtered by eye, looking for clearly failed experiments.
-Given the variable number of replicates and the variable quality amongst replicate and proteins, we decided to first analyze them one by one. Then try to merge the found peaks and look for missed peak across replicates. This would allow us to get a merge quality. Given this quality metric. Either we were often able to discard a failed experiment on the basis of its total number of peaks. Good quality merging were then marked for merging at the [bam][26] file level. The merged bam file was then reprocessed. The procedure is named _ChipMerger_.
+Given the variable number of replicates and the variable quality amongst replicate and proteins, we decided to first analyze them one by one. Then try to merge the found peaks and look for missed peak across replicates. This would allow us to get a merge quality. Given this quality metric. Either we were often able to discard a failed experiment on the basis of its total number of peaks. Good quality merging were then marked for merging at the [bam][26] file level. The merged bam file was then reprocessed. The procedure is named _ChIPMerger_.
 
 ![analysis scheme](/assets/images/chipmerging.png) 
 
@@ -172,6 +172,8 @@ By building this model we want to understand the amount of information available
 ![representation of the model](/assets/images/amlproject.png)
 
 We will now present the general idea behind the model. This is a blueprint of what will be undertaken in the coming months.
+
+> We have to emphasize that ChIP binding does not mean a direct regulation to a gene, (neither does it means a direct binding to the DNA sequence). Wether it is up or down regulation of a gene depends on the entire set of regulators in presence and likely how they are placed between one another.
 
 #### Defining enhancers
 
