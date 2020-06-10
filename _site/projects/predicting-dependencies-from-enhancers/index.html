@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.17.2 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.19.3 by Michael Rose
   Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -47,7 +47,7 @@
 
 
 
-  <meta property="article:published_time" content="2019-12-09T13:37:18-05:00">
+  <meta property="article:published_time" content="2020-06-10T18:41:14-04:00">
 
 
 
@@ -116,6 +116,28 @@
 
     <!-- start custom head snippets -->
 
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -161,13 +183,13 @@
             </li><li class="masthead__menu-item">
               <a href="/projects/" title="">Projects</a>
             </li><li class="masthead__menu-item">
-              <a href="/opinions/" >Opinions</a>
+              <a href="/opinions/">Opinions</a>
             </li><li class="masthead__menu-item">
-              <a href="/ideas/" >Ideas</a>
+              <a href="/ideas/">Ideas</a>
             </li><li class="masthead__menu-item">
               <a href="/blog/" title="A short extract about my life experiences.">Blog</a>
             </li><li class="masthead__menu-item">
-              <a href="/papers/" >Papers</a>
+              <a href="/papers/">Papers</a>
             </li><li class="masthead__menu-item">
               <a href="/courses/" title="Here is the list of the Courses I have received and the one I have given.">Courses</a>
             </li><li class="masthead__menu-item">
@@ -236,10 +258,11 @@
 <div id="main" role="main">
   
 
+
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="What  Enhancers can tell us about Dependencies">
     <meta itemprop="description" content="Influence of the Core Regulatory Circuitry on AML dependencies: Part 1.">
-    <meta itemprop="datePublished" content="December 09, 2019">
+    <meta itemprop="datePublished" content="2020-06-10T18:41:14-04:00">
     
 
     <div class="page__inner-wrap">
@@ -303,12 +326,13 @@
     </ul>
   </li>
 </ul>
+
             </nav>
           </aside>
         
         <p><img src="/assets/images/dependency-prediction.jpg" alt="teaser" /></p>
 
-<p>The Core Regulatory Circuitry (CRC) is a set of genes that define cell state and identity by encoding transcription factors. In certain cancers, we have shown CRC to be selective dependencies. We are now elucidating the critical CRC circuitry CTRC in acute myelogenous leukemia (AML). We have shown that BET inhibitors trigger CRC transcriptional collapse in AML cell lines. We have integrated multiple sources of epigenomics data including ChipSeq, HiC seq, HiChip, DNase, Degron, WGS, RNAseq and PerturbSeq, to uncover patterns of co-binding that might explain selective AML dependencies. We will present a data integration pipeline and show early results on CRC co-occupancy mapping in AML cell lines. Additionally, we discuss the lessons learned in quality control and bias correction that may prove useful for deep epigenomics analysis.</p>
+<p>The Core Regulatory Circuitry (CRC) is a set of genes that define cell state and identity by encoding transcription factors. In certain cancers, we have shown CRC to be selective dependencies. We are now elucidating the critical CRC circuitry CTRC in acute myelogenous leukemia (AML). We have shown that BET inhibitors trigger CRC transcriptional collapse in AML cell lines. We have integrated multiple sources of epigenomics data including ChIPSeq, HiC seq, HiChIP, DNase, Degron, WGS, RNAseq and PerturbSeq, to uncover patterns of co-binding that might explain selective AML dependencies. We will present a data integration pipeline and show early results on CRC co-occupancy mapping in AML cell lines. Additionally, we discuss the lessons learned in quality control and bias correction that may prove useful for deep epigenomics analysis.</p>
 
 <h2 id="intro">Intro</h2>
 
@@ -332,7 +356,7 @@
 
 <p><em>Principles of genome folding into topologically associating domains, <a href="https://advances.sciencemag.org/content/5/4/eaaw1668">szabo et. al.</a></em></p>
 
-<p>In certain cancers, like <a href="https://www.ncbi.nlm.nih.gov/pubmed/30127528">Neuroblastoma</a> drugs that target transcription have been shown to first <a href="https://www.ncbi.nlm.nih.gov/pubmed/22897851">disrupt the expression of CRC members</a> before triggering transcriptional collapse and cancer cell death. One of the cancer type known to be targetable by such JQ1-like drugs. These drugs, called Drugs called BET inhibitors interact with the bromodomains of BRDx proteins and prevent them from binding to H3k27ac and inhibit transcriptional activation, impacting <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4198154/">mainly the expression of MYC</a>.</p>
+<p>In certain cancers, like <a href="https://www.ncbi.nlm.nih.gov/pubmed/30127528">Neuroblastoma</a> drugs that target transcription have been shown to first <a href="https://www.ncbi.nlm.nih.gov/pubmed/22897851">disrupt the expression of CRC members</a> before triggering transcriptional collapse and cancer cell death. AML is one of the cancer types known to be targetable by such JQ1-like drugs. These drugs, called Drugs called BET inhibitors interact with the bromodomains of BRDx proteins and prevent them from binding to H3k27ac and inhibit transcriptional activation, impacting <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4198154/">mainly the expression of MYC</a>.</p>
 
 <p><img src="/assets/images/transcription-model-1-2-3.jpg" alt="transcription machinery" /></p>
 
@@ -871,7 +895,7 @@ All RNAseq was processed with <a href="https://www.ncbi.nlm.nih.gov/pmc/articles
 
 <h4 id="rna-sequencing-after-crispr-rnp-experiment">RNA sequencing after CRISPR RNP experiment</h4>
 
-<p>We used RNP induced CRISPR to target CTRC of MV411 and then RNA sequenced it in triplicate.</p>
+<p>We used RNP induced CRISPR to target CTRC of MV411 and after 72h, RNA sequenced it in triplicate.</p>
 
 <p>However sequencing and targets were made by different groups and found a batch effect. We did not corrected for it (see my soon to be <a href="https://jkobject/404.html">released blog</a> post on why correcting for batch effect -especially in computational biology- is most often not a good idea). We continued our analysis and applied <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8">DESeq</a> to the data. We found out some interesting relations and tried to display it in a correlation matrix of each experiment over its differential expression.</p>
 
@@ -1105,7 +1129,7 @@ biological pathways terms. They both gave similar clusters. These were different
 <h4 id="chipseq-analysis-on-aml-cl">ChIPseq analysis on AML CL</h4>
 
 <p>One of our main experiment is the consistent ChIP profiling of 25 CTRC members. The replicated were first filtered by eye, looking for clearly failed experiments.
-Given the variable number of replicates and the variable quality amongst replicate and proteins, we decided to first analyze them one by one. Then try to merge the found peaks and look for missed peak across replicates. This would allow us to get a merge quality. Given this quality metric. Either we were often able to discard a failed experiment on the basis of its total number of peaks. Good quality merging were then marked for merging at the <a href="https://support.illumina.com/help/BS_App_MDProcessor_Online_1000000007932/Content/Source/Informatics/BAM-Format.htm">bam</a> file level. The merged bam file was then reprocessed. The procedure is named <em>ChipMerger</em>.</p>
+Given the variable number of replicates and the variable quality amongst replicate and proteins, we decided to first analyze them one by one. Then try to merge the found peaks and look for missed peak across replicates. This would allow us to get a merge quality. Given this quality metric. Either we were often able to discard a failed experiment on the basis of its total number of peaks. Good quality merging were then marked for merging at the <a href="https://support.illumina.com/help/BS_App_MDProcessor_Online_1000000007932/Content/Source/Informatics/BAM-Format.htm">bam</a> file level. The merged bam file was then reprocessed. The procedure is named <em>ChIPMerger</em>.</p>
 
 <p><img src="/assets/images/chipmerging.png" alt="analysis scheme" /></p>
 
@@ -1228,6 +1252,10 @@ Given the variable number of replicates and the variable quality amongst replica
 <p><img src="/assets/images/amlproject.png" alt="representation of the model" /></p>
 
 <p>We will now present the general idea behind the model. This is a blueprint of what will be undertaken in the coming months.</p>
+
+<blockquote>
+  <p>We have to emphasize that ChIP binding does not mean a direct regulation to a gene, (neither does it means a direct binding to the DNA sequence). Wether it is up or down regulation of a gene depends on the entire set of regulators in presence and likely how they are placed between one another.</p>
+</blockquote>
 
 <h4 id="defining-enhancers">Defining enhancers</h4>
 
@@ -1432,8 +1460,9 @@ Given the variable number of replicates and the variable quality amongst replica
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-12-09T13:37:18-05:00">December 09, 2019</time></p>
-        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-06-10T18:41:14-04:00">June 10, 2020</time></p>
+
+
       </footer>
 
       <section class="page__share">
@@ -1480,11 +1509,7 @@ Given the variable number of replicates and the variable quality amongst replica
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/dimred.jpg"
-          
-          alt="">
+        <img src="/assets/images/dimred.jpg" alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -1517,11 +1542,7 @@ Given the variable number of replicates and the variable quality amongst replica
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/advancedstudy.jpg"
-          
-          alt="">
+        <img src="/assets/images/advancedstudy.jpg" alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -1554,11 +1575,7 @@ Given the variable number of replicates and the variable quality amongst replica
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/epflinter.jpeg"
-          
-          alt="">
+        <img src="/assets/images/epflinter.jpeg" alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -1591,11 +1608,7 @@ Given the variable number of replicates and the variable quality amongst replica
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/broad1.png"
-          
-          alt="">
+        <img src="/assets/images/broad1.png" alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -1684,7 +1697,7 @@ Given the variable number of replicates and the variable quality amongst replica
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2019 Jérémie Kalfon. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2020 Jérémie Kalfon. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
@@ -1706,10 +1719,10 @@ Given the variable number of replicates and the variable quality amongst replica
     
   <script>
     var disqus_config = function () {
-      this.page.url = "https://jkobject.com/projects/predicting-dependencies-from-enhancers/";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/projects/predicting-dependencies-from-enhancers"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "https://jkobject.com/projects/predicting-dependencies-from-enhancers/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/projects/predicting-dependencies-from-enhancers"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
-    (function() { // DON'T EDIT BELOW THIS LINE
+    (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');
       s.src = 'https://jkobject.disqus.com/embed.js';
       s.setAttribute('data-timestamp', +new Date());

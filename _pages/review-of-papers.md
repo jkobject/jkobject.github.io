@@ -1394,9 +1394,7 @@ More information about Riemannian topology can then be learned [here](http://www
 
 ## Reproducible pharmacogenomic profiling of cancer cell line panels-- Peter m. Haverty, Eva Lin, Jenille Tan2, yihong yu...
 
-A presentation of a meta analysis and replication test of large scale pharmacogenomic profiling of CCLs both at sanger and broad by independant panel as a response to another research. It showed that flaws in the critics of the reproducibiliity existed as it was not judging on the full dataset and it was not looking at the same thing as what the large scale studies where interested in.
-
-It also shows that it is able to correlate both results by doind the analysis differently and to reproduce them (with more correlation to broad's)
+A presentation of a meta analysis and replication test of large scale pharmacogenomic profiling of CCLs both at sanger and broad by independant panel as a response to another research. It showed that flaws in the critics of the reproducibiliity existed as it was not judging on the full dataset and it was not looking at the same thing as what the large scale studies where interested in.It also shows that it is able to correlate both results by doind the analysis differently and to reproduce them (with more correlation to broad's)
 
 
 ## EZH2 oncogenic mutations drive epigenetic, transcriptional, and structural changes within chromatin domains-- Maria C. Donaldson-Collier1,5, Stephanie Sungalee, EPFL
@@ -1410,14 +1408,12 @@ A paper I had already read before discovering and explaining what are super enha
 
 ## DIGGIT: a Bioconductor package to infer genetic variants driving cellular phenotype -- Mariano J. Alvarez, James C. Chen and Andrea Califano
 
-A very small paper. more of an abstract that does not explain the algorithm but shows a way to improve gwas studies by improving QTL estimation based on knowledge of master regulators and impacts of CNV on expression.
-The paper was not precise enough for me to make any judgment on the logic. It is not a good paper.
+A very small paper. more of an abstract that does not explain the algorithm but shows a way to improve gwas studies by improving QTL estimation based on knowledge of master regulators and impacts of CNV on expression. The paper was not precise enough for me to make any judgment on the logic. It is not a good paper.
 
 
 ## Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2 -- Michael I Love, Wolfgang Huber and Simon Anders
 
-Here is a presentation of DESeq2 which improves on the previous version as it is trying to shrink the variance in the data based on the amount of support you get from the data itself. 
-This will reduce the estimate of the fold change based on fitting the data to a NB distribution in a bayesian framework where the estimates of a MaxLikelyhood round are fitted again to a distribution with a prior as a zero centered Normal with a MAP round. The confidence values and the  ah ok ones pass a Wald Test which provide a z stat.
+Here is a presentation of DESeq2 which improves on the previous version as it is trying to shrink the variance in the data based on the amount of support you get from the data itself. This will reduce the estimate of the fold change based on fitting the data to a NB distribution in a bayesian framework where the estimates of a MaxLikelyhood round are fitted again to a distribution with a prior as a zero centered Normal with a MAP round. The confidence values and the  ah ok ones pass a Wald Test which provide a z stat.
 
 ## TADs as the caller calls them-- Elzo de Wit
 
@@ -1466,9 +1462,41 @@ They showed that NMF is the better tool overall to detect Genetic expression pro
 
 ## DeepCpG: accurate prediction of single-cell DNA methylation states using deep learning-- Christof Angermueller1, Heather J. Lee, Wolf Reik
 
-A tools  to impute low-coverage methylation profiles for sets of cells
-and to discover DNA sequence motifs that are associated with methylation states and cell-to-cell variability from a bi input (CPG | Mut -> GRU | CONV -> FC-> CPG)
+A tools  to impute low-coverage methylation profiles for sets of cells and to discover DNA sequence motifs that are associated with methylation states and cell-to-cell variability from a bi input (CPG | Mut -> GRU | CONV -> FC-> CPG). I would really have wished to see the actual specificity and sensitivity given that the algorithm
 
-## Massively multiplex chemical transcriptomics at      single-cell resolution-- Sanjay R. Srivatsan, José L. McFaline-Figueroa
+## LighCpG: a multi-view CpG sites detection on single-cell whole genome sequence data
 
+It is like deepCpG but using the LightGBM algorithm to make its prediction. Does seem to be somewhat equivalent but faster.
+
+## Massively multiplex chemical transcriptomics at single-cell resolution-- Sanjay R. Srivatsan, José L. McFaline-Figueroa
+
+
+## Improved protein structure prediction using potentials from deep learning-- DeepMind
+
+finally deepmind presents its alpha fold algorithm and release it. The algorithm is using first MSA based sequence matching (from database) and then uses the first contact estimates, sequence specific information (and BLAST data) and output of a POTTS model as input to a very deep conv net with ELU layers and skip connections to refine the contact map. the predictions are then used by a non-convex differentiable model that will predict actual pairwise distances from the given data (which is: additional input from van der walls forces model, torsion distribution and distance distribution) using gradient descent (muliple trials with different noise input at the first step)    
+
+## PAN CANCER ANALYSIS OF WHOLE GENOME: Broad, Toronto,
+
+### A deep learning system can accurately classify primary and metastatic cancers based
+
+Here researcher are presenting a simple NN trained on mutation features over the largest WGS tumor panel and show that methylation patterns guessed from passenger mutation distribution is very efficient. that sequencer/mut caller difference decrease their accuracy from 90% to 80%. That they can as well predict on metastasis than primary.
+
+###
+
+
+## Growth Differentiation Factor 11 Is a Circulating Factor that Reverses Age-Related Cardiac Hypertrophy-- Francesco S. Loffredo, Matthew L. Steinhauser, Steven M. Jay
+
+we can see that GDF-11 seems to be a factor to precent cardiac hypertrophy in aging.
+This was an experimental study using proteomic analysis of blood from aged and young mice. doing heterochronic parabiosis and (trying to) controlling for blood pressure and behavioral changes post surgery.
+
+## The Hallmarks of Aging-- Carlos Lopez-Otı Maria A. Blasco, Linda Partridge
+
+We have a good overview showing the main research and knowledge into aging, very similar to cancer hallmark although less insight is available compared to cancer
+A must read.
+
+## Predicting Deeper into the Future of Semantic Segmentation--
+
+They are reusing a well known semantic segmentation architexture called Dilation10 and used it in an autoregressive fashion (predicting one frame and the next ...) and compared it to known methods to show that this approach was the most efficient. 
+
+## FEDERATED LEARNING: STRATEGIES FOR IMPROVING COMMUNICATION EFFICIENCY-- Jakub Konecˇny, H. Brendan McMahan, Google
 

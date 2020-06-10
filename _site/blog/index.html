@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.17.2 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.19.3 by Michael Rose
   Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -112,6 +112,28 @@
 
     <!-- start custom head snippets -->
 
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -157,13 +179,13 @@
             </li><li class="masthead__menu-item">
               <a href="/projects/" title="">Projects</a>
             </li><li class="masthead__menu-item">
-              <a href="/opinions/" >Opinions</a>
+              <a href="/opinions/">Opinions</a>
             </li><li class="masthead__menu-item">
-              <a href="/ideas/" >Ideas</a>
+              <a href="/ideas/">Ideas</a>
             </li><li class="masthead__menu-item">
               <a href="/blog/" title="A short extract about my life experiences.">Blog</a>
             </li><li class="masthead__menu-item">
-              <a href="/papers/" >Papers</a>
+              <a href="/papers/">Papers</a>
             </li><li class="masthead__menu-item">
               <a href="/courses/" title="Here is the list of the Courses I have received and the one I have given.">Courses</a>
             </li><li class="masthead__menu-item">
@@ -191,10 +213,6 @@
     <div class="initial-content">
       
   
-
-
-
-
 
 
 
@@ -269,8 +287,6 @@
   
     <div class="author__avatar">
       
-
-      
         <img src="/assets/images/id.png" alt="Jérémie Kalfon" itemprop="image">
       
     </div>
@@ -300,15 +316,15 @@
       
         
           
-            <li><a href="https://twitter.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+            <li><a href="https://twitter.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
           
         
           
-            <li><a href="https://Scholar.google.com/citations?user=zyXiydsAAAAJ" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i> Scholar</a></li>
+            <li><a href="https://Scholar.google.com/citations?user=zyXiydsAAAAJ" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i><span class="label">Scholar</span></a></li>
           
         
           
-            <li><a href="https://LinkedIn.com/in/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+            <li><a href="https://LinkedIn.com/in/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
           
         
       
@@ -319,7 +335,7 @@
         <li>
           <a href="mailto:jkobject@gmail.com">
             <meta itemprop="email" content="jkobject@gmail.com" />
-            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
           </a>
         </li>
       
@@ -383,6 +399,7 @@
   </div>
 
 
+
   <div class="archive">
     
     
@@ -443,11 +460,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/dimred.jpg"
-          
-          alt="">
+        <img src="/assets/images/dimred.jpg" alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -480,11 +493,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/advancedstudy.jpg"
-          
-          alt="">
+        <img src="/assets/images/advancedstudy.jpg" alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -517,11 +526,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/epflinter.jpeg"
-          
-          alt="">
+        <img src="/assets/images/epflinter.jpeg" alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -554,11 +559,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/broad1.png"
-          
-          alt="">
+        <img src="/assets/images/broad1.png" alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -599,11 +600,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/cambridgeitw.jpeg"
-          
-          alt="">
+        <img src="/assets/images/cambridgeitw.jpeg" alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -644,11 +641,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/kentuni.jpeg"
-          
-          alt="">
+        <img src="/assets/images/kentuni.jpeg" alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -681,11 +674,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/hbp.jpeg"
-          
-          alt="">
+        <img src="/assets/images/hbp.jpeg" alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -718,11 +707,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/internshipnyc.jpeg"
-          
-          alt="">
+        <img src="/assets/images/internshipnyc.jpeg" alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -763,11 +748,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/highlife1.png"
-          
-          alt="">
+        <img src="/assets/images/highlife1.png" alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -808,11 +789,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/mexicotrip.jpeg"
-          
-          alt="">
+        <img src="/assets/images/mexicotrip.jpeg" alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -853,11 +830,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/engschool1.jpeg"
-          
-          alt="">
+        <img src="/assets/images/engschool1.jpeg" alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -947,7 +920,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2019 Jérémie Kalfon. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2020 Jérémie Kalfon. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

@@ -7,6 +7,17 @@ layout: default
 published: false
 ---
 
+## Creating a pharmaceutical as good supplement for things that are preventative
+
+We are now facing a big issue. We know of many mechanism of aging, cancer, overweight...
+However most of these diseases imply not curing them but preventing them before they happen.
+It can be done through better lifestyle. Which a lot of people are undertaking with more or less efficiency and often getting trapped by fake meds. that can even harm them.
+Why actual medicine did not rushed into this. We know how to have mice live 40% longer, make them cancer free or prevent them from getting overweight whatever their diet since decades. Why hasn't this knowledge been transfer to humans? one reason is FDA regulation. How can you test this? It would take thousands of people and many decades. It is untestable in humans. One way would be to create a pharmaceutical company that act in everyway like a regular one but does not get FDA approval and sell its products as food supplements. Its challenge would be to convince the right people that this is 100 times more potent than what they used before but might have some danger. And to put in place the right monitoring mechanisms to prove both harmlessness and potency of these drugs.
+
+## Create a new platform for Bio Experiment:
+
+Parse Geo and sra and.. to really create a Google of experiment. Will help people not even having to publish. As you would cite the experiments themselves, redo the experiments, comments, rank them... to really bring the possibility to meta analyse them and not redo experiments you don't need to redo based on the quality of the ones already done. I am not talking here only about sequencing but also WB, protein degradation, drug treatments... Each experiments would be searchable organized by replicates (accross labs) and citable (research paper associated or not)
+
 ## BIO Research idea (from Lee rubin)
 
 Viral transduction of three transcription factors can reprogram adult somatic cells to induced pluripotent cells that possess many of the known characteristics of embryonic stem cells. Unfortunately, the potential for aberrant integration of foreign genetic material into the host’s genome and the expression of reprogramming factors with oncogenic potential limit the therapeutic utility of these cells. Such limitations could be overcome by identifying small molecules that compensate for the removal of each of the transcription factors by either inducing their endogenous expression or by mimicking their activities during the reprogramming process. To this end, we designed a series of high-content screens, each based on the activation of Oct4::GFP in mouse embryonic fibroblasts. Using carefully chosen annotated compound libraries, we identified small molecules capable of selectively replacing Sox2, Klf4 and Oct4. Induced pluripotent cells derived using the identified small molecules appropriately express all stem cell markers, can be directed to differentiate in vitro, form teratomas composed of tissue from all three embryonic germ layers, contribute to the inner cell mass of a blastocyst, and yield live chimeric offspring. Thus, somatic cells reprogrammed using the identified small molecule replacement compounds are likely bona fide induced pluripotent cells.

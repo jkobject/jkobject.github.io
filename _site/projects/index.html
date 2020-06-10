@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.17.2 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.19.3 by Michael Rose
   Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -114,6 +114,28 @@
 
     <!-- start custom head snippets -->
 
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -159,13 +181,13 @@
             </li><li class="masthead__menu-item">
               <a href="/projects/" title="">Projects</a>
             </li><li class="masthead__menu-item">
-              <a href="/opinions/" >Opinions</a>
+              <a href="/opinions/">Opinions</a>
             </li><li class="masthead__menu-item">
-              <a href="/ideas/" >Ideas</a>
+              <a href="/ideas/">Ideas</a>
             </li><li class="masthead__menu-item">
               <a href="/blog/" title="A short extract about my life experiences.">Blog</a>
             </li><li class="masthead__menu-item">
-              <a href="/papers/" >Papers</a>
+              <a href="/papers/">Papers</a>
             </li><li class="masthead__menu-item">
               <a href="/courses/" title="Here is the list of the Courses I have received and the one I have given.">Courses</a>
             </li><li class="masthead__menu-item">
@@ -224,6 +246,7 @@
 <div id="main" role="main">
   
 
+
   <div class="archive">
     
       <h1 id="page-title" class="page__title">Projects</h1>
@@ -242,11 +265,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/caimann.png"
-          
-          alt="">
+        <img src="/assets/images/caimann.png" alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -277,11 +296,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/nol.png"
-          
-          alt="">
+        <img src="/assets/images/nol.png" alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -312,11 +327,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/piple1.jpeg"
-          
-          alt="">
+        <img src="/assets/images/piple1.jpeg" alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -347,11 +358,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/piple1-teaser.png"
-          
-          alt="">
+        <img src="/assets/images/piple1-teaser.png" alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -382,11 +389,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/dependency-prediction.jpg"
-          
-          alt="">
+        <img src="/assets/images/dependency-prediction.jpg" alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -417,11 +420,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/pycub.jpg"
-          
-          alt="">
+        <img src="/assets/images/pycub.jpg" alt="">
       </div>
     
     <h2 class="archive__item-title" itemprop="headline">
@@ -507,7 +506,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2019 Jérémie Kalfon. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2020 Jérémie Kalfon. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

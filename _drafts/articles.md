@@ -7,6 +7,17 @@ permalink: /my_articles/
 published: false
 ---
 
+## On receiving bad feedback.
+
+Why getting older make you often receive less and less bad feedback.
+
+Maaking plots:
+- how much bad feedbacks 
+
+giif feedbck getting scarce. just mean that you re not receiving it anymore. not that you got better
+
+as you get older. especially male, always check on how much bad feedback you get. And be worried if it gets scarcer.
+
 ## On human population size
 given the demographs estimate that a maximum population size for humans should be around 15 billion people with current technology.
 we can see how far we are today despite the increasing talks in europe, to limit the number of newborns and diminish the total human population (some people would want it to 250 million, apparently required to live in harmony). 
