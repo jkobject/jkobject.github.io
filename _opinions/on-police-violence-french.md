@@ -16,7 +16,6 @@ Hello! Donc voilà, j'imagine que vous suivez tous au moins un peu ce mouvement 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/jjV0o1uOxgE" frameborder="0" allowfullscreen></iframe>
  
 <br/>
-<br/>
  
 Comme la plupart de mes collègues, j'ai aujourd'hui mené une grève d'une journée pour passer du temps à agir contre le racisme et contre les violences policières. Ce mouvement se nomme [#ShutDownSTEM](https://www.shutdownstem.com/action) Ces actions sont pour moi une façon de: 
  
@@ -62,7 +61,6 @@ Pour mieux comprendre le racisme il existe de nombreuses ressources:
 <iframe width="420" height="315" src="https://www.youtube.com/embed/u5GCetbP7Fg" frameborder="0" allowfullscreen></iframe>
  
 <br/>
-<br/>
  
 En ce qui concerne les [policiers tués](https://fr.wikipedia.org/wiki/Victime_du_devoir), j’'ai bien cherché. Une première remarque, c'est qu'on en parle souvent beaucoup plus que ce que l’on pense. Les derniers en date on même eu droit aux plus grands honneurs de la [nation](https://www.francebleu.fr/infos/societe/attaque-au-couteau-a-la-prefecture-de-police-de-paris-l-un-des-policiers-tues-a-travaille-a-orleans-1570542830). Le fait est qu'à part des attaques terroristes ou des accidents entre policiers, je n'ai pu voir de cas de policier qui serait mort dans les cités ou dans les "quartiers chauds". Mais même si c'était le cas. Même si il y en avait au moins autant que de morts des mains de la police, serait-ce réellement une façon de raisonner sur un service publique? Dent pour dent? Oeil pour oeil? 
  
@@ -79,7 +77,6 @@ Que des policiers connus pour être des suprémacistes blancs sont maintenu en p
  
 <iframe width="420" height="315" src="https://www.youtube.com/embed/HDrvPpxR_1g" frameborder="0" allowfullscreen></iframe>
  
-<br/>
 <br/>
  
 Pourquoi est ce que chacune de ces affaires, absolument chacune, contient des zones d'ombres, des mensonges avérés de la part de la police, des enquêtes lacunaires de la part de l'IGPN, des preuves manipulées, des décisions de justice à rallonge, des non suspensions?
@@ -121,3 +118,9 @@ Pour ceux qui parlent anglais j'ai aussi de nombreuses ressources qui ont été 
 - [mener des actions aux États-Unis](https://docs.google.com/document/d/1-0KC83vYfVQ-2freQveH43PWxuab2uWDEGolzrNoIks/preview?pru=AAABcrlABIg*CTRCUA8jmOlQXx3qGnF9QA)
 - [des actions un peu chaque jour en juin](https://docs.google.com/document/d/1H-Vxs6jEUByXylMS2BjGH1kQ7mEuZnHpPSs1Bpaqmw0/mobilebasic)
 - [des ressources anti-racistes… pour les blancs](https://docs.google.com/document/d/1BRlF2_zhNe86SGgHa6-VlBO-QgirITwCTugSfKie5Fs/preview?pru=AAABconWPXE*ZsYtaRCzDFfFL1W24BqegQ&usp=gmail)
+- Allez voir [Particles for Justice](https://www.particlesforjustice.org/).
+- Regardez les opinions de [Trevor Noah](https://www.youtube.com/watch?v=v4amCfVbA_c), [Hasan Minhaj](https://www.youtube.com/watch?v=i_FE78X-qdY), and [John Oliver](https://www.youtube.com/watch?v=Wf4cea5oObY).
+- Regardez [13th](https://www.netflix.com/title/80091741) sur Netflix.
+- Lisez les livres tels que: [HOW TO BE AN ANTIRACIST](https://bookshop.org/books/how-to-be-an-antiracist/9780525509288), [White Fragility](https://bookshop.org/books/white-fragility-why-it-s-so-hard-for-white-people-to-talk-about-racism/9780807047415), [We Were Eight Years in Power](https://bookshop.org/books/we-were-eight-years-in-power-an-american-tragedy/9780399590573), [The Fire Next Time](https://bookshop.org/books/the-fire-next-time/9780679744726)
+- Pas assez de temps pour un livre? lisez l'article: [The Case For Reparations](https://www.theatlantic.com/magazine/archive/2014/06/the-case-for-reparations/361631/).
+- Watch [“Talking to Children Authentically About Race and Racism”](https://www.pbs.org/parents/talking-about-racism) sur PBS KIDS et discutez en avec vos enfants.
