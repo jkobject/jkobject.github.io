@@ -50,7 +50,17 @@ Alors aux Etats-Unis on sait ces choses là, on se rend compte du racisme. En Fr
 J'ai pu entendre de ci, de là, que le racisme existe de tous les côtés, émanant aussi bien de la part de certains policiers que de personnes arrêtées. J'aimerais rappeler que la "théorie" du racisme anti blanc nous vient tout droit de l'extrême droite. C'est une théorie qui exprime un négationnisme de l'histoire du monde et de l'histoire de notre pays. 
  
 > Il existe des gens qui n'aiment pas d'autres gens. Mais le racisme... c'est autre chose. 
- 
+
+J'ai aussi put entendre que ce n'était pas du racisme mais une haine de classe. Que les noirs et les arabes sont pauvre et que les pauvres les flics les controles et la société les maltraite. Il n'y aurais pas de racisme systémique en France et dans la police. Juste des pauvres. Au delà du fait que ce serait niés les statistiques que j'ai pu lister ici. Nier les livres, les articles.. 
+Qu'en penses une jeune fille noire, riche, de famille blanche et de l'élite française? [Ça](https://www.huffingtonpost.fr/entry/je-suis-noire-et-issue-dun-milieu-tres-favorise-je-ne-suis-pas-pour-autant-epargnee-par-le-racisme-blog_fr_5ee09de2c5b6af1f3499ab0e).
+Qu'en penses des familles noires intégrées depuis près d'un siècle en France? [Ça](https://mobile.francetvinfo.fr/faits-divers/police/violences-policieres/on-a-peur-qu-ils-soient-blesses-ou-tues-comment-des-familles-noires-et-arabes-apprennent-a-leurs-enfants-a-vivre-avec-les-forces-de-l-ordre_4001867.html#xtor=AL-792&xtref=https://news.google.com/&xtref=https://www.francetvinfo.fr/faits-divers/police/violences-policieres/on-a-peur-qu-ils-soient-blesses-ou-tues-comment-des-familles-noires-et-arabes-apprennent-a-leurs-enfants-a-vivre-avec-les-forces-de-l-ordre_4001867.html).
+Je pense que le point est prouvé mais qu'il n'y avait pas besoin de le faire.
+
+
+On m'a donné l'argument que les policiers sont mal payés et donc trouvent des défouloirs. Que la solution est donc de mieux les payers. Fondamentalement je ne crois pas qu'être une classe moyenne justifie quelconque haine, que ce soit de classe ou de race. Mais au delà de ça: il se trouve que les policiers même en début de carrière n'est pas le métier le moins bien payé. Très loin de là. A 2.345€ [net en début de carrière](https://infos.emploipublic.fr/article/devenir-policier-dans-la-police-nationale-eea-7724#:~:text=Salaire%20net%20mensuel%20d'un%20officier%20de%20police%20(%C3%A0%20Paris,le%20statut%20de%20commandant%20divisionnaire.) en région parisienne, c'est donc beaucoup plus que le SMIC. Des smicards il y en a en France et il y en a eu beaucoup. Mais si on suit cette logique, comment expliqué que dans l'histoire de France ceux qui se sont battus pour le droit des immigrés, les anti racistes.. soient souvent les syndicats, les ouvriers, la [CGT, le front populaire...](https://www.histoire-immigration.fr/reperes/au-travail/les-luttes-sociales). Non la classe ne justifie pas le racisme.
+
+
+J'aimerais qu'aujourd'hui en France on ne justifie pas le racisme et la violence. 
 Pour mieux comprendre le racisme il existe de nombreuses ressources: 
 - [https://www.ldh-france.org/wp-content/uploads/IMG/pdf/combattre-le-racisme.pdf](https://www.ldh-france.org/wp-content/uploads/IMG/pdf/combattre-le-racisme.pdf) et [https://www.vogue.fr/culture/article/8-voix-a-ecouter-pour-mieux-comprendre-le-racisme-subi-par-les-noirs](https://www.vogue.fr/culture/article/8-voix-a-ecouter-pour-mieux-comprendre-le-racisme-subi-par-les-noirs) et certaines vidéos en anglais (vous pouvez activer les sous-titres) ainsi que de nombreuses ressources anglophones plus bas.
  
@@ -124,3 +134,4 @@ Pour ceux qui parlent anglais j'ai aussi de nombreuses ressources qui ont été 
 - Lisez les livres tels que: [HOW TO BE AN ANTIRACIST](https://bookshop.org/books/how-to-be-an-antiracist/9780525509288), [White Fragility](https://bookshop.org/books/white-fragility-why-it-s-so-hard-for-white-people-to-talk-about-racism/9780807047415), [We Were Eight Years in Power](https://bookshop.org/books/we-were-eight-years-in-power-an-american-tragedy/9780399590573), [The Fire Next Time](https://bookshop.org/books/the-fire-next-time/9780679744726)
 - Pas assez de temps pour un livre? lisez l'article: [The Case For Reparations](https://www.theatlantic.com/magazine/archive/2014/06/the-case-for-reparations/361631/).
 - Watch [“Talking to Children Authentically About Race and Racism”](https://www.pbs.org/parents/talking-about-racism) sur PBS KIDS et discutez en avec vos enfants.
+- [what white people don't understand about racism](https://www.bostonglobe.com/2020/06/09/magazine/what-too-many-white-people-still-dont-understand-about-racism/)

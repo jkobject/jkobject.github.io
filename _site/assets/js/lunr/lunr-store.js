@@ -47,10 +47,10 @@ var store = [{
         "url": "https://jkobject.com/blog/human-brain-project/",
         "teaser": "https://jkobject.com/assets/images/hbp.jpeg"
       },{
-        "title": "An MSc at the University of Kent",
+        "title": "A MSc at the University of Kent",
         "excerpt":"I recently came back from a graduation, 🎓 day in Canterbury, England. There, I have received in the most sumptuous Cathedral, a Master of Science in Advanced Computer Science, 🧪 and Computational Intelligence with Distinction from the University of Kent. I had a lot of choice of destinations to do...","categories": ["education"],
         "tags": ["Education","England","University","Study Abroad","Master Of Science"],
-        "url": "https://jkobject.com/blog/an-msc-at-the-univeristy-of-kent/",
+        "url": "https://jkobject.com/blog/a-msc-at-the-univeristy-of-kent/",
         "teaser": "https://jkobject.com/assets/images/kentuni.jpeg"
       },{
         "title": "Interviews in Cambridge",
@@ -81,6 +81,12 @@ var store = [{
         "excerpt":"Umap is a dimensionality reduction algorithm. It takes points defined by vectors of high dimensions: 2D vector= (x,y), 3D vector= (x,y,z), ND vector= (x,y,z,a,b,c,…n) And puts them back in lower dimensions. This allows for visualizing point clouds in 2D and also finding a subspace/ base / manifold in which the...","categories": ["explanation"],
         "tags": ["Computational Biology","Data Science","Mathematics"],
         "url": "https://jkobject.com/blog/umap-explanation/",
+        "teaser": "https://jkobject.com/assets/images/dimred.jpg"
+      },{
+        "title": "UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction",
+        "excerpt":"Umap is a dimensionality reduction algorithm. It takes points defined by vectors of high dimensions: 2D vector= (x,y), 3D vector= (x,y,z), ND vector= (x,y,z,a,b,c,…n) And puts them back in lower dimensions. This allows for visualizing point clouds in 2D and also finding a subspace/ base / manifold in which the...","categories": ["explanation"],
+        "tags": ["Computational Biology","Data Science","Mathematics"],
+        "url": "https://jkobject.com/blog/one-year-at-the-broad/",
         "teaser": "https://jkobject.com/assets/images/dimred.jpg"
       },{
         "title": "CaImAn",

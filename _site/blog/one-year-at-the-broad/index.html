@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>An MSc at the University of Kent | Jérémie</title>
-<meta name="description" content="I recently came back from a graduation, 🎓 day in Canterbury, England.">
+<!-- begin _includes/seo.html --><title>UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction | Jérémie</title>
+<meta name="description" content="Short stories about my professional experiences.">
 
 
   <meta name="author" content="Jérémie Kalfon">
@@ -19,27 +19,27 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Jérémie">
-<meta property="og:title" content="An MSc at the University of Kent">
-<meta property="og:url" content="https://jkobject.com/blog/an-msc-at-the-univeristy-of-kent/">
+<meta property="og:title" content="UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction">
+<meta property="og:url" content="https://jkobject.com/blog/one-year-at-the-broad/">
 
 
-  <meta property="og:description" content="I recently came back from a graduation, 🎓 day in Canterbury, England.">
+  <meta property="og:description" content="Short stories about my professional experiences.">
 
 
 
-  <meta property="og:image" content="https://jkobject.com/assets/images/kentuni.jpeg">
+  <meta property="og:image" content="https://jkobject.com/assets/images/dimred.jpg">
 
 
 
   <meta name="twitter:site" content="@jkobject">
-  <meta name="twitter:title" content="An MSc at the University of Kent">
-  <meta name="twitter:description" content="I recently came back from a graduation, 🎓 day in Canterbury, England.">
-  <meta name="twitter:url" content="https://jkobject.com/blog/an-msc-at-the-univeristy-of-kent/">
+  <meta name="twitter:title" content="UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction">
+  <meta name="twitter:description" content="Short stories about my professional experiences.">
+  <meta name="twitter:url" content="https://jkobject.com/blog/one-year-at-the-broad/">
 
   
     <meta name="twitter:card" content="summary">
     
-      <meta name="twitter:image" content="https://jkobject.com/assets/images/kentuni.jpeg">
+      <meta name="twitter:image" content="https://jkobject.com/assets/images/dimred.jpg">
     
   
 
@@ -47,7 +47,7 @@
 
 
 
-  <meta property="article:published_time" content="2017-09-20T00:00:00-04:00">
+  <meta property="article:published_time" content="2020-06-11T00:00:00-04:00">
 
 
 
@@ -60,7 +60,7 @@
   
 
 
-<link rel="canonical" href="https://jkobject.com/blog/an-msc-at-the-univeristy-of-kent/">
+<link rel="canonical" href="https://jkobject.com/blog/one-year-at-the-broad/">
 
 
 
@@ -246,7 +246,7 @@
     
       
       
-        <li class="current">An MSc at the University of Kent</li>
+        <li class="current">UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction</li>
       
     
   </ol>
@@ -380,15 +380,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="An MSc at the University of Kent">
-    <meta itemprop="description" content="I recently came back from a graduation, 🎓 day in Canterbury, England.">
-    <meta itemprop="datePublished" content="2017-09-20T00:00:00-04:00">
+    <meta itemprop="headline" content="UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction">
+    <meta itemprop="description" content="Short stories about my professional experiences.">
+    <meta itemprop="datePublished" content="2020-06-11T00:00:00-04:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">An MSc at the University of Kent
+          <h1 id="page-title" class="page__title" itemprop="headline">UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction
 </h1>
           
             <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
@@ -396,7 +396,7 @@
 
 
 
-  1 minute read
+  4 minute read
 
 </p>
           
@@ -405,28 +405,58 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>I recently came back from a graduation, 🎓 day in <a href="https://fr.wikipedia.org/wiki/Canterbury">Canterbury</a>, England. There, I have received in the most sumptuous Cathedral, a Master of Science in Advanced Computer Science, 🧪 and Computational Intelligence with Distinction from the <a href="https://www.kent.ac.uk/">University of Kent</a>.</p>
+        <p>Umap is a dimensionality reduction algorithm. It takes points defined by vectors of high dimensions:</p>
+<ul>
+  <li>2D vector= (x,y),</li>
+  <li>3D vector= (x,y,z),</li>
+  <li>ND vector= (x,y,z,a,b,c,…n)</li>
+</ul>
 
-<p><img src="https://cdn-images-1.medium.com/max/2000/1*XpaYaPvxAq_Ax_HM2MIv7Q.jpeg" alt="" />
-I had a lot of choice of destinations to do a double degree arrangement during my last years at ECE. I decided to choose this one as it seemed to me the best opportunity to both enter the academical system, get a degree from an english speaking country and learn about machine learning.</p>
+<p>And puts them back in lower dimensions. This allows for visualizing point clouds in 2D and also finding a subspace/ base / manifold in which the cloud data lies.</p>
 
-<p>There I went to live on the campus in what I found to be a gigantic university. My room was 10sq meters large and with only a small window showing an empty field. I cried for 10mn straight when I arrived. Coming back from a crazy internship, some conferences in Lausanne and a life in Paris… it was different.</p>
+<p>This can be better seen in the 3D to 2D case. The reduced vector is also called an embedding of the first one.</p>
 
-<p>But I knew that everything was in my head and that if I would to put things in order and create a nice environment, I may be happy, 😃. There I put the distraction away, far away and I was left with myself and a will to learn.</p>
+<p><img src="/assets/images/dimred.jpg" alt="scikit learn" class="align-center" /></p>
 
-<p>I took courses and even 2 additional ones (out of curiosity). I got books, 📖 at the library and set in order a daily planning that filled my day entirely.</p>
+<p><em>View of learning the shape of a “sheet of paper” only by knowing a set of points that lie on it.</em></p>
 
-<p><img src="https://cdn-images-1.medium.com/max/2000/1*mcBt1Ie1L0RmI4SoXWUrtQ.jpeg" alt="" /></p>
+<p>Unlike many other famous techniques (<a href="https://medium.com/@raghavan99o/principal-component-analysis-pca-explained-and-implemented-eeab7cb73b72">PCA</a>, <a href="d">MDS</a>…), it learns this structure by using local information. i.e. only looking at specific patches at a time. The neighbors of each points, like <a href="https://medium.com/@raghavan99o/principal-component-analysis-pca-explained-and-implemented-eeab7cb73b72">t-SNE</a>. This type of technique is called non linear as it can learn complex “bendy” shapes (like the S above).</p>
 
-<p>I had one, ☝️ plan. To produce an amazing master thesis, to learn as much as I could and to find the best possible Ph.D.</p>
+<p>Neighbor information is better encoded into a graph. With edges representing distances between points. and only displaying the edges to the nearest points in the neighborhood.</p>
 
-<p>Boy it was nice, 👍 . My girlfriend, at the time, was living in London and I cam every 2 weekends to see her and spend time in the city. I was not envying her as I discover the peacefulness of Kent.</p>
+<p>This distance is normalized by all distances this point has to its neighbors, meaning now the range of possible distances is transformed into a [0,1] range where the closest point will be at a distance 0 and the furthest point will be at a distance computed such that summing all the distances between all neighbors will get to $log2(#neibors)$.</p>
 
-<p><img src="https://cdn-images-1.medium.com/max/3200/1*A7o8iHrsDiSkIGS5lA62gA.jpeg" alt="" /></p>
+<p>Then for all the neighbors we create a set (a list of unique things) for all edges.</p>
 
-<p>The efforts were worth it and I would never do things differently, I discovered the British way of life with its Wittabix, pubs, 8 pints, 🍻🍺 a night, its porridges and brunches.</p>
+<p>This set will be “fuzzy”, as it also contains a value representing how much each neighbors to a point is in the set of neighbors to this point, based on its distance to the center point.</p>
 
-<p>You can now more about before, during and after this exchange, <a href="http://www.jkobject.com">here</a></p>
+<p>We will do this for each point and then merge all the sets created for each point.
+Meaning, we will merge the edges and keep only the ones with the lowest distances.</p>
+
+<p>We then take each edges and consider them together as a graph or a skeleton.</p>
+
+<p><strong>Pausing for a second</strong>, we can really see that the only thing we have done here is defined edges between points and merging them together. However you have to understand that the same edge in two different set, will have two different distances as they have both been normalized by different sets of neighbors. Thus even a point far away from everything else will get one of its edges in the graph. 
+These two edges would get merged by using the <a href="https://en.wiktionary.org/wiki/t-conorm">t-conorm</a> (which a fuzzy logic way of taking the <a href="https://en.wikipedia.org/wiki/Norm_(mathematics)">norm</a> of something) on their two respective lengths.</p>
+
+<p><em>Note that we are thinking here about graph of nodes and edges but the topological logic could be applied to the faces made by each set of 3 edges and the volumes made by each set of 4 faces, etc … This would complexify the model (and render it impossible to compute) but also make it more closer to the theory underlying it</em></p>
+
+<p>We then take the core components of this graph using <a href="https://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html#sphx-glr-auto-examples-cluster-plot-cluster-comparison-py">spectral embedding</a>, where we basically take the <a href="https://www.youtube.com/watch?v=PFDu9oVAE-g">eigenvector</a> of a <a href="https://en.wikipedia.org/wiki/Adjacency_matrix">matrix of adjacency</a> (i.e. A square of numbers where rows represent the nodes of the graph and the columns represent the same nodes and the values of the matrix are the distance between, each point)</p>
+
+<p>It is a <a href="https://www.youtube.com/watch?v=PFDu9oVAE-g">decomposition</a> of the information into two things: one that define a base for the object to exist in and the other defining the layout of the object. You need both to reconstruct the object.</p>
+
+<p>Here we will only take the first 2 most important value of the base and considers it as what defines our object in 2 dimension (but it could be any other number, lower than the initial number of dimension). The two values here are vectors: they represent the 2 dimensions of each points (x,y) and each of their value/dimensions represent each of the different points in our point cloud.</p>
+
+<p>Finally we will try to improve this first version by a <a href="https://en.wikipedia.org/wiki/Mathematical_optimization">minimization</a> process. There, we want to apply a physical-like force between the nodes so that close connected edges get closer together (up to a minimum distance)</p>
+
+<p><img src="/assets/images/umap.png" alt="" class="align-center" /></p>
+
+<p><em>we can see the relation to the number of samples used and the max distance to create graph edges.</em></p>
+
+<p>All in all, there is a theoretical explanation of the algorithm that can be seen in terms of learning <a href="https://en.wikipedia.org/wiki/Fuzzy_logic">fuzzy</a> <a href="https://en.wikipedia.org/wiki/Simplicial_set">simplicial sets</a> defining the local structure of the high dimensional data and of the lower dimensional one and making the two sets converge.</p>
+
+<p>The explanation defined in part 2 of the paper can be understood by anyone after reading <a href="https://books.google.com/books?id=xbL11KfgiEAC&amp;printsec=frontcover&amp;hl=fr&amp;source=gbs_ge_summary_r&amp;cad=0#v=onepage&amp;q&amp;f=false">this book</a> which will allow the reader to gain the vocabulary to understand the wikipedia pages defining the vocabulary used in the paper. :p</p>
+
+<p>More information about Riemannian topology can then be learned <a href="http://www.math.ens.fr/~feydy/Teaching/geometrie_riemannienne_espaces_de_formes.pdf">here</a>. It is in French however ;)</p>
 
         
       </section>
@@ -447,23 +477,15 @@ I had a lot of choice of destinations to do a double degree arrangement during m
     
       
       
-      <a href="/tags/#education" class="page__taxonomy-item" rel="tag">Education</a><span class="sep">, </span>
+      <a href="/tags/#computational-biology" class="page__taxonomy-item" rel="tag">Computational Biology</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#england" class="page__taxonomy-item" rel="tag">England</a><span class="sep">, </span>
+      <a href="/tags/#data-science" class="page__taxonomy-item" rel="tag">Data Science</a><span class="sep">, </span>
     
       
       
-      <a href="/tags/#master-of-science" class="page__taxonomy-item" rel="tag">Master Of Science</a><span class="sep">, </span>
-    
-      
-      
-      <a href="/tags/#study-abroad" class="page__taxonomy-item" rel="tag">Study Abroad</a><span class="sep">, </span>
-    
-      
-      
-      <a href="/tags/#university" class="page__taxonomy-item" rel="tag">University</a>
+      <a href="/tags/#mathematics" class="page__taxonomy-item" rel="tag">Mathematics</a>
     
     </span>
   </p>
@@ -484,14 +506,14 @@ I had a lot of choice of destinations to do a double degree arrangement during m
     
       
       
-      <a href="/categories/#education" class="page__taxonomy-item" rel="tag">education</a>
+      <a href="/categories/#explanation" class="page__taxonomy-item" rel="tag">explanation</a>
     
     </span>
   </p>
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-09-20T00:00:00-04:00">September 20, 2017</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-06-11T00:00:00-04:00">June 11, 2020</time></p>
 
 
       </footer>
@@ -501,23 +523,22 @@ I had a lot of choice of destinations to do a double degree arrangement during m
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=jkobject&text=An+MSc+at+the+University+of+Kent%20https%3A%2F%2Fjkobject.com%2Fblog%2Fan-msc-at-the-univeristy-of-kent%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=jkobject&text=UMAP%3A+Uniform+Manifold+Approximation+and+Projection+for+Dimension+Reduction%20https%3A%2F%2Fjkobject.com%2Fblog%2Fone-year-at-the-broad%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjkobject.com%2Fblog%2Fan-msc-at-the-univeristy-of-kent%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjkobject.com%2Fblog%2Fone-year-at-the-broad%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fjkobject.com%2Fblog%2Fan-msc-at-the-univeristy-of-kent%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fjkobject.com%2Fblog%2Fone-year-at-the-broad%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/blog/human-brain-project/" class="pagination--pager" title="The Human Brain Project
+      <a href="/blog/umap-explanation/" class="pagination--pager" title="UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction
 ">Previous</a>
     
     
-      <a href="/blog/interviews-in-cambridge/" class="pagination--pager" title="Interviews in Cambridge
-">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 
@@ -750,8 +771,8 @@ I had a lot of choice of destinations to do a double degree arrangement during m
     
   <script>
     var disqus_config = function () {
-      this.page.url = "https://jkobject.com/blog/an-msc-at-the-univeristy-of-kent/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/blog/an-msc-at-the-univeristy-of-kent"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "https://jkobject.com/blog/one-year-at-the-broad/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/blog/one-year-at-the-broad"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');
