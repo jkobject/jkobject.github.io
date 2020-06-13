@@ -1,12 +1,12 @@
 ---
-title: "UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction"
-category: "explanation"
+title: "A year at the Broad Institute"
+category: "work"
 tags:
  - Computational Biology
  - Data Science
- - Mathematics
+ - Associate Computationnal Biologist
 header:
- teaser: "assets/images/dimred.jpg"
+ teaser: " /images/dimred.jpg"
 ---
 
 

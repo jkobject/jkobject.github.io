@@ -38,16 +38,18 @@ __En bref__: ce sont 20 décès dus à des bavures en 2019. Aucun policier n'a j
  
 ## Racisme & Violence
  
-Pour ce qui est du racisme, si le nom des morts sur Wikipedia ne vous aurait pas convaincu, en France une personne noire a 2000% de plus de chances de se faire contrôler par la police qu'un blanc. Mais je pense même que ces statistiques sont fausses. Posez vous la question si vous êtes blanc, combien de fois avez vous été contrôlé.e par la police? Quand vous sortez dans la rue, avez vous bien toujours vos papiers d'identité sur vous? Savez vous ce qu'il vous arriverait si vous ne les aviez pas? Si vous êtes noir en France, c'est le premier réflexe en sortant de chez soi, et c'est séjours au poste directement si vous ne les avez pas.
+Pour ce qui est du racisme, si le nom de famille des morts et blessés sur Wikipedia ne vous aurait pas convaincus, en France une personne noire a 2000% de plus de chances de se faire contrôler par la police qu'un blanc. Mais je pense même que ces statistiques sont encore plus importante. Posez vous la question si vous êtes blanc, combien de fois avez vous été contrôlé.e par la police? Quand vous sortez dans la rue, avez vous bien toujours vos papiers d'identité sur vous? Savez vous ce qu'il vous arriverait si vous ne les aviez pas? Si vous êtes noir en France, c'est le premier réflexe en sortant de chez soi, et c'est séjours au poste directement si vous ne les avez pas.
  
 Aux Etats-Unis un homme noir a 1 chance sur 1000 de mourir aux mains de la police. Il a beaucoup, beaucoup, beaucoup moins de chance... de devenir chercheur par exemple.
  
 Alors aux Etats-Unis on sait ces choses là, on se rend compte du racisme. En France, nous n'avons pas le droit de produire ces statistiques donc nous n'avons quasiment aucune recherche sur le sujet. Il est alors facile de se dire que eux.. c'est pire. Mais nous, on ne sait même pas.
+
+Ce n'est pas l'effet d'un petit nombre mais c'est une réalité [systémique](https://mobile.francetvinfo.fr/faits-divers/police/violences-policieres/tout-le-monde-le-sait-le-voit-et-le-subit-des-policiers-racontent-le-racisme-dans-leurs-rangs_4006021.html).
  
  
 ## Contres arguments
  
-J'ai pu entendre de ci, de là, que le racisme existe de tous les côtés, émanant aussi bien de la part de certains policiers que de personnes arrêtées. J'aimerais rappeler que la "théorie" du racisme anti blanc nous vient tout droit de l'extrême droite. C'est une théorie qui exprime un négationnisme de l'histoire du monde et de l'histoire de notre pays. 
+J'ai pu entendre de ci, de là, que le racisme existe de tous les côtés, émanant aussi bien de la part de certains policiers que de personnes arrêtées. Que c'était le fait d'un petit nombre.  J'aimerais rappeler que la "théorie" du racisme anti blanc nous vient tout droit de l'extrême droite. C'est une théorie qui exprime un négationnisme de l'histoire du monde et de l'histoire de notre pays. 
  
 > Il existe des gens qui n'aiment pas d'autres gens. Mais le racisme... c'est autre chose. 
 
