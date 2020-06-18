@@ -6,7 +6,7 @@ tags:
  - Data Science
  - Mathematics
 header:
- teaser: "assets/images/dimred.jpg"
+ teaser: "/assets/images/dimred.jpg"
 ---
 
 

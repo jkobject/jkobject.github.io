@@ -95,6 +95,12 @@ var store = [{
         "url": "https://jkobject.com/projects/caiman/",
         "teaser": "https://jkobject.com/assets/images/caimann.png"
       },{
+        "title": "DepMap Omics: How to",
+        "excerpt":"What you need to process the Quarterly DepMap-Omics releases from Terra. Here is a presentation of the pipeline. We are using a set of key tools to process the sequencing output: star: https://www.ncbi.nlm.nih.gov/pubmed/23104886 https://github.com/alexdobin/STAR/blob/master/doc/STARmanual.pdf rsem: https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-323 star fusion: https://github.com/STAR-Fusion/STAR-Fusion/wiki http://biorxiv.org/content/early/2017/03/24/120295 mutect: https://software.broadinstitute.org/cancer/cga/mutect https://youtu.be/rN-cLrb5aGs https://software.broadinstitute.org/gatk/documentation/tooldocs/4.beta.4/org_broadinstitute_hellbender_tools_walkers_mutect_Mutect2.php https://www.nature.com/articles/nbt.2514 gatk cnv: https://software.broadinstitute.org/gatk/documentation/article?id=11682 strelka: https://www.nature.com/articles/s41592-018-0051-x...","categories": ["BroadInstitute"],
+        "tags": ["Research","Broad Institute","Data Science","Cancer Dependencies","Genomics"],
+        "url": "https://jkobject.com/projects/depmap_omics_howto/",
+        "teaser": "https://jkobject.com/assets/images/depmap-logo.png"
+      },{
         "title": "No Larsen Festival",
         "excerpt":"The NoLarsen Festival is a music, 🎧 festival that I managed and organised during the year 2016–2017 as part of my student, 👩‍🎓 society. It gathered 2000 people and was a heavy work to pull out during an intense school year. One of our Artist Made Poster One of the...","categories": ["Association"],
         "tags": ["Management","Project Management","Festival","Organization","Business"],

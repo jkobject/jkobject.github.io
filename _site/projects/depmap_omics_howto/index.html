@@ -1,0 +1,884 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.19.3 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>DepMap Omics: How to | Jérémie</title>
+<meta name="description" content="How DepMap Omics data is made. How to process it Yourself">
+
+
+  <meta name="author" content="Jérémie Kalfon">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Jérémie">
+<meta property="og:title" content="DepMap Omics: How to">
+<meta property="og:url" content="https://jkobject.com/projects/depmap_omics_howto/">
+
+
+  <meta property="og:description" content="How DepMap Omics data is made. How to process it Yourself">
+
+
+
+  <meta property="og:image" content="https://jkobject.com/assets/images/depmap-logo.png">
+
+
+
+  <meta name="twitter:site" content="@jkobject">
+  <meta name="twitter:title" content="DepMap Omics: How to">
+  <meta name="twitter:description" content="How DepMap Omics data is made. How to process it Yourself">
+  <meta name="twitter:url" content="https://jkobject.com/projects/depmap_omics_howto/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://jkobject.com/assets/images/depmap-logo.png">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2020-06-18T09:37:30-04:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/jkobject">
+  
+
+  
+
+
+<link rel="canonical" href="https://jkobject.com/projects/depmap_omics_howto/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Jeremie Kalfon",
+      "url": "https://jkobject.com/",
+      "sameAs": ["https://twitter.com/jkobject","https://LinkedIn.com/in/jkobject","https://ResearchGate.com/jeremie-kalfon"]
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Jérémie Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/id-88.png" alt=""></a>
+        
+        <a class="site-title" href="/">
+          Jérémie K.
+          
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/about/" title="I am a human. I wish to make the world better with science. &lt;3">About</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/projects/" title="">Projects</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/opinions/">Opinions</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/ideas/">Ideas</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/blog/" title="A short extract about my life experiences.">Blog</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/papers/">Papers</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/courses/" title="Here is the list of the Courses I have received and the one I have given.">Courses</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/culture/" title="This is my personal list of books, Comics and films I love.">Culture</a>
+            </li>
+</ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://jkobject.com/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1">
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/projects" itemprop="item"><span itemprop="name">Projects</span></a>
+          <meta itemprop="position" content="2">
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">DepMap Omics: How to</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="DepMap Omics: How to">
+    <meta itemprop="description" content="How DepMap Omics data is made. How to process it Yourself">
+    <meta itemprop="datePublished" content="2020-06-18T09:37:30-04:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">DepMap Omics: How to
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu">
+  <li>
+<a href="#installation">Installation</a>
+    <ul>
+      <li><a href="#warning-this-repository-needs-other-repos"><img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> this repository needs other repos</a></li>
+      <li><a href="#warning-you-would-need-the-approriate-r-packages-and-python-packages"><img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> you would need the approriate R packages and python packages</a></li>
+      <li><a href="#creating-your-terra-workspaces">Creating your Terra Workspaces:</a></li>
+    </ul>
+  </li>
+  <li>
+<a href="#running-the-pipeline">Running the pipeline</a>
+    <ul>
+      <li><a href="#1-uploading-and-preprocessing">1. UpLoading and preprocessing</a></li>
+      <li><a href="#2-running-terra-pipelines">2. Running Terra Pipelines</a></li>
+      <li><a href="#3-downloading-and-postprocessing-often-called-22-4-on-local-in-the-notebooks">3. DownLoading and postProcessing (often called 2.2-4 on local in the notebooks)</a></li>
+      <li><a href="#4-qc-grouping-and-uploading-to-the-portal">4. QC, grouping and uploading to the portal</a></li>
+    </ul>
+  </li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <p>What you need to process the Quarterly DepMap-Omics releases from Terra.</p>
+
+<p><img src="/assets/images/depmap-logo.png" alt=""></p>
+
+<p><a href="https://docs.google.com/presentation/d/1i0HI31dBejTYmzI9Cp6Ij7--t6eSR2r9vcC22TxSnNI/edit#slide=id.g525fd14bef_0_116">Here</a> is a presentation of the pipeline.</p>
+
+<p>We are using a set of key tools to process the sequencing output:</p>
+<ul>
+  <li>
+<strong>star</strong>:
+    <ul>
+      <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/23104886">https://www.ncbi.nlm.nih.gov/pubmed/23104886</a></li>
+      <li><a href="https://github.com/alexdobin/STAR/blob/master/doc/STARmanual.pdf">https://github.com/alexdobin/STAR/blob/master/doc/STARmanual.pdf</a></li>
+    </ul>
+  </li>
+  <li>
+<strong>rsem</strong>:
+    <ul>
+      <li><a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-323">https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-323</a></li>
+    </ul>
+  </li>
+  <li>
+<strong>star fusion</strong>:
+    <ul>
+      <li><a href="https://github.com/STAR-Fusion/STAR-Fusion/wiki">https://github.com/STAR-Fusion/STAR-Fusion/wiki</a></li>
+      <li><a href="http://biorxiv.org/content/early/2017/03/24/120295">http://biorxiv.org/content/early/2017/03/24/120295</a></li>
+    </ul>
+  </li>
+  <li>
+<strong>mutect</strong>:
+    <ul>
+      <li><a href="https://software.broadinstitute.org/cancer/cga/mutect">https://software.broadinstitute.org/cancer/cga/mutect</a></li>
+      <li><a href="https://youtu.be/rN-cLrb5aGs">https://youtu.be/rN-cLrb5aGs</a></li>
+      <li><a href="https://software.broadinstitute.org/gatk/documentation/tooldocs/4.beta.4/org_broadinstitute_hellbender_tools_walkers_mutect_Mutect2.php">https://software.broadinstitute.org/gatk/documentation/tooldocs/4.beta.4/org_broadinstitute_hellbender_tools_walkers_mutect_Mutect2.php</a></li>
+      <li><a href="https://www.nature.com/articles/nbt.2514">https://www.nature.com/articles/nbt.2514</a></li>
+    </ul>
+  </li>
+  <li>
+<strong>gatk cnv</strong>:
+    <ul>
+      <li><a href="https://software.broadinstitute.org/gatk/documentation/article?id=11682">https://software.broadinstitute.org/gatk/documentation/article?id=11682</a></li>
+    </ul>
+  </li>
+  <li>
+<strong>strelka</strong>:
+    <ul>
+      <li><a href="https://www.nature.com/articles/s41592-018-0051-x">https://www.nature.com/articles/s41592-018-0051-x</a></li>
+      <li><a href="https://github.com/Illumina/strelka">https://github.com/Illumina/strelka</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<p>If you are not familiar with these notions, we will first recommend you get more knowledge into each:</p>
+
+<ul>
+  <li><a href="https://www.learnpython.org/">python</a></li>
+  <li><a href="https://www.codecademy.com/learn/learn-r">R</a></li>
+  <li><a href="https://jupyter.org/index.html">jupyter</a></li>
+  <li><a href="https://software.broadinstitute.org/wdl/documentation/">WDL</a></li>
+  <li><a href="https://cloud.google.com/sdk/docs/quickstart-macos">gcp</a></li>
+  <li><a href="https://docs.docker.com/get-started/">docker</a></li>
+  <li><a href="https://software.broadinstitute.org/firecloud/documentation/">Terra</a></li>
+  <li><a href="https://github.com/broadinstitute/dalmatian">dalmatian</a></li>
+  <li><a href="https://docs.google.com/document/d/1zTtaN-Px64f8JvgydZNdBbzBpFWyZzEpshSNxQh43Oc/edit#heading=h.dz5wh0l4bu9g">Terra and gcp</a></li>
+</ul>
+
+<h3 id="warning-this-repository-needs-other-repos">
+<img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> this repository needs other repos</h3>
+
+<p>Some important data and code from the <a href="https://www.github.com/jkobject/JKBio">JKBio Library</a> and <a href="https://github.com/broadinstitute/gkugener">gkugener</a>.</p>
+
+<p>Go to the repos and pull them to the same parent folder as ccle_processing.</p>
+
+<h3 id="warning-you-would-need-the-approriate-r-packages-and-python-packages">
+<img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> you would need the approriate R packages and python packages</h3>
+
+<ol>
+  <li>You will need to install jupyter notetbooks and google cloud sdk
+    <ul>
+      <li>install <a href="https://cloud.google.com/sdk/docs/downloads-interactive">Google Cloud SDK</a>.</li>
+      <li>authenticate my SDK account by running <code class="highlighter-rouge">gcloud auth application-default login</code> in the terminal.</li>
+    </ul>
+  </li>
+  <li>For R packages, a loading function contains all required ones (in <a href="https://github.com/broadinstitute/gkugener/blob/master/RScripts/load_libraries_and_annotations.R">here</a>)
+    <ul>
+      <li>Another R package needs to be installed like so: <code class="highlighter-rouge">cd src/cdsomics &amp;&amp; R CMD INSTALL . &amp;&amp; cd -</code>.</li>
+      <li>Also taigr: <code class="highlighter-rouge">cd ../JKBio/taigr &amp;&amp; R CMD INSTALL . &amp;&amp; cd -</code>.</li>
+      <li>And Celllinemapr: <code class="highlighter-rouge">cd ../JKBio/cell_line_mapping-master/celllinemapr &amp;&amp; R CMD INSTALL . &amp;&amp; cd -</code>.</li>
+    </ul>
+  </li>
+  <li>For Python use the requirements.txt file <code class="highlighter-rouge">pip install -r requirements.txt</code>.</li>
+</ol>
+
+<h3 id="creating-your-terra-workspaces">Creating your Terra Workspaces:</h3>
+
+<p>use the <code class="highlighter-rouge">data/xQx/.json</code> which lists the parameters used for each workflows of each off the 3 workspaces in our pipeline (the csv lists the workflows with their correct name):</p>
+<ul>
+  <li>import the workflows, with their parameters listed in here.</li>
+  <li>import the workspace parameters/data listed in the <code class="highlighter-rouge">GENERAL</code> field.</li>
+</ul>
+
+<p>Once you have set up your workspace with the corresponding workflows, workspace data and workflow input/output parameters, you can import your data to be processed. <strong>Tools available in <code class="highlighter-rouge">TerraFunction</code> in the <code class="highlighter-rouge">JKBio</code> package as well as the <code class="highlighter-rouge">dalmatian</code> package can be used to automate this process.</strong></p>
+
+<p>Once this is done, you can run your jupyter notebook server and open one of the 3 <code class="highlighter-rouge">CCLE_\*</code> jupyter files corresponding to our 3 pipelines.</p>
+
+<p>This notebook architecture is as follows:</p>
+
+<ol>
+  <li>UpLoading and preprocessing</li>
+  <li>Running Terra Pipelines</li>
+  <li>DownLoading and postProcessing</li>
+  <li>QC, grouping and uploading to the portal</li>
+</ol>
+
+<h2 id="running-the-pipeline">Running the pipeline</h2>
+
+<h3 id="1-uploading-and-preprocessing">1. UpLoading and preprocessing</h3>
+
+<p>The first phase really is about getting samples generated at the broad and located into different places. Looking for duplicates and finding/adding the metadata we will need in order to have coherent and complete sample information. <strong>This is not something that you would need to run. you can skip directly to part2</strong>.</p>
+
+<p><strong>Remarks:</strong></p>
+<ul>
+  <li>in the initialization you might want to remove any import related to <code class="highlighter-rouge">taiga</code> and <code class="highlighter-rouge">gsheet</code> to not cause any errors.</li>
+  <li>feel free to reuse <code class="highlighter-rouge">createDatasetWithNewCellLines</code>, <code class="highlighter-rouge">GetNewCellLinesFromWorkspaces</code> or any other function for your own needs.</li>
+</ul>
+
+<h3 id="2-running-terra-pipelines">2. Running Terra Pipelines</h3>
+
+<p>Before running this part, you need to make sure that your dalmatian <code class="highlighter-rouge">workspacemanager</code> object is initialized with the right workspace you created and that the functions take as input you workflow names. You also need to make sure that you created your sample set with all your samples and that you initialized the <code class="highlighter-rouge">sampleset</code> string with its name
+You can then run this part for the pipeline to run on your samples. It should take around a day.</p>
+
+<p><strong>Remarks:</strong></p>
+<ul>
+  <li>for the copy number pipeline we have parametrized both an XX version and an XY version, we recommend using the XY version as it covers the entire genome</li>
+  <li>for the mutation pipeline we are working on Tumor-Normal pairs which explain some of the back and forth between the two workspace data table. (workflows works as well with or without matched normals.)</li>
+  <li>for the expression pipeline, we have an additional set of workflows to call mutations from RNAseq, this might not be relevant to your need.</li>
+</ul>
+
+<h3 id="3-downloading-and-postprocessing-often-called-22-4-on-local-in-the-notebooks">3. DownLoading and postProcessing (often called <strong>2.2-4 on local</strong> in the notebooks)</h3>
+
+<p>This step will do a set of tasks:</p>
+<ul>
+  <li>clean some of the workspace for large useless files.</li>
+  <li>retrieve from the workspace interesting QC results.</li>
+  <li>copy realigned bam files to some bucket.</li>
+  <li>download the results.</li>
+  <li>remove all duplicate samples from our downloaded file (keeping only thee latest version of each samples).</li>
+  <li>saving the current pipeline configuration.</li>
+</ul>
+
+<p><em>You would only be interested here at minima in the result downloading</em></p>
+
+<p>…and post processing tasks.</p>
+
+<blockquote>
+  <p>Unfortunately for now the postProcessing tasks are not all made to be easily run outside of the CCLE pipeline. Most of them are in R and are run with the Rpy2 tool.</p>
+</blockquote>
+
+<p>So amongst these functions, some of them might be of a lesser interest to an external user. The most important ones for each pipelines are:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">processSegments</code></li>
+  <li><code class="highlighter-rouge">interpolateGapsInSegmented</code></li>
+  <li><code class="highlighter-rouge">extendEndsOfSegments</code></li>
+  <li><code class="highlighter-rouge">generateEntrezGenes</code></li>
+  <li>
+    <p><code class="highlighter-rouge">generateGeneLevelMatrixFromSegments</code></p>
+  </li>
+  <li><code class="highlighter-rouge">readMutations</code></li>
+  <li><code class="highlighter-rouge">createSNPs</code></li>
+  <li><code class="highlighter-rouge">filterAllelicFraction</code></li>
+  <li>
+<code class="highlighter-rouge">filterMinCoverage</code> <em>you would need to rewrite this function as it now runs on DepMap columns. In one line it requires that the total coverage of that site (aggregated across methods) &gt; 8 and that there are at least 4 alternate alleles for each mutations</em>
+</li>
+  <li><code class="highlighter-rouge">maf_add_variant_annotations</code></li>
+  <li>
+    <p><code class="highlighter-rouge">mutation_maf_to_binary_matrix</code></p>
+  </li>
+  <li><code class="highlighter-rouge">readTranscripts</code></li>
+  <li><code class="highlighter-rouge">readCounts</code></li>
+  <li><code class="highlighter-rouge">readTPM</code></li>
+  <li><code class="highlighter-rouge">readFusions</code></li>
+  <li><code class="highlighter-rouge">filterFusions</code></li>
+  <li>the <code class="highlighter-rouge">step 2.2.5</code> where we remove samples with more then 39k transcripts with 0 readcounts.</li>
+  <li><code class="highlighter-rouge">prepare_depmap_\*\_for_taiga</code></li>
+</ul>
+
+<p><strong>Remarks:</strong></p>
+<ul>
+  <li>in the RNAseq pipeline we have an additional sub-pipeline at the end of the notebook to process the fusion calls from starFusion</li>
+  <li>to get the exact same results as in CCLE, be sure to run <code class="highlighter-rouge">genecn = genecn.apply(lambda x: np.log2(1+x))</code> to the genecn dataframe in the CNV pipeline (present at the end of the validation steps).</li>
+  <li>we do not yet have integrated our germline calling in the mutation pipeline but you can still find the haplotypeCaller|DeepVariant workflows and their parameters</li>
+</ul>
+
+<h3 id="4-qc-grouping-and-uploading-to-the-portal">4. QC, grouping and uploading to the portal</h3>
+
+<p>These tasks should not be very interesting for any outside user as they revolve around manual checks of the data, comparison to previous releases, etc.</p>
+
+<p>We are also preparing the data to be released to different groups, removing the samples per access category: Blacklist|Internal|DepMapConsortium|Public.</p>
+
+<p>We are then uploading the data to a server called taiga where it will be used in the depmap portal</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#broad-institute" class="page__taxonomy-item" rel="tag">Broad Institute</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#cancer-dependencies" class="page__taxonomy-item" rel="tag">Cancer Dependencies</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#data-science" class="page__taxonomy-item" rel="tag">Data Science</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#genomics" class="page__taxonomy-item" rel="tag">Genomics</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#research" class="page__taxonomy-item" rel="tag">Research</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#broadinstitute" class="page__taxonomy-item" rel="tag">BroadInstitute</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-06-18T09:37:30-04:00">June 18, 2020</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?via=jkobject&amp;text=DepMap+Omics%3A+How+to%20https%3A%2F%2Fjkobject.com%2Fprojects%2Fdepmap_omics_howto%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjkobject.com%2Fprojects%2Fdepmap_omics_howto%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fjkobject.com%2Fprojects%2Fdepmap_omics_howto%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/projects/caiman/" class="pagination--pager" title="CaImAn
+">Previous</a>
+    
+    
+      <a href="/projects/no-larsen-festival/" class="pagination--pager" title="No Larsen Festival
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/%20/images/dimred.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blog/one-year-at-the-broad/" rel="permalink">A year at the Broad Institute
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Short stories about my professional experiences.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/dimred.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blog/umap-explanation/" rel="permalink">UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Short stories about my professional experiences.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/advancedstudy.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blog/a-month-at-the-broad/" rel="permalink">My first month at the Broad Institute
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I arrived in Boston exactly a month ago. I managed to get my Visa 5 hours before catching…
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/epflinter.jpeg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blog/interviews-at-epfl/" rel="permalink">Interviews at EPFL
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">During the last week of January I had the chance to enter the hiring program of EPFL’s edcb program.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap">
+<form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term...">
+  </form>
+  <div id="results" class="results"></div>
+</div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="mailto:jkobject@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://ResearchGate.net/profile/jeremie_kalfon" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+        
+      
+        
+          <li><a href="https://Scholar.google.com/citations?user=zyXiydsAAAAJ" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i> Scholar</a></li>
+        
+      
+        
+          <li><a href="https://LinkedIn.com/in/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">© 2020 Jérémie Kalfon. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://jkobject.com/projects/depmap_omics_howto/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/projects/depmap_omics_howto"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://jkobject.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+
+  
+
+
+
+
+
+              <script>
+                window.onload = function () {
+                    var script = document.createElement('script');
+                    var firstScript = document.getElementsByTagName('script')[0];
+                    script.type = 'text/javascript';
+                    script.async = true;
+                    script.src = '/sw-register.js?v=' + Date.now();
+                    firstScript.parentNode.insertBefore(script, firstScript);
+                };
+            </script>
+            </body>
+
+</html>
