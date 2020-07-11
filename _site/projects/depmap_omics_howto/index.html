@@ -47,7 +47,7 @@
 
 
 
-  <meta property="article:published_time" content="2020-06-18T09:49:12-04:00">
+  <meta property="article:published_time" content="2020-07-11T11:58:10-04:00">
 
 
 
@@ -96,6 +96,7 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
 
 <!--[if IE]>
   <style>
@@ -271,7 +272,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="DepMap Omics: How to">
     <meta itemprop="description" content="How DepMap Omics data is made. How to process it Yourself">
-    <meta itemprop="datePublished" content="2020-06-18T09:49:12-04:00">
+    <meta itemprop="datePublished" content="2020-07-11T11:58:10-04:00">
     
 
     <div class="page__inner-wrap">
@@ -285,7 +286,7 @@
 
 
 
-  4 minute read
+  6 minute read
 
 </p>
           
@@ -300,9 +301,16 @@
 <i class="fas fa-file-alt"></i> On this page</h4></header>
               <ul class="toc__menu">
   <li>
+<a href="#introduction">Introduction</a>
+    <ul>
+      <li><a href="#rnaseq-pipeline">RNAseq pipeline</a></li>
+      <li><a href="#wes-pipeline">WES pipeline</a></li>
+    </ul>
+  </li>
+  <li>
 <a href="#installation">Installation</a>
     <ul>
-      <li><a href="#warning-this-repository-needs-other-repos"><img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> this repository needs other repos</a></li>
+      <li><a href="#clone-the-required-repositories">clone the required repositories</a></li>
       <li><a href="#warning-you-would-need-the-approriate-r-packages-and-python-packages"><img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> you would need the approriate R packages and python packages</a></li>
       <li><a href="#creating-your-terra-workspaces">Creating your Terra Workspaces:</a></li>
     </ul>
@@ -310,9 +318,9 @@
   <li>
 <a href="#running-the-pipeline">Running the pipeline</a>
     <ul>
-      <li><a href="#1-uploading-and-preprocessing">1. UpLoading and preprocessing</a></li>
+      <li><a href="#1-uploading-and-pre-processing">1. Uploading and pre-processing</a></li>
       <li><a href="#2-running-terra-pipelines">2. Running Terra Pipelines</a></li>
-      <li><a href="#3-downloading-and-postprocessing-often-called-22-4-on-local-in-the-notebooks">3. DownLoading and postProcessing (often called 2.2-4 on local in the notebooks)</a></li>
+      <li><a href="#3-downloading-and-post-processing-often-called-22-4-on-local-in-the-notebooks">3. Downloading and post-processing (often called 2.2-4 on local in the notebooks)</a></li>
       <li><a href="#4-qc-grouping-and-uploading-to-the-portal">4. QC, grouping and uploading to the portal</a></li>
     </ul>
   </li>
@@ -321,13 +329,25 @@
             </nav>
           </aside>
         
-        <p>What you need to process the Quarterly DepMap-Omics releases from Terra.</p>
+        <p><em>What you need to process the Quarterly DepMap-Omics releases from Terra.</em></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Large panels of comprehensively characterized human cancer models have provided a rigorous framework with which to study genetic variants, candidate targets, and small-molecule and biological therapeutics and to identify new marker-driven cancer dependencies.</p>
+
+<p>As part of its discovery effort of Cancer Dependencies an Targets, <a href="https://depmap.org/portal/">DepMap</a> analyzes raw omics data from cell lines on a quarterly basis. This part of the project if often referred to as CCLE. The bulk of ccle data consists of many omics sequences as shows in the <a href="https://pubmed.ncbi.nlm.nih.gov/31068700/">CCLE2 paper</a>. However only RNAseq an Whole Exome seq gets generated and analyzed quarterly. This project is lead by a team of researchers from the CDS group at the Broad Institute and draws from other projects such as <a href="https://www.gtexportal.org/home/">GTeX</a>, <a href="https://software.broadinstitute.org/cancer/cga/">TCGA</a> and <a href="https://portals.broadinstitute.org/cellfactory#home">CCLF</a>.</p>
+
+<h3 id="rnaseq-pipeline">RNAseq pipeline</h3>
+<p><img src="/assets/images/RNAseq_pipeline.png" alt=""></p>
+
+<h3 id="wes-pipeline">WES pipeline</h3>
+<p><img src="/assets/images/WES_pipeline.png" alt=""></p>
+
+<p>For a more detailed understanding of the pipelines refer to <a href="https://docs.google.com/presentation/d/1i0HI31dBejTYmzI9Cp6Ij7--t6eSR2r9vcC22TxSnNI/edit#slide=id.g525fd14bef_0_116">this presentation</a>.</p>
 
 <p><img src="/assets/images/depmap-logo.png" alt=""></p>
 
-<p><a href="https://docs.google.com/presentation/d/1i0HI31dBejTYmzI9Cp6Ij7--t6eSR2r9vcC22TxSnNI/edit#slide=id.g525fd14bef_0_116">Here</a> is a presentation of the pipeline.</p>
-
-<p>We are using a set of key tools to process the sequencing output:</p>
+<p>The following tools are used in our pipelines:</p>
 <ul>
   <li>
 <strong>star</strong>:
@@ -373,9 +393,7 @@
   </li>
 </ul>
 
-<h2 id="installation">Installation</h2>
-
-<p>If you are not familiar with these notions, we will first recommend you get more knowledge into each:</p>
+<p>Furthermore the pipelines make use of several software development tools. In particular some familiarity with the following tools are recommneded:</p>
 
 <ul>
   <li><a href="https://www.learnpython.org/">python</a></li>
@@ -389,24 +407,33 @@
   <li><a href="https://docs.google.com/document/d/1zTtaN-Px64f8JvgydZNdBbzBpFWyZzEpshSNxQh43Oc/edit#heading=h.dz5wh0l4bu9g">Terra and gcp</a></li>
 </ul>
 
-<h3 id="warning-this-repository-needs-other-repos">
-<img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> this repository needs other repos</h3>
+<p>The next sections are a detailed walkthrough to run DempMap omics pipelines on the <a href="https://app.terra.bio/">Terra</a> platform.</p>
 
-<p>Some important data and code from the <a href="https://www.github.com/jkobject/JKBio">JKBio Library</a> and <a href="https://github.com/broadinstitute/gkugener">gkugener</a>.</p>
+<h2 id="installation">Installation</h2>
 
-<p>Go to the repos and pull them to the same parent folder as ccle_processing.</p>
+<h3 id="clone-the-required-repositories">clone the required repositories</h3>
+
+<p>This repo uses some important data and code from the <a href="https://www.github.com/jkobject/JKBio">JKBio Library</a> and <a href="https://github.com/broadinstitute/gkugener">gkugener</a> custom repositories. This repository and the other two dependecy repositories should be cloned into the same path using the following command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/broadinstitute/ccle_processing.git
+git clone https://github.com/jkobject/JKBio.git
+git clone https://github.com/broadinstitute/gkugener.git
+</code></pre></div></div>
 
 <h3 id="warning-you-would-need-the-approriate-r-packages-and-python-packages">
 <img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> you would need the approriate R packages and python packages</h3>
 
+<p><em>note that up to date versions are recommended</em></p>
+
 <ol>
-  <li>You will need to install jupyter notetbooks and google cloud sdk
+  <li>You will need to install <a href="https://jupyter.org/install">Jupyter Notebook</a> and Google Cloud SDK
     <ul>
       <li>install <a href="https://cloud.google.com/sdk/docs/downloads-interactive">Google Cloud SDK</a>.</li>
-      <li>authenticate my SDK account by running <code class="highlighter-rouge">gcloud auth application-default login</code> in the terminal.</li>
+      <li>authenticate your Google account by running <code class="highlighter-rouge">gcloud auth application-default login</code> in the terminal.</li>
     </ul>
   </li>
-  <li>For R packages, a loading function contains all required ones (in <a href="https://github.com/broadinstitute/gkugener/blob/master/RScripts/load_libraries_and_annotations.R">here</a>)
+  <li>For R packages, a loading function contains most required ones (in <a href="https://github.com/broadinstitute/gkugener/blob/master/RScripts/load_libraries_and_annotations.R">here</a>)</li>
+  <li>install the following additional R packages using the provided commands:
     <ul>
       <li>Another R package needs to be installed like so: <code class="highlighter-rouge">cd src/cdsomics &amp;&amp; R CMD INSTALL . &amp;&amp; cd -</code>.</li>
       <li>Also taigr: <code class="highlighter-rouge">cd ../JKBio/taigr &amp;&amp; R CMD INSTALL . &amp;&amp; cd -</code>.</li>
@@ -418,67 +445,77 @@
 
 <h3 id="creating-your-terra-workspaces">Creating your Terra Workspaces:</h3>
 
-<p>use the <code class="highlighter-rouge">data/xQx/.json</code> which lists the parameters used for each workflows of each off the 3 workspaces in our pipeline (the csv lists the workflows with their correct name):</p>
+<p>How to create workspaces and upload data to it is explained in <a href="https://software.broadinstitute.org/firecloud/documentation/">Terra’s documentation</a></p>
+
+<p>For the specific workflow ids, parameters and workspace data you can use the file <code class="highlighter-rouge">data/xQx/.json</code> in our repository, which lists the parameters used for each workflow of each off the 3 workspaces in our pipelines for each releases (the .csv file lists the workflows with their correct name):
+In order to have a working environment you will need to make sure you have:</p>
 <ul>
-  <li>import the workflows, with their parameters listed in here.</li>
-  <li>import the workspace parameters/data listed in the <code class="highlighter-rouge">GENERAL</code> field.</li>
+  <li>set a billing account</li>
+  <li>created a workspace</li>
+  <li>added the correct workspace data to it (the workspace parameters/data listed in the <code class="highlighter-rouge">GENERAL</code> field of the json file)</li>
+  <li>imported the right workflows (in the csv file)</li>
+  <li>parametrized them (in the json file)</li>
+  <li>imported your data (<em>Tools available in <code class="highlighter-rouge">TerraFunction</code> in the <code class="highlighter-rouge">JKBio</code> package as well as the <code class="highlighter-rouge">dRalmatian</code> package can be used to automate these processes.</em>)</li>
 </ul>
 
-<p>Once you have set up your workspace with the corresponding workflows, workspace data and workflow input/output parameters, you can import your data to be processed. <strong>Tools available in <code class="highlighter-rouge">TerraFunction</code> in the <code class="highlighter-rouge">JKBio</code> package as well as the <code class="highlighter-rouge">dalmatian</code> package can be used to automate this process.</strong></p>
+<p>Once this is done, you can run your Jupyter Notebook server and open one of the 3 <code class="highlighter-rouge">CCLE_\*</code> Jupyter files corresponding to our 3 pipelines.</p>
+<ul>
+  <li>RNAseq processing of gene level and transcript level read counts and exon counts.</li>
+  <li>WESeq processing of Copy Number (gene level and segment level)</li>
+  <li>RNAseq &amp; WESeq processing of Mutations (cancer drivers and germlines)</li>
+</ul>
 
-<p>Once this is done, you can run your jupyter notebook server and open one of the 3 <code class="highlighter-rouge">CCLE_\*</code> jupyter files corresponding to our 3 pipelines.</p>
-
-<p>This notebook architecture is as follows:</p>
+<p>These notebooks architecture is as follows:</p>
 
 <ol>
-  <li>UpLoading and preprocessing</li>
-  <li>Running Terra Pipelines</li>
-  <li>DownLoading and postProcessing</li>
+  <li>Uploading and pre-processing</li>
+  <li>Running the Terra Pipelines</li>
+  <li>Downloading and post-processing</li>
   <li>QC, grouping and uploading to the portal</li>
 </ol>
 
 <h2 id="running-the-pipeline">Running the pipeline</h2>
 
-<h3 id="1-uploading-and-preprocessing">1. UpLoading and preprocessing</h3>
+<h3 id="1-uploading-and-pre-processing">1. Uploading and pre-processing</h3>
 
-<p>The first phase really is about getting samples generated at the broad and located into different places. Looking for duplicates and finding/adding the metadata we will need in order to have coherent and complete sample information. <strong>This is not something that you would need to run. you can skip directly to part2</strong>.</p>
+<p><strong>You can skip this step and go to part2</strong>.The first step in the notebook is about getting the samples generated at the the Broad Institute which are located in different Google Cloud storage paths. This section also searches for duplicates and finds/adds the metadata we will need in order to have coherent and complete sample information.</p>
 
 <p><strong>Remarks:</strong></p>
 <ul>
-  <li>in the initialization you might want to remove any import related to <code class="highlighter-rouge">taiga</code> and <code class="highlighter-rouge">gsheet</code> to not cause any errors.</li>
+  <li>in the initialization step you can remove any imports related to <code class="highlighter-rouge">taiga</code> and <code class="highlighter-rouge">gsheet</code> to avoid possible errors.</li>
   <li>feel free to reuse <code class="highlighter-rouge">createDatasetWithNewCellLines</code>, <code class="highlighter-rouge">GetNewCellLinesFromWorkspaces</code> or any other function for your own needs.</li>
 </ul>
 
 <h3 id="2-running-terra-pipelines">2. Running Terra Pipelines</h3>
 
 <p>Before running this part, you need to make sure that your dalmatian <code class="highlighter-rouge">workspacemanager</code> object is initialized with the right workspace you created and that the functions take as input you workflow names. You also need to make sure that you created your sample set with all your samples and that you initialized the <code class="highlighter-rouge">sampleset</code> string with its name
-You can then run this part for the pipeline to run on your samples. It should take around a day.</p>
+You can then run the pipeline on your samples. It would approximately take a day to run all of the pipelines.</p>
 
 <p><strong>Remarks:</strong></p>
 <ul>
   <li>for the copy number pipeline we have parametrized both an XX version and an XY version, we recommend using the XY version as it covers the entire genome</li>
-  <li>for the mutation pipeline we are working on Tumor-Normal pairs which explain some of the back and forth between the two workspace data table. (workflows works as well with or without matched normals.)</li>
+  <li>for the mutation calling pipeline we are working on Tumor-Normal pairs which explain some of the back and forth between the two workspace data table (the existing workflows work with or without matched normals).</li>
   <li>for the expression pipeline, we have an additional set of workflows to call mutations from RNAseq, this might not be relevant to your need.</li>
 </ul>
 
-<h3 id="3-downloading-and-postprocessing-often-called-22-4-on-local-in-the-notebooks">3. DownLoading and postProcessing (often called <strong>2.2-4 on local</strong> in the notebooks)</h3>
+<h3 id="3-downloading-and-post-processing-often-called-22-4-on-local-in-the-notebooks">3. Downloading and post-processing (often called <strong>2.2-4 on local</strong> in the notebooks)</h3>
 
-<p>This step will do a set of tasks:</p>
+<p>This step will do the following tasks:</p>
 <ul>
-  <li>clean some of the workspace for large useless files.</li>
+  <li>delete large intermediary files on the workspace that are not needed</li>
   <li>retrieve from the workspace interesting QC results.</li>
-  <li>copy realigned bam files to some bucket.</li>
+  <li>copy realigned BAM files to a target bucket.</li>
   <li>download the results.</li>
-  <li>remove all duplicate samples from our downloaded file (keeping only thee latest version of each samples).</li>
+  <li>remove all duplicate samples from our downloaded file (keeping only the latest version of each samples).</li>
   <li>saving the current pipeline configuration.</li>
 </ul>
 
-<p><em>You would only be interested here at minima in the result downloading</em></p>
+<p><em>At the least you would require the downloading of results, but other steps could be useful for some users</em></p>
 
 <p>…and post processing tasks.</p>
 
 <blockquote>
-  <p>Unfortunately for now the postProcessing tasks are not all made to be easily run outside of the CCLE pipeline. Most of them are in R and are run with the Rpy2 tool.</p>
+  <p>Unfortunately for now the postProcessing tasks are not all made to be easily run outside of the CCLE pipelines. Most of them are in R and are run with the Rpy2 tool. So amongst these functions, some of them might be of a lesser interest to an external user. The most important ones for each pipelines are:</p>
 </blockquote>
 
 <p>So amongst these functions, some of them might be of a lesser interest to an external user. The most important ones for each pipelines are:</p>
@@ -512,8 +549,8 @@ You can then run this part for the pipeline to run on your samples. It should ta
 
 <p><strong>Remarks:</strong></p>
 <ul>
-  <li>in the RNAseq pipeline we have an additional sub-pipeline at the end of the notebook to process the fusion calls from starFusion</li>
-  <li>to get the exact same results as in CCLE, be sure to run <code class="highlighter-rouge">genecn = genecn.apply(lambda x: np.log2(1+x))</code> to the genecn dataframe in the CNV pipeline (present at the end of the validation steps).</li>
+  <li>in the RNAseq pipeline we have an additional sub-pipeline at the end of the notebook to process the fusion calls from STAR-Fusion.</li>
+  <li>to get the exact same results as in CCLE, be sure to run <code class="highlighter-rouge">genecn = genecn.apply(lambda x: np.log2(1+x))</code> to produce the <code class="highlighter-rouge">genecn</code> dataframe in the CNV pipeline (present at the end of the validation steps).</li>
   <li>we do not yet have integrated our germline calling in the mutation pipeline but you can still find the haplotypeCaller|DeepVariant workflows and their parameters</li>
 </ul>
 
@@ -521,9 +558,14 @@ You can then run this part for the pipeline to run on your samples. It should ta
 
 <p>These tasks should not be very interesting for any outside user as they revolve around manual checks of the data, comparison to previous releases, etc.</p>
 
-<p>We are also preparing the data to be released to different groups, removing the samples per access category: Blacklist|Internal|DepMapConsortium|Public.</p>
+<p>In these tasks we also prepare the data to be released to different groups, removing the samples per access category: Blacklist|Internal|DepMapConsortium|Public. We then upload the data to a server called taiga where it will be used in the DepMap portal.</p>
 
-<p>We are then uploading the data to a server called taiga where it will be used in the depmap portal</p>
+<hr>
+
+<p>you can find the project’s repository <a href="https://github.com/broadinstitute/ccle_processing">here</a>
+the blog post is available on <a href="">depmap’s blog</a> and <a href="https://www.jkobject.com/projects/depmap_omics_howto/">Jérémie’s blog</a></p>
+
+<p>Jérémie Kalfon</p>
 
         
       </section>
@@ -588,7 +630,7 @@ You can then run this part for the pipeline to run on your samples. It should ta
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-06-18T09:49:12-04:00">June 18, 2020</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-07-11T11:58:10-04:00">July 11, 2020</time></p>
 
 
       </footer>
@@ -834,7 +876,6 @@ You can then run this part for the pipeline to run on your samples. It should ta
 
     
   <script src="/assets/js/main.min.js"></script>
-  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
 
 
 

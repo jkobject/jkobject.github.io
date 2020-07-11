@@ -96,7 +96,7 @@ var store = [{
         "teaser": "https://jkobject.com/assets/images/caimann.png"
       },{
         "title": "DepMap Omics: How to",
-        "excerpt":"What you need to process the Quarterly DepMap-Omics releases from Terra. Here is a presentation of the pipeline. We are using a set of key tools to process the sequencing output: star: https://www.ncbi.nlm.nih.gov/pubmed/23104886 https://github.com/alexdobin/STAR/blob/master/doc/STARmanual.pdf rsem: https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-12-323 star fusion: https://github.com/STAR-Fusion/STAR-Fusion/wiki http://biorxiv.org/content/early/2017/03/24/120295 mutect: https://software.broadinstitute.org/cancer/cga/mutect https://youtu.be/rN-cLrb5aGs https://software.broadinstitute.org/gatk/documentation/tooldocs/4.beta.4/org_broadinstitute_hellbender_tools_walkers_mutect_Mutect2.php https://www.nature.com/articles/nbt.2514 gatk cnv: https://software.broadinstitute.org/gatk/documentation/article?id=11682 strelka: https://www.nature.com/articles/s41592-018-0051-x...","categories": ["BroadInstitute"],
+        "excerpt":"What you need to process the Quarterly DepMap-Omics releases from Terra. Introduction Large panels of comprehensively characterized human cancer models have provided a rigorous framework with which to study genetic variants, candidate targets, and small-molecule and biological therapeutics and to identify new marker-driven cancer dependencies. As part of its discovery...","categories": ["BroadInstitute"],
         "tags": ["Research","Broad Institute","Data Science","Cancer Dependencies","Genomics"],
         "url": "https://jkobject.com/projects/depmap_omics_howto/",
         "teaser": "https://jkobject.com/assets/images/depmap-logo.png"
