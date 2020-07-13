@@ -18,7 +18,7 @@ header:
 
 Large panels of comprehensively characterized human cancer models have provided a rigorous framework with which to study genetic variants, candidate targets, and small-molecule and biological therapeutics and to identify new marker-driven cancer dependencies.
 
-As part of its discovery effort of Cancer Dependencies an Targets, [DepMap](https://depmap.org/portal/) analyzes raw omics data from cell lines on a quarterly basis. This part of the project if often referred to as CCLE. The bulk of ccle data consists of many omics sequences as shows in the [CCLE2 paper](https://pubmed.ncbi.nlm.nih.gov/31068700/). However only RNAseq an Whole Exome seq gets generated and analyzed quarterly. This project is lead by a team of researchers from the CDS group at the Broad Institute and draws from other projects such as [GTeX](https://www.gtexportal.org/home/), [TCGA](https://software.broadinstitute.org/cancer/cga/) and [CCLF](https://portals.broadinstitute.org/cellfactory#home). 
+As part of the discovery effort of Cancer Dependencies on Targets, [DepMap](https://depmap.org/portal/) analyzes raw omics data from cell lines on a quarterly basis. This part of the project is often referred to as CCLE. The bulk of CCLE data consists of many omics sequences as shown in the [CCLE2 paper](https://pubmed.ncbi.nlm.nih.gov/31068700/). However only RNAseq and Whole Exome seq gets generated and analyzed quarterly. This project is lead by a team of researchers from the CDS group at the Broad Institute and draws from other projects such as [GTeX](https://www.gtexportal.org/home/), [TCGA](https://software.broadinstitute.org/cancer/cga/) and [CCLF](https://portals.broadinstitute.org/cellfactory#home). 
 
 ### RNAseq pipeline
 ![](/assets/images/RNAseq_pipeline.png)
@@ -97,9 +97,9 @@ git clone https://github.com/broadinstitute/gkugener.git
 
 ### Creating your Terra Workspaces:
 
-How to create workspaces and upload data to it is explained in [Terra's documentation](https://software.broadinstitute.org/firecloud/documentation/)
+How to create workspaces and upload data to it is explained in the [Terra documentations](https://software.broadinstitute.org/firecloud/documentation/)
 
-For the specific workflow ids, parameters and workspace data you can use the file `data/xQx/.json` in our repository, which lists the parameters used for each workflow of each off the 3 workspaces in our pipelines for each releases (the .csv file lists the workflows with their correct name):
+For the specific workflow ids, parameters and workspace data you can use the file `data/xQx/.json` in our repository, which lists the parameters used for each workflow of each of the 3 pipelines (RNAseq, SNV, CNV) for each releases (the .csv file lists the workflows with their correct name).
 In order to have a working environment you will need to make sure you have:
 - set a billing account
 - created a workspace
@@ -124,7 +124,7 @@ These notebooks architecture is as follows:
 
 ### 1. Uploading and pre-processing 
 
-__You can skip this step and go to part2__.The first step in the notebook is about getting the samples generated at the the Broad Institute which are located in different Google Cloud storage paths. This section also searches for duplicates and finds/adds the metadata we will need in order to have coherent and complete sample information. 
+__You can skip this step and go to part 2__.The first step in the notebook is about getting the samples generated at the the Broad Institute which are located in different Google Cloud storage paths. This section also searches for duplicates and finds/adds the metadata we will need in order to have coherent and complete sample information. 
 
 **Remarks:** 
 - in the initialization step you can remove any imports related to `taiga` and `gsheet` to avoid possible errors.
@@ -152,9 +152,9 @@ This step will do the following tasks:
 
 _At the least you would require the downloading of results, but other steps could be useful for some users_
  
-...and post processing tasks.
+...and post-processing tasks.
 
-> Unfortunately for now the postProcessing tasks are not all made to be easily run outside of the CCLE pipelines. Most of them are in R and are run with the Rpy2 tool. So amongst these functions, some of them might be of a lesser interest to an external user. The most important ones for each pipelines are:
+> Unfortunately for now the pos-processing tasks are not all made to be easily run outside of the CCLE pipelines. Most of them are in R and are run with the Rpy2 tool. So amongst these functions, some of them might be of a lesser interest to an external user. The most important ones for each pipelines are:
 
 So amongst these functions, some of them might be of a lesser interest to an external user. The most important ones for each pipelines are:
 
