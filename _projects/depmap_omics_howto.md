@@ -154,7 +154,7 @@ _At the least you would require the downloading of results, but other steps coul
  
 ...and post processing tasks.
 
-> Unfortunately for now the postProcessing tasks are not all made to be easily run outside of the CCLE pipelines. Most of them are in R and are run with the Rpy2 tool. So amongst these functions, some of them might be of a lesser interest to an external user. The most important ones for each pipelines are:
+> Unfortunately for now the post-processing tasks are not all made to be easily run outside of the CCLE pipelines. Most of them are in R and are run with the Rpy2 tool.
 
 So amongst these functions, some of them might be of a lesser interest to an external user. The most important ones for each pipelines are:
 
