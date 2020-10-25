@@ -2,6 +2,7 @@
 title: "Why Rick had to invent to station of Ricks? [FR]"
 excerpt: "A funny thought about Rick & Morty"
 category: "random"
+date: 2018-08-10
 toc: false
 header: 
   overlay_image: "/assets/images/rick_morty.jpg"

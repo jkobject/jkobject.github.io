@@ -2,6 +2,7 @@
 title: "Police Violence & Racism [FR]"
 excerpt: "Amidst the current issues of racial justice and police violence, I tried to express to a French audience what I have seen and learnt during a #ShutDownSTEM protest"
 category: "Justice"
+date: 2020-06-10
 tags:
  - Violence
  - Justice

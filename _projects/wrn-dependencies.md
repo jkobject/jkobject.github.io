@@ -27,6 +27,7 @@ _Know 💁 more about the Broad and DepMap, in this related blogpost: [one year 
 Here, we are investigating one specific dependency on the [WRN gene](https://en.wikipedia.org/wiki/Werner_syndrome_helicase).
 
 ![](/assets/images/wrn.png)
+
 _the WRN protein._
 
 It is known that for MSI cells, the depletion of the WRN protein induce cell death (or apoptosis).

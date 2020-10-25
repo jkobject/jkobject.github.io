@@ -2,6 +2,7 @@
 title: "Are We Really Conscious? pt1"
 excerpt: "This is the first part of a Serie on consciousness, life and intelligence"
 category: "On consciousness"
+date: 2018-06-10
 tags:
  - Artificial Intelligence
  - Consciousness

@@ -5,16 +5,16 @@ var store = [{
         "url": "https://jkobject.com/ideas/why-rick-invented-the-station-of-ricks/",
         "teaser": "https://jkobject.com/assets/images/rick_morty.jpg"
       },{
-        "title": "Police Violence & Racism [FR]",
-        "excerpt":"Les Violences Policières et le Racisme. Hello! Donc voilà, j’imagine que vous suivez tous au moins un peu ce mouvement mondial contre les violences policières et le racisme. Comme la plupart de mes collègues, j’ai aujourd’hui mené une grève d’une journée pour passer du temps à agir contre le racisme...","categories": ["Justice"],
-        "tags": ["Violence","Justice","Racism","Society"],
-        "url": "https://jkobject.com/opinions/on-police-violence-french/",
-        "teaser": "https://jkobject.com/assets/images/couverture.png"
-      },{
         "title": "Are We Really Conscious? pt1",
         "excerpt":"1. On the emergence of life This is the first part of a Serie on consciousness, life and intelligence As far as I can recall, the idea of an intelligent design in life always seemed strange to me. It seemed like the adults had little imagination to involve yet another...","categories": ["On consciousness"],
         "tags": ["Artificial Intelligence","Consciousness","Life","Intelligent Design"],
         "url": "https://jkobject.com/opinions/on-the-intelligent-design/",
+        "teaser": "https://jkobject.com/assets/images/couverture.png"
+      },{
+        "title": "Police Violence & Racism [FR]",
+        "excerpt":"Les Violences Policières et le Racisme. Hello! Donc voilà, j’imagine que vous suivez tous au moins un peu ce mouvement mondial contre les violences policières et le racisme. Comme la plupart de mes collègues, j’ai aujourd’hui mené une grève d’une journée pour passer du temps à agir contre le racisme...","categories": ["Justice"],
+        "tags": ["Violence","Justice","Racism","Society"],
+        "url": "https://jkobject.com/opinions/on-police-violence-french/",
         "teaser": "https://jkobject.com/assets/images/couverture.png"
       },{
         "title": "why most brain-machine interfaces ideas suck",

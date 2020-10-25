@@ -2,6 +2,7 @@
 title: "why most brain-machine interfaces ideas suck"
 excerpt: "An opinion on the goals, the promises, the challenges and ways forward in vertical farming"
 category: "Biology & Medecine"
+date: 2020-09-10
 header:
  teaser: "/assets/images/BMIchip.jpeg"
  overlay_image: "/assets/images/BMIchip.jpeg"
