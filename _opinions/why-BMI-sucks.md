@@ -59,6 +59,7 @@ This is not an insurmontable barrier, but a big one. And here is the thing, to d
 ## Other avenues
 
 ![pretty high](/assets/images/transcendence0.jpeg)
+
 _MEME_
 
 Reading thoughts, peering into dreams, making music by just thinking about it, seeing what you imagine become reality in seconds, moving into a game by thought 💭. These are things that, for sure, can only come from a BMI. I won't deny that. And it might become possible someday.
@@ -72,6 +73,7 @@ It will be possible to read one's thoughts, but I do not think that it will make
 ## One final goal.
 
 ![uultimate](/assets/images/transcendence1.jpeg)
+
 _MEEEME_
 
 There is however, 1 more goal of BMIs, maybe the only one. One that you might have heard Elon musk mentioning, when talking about his company: Neuralink. Linking our brains to AGI -artificial general intelligences. Augmenting ourselves by transfering parts or the entirety of our thoughts to more powerfull computers and algorithms.
