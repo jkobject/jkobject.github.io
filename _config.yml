@@ -215,7 +215,7 @@ kramdown:
 # googlemaps
 maps:
   google:
-    api_key: "AIzaSyBGJTUzfcqk_egr0hEl-bIAUwoyAb8sATM"
+    api_key:
 
 #citation format
 scholar:
