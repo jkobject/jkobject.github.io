@@ -25,7 +25,7 @@ One way to do that is to connect to the brain's "inputs|outputs": Nerves 🔌.
 
 This has a lot of advantages. Signal from the Nerves are much better behaved and formated. One would say they are more suited for reading & writing to them. We can think about many locations and ways to read from nerves. [Cochlear implants](https://www.hopkinsmedicine.org/health/treatment-tests-and-therapies/cochlear-implant-surgery) are a famous examples. The long term goal is to be able to read/writte directly from the spinal nerves and restore walk to any paralyzed people :wheelchair:. I should add, "parallized due to a spinal cords injury". Which are far from being the majority.
 
-Targeted muscle reinervation or [TMR](https://www.wcbl.com/targeted-muscle-reinnervation/) 💪 , is often defined as a BMI. It is the closest thing we currently have to read|write directly from nerves. 
+Targeted muscle reinervation or [TMR](https://www.wcbl.com/targeted-muscle-reinnervation/) 💪, is often defined as a BMI. It is the closest thing we currently have to read/write directly from nerves. 
 
 It uses electrodes to read input from, say arm's/fingers nerves that have been reattached to another muscle in the body. This muscle has been previously cut into different sub-muscles which only role will now be to amplify these nerve's signal. when one touches that part of the body where the submuscle linked to the pimkie is, the patient now feels someone is touching his pimkie. When the patient wants to move its pimkie, the cut sub-muscle moves. Now an electrode can read these submuscles activity to move a prothestic arm and shock the muscle slightly when someone is touching the arm.
 
@@ -67,7 +67,7 @@ _MEME_
 
 Reading thoughts, peering into dreams, making music by just thinking about it, seeing what you imagine become reality in seconds, moving into a game by thought 💭. These are things that, for sure, can only come from a BMI. I won't deny that. And it might become possible someday.
 
-> ## We are not limited by how fast we can write our how fast we can read.
+> # We are not limited by how fast we can write our how fast we can read.
 
 But when I got interested into neurosciences, I learnt something very interesting. Our mind is not clear and precise. We might believe we have agencies over our thoughts and fine control of what we imagine. But this is untrue. Our inner world is a mess. A constant hurricane :tornado: . We might be led to believe otherwise as we found ways, through language, words and writing 📖, to canalize our psyche into a formal stream. _but even that is hard, as you can see from this very chaotic opinion article_ 🙃.
 
