@@ -1,7 +1,7 @@
 ---
 title: "HighLife Intership"
 excerpt: "HighLife has been the second internship of my higher education."
-category: "Internship"
+category: "HighLife Med"
 tags:
  - Proffessional Experience
  - Start Up

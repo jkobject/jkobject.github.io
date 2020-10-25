@@ -1,10 +1,11 @@
 ---
 title: "UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction"
-category: "explanation"
+category: "BroadInstitute"
 tags:
  - Computational Biology
  - Data Science
  - Mathematics
+ - explanation
 header:
  teaser: "/assets/images/dimred.jpg"
 ---

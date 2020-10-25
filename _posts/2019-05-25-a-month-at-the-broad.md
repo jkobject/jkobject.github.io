@@ -1,7 +1,7 @@
 ---
 title: "My first month at the Broad Institute"
 excerpt: "I arrived in Boston exactly a month ago. I managed to get my Visa 5 hours before catching..."
-category: "job"
+category: "BroadInstitute"
 tags:
  - Computational Biology
  - Associate

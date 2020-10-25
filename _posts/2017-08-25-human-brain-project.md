@@ -1,7 +1,7 @@
 ---
 title: "The Human Brain Project"
 excerpt: "The Human Brain Project is a European Research Organization focused on understanding the Human Brain using today’s new computational power."
-category: "conference"
+category: "Flatiron Institute"
 tags:
   - Comp Neuroscience
   - Simulation

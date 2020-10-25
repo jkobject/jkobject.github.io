@@ -13,7 +13,7 @@ source 'https://rubygems.org'
 
 # To upgrade, run `bundle update`. to upgrade on github `git commit --allow-empty -m "Force rebuild of site"`
 
-gem "minimal-mistakes-jekyll"
+gem "minimal-mistakes-jekyll", "~> 4.18.1"
 ##
 # The following plugins are automatically loaded by the theme-gem:
 #   gem "jekyll-paginate"

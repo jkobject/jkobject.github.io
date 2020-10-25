@@ -1,7 +1,7 @@
 ---
-title: "Are We Really Conscious?"
+title: "Are We Really Conscious? pt1"
 excerpt: "This is the first part of a Serie on consciousness, life and intelligence"
-category: "On conscioussness"
+category: "On consciousness"
 tags:
  - Artificial Intelligence
  - Consciousness
@@ -9,7 +9,7 @@ tags:
  - Intelligent Design
 ---
 
-# 1. On the Intelligent Design
+# 1. On the emergence of life
 
 ![This is the first part of a Serie on consciousness, life and intelligence](https://cdn-images-1.medium.com/max/2560/1*dCu0NVzJOpsIVpkHSrKf5g.jpeg)*This is the first part of a Serie on consciousness, life and intelligence*
 

@@ -1,7 +1,7 @@
 ---
 title: "A French Engineering School"
 excerpt: "It has now been six months since I officially finished my Engineering school, 🏫 I just received my diploma of Engineering."
-category: "education"
+category: "ECE"
 tags:
  - Education
  - Carrier

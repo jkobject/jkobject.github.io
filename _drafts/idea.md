@@ -1,20 +1,70 @@
 ---
 title: "Draft Ideas"
-excerpt: "Where I am writing the curreent ideas I have in the hope to turn them either into a project, an article or a call for research"
+excerpt: "Where I am writing the current ideas I have in the hope to turn them either into a project, an article or a call for research"
 sitemap: true
 permalink: /my_ideas/
 layout: default
 published: false
+tags:
+- Biology & Medecine
+- Frustrations and Solutions
+- Sustaining Humanity
+- Justice & Society
+- philosophical thoughts
+- AI
+- On Consciousness
 ---
+
+
+### 1 trillion cell project v1
+
+_see  1 trillion cell project first_
+
+we deeply sequence an ipsc at different time points while having it transition into an organoid.
+we then try to model, using learnt from spatial sc transcriptome profile, a cellular automata to get the same phenotypic behavior.
+
+### 1 trillion cell project
+
+sequence for : 1000 humans at  100,000 different time point in their development.
+-> 10,000,000 different datapoints.
+the state of all their different cell types in different parts of their body.
+I would say at least a 100,000,000 cells. and RNAseq these cells (and protein seq as well?).
+at 20,000 reads per cells.
+(so gather: 2,000,000,000,000,000,000 reads, 100,000,000,000,000 transcriptomes)
+a 4000Pb matrix, 10Pb of data. 
+
+and learn to approximate it with a cellular automata. Once that can be done and the mapping state-transcription has been learnt. you can find the equilibrium states and how to nudge the transcriptome to get back at equilibrium. Thus alleviating aging and aging relate diseases. 
+
+
+### About solving the issue with today's (social or not) (media or not) (science or not) issues
+
+This is mainly the same issues: people's and the system's ability to disentangle the truth from the wrong, the people with agenda to the true connaisseurs? How to disentangle the data backed info from the fake news, the one second stupid info to the true game changers?
+
+It is about one system's ability to self reflect, about one system's ability to pick knowledgeable people from non knowlegeable people and to curate the true information.
+
+This is exactly what is not happening in today's "broad" communication platforms. 
+
+1. the true information is shared by knowledgeable people on that topic.
+2. knowledgeable people on topic often form a community over that topic.
+3. topics can change with time (created; changed)
+4. knowledgeable people can change with time (long) (not be anymore as the topic has changed).
+5. the set of all topics are an evolving hierarchical knowledge graph. very much like google's knowledge graph.
+6. what makes something true in the end is the direct or indirect (secondary/tertiary) impact it has had on many other topics, including its own.
+
+7. reproducibility:grouping stuff.
+8. a topic is defined by its community
+9. someone is considered knowledgeable if he has made many contributions to a topic (liked true infos), shared many impactfull informations true ones.
+10. an impactfull information is something that is shared by 
+
 
 ### on using ML at the broad. 
 
-I kinda feel that the sheer amount of data at the broad forces the com biologist to think about using it all. So we focus on crazy inference using the entirety of the matric only to relaize that the matrix is not big enough.
+I kinda feel that the sheer amount of data at the broad forces the com biologist to think about using it all. So we focus on crazy inference using the entirety of the matrix only to realize that the matrix is not big enough.
 
-Maybe a better approach is to come back to the basics by trying to think about a very local and constrained problem related to the data we have but only using a very small sample of it. like prediction of one druf from one set of sequences. Here we really do not have the data to apply learning approaches. however, we now that we can create / learn a model that has a lot of prior (including basic genetic functionning. adding chemical modelling, drug information, structure. etc..)
+Maybe a better approach is to come back to the basics by trying to think about a very local and constrained problem related to the data we have but only using a very small sample of it. like prediction of one drug from one set of sequences. Here we really do not have the data to apply learning approaches. however, we now that we can create / learn a model that has a lot of prior (including basic genetic functioning. adding chemical modeling, drug information, structure. etc..)
 
-To arrive at the inference on this we would need to separate the inference into submodules. Some of them could leverage other datasets or modes, to learn the specific task they try to deal with (genomic interactio, protein interaction, etc...)
-out of this. we have a functionning model with little infernce ability.
+To arrive at the inference on this we would need to separate the inference into submodules. Some of them could leverage other datasets or modes, to learn the specific task they try to deal with (genomic interaction, protein interaction, etc...)
+out of this. we have a functioning model with little inference ability.
 However we still have a ton of data left. the matter is then only to scale thee model to use all the data at our disposal to improve accuracy and especially, improve results. 
 
 
@@ -60,7 +110,6 @@ A next version is to add emoji like object and predict people's interactions wit
 next level is predict what would be the real life version of old pictures.
 
 
-
 ---
 
 
@@ -69,6 +118,9 @@ next level is predict what would be the real life version of old pictures.
 correlation is causation without simplifying assumptions
 
 causation is what correlation becomes when you admit some things which will get your system (defining your measured/interest variables) closed or closed enough so that you can then know that if Y and X are correlated, X cannot influence Y and : X & Y are the only parameters in the system, then X cause Y
+
+--> link to falsifiability hypothesis of doing science
+--> link to quantum mechanisms and theoretical physics.
 
 
 --------------------
@@ -155,7 +207,7 @@ How to symbolise a virtual world in which every human being would live ? why it 
 
 *Listening to blade runner.*
 
-That is what it looks like. from where you stand, look to the outside world from your window, wher eyou stand it is warmer and noisier than outside. you have access to food, information, shelter and people from inside. We have a tendency to think that inside would be inside a building, inside your home or a cafe. But in a virtual world, inside would more or less mean the same thing, but inside would also mean being outside... of the real world.. Your window would be infinite, an infinity of streams from the real world, you could go from every window and every places in an instant. Going out of the window would mean going into the real world. in a body shaped to your desire. it would feel great and peacefull since the real world would be the only thing left that is not instantaneously shaped to ones' desire... just kidding. everything would be shaped to man's desire. Inside or outside it is the same. you want something it appears. wether it is from a virtual construct or from a real world  entirely shaped by cell like nanobots that inprint man's desire to its surroundings. 
+That is what it looks like. from where you stand, look to the outside world from your window, where you stand it is warmer and noisier than outside. you have access to food, information, shelter and people from inside. We have a tendency to think that inside would be inside a building, inside your home or a cafe. But in a virtual world, inside would more or less mean the same thing, but inside would also mean being outside... of the real world.. Your window would be infinite, an infinity of streams from the real world, you could go from every window and every places in an instant. Going out of the window would mean going into the real world. in a body shaped to your desire. it would feel great and peacefull since the real world would be the only thing left that is not instantaneously shaped to ones' desire... just kidding. everything would be shaped to man's desire. Inside or outside it is the same. you want something it appears. wether it is from a virtual construct or from a real world  entirely shaped by cell like nanobots that inprint man's desire to its surroundings. 
 Would it be better ? Would you be you ?  I don't know do you want it to ? In a world where your desires are reality you can do whatever you want. And you would most certainly choose for it to be better and for you ... not to be you like you used to be. O
 
 --------------------

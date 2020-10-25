@@ -1,5 +1,0 @@
----
-title: "empty"
-excerpt: ""
-category: ""
----

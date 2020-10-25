@@ -12,23 +12,21 @@ header:
   teaser: "/assets/images/depmap-logo.png"
 ---
 
-*What you need to process the Quarterly DepMap-Omics releases from Terra.*
+_The goal of this blog post is to explain how to run the DepMap omics pipeline as our brave Associate Computational Biologist do._
+
+![](/assets/images/depmap-logo.png)
 
 ## Introduction
 
 Large panels of comprehensively characterized human cancer models have provided a rigorous framework with which to study genetic variants, candidate targets, and small-molecule and biological therapeutics and to identify new marker-driven cancer dependencies.
 
-As part of its discovery effort of Cancer Dependencies an Targets, [DepMap](https://depmap.org/portal/) analyzes raw omics data from cell lines on a quarterly basis. This part of the project if often referred to as CCLE. The bulk of ccle data consists of many omics sequences as shows in the [CCLE2 paper](https://pubmed.ncbi.nlm.nih.gov/31068700/). However only RNAseq an Whole Exome seq gets generated and analyzed quarterly. This project is lead by a team of researchers from the CDS group at the Broad Institute and draws from other projects such as [GTeX](https://www.gtexportal.org/home/), [TCGA](https://software.broadinstitute.org/cancer/cga/) and [CCLF](https://portals.broadinstitute.org/cellfactory#home). 
+As part of its discovery effort of Cancer Dependencies an Targets, [DepMap](https://depmap.org/portal/) analyzes raw omics data from cell lines on a quarterly basis. This part of the project if often referred to as CCLE. The bulk of ccle data consists of many omics sequences as shows in the [CCLE2 paper](https://pubmed.ncbi.nlm.nih.gov/31068700/). However only RNAseq and Whole Exome seq gets generated and analyzed quarterly. This project is lead by a team of researchers from the [CDS group](http://cancerdatascience.org/) at the Broad Institute and draws from other projects such as [GTeX](https://www.gtexportal.org/home/), [TCGA](https://software.broadinstitute.org/cancer/cga/) and [CCLF](https://portals.broadinstitute.org/cellfactory#home). 
 
 ### RNAseq pipeline
 ![](/assets/images/RNAseq_pipeline.png)
 
 ### WES pipeline
 ![](/assets/images/WES_pipeline.png)
-
-For a more detailed understanding of the pipelines refer to [this presentation](https://docs.google.com/presentation/d/1i0HI31dBejTYmzI9Cp6Ij7--t6eSR2r9vcC22TxSnNI/edit#slide=id.g525fd14bef_0_116).
-
-![](/assets/images/depmap-logo.png)
 
 
 The following tools are used in our pipelines:
@@ -64,33 +62,36 @@ Furthermore the pipelines make use of several software development tools. In par
 - [dalmatian](https://github.com/broadinstitute/dalmatian)
 - [Terra and gcp](https://docs.google.com/document/d/1zTtaN-Px64f8JvgydZNdBbzBpFWyZzEpshSNxQh43Oc/edit#heading=h.dz5wh0l4bu9g)
 
+## Why
+
+Knowing how to run these pipelines will help you if you want to:
+1. run your own large scale multi omics analysis pipeline. #Fancy
+2. if you want to reprocess some of DepMap-omics sequencing in the same way it has been done to generate what is available on depmap.  
+
 
 The next sections are a detailed walkthrough to run DempMap omics pipelines on the [Terra](https://app.terra.bio/) platform. 
 
 ## Installation 
 
-
 ### clone the required repositories
 
-This repo uses some important data and code from the [JKBio Library](https://www.github.com/jkobject/JKBio) and [gkugener](https://github.com/broadinstitute/gkugener) custom repositories. This repository and the other two dependecy repositories should be cloned into the same path using the following command:
+This repo uses some important data and code from the [JKBio Library](https://www.github.com/jkobject/JKBio) custom repositories. This repository and the _ccle_processing_ one should be cloned into the same path using the following command:
 
 ```bash
 git clone https://github.com/broadinstitute/ccle_processing.git
 git clone https://github.com/jkobject/JKBio.git
-git clone https://github.com/broadinstitute/gkugener.git
 ```
 
-### :warning: you would need the approriate R packages and python packages
+### You will need the approriate R packages and python packages
 
 *note that up to date versions are recommended*
 
 1. You will need to install [Jupyter Notebook](https://jupyter.org/install) and Google Cloud SDK
   - install [Google Cloud SDK](https://cloud.google.com/sdk/docs/downloads-interactive).
   - authenticate your Google account by running `gcloud auth application-default login` in the terminal.
-2. For R packages, a loading function contains most required ones (in [here](https://github.com/broadinstitute/gkugener/blob/master/RScripts/load_libraries_and_annotations.R))
+2. For R packages, a loading function contains most required ones (in [here](https://github.com/broadinstitute/ccle_proccessing/blob/master/src/load_libraries_and_annotations.R))
 3. install the following additional R packages using the provided commands:
   - Another R package needs to be installed like so: `cd src/cdsomics && R CMD INSTALL . && cd -`.
-  - Also taigr: `cd ../JKBio/taigr && R CMD INSTALL . && cd -`.
   - And Celllinemapr: `cd ../JKBio/cell_line_mapping-master/celllinemapr && R CMD INSTALL . && cd -`.
 4. For Python use the requirements.txt file `pip install -r requirements.txt`.
 
@@ -99,7 +100,7 @@ git clone https://github.com/broadinstitute/gkugener.git
 
 How to create workspaces and upload data to it is explained in [Terra's documentation](https://software.broadinstitute.org/firecloud/documentation/)
 
-For the specific workflow ids, parameters and workspace data you can use the file `data/xQx/.json` in our repository, which lists the parameters used for each workflow of each off the 3 workspaces in our pipelines for each releases (the .csv file lists the workflows with their correct name):
+For the specific workflow ids, parameters and workspace data you can use the file `data/xQx/.json` in our _ccle_processing_ repository, which lists the parameters used for each workflow of each off the 3 workspaces in our pipelines for each releases (the .csv file lists the workflows with their correct name):
 In order to have a working environment you will need to make sure you have:
 - set a billing account
 - created a workspace
@@ -108,8 +109,8 @@ In order to have a working environment you will need to make sure you have:
 - parametrized them (in the json file)
 - imported your data (_Tools available in `TerraFunction` in the `JKBio` package as well as the `dRalmatian` package can be used to automate these processes._)
 
-Once this is done, you can run your Jupyter Notebook server and open one of the 3 `CCLE_\*` Jupyter files corresponding to our 3 pipelines. 
-- RNAseq processing of gene level and transcript level read counts and exon counts.  
+Once this is done, you can run your Jupyter Notebook server and open one of the 3 `\*_CCLE` Jupyter files in the _ccle_processing_ repo, corresponding to our 3 pipelines. 
+- RNAseq processing of gene level and transcript level read counts and exon counts.
 - WESeq processing of Copy Number (gene level and segment level)
 - RNAseq & WESeq processing of Mutations (cancer drivers and germlines)
 
@@ -120,11 +121,17 @@ These notebooks architecture is as follows:
 3. Downloading and post-processing
 4. QC, grouping and uploading to the portal
 
-## Running the pipeline
+## Running the notebooks
+
+Each Following steps correspond to a specific part of each of the 3 notebooks.
+
+_Note that you can try it out using our publicly available bam files on [SRA](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA523380)_ 
 
 ### 1. Uploading and pre-processing 
 
-__You can skip this step and go to part2__.The first step in the notebook is about getting the samples generated at the the Broad Institute which are located in different Google Cloud storage paths. This section also searches for duplicates and finds/adds the metadata we will need in order to have coherent and complete sample information. 
+__You can skip this step and go to part2.__
+
+The first step in the notebook is about getting the samples generated at the the Broad Institute which are located in different Google Cloud storage paths. This section also searches for duplicates and finds/adds the metadata we will need in order to have coherent and complete sample information. 
 
 **Remarks:** 
 - in the initialization step you can remove any imports related to `taiga` and `gsheet` to avoid possible errors.
@@ -150,9 +157,9 @@ This step will do the following tasks:
 - remove all duplicate samples from our downloaded file (keeping only the latest version of each samples).
 - saving the current pipeline configuration.
 
-_At the least you would require the downloading of results, but other steps could be useful for some users_
+_You will at least need to download results, but other steps could be useful for some users_
  
-...and post processing tasks.
+#### Post-processing tasks
 
 > Unfortunately for now the post-processing tasks are not all made to be easily run outside of the CCLE pipelines. Most of them are in R and are run with the Rpy2 tool.
 
@@ -189,12 +196,18 @@ So amongst these functions, some of them might be of a lesser interest to an ext
 
 These tasks should not be very interesting for any outside user as they revolve around manual checks of the data, comparison to previous releases, etc.
 
-In these tasks we also prepare the data to be released to different groups, removing the samples per access category: Blacklist\|Internal\|DepMapConsortium\|Public. We then upload the data to a server called taiga where it will be used in the DepMap portal.
+In these tasks we also prepare the data to be released to different groups, removing the samples per access category: Blacklist\|Internal\|DepMapConsortium\|Public. We then upload the data to a server called __taiga__ where it they be used by the DepMap portal to create the plots you know and love.
+
+You can however find all of these files directly on the [download section](https://depmap.org/portal/download/)
+
+
 
 
 ----
 
 you can find the project's repository [here](https://github.com/broadinstitute/ccle_processing)
 the blog post is available on [depmap's blog]() and [Jérémie's blog](https://www.jkobject.com/projects/depmap_omics_howto/)
+
+Please feel free to ask any question on our [FAQ](https://depmap.org/portal/faq/)
 
 Jérémie Kalfon

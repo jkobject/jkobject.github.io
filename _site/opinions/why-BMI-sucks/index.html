@@ -1,0 +1,921 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.20.2 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>why most brain-machine interfaces ideas suck | Jérémie</title>
+<meta name="description" content="An opinion on the goals, the promises, the challenges and ways forward in vertical farming">
+
+
+  <meta name="author" content="Jérémie Kalfon">
+  
+  <meta property="article:author" content="Jérémie Kalfon">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Jérémie">
+<meta property="og:title" content="why most brain-machine interfaces ideas suck">
+<meta property="og:url" content="https://jkobject.com/opinions/why-BMI-sucks/">
+
+
+  <meta property="og:description" content="An opinion on the goals, the promises, the challenges and ways forward in vertical farming">
+
+
+
+  <meta property="og:image" content="https://jkobject.com/assets/images/BMIchip.jpeg">
+
+
+
+  <meta name="twitter:site" content="@jkobject">
+  <meta name="twitter:title" content="why most brain-machine interfaces ideas suck">
+  <meta name="twitter:description" content="An opinion on the goals, the promises, the challenges and ways forward in vertical farming">
+  <meta name="twitter:url" content="https://jkobject.com/opinions/why-BMI-sucks/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://jkobject.com/assets/images/BMIchip.jpeg">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2020-10-25T19:36:46-04:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/jkobject">
+  
+
+  
+
+
+<link rel="canonical" href="https://jkobject.com/opinions/why-BMI-sucks/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Jeremie Kalfon",
+      "url": "https://jkobject.com/",
+      "sameAs": ["https://twitter.com/jkobject","https://LinkedIn.com/in/jkobject","https://ResearchGate.com/jeremie-kalfon"]
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Jérémie Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/id-88.png" alt=""></a>
+        
+        <a class="site-title" href="/">
+          Jérémie K.
+          
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/about/" title="I am a human. I wish to make the world better with science. &lt;3">About</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/projects/" title="">Projects</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/opinions/">Opinions</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/ideas/">Ideas</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/blog/" title="A short extract about my life experiences.">Blog</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/papers/">Papers</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/courses/" title="Here is the list of the Courses I have received and the one I have given.">Courses</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/culture/" title="This is my personal list of books, Comics and films I love.">Culture</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/categories/" title="Everything sorted by categories.">Subjects</a>
+            </li>
+</ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay" style=" background-image: url('/assets/images/BMIchip.jpeg');">
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          why most brain-machine interfaces ideas suck
+
+        
+      </h1>
+      
+        <p class="page__lead">An opinion on the goals, the promises, the challenges and ways forward in vertical farming
+</p>
+      
+      
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          6 minute read
+        
+      </span>
+    
+  </p>
+
+
+      
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://jkobject.com/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1">
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/opinions" itemprop="item"><span itemprop="name">Opinions</span></a>
+          <meta itemprop="position" content="2">
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">why most brain-machine interfaces ideas suck</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/id.png" alt="Jérémie Kalfon" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Jérémie Kalfon</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>I am an Engineer, Researcher and Entrepreneur. I wish to make the world a better place with science!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Paris - Boston</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://twitter.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://Scholar.google.com/citations?user=zyXiydsAAAAJ" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i><span class="label">Scholar</span></a></li>
+          
+        
+          
+            <li><a href="https://LinkedIn.com/in/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:jkobject@gmail.com">
+            <meta itemprop="email" content="jkobject@gmail.com">
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="why most brain-machine interfaces ideas suck">
+    <meta itemprop="description" content="An opinion on the goals, the promises, the challenges and ways forward in vertical farming">
+    <meta itemprop="datePublished" content="2020-10-25T19:36:46-04:00">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#how-do-bmis-work">How do BMIs work?</a></li>
+  <li><a href="#what-that-means-">What that means? 🤔</a></li>
+  <li><a href="#what-about-medical-use-cases-">What about medical use-cases? 🏥</a></li>
+  <li><a href="#other-avenues">Other avenues</a></li>
+  <li><a href="#we-are-not-limited-by-how-fast-we-can-write-our-how-fast-we-can-read">We are not limited by how fast we can write our how fast we can read.</a></li>
+  <li><a href="#one-final-goal">One final goal.</a></li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <p>I have often heard 👂 how Brain Machine Interfaces, also known as BMIs, would one day be a consumer products. Imagine being able to have a third arm. To control machines from your thoughts. Imagine being able to not just be in virtual reality through a headset; but to live the virtual reality, like in the Matrix! 🔫</p>
+
+<p>These promises are often what people talk about, when prompted about BMIs. However I do not think that this is what BMIs will be used for.</p>
+
+<h2 id="how-do-bmis-work">How do BMIs work?</h2>
+
+<p><img src="/assets/images/elonneura.jpg" alt="neuralink device">
+<em>Elon Musk is certainly making a lot of noise in that domain: <a href="https://neuralink.com/">neuralink</a>. 🧠</em></p>
+
+<p>BMIs are often thought of as brain implants being able to read/write directly from your neurons. This can be done in many different ways.</p>
+
+<p>However, BMI in a broader sense, can be defined as anything remotely interfacing with your brain. 
+One way to do that is to connect to the brain’s “inputs|outputs”: Nerves 🔌.</p>
+
+<p>This has a lot of advantages. Signal from the Nerves are much better behaved and formated. One would say they are more suited for reading &amp; writing to them. We can think about many locations and ways to read from nerves. <a href="https://www.hopkinsmedicine.org/health/treatment-tests-and-therapies/cochlear-implant-surgery">Cochlear implants</a> are a famous examples. The long term goal is to be able to read/writte directly from the spinal nerves and restore walk to any paralyzed people <img class="emoji" title=":wheelchair:" alt=":wheelchair:" src="https://github.githubassets.com/images/icons/emoji/unicode/267f.png" height="20" width="20">. I should add, “parallized due to a spinal cords injury”. Which are far from being the majority.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>
+<a href="https://www.wcbl.com/targeted-muscle-reinnervation/">TMR</a> 💪 or targeted muscle reinervation, is often defined as a BMI. It is the closest thing we currently have to read</td>
+      <td>write directly from nerves. It uses electrodes to read input from, say arm’s/fingers nerves that have been reattached to another muscle in the body. This muscle has been previously cut into different sub-muscles which only role will now be to amplify these nerve’s signal. when one touches that part of the body where the submuscle linked to the pimkie is, the patient now feels someone is touching his pimkie. when the patient wants to move its pimkie, the cut sub-muscle moves. Now an electrode can read these submuscles activity to move a prothestic arm and shock the muscle slightly when someone is touching the arm.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>But this is where the line blurrs. If a device reading muscle contractions is a BMI.. Isn’t a keyboard also a device reading muscle contractions? Isn’t a touch-pad or playstation controller 🎮 ,etc, as well?</p>
+
+<p><img src="/assets/images/cochlear.jpg" alt="cochlear implants">
+<em>cochlear implants allow some deaf people to hear</em></p>
+
+<p>“Maybe. But they will never be as good as reading directly from muscle contractions!”.
+And here is where the problem lies. Ask many of the companies which already tried it.. and failed: It is not. Muscles are noisy. Depending on your current state and position. Depending on which sets of muscles you use for your movements, everything can be even noisier or downright different.</p>
+
+<p>I have often heard a counter argument. “You could be faster with an implant than with a game controller”. But just how fast can you get with a keyboard? What is the limiting factor? ask it to gamers. Some of them often clock more than 7 keystrokes a second! wWile 99.99% of people struggle, using more than two fingers. Most of us haven’t even scratched the surface of our bodily/muscle limits with regular keyboards and mouse <img class="emoji" title=":mouse:" alt=":mouse:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f42d.png" height="20" width="20">. Why then, learn a new noisier tool?</p>
+
+<p>The goal of this definition of BMI is really to think about one thing. We already have a BMI. A truly amazing one: Our body 🤾. And it will be extremely hard to do better than that. How hard? To me this is a much harder problem than curing cancer or preventing aging 🧑‍🦳.</p>
+
+<blockquote>
+  <h1 id="your-body-is-already-your-bmi">your body is already your BMI.</h1>
+</blockquote>
+
+<h2 id="what-that-means-">What that means? 🤔</h2>
+
+<p>The entire design of the brain is to communicate through your body. Like a computer, you are not connecting anything to it by plugging it directly onto your CPU, you need to go through ready made interfaces. That is what USB and HDMI ports are for. This is the same for the brain and the human body. Putting wires inside often help so much, it was not meant for it.</p>
+
+<h2 id="what-about-medical-use-cases-">What about medical use-cases? 🏥</h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_6oNoLWcDqw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<p><em>An extract of how brain implants can help some patients</em></p>
+
+<p>Well now let’s admit that we are talking only about the BMIs directly connecting to the central nervous system. There is certainly other avenues for them. Restoring movement to paralyzed people, sight to blinds 🦯. Helping in neurological issues such as parkinson, alzheimer, epilepsy and much more.</p>
+
+<p>I have to say that I was always very enthusiastic <img class="emoji" title=":open_mouth:" alt=":open_mouth:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f62e.png" height="20" width="20"> about these ideas. Being myself an engineer, I admit I always found it cool to think about cyborgs and to dream about the technology I know and understand, saving lives. However now that I became more deeply interested about biology, I discovered that our body speaks another language than the technology we use in our smartphones, in many key ways.</p>
+
+<p>This is not an insurmontable barrier, but a big one. And here is the thing, to do this, we will need to understand the language of biology. But once we can understand it, through genomics 🧬 and systems biology,we will have ways to solve all the aforementioned issues in many more remarkable ways than with BMIs. Simple pills or shots could restore sight, we could re-grow organs and destroyed  brain regions. We could restore damaged spinal chords and prevent the most debilitating psychiatric diseases. These advances will likely come sooner than the types of BMIs that could do the same thing. And will be much mor acceptable for anyone to take a pill than go trough surgery to receive a foreign object 🔌.</p>
+
+<h2 id="other-avenues">Other avenues</h2>
+
+<p><img src="/assets/images/transcendence0.jpeg" alt="pretty high">
+<em>MEME</em></p>
+
+<p>Reading thoughts, peering into dreams, making music by just thinking about it, seeing what you imagine become reality in seconds, moving into a game by thought 💭. These are things that, for sure, can only come from a BMI. I won’t deny that. And it might become possible someday.</p>
+
+<blockquote>
+  <h2 id="we-are-not-limited-by-how-fast-we-can-write-our-how-fast-we-can-read">We are not limited by how fast we can write our how fast we can read.</h2>
+</blockquote>
+
+<p>But when I got interested into neurosciences, I learnt something very interesting. Our mind is not clear and precise. We might believe we have agencies over our thoughts and fine control of what we imagine. But this is untrue. Our inner world is a mess. A constant hurricane <img class="emoji" title=":tornado:" alt=":tornado:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f32a.png" height="20" width="20"> . We might be led to believe otherwise as we found ways, through language, words and writing 📖, to canalize our psyche into a formal stream. <em>but even that is hard, as you can see from this very chaotic opinion article</em> 🙃.</p>
+
+<p>It will be possible to read one’s thoughts, but I do not think that it will make anything easier. We are not limited by how fast we can write our how fast we can read. We are limited by our own mind, and its ability to process information coherently 🧠.</p>
+
+<h2 id="one-final-goal">One final goal.</h2>
+
+<p><img src="/assets/images/transcendence1.jpeg" alt="uultimate">
+<em>MEEEME</em></p>
+
+<p>There is however, 1 more goal of BMIs, maybe the only one. One that you might have heard Elon musk mentioning, when talking about his company: Neuralink. Linking our brains to AGI -artificial general intelligences. Augmenting ourselves by transfering parts or the entirety of our thoughts to more powerfull computers and algorithms.</p>
+
+<p>If we can read and write fast enough into our brains, then we might be able to actually link/transfer ourselves to machines, virtually increasing our ability to process information. Allowing us to focus on things even more, to increase our empathy, our reach and experience of the world. This will cause a deep transformation, one of the self and of our our most humane personalities. “linking to AGI / transferring your brain into a machine”, two ideas amounting to the same result, will be the last step of humanity. Its final transformation. It will have to come through BMIs, the most complex BMIs ever thought of. (Un)Fortunately I do not think that BMIs will be adopted for anything else.</p>
+
+<p><img src="/assets/images/fmri_ex.jpg" alt="fMRI">
+<em>fMRIs allow researcher already to read some thoughts.</em></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#biology-medecine" class="page__taxonomy-item" rel="tag">Biology &amp; Medecine</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-10-25T19:36:46-04:00">October 25, 2020</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?via=jkobject&amp;text=why+most+brain-machine+interfaces+ideas+suck%20https%3A%2F%2Fjkobject.com%2Fopinions%2Fwhy-BMI-sucks%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjkobject.com%2Fopinions%2Fwhy-BMI-sucks%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fjkobject.com%2Fopinions%2Fwhy-BMI-sucks%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/opinions/on-the-intelligent-design/" class="pagination--pager" title="Are We Really Conscious? pt1
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/yearbroaad.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/one-year-at-the-broad/" rel="permalink">A year at the Broad Institute
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          7 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Short stories about my professional experiences.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/dimred.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/umap-explanation/" rel="permalink">UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Short stories about my professional experiences.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/advancedstudy.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/a-month-at-the-broad/" rel="permalink">My first month at the Broad Institute
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">I arrived in Boston exactly a month ago. I managed to get my Visa 5 hours before catching…
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/epflinter.jpeg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/interviews-at-epfl/" rel="permalink">Interviews at EPFL
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">During the last week of January I had the chance to enter the hiring program of EPFL’s edcb program.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap">
+<form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term...">
+  </form>
+  <div id="results" class="results"></div>
+</div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="mailto:jkobject@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://ResearchGate.net/profile/jeremie_kalfon" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+        
+      
+        
+          <li><a href="https://Scholar.google.com/citations?user=zyXiydsAAAAJ" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i> Scholar</a></li>
+        
+      
+        
+          <li><a href="https://LinkedIn.com/in/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">© 2020 Jérémie Kalfon. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://jkobject.com/opinions/why-BMI-sucks/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/opinions/why-BMI-sucks"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://jkobject.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+
+  
+
+
+
+
+
+              <script>
+                window.onload = function () {
+                    var script = document.createElement('script');
+                    var firstScript = document.getElementsByTagName('script')[0];
+                    script.type = 'text/javascript';
+                    script.async = true;
+                    script.src = '/sw-register.js?v=' + Date.now();
+                    firstScript.parentNode.insertBefore(script, firstScript);
+                };
+            </script>
+            </body>
+
+</html>

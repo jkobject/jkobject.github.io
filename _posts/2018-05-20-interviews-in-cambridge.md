@@ -1,12 +1,12 @@
 ---
 title: "Interviews in Cambridge"
 excerpt: "A few months ago, I went to Cambridge, UK, 🇬🇧 to participate to hiring days and interview for EMBL-EBI"
-category: "hirings"
+category: "University of Kent"
 tags:
-  - "Cambridge"
-  - "PhD"
-  - "Job Interview"
-  - "Research"
+  - Cambridge
+  - PhD
+  - Job Interview
+  - Research
 header:
  teaser: "assets/images/cambridgeitw.jpeg"
 ---

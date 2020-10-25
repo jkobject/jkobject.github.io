@@ -1,7 +1,7 @@
 ---
 title: "A MSc at the University of Kent"
 excerpt: "I recently came back from a graduation, 🎓 day in Canterbury, England."
-category: "education"
+category: "University of Kent"
 tags:
  - Education
  - England

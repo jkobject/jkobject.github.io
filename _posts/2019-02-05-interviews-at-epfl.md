@@ -1,7 +1,7 @@
 ---
 title: "Interviews at EPFL"
 excerpt: "During the last week of January I had the chance to enter the hiring program of EPFL’s edcb program."
-category: "hirings"
+category: "ECE"
 tags:
  - Computational Biology
  - PhD

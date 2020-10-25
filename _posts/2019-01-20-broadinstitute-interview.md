@@ -1,7 +1,7 @@
 ---
 title: "Boston Interviews"
 excerpt: "I have had the chance to fly to Boston in the last week of January to spend a day at the broad institute of MIT and Harvard."
-category: "hirings"
+category: "ECE"
 tags:
   - Broad Institute
   - Job Interview

@@ -1,7 +1,7 @@
 ---
 title: "An Internship in New York"
 excerpt: "I had the immense honour to get accepted for an internship at the Simons Institute’s Flatiron Institute."
-category: "job"
+category: "Flatiron Institute"
 tags:
  - New York
  - Proffessional Experience

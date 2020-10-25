@@ -1481,7 +1481,7 @@ finally deepmind presents its alpha fold algorithm and release it. The algorithm
 
 Here researcher are presenting a simple NN trained on mutation features over the largest WGS tumor panel and show that methylation patterns guessed from passenger mutation distribution is very efficient. that sequencer/mut caller difference decrease their accuracy from 90% to 80%. That they can as well predict on metastasis than primary.
 
-###
+### 
 
 
 ## Growth Differentiation Factor 11 Is a Circulating Factor that Reverses Age-Related Cardiac Hypertrophy-- Francesco S. Loffredo, Matthew L. Steinhauser, Steven M. Jay
@@ -1496,7 +1496,49 @@ A must read.
 
 ## Predicting Deeper into the Future of Semantic Segmentation--
 
-They are reusing a well known semantic segmentation architexture called Dilation10 and used it in an autoregressive fashion (predicting one frame and the next ...) and compared it to known methods to show that this approach was the most efficient. 
+They are reusing a well known semantic segmentation architexture called Dilation10 and used it in an autoregressive fashion (predicting one frame and the next ...) and compared it to known methods to show that this approach was the most efficient.
+
+
+## Integrating ChIP-seq with other functional genomics data-- Mortazavi, shiang
+
+## Personalized and graph genomes reveal missing signal in epigenomic data-- Cristian Groza, Tony Kwan, Nicole Soranzo
+
+How using this new tool of personaallized graph genome can hepl in recover missing peaks that are more sample specific. (very important for in depth analysis of a cancer genome for example or when comparing differences across genomes where only a small set of enhancer are different)
+
+
+## Genetic and transcriptional evolution alters cancer cell line drug response-- Uri Ben David
+
+Very important to CCLE, showing that subclonal evolution has an important impact in cell line's ability to stay similar through time. and that the proportion of these subclones is changing and has a specific impact on our ability to cluster and predict effects for that cell line. 
+
+## Mitochondrial uncoupling and lifespan-- Mookerjee, Divakaruni
+
+How the mitochondira affects aging based on its efficiency decrease with time. Its respirations process is inneficient and produces ROS that will damage it through proton leaks. It has repair mechanisms such as uncoupling (of substrate oxidation from ADP phosphorylation). It is a litterature review of that process and its effect on aging.
+
+
+## RNA isoform screens uncover the essentiality and tumor-suppressor activity of ultraconserved poison exons
+
+## ENCODE3
+
+the new datasets and results from the ENCODE3 project with around 50000 samples of epigenomes
+
+### Global reference mapping of human transcription factor footprints
+
+how this new dataset of deep openChromatin helped them uncover specific region of activity and TF binding site from footprinting these regions. It created this new set of regulatory elements defining them by their location and binding specificity. It showed how they seemed evolutionnary unconsctrained while still being a big repository of GWAS variant ( folds more than random in the genome)
+
+### A large-scale binding and functional map of human RNA-binding proteins
+
+from this paper we can see
+
+## Occupancy maps of 208 chromatin-associated proteins in one human cell type
+
+First time we have so many bindings data on one sample (still the issue of assuming steady states). But interesting that only require 30 or so proteins to basically predict chromatin state. the rest is redundant. promoter/enhancer distinction is very much not present. A lot of TFs are just present because they bind to others, leading to errors in what have been deemed TFBS. example: "CTCF motif in RAD21". For the 30 CAPs with a described motif, the majority of peaks did not contain a primary motif, a result that may indicate protein–protein interactions and/or looping events in these peaks
+
+## The mutational constraint spectrum quantified from variation in 141,456 humans
+
+1815 genes can be reliably deactivated without any impact on health
+
 
 ## FEDERATED LEARNING: STRATEGIES FOR IMPROVING COMMUNICATION EFFICIENCY-- Jakub Konecˇny, H. Brendan McMahan, Google
+
+
 

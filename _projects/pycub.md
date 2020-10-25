@@ -1,7 +1,7 @@
 ---
 title: "PyCUB"
 excerpt: "During my master thesis I had the chance to work with It a multidisciplinary team involving teachers in CS and Biology and a PhD student."
-category: "Research Project"
+category: "University of Kent"
 tags:
  - Codon Usage Bias
  - Science

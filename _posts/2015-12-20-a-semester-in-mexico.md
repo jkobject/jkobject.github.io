@@ -1,7 +1,7 @@
 ---
 title: "A semester abroad in Mexico"
 excerpt: "During my third year of undergraduate studies, I went on to do a semester exchange in Mexico.🇲🇽"
-category: "education"
+category: "ECE"
 tags:
  - Mexico
  - Travel

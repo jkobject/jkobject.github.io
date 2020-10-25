@@ -21,3 +21,6 @@ main:
   - title: "Culture"
     url: /culture/
     description: "This is my personal list of books, Comics and films I love."
+  - title: "Subjects"
+    url: /categories/
+    description: "Everything sorted by categories."

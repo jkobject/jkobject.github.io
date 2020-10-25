@@ -3,7 +3,7 @@ title: "Opinions"
 layout: collection
 permalink: /opinions/
 collection: "opinions" # collection name
-entries_layout: list # list (default), grid
+entries_layout: grid # list (default), grid
 show_excerpts: true # true (default), false
 sort_by: date # date (default) title
 sort_order: forward # forward (default), reverse
