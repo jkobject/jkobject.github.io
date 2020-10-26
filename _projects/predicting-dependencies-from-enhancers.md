@@ -2,6 +2,7 @@
 title: "What  Enhancers can tell us about Dependencies"
 excerpt: "Influence of the Core Regulatory Circuitry on AML dependencies: Part 1."
 category: "BroadInstitute"
+date: 2019-12-10
 tags:
  - Research
  - Broad Institute

@@ -2,6 +2,7 @@
 title: "CaImAn"
 excerpt: "An open source tool for scalable calcium imaging data analysis."
 category: "Flatiron Institute"
+date: 2017-08-10
 tags:
  - Big Data
  - Matrix Factorization

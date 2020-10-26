@@ -2,6 +2,7 @@
 title: "PiPle: the startup"
 excerpt: "A big decision has been made. With Paul Best, we decided in the summer 2018 to launch PiPle..."
 category: "PiPle"
+date: 2018-09-10
 tags:
  - Startup
  - Entrepreneurship

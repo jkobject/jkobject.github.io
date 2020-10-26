@@ -20,7 +20,7 @@ A side project that I had the chance to participate in was the WRN dependencies 
 
 At the Cancer Program in the Broad Institute, we are working on [cancer cell lines](https://www.cancer.gov/publications/dictionaries/cancer-terms/def/cancer-cell-line), cancers from patients that have been grown in a lab for often many years. They now serve as models 👷 to represent a cancer type. 
 From these, we use [crispr-cas9](https://www.yourgenome.org/facts/what-is-crispr-cas9), a tool that amongst other things, can serve to deactivate -with relatively good precision- a gene in a cell by cutting ✂️ it in two.
-Doing so on hundreds of cance cell lines, the DepMap project has now found many interesting relationships between some cancer models, with particular genomic features and how they react to the deactivation of some of their genes.
+Doing so on hundreds of cancer cell lines, the DepMap project has now found many interesting relationships between some cancer models, with particular genomic features and how they react to the deactivation of some of their genes.
 
 _Know 💁 more about the Broad and DepMap, in this related blogpost: [one year at the broad](www.jkobject.com/2020-06-11-one-year-at-the-broad.html)._
 

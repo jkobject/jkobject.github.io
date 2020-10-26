@@ -69,7 +69,9 @@ Reading thoughts, peering into dreams, making music by just thinking about it, s
 
 > # We are not limited by how fast we can write our how fast we can read.
 
-But when I got interested into neurosciences, I learnt something very interesting. Our mind is not clear and precise. We might believe we have agencies over our thoughts and fine control of what we imagine. But this is untrue. Our inner world is a mess. A constant hurricane :tornado: . We might be led to believe otherwise as we found ways, through language, words and writing 📖, to canalize our psyche into a formal stream. _but even that is hard, as you can see from this very chaotic opinion article_ 🙃.
+But when I got interested into neurosciences, I learnt something very interesting. Our mind is not clear and precise. We might believe we have agencies over our thoughts and fine control of what we imagine. But this is untrue. Our inner world is a mess. A constant hurricane :tornado: . We might be led to believe otherwise as we found ways, through language, words and writing 📖, to canalize our psyche into a formal stream.
+
+ _but even that is hard, as you can see from this very chaotic opinion article_ 🙃.
 
 It will be possible to read one's thoughts, but I do not think that it will make anything easier. We are not limited by how fast we can write our how fast we can read. We are limited by our own mind, and its ability to process information coherently 🧠.
 

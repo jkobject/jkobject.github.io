@@ -2,6 +2,7 @@
 title: "PiPle: The Beginnings"
 excerpt: "PiPle is the next generation professional communication tool."
 category: "PiPle"
+date: 2016-09-10
 tags:
  - Project Management
  - Team Management

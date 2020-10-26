@@ -95,17 +95,11 @@ var store = [{
         "url": "https://jkobject.com/blog/one-year-at-the-broad/",
         "teaser": "https://jkobject.com/assets/images/yearbroaad.jpg"
       },{
-        "title": "CaImAn",
-        "excerpt":"Recent advances in calcium imaging acquisition techniques are creating data sets of the order of Terabytes/week. Memory and computationally efficient algorithms are required to analyse in reasonable amount of time terabytes of data. This projects implements a set of essential methods required in the calcium imaging movies analysis pipeline. Fast...","categories": ["Flatiron Institute"],
-        "tags": ["Big Data","Matrix Factorization","ML","Python","Matlab"],
-        "url": "https://jkobject.com/projects/caiman/",
-        "teaser": "https://jkobject.com/assets/images/caimann.png"
-      },{
-        "title": "DepMap Omics: How to",
-        "excerpt":"The goal of this blog post is to explain how to run the DepMap omics pipeline as our brave Associate Computational Biologist do. Introduction Large panels of comprehensively characterized human cancer models have provided a rigorous framework with which to study genetic variants, candidate targets, and small-molecule and biological therapeutics...","categories": ["BroadInstitute"],
-        "tags": ["Research","Broad Institute","Data Science","Cancer Dependencies","Genomics"],
-        "url": "https://jkobject.com/projects/depmap-omics-howto/",
-        "teaser": "https://jkobject.com/assets/images/depmap-logo.png"
+        "title": "PiPle: The Beginnings",
+        "excerpt":"PiPle is the next generation professional communication tool. It is a cross platform project led by a team of Engineering student, 👩‍🎓 from ECEparis which is led by me. We won a couple of Prizes for this project last year. The Berger Levrault Citizen Challenge as well as ECE innov...","categories": ["PiPle"],
+        "tags": ["Project Management","Team Management","App Development","Innovation","Design"],
+        "url": "https://jkobject.com/projects/piple-the-foundation/",
+        "teaser": "https://jkobject.com/assets/images/piple1.jpeg"
       },{
         "title": "No Larsen Festival",
         "excerpt":"The NoLarsen Festival is a music, 🎧 festival that I managed and organised during the year 2016–2017 as part of my student, 👩‍🎓 society. It gathered 2000 people and was a heavy work to pull out during an intense school year. One of our Artist Made Poster One of the...","categories": ["ECE"],
@@ -113,11 +107,17 @@ var store = [{
         "url": "https://jkobject.com/projects/no-larsen-festival/",
         "teaser": "https://jkobject.com/assets/images/nol.png"
       },{
-        "title": "PiPle: The Beginnings",
-        "excerpt":"PiPle is the next generation professional communication tool. It is a cross platform project led by a team of Engineering student, 👩‍🎓 from ECEparis which is led by me. We won a couple of Prizes for this project last year. The Berger Levrault Citizen Challenge as well as ECE innov...","categories": ["PiPle"],
-        "tags": ["Project Management","Team Management","App Development","Innovation","Design"],
-        "url": "https://jkobject.com/projects/piple-the-foundation/",
-        "teaser": "https://jkobject.com/assets/images/piple1.jpeg"
+        "title": "CaImAn",
+        "excerpt":"Recent advances in calcium imaging acquisition techniques are creating data sets of the order of Terabytes/week. Memory and computationally efficient algorithms are required to analyse in reasonable amount of time terabytes of data. This projects implements a set of essential methods required in the calcium imaging movies analysis pipeline. Fast...","categories": ["Flatiron Institute"],
+        "tags": ["Big Data","Matrix Factorization","ML","Python","Matlab"],
+        "url": "https://jkobject.com/projects/caiman/",
+        "teaser": "https://jkobject.com/assets/images/caimann.png"
+      },{
+        "title": "PyCUB",
+        "excerpt":"During my master thesis I had the chance to work with It a multidisciplinary team involving teachers in CS and Biology, 🧪 and a PhD student. I had the chance to work on sets of data from EMBL and from our lab at the University of Kent. Artist’s view of...","categories": ["University of Kent"],
+        "tags": ["Codon Usage Bias","Science","Computational Biology","Data Science","Machine Learning"],
+        "url": "https://jkobject.com/projects/pycub/",
+        "teaser": "https://jkobject.com/assets/images/pycub.jpg"
       },{
         "title": "PiPle: the startup",
         "excerpt":"A big decision has been made. With my fellow Engineer friend and maybe some day fellow scholar, Paul Best, we decided in the summer 2018 to launch, 🚀 PiPle and create a start-up. We have been working loosely on it since a year now and the need for PiPle seemed...","categories": ["PiPle"],
@@ -131,15 +131,15 @@ var store = [{
         "url": "https://jkobject.com/projects/predicting-dependencies-from-enhancers/",
         "teaser": "https://jkobject.com/assets/images/dependency-prediction.jpg"
       },{
-        "title": "PyCUB",
-        "excerpt":"During my master thesis I had the chance to work with It a multidisciplinary team involving teachers in CS and Biology, 🧪 and a PhD student. I had the chance to work on sets of data from EMBL and from our lab at the University of Kent. Artist’s view of...","categories": ["University of Kent"],
-        "tags": ["Codon Usage Bias","Science","Computational Biology","Data Science","Machine Learning"],
-        "url": "https://jkobject.com/projects/pycub/",
-        "teaser": "https://jkobject.com/assets/images/pycub.jpg"
-      },{
         "title": "WRN dependencies",
         "excerpt":"A side project that I had the chance to participate in was the WRN dependencies study found in cancer cell lines by the DepMap project. Introduction At the Cancer Program in the Broad Institute, we are working on cancer cell lines, cancers from patients that have been grown in a...","categories": ["BroadInstitute"],
         "tags": ["Research","Broad Institute","Cancer Dependencies","Genomics"],
         "url": "https://jkobject.com/projects/wrn-dependencies/",
         "teaser": "https://jkobject.com/assets/images/msi.jpeg"
+      },{
+        "title": "DepMap Omics: How to",
+        "excerpt":"The goal of this blog post is to explain how to run the DepMap omics pipeline as our brave Associate Computational Biologist do. Introduction Large panels of comprehensively characterized human cancer models have provided a rigorous framework with which to study genetic variants, candidate targets, and small-molecule and biological therapeutics...","categories": ["BroadInstitute"],
+        "tags": ["Research","Broad Institute","Data Science","Cancer Dependencies","Genomics"],
+        "url": "https://jkobject.com/projects/depmap-omics-howto/",
+        "teaser": "https://jkobject.com/assets/images/depmap-logo.png"
       }]

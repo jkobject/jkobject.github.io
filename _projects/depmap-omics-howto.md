@@ -2,6 +2,7 @@
 title: "DepMap Omics: How to"
 excerpt: "How DepMap Omics data is made. How to process it Yourself"
 category: "BroadInstitute"
+date: 2020-08-10
 tags:
  - Research
  - Broad Institute

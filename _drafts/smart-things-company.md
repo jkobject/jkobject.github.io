@@ -9,16 +9,21 @@ Last time, I was in my kitchen, looking at my google home and the 3 lights + the
 
 ## The obvious reasons
 
-
-
+big players
+fragmentation
+appliance companies don't make phones
+need to disrupt the market every time
 
 ## The solutions
 
-
+open source technologies
+big market players getting in the way (ikea)
+another solution. a compay that only does that
 
 
 ## The company
 
+sells smart things
 
 ------
 https://techbeacon.com/app-dev-testing/67-open-source-tools-resources-iot

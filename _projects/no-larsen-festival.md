@@ -2,6 +2,7 @@
 title: "No Larsen Festival"
 excerpt: "The NoLarsen Festival is a music festival that I managed and organised during the year 2016–2017 as part of my student society."
 category: "ECE"
+date: 2017-04-10
 tags:
  - Management
  - Project Management

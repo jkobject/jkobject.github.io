@@ -2,6 +2,7 @@
 title: "What is up with hydroponics and vertical farming"
 excerpt: "An opinion on the goals, the promises, the challenges and ways forward in vertical farming"
 category: "Sustaining Humanity"
+date: 2020-10-10
 header:
  teaser: "/assets/images/BMIchip.jpeg"
  overlay_image: "/assets/images/BMIchip.jpeg"
