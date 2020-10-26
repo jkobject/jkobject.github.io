@@ -1,6 +1,6 @@
 ---
 title: "why most brain-machine interfaces ideas suck"
-excerpt: "An opinion on the goals, the promises, the challenges and ways forward in vertical farming"
+excerpt: "An opinion on making machines for the brain and why most ideas seem unreasonable"
 category: "Biology & Medecine"
 date: 2020-09-10
 header:
