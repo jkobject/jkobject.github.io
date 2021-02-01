@@ -25,3 +25,6 @@ This is exactly what is not happening in today's "broad" communication platforms
 8. a topic is defined by its community
 9. someone is considered knowledgeable if he has made many contributions to a topic (liked true infos), shared many impactfull informations true ones.
 10. an impactfull information is something that is shared by 
+
+
+_Payment platforms_

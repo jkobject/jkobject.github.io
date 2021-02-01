@@ -324,6 +324,7 @@ DEPENDENCIES
   jekyll-figure
   jekyll-maps
   jekyll-pwa-plugin
+  jekyll-redirect-from
   jekyll-remote-theme
   jekyll-scholar
   jekyll-seo-tag

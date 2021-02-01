@@ -92,7 +92,7 @@ twitter:
   username               : "jkobject"
 facebook:
   username               : "jkobject"
-  app_id                 : 
+  app_id                 :
   publisher              : "https://www.facebook.com/jkobject"
 og_image                 : "/assets/images/id.png" # Open Graph/Twitter default site image
 # For specifying social profiles
@@ -221,7 +221,7 @@ maps:
 scholar:
   style: mla
 
-# PWA 
+# PWA
 pwa:
   sw_src_filepath: service-worker.js # Optional
   sw_dest_filename: service-worker.js # Optional
@@ -257,6 +257,9 @@ collections:
   opinions:
     output: true
     permalink: /:collection/:path/
+  presentations:
+    output: true
+    permalink: /:collection/:path/
   ideas:
     output: true
     permalink: /:collection/:path/
@@ -276,9 +279,10 @@ plugins:
  - jekyll-remote-theme
  - jekyll-seo-tag
  - jekyll-sitemap
- - jekyll-toc 
+ - jekyll-toc
  - jekyll/scholar
  - jemoji
+ - jekyll-redirect-from
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -293,9 +297,10 @@ whitelist:
   - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-toc 
+  - jekyll-toc
   - jekyll/scholar
   - jemoji
+  - jekyll-redirect-from
 
 
 # Archives
@@ -392,6 +397,21 @@ defaults:
       sitemap: true
       published: true
       toc: true
+  # presentations
+  - scope:
+      path: ""
+      type: presentations
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: false
+      share: false
+      related: false
+      excerpt: "my presentations"
+      sitemap: true
+      published: true
+      toc: false
   # books
   - scope:
       path: ""

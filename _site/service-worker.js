@@ -1,7 +1,7 @@
                         importScripts("/assets/js/workbox-v3.6.3/workbox-sw.js");
             workbox.setConfig({modulePathPrefix: "/assets/js/workbox-v3.6.3"});
 
-            self.__precacheManifest = [{"url":"/index.html","revision":"6c4e82caa2e3e5a03dcd3e0ef83e2b57"},{"url":"/blog/one-year-at-the-broad/","revision":"33cb61f4b9757cdde58d4833de3697a1"},{"url":"/blog/umap-explanation/","revision":"eb4fd5df474a46d6e63f85b5c1023169"},{"url":"/blog/a-month-at-the-broad/","revision":"7e1162d5efe505705b81d545c64e2d35"},{"url":"/blog/interviews-at-epfl/","revision":"ebf4663cb078b5a720dc39fad91deedb"},{"url":"/blog/broadinstitute-interview/","revision":"10f5a1c24e6f4b6538d2a949eb69faef"}];
+            self.__precacheManifest = [{"url":"/index.html","revision":"8557ffb75ab21cde3e7acc11662584f1"},{"url":"/blog/cds-presentation/","revision":"600a76cfadd24d4ef423b2035b4baa36"},{"url":"/blog/one-year-at-the-broad/","revision":"322203920b135bd70f006f67c0366989"},{"url":"/blog/umap-explanation/","revision":"eb4fd5df474a46d6e63f85b5c1023169"},{"url":"/blog/a-month-at-the-broad/","revision":"7e1162d5efe505705b81d545c64e2d35"},{"url":"/blog/interviews-at-epfl/","revision":"ebf4663cb078b5a720dc39fad91deedb"}];
             // service-worker.js
 
 // set names for both precache & runtime cache

@@ -25,7 +25,7 @@ gem "minimal-mistakes-jekyll", "~> 4.18.1"
 #   gem "jekyll-include-cache"
 #
 # If you have any other plugins, put them here!
-group :jekyll_plugins do 
+group :jekyll_plugins do
 	gem 'amp-jekyll'
 	gem 'github-pages'
 	gem 'jekyll-admin'
@@ -35,6 +35,7 @@ group :jekyll_plugins do
 	gem 'jekyll-remote-theme'
 	gem 'jekyll-scholar'
 	gem 'jekyll-seo-tag'
-	gem 'jekyll-toc'
+  gem 'jekyll-toc'
+  gem 'jekyll-redirect-from'
 	gem 'unicode'
 end

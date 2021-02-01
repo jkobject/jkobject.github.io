@@ -5,6 +5,12 @@ var store = [{
         "url": "https://jkobject.com/ideas/why-rick-invented-the-station-of-ricks/",
         "teaser": "https://jkobject.com/assets/images/rick_morty.jpg"
       },{
+        "title": "What is up with hydroponics and vertical farming",
+        "excerpt":"Recently I had fun making a short chalkboard computation. Unregarding any related challenges, what would be the footprint of a factory producing the world’s food supply? The idea Ok, so the world is using 1B ha for food production in 2015 [1], of which 72% is actually for crops… And...","categories": ["Sustaining Humanity"],
+        "tags": [],
+        "url": "https://jkobject.com/ideas/hydropony/",
+        "teaser": "https://jkobject.com/assets/images/hydroponics.jpg"
+      },{
         "title": "Are We Really Conscious? pt1",
         "excerpt":"1. On the emergence of life This is the first part of a Serie on consciousness, life and intelligence As far as I can recall, the idea of an intelligent design in life always seemed strange to me. It seemed like the adults had little imagination to involve yet another...","categories": ["On consciousness"],
         "tags": ["Artificial Intelligence","Consciousness","Life","Intelligent Design"],
@@ -94,6 +100,12 @@ var store = [{
         "tags": ["Computational Biology","Data Science","Associate Computational Biologist"],
         "url": "https://jkobject.com/blog/one-year-at-the-broad/",
         "teaser": "https://jkobject.com/assets/images/yearbroaad.jpg"
+      },{
+        "title": "A look at Cobinding Analysis ",
+        "excerpt":" ","categories": ["Broad"],
+        "tags": ["AML","Cancer","Broad","Epigenetics"],
+        "url": "https://jkobject.com/blog/cds-presentation/",
+        "teaser": "https://jkobject.com/assets/images/tf_cobinding.jpg"
       },{
         "title": "PiPle: The Beginnings",
         "excerpt":"PiPle is the next generation professional communication tool. It is a cross platform project led by a team of Engineering student, 👩‍🎓 from ECEparis which is led by me. We won a couple of Prizes for this project last year. The Berger Levrault Citizen Challenge as well as ECE innov...","categories": ["PiPle"],

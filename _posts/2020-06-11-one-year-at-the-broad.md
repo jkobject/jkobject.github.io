@@ -19,9 +19,9 @@ I am thus going to talk about the first non-remote, pre-Covid year.
 
 ## Finishing onboarding.
 
-I was warned that the onboarding might last a couple of months. Being a foreigner did not help and I can finally say that now, a year later, I feel fully onboarded to the Broad and the Cambridge way of life. 
+I was warned that the onboarding might last a couple of months. Being a foreigner did not help and I can finally say that now, a year later, I feel fully onboarded to the Broad and the Cambridge way of life.
 
-> _Cambridge's way of life often implies, amongst other things: Grocery shopping at union square market, getting a couple of doughnuts at Union square doughnuts. drinking fancy beers at remnant, lamplighter or Aeronauts. Asking people if they are doing a post-doc or a phd the first time you meet. Getting your baguette at Tate and enjoying the many ice creams cambridge has to offer._
+> _Cambridge way of life often implies, amongst other things: Grocery shopping at union square market, getting a couple of doughnuts at Union square doughnuts. drinking fancy beers at remnant, lamplighter or  . Asking people if they are doing a post-doc or a phd the first time you meet. Getting your baguette at Tate and enjoying the many ice creams cambridge has to offer_
 
 What takes so long. Well except getting up to speed with the lab's specific softwares and technologies. Getting a sense of the myriads of projects ✨ and collaborations happening around you. its getting to know the history of projects that came before you, reason for things. **It's getting to know power dynamics!** 💖 It is soo important to know the power dynamics. I really feel that this is when you know you are on board.
 
