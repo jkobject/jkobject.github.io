@@ -8,8 +8,6 @@ main:
     description: ""
   - title: "Opinions"
     url: /opinions/
-  - title: "Presentations"
-    url: /presentations/
   - title: "Ideas"
     url: /ideas/
   - title: "Blog"
