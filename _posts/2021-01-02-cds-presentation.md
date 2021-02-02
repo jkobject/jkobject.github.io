@@ -1,7 +1,7 @@
 ---
 title: "A look at Cobinding Analysis "
 excerpt: "A look at my cobinding analysis as part of my research on the epigenetics of AML dependencies"
-category: "Broad"
+category: "BroadInstitute"
 tags:
  - AML
  - Cancer

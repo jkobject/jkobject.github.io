@@ -257,9 +257,6 @@ collections:
   opinions:
     output: true
     permalink: /:collection/:path/
-  presentations:
-    output: true
-    permalink: /:collection/:path/
   ideas:
     output: true
     permalink: /:collection/:path/
@@ -397,21 +394,6 @@ defaults:
       sitemap: true
       published: true
       toc: true
-  # presentations
-  - scope:
-      path: ""
-      type: presentations
-    values:
-      layout: single
-      author_profile: false
-      read_time: false
-      comments: false
-      share: false
-      related: false
-      excerpt: "my presentations"
-      sitemap: true
-      published: true
-      toc: false
   # books
   - scope:
       path: ""

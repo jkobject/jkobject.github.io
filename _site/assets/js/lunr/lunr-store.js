@@ -102,7 +102,7 @@ var store = [{
         "teaser": "https://jkobject.com/assets/images/yearbroaad.jpg"
       },{
         "title": "A look at Cobinding Analysis ",
-        "excerpt":" ","categories": ["Broad"],
+        "excerpt":" ","categories": ["BroadInstitute"],
         "tags": ["AML","Cancer","Broad","Epigenetics"],
         "url": "https://jkobject.com/blog/cds-presentation/",
         "teaser": "https://jkobject.com/assets/images/tf_cobinding.jpg"
