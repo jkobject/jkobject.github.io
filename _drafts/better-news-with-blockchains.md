@@ -4,6 +4,10 @@ excerpt: "From blockchain to recommender systems: how can we build a better news
 category: "Justice & Society"
 ---
 
+
+Ia journalistique qui va cherche les infos sur tweeter en fct de paramètres spécifique et les croiser À c d'autre sites pour en tirer des choses importantes et les premières images et tout cela s'appellera tweeter news 
+
+
 et si tu pouvais vérifier les news grace a des blockchain ? tu as un premier clou qui est mis par une personne authentifiée avec preuve et cela peut être repris par d'autres organizations et chaques reprises est notée dans cette blockchain. ce qui fait que tu peux toujours revenir a la source direct et cette personne est tenue responsable a chaques fois.
 
 ----
@@ -28,3 +32,4 @@ This is exactly what is not happening in today's "broad" communication platforms
 
 
 _Payment platforms_
+

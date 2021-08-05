@@ -1,0 +1,13 @@
+Maxim Pimkin:
+  name             : "Maxim Pimkin"
+  avatar           : "/assets/images/pimkin_id.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "I am a Pediatrician, oncologist and Post-Doctoral Researcher working on AML"
+  location         : "Boston - Dana-Farber Cancer Institute"
+  email            : "maxim_pimkin@dfci.harvard.edu"
+  links:
+    - label: "Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=1SW8lOgAAAAJ"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/maxim-pimkin-2712097/"

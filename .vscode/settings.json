@@ -3,5 +3,6 @@
   "cSpell.words": [
     "CCLE's"
   ],
-  "python.pythonPath": "/Users/jeremie/anaconda3/bin/python"
+  "python.pythonPath": "/Users/jeremie/anaconda3/bin/python",
+  "python.linting.enabled": true
 }

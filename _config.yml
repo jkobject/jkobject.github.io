@@ -98,7 +98,7 @@ og_image                 : "/assets/images/id.png" # Open Graph/Twitter default 
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : Jeremie Kalfon # Person or Organization (defaults to Person)
+  type                   : Person # Person or Organization (defaults to Person)
   name                   : Jeremie Kalfon # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
     - "https://twitter.com/jkobject"
@@ -267,7 +267,6 @@ plugins:
  - amp-jekyll
  - jekyll
  - jekyll-feed
- - jekyll-gist
  - jekyll-gist
  - jekyll-include-cache
  - jekyll-maps

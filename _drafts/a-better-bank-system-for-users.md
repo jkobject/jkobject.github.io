@@ -1,0 +1,11 @@
+---
+title: "A Better bank system for people"
+excerpt: "What the paypal, lydia and revolut can and might bring in the future"
+category: "Frustrations and Solutions"
+---
+
+imagine une banque comme ça : Une Banque en ligne : on accepte tous en entrée. connecté à réseau social et autre.
+entièrement transparente et décentralisée. Permet de switcher de "currency comme on veut ( bitcoin, euro, dollars...). permet de choisir les offres par rapport à ce que le client définis comme ce qu'il aime. ( écologie, économie, social, transport ... ) et les bénéfices sont a des taux variables par rapport à ça mais toujours au dessus de 0. La banque est possédée par ses clients qui peuvent décider de "bloquer un de leur compte épargne" cela permet de dire "j'achete tant de la banque" elle peut aussir gérer pour le client des actions chez .. et ..  (tout cela est évidement full intelligence artificielle) et l'argent n'appartient pas à la banque mais à chaques personnes. L'utilisateur choisi aussi son niveau de risque et tout. Il a accès à tout ce que fais la banque en son nom et peut décider de se retirer ou quoi de certains deal.  (pour un crédit par exemple a banque est sécurisée par rapport à la quantité d'info qu'elle a sur quelqu'un et donc comment elle peut planifier sur l'avenir. ( l'argent d'un mec qui veut du social ira dans un pret a la consomation d'un mec pauvre ou alors dans un projet d'entreprise d'un jeune de banlieu)...
+
+Une Banque en ligne : on accepte tous en entrée. connecté à réseau social et autre.
+entièrement transparente et décentralisée. Permet de switcher de "currency comme on veut ( bitcoin, euro, dollars...). permet de choisir les offres par rapport à ce que le client définis comme ce qu'il aime. ( écologie, économie, social, transport ... ) et les bénéfices sont a des taux variables par rapport à ça mais toujours au dessus de 0. La banque est possédée par ses clients qui peuvent décider de "bloquer un de leur compte épargne" cela permet de dire "j'achete tant de la banque" elle peut aussir gérer pour le client des actions chez .. et ..  (tout cela est évidement full intelligence artificielle) et l'argent n'appartient pas à la banque mais à chaques personnes. L'utilisateur choisi aussi son niveau de risque et tout. Il a accès à tout ce que fais la banque en son nom et peut décider de se retirer ou quoi de certains deal.  

@@ -1,0 +1,50 @@
+{
+  "bindings": [
+    {
+      "members": [
+        "user:monikawenperez@gmail.com"
+      ],
+      "role": "roles/storage.admin"
+    },
+    {
+      "members": [
+        "projectEditor:aml-chipseq-rnaseq-259419",
+        "projectOwner:aml-chipseq-rnaseq-259419"
+      ],
+      "role": "roles/storage.legacyBucketOwner"
+    },
+    {
+      "members": [
+        "allAuthenticatedUsers",
+        "projectViewer:aml-chipseq-rnaseq-259419"
+      ],
+      "role": "roles/storage.objectList"
+    },
+    {
+      "members": [
+        "serviceAccount:447593300785-compute@developer.gserviceaccount.com",
+        "user:jkobject@gmail.com",
+        "user:neekeshdharia@gmail.com"
+      ],
+      "role": "roles/storage.objectAdmin"
+    },
+    {
+      "members": [
+        "user:juuxavier@gmail.com"
+      ],
+      "role": "roles/storage.objectCreator"
+    },
+    {
+      "members": [
+        "serviceAccount:pet-102022583875839491351@broad-firecloud-ccle.iam.gserviceaccount.com",
+        "serviceAccount:subportal-service@ncbi-sp-prod.iam.gserviceaccount.com",
+        "user:Andrew.Kossenkov@gmail.com",
+        "user:juuxavier@gmail.com",
+        "user:mpimkin@broadinstitute.org",
+        "user:mpimkin@gmail.com"
+      ],
+      "role": "roles/storage.objectViewer"
+    }
+  ],
+  "etag": "CBY="
+}

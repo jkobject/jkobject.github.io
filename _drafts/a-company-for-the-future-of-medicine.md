@@ -32,3 +32,12 @@ once one is training this model, it may be used in a reinforcement learning fram
 hereyou don't need to run all possible experiment. the model would reuse probability and correlations to guess what the outcome would be if we change this or that parameter
 
 --> this system needs to become an insurance company at one point. 
+
+
+
+What if we could let user store all their medical information in a “safe” on our server freely and securely. So that hospitals and doctors could have access to it by requesting permissions to you or a family member. On the other side, we would  let registered companies or researchers ask for data directly to our clients, basically rent it by big batches. They could then use it to explore the information at only one need. They need to produce outputs that could be beneficial to the user and this output belongs to the user. For example I am using ML to detect and train the probability of cancer according to ... then the output can either be a research paper, that will be sent to the user and the data would then need to be returned.  or a new algorithm to detect early stages of cancer. or just a complete fail. what happens is the user sees how wants his data, what for, can accept and then see the output. his contribution is stored and can be retrieved. If money is made by selling an algorithm trained on his data, he will get a fraction of it. the website as well. 
+For the company that is selling we can say that the data is 50% of its algorithm and so the website and its underlying user shares the rest. ( 40% for the users and 10% for the website that stores and keeps everything clean etc.. ) (modifié)
+
+I know that sometimes their medical records are kept by the doctor or the hospital but we could have a process whereby a user gives us the name of the institution he went in and we send a request to this institution with a link to authenticate and send the data.
+the website has three front ends. One for the data holder, One for companies and researchers requiring the data, one for the hospitals and doctors possessing some data. 
+the goal is to be trustworthy, secure, acknowledged and to apply a lot of big data analytics to present, order, format the information in the best way possible.
