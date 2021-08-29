@@ -7,10 +7,11 @@ tags:
  - Consciousness
  - Life
  - Intelligent Design
+header:
+ teaser: "/assets/images/BMIchip.jpeg"
 ---
 
 # 2. On the nature of life
-
 
 les bases : l'information n'est qu'une façon abstraite de voir les composants de notre environement. elle regroupe tout ce qui existe et son traitement, reception, analyse et émission est le principe même de l'intelligence
 

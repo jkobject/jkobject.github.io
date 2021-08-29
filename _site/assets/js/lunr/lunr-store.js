@@ -5,17 +5,23 @@ var store = [{
         "url": "/ideas/why-rick-invented-the-station-of-ricks/",
         "teaser": "/assets/images/rick_morty.jpg"
       },{
-        "title": "What is up with hydroponics and vertical farming",
-        "excerpt":"Recently I had fun making a short chalkboard computation. Unregarding any related challenges, what would be the footprint of a factory producing the world’s food supply? The idea Ok, so the world is using 1B ha for food production in 2015 [1], of which 72% is actually for crops… And...","categories": ["Sustaining Humanity"],
+        "title": "hydroponics and vertical farming",
+        "excerpt":"Recently I had fun making some short back of the envelop computation on the use of hydroponics 📨 in a future world. Unregarding any related challenges, what would be the footprint of a factory producing the world’s food supply? 🤔 what is hydroponics? Here by hydroponics I am talking about...","categories": ["Sustaining Humanity"],
         "tags": [],
         "url": "/ideas/hydropony/",
         "teaser": "/assets/images/hydroponics.jpg"
+      },{
+        "title": "On growth, de-growth and human population",
+        "excerpt":"global warming and degrowth. current limits. what does the future holds. Some ideas to expand one’s vision of the future. But what about today? given the demographs estimate that a maximum population size for humans should be around 15 billion people with current technology. we can see how far we...","categories": ["Sustaining Humanity"],
+        "tags": [],
+        "url": "/opinions/on-human-population-size/",
+        "teaser": "/assets/images/BMIchip.jpeg"
       },{
         "title": "Are We Really Conscious? pt1",
         "excerpt":"1. On the emergence of life This is the first part of a Serie on consciousness, life and intelligence As far as I can recall, the idea of an intelligent design in life always seemed strange to me. It seemed like the adults had little imagination to involve yet another...","categories": ["On consciousness"],
         "tags": ["Artificial Intelligence","Consciousness","Life","Intelligent Design"],
         "url": "/opinions/on-the-intelligent-design/",
-        "teaser": "/assets/images/couverture.png"
+        "teaser": "/assets/images/brain.jpeg"
       },{
         "title": "Police Violence & Racism [FR]",
         "excerpt":"Les Violences Policières et le Racisme. Hello! Donc voilà, j’imagine que vous suivez tous au moins un peu ce mouvement mondial contre les violences policières et le racisme. Comme la plupart de mes collègues, j’ai aujourd’hui mené une grève d’une journée pour passer du temps à agir contre le racisme...","categories": ["Justice"],
@@ -23,10 +29,28 @@ var store = [{
         "url": "/opinions/on-police-violence-french/",
         "teaser": "/assets/images/couverture.png"
       },{
+        "title": "Are We Really Conscious? pt2",
+        "excerpt":"2. On the nature of life les bases : l’information n’est qu’une façon abstraite de voir les composants de notre environement. elle regroupe tout ce qui existe et son traitement, reception, analyse et émission est le principe même de l’intelligence L’experience humaine est quand même assez incroyable. Le simple fait...","categories": ["On consciousness"],
+        "tags": ["Artificial Intelligence","Consciousness","Life","Intelligent Design"],
+        "url": "/opinions/on-the-nature-of-counscioussness/",
+        "teaser": "/assets/images/BMIchip.jpeg"
+      },{
         "title": "why most brain-machine interfaces ideas suck",
         "excerpt":"I have often heard 👂 how Brain Machine Interfaces, also known as BMIs, would one day be a consumer products. Imagine being able to have a third arm. To control machines from your thoughts. Imagine being able to not just be in virtual reality through a headset; but to live...","categories": ["Biology & Medecine"],
         "tags": [],
         "url": "/opinions/why-BMI-sucks/",
+        "teaser": "/assets/images/BMIchip.jpeg"
+      },{
+        "title": "Reproducibility in Biology",
+        "excerpt":"Reproducibility in biology - bioinformatics research Having now worked for more than 2 years in a research environment and having been very sensitive about good, reproducible and open science. I have seen from large group computational labs and small group bench labs the issues and reasoning that might lead to...","categories": ["Scientific Method"],
+        "tags": ["Computational Biology","Data Science","Research"],
+        "url": "/opinions/reproducibility_in_biology/",
+        "teaser": "/assets/images/pipetting_bio.jpg"
+      },{
+        "title": "Why most ai discussions are dumb",
+        "excerpt":"Today I wanted to share feelings and thoughts I often have while hearing discusssions about Artificial Intelligence. We have heard a lot about this fields, what it is doing now and its promises. We have also heard a lot about expectations and fears for the future. And it is not...","categories": ["AI"],
+        "tags": [],
+        "url": "/opinions/why-most-ai-discussions-are-dumb/",
         "teaser": "/assets/images/BMIchip.jpeg"
       },{
         "title": "A French Engineering School",
@@ -106,6 +130,12 @@ var store = [{
         "tags": ["AML","Cancer","Broad","Epigenetics"],
         "url": "/blog/cds-presentation/",
         "teaser": "/assets/images/tf_cobinding.jpg"
+      },{
+        "title": "2 years at the Broad Institute",
+        "excerpt":"2 years at the Broad Institute The last year was tough. Much tougher for some than others. Here I want to speak about the 2nd year at the Broad and what life was like during this pandemic. 😷 CCLE part The Broad continued functioning as fast as ever despite this...","categories": ["BroadInstitute"],
+        "tags": ["Computational Biology","Data Science","Associate Computational Biologist"],
+        "url": "/blog/two-years-at-the-broad/",
+        "teaser": "/assets/images/broad_far.jpg"
       },{
         "title": "PiPle: The Beginnings",
         "excerpt":"PiPle is the next generation professional communication tool. It is a cross platform project led by a team of Engineering student, 👩‍🎓 from ECEparis which is led by me. We won a couple of Prizes for this project last year. The Berger Levrault Citizen Challenge as well as ECE innov...","categories": ["PiPle"],

@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
   Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -85,6 +85,7 @@
 
 
 
+
 <!-- end _includes/seo.html -->
 
 
@@ -101,22 +102,9 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
 
-<!--[if IE]>
-  <style>
-    /* old IE unsupported flexbox fixes */
-    .greedy-nav .site-title {
-      padding-right: 3em;
-    }
-    .greedy-nav button {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 100%;
-    }
-  </style>
-<![endif]-->
 
 
     <!-- start custom head snippets -->
@@ -158,7 +146,6 @@
 
   <body class="layout--single">
     <nav class="skip-links">
-  <h2 class="screen-reader-text">Skip links</h2>
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
     <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
@@ -177,7 +164,7 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
-          <a class="site-logo" href="/"><img src="/assets/images/id-88.png" alt=""></a>
+          <a class="site-logo" href="/"><img src="/assets/images/id-88.png" alt="Jérémie K."></a>
         
         <a class="site-title" href="/">
           Jérémie K.
@@ -205,9 +192,7 @@
         
         <button class="search__toggle" type="button">
           <span class="visually-hidden">Toggle search</span>
-          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
-            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
-          </svg>
+          <i class="fas fa-search"></i>
         </button>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -237,7 +222,8 @@
     
       
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+
           <meta itemprop="position" content="1" />
         </li>
         <span class="sep">/</span>
@@ -266,7 +252,7 @@
   
 
 
-  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="WRN dependencies">
     <meta itemprop="description" content="Repeat expansions confer WRN dependence in microsatellite-unstable cancers">
     <meta itemprop="datePublished" content="2020-02-10T00:00:00-05:00">
@@ -275,8 +261,10 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">WRN dependencies
-</h1>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/projects/wrn-dependencies/" class="u-url" itemprop="url">WRN dependencies
+</a>
+          </h1>
           
 
   <p class="page__meta">
@@ -301,7 +289,7 @@
         </header>
       
 
-      <section class="page__content" itemprop="text">
+      <section class="page__content e-content" itemprop="text">
         
           <aside class="sidebar__right ">
             <nav class="toc">
@@ -379,13 +367,13 @@ This is another step toward the potential usage of this protein as a target for 
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
     <span itemprop="keywords">
     
-      <a href="/tags/#broad-institute" class="page__taxonomy-item" rel="tag">Broad Institute</a><span class="sep">, </span>
+      <a href="/tags/#broad-institute" class="page__taxonomy-item p-category" rel="tag">Broad Institute</a><span class="sep">, </span>
     
-      <a href="/tags/#cancer-dependencies" class="page__taxonomy-item" rel="tag">Cancer Dependencies</a><span class="sep">, </span>
+      <a href="/tags/#cancer-dependencies" class="page__taxonomy-item p-category" rel="tag">Cancer Dependencies</a><span class="sep">, </span>
     
-      <a href="/tags/#genomics" class="page__taxonomy-item" rel="tag">Genomics</a><span class="sep">, </span>
+      <a href="/tags/#genomics" class="page__taxonomy-item p-category" rel="tag">Genomics</a><span class="sep">, </span>
     
-      <a href="/tags/#research" class="page__taxonomy-item" rel="tag">Research</a>
+      <a href="/tags/#research" class="page__taxonomy-item p-category" rel="tag">Research</a>
     
     </span>
   </p>
@@ -402,15 +390,15 @@ This is another step toward the potential usage of this protein as a target for 
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
     <span itemprop="keywords">
     
-      <a href="/categories/#broadinstitute" class="page__taxonomy-item" rel="tag">BroadInstitute</a>
+      <a href="/categories/#broadinstitute" class="page__taxonomy-item p-category" rel="tag">BroadInstitute</a>
     
     </span>
   </p>
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-02-10T00:00:00-05:00">February 10, 2020</time></p>
 
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2020-02-10T00:00:00-05:00">February 10, 2020</time></p>
 
       </footer>
 
@@ -447,8 +435,52 @@ This is another step toward the potential usage of this protein as a target for 
   
   
     <div class="page__related">
-      <h4 class="page__related-title">You may also enjoy</h4>
+      <h2 class="page__related-title">You may also enjoy</h2>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/broad_far.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/two-years-at-the-broad/" rel="permalink">2 years at the Broad Institute
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          9 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Short stories about my professional experiences.
+</p>
+  </article>
+</div>
+
         
           
 
@@ -582,61 +614,16 @@ This is another step toward the potential usage of this protein as a target for 
 </div>
 
         
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="/assets/images/advancedstudy.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/a-month-at-the-broad/" rel="permalink">My first month at the Broad Institute
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          3 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">I arrived in Boston exactly a month ago. I managed to get my Visa 5 hours before catching…
-</p>
-  </article>
-</div>
-
-        
       </div>
     </div>
   
   
 </div>
-
     </div>
 
     
       <div class="search-content">
-        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
     <label class="sr-only" for="search">
       Enter your search term...
     </label>

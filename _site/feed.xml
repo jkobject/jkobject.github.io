@@ -1,4 +1,142 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-25T13:21:56-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jérémie</title><subtitle>My website and blog.</subtitle><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><entry><title type="html">A look at Cobinding Analysis</title><link href="http://localhost:4000/blog/cds-presentation/" rel="alternate" type="text/html" title="A look at Cobinding Analysis" /><published>2021-01-02T00:00:00-05:00</published><updated>2021-01-02T00:00:00-05:00</updated><id>http://localhost:4000/blog/cds-presentation</id><content type="html" xml:base="http://localhost:4000/blog/cds-presentation/"></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="BroadInstitute" /><category term="AML" /><category term="Cancer" /><category term="Broad" /><category term="Epigenetics" /><summary type="html">A look at my cobinding analysis as part of my research on the epigenetics of AML dependencies</summary></entry><entry><title type="html">A year at the Broad Institute</title><link href="http://localhost:4000/blog/one-year-at-the-broad/" rel="alternate" type="text/html" title="A year at the Broad Institute" /><published>2020-06-11T00:00:00-04:00</published><updated>2020-06-11T00:00:00-04:00</updated><id>http://localhost:4000/blog/one-year-at-the-broad</id><content type="html" xml:base="http://localhost:4000/blog/one-year-at-the-broad/">&lt;p&gt;I have to say that when I had planned this article, I was not expecting the craziness of the next 6 months.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-08-29T12:46:04-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jérémie</title><subtitle>My website and blog.</subtitle><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><entry><title type="html">2 years at the Broad Institute</title><link href="http://localhost:4000/blog/two-years-at-the-broad/" rel="alternate" type="text/html" title="2 years at the Broad Institute" /><published>2021-06-11T00:00:00-04:00</published><updated>2021-06-11T00:00:00-04:00</updated><id>http://localhost:4000/blog/two-years-at-the-broad</id><content type="html" xml:base="http://localhost:4000/blog/two-years-at-the-broad/">&lt;h1 id=&quot;2-years-at-the-broad-institute&quot;&gt;2 years at the Broad Institute&lt;/h1&gt;
+
+&lt;p&gt;The last year was tough. Much tougher for some than others. Here I want to speak about the 2nd year at the Broad and what life was like during this pandemic. 😷&lt;/p&gt;
+
+&lt;h2 id=&quot;ccle-part&quot;&gt;CCLE part&lt;/h2&gt;
+
+&lt;p&gt;The Broad continued functioning as fast as ever despite this pandemic. My work was still divided into two groups and research focus. Let’s look at the CCLE, also called depmap-omics.&lt;/p&gt;
+
+&lt;h3 id=&quot;making-ccle-into-a-real-pipeline&quot;&gt;Making CCLE into a real pipeline&lt;/h3&gt;
+
+&lt;p&gt;This past year, I managed to convince most of the team to put a lot of effort into making CCLE into a real pipeline. This is something that appeared to me like a very important issue since I was working on the pipeline (see previous CCLE articles: &lt;a href=&quot;https://www.jkobject.com/blog/one-year-at-the-broad/&quot;&gt;one-year-at-the-broad&lt;/a&gt;,&lt;a href=&quot;https://www.jkobject.com/projects/depmap-omics-howto/&quot;&gt;depmap-omics-howto&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;This effort involved doing 4 separate tasks:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Finding all our data (bam files) across broad servers and Terra buckets. &lt;em&gt;This allowed us to realize we were missing a lot of input data for our output data.&lt;/em&gt; :eyeglasses:&lt;/li&gt;
+  &lt;li&gt;Creating an MVP database with all available metadata. &lt;em&gt;This allowed us to realize many missannotation.&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Rewriting things into a coherent one command pipeline. &lt;em&gt;This allowed us to find errors in the code and to remove useless blocks.&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Run the entire pipeline at every release (using call caching when possible).As, before the code was only run on new samples and the output appended to the full dataset (itself likely processed with different versions of the code). &lt;em&gt;This was truly key in uncovering big mistakes in the code that were not caught before.&lt;/em&gt; ➿&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;2 more were also key in figuring out issues&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;making cross dataset QCs, spearheaded by James McFarland. ⛔&lt;/li&gt;
+  &lt;li&gt;making SNP fingerprinting QCs on our input data, spearheaded by William&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;issues-in-the-pipeline&quot;&gt;Issues in the pipeline&lt;/h3&gt;
+
+&lt;p&gt;Some of the issues we discovered in our data and our code were found at the worst of time, during releases. With multiple ongoing projects, a very long pipeline, the only time I had to work on the pipeline was within releases. Because of that, it was very difficult to neatly separate my work into dev/prod branches. I basically only had the time to do 2 out of 3 key things: 1.improve the prod, 2.test it and 3.run it. ⏲️&lt;/p&gt;
+
+&lt;p&gt;In the end, after a year of asking for more involvement in this pipeline, it is finally thanks to a couple big “in release” issues that management woke up to this need. We then quickly got the manpower to work on some of the key improvements needed for this pipeline.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-next-for-productionalization-of-depmap-omics&quot;&gt;What is next for productionalization of depmap omics&lt;/h3&gt;
+
+&lt;p&gt;We now have a couple more things in our list of improvements:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;making a true DB: a work spearheaded by Phil Montgommery to create an SQL database that would interface with multiple google sheets, python, google cloud and run a set of tests.&lt;/li&gt;
+  &lt;li&gt;improving our data onboarding process: Getting data from the sequencing facility and matching it with what we have and the metadata from other groups is still a complex process that needs to be improved. This work is also spearheaded by Phil and could come as part of the DB. 🗳️&lt;/li&gt;
+  &lt;li&gt;moving away from the CGA mutation calling pipeline&lt;/li&gt;
+  &lt;li&gt;improving QCs: we generate many QC files as part of our analysis pipeline. Parsing and aggregating this into coherent metrics would be very useful.&lt;/li&gt;
+  &lt;li&gt;increasing the documentation: for the folder structure, for the functions used and how to use the depmapomics github project.&lt;/li&gt;
+  &lt;li&gt;simplifying code tests, using pytests and continuous development tools and good practices.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Knowing that a new goal: “sequencing 10x more data/ cell lines in the coming years” has been set, they will become necessary.&lt;/p&gt;
+
+&lt;h3 id=&quot;figuring-out-new-features-to-extract&quot;&gt;Figuring out new features to extract&lt;/h3&gt;
+
+&lt;p&gt;Working on depmap-omics was not only about making the things we already had better. But also creating new tools to extract more features from our sequencing.&lt;/p&gt;
+
+&lt;p&gt;We created with Javad an up-to-date &lt;a href=&quot;https://docs.google.com/document/d/1d0dpGI1Ur0KXy9l-YbXzWV6d0CK7htrtNKp-lSSh-Is&quot;&gt;list of features to extract&lt;/a&gt; that we will want to be extracted from our sequencing in the coming years.&lt;/p&gt;
+
+&lt;p&gt;I think that this can be used as an extensive list of what can be done with WG/WE/RNA -seq data. :blue_book:&lt;/p&gt;
+
+&lt;p&gt;I was able to start working on some of them in the last year:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;getting WGS CN&lt;/li&gt;
+  &lt;li&gt;getting Y chromosome WGS&lt;/li&gt;
+  &lt;li&gt;making SV calls on WES and WGS&lt;/li&gt;
+  &lt;li&gt;making “germline” mutation calling (SNP, indels) on our cell line for WGS and WES&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Some of them were used and QCed by multiple groups at the Broad, often leading to new research. (e.g. &lt;a href=&quot;#&quot;&gt;Misek et. al.&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h3 id=&quot;changing-manager&quot;&gt;Changing manager&lt;/h3&gt;
+
+&lt;p&gt;It feels like since I arrived, CCLE was always in a transition period. The manager had just left and his associate too. An interim from another manager was held while we looked for a more permanent manager.&lt;/p&gt;
+
+&lt;p&gt;We also changed ops team twice, which meant that twice in two years we reviewed, changed, and made errors because of team onboarding.&lt;/p&gt;
+
+&lt;p&gt;I think that this was a true issue as responsibilities were not held and there was no maintained vision for what would be the future of depmap and depmap-omics.&lt;/p&gt;
+
+&lt;p&gt;In the end, this vision was maintained by the people that were there since the beginning, even though they are not directly participating in the project. During this second year at the Broad I have spent more than a semester being the main responsible and objective tracking person for the depmap omics pipeline. The data, code, future objectives, management and responsibilities were on me while we waited for the new ops team, new associates and new manager to arrive and get onboarded. :adhesive_bandage:&lt;/p&gt;
+
+&lt;p&gt;In the end I think I liked this part. It allowed me to manage this project on my own and learn project management skills that I might not have otherwise.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately my role was not meant for it. And I was not able (as described above) to express the needs of the project or be heard in potential issues. Every decision was done reactively once something went way too bad and not proactively following my recommandation. This was my main source of frustration during the last year on CCLE. 🤯&lt;/p&gt;
+
+&lt;h3 id=&quot;celligner&quot;&gt;Celligner&lt;/h3&gt;
+
+&lt;p&gt;It has now been 2 months that my focus has changed from CCLE to a new project called &lt;a href=&quot;https://www.nature.com/articles/s41467-020-20294-x&quot;&gt;Celligner&lt;/a&gt;. This project was initiated by Allie Warren. 💯&lt;/p&gt;
+
+&lt;p&gt;I decided to stay for a third year at the Broad to work on improving Celligner.&lt;/p&gt;
+
+&lt;p&gt;The axes of improvements are:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Usability (interactive platform, open sourcing, documentation…)&lt;/li&gt;
+  &lt;li&gt;Aggregation of more data types (other sample type, other sequencing,…)&lt;/li&gt;
+  &lt;li&gt;Algorithm improvement (using VAEs, decreasing memory load…)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;A lot of work then, many papers to read and even more ideas. Let’s see what we get out of this. 💭&lt;/p&gt;
+
+&lt;h2 id=&quot;amlproject-part&quot;&gt;AMLproject part&lt;/h2&gt;
+
+&lt;p&gt;As part of my second year in the AMLproject, I have done many more analyses but also had to wrap up what I had done.&lt;/p&gt;
+
+&lt;h3 id=&quot;slam-seq-with-spike-in&quot;&gt;Slam-seq with spike-in&lt;/h3&gt;
+
+&lt;p&gt;One of the endeavours I had to work on was analysing a data type that had not been produced before. A slam-seq experiment, which is RNA-sequencing where the nascent RNAs are labelled such that all their T nucleotides are transformed into C nucleotides. This forced mutation can be used to differentiate gene expression into transcript being produced currently and transcript produced before. ⏲️ This is to answer the question: are there more transcripts being produced now because of some condition we put the cell in (and differentiate it from secondary effects of co-regulation). 📶 🛑&lt;/p&gt;
+
+&lt;p&gt;This was already done before &lt;a href=&quot;https://science.sciencemag.org/content/360/6390/800&quot;&gt;Muhar et. al.&lt;/a&gt;. However we had added spike-in to the mix. This allows us to differentiate absolute amounts of DNA in sample X vs sample Y.&lt;/p&gt;
+
+&lt;p&gt;Part of my work was figuring out how to analyse and use Slam-seq data with spike-ins.&lt;/p&gt;
+
+&lt;h3 id=&quot;chipmerger&quot;&gt;chipMerger&lt;/h3&gt;
+
+&lt;p&gt;I won’t go in the details of the cobinding matrix (which is already explained in the previous documents (&lt;a href=&quot;https://www.jkobject.com/projects/predicting-dependencies-from-enhancers/&quot;&gt;predicting-dependencies-from-enhancers&lt;/a&gt;,&lt;a href=&quot;https://www.jkobject.com//blog/one-year-at-the-broad/&quot;&gt;one-year-at-the-broad&lt;/a&gt;). We quickly realized that we had to do better with our input ChIP-seq data in order to gain better results 💹. We devised an idea, with Max, to take ChIPseq bed and bigwig files and merge them together, then try to find new peaks under the replicate bigwigs where those peaks were not initially found, using a lower detection threshold than what MACS2 was using. This led to the &lt;a href=&quot;https://github.com/broadinstitute/genepy/blob/master/genepy/epigenetics/CREME.md&quot;&gt;CREME algorithm&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;wrapping-up-amlproject&quot;&gt;wrapping up AMLproject&lt;/h3&gt;
+
+&lt;p&gt;In research, wrapping up a project means,&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;setting up enough documentation for other people to take on your work and publishing your code.&lt;/li&gt;
+  &lt;li&gt;writing a paper. :book:&lt;/li&gt;
+  &lt;li&gt;selecting, improving and commenting figures for your paper. 📈&lt;/li&gt;
+  &lt;li&gt;writing the method’s section of the paper.&lt;/li&gt;
+  &lt;li&gt;publishing and documenting your output data.&lt;/li&gt;
+  &lt;li&gt;setting up server (SRA, google cloud, spreadsheets..) to publish your input data, QC and processing&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This is what I also spent the last year doing. I also quickly set up a resource website for showing off some interactive plot and easy access to our data. In the meantime I also helped another Associate, Monika, to take on my pipelines and codes in order to continue the research endeavour :microscope: of Maxim Pimkin and Stew Orkin.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-pandemic&quot;&gt;the pandemic&lt;/h2&gt;
+
+&lt;p&gt;Being away from my family, friends and girlfriend (all living in France), this pandemic was very stressful. After a month of being remote and witnessing border shut downs, 👮‍♂️ I decided to take one of the last planes between the US and europe in order to come to a lock downed Paris to stay with my girlfriend. At that time the Broad was already fully remote and every computational work was maintaining its speed. However, everything else was unknown. How long? How bad? What’s next? This situation continued for 4 month. At that time, I had realized the US had shut its border to any non citizen, even valid visa holders, that had been in the EU less than 14 days prior. 🤦&lt;/p&gt;
+
+&lt;p&gt;I thought I would wait for this policy to end. But by July, with the first wave of the pandemic being over and almost no cases in the EU, direct entry was still banned for me and everyone I knew. Then started a tiring, stressful, expansive but awesome journey through Yucatan’s and its wonders while still working remotely.&lt;/p&gt;
+
+&lt;p&gt;Being a European expat 🇪🇺 in the US during this pandemic was extremely tough. The Broad had a no tolerance policy that required me to either lie to everyone in my company whenever I went to see my family or take 2 weeks of unpaid leave for each trip to the EU. In a competitive environment like the Broad, where 4 weeks a year of vacation is a luxury, better say that there was no real choice. In the last year and a half of the pandemic I went back to France 3 times. Always waiting until it became unbearable, then staying long in France still working and then taking 2 weeks (still working) in Istanbul or Cancun before finally making it to the US. Working from France is also tough as my work day was from 1pm to midnight.&lt;/p&gt;
+
+&lt;p&gt;Many people around me told me to quit. Many insulted the US, my company, my boss, the pandemic, for what it put me through. What it put us through. I still feel I can’t complain too much in the midst of what Covid did to so many others.&lt;/p&gt;
+
+&lt;h2 id=&quot;awards&quot;&gt;Awards&lt;/h2&gt;
+
+&lt;p&gt;I was happy to note that thanks to (and also despite) all of this, I received a Broad Spotlight award 🤴 and was promoted to ACB II ✨ (which is at least twice as good a position as ACB I 😂).&lt;/p&gt;</content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="BroadInstitute" /><category term="Computational Biology" /><category term="Data Science" /><category term="Associate Computational Biologist" /><summary type="html">Short stories about my professional experiences.</summary></entry><entry><title type="html">A look at Cobinding Analysis</title><link href="http://localhost:4000/blog/cds-presentation/" rel="alternate" type="text/html" title="A look at Cobinding Analysis" /><published>2021-01-02T00:00:00-05:00</published><updated>2021-01-02T00:00:00-05:00</updated><id>http://localhost:4000/blog/cds-presentation</id><content type="html" xml:base="http://localhost:4000/blog/cds-presentation/"></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="BroadInstitute" /><category term="AML" /><category term="Cancer" /><category term="Broad" /><category term="Epigenetics" /><summary type="html">A look at my cobinding analysis as part of my research on the epigenetics of AML dependencies</summary></entry><entry><title type="html">A year at the Broad Institute</title><link href="http://localhost:4000/blog/one-year-at-the-broad/" rel="alternate" type="text/html" title="A year at the Broad Institute" /><published>2020-06-11T00:00:00-04:00</published><updated>2020-06-11T00:00:00-04:00</updated><id>http://localhost:4000/blog/one-year-at-the-broad</id><content type="html" xml:base="http://localhost:4000/blog/one-year-at-the-broad/">&lt;p&gt;I have to say that when I had planned this article, I was not expecting the craziness of the next 6 months.
 I have now spent 1.5 years at the Broad. But 6 of them have actually been remote and back in France. I now expect to spend the entirety of this second year, remote.&lt;/p&gt;
 
 &lt;p&gt;I am thus going to talk about the first non-remote, pre-Covid year.&lt;/p&gt;
@@ -303,33 +441,4 @@ It allows for many ways to connect your simulated animals/robots to the HBP supe
 
 &lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*Gn0d2q6DwSgGNYVdqPy9Vw.gif&quot; alt=&quot;spinnaker representation&quot; class=&quot;align-center&quot; /&gt;&lt;em&gt;spinnaker representation&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;A video of the system is given &lt;a href=&quot;https://www.youtube.com/embed/N4NG1BLDKrU&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="Flatiron Institute" /><category term="Comp Neuroscience" /><category term="Simulation" /><category term="Pynn" /><category term="Neuromorphic Comp" /><category term="Research" /><summary type="html">The Human Brain Project is a European Research Organization focused on understanding the Human Brain using today’s new computational power.</summary></entry><entry><title type="html">An Internship in New York</title><link href="http://localhost:4000/blog/an-internship-in-new-york/" rel="alternate" type="text/html" title="An Internship in New York" /><published>2017-08-20T00:00:00-04:00</published><updated>2017-08-20T00:00:00-04:00</updated><id>http://localhost:4000/blog/an-internship-in-new-york</id><content type="html" xml:base="http://localhost:4000/blog/an-internship-in-new-york/">&lt;p&gt;I had the immense honour to get accepted for an internship at the Simons Institute’s &lt;a href=&quot;https://www.simonsfoundation.org/flatiron/&quot;&gt;Flatiron Institute&lt;/a&gt;. You can find out more about the work I did there in the Center for Computational Biology, 🧪, &lt;a href=&quot;http://www.jkobject.com/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;I fell in love, with New York. But that can be understandable.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;After reading, 📖 a lot about the work of some Professors. I then spent many month reaching out to any of them, learning in the process the best introduction, documents etc.. Many of them were not interested but still gave a lot of relevant feedback.&lt;/p&gt;
-
-&lt;p&gt;For some reasons I got accepted to work as a research associate in the team of &lt;a href=&quot;https://scholar.google.fr/citations?user=7Bgb5TUAAAAJ&amp;amp;hl=fr&quot;&gt;Mytia&lt;/a&gt; chklovskii. This was an amazing opportunity for which I will always be thankful to him.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/6000/1*vV0FxD2lblmeEmbU8WS6Rg.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;But my amazement have not stopped here. The salary given in the contract was otherworldly. 5 times as much as the best internship contract given to my fellow schoolmates.&lt;/p&gt;
-
-&lt;p&gt;The flatiron was on thee 5th avenue and I would be freely hosted at &lt;a href=&quot;https://www.nyu.edu/&quot;&gt;NYU&lt;/a&gt; on Washington square. Due to unavailability of the room I however, had to spend a couple of weeks at a luxurious &lt;a href=&quot;http://www.therogernewyork.com/&quot;&gt;hotel&lt;/a&gt;, 🏨 .&lt;/p&gt;
-
-&lt;p&gt;That was a New Yorker’s life as it should be! Damn my standards just had a refresh and my friends now hated me. The lunch, 🥙 could be ordered from anywhere in Manhattan, each month had its team day. Each week had its lab cocktail, 🍸 .&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2000/1*XJ43R8loZLE7Ru1NzW3MFw.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The place was amazing but most amazingly I had the chance to eat with &lt;a href=&quot;https://fr.wikipedia.org/wiki/James_Simons&quot;&gt;Jim&lt;/a&gt; Simons and discuss about my projects and life goals and get some very good advices. The culmination fo chance, my girlfriend found at the same time an internship in New York’s french embassy.&lt;/p&gt;
-
-&lt;p&gt;A morning routine would be to go running, 🏃‍♀️ through washsqua, to NYU’s gym, work out, 🏋️‍♀️ , go get a free Starbucks cold brew, take a shower, 🚿 , dress up and skate up to the institue on the 5th avenue.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/2800/1*XTzaJuYPBQHRSKrg0vliMA.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The evening was often spent in a restaurant or exploring the city. Friends, 👫 and Family came visit me and it might have been the best days of my short existence. The flatiron can be sure they will hear from me again, with two more Masters and a Ph.D.&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;h1 id=&quot;now-i-know-what-i-want-to-do-where-i-am-going-and-how-to-get-there&quot;&gt;Now I know what I want to do, where I am going and how to get there.&lt;/h1&gt;
-&lt;/blockquote&gt;</content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="Flatiron Institute" /><category term="New York" /><category term="Proffessional Experience" /><category term="NYU" /><category term="Internship" /><category term="Travel" /><summary type="html">I had the immense honour to get accepted for an internship at the Simons Institute’s Flatiron Institute.</summary></entry></feed>
+&lt;p&gt;A video of the system is given &lt;a href=&quot;https://www.youtube.com/embed/N4NG1BLDKrU&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="Flatiron Institute" /><category term="Comp Neuroscience" /><category term="Simulation" /><category term="Pynn" /><category term="Neuromorphic Comp" /><category term="Research" /><summary type="html">The Human Brain Project is a European Research Organization focused on understanding the Human Brain using today’s new computational power.</summary></entry></feed>

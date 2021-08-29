@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
   Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>What is up with hydroponics and vertical farming | Jérémie</title>
+<!-- begin _includes/seo.html --><title>hydroponics and vertical farming | Jérémie</title>
 <meta name="description" content="An opinion on the goals, the promises, the challenges and ways forward in vertical farming">
 
 
@@ -22,7 +22,7 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Jérémie">
-<meta property="og:title" content="What is up with hydroponics and vertical farming">
+<meta property="og:title" content="hydroponics and vertical farming">
 <meta property="og:url" content="http://localhost:4000/ideas/hydropony/">
 
 
@@ -35,7 +35,7 @@
 
 
   <meta name="twitter:site" content="@jkobject">
-  <meta name="twitter:title" content="What is up with hydroponics and vertical farming">
+  <meta name="twitter:title" content="hydroponics and vertical farming">
   <meta name="twitter:description" content="An opinion on the goals, the promises, the challenges and ways forward in vertical farming">
   <meta name="twitter:url" content="http://localhost:4000/ideas/hydropony/">
 
@@ -85,6 +85,7 @@
 
 
 
+
 <!-- end _includes/seo.html -->
 
 
@@ -101,22 +102,9 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
 
-<!--[if IE]>
-  <style>
-    /* old IE unsupported flexbox fixes */
-    .greedy-nav .site-title {
-      padding-right: 3em;
-    }
-    .greedy-nav button {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 100%;
-    }
-  </style>
-<![endif]-->
 
 
     <!-- start custom head snippets -->
@@ -158,7 +146,6 @@
 
   <body class="layout--single">
     <nav class="skip-links">
-  <h2 class="screen-reader-text">Skip links</h2>
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
     <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
@@ -177,37 +164,45 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
-          <a class="site-logo" href="/"><img src="/assets/images/id-88.png" alt=""></a>
+          <a class="site-logo" href="/"><img src="/assets/images/id-88.png" alt="Jérémie K."></a>
         
         <a class="site-title" href="/">
           Jérémie K.
           
         </a>
-        <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/about/" title="I am a human. I wish to make the world better with science. <3">About</a>
-            </li><li class="masthead__menu-item">
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/about/" title="I am a human. I wish to make the world better with science. &lt;3">About</a>
+            </li>
+<li class="masthead__menu-item">
               <a href="/projects/" title="">Projects</a>
-            </li><li class="masthead__menu-item">
+            </li>
+<li class="masthead__menu-item">
               <a href="/opinions/">Opinions</a>
-            </li><li class="masthead__menu-item">
+            </li>
+<li class="masthead__menu-item">
               <a href="/ideas/">Ideas</a>
-            </li><li class="masthead__menu-item">
+            </li>
+<li class="masthead__menu-item">
               <a href="/blog/" title="A short extract about my life experiences.">Blog</a>
-            </li><li class="masthead__menu-item">
+            </li>
+<li class="masthead__menu-item">
               <a href="/papers/">Papers</a>
-            </li><li class="masthead__menu-item">
+            </li>
+<li class="masthead__menu-item">
               <a href="/courses/" title="Here is the list of the Courses I have received and the one I have given.">Courses</a>
-            </li><li class="masthead__menu-item">
+            </li>
+<li class="masthead__menu-item">
               <a href="/culture/" title="This is my personal list of books, Comics and films I love.">Culture</a>
-            </li><li class="masthead__menu-item">
+            </li>
+<li class="masthead__menu-item">
               <a href="/categories/" title="Everything sorted by categories.">Subjects</a>
-            </li></ul>
+            </li>
+</ul>
         
         <button class="search__toggle" type="button">
           <span class="visually-hidden">Toggle search</span>
-          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
-            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
-          </svg>
+          <i class="fas fa-search"></i>
         </button>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -237,8 +232,9 @@
     
       
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
-          <meta itemprop="position" content="1" />
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1">
         </li>
         <span class="sep">/</span>
       
@@ -246,14 +242,14 @@
         
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
           <a href="/ideas" itemprop="item"><span itemprop="name">Ideas</span></a>
-          <meta itemprop="position" content="2" />
+          <meta itemprop="position" content="2">
         </li>
         <span class="sep">/</span>
       
     
       
       
-        <li class="current">What is up with hydroponics and vertical farming</li>
+        <li class="current">hydroponics and vertical farming</li>
       
     
   </ol>
@@ -268,22 +264,22 @@
   
 
 
-<div itemscope itemtype="https://schema.org/Person">
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
 
   
     <div class="author__avatar">
-      
-        <img src="/assets/images/id.png" alt="Jérémie Kalfon" itemprop="image">
-      
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/id.png" alt="Jérémie Kalfon" itemprop="image" class="u-photo">
+      </a>
     </div>
   
 
   <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Jérémie Kalfon</a>
+    </h3>
     
-      <h3 class="author__name" itemprop="name">Jérémie Kalfon</h3>
-    
-    
-      <div class="author__bio" itemprop="description">
+      <div class="author__bio p-note" itemprop="description">
         <p>I am an Engineer, Researcher and Entrepreneur. I wish to make the world a better place with science!</p>
 
       </div>
@@ -295,22 +291,22 @@
     <ul class="author__urls social-icons">
       
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Paris - Boston</span>
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Paris - Boston</span>
         </li>
       
 
       
         
           
-            <li><a href="https://twitter.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+            <li><a href="https://twitter.com/jkobject" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
           
         
           
-            <li><a href="https://Scholar.google.com/citations?user=zyXiydsAAAAJ" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i><span class="label">Scholar</span></a></li>
+            <li><a href="https://Scholar.google.com/citations?user=zyXiydsAAAAJ" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i><span class="label">Scholar</span></a></li>
           
         
           
-            <li><a href="https://LinkedIn.com/in/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+            <li><a href="https://LinkedIn.com/in/jkobject" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
           
         
       
@@ -319,8 +315,8 @@
 
       
         <li>
-          <a href="mailto:jkobject@gmail.com">
-            <meta itemprop="email" content="jkobject@gmail.com" />
+          <a href="mailto:jkobject@gmail.com" rel="me" class="u-email">
+            <meta itemprop="email" content="jkobject@gmail.com">
             <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
           </a>
         </li>
@@ -372,7 +368,7 @@
 
       <!--
   <li>
-    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
       <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
     </a>
   </li>
@@ -380,14 +376,13 @@
     </ul>
   </div>
 </div>
-
   
   </div>
 
 
 
-  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="What is up with hydroponics and vertical farming">
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="hydroponics and vertical farming">
     <meta itemprop="description" content="An opinion on the goals, the promises, the challenges and ways forward in vertical farming">
     <meta itemprop="datePublished" content="2020-10-10T00:00:00-04:00">
     
@@ -395,8 +390,10 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">What is up with hydroponics and vertical farming
-</h1>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/ideas/hydropony/" class="u-url" itemprop="url">hydroponics and vertical farming
+</a>
+          </h1>
           
 
   <p class="page__meta">
@@ -411,7 +408,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          9 minute read
+          10 minute read
         
       </span>
     
@@ -421,53 +418,70 @@
         </header>
       
 
-      <section class="page__content" itemprop="text">
+      <section class="page__content e-content" itemprop="text">
         
           <aside class="sidebar__right ">
             <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#the-idea">The idea</a></li><li><a href="#the-promises">The promises</a></li><li><a href="#why-it-needs-to-happen">why it needs to happen</a></li><li><a href="#what-is-standing-in-the-way">what is standing in the way</a></li><li><a href="#genomics-to-the-rescue">Genomics to the rescue</a></li><li><a href="#making-business-out-of-it">Making business out of it</a></li><li><a href="#but-what-is-hydroponics">But what is hydroponics?</a></li></ul>
+              <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu">
+<li><a href="#what-is-hydroponics">what is hydroponics?</a></li>
+<li><a href="#the-idea">The idea</a></li>
+<li><a href="#the-promises">The promises</a></li>
+<li><a href="#why-it-needs-to-happen">why it needs to happen</a></li>
+<li><a href="#what-is-standing-in-the-way">what is standing in the way</a></li>
+<li><a href="#genomics-to-the-rescue">Genomics to the rescue</a></li>
+<li><a href="#making-business-out-of-it">Making business out of it</a></li>
+</ul>
 
             </nav>
           </aside>
         
-        <p>Recently I had fun making a short chalkboard computation. Unregarding any related challenges, what would be the footprint of a factory producing the world’s food supply?</p>
+        <p>Recently I had fun making some short back of the envelop computation on the use of hydroponics 📨 in a future world. Unregarding any related challenges, what would be the footprint of a factory producing the world’s food supply? 🤔</p>
 
-<p><img src="/assets/images/farming.jpg" alt="food production" /></p>
+<h2 id="what-is-hydroponics">what is hydroponics?</h2>
+
+<p>Here by hydroponics I am talking about any ways to industrialize agriculture in a closed controlled environment. I reckon that its initial meaning was just feeding plants out of the soil using sprays of water &amp; nutrients. But my definition here is going beyond its initial meaning to encompass all disruptive growing technologies having the ability to maximize throughput by unit of energy and surface area. 🧑‍🏫</p>
+
+<p><img src="/assets/images/farming.jpg" alt="food production"></p>
 
 <h2 id="the-idea">The idea</h2>
 
-<p>Ok, so the world is using 1B ha for food production in 2015 [1], of which 72% is actually for crops… And an astonishing number: 33% of total habitable land is for crops as well. Dreaming of a “brave new world”. I then set out to decide that we shall stop using animals for food consumption. Argument is easy to make (pollution, suffering, energy waste &amp; land use)… and this is my computation after all.</p>
+<p>Ok, so the world is using 1B ha for food production in 2015 [1], of which 72% is actually for crops… And an astonishing number: 33% of total habitable land is for crops as well. 🤦 Dreaming of a “brave new world”. I then set out to decide that we shall stop using animals for food consumption ☮️ . This argument is easy to make an revolves around its cost in pollution, suffering, energy waste &amp; land use. But let’s not delve more into it for this article. 🕳️</p>
 
-<p>So, what happens if we forbid live stock food production, and make everything hydroponic?
-Forbidding crops we actually now need much less food use, so say \(600M ha\). This represents actually \(6M km^2\). A cautious estimate would say that we can grow this food at least 30% more efficiently (space wise), than for regular agriculture. Being freed from any form of weather issues, we can make much faster growing crops. Let’s be cautious and only say 2 times faster. We are then now “only” using \(2,100,000 km^2\) land for this. Now let’s be crazy, for reasons I will discuss later, the crops (whatever its type) might not exceed 1.5m in height. And this factory will be 100m high. so that is at least 50 floors, since you need to account for some space for any machines, drains, etc. So now your footprint is “only” \(42,000 km^2\)!</p>
+<p>So, what happens if we forbid live stock food production? Well with current land and technology, we might be able to feed the forecoming 10 billion humans without impacting more forests. But now, what if we could make everything hydroponic? 🎱
+Forbidding crops we actually now need much less food use, so say \(500M ha\). This represents actually \(5,000,000 km^2\). A cautious estimate would say that we can grow this food at least 30% more efficiently (space wise), than for regular agriculture. Being freed from any form of weather issues, we can make much faster growing crops. Let’s be cautious and only say 2 times faster. We are then now “only” using \(1,800,000 km^2\) land for this. <img class="emoji" title=":+1:" alt=":+1:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" height="20" width="20"></p>
 
-<p>But this is not all. A lot of crops are (and can) be much smaller in size than 1.5m a better management of space usage might reduce it to -let’s be cautious- a further 30%. \(30,000km^2\).
-We can then build a 0.1x100x300km building. We would not need more to feed the entire population. but we expect a doubling of the population so we would need 2 times more space in 2100.</p>
+<p>Now let’s be really crazy, for reasons I will discuss late (🧬), the crops (whatever its type) can be made not exceed 1.5m in height. Now also say this factory will be 100m high or, t least 50 floors, since you need to account for some space for any machines, drains, etc. So now your factory footprint is “only” \(36,000 km^2\)! <img class="emoji" title=":sweat_smile:" alt=":sweat_smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f605.png" height="20" width="20"></p>
 
-<p><img src="/assets/images/largestbuilding.jpg" alt="building space" /></p>
+<p>But this is not all. A lot of crops are (and can) be much smaller in size than 1.5m a better management of space usage might reduce it to -let’s not too be cautious- a further 50%. \(18,000km^2\).
+We can then build a 0.1x120x150km building. We would not need more to feed the entire current humanity. 💭</p>
 
-<p>This is of course a very rough estimate and I would guess that it could vary between half to twice the size I just gave. I also missed a lot of complexity. What about supply and resources you’ll tell me. How much water, electricity and minerals would you need? That would be hell of a footprint as well.</p>
+<p><img src="/assets/images/largestbuilding.jpg" alt="building space"></p>
 
-<p>Say we would need approximately 90GW of energy. an LED is 70% efficient. Only 2% of the sun’s light is used by plants. the sun radiates arable land at an average over the year of \(20Wh/m^2\). So our plant would need to use \(2W/m^2\) in our plant of lighting energy. this would mean \(2MW/km^2\). so let’s say our plan would consume 60GW of energy and let’s add 50% for transport, movement, temperature control etc..</p>
+<p>This is of course a very rough estimate and I would guess that it could vary between half to ten times the size I just gave. I also missed a lot of complexity of course 📩. But what about supply and resources you’ll tell me. How much water, electricity and minerals would you need? That would be hell of a footprint as well <img class="emoji" title=":expressionless:" alt=":expressionless:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f611.png" height="20" width="20">.</p>
 
-<p>A nuclear facility can output 1.5GW of energy. So we would need 60 nuclear power plants to power this world’s food supply, that is approximately 50% than France’s production of electricity from power plants. clearly doable and with a footprint too low to count. Now with that amount of nuclear power and plants (no pun intended), we reeeaally need water.. around 270 B liters / day for the power plants.</p>
+<p>For lighting first, an LED is 70% efficient, only 2% of the sun’s light is used by plants and the sun radiates arable land at an average over the year of \(20Wh/m^2\). So our plant would need to use \(0.5W/m^2\) in our plant of lighting energy. this would mean \(500kW/km^2\). so let’s say our plan would consume 700GW of energy (with alternating night and day). <img class="emoji" title=":wavy_dash:" alt=":wavy_dash:" src="https://github.githubassets.com/images/icons/emoji/unicode/3030.png" height="20" width="20"></p>
 
-<p><img src="/assets/images/" alt="nuclear" /></p>
+<p>For transport and temperature control, it is way harder to judge. But a safe estimate would be to x2 at least the lighting energy consumption. Although with intelligent management this might be less. 🤷</p>
 
-<p>But building them near the shores or river beds and it’s done. For example we build our factory right in the middle of France. Sorry and goodbye to all those beautiful burgundy villages.. But at least we have the requirements needed to build our factory.</p>
+<p>A nuclear facility like gravelline in France outputs a consistent 5.5GW of energy while being \(1 km^2\). 💡 So we would need 400 nuclear power plants to power this world’s food supply, that is approximately 80% of the world’s electricity production. Doable? maybe?.. its the future you know. and with a footprint too low to count compare to the food factory. Now with that amount of nuclear power and plants 🌴 (pun intended), we reeeaally need water.. 🍉 gravelline might use up to 240 m3/s of water which would put us at around 37B liters / day for the power plants. you might be able to achieve that by spacing them every 1km from each other on the costline. taking 400km of cost line. Which represents less than 1% of Norway’s 🇳🇴</p>
+
+<p><img src="/assets/images/gravline.jpg" alt="nuclear"></p>
 
 <h2 id="the-promises">The promises</h2>
 
-<p>Now what about the crops you say. Well this is where it becomes interesting. For hydroponics we only need 10 times less water than for regular agriculture. But if one was able to manage perfectly the recycling and recirculation of water, you would need hundreds of times less water and, similarly, almost no nutrients get wasted in that case we would actually be decreasing our water consumption by factor of 3, get rid of pesticide, chemicals, and almost annihilate our environmental footprint on the planet.</p>
+<p>Now what about the crops you say. Well this is where it becomes interesting. For hydroponics we only need 10 times less water than for regular agriculture. But if one was able to manage perfectly the recycling and recirculation of water, you would need hundreds of times less water and, similarly, almost no nutrients get wasted in that case we would actually be decreasing our water consumption by factor of 3, get rid of pesticide, chemicals. 🥇</p>
 
-<p>Obviously making 1 factory somewhere is extremely stupid. It helped to visualize impacts, but you would want to have many 100s around the planet, each producing all produce so that nothing has to travel more than a few 100 miles to get to one’s plate.</p>
+<p>Obviously making 1 factory somewhere is extremely stupid. It helped to visualize impacts, but you would want to have many 100s around the planet, each producing all produce so that nothing has to travel more than a few 100 miles to get to one’s plate. 🚗</p>
 
-<p><img src="/assets/images/cityfarm.jpg" alt="" /></p>
+<p><img src="/assets/images/farmingcity.jpg" alt="cityfarm"></p>
 
-<p>You have seen the promises of such a change in our consumption and production of food. Human population could grow a hundred fold, and it would still not be too much of an issue.</p>
+<p>You have seen the promises of such a change in our consumption and production of food. Clean food, reduce energy consumption but above all, almost no human impact on the planet. reseting it to the way it was before we were there except for the towns and cities (\(~1.8M km^2\) for a population density of equivalent to the one of Boston and 10B inhabitant) This is what would actually now take the most space. But still, it is tiny (approx the size of the european union.). 🌇</p>
 
-<p>But I wanted to illustrate the environmental promise a bit more and ask you to imagine every arable land in the world, being given back to nature. Transformed into gigantic reserves filled with animals, forests and swamps. gigantic parks where people can get lost as if they were the only humans on the planet.</p>
+<p>In that context, Human population could grow a by dozens of times its current level.</p>
+
+<p>But I wanted to illustrate the environmental promise a bit more and ask you to imagine every arable land in the world, being given back to nature. Transformed into gigantic reserves filled with animals, forests and swamps. gigantic parks where people can get lost as if they were the only humans on the planet. 🦁</p>
 
 <h2 id="why-it-needs-to-happen">why it needs to happen</h2>
 
@@ -475,64 +489,74 @@ We can then build a 0.1x100x300km building. We would not need more to feed the e
 
 <p>A global usage of hydroponic systems would prevent pollution from transport, enable much less energy consumption for production and so doing, decrease waste with tighter stock management.</p>
 
-<p>But global warming is already happening and will certainly already cause issues of food security for many millions of people..
+<p>But global warming is already happening and will certainly already cause issues of food security for many millions of people.. 🌪️
 Having a system that is unconstrained by weather would also increase our capacity to sustain the more dramatic weather conditions of the late 21st century.</p>
 
-<p>Additionnai issues regarding the artificialisation of the soils and the destruction of key wildlife habitat might be mitigated by mass use of hydroponics systems. As one can see in my outlandish example the surface usage is so drastically reduced that it almost doesn’t count.</p>
+<p>Additionnally issues regarding the artificialisation of the soils and the destruction of key wildlife habitat might be mitigated by mass use of hydroponics systems. As one can see in my outlandish example the surface usage is so drastically reduced that it almost doesn’t count.</p>
 
-<p><img src="/assets/images/" alt="" /></p>
+<p><img src="/assets/images/virginworld.jpeg" alt="virginworld"></p>
 
-<p>Lastly it needs to happen for humanity’s sake. We do not yet know how we will be able to feed the 10 billion humans of the late 21stt century. It is possible that even more intensive farming, GMOs and reduced meat consumption will be very important.</p>
+<p>Lastly it needs to happen for humanity’s sake. We do not yet know how we will be able to feed the 10 billion humans of the late 21st century. It is possible that more intensive farming, GMOs and reduced meat consumption will be needed. <img class="emoji" title=":8ball:" alt=":8ball:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f3b1.png" height="20" width="20"></p>
 
-<p>However, this might not be enough. And hydroponics would allow for a virtually unlimited food supply, given sufficient investments. Moreover, some of our modern practices of food packaging have led to a world-wide increase in obesity. This health crisis is in part due to very processed food that can be stored for long periods of time and be easily manufactured. And having a source of cheap fresh produce would contribute to healthier and more competitive substitutes.</p>
+<p>However, this might not be enough. And hydroponics would allow for a virtually unlimited food supply, given sufficient investments. Moreover, some of our modern practices of food packaging have led to a world-wide increase in obesity. This health crisis is in part due to very processed food that can be stored for long periods of time and be easily manufactured. Having a source of cheap fresh produce would contribute to healthier and more competitive substitutes. 🧑‍⚕️</p>
 
 <h2 id="what-is-standing-in-the-way">what is standing in the way</h2>
 
 <p>Like many new technologies, first a price gap is standing in the way. Most hydroponics product’s are maya times more expensive than farm ones. This is one roadblock that plagued electric cars, solar panels, and so on.</p>
 
-<p>Another more technical issue is related to what can be grown for now in these systems. You may have wondered why we only see lettuces and other greens being produced through hydroponics. This is because for many other categories of crops, this is not yet possible. in order of difficulties.</p>
+<p>Another more technical issue is related to what can be grown for now in these systems. You may have wondered why we only see lettuces and other greens being produced through hydroponics. This is because for many other categories of crops, this is not yet possible.</p>
 
-<p><img src="/assets/images/" alt="" /></p>
+<p><img src="/assets/images/crops.jpg" alt="crops"></p>
 
-<p>Many bigger fruits such as tomatoes and avocados, eggplants etc.. are hard to grow. Worth even are roots such as potatoes, carrots etc.</p>
+<p>Many bigger fruits such as tomatoes and avocados, eggplants etc.. are hard to grow. Worth even are roots such as potatoes, carrots etc. 🥕</p>
 
-<p>Even more difficult to grow because of the specific conditions in which they grow are most cereals such as corn, whey and rice. These are the most abundantly produced crops in the world. accounting for 80% of the crops surfaced being used. Being able to grow cereals would be what would transform hydroponics from a fun idea to an industry.</p>
+<p>Even more difficult to grow are most cereals such as corn, whey and rice. These are the most abundantly produced crops in the world, accounting for 80% of the crops surface being used. Being able to grow cereals is one of the key to mainstream hydroponics. 🔑</p>
 
-<p>Finally and the most impossible of it all are actual tree fruits and seeds such as apples, oranges, nuts, coffee etc.. Many people would dismiss the idea for its seemingly impossibility and maybe, they would say, stupidity.</p>
+<p>Finally and the most impossible of it all are actual tree fruits and seeds such as apples, oranges, nuts, coffee etc.. Many people would dismiss this idea for its seeming impossibility..And some, would say, stupidity. 🧽</p>
 
 <p>So… how could we solve them?</p>
 
 <h2 id="genomics-to-the-rescue">Genomics to the rescue</h2>
 
-<p>It has been shown that specific external cues such as drops in temperature and humidity. gradients of specific chemicals as well as changes in mechanical strength and pressure from the soil, allow some plants to grow or not. While some of these issues could be easily solved by tweaking the system itself, many others would make it very complex to do, although not impossible.</p>
+<p>It has been shown that specific external cues such as drops in temperature and humidity. gradients of specific chemicals as well as changes in mechanical strength and pressure from the soil, allow some plants to grow or not. While some of these issues could be easily solved by tweaking the growing system itself, many others would make it very complex to do.</p>
 
-<p>But, can we engineer the plants themselves to not mind so much environmental specificities?
-Plants are complex.. and picky. this is not due to some physical constraint making it impossible to create wines without hard rocky surfaces.. The plant needs to protect itself and survive. In order to do this it created many ways to sense its environment and decide when to germinate, when to grow, and when bear fruits. But in a controlled environment this is not necessary anymore. Many of the plant’s attributes are not necessary anymore. Since the dawn of agriculture, we always had to balance somehow quality and survival. plants need to grow long roots for the winter, strong trunk to face off other plants, be taller, wait for seasons to pass, etc..</p>
+<p>But, can we engineer the plants themselves to not mind its environment as much?
+Plants are complex.. and picky. This is often not due to actual physical constraint making it impossible for them to grow in other environment. Like wines growing better on hard rocky soils..</p>
 
-<p><img src="/assets/images/" alt="" /></p>
+<p>This is because a plant needs to protect itself and survive. In order to do this it created many ways to sense its environment and decide when to germinate, when to grow, and when to bear fruits. But in a controlled environment this is not necessary anymore. Many of the plant’s attributes are not necessary. Since the dawn of agriculture, we always had to balance quality and survival: Plants need to grow long roots for the winter, strong trunk to face off other plants, be taller, wait for seasons to pass, etc.. <img class="emoji" title=":deciduous_tree:" alt=":deciduous_tree:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f333.png" height="20" width="20"></p>
 
-<p>We were able to change them through millennials, to suit our needs. but we won’t have the same patience now. We can create plants without any care for survival. Being in controlled environments and close to consumption points, tomatoes could be picked ripe and filled with sugar. Corn could grow just a few cm before growing its cob. Apple tree could also be thin and small. So doing these plants would grow fast, with better energy usage and we wouldn’t be scared of GMO overtaking wildlife, given how unfit they would be for the outside.</p>
+<p><img src="/assets/images/gmofood.jpg" alt="gmo food"></p>
 
-<p>So, by modifying a plant’s genome, we might be able to make anything grow from hydroponics and to increase its production by multiple more folds. We would also produce healthier and more tasteful food. But just how and when can this happen?</p>
+<p>We were able to change them to our likings through thousands of years of tinkering. But now we can create plants without any care for their survival. Being in controlled environments and close to consumption points, tomatoes could be picked ripe and filled with sugar. Corn could grow just a few cm before growing its cob. Apple tree could also be thin and small and frail. So doing, these plants would grow fast, with better energy usage. They could be genetically modified without the scare of them overtaking wildlife, especially given how unfit they would be for the outside. 👍</p>
+
+<p>So, by modifying a plant’s genome, we might be able to make anything grow from hydroponics and to increase its production by multiple more folds. We would also produce healthier and more tasteful food. <img class="emoji" title=":100:" alt=":100:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4af.png" height="20" width="20"></p>
 
 <h2 id="making-business-out-of-it">Making business out of it</h2>
 
-<p>We are starting to see many people using one way or another, vertical farming, but this often looks like a smaller side project than real companies. We have seen some startups producing greens, within big cities using vertical farming, but nothing remarkable has come out yet. With so many promises, why is that?</p>
+<p>We are starting to see many people using, in one way or another, vertical farming. But this often looks like a smaller side project than real companies. We have seen some startups producing greens within big cities using vertical farming, but nothing remarkable has come out yet. With so many promises, why is that?</p>
 
 <p>It seems that the conceptual leap has not been achieved yet. The first goal here is: “How to make it cheaper and better than a regular produce?” let’s not try to shame people into using hydroponics. Let’s just try to prove to consumers that it is better.</p>
 
-<p>One idea I would want to highlight is that a first POC (proof of concept) would be to prove it on fancy products. already remote and hard to grow fruits and vegetables. food that is better fresh and ripe. fancy tomatoes that are often only grown far away and hard to transport to some cities, berries out of seasons etc.. These can be easily scaled using hydroponics to maybe an extent where they are better and cheaper than what is available at most people’s stores.</p>
+<p>To recap, from everything that we have seen 👓 so far. I believe that the 3 key enablers for this industry will be:</p>
+<ol>
+  <li>quality,</li>
+  <li>location,</li>
+  <li>delay,</li>
+  <li>and scale</li>
+</ol>
 
-<p>I think that the key enablers for this industry will be quality. location. time. scale.</p>
+<p>One idea I would want to highlight for a first POC (proof of concept) would be to prove it is better on quality. Focusing on Fancy products <img class="emoji" title=":large_blue_diamond:" alt=":large_blue_diamond:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f537.png" height="20" width="20">, like remote and hard to grow fruits and vegetables. Food that is better fresh and ripe, fancy tomatoes that are often only grown far away and hard to transport to some cities, out of season berries etc.. These can be easily scaled using hydroponics to maybe an extent where they are better and cheaper than what is available at most people’s stores.</p>
 
-<h2 id="but-what-is-hydroponics">But what is hydroponics?</h2>
+<p>So, If you want to start a company and have knowledge in genomics, automatisation, design and product management. give me a call! 😉</p>
 
-<p>Here by hydroponics I am talking about any ways to industrialize agriculture in a closed controlled environment. I reckon that its initial meaning was just feeding plants out of the soil. using sprays of water &amp; nutrients. But my definition here was going beyond its initial meaning to encompass all disruptive growing technologies having the ability to maximize throughput by unit of energy and surface area.</p>
+<hr>
+<p><strong>Remarks:</strong> I have not used sources consistently for this article and I am sorry for that. These are back of the envellope computations. For imaginative thinking. You are free to do your own and showcase what I am missing in the comments! 😄</p>
 
-<hr />
-<p>https://www.architectmagazine.com/technology/products/the-truth-about-how-efficient-a-white-led-can-be
-https://www.trees.com/advantages-disadvantages-of-hydroponics
-https://www.britannica.com/science/biosphere/Efficiency-of-solar-energy-utilization</p>
+<ul>
+  <li>https://www.architectmagazine.com/technology/products/the-truth-about-how-efficient-a-white-led-can-be</li>
+  <li>https://www.trees.com/advantages-disadvantages-of-hydroponics</li>
+  <li>https://www.britannica.com/science/biosphere/Efficiency-of-solar-energy-utilization</li>
+</ul>
 
         
       </section>
@@ -551,15 +575,15 @@ https://www.britannica.com/science/biosphere/Efficiency-of-solar-energy-utilizat
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
     <span itemprop="keywords">
     
-      <a href="/categories/#sustaining-humanity" class="page__taxonomy-item" rel="tag">Sustaining Humanity</a>
+      <a href="/categories/#sustaining-humanity" class="page__taxonomy-item p-category" rel="tag">Sustaining Humanity</a>
     
     </span>
   </p>
 
 
         
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-10-10T00:00:00-04:00">October 10, 2020</time></p>
 
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2020-10-10T00:00:00-04:00">October 10, 2020</time></p>
 
       </footer>
 
@@ -568,11 +592,11 @@ https://www.britannica.com/science/biosphere/Efficiency-of-solar-energy-utilizat
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=jkobject&text=What+is+up+with+hydroponics+and+vertical+farming%20http%3A%2F%2Flocalhost%3A4000%2Fideas%2Fhydropony%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=jkobject&amp;text=hydroponics+and+vertical+farming%20http%3A%2F%2Flocalhost%3A4000%2Fideas%2Fhydropony%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fideas%2Fhydropony%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fideas%2Fhydropony%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Flocalhost%3A4000%2Fideas%2Fhydropony%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -595,8 +619,52 @@ https://www.britannica.com/science/biosphere/Efficiency-of-solar-energy-utilizat
   
   
     <div class="page__related">
-      <h4 class="page__related-title">You may also enjoy</h4>
+      <h2 class="page__related-title">You may also enjoy</h2>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/broad_far.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/two-years-at-the-broad/" rel="permalink">2 years at the Broad Institute
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          9 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Short stories about my professional experiences.
+</p>
+  </article>
+</div>
+
         
           
 
@@ -730,67 +798,24 @@ https://www.britannica.com/science/biosphere/Efficiency-of-solar-energy-utilizat
 </div>
 
         
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="/assets/images/advancedstudy.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/a-month-at-the-broad/" rel="permalink">My first month at the Broad Institute
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          3 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">I arrived in Boston exactly a month ago. I managed to get my Visa 5 hours before catching…
-</p>
-  </article>
-</div>
-
-        
       </div>
     </div>
   
   
 </div>
-
     </div>
 
     
       <div class="search-content">
-        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+        <div class="search-content__inner-wrap">
+<form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
     <label class="sr-only" for="search">
       Enter your search term...
     </label>
-    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term...">
   </form>
-  <div id="results" class="results"></div></div>
+  <div id="results" class="results"></div>
+</div>
 
       </div>
     
@@ -840,7 +865,7 @@ https://www.britannica.com/science/biosphere/Efficiency-of-solar-energy-utilizat
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2021 Jérémie Kalfon. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">© 2021 Jérémie Kalfon. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
@@ -871,7 +896,8 @@ https://www.britannica.com/science/biosphere/Efficiency-of-solar-energy-utilizat
       (d.head || d.body).appendChild(s);
     })();
   </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
 
 
   

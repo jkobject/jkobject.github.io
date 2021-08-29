@@ -1,0 +1,920 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Reproducibility in Biology | Jérémie</title>
+<meta name="description" content="When do we decide an experiment has failed/succeded and when does it becomes cherrypicking?">
+
+
+  <meta name="author" content="Jérémie Kalfon">
+  
+  <meta property="article:author" content="Jérémie Kalfon">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Jérémie">
+<meta property="og:title" content="Reproducibility in Biology">
+<meta property="og:url" content="http://localhost:4000/opinions/reproducibility_in_biology/">
+
+
+  <meta property="og:description" content="When do we decide an experiment has failed/succeded and when does it becomes cherrypicking?">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/pipetting_bio.jpg">
+
+
+
+  <meta name="twitter:site" content="@jkobject">
+  <meta name="twitter:title" content="Reproducibility in Biology">
+  <meta name="twitter:description" content="When do we decide an experiment has failed/succeded and when does it becomes cherrypicking?">
+  <meta name="twitter:url" content="http://localhost:4000/opinions/reproducibility_in_biology/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="http://localhost:4000/assets/images/pipetting_bio.jpg">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-07-31T00:00:00-04:00">
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/jkobject">
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/opinions/reproducibility_in_biology/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Jeremie Kalfon",
+      "url": "http://localhost:4000/",
+      "sameAs": ["https://twitter.com/jkobject","https://LinkedIn.com/in/jkobject","https://ResearchGate.com/jeremie-kalfon"]
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Jérémie Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/id-88.png" alt="Jérémie K."></a>
+        
+        <a class="site-title" href="/">
+          Jérémie K.
+          
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/about/" title="I am a human. I wish to make the world better with science. &lt;3">About</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/projects/" title="">Projects</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/opinions/">Opinions</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/ideas/">Ideas</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/blog/" title="A short extract about my life experiences.">Blog</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/papers/">Papers</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/courses/" title="Here is the list of the Courses I have received and the one I have given.">Courses</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/culture/" title="This is my personal list of books, Comics and films I love.">Culture</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/categories/" title="Everything sorted by categories.">Subjects</a>
+            </li>
+</ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1">
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/opinions" itemprop="item"><span itemprop="name">Opinions</span></a>
+          <meta itemprop="position" content="2">
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Reproducibility in Biology</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/id.png" alt="Jérémie Kalfon" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Jérémie Kalfon</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>I am an Engineer, Researcher and Entrepreneur. I wish to make the world a better place with science!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Paris - Boston</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://twitter.com/jkobject" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://Scholar.google.com/citations?user=zyXiydsAAAAJ" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i><span class="label">Scholar</span></a></li>
+          
+        
+          
+            <li><a href="https://LinkedIn.com/in/jkobject" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:jkobject@gmail.com" rel="me" class="u-email">
+            <meta itemprop="email" content="jkobject@gmail.com">
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Reproducibility in Biology">
+    <meta itemprop="description" content="When do we decide an experiment has failed/succeded and when does it becomes cherrypicking?">
+    <meta itemprop="datePublished" content="2021-07-31T00:00:00-04:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/opinions/reproducibility_in_biology/" class="u-url" itemprop="url">Reproducibility in Biology
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li>
+<a href="#reproducibility-in-biology---bioinformatics-research">Reproducibility in biology - bioinformatics research</a><ul>
+<li><a href="#not-controlling-all-parameters">Not controlling all parameters</a></li>
+<li><a href="#removing-failed-experiments-vs-data-selection">Removing failed experiments vs data selection</a></li>
+<li>
+<a href="#editors--reviewers-role">Editors &amp; reviewers role</a><ul>
+<li><a href="#better-standards">Better standards</a></li>
+<li><a href="#paperproject-bashing">Paper/Project bashing</a></li>
+<li><a href="#accepting-imperfection">Accepting imperfection</a></li>
+</ul>
+</li>
+</ul>
+</li></ul>
+
+            </nav>
+          </aside>
+        
+        <h1 id="reproducibility-in-biology---bioinformatics-research">Reproducibility in biology - bioinformatics research</h1>
+
+<p>Having now worked for more than 2 years in a research environment and having been very sensitive about good, reproducible and open science. I have seen from large group computational labs and small group bench labs the issues and reasoning that might lead to unreproducible science. 🧑‍🔬</p>
+
+<p>First, this is not a denunciation of any malevolent act. Non-reproducibility in biology is the norm and up to 70% of researcher admit having published unreproducible results <a href="https://www.nature.com/articles/533452a">1</a> as you will see, my standards are very high as I come from an engineering background. 🧑‍🏭</p>
+
+<p>I have also come to grips with the inherent difficulty in day to day bench life, to not end up with very strong bias and cherry picking. 🧪</p>
+
+<h2 id="not-controlling-all-parameters">Not controlling all parameters</h2>
+
+<p>A first basic and irresolvable issue in biology is not being able to control all/most parameters. This has a tremendous impact on the possible results of an experiment. Given the results &amp; the available control parameters, the researcher’s conclusions can often be way too optimistic and misleading. 🎇</p>
+
+<p>However, new companies and research institute’s organizations are emerging, making what I would call Experiment as a Service <img class="emoji" title=":office:" alt=":office:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f3e2.png" height="20" width="20">, where some key and tortuous steps of experiments are taken care of by experts in this part, which make sure of removing all known biases and human errors 🤖.</p>
+
+<p>Expanding these to many experiments in biology and chaining providers, might allow reproducibility to dramatically increase.</p>
+
+<h2 id="removing-failed-experiments-vs-data-selection">Removing failed experiments vs data selection</h2>
+
+<blockquote>
+  <p>When do we decide an experiment has failed/succeeded and when does it become cherry picking?</p>
+</blockquote>
+
+<p>I have seen this issue first hand in my colleagues’ decisions over selecting or not some data. 🍒 It appeared to me that <strong>2 simple rules</strong> can be defined. They are based around the idea that <em>discarding an experiment/datapoint should be hard</em>.</p>
+
+<ol>
+  <li>
+<strong>error attribution</strong>: A failed experiment is only so when a failure reason has been given and shown. A wavy hand explanation cannot be ground to removing an experiment.</li>
+  <li>
+<strong>replicate atomicity</strong>: Given that replicas are done with the exact same process. One cannot select a replicate or remove some replicates from its results. <em>3 good replicates</em> is a minimum for an experiment.</li>
+</ol>
+
+<blockquote>
+  <p>when should I choose quality or quantity?</p>
+</blockquote>
+
+<p>I often hear this debate or this notion around me in non-scientific circles mostly. Because from my current experience it really feels as if they are both feeding each other.</p>
+
+<ol>
+  <li>
+    <p>Without quality, the results of the many experiments and many replicates won’t make sense. It is useless to go big when the quality standard has not been met. <img class="emoji" title=":yin_yang:" alt=":yin_yang:" src="https://github.githubassets.com/images/icons/emoji/unicode/262f.png" height="20" width="20"></p>
+  </li>
+  <li>
+    <p>Without the quantity of replicates, it is impossible to set criterion for quality and reproducibility standards. Only repeating processes over and over can let you find out if the process is right and holds up to repetition and changes in conditions that are not accounted for. ☯️</p>
+  </li>
+</ol>
+
+<p><code class="language-plaintext highlighter-rouge">quality -&gt; quantity -&gt; quality -&gt; quantity</code></p>
+
+<h2 id="editors--reviewers-role">Editors &amp; reviewers role</h2>
+
+<blockquote>
+  <p>when is it showcasing a nice image and just proving a point without actual statistical significance?</p>
+</blockquote>
+
+<p>I love cool pictures, I think they really help alleviate the reading burden of a paper. However, they can’t be used to prove a point. But they have.. And in the research field any cool plot (however dry-looking) can be that image (no significance but convincing at first sight). If one does not have the data and code to investigate and reproduce it, it does not weigh that much for your hypothesis, it is as best a good idea to try again entirely. 🎱</p>
+
+<p>Some of the blame has to be on the reviewers to just allow researchers to not publish their code and their data. This is not only about asking the researchers whether they have done it or not. It is about it being part of the reviewing. A reviewer has to try to run the code <img class="emoji" title=":bar_chart:" alt=":bar_chart:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4ca.png" height="20" width="20"> that made the plot using:
+ A. the data and
+ B. a piece of code that did it.
+Why would anything be allowed if this one simple 10mn check fails? What does it say about the rest of the research? <img class="emoji" title=":3rd_place_medal:" alt=":3rd_place_medal:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f949.png" height="20" width="20"></p>
+
+<h3 id="better-standards">Better standards</h3>
+
+<p>Yes a big part is about better standards 🎯 for code and data. Some more ideas such as:</p>
+<ol>
+  <li>requiring data QC as part of data upload.</li>
+  <li>requiring environment and package information as part of the code (docker image, requirements.txt, …)</li>
+  <li>requiring not only the basic input data (e.g. fastqs) but the processed parts and processing pipeline too (e.g. bam files, big wigs, matrices). 💾</li>
+</ol>
+
+<p>This is a week worth of a computationalist’ time (provided he did his job right). <em>And it is worth it 100 times</em>.</p>
+
+<h3 id="paperproject-bashing">Paper/Project bashing</h3>
+
+<p>In biology, more than other fields it seems, there is a harshness in what makes it out.</p>
+
+<p>First, it is apparently very hard to get a grant to do something that another researcher already did. So much for reproducibility… (although this one can be “easily” by-passed, as one kinda does whatever he wants with his grant money).</p>
+
+<p>Second, it is very hard to publish a paper that does not contain a certain amount of novelty. And this amount gets higher for better journals. You need to do something more. One can confirm or refute a previous paper in part B of its own paper. but part A,C,D, abstract, title, conclusion need to be about this novelty, new proof, etc. 💯</p>
+
+<p>This paper bashing appearing at multiple level is mainly the fault to the science enablers, reviewers, granters, editors… They want to be part of a science that will lead to citations basically.</p>
+
+<blockquote>
+  <p>We need incentives for reproducing.</p>
+</blockquote>
+
+<p>One maybe simple change on the side of publishers would be to make room for a great “related paper” section. One that really shows the many articles on topic A based on the paper’s contents.</p>
+
+<p>A final one is a paper aggregation service. For a specific topic, say: “ZMYND8 is a target in AML” would compile all 70 papers on the subject: Same for any research topic one can think of.</p>
+
+<h3 id="accepting-imperfection">Accepting imperfection</h3>
+
+<p>Another issue I have seen also related to paper bashing is the stringency of reviewers. No research is perfect, there might be some failed QC data, there might be some poorly commented code. Some missanotation, even some lost files (as long as they were not needed to prove a point in the paper). Reviewers need to be more accepting of imperfection regarding this additional data 📁 that is shared by researchers. Everything is imperfect and being too harsh on imperfections leads researchers to decide to entirely not release that information so that everything appears perfect on the first pass but then, under the hood, nothing can be reproduced..</p>
+
+<p>I hope I laid down some issues, reasons and solutions for them and that in the future we will strive toward more reproducibility and, let’s say ut out loud, more fully open access, open review, free review journals. :wi</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#computational-biology" class="page__taxonomy-item p-category" rel="tag">Computational Biology</a><span class="sep">, </span>
+    
+      <a href="/tags/#data-science" class="page__taxonomy-item p-category" rel="tag">Data Science</a><span class="sep">, </span>
+    
+      <a href="/tags/#research" class="page__taxonomy-item p-category" rel="tag">Research</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#scientific-method" class="page__taxonomy-item p-category" rel="tag">Scientific Method</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2021-07-31T00:00:00-04:00">July 31, 2021</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?via=jkobject&amp;text=Reproducibility+in+Biology%20http%3A%2F%2Flocalhost%3A4000%2Fopinions%2Freproducibility_in_biology%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fopinions%2Freproducibility_in_biology%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Flocalhost%3A4000%2Fopinions%2Freproducibility_in_biology%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/opinions/why-BMI-sucks/" class="pagination--pager" title="why most brain-machine interfaces ideas suck
+">Previous</a>
+    
+    
+      <a href="/opinions/why-most-ai-discussions-are-dumb/" class="pagination--pager" title="Why most ai discussions are dumb
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">You may also enjoy</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/broad_far.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/two-years-at-the-broad/" rel="permalink">2 years at the Broad Institute
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          9 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Short stories about my professional experiences.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/tf_cobinding.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/cds-presentation/" rel="permalink">A look at Cobinding Analysis
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">A look at my cobinding analysis as part of my research on the epigenetics of AML dependencies
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/yearbroaad.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/one-year-at-the-broad/" rel="permalink">A year at the Broad Institute
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          7 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Short stories about my professional experiences.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/dimred.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/umap-explanation/" rel="permalink">UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Short stories about my professional experiences.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap">
+<form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term...">
+  </form>
+  <div id="results" class="results"></div>
+</div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="mailto:jkobject@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://ResearchGate.net/profile/jeremie_kalfon" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+        
+      
+        
+          <li><a href="https://Scholar.google.com/citations?user=zyXiydsAAAAJ" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i> Scholar</a></li>
+        
+      
+        
+          <li><a href="https://LinkedIn.com/in/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">© 2021 Jérémie Kalfon. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/opinions/reproducibility_in_biology/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/opinions/reproducibility_in_biology"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://jkobject.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+
+  
+
+
+
+
+
+              <script>
+                window.onload = function () {
+                    var script = document.createElement('script');
+                    var firstScript = document.getElementsByTagName('script')[0];
+                    script.type = 'text/javascript';
+                    script.async = true;
+                    script.src = '/sw-register.js?v=' + Date.now();
+                    firstScript.parentNode.insertBefore(script, firstScript);
+                };
+            </script>
+            </body>
+
+</html>

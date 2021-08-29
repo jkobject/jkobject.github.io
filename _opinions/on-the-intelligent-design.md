@@ -8,6 +8,8 @@ tags:
  - Consciousness
  - Life
  - Intelligent Design
+header:
+ teaser: "/assets/images/brain.jpeg"
 ---
 
 # 1. On the emergence of life

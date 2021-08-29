@@ -13,7 +13,7 @@ source 'https://rubygems.org'
 
 # To upgrade, run `bundle update`. to upgrade on github `git commit --allow-empty -m "Force rebuild of site"`
 
-gem "minimal-mistakes-jekyll", "~> 4.18.1"
+gem "minimal-mistakes-jekyll"
 ##
 # The following plugins are automatically loaded by the theme-gem:
 #   gem "jekyll-paginate"
@@ -31,11 +31,12 @@ group :jekyll_plugins do
 	gem 'jekyll-admin'
 	gem 'jekyll-figure'
 	gem 'jekyll-maps'
-	gem 'jekyll-pwa-plugin'
+	gem 'jekyll-pwa-plugin', "= 2.2.3"
 	gem 'jekyll-remote-theme'
 	gem 'jekyll-scholar'
 	gem 'jekyll-seo-tag'
   gem 'jekyll-toc'
   gem 'jekyll-redirect-from'
 	gem 'unicode'
+  gem "webrick"
 end

@@ -1,10 +1,27 @@
 ---
-title: "On human population growth"
+title: "On growth, de-growth and human population"
 excerpt: "Why we should not wish too quickly for a reduction of how many humans we are on the planet."
 category: "Sustaining Humanity"
+header:
+ teaser: "/assets/images/BMIchip.jpeg"
 ---
 
-## On human population size
+## global warming and degrowth.
+
+
+## current limits.
+
+
+## what does the future holds.
+
+
+## Some ideas to expand one's vision of the future.
+
+
+## But what about today?
+
+
+
 given the demographs estimate that a maximum population size for humans should be around 15 billion people with current technology.
 we can see how far we are today despite the increasing talks in europe, to limit the number of newborns and diminish the total human population (some people would want it to 250 million, apparently required to live in harmony).
 *I would make the case that if we want to know what is the best population size. just look at the correlation between population size and number of wars, age of death, number of death in newborns etc..* you would find that the more people there is the better it has been. One might say that it is not a causation but both are causes of increase in wealth and technology. Well ask a researcher what makes technology happens: a lot of brilliant people and money. and ask and economist what makes money and wealth happen? a lot of consumers and technology. You know understand that both are co-increasing factors that drive a snowball effect.
@@ -16,7 +33,16 @@ or using the mass of our center black hole using 70% of its mass thanks to :
 kurgezats
 one could generate 2\*10^55 J of energy which if you want to live for 10^14 years which is 10 000 times the age of the universe you would have an output energy of 2\*10^37W/h if we now assume the 1GW/h just because you want to simulate your own little planet and everyone to be able to do the same... you would be able to make have 10^28 people (it is like multiplying for everyone living today, the number of people living today, and then doing it all over again) live in this galaxy  easily in condition no one could ever conceive. 
 
-https://fr.wikipedia.org/wiki/Trantor
-https://fr.wikipedia.org/wiki/M%C3%A9galopole_du_delta_de_la_Rivi%C3%A8re_des_Perles
-https://en.wikipedia.org/wiki/Ultima_Tower
-https://en.wikipedia.org/wiki/X-Seed_4000
+[Trantor](https://fr.wikipedia.org/wiki/Trantor)
+[GBA](https://en.wikipedia.org/wiki/Guangdong%E2%80%93Hong_Kong%E2%80%93Macau_Greater_Bay_Area)
+[Ultima_Tower](https://en.wikipedia.org/wiki/Ultima_Tower)
+[X-Seed_4000](https://en.wikipedia.org/wiki/X-Seed_4000)
+
+[Megastructures (Original Summary Version)](https://www.youtube.com/watch?v=M8ryqjyLBL8)
+[Megastructures 05 Shellworlds](https://www.youtube.com/watch?v=TfMr_XkWcEs)
+[Megastructures 10: Matrioshka Brains](https://www.youtube.com/watch?v=Ef-mxjYkllw&t=1168s)
+[Arcologies](https://www.youtube.com/watch?v=TqKQ94DtS54&t=1152s)
+[Ecumenopolises](https://www.youtube.com/watch?v=XAJeYe-abUA)
+[Post Scarcity Civilizations](https://www.youtube.com/watch?v=_Kt7883oTd0)
+[Can we have a Trillion People on Earth?](https://www.youtube.com/watch?v=8lJJ_QqIVnc)
+[Upward Bound: Space Farming](https://www.youtube.com/watch?v=0ENabNTQwNg)

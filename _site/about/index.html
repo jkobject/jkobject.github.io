@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
   Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -79,6 +79,7 @@
 
 
 
+
 <!-- end _includes/seo.html -->
 
 
@@ -95,22 +96,9 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
 
-<!--[if IE]>
-  <style>
-    /* old IE unsupported flexbox fixes */
-    .greedy-nav .site-title {
-      padding-right: 3em;
-    }
-    .greedy-nav button {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 100%;
-    }
-  </style>
-<![endif]-->
 
 
     <!-- start custom head snippets -->
@@ -152,7 +140,6 @@
 
   <body class="layout--splash">
     <nav class="skip-links">
-  <h2 class="screen-reader-text">Skip links</h2>
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
     <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
@@ -171,7 +158,7 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
-          <a class="site-logo" href="/"><img src="/assets/images/id-88.png" alt=""></a>
+          <a class="site-logo" href="/"><img src="/assets/images/id-88.png" alt="Jérémie K."></a>
         
         <a class="site-title" href="/">
           Jérémie K.
@@ -199,9 +186,7 @@
         
         <button class="search__toggle" type="button">
           <span class="visually-hidden">Toggle search</span>
-          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
-            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
-          </svg>
+          <i class="fas fa-search"></i>
         </button>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -411,7 +396,7 @@ When I was young, I quickly became conscious that my passion for astrophysics wa
 
 <p>I was also amazed at the spur given to knowledge by some visionary minds (see <a href="#Role Models">role models</a>) and I think that today, only teamwork can bring success and disruption.</p>
 
-<p>Such an idea quickly gave me the inclination to bring people together and produce materials and tools that required the cohesion of a team : something echoed through my work in the making of the biggest music festival on my campus -<a href="###">the NoLarsen Festival</a>- as well as an award winning startup in professional messaging called <a href="###">PiPle</a>. In 2013, I went to an integrated<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup> preparatory school in Paris. During my two years of PTSI<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote">2</a></sup> studies , I was given intensive courses on a broad range of subjects in mathematics, electronics, physics and computer science, which gave me the foundation I needed for the next stages of my studies. I was happy to master in Biomedical engineering and felt closer to where I wanted to be while studying data science, physiology, imaging, signal processing and robotics. I enjoyed gathering courses from friends in M.D. as well (see <a href="###">courses</a>).</p>
+<p>Such an idea quickly gave me the inclination to bring people together and produce materials and tools that required the cohesion of a team : something echoed through my work in the making of the biggest music festival on my campus -<a href="###">the NoLarsen Festival</a>- as well as an award winning startup in professional messaging called <a href="###">PiPle</a>. In 2013, I went to an integrated<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> preparatory school in Paris. During my two years of PTSI<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> studies , I was given intensive courses on a broad range of subjects in mathematics, electronics, physics and computer science, which gave me the foundation I needed for the next stages of my studies. I was happy to master in Biomedical engineering and felt closer to where I wanted to be while studying data science, physiology, imaging, signal processing and robotics. I enjoyed gathering courses from friends in M.D. as well (see <a href="###">courses</a>).</p>
 
 <p>I think it is thanks to this enlarged knowledge, together with a semester abroad in Mexico -at <a href="###">TEC de Monterrey</a> plus a particularly interesting internship in <a href="###">Highlife</a> -a R&amp;D startup in semi-biological heart valve implantologythat I have been able to make my way as an intern at the <a href="###">Flatiron Institute</a>. In this NYC computational research facility, I grasped what research life is made of and I got the opportunity of meeting many interdisciplinary researchers and discovered a lot about machine learning and data science. By working under the supervision of Andrea Giovannucci and Eftychios Pnevmatikakis, I have created a comparison function of CaImAn’s output, a -Calcium Imaging Analysis- software able to infer neurons and their activity from recordings of in vivo brain tissues, allowing better benchmarkings and debuggings. I also worked on explaining the software with a documentation &amp; description of the algorithms for our community of open source contributors and neuroscientists (see <a href="###">project</a>). This experience confirmed my wish to use machine learning to augment biomedical research. An idea that drove me to participate to <a href="###">Human Brain Project</a> workshops in Lausanne and Geneva where I learnt about neural nets modeling and the novel neuromorphic architectures like SpiNNaker and BrainScaleS.</p>
 
@@ -561,7 +546,7 @@ When I was young, I quickly became conscious that my passion for astrophysics wa
 
     
       <div class="search-content">
-        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
     <label class="sr-only" for="search">
       Enter your search term...
     </label>
