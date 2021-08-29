@@ -3,7 +3,7 @@ title: "Why most ai discussions are dumb"
 excerpt: "Over some years, I have always been bewildered by the shallowness of non academical discussions around AI. Here are some ideas."
 category: "AI"
 header:
- teaser: "/assets/images/BMIchip.jpeg"
+ teaser: "/assets/images/ai-universe.jpg"
 ---
 
 Today I wanted to share feelings and thoughts I often have while listening to discussions about Artificial Intelligence.
