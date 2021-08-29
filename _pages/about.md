@@ -50,18 +50,23 @@ feature_row:
   - image_path: assets/images/resume.jpg
     alt: "my resume"
     title: "Resume"
-    url: "assets/documents/resume.pdf"
+    url: "assets/documents/CV-JEREMIE.pdf"
     btn_label: "Get it"
     btn_class: "btn--primary"
-  - image_path: assets/images/coverletter.png
-    alt: "my coverletter"
-    title: "Coverletter"
-    url: "../assets/documents/motivation.pdf"
-    btn_label: "Read More"
+  #- image_path: assets/images/coverletter.png
+  #  alt: "my coverletter 2019"
+  #  title: "Coverletter"
+  #  url: "../assets/documents/motivation.pdf"
+  #  btn_label: "Read More"
+  #  btn_class: "btn--primary"
+  - image_path: "assets/images/objectives.png"
+    title: "research proposal 2019"
+    url: "assets/documents/researchobjectives.pdf"
+    btn_label: "Get It"
     btn_class: "btn--primary"
   - image_path: "assets/images/objectives.png"
-    title: "statement of research"
-    url: "assets/documents/researchobjectives.pdf"
+    title: "research proposal 2020"
+    url: "assets/documents/researchproposal.pdf"
     btn_label: "Get It"
     btn_class: "btn--primary"
 feature_row2:
@@ -90,53 +95,46 @@ feature_row2:
 
 
 ## About this website
+
 <!-- A longer presentation of what People will find in this website -->
 
 This website was made with jekyll and minimal-mistake's layout. You can see it in [my github](https://www.github.com/jkobject/jkobject.github.io)
-
 The goal of using this framework is to allow me to maintain both a website, a blog and a portfolio without using third party closed source code. All of it while making sure that my website will never end like so many other blogs. Having an openly maintained layout will enable that.
-
-I have been able to migrate my medium articles super easily using `mediumexporter` command. 
+I have been able to migrate my medium articles super easily using `mediumexporter` command.
 
 The goal of the website is 3-fold:
-
-- be a open door to Jérémie Kalfon's proffesional activity as well as some personnal information more related to a lifestyle: sharing music, books, movies, science readings etc... 
-
-- share my projects, opinions and research activity and allow debates to happen here, thanks to disqus.
-
-- Gather every data that I try to maintain about my life in an open and secure fashion
+- be an open door to my proffesional activity.
+- share my opinions and ideas and allow debates to happen here, thanks to disqus.
+- gather some personnal information more related to lifestyle: sharing music, books, movies, science readings, etc.
 
 Feel free to reuse everything not related to content on this website. 
-The content is property of Jérémie Kalfon and is under an [MIT license](/LICENSE) and thus cannot be directly reused for commercial purposes and needs to be cited at any time. 
+The content is property of Jérémie Kalfon and is under an [MIT license](/LICENSE) and thus cannot be directly reused for commercial purposes and needs to be cited at any time.
 
-Every opinions and ideas mentioned in this website are solely mine and are not related to any other entity except if explained otherwise. 
-
-
+Every opinions and ideas mentioned in this website are solely mine and are not related to any other entity except if explained otherwise.
 
 ## Some More about me.
 
-Hello ! 
+Hello !
 I am a French student from Paris who has always wanted to become a researcher.
 When I was young, I quickly became conscious that my passion for astrophysics was missing something fundamental. As I grew older I got this idea, that I now can relate to Socrates’: that we shall understand ourselves and our environment if we want to improve the life of every human being. 
 
-It nourished my passion for understanding the intricate mechanisms of our beings, from the networks of our brains to the networks of pathways in our cells. 
+It nourished my passion for understanding the intricate mechanisms of our beings, from the networks of our brains to the networks of pathways in our cells.
 
-I was lucky enough to discover my interest early thanks to trips to foreign countries and to the infinite amount of knowledge I found on the web and my computer (see [blogs](/papers/) & [culture](/culture/). 
+I was lucky enough to discover my interest early thanks to trips to foreign countries and to the infinite amount of knowledge I found on the web and my computer (see [blogs](/blog/) & [culture](/culture/). 
 
-This interest was always interdisciplinary, ranging from mathematics and computer science to genetics, physics and neuroscience (see [papers](###)).
+This interest was always interdisciplinary, ranging from mathematics, computer science, AI to genetics, physics and neuroscience (see [papers](/papers/)).
 
-I was also amazed at the spur given to knowledge by some visionary minds (see [role models](#Role Models)) and I think that today, only teamwork can bring success and disruption. 
+I was also amazed at the spur given to knowledge by some visionary minds (see [role models](#Role Models)) and I think that today, only teamwork can bring success and disruption.
 
-Such an idea quickly gave me the inclination to bring people together and produce materials and tools that required the cohesion of a team : something echoed through my work in the making of the biggest music festival on my campus -[the NoLarsen Festival](###)- as well as an award winning startup in professional messaging called [PiPle](###). In 2013, I went to an integrated[^1] preparatory school in Paris. During my two years of PTSI[^2] studies , I was given intensive courses on a broad range of subjects in mathematics, electronics, physics and computer science, which gave me the foundation I needed for the next stages of my studies. I was happy to master in Biomedical engineering and felt closer to where I wanted to be while studying data science, physiology, imaging, signal processing and robotics. I enjoyed gathering courses from friends in M.D. as well (see [courses](###)).
+Such an idea quickly gave me the inclination to bring people together and produce materials and tools that required the cohesion of a team : something echoed through my work in the making of the biggest music festival on my campus -[the NoLarsen Festival](/projects/no-larsen-festival/)- as well as an award winning startup in professional messaging called [PiPle](/projects/piple-the-startup/). In 2013, I went to an integrated[^1] preparatory school in Paris. During my two years of PTSI[^2] studies , I was given intensive courses on a broad range of subjects in mathematics, electronics, physics and computer science, which gave me the foundation I needed for the next stages of my studies. I was happy to master in Biomedical engineering and felt closer to where I wanted to be while studying data science, physiology, imaging, signal processing and robotics. I enjoyed gathering courses from friends in M.D. as well (see [courses](/courses/)).
 
-I think it is thanks to this enlarged knowledge, together with a semester abroad in Mexico -at [TEC de Monterrey](###) plus a particularly interesting internship in [Highlife](###) -a R&D startup in semi-biological heart valve implantologythat I have been able to make my way as an intern at the [Flatiron Institute](###). In this NYC computational research facility, I grasped what research life is made of and I got the opportunity of meeting many interdisciplinary researchers and discovered a lot about machine learning and data science. By working under the supervision of Andrea Giovannucci and Eftychios Pnevmatikakis, I have created a comparison function of CaImAn’s output, a -Calcium Imaging Analysis- software able to infer neurons and their activity from recordings of in vivo brain tissues, allowing better benchmarkings and debuggings. I also worked on explaining the software with a documentation & description of the algorithms for our community of open source contributors and neuroscientists (see [project](###)). This experience confirmed my wish to use machine learning to augment biomedical research. An idea that drove me to participate to [Human Brain Project](###) workshops in Lausanne and Geneva where I learnt about neural nets modeling and the novel neuromorphic architectures like SpiNNaker and BrainScaleS.
+I think it is thanks to this enlarged knowledge, together with a semester abroad in Mexico -at [TEC de Monterrey](/blog/a-semester-in-mexico/) plus a particularly interesting internship in [Highlife](/blog/highlife-internship/) -a R&D startup in semi-biological heart valve implantologythat I have been able to make my way as an intern at the [Flatiron Institute](/blog/an-internship-in-new-york/). In this NYC computational research facility, I grasped what research life is made of and I got the opportunity of meeting many interdisciplinary researchers and discovered a lot about machine learning and data science. By working under the supervision of Andrea Giovannucci and Eftychios Pnevmatikakis, I have created a comparison function of CaImAn’s output, a -Calcium Imaging Analysis- software able to infer neurons and their activity from recordings of in vivo brain tissues, allowing better benchmarkings and debuggings. I also worked on explaining the software with a documentation & description of the algorithms for our community of open source contributors and neuroscientists (see [project](/projects/)). This experience confirmed my wish to use machine learning to augment biomedical research. An idea that drove me to participate to [Human Brain Project](/blog/human-brain-project/) workshops in Lausanne and Geneva where I learnt about neural nets modeling and the novel neuromorphic architectures like SpiNNaker and BrainScaleS.
 
-Teaching to students in my engineering school improved and matured my way of looking at topics and I realized that machine learning seemed to capture most of the complexity and potentials of my projects and ideas, I have felt I needed to focus on it. That is why I have managed to get a double degree arrangement with the University of Kent in England for an M.Sc. in Computational Intelligence, studying statistics, neural networks and data mining (see it [here]()). I am applying this teaching at the University with a team of researchers in trying to understand the complexity of the codon usage bias through intensive statistical data exploration of thousands of genomes. All those choices and experiences, have led me to this letter.
+Teaching to students in my engineering school improved and matured my way of looking at topics and I realized that machine learning seemed to capture most of the complexity and potentials of my projects and ideas, I have felt I needed to focus on it. That is why I have managed to get a double degree arrangement with the University of Kent in England for an M.Sc. in Computational Intelligence, studying statistics, neural networks and data mining (see it [here](/blog/a-msc-at-the-univeristy-of-kent/)). I am applying this teaching at the University with a team of researchers in trying to understand the complexity of the codon usage bias through intensive statistical data exploration of thousands of genomes. All those choices and experiences, have led me to this letter.
 
-My future work decisions ought to be driven, on the one hand by my interest in machine learning and genomics and on the other hand by my hope to work in the most promising technologies and teams to improve the life of next generations. 
+My future work decisions ought to be driven, on the one hand by my interest in machine learning and genomics and on the other hand by my hope to work in the most promising technologies and teams to improve the life of next generations.
 
 It seems essential to me to understand the importance of reproducible science and of bringing researchers together into interdisciplinary projects, of making complex systems comprehensible to all and apply discoveries to real world problems.
-
 
 ## Recommandations
 
@@ -144,49 +142,79 @@ During my work and studies, I have met formidable people and some of them were g
 
 {% include feature_row id="feature_row2" %}
 
-
-
-
-
 ## Role Models
-- adham smith
+
+- adam smith
 - albert einstein
 - alex graves
+- andrew ng
 - archimède
 - arthur clark
 - aubrey de grey
+- aviv regev
+- barbara Engelhardt
 - bernard weber
 - bernarhd riemann
+- bill sellers
 - brendan frey
+- Chiara Marletto
+- Claudia de Rham
 - craig venter
+- daphne koller
+- david iu
 - demis assabi
 - elon musk
 - enrico fermi
+- eric lander
+- eric schmidt
+- fei chen
+- feng sheng
+- françois cholet
 - friederick gauss
+- gad getz
 - galilée
 - geoffrey hinton
+- grant sanderson
+- ian goodfellow
 - ila stustkever
 - isaac asimov
-- Isaac newton
+- isaac newton
+- jack dorsey
+- jelani nelson
 - jim simons
 - john von neuman
 - karl marx
+- kim stegmeyer
 - lang lang
 - larry page
+- leonard suskind
+- Lex fridman
+- manolis kellis
 - mark zuckerberg
+- mat botvinick
 - max tegmark
+- mickael stevens
 - nandos de freitas
+- Netta Engelhardt
 - paul dirac
 - ramarujan
 - ray kurzweil
 - richard feynmann
+- sean carrol
+- sénèque
 - sergey brin
 - socrates
-- stephen hawking 
+- stephen hawking
 - steve jobs
-- sénèque
+- steven pinker
+- vinton cerf
+- vitalik butterin
 - wolfgang pauli
+- xiao wang
 - yann le cun
+- yoshua bengio
+- jurgen schdthubert
+
 
 [^1]: PTSI - Physics Technology & Engineering Sciences
 [^2]: Even if they are quite arduous, integrated preparatory schools prepare students to integrate an Engineering school to which they are associated, allowing them to succeed. Instead of preparing for two years and then choosing a college according to an exam, they take the exam first for a subset of colleges and then prepare for it for two years, thus alleviating the uncertainty of the famous French Concours.

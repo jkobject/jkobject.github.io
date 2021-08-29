@@ -52,73 +52,43 @@ input[type="range"]::-ms-fill-upper {
   background-color: rgb(44,122,146);
 }
 </style>
-## Courses I have followed
-
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTFCGs4Z_9DYuzHlHExLlPDFJQfyfHOQlDbJLbBLjo6tXiplFYn5eajH3tziJZWGYE9sGP_Jrz5iAvd/pubhtml?widget=true&amp;headers=false" height="800" width="600"></iframe>
-
 ## My Papers:
 
 [See it on scholar](https://Scholar.google.com/citations?user=zyXiydsAAAAJ){: .btn .btn--primary .align-center}
 
 ## The things I am reading
 
-### List of scientific venue I am mostly using
-- arxiv
-- BioArxiv
-- Cell
-- neuron
-- IEEE
-- explore
-- nature
-- nature communication
-- nature methods
-- neuroscience
-- eLife
-- neural computation
-- Science
-- PloS
-- computational biology
-- Pnas
-- neuroscience
-
-- MITpress
-- Oxfordpress
-
-- International conference on ML
-- ICLR
-- Annual review of statistics
-- NIPS 
 
 ### Websites
 
-- DeepMind
-- [OpenAI](https://openai.com/)
-- Quanta
+- [DeepMind's blog](https://deepmind.com/blog/)
+- [OpenAI's blog](https://openai.com/)
+- [Quanta managazine](https://www.quantamagazine.org/)
 - [Distill](https://distill.pub/)
-- the gradient
-- the verge
-- aeon
-- nautil.us
-- futura science
-- [Andrej Karpathy blog](http://karpathy.github.io/)
+- [the gradient](https://thegradient.pub/)
+- [the verge](https://www.theverge.com/)
+- [aeon](https://aeon.co/)
+- [nautil.us](https://nautil.us/)
+- [futura science](http://www.futura-sciences.com/)
+- [Andrej Karpathy's blog](http://karpathy.github.io/)
 - [blog.otoro.net](http://otoro.net/)
 - [kvfrans hackersguide](http://kvfrans.com/)
 - [cookbook](http://www.cs.toronto.edu/~duvenaud/cookbook/index.html)
-- [nando blog](http://www.cs.ubc.ca/~nando/540-2013/lectures.html)
-- [ian goodfellow blog](http://www.iangoodfellow.com/slides/)
-- [jason blog](https://www.cs.jhu.edu/~jason/tutorials/variational.html)
+- [nando's blog](http://www.cs.ubc.ca/~nando/540-2013/lectures.html)
+- [ian goodfellow's blog](http://www.iangoodfellow.com/slides/)
+- [jason's blog](https://www.cs.jhu.edu/~jason/tutorials/variational.html)
 - [neuralnetworksanddeeplearning](http://neuralnetworksanddeeplearning.com/)
 - [colah blog](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
-- [nicholast smith blog](https://nicholastsmith.wordpress.com/page/2/)
+- [nicholast smith's blog](https://nicholastsmith.wordpress.com/page/2/)
 - [cleverhans](http://www.cleverhans.io/)
 - [katbailey blog](http://katbailey.github.io/)
 - [dominicwalliman blog](http://dominicwalliman.com/)
-- [colinraffel blog](http://colinraffel.com/blog/my-year-at-brain.html)
+- [colinraffel's blog](http://colinraffel.com/blog/my-year-at-brain.html)
 - [rubenevillegas](https://sites.google.com/a/umich.edu/rubenevillegas/)
 - [reddit/ML](https://www.reddit.com/r/MachineLearning/)
-- [keras blog](https://blog.keras.io/index.html)
-- [fast.ai blog](http://www.fast.ai/)
-- [tf blog](https://www.tensorflow.org/tutorials/)
+- [keras' blog](https://blog.keras.io/index.html)
+- [fast.ai's blog](http://www.fast.ai/)
+- [tf's blog](https://www.tensorflow.org/tutorials/)
 - [qure blog](http://blog.qure.ai/notes/neural-networks-for-genomics)
 - [fair](https://research.fb.com/blog/?cat=13)
 - [tinycloud](http://tinyclouds.org/residency/)
@@ -129,60 +99,61 @@ input[type="range"]::-ms-fill-upper {
 
 ## Good research Labs to follow
 
-- (http://www.psi.toronto.edu/index.php?q=splicing%20code)
-- (http://www.serafimb.org/people.html)
-- (http://bejerano.stanford.edu/directions.html)
-- (http://nn.cs.utexas.edu/keyword?neuroevolution)
-- (http://cbb.big.ac.cn/Software#CAT)
-- (https://ai-on.org/)
-- (http://thoth.inrialpes.fr/)
-- (http://www.di.ens.fr/sierra/contact.php)
-- (http://www.di.ens.fr/data/)
-- (https://genie.weizmann.ac.il/former.html)
-- (https://www.di.ens.fr/DiensTeams.html.en)
-- (https://cs.nyu.edu/parida/)
-- (http://bonneaulab.bio.nyu.edu/networks.html)
-- (http://cazencott.info/)
-- (http://members.cbio.mines-paristech.fr/~jvert/)
-- (https://personal.broadinstitute.org/anne/index.html)
-- (https://hscrb.harvard.edu/res-fl-rubin)
-- (https://nyscf.org/resources/post-filters/search/scott%20noggle/)
-- (https://research.google.com/teams/brain/)
-- (https://research.google.com/teams/gas/)
-- (http://beehive.cs.princeton.edu/people/)
-- (http://www.sens.org/outreach/take-action/volunteer)
-- (http://www.hammerlab.org/work/)
-- (http://www.research.ibm.com/haifa/dept/vst/mlhls.shtml)
-- (https://stanfordmlgroup.github.io/)
-- (http://clinicalml.org/research.html)
-- (https://suchisaria.jhu.edu/)
-- (http://people.idsia.ch/~juergen/)
-- (https://noble.gs.washington.edu/)
-- (http://www.greenelab.com/lab-members/)
+- [cancerdatascience.org](https://cancerdatascience.org)
+- [www.psi.toronto.edu/index.php?q=splicing%20code](http://www.psi.toronto.edu/index.php?q=splicing%20code)
+- [www.serafimb.org/people.html](http://www.serafimb.org/people.html)
+- [bejerano.stanford.edu/directions.html](http://bejerano.stanford.edu/directions.html)
+- [nn.cs.utexas.edu/keyword?neuroevolution](http://nn.cs.utexas.edu/keyword?neuroevolution)
+- [cbb.big.ac.cn/Software#CAT](http://cbb.big.ac.cn/Software#CAT)
+- [ai-on.org/](https://ai-on.org/)
+- [thoth.inrialpes.fr/](http://thoth.inrialpes.fr/)
+- [www.di.ens.fr/sierra/contact.php](http://www.di.ens.fr/sierra/contact.php)
+- [www.di.ens.fr/data/](http://www.di.ens.fr/data/)
+- [genie.weizmann.ac.il/former.html](https://genie.weizmann.ac.il/former.html)
+- [www.di.ens.fr/DiensTeams.html.en](https://www.di.ens.fr/DiensTeams.html.en)
+- [cs.nyu.edu/parida/](https://cs.nyu.edu/parida/)
+- [bonneaulab.bio.nyu.edu/networks.html](http://bonneaulab.bio.nyu.edu/networks.html)
+- [cazencott.info/](http://cazencott.info/)
+- [members.cbio.mines-paristech.fr/~jvert/](http://members.cbio.mines-paristech.fr/~jvert/)
+- [personal.broadinstitute.org/anne/index.html](https://personal.broadinstitute.org/anne/index.html)
+- [hscrb.harvard.edu/res-fl-rubin](https://hscrb.harvard.edu/res-fl-rubin)
+- [nyscf.org/resources/post-filters/search/scott%20noggle/](https://nyscf.org/resources/post-filters/search/scott%20noggle/)
+- [research.google.com/teams/brain/](https://research.google.com/teams/brain/)
+- [research.google.com/teams/gas/](https://research.google.com/teams/gas/)
+- [beehive.cs.princeton.edu/people/](http://beehive.cs.princeton.edu/people/)
+- [www.sens.org/outreach/take-action/volunteer](http://www.sens.org/outreach/take-action/volunteer)
+- [www.hammerlab.org/work/](http://www.hammerlab.org/work/)
+- [www.research.ibm.com/haifa/dept/vst/mlhls.shtml](http://www.research.ibm.com/haifa/dept/vst/mlhls.shtml)
+- [stanfordmlgroup.github.io/](https://stanfordmlgroup.github.io/)
+- [clinicalml.org/research.html](http://clinicalml.org/research.html)
+- [suchisaria.jhu.edu/](https://suchisaria.jhu.edu/)
+- [people.idsia.ch/~juergen/](http://people.idsia.ch/~juergen/)
+- [noble.gs.washington.edu/](https://noble.gs.washington.edu/)
+- [www.greenelab.com/lab-members/](http://www.greenelab.com/lab-members/)
 
 ## Research Papers
 
-### I have read (with presentations)
+### I have read, with some review ()
 
 [Go check a draft version here](/review-of-papers/){: .btn .btn--primary .align-center} 
 
 
-### I have read (without any)
+### I have read (without any review)
 _waiting for a research app to make it easier to share and display_
 
-- paper I read: (140) <input type="range" disabled="disabled" value="37"/>
+- paper I read: (200) <input type="range" disabled="disabled" value="37"/>
 
 
 ### To Read
-_waiting for a research app to make it easier to share and display
+_waiting for a research app to make it easier to share and display_
 
-- paper to read: (220) <input type="range" disabled="disabled" value="63"/>
+- paper to read: (320) <input type="range" disabled="disabled" value="63"/>
 
 ## Research Books
 
 ### I have read
 
-- David Travis._[the fable of the user centered designer](https://www.userfocus.co.uk/fable/index.html)_. 
+- David Travis._[the fable of the user centered designer](https://www.userfocus.co.uk/fable/index.html)_.
 - GRE org. _[cracking the GRE](https://www.amazon.com/Official-Guide-General-Test-Third-ebook/dp/B073X9TN52)_.2017.
 - Yu.G. Borisovich, N.M. Bliznyakov, T.N. Fomenko, Y.A. Izrailevich. _[Introduction to Differential and Algebraic Topology](https://books.google.fr/books?id=iFztCAAAQBAJ)
 - Allen Hatcher. _[Algebraic Topology](https://books.google.fr/books?id=BjKs86kosqgC)
@@ -208,5 +179,4 @@ _waiting for a research app to make it easier to share and display
 - James M. Bower, Hamid Bolouri. _[Computational Modeling of Genetic and Biochemical Networks](https://books.google.fr/books?id=-9hZDDfMroQC)
 - Roger B. McDonald. _[Biology of Aging](https://books.google.fr/books?id=6TImAgAAQBAJ)
 Yvette Amice, Les Nombres p-adiques, PUF, 1975 (lire en ligne)
-
-
+- computational neuroscience, chapman chap10-19 (10) <input type="range" disabled="disabled" value="20"/>

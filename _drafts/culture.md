@@ -17,9 +17,9 @@ toc: true
 ### Writers
 
 - Isaac Asimov
-- Philip K dick 
-- Arthur C Clarke 
-- Bernard Weber 
+- Philip K Dick
+- Arthur C Clarke
+- Bernard Weber
 - [René Barjavel](https://fr.wikipedia.org/wiki/Ren%C3%A9_Barjavel#Romans)
 
 ### Series
@@ -32,10 +32,9 @@ toc: true
 - Anthony Horowitz. _Alex Rider: Series_.
 - Eoin Colfer. _Artemis Fowl: Series_.
 - Stephen King. _Dome: Series_.
-- Michael Grant. Gone.
+- Michael Grant. _Gone_.
 - Mary Pope Osborne. _la cabane magique_.
-
-
+- _Narnia_.
 
 ### Volumes
 
@@ -51,7 +50,7 @@ toc: true
 - Max Tegmark. _[Life 3.0: Being Human in the Age of Artificial Intelligence](https://books.google.fr/books?id=3_otDwAAQBAJ)
 - Joshua Barkan. _[avant hiroshima](http://www.critiqueslibres.com/i.php/vcrit/50426).
 - ._en attendant Godo_.
-- Corneille .l'illusion COminque.
+- Corneille ._L'illusion Cominque.
 - Rousseau. Discours sur l'origine et les fondements de l'inégalité parmis les hommes.
 - seneques. de la brieveté de la vie. de la tranquilité de l'ame. de la constance de l'homme sage 
 - Marcel Pagnol. La gloire de mon père.

@@ -56,7 +56,7 @@ input[type="range"]::-ms-fill-upper {
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTFCGs4Z_9DYuzHlHExLlPDFJQfyfHOQlDbJLbBLjo6tXiplFYn5eajH3tziJZWGYE9sGP_Jrz5iAvd/pubhtml?widget=true&amp;headers=false" height="800" width="600"></iframe>
 
-## Courses to follow (or following) 
+## Courses to follow (or following)
 
 ### videos
 
@@ -64,6 +64,7 @@ input[type="range"]::-ms-fill-upper {
 - [mathematical monk](https://www.youtube.com/playlist?list=PLD0F06AA0D2E8FFBA): (160) <input type="range" disabled="disabled" value="100"/>
 - [dev to see](https://www.youtube.com/playlist?list=PLXH5-WxRNyUVNi-5u5gUv4Vt77fdmz7t6) (50) <input type="range" disabled="disabled" value="10"/>
 - [DeepMind's DL and RL course](https://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs) <input type="range" disabled="disabled" value="0"/>
+- [Oxford's Strachey Lecture](https://podcasts.ox.ac.uk/series/computer-science) <input type="range" disabled="disabled" value="10"/>
 
 ### Slides
 _most slides here have not been made public by the authors_
@@ -74,24 +75,16 @@ _most slides here have not been made public by the authors_
 - MEG eukaryotic transcription and regulation ENS <input type="range" disabled="disabled" value="100"/>
 - elements in genome and UE introduction L3 UE genomic ENS <input type="range" disabled="disabled" value="100"/>
 
-- Systems Biology EPFL <input type="range" disabled="disabled" value="0"/>
-- Signaling UE genomic L3 ENS <input type="range" disabled="disabled" value="0"/>
 - Advanced Biomed imaging ECE M2 <input type="range" disabled="disabled" value="0"/>
-- Riemannian geometry ENS Math M2 <input type="range" disabled="disabled" value="0"/>
+- Riemannian geometry ENS Math M2 <input type="range" disabled="disabled" value="20"/>
 - Human Anatomy ECE M2 <input type="range" disabled="disabled" value="0"/>
-- Baptiste Tesson's ENS 3 <input type="range" disabled="disabled" value="0"/>
-- Baptiste ENS 4 <input type="range" disabled="disabled" value="0"/>
+- Baptiste Tesson's ENS Y3 <input type="range" disabled="disabled" value="0"/>
+- Baptiste Tesson's ENS Y4 <input type="range" disabled="disabled" value="0"/>
 - Temporal Difference <input type="range" disabled="disabled" value="0"/>
 - CS231 <input type="range" disabled="disabled" value="0"/>
 - Reinforcement Learning Class <input type="range" disabled="disabled" value="0"/>
 
-### Books
-- computational neuroscience, chapman chap10-19 (10) <input type="range" disabled="disabled" value="20"/>
-- A Riemannian Framework for Tensor Computing, Xavier Pennec, Pierre Fillard, Nicholas Ayache, HAL <input type="range" disabled="disabled" value="0"/>
-- Attention, predictions and expectations, and their violation: attentional control in the human brain, Simone Vossel , Joy J. Geng and Karl J. Friston, frontiers. <input type="range" disabled="disabled" value="0"/>
-- Les Nombres p-adiques, Yvette Amice, 1975. <input type="range" disabled="disabled" value="0"/>
-
-## ECE - ING5 - SANTE 2017-2018
+## ECE - ING5 - SANTE 2017-2018 (to review)
 
 - Neurosciences et implants
 - Physique de la matière molle
@@ -99,14 +92,14 @@ _most slides here have not been made public by the authors_
 - Objet co en santé
 - Handicaps et techno
 - Smart data et santé
-- Cristaux liquides 
+- Cristaux liquides
 - Telemédecine
 - Chirurgie assisté par ordinateur
 
 - Physiopathologie & biocompatibilité
 - Chirurgie à distance
 - Physique des nanocomposants
-- Prothèses 
+- Prothèses
 - Structures MIS
 - Spéctroscopie UV-Visible
 - Les techniques de lithographie
@@ -116,14 +109,18 @@ _most slides here have not been made public by the authors_
 
 ### HighSchool
 _as a private teacher_
-- math, physics, chemistry, biology
+- math
+- physics
+- chemistry
+- biology
 
 ### undergraduate level
 _as a private teacher_
-- optics, integrals
+- optics
+- integrals (calculus)
 
 
-### Other presenations
+### Presenations
 <!-- Presentations I have given LINK TO slideShare -->
 <iframe src="https://www.slideshare.net/jkalfon/slideshelf" width="615px" height="470px" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:none;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
 
@@ -152,7 +149,7 @@ _as a private teacher_
 	- server
 	- simple J2E
 
-- R <input type="range" disabled="disabled" value="30"/>
+- R <input type="range" disabled="disabled" value="20"/>
 - Python <input type="range" disabled="disabled" value="90"/>
 	- numpy
 	- conda
@@ -163,17 +160,17 @@ _as a private teacher_
 	- scikit learn
 	- bokeh
 	- jupyter
-- Matlab <input type="range" disabled="disabled" value="70"/>
+- Matlab <input type="range" disabled="disabled" value="50"/>
 	- GUI
 	- signal proc
 	- functions
 	- parrallel
 	- arrays
-- computational genomics <input type="range" disabled="disabled" value="20"/>
+- computational genomics <input type="range" disabled="disabled" value="70"/>
 	- blast
 	- ensembl
 
-	- star 
+	- star
 	- rsem
 	- absolute
 	- macs
@@ -188,9 +185,9 @@ _as a private teacher_
 	- deeptools
 	- bamtools
 
-	- picard 
+	- picard
 
-	- terra 
+	- terra
 	- cromwell
 	- wdl	
 	- gcp
@@ -198,7 +195,6 @@ _as a private teacher_
 
 	- gsea
 	- phylogenetics
-	- 
 	- RNAseq
 	- DNAseq (targeted/ exome / whole)
 	- Chip
@@ -210,14 +206,14 @@ _as a private teacher_
 	- sentry 
 	- jest
 	- nose 
-- CD <input type="range" disabled="disabled" value="70"/>
+- CD <input type="range" disabled="disabled" value="50"/>
 	- fastlane
 	- android
 	- ios
 	- macOS 
 
 - Latex <input type="range" disabled="disabled" value="40"/>
-- Markdown <input type="range" disabled="disabled" value="70"/>
+- Markdown <input type="range" disabled="disabled" value="100"/>
 - HTML <input type="range" disabled="disabled" value="70"/>
 - CSS <input type="range" disabled="disabled" value="70"/>
 - JavaScript <input type="range" disabled="disabled" value="90"/>
@@ -238,7 +234,7 @@ _as a private teacher_
 - PHP <input type="range" disabled="disabled" value="20"/>
 	- 20 pages simple server
 
-- DNS management <input type="range" disabled="disabled" value="70"/>
+- DNS management <input type="range" disabled="disabled" value="40"/>
 	- namecheap 
 	- goDaddy 
 
@@ -249,8 +245,9 @@ _as a private teacher_
 	- brew 
 
 - vim <input type="range" disabled="disabled" value="20"/>
-- sublime <input type="range" disabled="disabled" value="90"/>
+- sublime <input type="range" disabled="disabled" value="70"/>
 - intelIJ <input type="range" disabled="disabled" value="70"/>
+- vscode <input type="range" disabled="disabled" value="70"/>
 
 - SQL <input type="range" disabled="disabled" value="50"/>
 	- nosql 
@@ -259,11 +256,11 @@ _as a private teacher_
 	- XML 
 	- MySQL
 	- MaMp
-- google cloud platform
-- aws <input type="range" disabled="disabled" value="50"/>
-	- scientific computing 
+- google cloud platform <input type="range" disabled="disabled" value="50"/>
+- aws <input type="range" disabled="disabled" value="30"/>
+	- scientific computing
 	- web hosting
-- Versioning 
+- Versioning
 	- svn
 	- github
 	- gitKraken
@@ -273,7 +270,7 @@ _as a private teacher_
 - Google Suite
 - Adobe <input type="range" disabled="disabled" value="40"/>
  - AE
- - XD 
+ - XD
  - PS
  - AI
 
@@ -281,9 +278,9 @@ _as a private teacher_
 	- preform
 	- solidworks
 - other software based programming
-	- LabVIEW 
+	- LabVIEW
 	- emergent
-	- NRP 
-	- NMP 
+	- NRP
+	- NMP
 	- FluoroCT
 	- Osirix
