@@ -1,21 +1,21 @@
 var store = [{
-        "title": "Why Rick had to invent to station of Ricks? [FR]",
-        "excerpt":"my take on an aspect of this serie, inspired by the many fan-made-explanations out there Pourquoi Rick a du inventer la station des Ricks ? Dans Rick et Morty, il existe une infinité d’univers parallèles et à travers tous ces univers, seulement une seule station des ricks. Donc si un...","categories": ["random"],
-        "tags": [],
-        "url": "/ideas/why-rick-invented-the-station-of-ricks/",
-        "teaser": "/assets/images/rick_morty.jpg"
-      },{
         "title": "hydroponics and vertical farming",
         "excerpt":"Recently I had fun making some short back of the envelop computation on the use of hydroponics 📨 in a future world. Unregarding any related challenges, what would be the footprint of a factory producing the world’s food supply? 🤔 what is hydroponics? Here by hydroponics I am talking about...","categories": ["Sustaining Humanity"],
         "tags": [],
         "url": "/ideas/hydropony/",
         "teaser": "/assets/images/hydroponics.jpg"
       },{
-        "title": "On growth, de-growth and human population",
-        "excerpt":"global warming and degrowth. current limits. what does the future holds. Some ideas to expand one’s vision of the future. But what about today? given the demographs estimate that a maximum population size for humans should be around 15 billion people with current technology. we can see how far we...","categories": ["Sustaining Humanity"],
+        "title": "The BiorXiv of the futuuure",
+        "excerpt":"First it would have to be available as a cross platform app. Something like F1000 or Mendeley where I can star, share, sort out my papers. It would have to contain some social networking thing like twitter, ResearchGate and Google Scholar with Q&amp;A, podcasts and job offers. This app should...","categories": ["Frustrations and Solutions"],
         "tags": [],
-        "url": "/opinions/on-human-population-size/",
-        "teaser": "/assets/images/BMIchip.jpeg"
+        "url": "/ideas/the-bioarxiv-of-the-future/",
+        "teaser": "/assets/images/twitter.jpeg"
+      },{
+        "title": "Why Rick had to invent to station of Ricks? [FR]",
+        "excerpt":"my take on an aspect of this serie, inspired by the many fan-made-explanations out there Pourquoi Rick a du inventer la station des Ricks ? Dans Rick et Morty, il existe une infinité d’univers parallèles et à travers tous ces univers, seulement une seule station des ricks. Donc si un...","categories": ["random"],
+        "tags": [],
+        "url": "/ideas/why-rick-invented-the-station-of-ricks/",
+        "teaser": "/assets/images/rick_morty.jpg"
       },{
         "title": "Are We Really Conscious? pt1",
         "excerpt":"1. On the emergence of life This is the first part of a Serie on consciousness, life and intelligence As far as I can recall, the idea of an intelligent design in life always seemed strange to me. It seemed like the adults had little imagination to involve yet another...","categories": ["On consciousness"],
@@ -28,12 +28,6 @@ var store = [{
         "tags": ["Violence","Justice","Racism","Society"],
         "url": "/opinions/on-police-violence-french/",
         "teaser": "/assets/images/couverture.png"
-      },{
-        "title": "Are We Really Conscious? pt2",
-        "excerpt":"2. On the nature of life les bases : l’information n’est qu’une façon abstraite de voir les composants de notre environement. elle regroupe tout ce qui existe et son traitement, reception, analyse et émission est le principe même de l’intelligence L’experience humaine est quand même assez incroyable. Le simple fait...","categories": ["On consciousness"],
-        "tags": ["Artificial Intelligence","Consciousness","Life","Intelligent Design"],
-        "url": "/opinions/on-the-nature-of-counscioussness/",
-        "teaser": "/assets/images/BMIchip.jpeg"
       },{
         "title": "why most brain-machine interfaces ideas suck",
         "excerpt":"I have often heard 👂 how Brain Machine Interfaces, also known as BMIs, would one day be a consumer products. Imagine being able to have a third arm. To control machines from your thoughts. Imagine being able to not just be in virtual reality through a headset; but to live...","categories": ["Biology & Medecine"],
@@ -48,10 +42,10 @@ var store = [{
         "teaser": "/assets/images/pipetting_bio.jpg"
       },{
         "title": "Why most ai discussions are dumb",
-        "excerpt":"Today I wanted to share feelings and thoughts I often have while hearing discusssions about Artificial Intelligence. We have heard a lot about this fields, what it is doing now and its promises. We have also heard a lot about expectations and fears for the future. And it is not...","categories": ["AI"],
+        "excerpt":"Today I wanted to share feelings and thoughts I often have while listening to discussions about Artificial Intelligence. We have heard a lot about this field, what it is doing now and its promises. We have also heard a lot about expectations and fears for the future. And it is...","categories": ["AI"],
         "tags": [],
         "url": "/opinions/why-most-ai-discussions-are-dumb/",
-        "teaser": "/assets/images/BMIchip.jpeg"
+        "teaser": "/assets/images/ai-universe.jpg"
       },{
         "title": "A French Engineering School",
         "excerpt":"It has now been six months since I officially finished my Engineering school, 🏫 I just received my diploma of Engineering. After my HighSchool, not knowing exactly what I should do to become like my heros: famous entrepreneurs and researchers, I set out to pass a “concours“ in order to...","categories": ["ECE"],

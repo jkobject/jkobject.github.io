@@ -6,16 +6,16 @@ header:
  teaser: "/assets/images/BMIchip.jpeg"
 ---
 
-## global warming and degrowth.
+## global warming and degrowth
 
 
-## current limits.
+## current limits
 
 
-## what does the future holds.
+## what does the future holds
 
 
-## Some ideas to expand one's vision of the future.
+## Some ideas to expand one's vision of the future
 
 
 ## But what about today?

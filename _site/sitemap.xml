@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/ideas/why-rick-invented-the-station-of-ricks/</loc>
-<lastmod>2018-08-10T00:00:00-04:00</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/ideas/hydropony/</loc>
 <lastmod>2020-10-10T00:00:00-04:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/opinions/on-human-population-size/</loc>
-<lastmod>2021-08-29T12:46:04-04:00</lastmod>
+<loc>http://localhost:4000/ideas/the-bioarxiv-of-the-future/</loc>
+<lastmod>2021-09-12T18:34:57-04:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/ideas/why-rick-invented-the-station-of-ricks/</loc>
+<lastmod>2018-08-10T00:00:00-04:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/opinions/on-the-intelligent-design/</loc>
@@ -19,10 +19,6 @@
 <url>
 <loc>http://localhost:4000/opinions/on-police-violence-french/</loc>
 <lastmod>2020-06-10T00:00:00-04:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/opinions/on-the-nature-of-counscioussness/</loc>
-<lastmod>2021-08-29T12:46:04-04:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/opinions/why-BMI-sucks/</loc>
@@ -34,7 +30,7 @@
 </url>
 <url>
 <loc>http://localhost:4000/opinions/why-most-ai-discussions-are-dumb/</loc>
-<lastmod>2021-08-29T12:46:04-04:00</lastmod>
+<lastmod>2021-09-12T18:34:57-04:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/blog/a-french-engineering-school/</loc>
@@ -174,9 +170,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/courses/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/culture/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/ideas/</loc>
@@ -344,6 +337,10 @@
 <lastmod>2019-02-19T07:14:59-05:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/assets/documents/CV-JEREMIE.pdf</loc>
+<lastmod>2021-08-18T21:35:16-04:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/assets/documents/Dominique_Chu.pdf</loc>
 <lastmod>2019-02-19T07:14:59-05:00</lastmod>
 </url>
@@ -364,8 +361,8 @@
 <lastmod>2019-02-19T07:14:59-05:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/assets/documents/resume.pdf</loc>
-<lastmod>2019-02-19T07:14:59-05:00</lastmod>
+<loc>http://localhost:4000/assets/documents/researchproposal.pdf</loc>
+<lastmod>2020-05-06T08:24:30-04:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/assets/plots/corrmat_TF_occupancy.html</loc>

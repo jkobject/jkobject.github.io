@@ -224,7 +224,7 @@ During my work and studies, I have met formidable people and some of them were g
 - xiao wang
 - yann le cun
 - yoshua bengio
-- jurgen schdthubert
+- jurgen schmidthubert
 
 
 [^1]: PTSI - Physics Technology & Engineering Sciences
