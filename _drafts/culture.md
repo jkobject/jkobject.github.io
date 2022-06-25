@@ -34,7 +34,7 @@ toc: true
 - Stephen King. _Dome: Series_.
 - Michael Grant. _Gone_.
 - Mary Pope Osborne. _la cabane magique_.
-- _Narnia_.
+- Narnia _Narnia_.
 
 ### Volumes
 
@@ -56,26 +56,20 @@ toc: true
 - Marcel Pagnol. La gloire de mon père.
 - sphères.
 
-
-
-
 ## To read
 
-- Douglas R. Hofstadter. _Gödel, Escher, Bach: an Eternal Golden Braid_. 1999. 
+- Douglas R. Hofstadter. _Gödel, Escher, Bach: an Eternal Golden Braid_. 1999.
 - HP Lovecraft. _The Call of Ctulhu_. 1928.
-- Blandine le Callet. _La balade de lila K_. 2010. 
+- Blandine le Callet. _La balade de lila K_. 2010.
 - Neal Asher. _Dark intelligence_ 
 - Isaac Asimov. _humoristic work_.
 - Richard Morgan. _altered Carbon: Books 2 & 3_.
 - William Gibson. _The Sprawl: Neuromancer (1984), Count Zero (1986), and Mona Lisa Overdrive (1988)_.
 - Dennis E. Taylor. _We Are Legion (We Are Bob) (Bobiverse #1)_. 2018.
 - Charles Stross. _Accelerando_.
-- Arthur C. Clarke. _Childhood's End_. 1953.
 - Olaf Stapledon. _Star Maker_. 1937
 - André Malraux. _la condition humaine_. 1933.
 - Corneille. _le Cid_. 1637.
-
-
 
 ## Comics
 
@@ -88,7 +82,6 @@ toc: true
 - _trolls de troy_.
 - _Universal War: Trilogy_.
 - _ptit spirou_.
-
 
 ## Movies
 

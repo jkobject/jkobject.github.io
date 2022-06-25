@@ -27,7 +27,7 @@ gem "minimal-mistakes-jekyll"
 # If you have any other plugins, put them here!
 group :jekyll_plugins do
 	gem 'amp-jekyll'
-	gem 'github-pages'
+  gem "github-pages", group: :jekyll_plugins
 	gem 'jekyll-admin'
 	gem 'jekyll-figure'
 	gem 'jekyll-maps'

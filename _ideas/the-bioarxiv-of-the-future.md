@@ -58,4 +58,3 @@ Text to speech tools could allow for listening to papers.
 ![text to speech](/assets/images/listeningsub.jpg)
 
 Such a multifaceted application might never exist but I hope to see a future where most papers and research can be found in such a way even if through multiple platforms. I think most papers will transform into an html - markdown like format with interactivity and hypertext. An HTML file can turn into a nice PDF, not the opposite. Finally I hope that it would allow for different metrics refocusing certain research area. Like getting more experiments in physics and more theory in biology. Also bringing more reproduction and confirmatory papers too.
-
