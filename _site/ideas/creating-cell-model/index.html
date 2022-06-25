@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Interviews in Cambridge | Jérémie</title>
-<meta name="description" content="A few months ago, I went to Cambridge, UK, 🇬🇧 to participate to hiring days and interview for EMBL-EBI">
+<!-- begin _includes/seo.html --><title>Creating a cell model | Jérémie</title>
+<meta name="description" content="Let’s think about some idea for bridging genotype to phenotype">
 
 
   <meta name="author" content="Jérémie Kalfon">
@@ -22,27 +22,27 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Jérémie">
-<meta property="og:title" content="Interviews in Cambridge">
-<meta property="og:url" content="http://localhost:4000/blog/interviews-in-cambridge/">
+<meta property="og:title" content="Creating a cell model">
+<meta property="og:url" content="http://localhost:4000/ideas/creating-cell-model/">
 
 
-  <meta property="og:description" content="A few months ago, I went to Cambridge, UK, 🇬🇧 to participate to hiring days and interview for EMBL-EBI">
+  <meta property="og:description" content="Let’s think about some idea for bridging genotype to phenotype">
 
 
 
-  <meta property="og:image" content="http://localhost:4000/assets/images/cambridgeitw.jpeg">
+  <meta property="og:image" content="http://localhost:4000/assets/images/cell_model.jpeg">
 
 
 
   <meta name="twitter:site" content="@jkobject">
-  <meta name="twitter:title" content="Interviews in Cambridge">
-  <meta name="twitter:description" content="A few months ago, I went to Cambridge, UK, 🇬🇧 to participate to hiring days and interview for EMBL-EBI">
-  <meta name="twitter:url" content="http://localhost:4000/blog/interviews-in-cambridge/">
+  <meta name="twitter:title" content="Creating a cell model">
+  <meta name="twitter:description" content="Let’s think about some idea for bridging genotype to phenotype">
+  <meta name="twitter:url" content="http://localhost:4000/ideas/creating-cell-model/">
 
   
     <meta name="twitter:card" content="summary">
     
-      <meta name="twitter:image" content="http://localhost:4000/assets/images/cambridgeitw.jpeg">
+      <meta name="twitter:image" content="http://localhost:4000/assets/images/cell_model.jpeg">
     
   
 
@@ -50,7 +50,7 @@
 
 
 
-  <meta property="article:published_time" content="2018-05-20T00:00:00-04:00">
+  <meta property="article:published_time" content="2022-06-25T19:40:57-04:00">
 
 
 
@@ -63,7 +63,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/blog/interviews-in-cambridge/">
+<link rel="canonical" href="http://localhost:4000/ideas/creating-cell-model/">
 
 
 
@@ -229,7 +229,7 @@
       
         
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="/categories/#blog" itemprop="item"><span itemprop="name">Blog</span></a>
+          <a href="/ideas" itemprop="item"><span itemprop="name">Ideas</span></a>
           <meta itemprop="position" content="2" />
         </li>
         <span class="sep">/</span>
@@ -237,7 +237,7 @@
     
       
       
-        <li class="current">Interviews in Cambridge</li>
+        <li class="current">Creating a cell model</li>
       
     
   </ol>
@@ -371,16 +371,16 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Interviews in Cambridge">
-    <meta itemprop="description" content="A few months ago, I went to Cambridge, UK, 🇬🇧 to participate to hiring days and interview for EMBL-EBI">
-    <meta itemprop="datePublished" content="2018-05-20T00:00:00-04:00">
+    <meta itemprop="headline" content="Creating a cell model">
+    <meta itemprop="description" content="Let’s think about some idea for bridging genotype to phenotype">
+    <meta itemprop="datePublished" content="2022-06-25T19:40:57-04:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/blog/interviews-in-cambridge/" class="u-url" itemprop="url">Interviews in Cambridge
+            <a href="http://localhost:4000/ideas/creating-cell-model/" class="u-url" itemprop="url">Creating a cell model
 </a>
           </h1>
           
@@ -397,7 +397,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          1 minute read
+          5 minute read
         
       </span>
     
@@ -412,40 +412,139 @@
           <aside class="sidebar__right ">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              
+              <ul class="toc__menu"><li><a href="#1-the-theory">1. the theory</a></li><li><a href="#2-the-main-components">2. the main components</a></li><li><a href="#3-good-measures--simplifications-given-current-data-sources">3. good measures &amp; simplifications given current data sources</a></li><li><a href="#4-remarks">4. remarks</a></li><li><a href="#5-conclusion">5. conclusion</a></li></ul>
 
             </nav>
           </aside>
         
-        <p>A few months ago, I went to <a href="https://fr.wikipedia.org/wiki/Cambridge">Cambridge</a>, UK, 🇬🇧 to participate to hiring days and interview for the European Molecular Biology, 🧬 Laboratory and <a href="https://www.ebi.ac.uk/">European Bioinformatic Institute</a>.</p>
+        <p>I always very much liked the fact that a lot of objectives of big companies and research lab in the AI space started with some hypothesis ➡️ model before going to find out how to build something that gets close to it.</p>
 
-<p><img src="https://cdn-images-1.medium.com/max/2000/1*2vhDB_2nMvctjEy8rVAx9g.jpeg" alt="" /></p>
+<p>Making theories first in biology has been a constant MIA part of the scientific process for this experimentally driven field.</p>
 
-<p>I knew England pretty well now but never visited Cambridge. We were hosted in a magnificent <a href="https://www.gonvillehotel.co.uk/">hotel</a>,🏨 in front of one of Cambridge’s college. Most of the aspiring Ph.D. students there were very bright and knowledgeable.</p>
+<p>Regarding computational biology, things are better regarding specific models and ideas. But goals themselves have also often lacked a clear description / hypothesis / model.</p>
 
-<p>The place is mixed with the Springer’s <a href="https://www.wellcomegenomecampus.org/">welcome genome campus</a> and span many designer, 👩‍🎨 buildings. In summer at least it felt very beautiful and lively. The researchers were in group made cubicles which would not be, to me, the best way to let people interact.</p>
+<p>A few key goals of modern biology / comp. biology is to understand how genotype influences phenotype. or basically, how a cell works.</p>
 
-<p><img src="https://cdn-images-1.medium.com/max/8064/1*hjG7G9efRKvLrUJMputQYQ.jpeg" alt="" /></p>
+<p>This has often been defined in terms of what are the available technologies and statistical power achievable with current cost constrains. Known methods recoup GWAS analysis, differential expression analysis, single cell expression atlases, RNAvelocities and other ML models to predict expression of genotype.</p>
 
-<p>We spent 3 days in total.</p>
+<p>Here I am playing with the idea of defining one model (amongst many other) to map genotype to phenotype, with little regards to cost and technology constraints. The goal is to start of discussion on the possible models, complexity requirements and missing technological breakthroughs.</p>
+
+<h2 id="1-the-theory">1. the theory</h2>
+
+\[Cs_t = fc(Cs_{t-1} | G, E)\]
+
+<p>Where:</p>
+
+<ul>
+  <li>\(G\) = Genotype = a current representation of the genotype of the cell (snps, indels, SVs)</li>
+  <li>\(E\) = nvironment = ressources, media, cell-cell interactions that the cell can have.</li>
+  <li>\(fc()\) = the cell function is actually the component that we are trying to learn and gives how the cell actually works.</li>
+  <li>\(Cs\) = Cell-state = cell processes, all the proteins inside the cell and their interactions, all pathway activation levels and current state.</li>
+</ul>
+
+<p>For pathways activation we mean a vector \(Pa\) where \(Pa = [a, PS]\), with:</p>
+
+<ul>
+  <li>\(a\) = activation value \([0-1]\)</li>
+  <li>\(PS\) = pathway state = representation of where the pathway is in its activation, what it is doing compared to what it can do.</li>
+</ul>
+
+<p>No open chromatin, no DNA location, no methylation/.., no TF, no epigenomics.
+This is because \(Epi_t = fp(Cs_1, .... Cs_t)\)
+⬅️ likely a simplification.</p>
+
+<p>Given that a cell can become epigenomically blank etc… given this fact, \({Epi_t}\) s can be learn as part of the \(fc()\) function in this simplification.</p>
+
+<p>It is true that in good vitro condition \(E ~ E_t\)</p>
+
+<p>But in high cell amounts this is not true and \(E_{t}=\sum_{\forall i} fe(Cs_{i,t}) + E_{t-1}\)</p>
+
+<p>Where \(fe()\) determines how each cell is removing/adding to the environment given its cell state)</p>
+
+<p>Moreover in cell complexes: each cells are actually taking a cell specific \(E_{i,t}\) where \(E_{i,t}=\sum_{\forall j} fe_{j,i}(Cs_j) + E_t\)</p>
+
+<p>Where \(k_{i,j}()\) is a function that determines what the cell j does to cell i given cell \(j\)’s state. where \(k_{i,j}()\) outputs a very sparse matrix as most cells do not interact)</p>
+
+<h2 id="2-the-main-components">2. the main components</h2>
+
+<p>You can see this as a RL problem. with an agent’s state and an environment.</p>
+
+<p>The agent possesses a fixed state (\(G\)), and environment (\(E\)) and a current state (\(Cs_t\))</p>
+
+<p>The goal is then to let the agent learn \(fc()\) given a good measure of \(Cs\), \(E\) and \(G\).</p>
+
+<p>But this is actually the crux of the problem:</p>
+
+<ol>
+  <li>There is no good measures of each.</li>
+  <li>There is no good representation of each.</li>
+  <li>Reading \(Cs\) often means killing the cell.</li>
+</ol>
+
+<p>Fortunately 2. might be solved as introducing additional components that could unsuperviselly learn representations of each component given good measure of each.</p>
+
+<p>Which actually leads me to the next point: <strong>good measures</strong></p>
+
+<h2 id="3-good-measures--simplifications-given-current-data-sources">3. <em>good measures</em> &amp; simplifications given current data sources</h2>
+
+<p>We will now separate the measures from the representations by calling:</p>
 
 <ul>
   <li>
-    <p>One for first introductions and a very stressful interview with many PIs at the same time, filled with tricky questions. We then finished the day going to a bar and having some “proper diner”.</p>
+\[Er = fre(E)\]
   </li>
   <li>
-    <p>One with lab, 🔬 visits and a final presentation of round of questions from every PIs again. The evening was fabulous, going to one of Cambridge’s <a href="https://goo.gl/maps/kcuPNYx35o62">oldest college</a> and having the fanciest diner in a reception room, discussing with all PIs.</p>
+\[Csr = frc(Cs)\]
   </li>
   <li>
-    <p>We spent the last day with final lab visits and group selection. We then went on to visit the city, 🌃 and do canoe, 🛶 on Cambridge’s river.</p>
+\[Gr = frg(G)\]
   </li>
 </ul>
 
-<p><img src="https://cdn-images-1.medium.com/max/8064/1*Ij_IK5l5lwAcn-zeoA52Kg.jpeg" alt="" /></p>
+<p>Where we now try to learn, \(fc()\), \(fre()\), \(frc()\), \(frg()\) (and could also try to learn: \(fp()\), \(fe()\) and \(k_{i,j}()\) s)</p>
 
-<hr />
+<p>And where:</p>
 
-<p>I was not accepted there, it was probably for the better as the coming month would be filled with amazing projects and news that would not have even matched this magnificent city.</p>
+\[Csr_t = fc(Csr_{t-1} | Gr, Er)\]
+
+<p>First, let’s talk about \(E\):</p>
+
+<p>We have defined 3 increasingly complex annotations for \(E\) (we will call each \(E1\), \(E2\), \(E3\)).</p>
+
+<p>E1 could be computed by having the cell measured from a virtually steady state in vitro environment. creating a representation Er of the different environments the cells have been analysed under seems pretty trivial.</p>
+
+<p>We could be feeding it some kind of a matrix of concentration of different elements and how these.</p>
+
+<p>For more complex \(Es\), there is challenges. \(E2\) requires you to learn first \(fc()\) but also \(fe()\). \(fe()\) is in a way what people call the secretome and technics have emerged to measure it. For \(E3\), one would need to also learn \(k_{i,j}()\). This seems very complex as a lot remains to be learnt in cell-cell interactions. Spatial-transcriptomic techniques however are starting to help in figuring out \(k_{i,j}()\).</p>
+
+<p>Then \(G\):</p>
+
+<p>To get a good \(Gr\) one would want to use available sequencing data (especially long read for them nice SVs) in order to define a personalized reference genome that can be fed in complex models such as enformer or basset, …, to -instead of making predictions on binding, etc- learn to create a small representation that let them predict the next bp in the genomic sequence.</p>
+
+<p>There is a lot to do here. how do we best represent this personalized genome? what is the set of possible genomes? A FASTA file seems to be the worst way to do so. bu there is little other ideas…</p>
+
+<p>Using annotations based on epigenomics and prior knownledge,might help in defining this representation.</p>
+
+<p>Then there is \(Cs\):</p>
+
+<p>For this there is many venues: ….</p>
+
+<p>To wrap it all up a future direction is evidently to learn all functions as one end to end AI model. This would also for much better transfer learning, missing data etc…
+However it would require a astronomical amount data, mostly paired across modalities.</p>
+
+<h2 id="4-remarks">4. remarks</h2>
+
+<p>Theses processes are not continuous in time and do not work in a stepwise manner.</p>
+
+<p>Diffusion coefficients, stretchings and other chemical / mechanical processes might no be well learned in this framework.</p>
+
+<h2 id="5-conclusion">5. conclusion</h2>
+
+<p>By having this model, we have defined a set of directions to learn a genotype to phenotype mapping.</p>
+
+<p>This could be hinting at set of experiment to gather as many possible measurements to learn each functions.</p>
+
+<p>From getting a cell line and a stem cell population and changing the in vitro media widely while measure the response via single cell RNAseq or super resolution microscopy.</p>
 
         
       </section>
@@ -453,27 +552,6 @@
       <footer class="page__meta">
         
         
-  
-
-
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
-    <span itemprop="keywords">
-    
-      <a href="/tags/#cambridge" class="page__taxonomy-item p-category" rel="tag">Cambridge</a><span class="sep">, </span>
-    
-      <a href="/tags/#job-interview" class="page__taxonomy-item p-category" rel="tag">Job Interview</a><span class="sep">, </span>
-    
-      <a href="/tags/#phd" class="page__taxonomy-item p-category" rel="tag">PhD</a><span class="sep">, </span>
-    
-      <a href="/tags/#research" class="page__taxonomy-item p-category" rel="tag">Research</a>
-    
-    </span>
-  </p>
-
-
 
 
   
@@ -485,7 +563,7 @@
     <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
     <span itemprop="keywords">
     
-      <a href="/categories/#university-of-kent" class="page__taxonomy-item p-category" rel="tag">University of Kent</a>
+      <a href="/categories/#frustrations-and-solutions" class="page__taxonomy-item p-category" rel="tag">Frustrations and Solutions</a>
     
     </span>
   </p>
@@ -493,7 +571,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2018-05-20T00:00:00-04:00">May 20, 2018</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2022-06-25T19:40:57-04:00">June 25, 2022</time></p>
 
       </footer>
 
@@ -502,22 +580,21 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=jkobject&text=Interviews+in+Cambridge%20http%3A%2F%2Flocalhost%3A4000%2Fblog%2Finterviews-in-cambridge%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=jkobject&text=Creating+a+cell+model%20http%3A%2F%2Flocalhost%3A4000%2Fideas%2Fcreating-cell-model%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fblog%2Finterviews-in-cambridge%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fideas%2Fcreating-cell-model%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fblog%2Finterviews-in-cambridge%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fideas%2Fcreating-cell-model%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/blog/a-msc-at-the-univeristy-of-kent/" class="pagination--pager" title="A MSc at the University of Kent
-">Previous</a>
+      <a href="#" class="pagination--pager disabled">Previous</a>
     
     
-      <a href="/blog/broadinstitute-interview/" class="pagination--pager" title="Boston Interviews
+      <a href="/ideas/hydropony/" class="pagination--pager" title="hydroponics and vertical farming
 ">Next</a>
     
   </nav>
@@ -796,8 +873,8 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/blog/interviews-in-cambridge/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/blog/interviews-in-cambridge"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://localhost:4000/ideas/creating-cell-model/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/ideas/creating-cell-model"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');

@@ -1,4 +1,10 @@
 var store = [{
+        "title": "Creating a cell model",
+        "excerpt":"I always very much liked the fact that a lot of objectives of big companies and research lab in the AI space started with some hypothesis ➡️ model before going to find out how to build something that gets close to it. Making theories first in biology has been a...","categories": ["Frustrations and Solutions"],
+        "tags": [],
+        "url": "/ideas/creating-cell-model/",
+        "teaser": "/assets/images/cell_model.jpeg"
+      },{
         "title": "hydroponics and vertical farming",
         "excerpt":"Recently I had fun making some short back of the envelop computation on the use of hydroponics 📨 in a future world. Unregarding any related challenges, what would be the footprint of a factory producing the world’s food supply? 🤔 what is hydroponics? Here by hydroponics I am talking about...","categories": ["Sustaining Humanity"],
         "tags": [],
@@ -24,7 +30,7 @@ var store = [{
         "teaser": "/assets/images/brain.jpeg"
       },{
         "title": "Police Violence & Racism [FR]",
-        "excerpt":"Les Violences Policières et le Racisme. Hello! Donc voilà, j’imagine que vous suivez tous au moins un peu ce mouvement mondial contre les violences policières et le racisme. Comme la plupart de mes collègues, j’ai aujourd’hui mené une grève d’une journée pour passer du temps à agir contre le racisme...","categories": ["Justice"],
+        "excerpt":"Les Violences Policières et le Racisme. Hello! Donc voilà, j’imagine que vous suivez tous au moins un peu ce mouvement mondial contre les violences policières et le racisme. Comme la plupart de mes collègues, j’ai mené aujourd’hui une grève d’une journée. Le but de celle-ci est de prendre un moment...","categories": ["Justice"],
         "tags": ["Violence","Justice","Racism","Society"],
         "url": "/opinions/on-police-violence-french/",
         "teaser": "/assets/images/couverture.png"
@@ -52,6 +58,12 @@ var store = [{
         "tags": ["Education","Carrier","France","Engineer","Prepa"],
         "url": "/blog/a-french-engineering-school/",
         "teaser": "/assets/images/engschool1.jpeg"
+      },{
+        "title": "Boom Festivals & Eurotrips",
+        "excerpt":"I am not going to talk about thaat!!   I am trying to make it a somewhat professional blog! But feel free to ask me around a beer. 😉  ","categories": ["ECE"],
+        "tags": ["PhD"],
+        "url": "/blog/festivals/",
+        "teaser": "/assets/images/.jpeg"
       },{
         "title": "A semester abroad in Mexico",
         "excerpt":"During my third year of undergraduate studies, I went on to do a semester exchange in Mexico.🇲🇽 The city, 🌃 of Queretaro of the eponym region is placed in the center of Mexico and tops a 2000m plateau. There I studied computer, 💻 science, design and statistics at the Tec...","categories": ["ECE"],
@@ -184,4 +196,10 @@ var store = [{
         "tags": ["Research","Broad Institute","Data Science","Cancer Dependencies","Epigenomics"],
         "url": "/projects/AMLproject/",
         "teaser": "/assets/images/dependency-prediction.jpg"
+      },{
+        "title": "genepy",
+        "excerpt":"If you too, want to do computational biology but have a strong opinion about R. You have come to the right place. When I arrived at the BroadInstitute in early 2019, I quickly realized that my goal of doing python at work was in jeopardy. what is going on Everyone...","categories": ["BroadInstitute"],
+        "tags": ["Big Data","genomics","Python"],
+        "url": "/projects/genepy/",
+        "teaser": "/assets/images/genepy.jpeg"
       }]
