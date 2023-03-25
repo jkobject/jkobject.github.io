@@ -201,9 +201,6 @@ In these tasks we also prepare the data to be released to different groups, remo
 
 You can however find all of these files directly on the [download section](https://depmap.org/portal/download/)
 
-
-
-
 ----
 
 you can find the project's repository [here](https://github.com/broadinstitute/ccle_processing)

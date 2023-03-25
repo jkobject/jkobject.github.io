@@ -1,0 +1,21 @@
+Cart	Case ID	Project	Primary Site	Gender	Files	Seq	Exp	SNV	CNV	Meth	Clinical	Bio	Annotations	Slides	Disease Type	Age at diagnosis	Primary Diagnosis	Ethnicity
+Case Actions	HCM-BROD-0001-C18	HCMI-CMDC	Rectum	Female	68	12	4	38	4	0	1	1	0	0	Adenomas and Adenocarcinomas	47 years 150 days	Adenocarcinoma, NOS	Unknown
+Case Actions	HCM-BROD-0210-C71	HCMI-CMDC	Brain	Female	68	12	4	36	2	6	1	1	0	0	Gliomas	53 years 228 days	Glioblastoma	not hispanic or latino
+Case Actions	HCM-CSHL-0056-C18	HCMI-CMDC	Colon	Male	74	12	4	38	4	6	1	1	0	0	Adenomas and Adenocarcinomas	75 years 38 days	Adenocarcinoma, NOS	not hispanic or latino
+Case Actions	HCM-CSHL-0062-C18	HCMI-CMDC	Rectum	Female	74	12	4	38	4	6	1	1	0	0	Adenomas and Adenocarcinomas	70 years 217 days	Adenocarcinoma, NOS	not hispanic or latino
+Case Actions	HCM-BROD-0035-C49	HCMI-CMDC	Bones, joints and articular cartilage of other and unspecified sites	Male	68	12	4	38	4	0	1	1	0	0	Soft Tissue Tumors and Sarcomas, NOS	9 years 298 days	Undifferentiated sarcoma	Unknown
+Case Actions	HCM-BROD-0335-C43	HCMI-CMDC	Skin	Male	39	7	2	19	2	3	1	1	0	0	Nevi and Melanomas	61 years 257 days	Malignant melanoma, NOS	not hispanic or latino
+Case Actions	HCM-BROD-0199-C71	HCMI-CMDC	Brain	Male	138	22	8	76	8	6	1	1	0	0	Gliomas	49 years 27 days	Glioblastoma	not hispanic or latino
+Case Actions	HCM-BROD-0209-C71	HCMI-CMDC	Brain	Male	74	12	4	38	4	6	1	1	0	0	Gliomas	41 years 305 days	Glioblastoma	hispanic or latino
+Case Actions	HCM-CSHL-0510-D13	HCMI-CMDC	Small intestine	Female	68	12	4	38	4	0	1	1	0	0	Adenomas and Adenocarcinomas	59 years 21 days	Tubulovillous adenoma, NOS	not reported
+Case Actions	HCM-BROD-0234-C49	HCMI-CMDC	Skin	Male	68	12	4	38	4	0	1	1	0	0	Soft Tissue Tumors and Sarcomas, NOS	76 years 191 days	Spindle cell sarcoma	not hispanic or latino
+Case Actions	HCM-BROD-0100-C15	HCMI-CMDC	Esophagus	Male	74	12	4	38	4	6	1	1	0	0	Adenomas and Adenocarcinomas	64 years 138 days	Adenocarcinoma, NOS	not hispanic or latino
+Case Actions	HCM-BROD-0106-C71	HCMI-CMDC	Brain	Male	68	12	4	38	4	0	1	1	0	0	Gliomas	52 years 268 days	Glioblastoma	hispanic or latino
+Case Actions	HCM-BROD-0103-C71	HCMI-CMDC	Brain	Female	74	12	4	38	4	6	1	1	0	0	Gliomas	11 years 278 days	Glioblastoma	not hispanic or latino
+Case Actions	HCM-BROD-0223-C43	HCMI-CMDC	Skin	Male	74	12	4	38	4	6	1	1	0	0	Nevi and Melanomas	73 years 80 days	Malignant melanoma, NOS	Unknown
+Case Actions	HCM-BROD-0104-C71	HCMI-CMDC	Brain	Female	67	9	2	38	4	6	1	1	0	0	Gliomas	63 years 10 days	Glioblastoma	not hispanic or latino
+Case Actions	HCM-BROD-0036-C41	HCMI-CMDC	Bones, joints and articular cartilage of other and unspecified sites	Male	74	12	4	38	4	6	1	1	0	0	Miscellaneous Bone Tumors	13 years 249 days	Ewing sarcoma	Unknown
+Case Actions	HCM-CSHL-0094-C25	HCMI-CMDC	Pancreas	Female	106	17	6	57	6	6	1	1	0	0	Ductal and Lobular Neoplasms	61 years 188 days	Infiltrating duct carcinoma, NOS	not reported
+Case Actions	HCM-BROD-0334-C43	HCMI-CMDC	Skin	Male	28	5	2	17	0	0	1	1	0	0	Nevi and Melanomas	70 years 301 days	Malignant melanoma, NOS	not hispanic or latino
+Case Actions	HCM-BROD-0045-C16	HCMI-CMDC	Stomach	Male	67	9	2	38	4	6	1	1	0	0	Adenomas and Adenocarcinomas	58 years 33 days	Adenocarcinoma, NOS	not hispanic or latino
+Case Actions	HCM-CSHL-0162-C19	HCMI-CMDC	Rectum	Male	74	12	4	38	4	6	1	1	0	0	Adenomas and Adenocarcinomas	62 years 131 days	Adenocarcinoma, NOS	not hispanic or latino
