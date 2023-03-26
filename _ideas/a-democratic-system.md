@@ -2,7 +2,11 @@
 title: "A democratic system"
 excerpt: "Here I present an idea that I have long analyzed with friends and family and I now want to submit to the internet to judge"
 category: "Frustrations and Solutions"
+header:
+ teaser: "/assets/images/brave-new.jpg"
 ---
+
+![brave-new](/assets/images/brave-new.jpg)
 
 Politics have seem to become more and more polarized and divided. However, one thing that we have to agree on is that despite the fact that capitalism, liberalism & democracy have improved the life of most of humanity on earth, it is still not a perfect system. It has many flaws. Saying otherwise would at minimum be a lack of imagination and most likely an ignorance of what many humans, even in developed countries have to live through.
 
@@ -79,7 +83,9 @@ This new legal entity, similar to a SAS or LTD for companies, is governed by rul
 
 Under this model, anyone or any moral entity can establish such an organization. Some of these entities are implemented at various ranks, from Rank 1 to Rank N. These new entities are voted into a rank N locality, and they can also be voted out if they fail to meet the expectations of those they “govern”. Although governing is not the right word for an entity whose goal is to define ethical codes or improve economic laws, we would want to say something like “integrate”.
 
-In this system, the decision-making process of these entities resembles that of companies. The individuals or entities “integrated” by them act as "shareholders," with each entity having a say in the decisions and directions taken. 
+In this system, the decision-making process of these entities resembles that of companies. The individuals or entities “integrated” by them act as "shareholders," with each entity having a say in the decisions and directions taken.
+
+![brave-new3](/assets/images/brave-new3.jpg)
 
 In this reimagined political system, technological methods play a crucial role in facilitating a more efficient and inclusive decision-making process. These technologies enable the potentially hundreds of daily votes submitted by individuals and entities to be managed effectively.
 
@@ -104,6 +110,9 @@ The voting credit system ensures that participants can effectively express their
 All rules implemented under this system have a predefined lifespan, determined during the voting process and capped between 10- 50 years. This ensures that regulations remain relevant and adaptable as societies evolve.
 
 By transforming public institutions into entities that resemble companies, we can foster a more dynamic, efficient, and responsive decision-making process. This approach allows for greater public participation and ensures that diverse concerns are taken into account, ultimately leading to more effective governance and improved political systems.
+
+
+![brave-new4](/assets/images/brave-new4.jpg)
 
 ### 2.3. deciding the right entity based on neighbors
 
@@ -146,6 +155,8 @@ In some aspects, the proposed political system shares similarities with existing
 
 Additionally, the proposed system bears resemblance to the relationship between states in the United States and the federal government. In both cases, there is a balance of power between the central authority and regional entities. However, the key difference lies in the distribution of power within the new system. Instead of a centralized authority, the proposed political system features a clear division of power across various institutions, allowing for a more decentralized and responsive governance structure.
 
+
+
 #### 2.5.1. solving many things
 
 The proposed political system offers several advantages over current frameworks by addressing some of their limitations and enhancing their strengths:
@@ -158,7 +169,9 @@ The proposed political system offers several advantages over current frameworks 
   6. Dynamic policy evolution: The system allows for continuous experimentation and learning, as communities can regularly update their policies based on new evidence or the experiences of other communities. This dynamic approach to policy-making ensures that governance remains adaptive and resilient in the face of emerging challenges.
 
 By addressing these issues and building upon the strengths of existing political systems, the proposed model aims to create a more efficient, responsive, and representative political landscape that better serves the needs of diverse communities across the globe.
-  
+
+![brave-new5](/assets/images/brave-new5.jpg)
+
 ### 2.6. new means of failure
 
 While the proposed political system presents several advantages and improvements over current frameworks, there are potential challenges and risks that could undermine its effectiveness:
