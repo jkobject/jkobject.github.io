@@ -41,17 +41,23 @@ var store = [{
         "url": "/opinions/on-police-violence-french/",
         "teaser": "/assets/images/couverture.png"
       },{
-        "title": "why most brain-machine interfaces ideas suck",
-        "excerpt":"I have often heard 👂 how Brain Machine Interfaces, also known as BMIs, would one day be a consumer products. Imagine being able to have a third arm. To control machines from your thoughts. Imagine being able to not just be in virtual reality through a headset; but to live...","categories": ["Biology & Medecine"],
-        "tags": [],
-        "url": "/opinions/why-BMI-sucks/",
-        "teaser": "/assets/images/BMIchip.jpeg"
-      },{
         "title": "Reproducibility in Biology",
         "excerpt":"Reproducibility in biology - bioinformatics research Having now worked for more than 2 years in a research environment and having been very sensitive about good, reproducible and open science. I have seen from large group computational labs and small group bench labs the issues and reasoning that might lead to...","categories": ["Scientific Method"],
         "tags": ["Computational Biology","Data Science","Research"],
         "url": "/opinions/reproducibility_in_biology/",
         "teaser": "/assets/images/pipetting_bio.jpg"
+      },{
+        "title": "the case against prisons",
+        "excerpt":"Title: The Case Against Prisons: Rethinking Punishment and Rehabilitation Introduction Prisons have long been a cornerstone of modern criminal justice systems. However, their efficacy as a means of punishment and rehabilitation is increasingly coming under scrutiny. In this op-ed, we will examine the historical context of prisons, highlighting that they...","categories": ["Frustrations and Solutions"],
+        "tags": [],
+        "url": "/opinions/the-case-against-prisons/",
+        "teaser": "/assets/images/prisons.jpg"
+      },{
+        "title": "why most brain-machine interfaces ideas suck",
+        "excerpt":"I have often heard 👂 how Brain Machine Interfaces, also known as BMIs, would one day be a consumer products. Imagine being able to have a third arm. To control machines from your thoughts. Imagine being able to not just be in virtual reality through a headset; but to live...","categories": ["Biology & Medecine"],
+        "tags": [],
+        "url": "/opinions/why-BMI-sucks/",
+        "teaser": "/assets/images/BMIchip.jpeg"
       },{
         "title": "Why most ai discussions are dumb",
         "excerpt":"Today I wanted to share feelings and thoughts I often have while listening to discussions about Artificial Intelligence. We have heard a lot about this field, what it is doing now and its promises. We have also heard a lot about expectations and fears for the future. And it is...","categories": ["AI"],
