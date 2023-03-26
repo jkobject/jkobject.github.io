@@ -1,4 +1,10 @@
 var store = [{
+        "title": "A democratic system",
+        "excerpt":"Politics have seem to become more and more polarized and divided. However, one thing that we have to agree on is that despite the fact that capitalism, liberalism &amp; democracy have improved the life of most of humanity on earth, it is still not a perfect system. It has many...","categories": ["Frustrations and Solutions"],
+        "tags": [],
+        "url": "/ideas/a-democratic-system/",
+        "teaser": "/assets/images/brave-new.jpg"
+      },{
         "title": "Creating a cell model",
         "excerpt":"I always very much liked the fact that a lot of objectives of big companies and research lab in the AI space started with some hypothesis ➡️ model before going to find out how to build something that gets close to it. Making theories first in biology has been a...","categories": ["Frustrations and Solutions"],
         "tags": [],
