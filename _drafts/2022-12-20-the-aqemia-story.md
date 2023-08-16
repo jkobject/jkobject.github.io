@@ -133,9 +133,7 @@ unfriendlyness of some team members. Me vs You. Out to win against you.
 
 > Am I in a Biotech version of a Boston-Consulting-Group like French company filled with internal fights, hidden allegiences and faked behaviors?
 
-
 Realizing it has never been a challenge, I had no chance.
-
 
 ## reverse culture shock
 
