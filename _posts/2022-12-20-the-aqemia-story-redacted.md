@@ -1,14 +1,14 @@
 ---
 title: "The Aqemia Story"
-excerpt: "If you are working in data-sciences / genomics and on large-scale projects: This post might be of interest to you."
+excerpt: "I have spent a few months at Aqemia as a Research Scientist. This is my story."
 category: "Other Work Experience"
 date: 2022-12-20
 tags:
  - Big Data
- - genomics
+ - Drug Discovery
  - Python
 header:
-  teaser: "assets/images/.png"
+  teaser: "assets/images/aqemia.jpg"
 ---
 
 During the summer of 2022, I was feeling pretty desperate. I had just spent 6 months over many failed attempts at securing positions at high-profile companies like Deepmind, BenevolentAI, Isomorphic Labs, and Owkin. I had gone through very long and tedious interview processes where for some, it had felt like I was mainly just missing a Ph.D. . Some other times it felt like bad luck. Or not taking enough time outside work to review concepts.
@@ -36,6 +36,7 @@ But I might at least let you know about what Aqemia was very open about as of th
 - This percentage is higher for people with previous experience in industry and biotech. Aqemia is largely composed of young graduates.
 - Aqemia is mostly composed of people coming from a small set of elite French engineering schools. They have however little knowledge in research and biology.
 
-<a href="mailto:jkobject@gmail.com" class="btn btn--light-outline btn--large">send me an email to get the full story here</a>
-
 ------------- REDACTED -------------
+
+<a href="mailto:jkobject@gmail.com" class="btn btn--primary btn--large">send me an email to get the full story here</a>
+
