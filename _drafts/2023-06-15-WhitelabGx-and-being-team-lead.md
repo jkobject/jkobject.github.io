@@ -122,15 +122,57 @@ This was humbling and something I took extremly at heart. I had lead people befo
 
 I received good feedback from the get go and even with some misshaps things only got better. I have been able to start two new recruitment to increase the team from 3 to 5.
 
-wasculture shock 
+However this was not just all fun. Amongst the possible points I could list. A big one was the reverse culture shock. In the way people behaved with one another in the proffessional sphere and the way things were done in general.
 
-lack of personal know how in startups
+A few examples:
 
-some "simpler work".
+- vacation time
+- smoking cigarettes
+- going out in bars much more often
+- being very/too friendly with one another
+- jokes / swears / etc.
 
-teaching people
+But some of it could be specific to this startup and the team being quite young, I was able to spot a general lack of personal know how in startups. This would prove problematic as missbehaviours even unintentional can backfire in the most terrible after some time and when you add stress and the like. Some issues could be listed in the "behaving sometime like children" category:
 
-and especially processes
+- fighting with each other instead of collaborating
+- putting too much emotion on silly topics and on projects
+- taking feedbacks personnaly.
+- disregarding rules, processes and hierarchy
+
+But especially processes, or the lack thereof were a big issue in itself. This is something that team leader were tasked in implemeting. But it was requiring as much learning as unlearning problematic behavior and people were averse to change.
+
+Now, even after 8 months this is still an important topic and many of the issues we are facing within the company are steming from this lack of processes.
+
+## the issues
+
+It only took a few weeks before I saw the most glaring issues at Whitelab. But as always it took many months before they emerged as a clear picture to me.
+
+This is very interesting to see patterns of similarity and differences between the two startup experiences I just had. What I could notice is that:
+
+1. The C-levels' personalities reflect totally on the company culture.
+2. The C-levels' domain knowledge is key to success.
+3. Ability to create agile processes and to hire the right people at the right time is also key to success.
+4. Fostering a culture of trust and respect is how you can keep the best people in your company.
+
+Whitelab was certainly checking a lot more boxes than Aqemia but some key topics emerged still:
+
+- The level of the team at the time was still too low to be able to deliver on the vision. People were lacking the know how in many regards and this is because the C-levels were missing a CTO with an expensive Comp Bio experience.
+- This missing CTO was also hindering the ability to create pipeline and a clear technical translation of the vision.
+- The growth was slow compared to the vision and Whitelab was lacking an ability to hire. This was also explained by the funding: 10M€ is not that much in hindsight.
+- the chill out work environment, in all the good it brings, was too extreme and leading to a sense for me of inefficiency and lack of focus. I know how much people work in Boston, how much they work in other startups. And even if one should not confuse working a lot with working well. I could see that people were not working enough for the vision to be achieved.
+
+## issue in european biotechs
+
+I would like to add 3 points that I believe are less specific to Whitelab and might be a common aspect of european companies:
+
+- short on money for the experimental facility
+- difficulty to recruit talents & lack of experience
+
+### An issue in most biotechs
+
+Final issue I noticed
+- the open sourcing and privacy scare
+
 
 ## the startup vibe
 
@@ -138,37 +180,5 @@ and especially processes
 - recruitement
 - client presentation
 
-## the issues
 
-It only took a few weeks before I saw the most glaring issues at Whitelab. But as always it took many months before they emerged as a clear picture to me.
-
-This is very interesting to see patterns of similarity and differences between the two startup experiences.
-
-- level of the team at the time
-- the open sourcing and privacy scare
-- missing a CTO and a tech vision and a pipeline
-- slow growth
-- the chill out work environment
-
--- shared issues
-
-lack of experience
-short on money for the experimental facility
-difficulty to recruit talents
-
-## the many lessons learned
-
-I learned th
-
-Open sourcing in computational biology. what it means to be a comp bio team in a biotech? how do you generate value? what is your worth? how do you hire the best people?
-
-being a great C level in a startup.
-
-Impact of C levels on a startup culture
-
-Thinking product first even in comp bio.
-
-Thinking strategy & BD. 
-
-The future of cell and gene therapies.
 
