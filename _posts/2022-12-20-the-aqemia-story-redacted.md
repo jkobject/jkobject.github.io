@@ -32,8 +32,8 @@ But I might at least let you know about what Aqemia was very open about as of th
 
 - Aqemia is a very fast environment.
 - A lot of people -more than half- leave the company after a few months. It is not clear if this is because of Aqemia's decisions or because of their own.
-This percentage is higher for people with previous experience in industry and biotech. Aqemia is largely composed of young graduates.
-- Aqemia is mostly composed of people coming from a small set of elite French engineering schools. They have, however, little to no experience in biomedical research and biology.
+This percentage seemed higher for people with previous experience in industry and biotech.
+- is largely composed of young graduates from a small set of elite French engineering schools. They have, however, little experience in biomedical research and biology.
 
 ------------- REDACTED -------------
 
