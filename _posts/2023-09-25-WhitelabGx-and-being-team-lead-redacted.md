@@ -2,13 +2,15 @@
 title: "My Work at Whitelab and Creating a Team"
 excerpt: "I have jointed an AI Biotech startup for CGTs in Paris. See my experience here"
 category: "Other Work Experience"
-date: 2023-06-15
+date: 2023-09-25
+layout: single
 tags:
  - Big Data
  - genomics
  - Python
 header:
   teaser: "assets/images/whitelabgx.jpeg"
+  overlay_image: "assets/images/whitelabgx.jpeg"
 ---
 
 After a very deceptive end of the year, I decided I wanted to take a month or so to get my thoughts in order. To relax and find some peace with what had happened. :peace:

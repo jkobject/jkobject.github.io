@@ -2,12 +2,14 @@
 title: "The Final Decision, PhD, Celligner2 and Foundational Models"
 excerpt: "I take a big decision and provide many lessons learned along the way, about leading teams, companies, doing a Ph.D. and working in startups"
 category: "PhD"
-date: 2023-09-10
+toc: true
+date: 2023-10-02
 tags:
  - Startups
- - PhD
+ - Comp-Bio
 header:
   teaser: "assets/images/photo-pasteur.jpg"
+  overlay_image: "assets/images/photo-pasteur.jpg"
 ---
 
 This is a big story, and it seems that everything before led me to this point. 😊 I have decided to join [Laura Cantini](https://research.pasteur.fr/fr/team/machine-learning-for-integrative-genomics/) at Institut Pasteur and [Gabriel Peyré](http://www.gpeyre.com/) at ENS ULM for a joint Ph.D. in Computational Biology and Applied Mathematics. 🧬📊 I will try to explain here my decision process for something that can appear as a very sudden change of direction and slightly crazy, given my current position at WhitelabGx.
