@@ -2,7 +2,7 @@
 title: "The Final Decision, PhD, Celligner2 and Foundational Models"
 excerpt: "I take a big decision and provide many lessons learned along the way, about leading teams, companies, doing a Ph.D. and working in startups"
 category: "PhD"
-date: 2023-09-25
+date: 2023-09-10
 tags:
  - Startups
  - PhD
