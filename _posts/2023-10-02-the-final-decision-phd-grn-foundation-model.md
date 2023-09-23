@@ -188,11 +188,11 @@ Thus my final goal is to enjoy it, as much as I can!😊🚀
 
 Thus my motto for this Ph.D. will be:
 
-do it in 2 years and be prepared
-make as many connections as I can
-maximize impact on the community: make something useful
-enjoy it as much as possible
+1. do it in 2 years and be prepared
+2. make as many connections as I can
+3. maximize impact on the community: make something useful
+4. enjoy it as much as possible
 
 ## Ph.D. proposal
 
-<a href="https://www.jkobject.com/assets/pdf/PhD_project.pdf" class="btn btn--primary btn--large">Link to the proposal</a>
+<a href="https://www.jkobject.com/assets/documents/PhD_project.pdf" class="btn btn--primary btn--large">Link to the proposal</a>
