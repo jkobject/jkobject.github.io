@@ -6,7 +6,6 @@ date: 2023-09-25
 tags:
  - Startups
  - PhD
- - Comp-Bio
 header:
   teaser: "assets/images/photo-pasteur.jpg"
 ---
