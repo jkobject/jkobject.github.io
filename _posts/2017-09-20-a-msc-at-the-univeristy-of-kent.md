@@ -31,6 +31,6 @@ Boy it was nice, 👍 . My girlfriend, at the time, was living in London and I c
 
 ![](https://cdn-images-1.medium.com/max/3200/1*A7o8iHrsDiSkIGS5lA62gA.jpeg)
 
-The efforts were worth it and I would never do things differently, I discovered the British way of life with its Wittabix, pubs, 8 pints, 🍻🍺 a night, its porridges and brunches.
+The efforts were worth it and I would never do things differently, I discovered the British way of life with its Wittabix, pubs, 8 pints a night  🍻🍺, its porridges and brunches.
 
-You can now more about before, during and after this exchange, [here](http://www.jkobject.com)
+You can know more about what happened before, during and after this exchange, [here](http://www.jkobject.com)
