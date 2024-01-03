@@ -3,6 +3,7 @@ title: "My Work at Whitelab and Creating a Team"
 excerpt: "I have jointed an AI Biotech startup for CGTs in Paris. See my experience here"
 category: "Other Work Experience"
 date: 2023-09-25
+words_per_minute: 40
 layout: single
 tags:
  - Big Data

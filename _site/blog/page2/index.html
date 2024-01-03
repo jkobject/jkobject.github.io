@@ -79,6 +79,8 @@
 </script>
 
 
+  <meta name="google-site-verification" content="G-YTQBB5S9QB" />
+
 
 
 
@@ -99,10 +101,33 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/main.css" id="theme_source">
+
+  <link rel="stylesheet" href="/assets/css/theme2.css" id="theme_source_2">
+  <script>
+    if (sessionStorage.getItem('theme') === null) {
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        sessionStorage.setItem('theme', 'dark');
+      }
+      else{
+        sessionStorage.setItem('theme', 'light');
+      }
+    }
+
+    let theme = sessionStorage.getItem('theme');
+    if(theme === "dark"){
+      document.getElementById('theme_source').setAttribute('rel', 'stylesheet alternate'); 
+      sessionStorage.setItem('theme', 'dark');
+    }
+    else
+    {
+      document.getElementById('theme_source_2').setAttribute('rel', 'stylesheet alternate'); 
+      sessionStorage.setItem('theme', 'light');
+    }
+  </script>
+
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
-
 
 
     <!-- start custom head snippets -->
@@ -167,27 +192,34 @@
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/about/" title="I am a human. I wish to make the world better with science. <3">About</a>
             </li><li class="masthead__menu-item">
-              <a href="/projects/" title="">Projects</a>
+              <a href="/blog/" title="A short extract about my life experiences.">Blog</a>
             </li><li class="masthead__menu-item">
-              <a href="/opinions/">Opinions</a>
+              <a href="/projects/" title="">Projects</a>
             </li><li class="masthead__menu-item">
               <a href="/ideas/">Ideas</a>
             </li><li class="masthead__menu-item">
-              <a href="/blog/" title="A short extract about my life experiences.">Blog</a>
+              <a href="/opinions/">Opinions</a>
             </li><li class="masthead__menu-item">
-              <a href="/papers/">Papers</a>
+              <a href="/activities/" title="This is my personal list of books, Comics and films I love.">Activities</a>
+            </li><li class="masthead__menu-item">
+              <a href="/phd/">PhD</a>
             </li><li class="masthead__menu-item">
               <a href="/courses/" title="Here is the list of the Courses I have received and the one I have given.">Courses</a>
             </li><li class="masthead__menu-item">
-              <a href="/culture/" title="This is my personal list of books, Comics and films I love.">Culture</a>
+              <a href="https://jkobject.notion.site/92154f7b21da482b9a88daef49837bee?v=e0fc9c8764404f2e9804b889367758f6&pvs=74">Database</a>
             </li><li class="masthead__menu-item">
-              <a href="/categories/" title="Everything sorted by categories.">Subjects</a>
+              <a href="/papers/">Papers</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" title="Everything sorted by categories.">Categories</a>
             </li></ul>
         
         <button class="search__toggle" type="button">
           <span class="visually-hidden">Toggle search</span>
           <i class="fas fa-search"></i>
         </button>
+        
+        
+          <li><i class="fas fa-fw fa-adjust dark_mode_btn" aria-hidden="true" onclick="dark_mode_btn_click()"></i></li>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
@@ -198,8 +230,6 @@
     </div>
   </div>
 </div>
-
-
     <div class="initial-content">
       
 
@@ -247,7 +277,7 @@
       
         
           
-            <li><a href="https://twitter.com/jkobject" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+            <li><a href="https://LinkedIn.com/in/jkobject" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
           
         
           
@@ -255,7 +285,7 @@
           
         
           
-            <li><a href="https://LinkedIn.com/in/jkobject" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+            <li><a href="https://twitter.com/jkobject" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
           
         
       
@@ -357,15 +387,6 @@
 }
 </style>
 
-<div class="twit">
-	<a class="twitter-timeline" height="800" href="https://twitter.com/jkobject?ref_src=twsrc%5Etfw">Tweets by me @jkobject</a>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div> 
-
-<p>
-My name is Jérémie Kalfon and I am a student, an entrepreneur and a researcher.
-</p>
-
 <img style="border-radius: 30px; margin-bottom: 10px" src="assets/images/propotable/contactme.jpg" alt="photo of me taken by juliette Hirsch"/>
 
 <a href="/about/" class="btn btn--primary align-center" >About me</a>
@@ -389,10 +410,235 @@ My name is Jérémie Kalfon and I am a student, an entrepreneur and a researcher
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
+        <a href="/blog/interviews-at-epfl/" rel="permalink">Interviews at EPFL
+</a>
+      
+    </h2>
+    
+      <div class="thumbnail-container">
+        <img src="/assets/images/epflinter.jpeg" alt="">
+      </div>
+    
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">During the last week of January I had the chance to enter the hiring program of EPFL’s edcb program.
+</p>
+  </article>
+</div>
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/broadinstitute-interview/" rel="permalink">Boston Interviews
+</a>
+      
+    </h2>
+    
+      <div class="thumbnail-container">
+        <img src="/assets/images/broad1.png" alt="">
+      </div>
+    
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">I have had the chance to fly to Boston in the last week of January to spend a day at the broad institute of MIT and Harvard.
+</p>
+  </article>
+</div>
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/interviews-in-cambridge/" rel="permalink">Interviews in Cambridge
+</a>
+      
+    </h2>
+    
+      <div class="thumbnail-container">
+        <img src="/assets/images/cambridgeitw.jpeg" alt="">
+      </div>
+    
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">A few months ago, I went to Cambridge, UK, 🇬🇧 to participate to hiring days and interview for EMBL-EBI
+</p>
+  </article>
+</div>
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/a-msc-at-the-univeristy-of-kent/" rel="permalink">A MSc at the University of Kent
+</a>
+      
+    </h2>
+    
+      <div class="thumbnail-container">
+        <img src="/assets/images/kentuni.jpeg" alt="">
+      </div>
+    
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">I recently came back from a graduation, 🎓 day in Canterbury, England.
+</p>
+  </article>
+</div>
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/human-brain-project/" rel="permalink">The Human Brain Project
+</a>
+      
+    </h2>
+    
+      <div class="thumbnail-container">
+        <img src="/assets/images/hbp.jpeg" alt="">
+      </div>
+    
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">The Human Brain Project is a European Research Organization focused on understanding the Human Brain using today’s new computational power.
+</p>
+  </article>
+</div>
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
         <a href="/blog/an-internship-in-new-york/" rel="permalink">An Internship in New York
 </a>
       
     </h2>
+    
+      <div class="thumbnail-container">
+        <img src="/assets/images/internshipnyc.jpeg" alt="">
+      </div>
+    
     
 
   <p class="page__meta">
@@ -418,7 +664,6 @@ My name is Jérémie Kalfon and I am a student, an entrepreneur and a researcher
 </p>
   </article>
 </div>
-
   
     
 
@@ -433,6 +678,11 @@ My name is Jérémie Kalfon and I am a student, an entrepreneur and a researcher
 </a>
       
     </h2>
+    
+      <div class="thumbnail-container">
+        <img src="/assets/images/highlife1.png" alt="">
+      </div>
+    
     
 
   <p class="page__meta">
@@ -458,7 +708,6 @@ My name is Jérémie Kalfon and I am a student, an entrepreneur and a researcher
 </p>
   </article>
 </div>
-
   
     
 
@@ -473,6 +722,11 @@ My name is Jérémie Kalfon and I am a student, an entrepreneur and a researcher
 </a>
       
     </h2>
+    
+      <div class="thumbnail-container">
+        <img src="/assets/images/mexicotrip.jpeg" alt="">
+      </div>
+    
     
 
   <p class="page__meta">
@@ -498,7 +752,6 @@ My name is Jérémie Kalfon and I am a student, an entrepreneur and a researcher
 </p>
   </article>
 </div>
-
   
     
 
@@ -514,6 +767,11 @@ My name is Jérémie Kalfon and I am a student, an entrepreneur and a researcher
       
     </h2>
     
+      <div class="thumbnail-container">
+        <img src="/assets/images/.jpeg" alt="">
+      </div>
+    
+    
 
   <p class="page__meta">
     
@@ -527,7 +785,7 @@ My name is Jérémie Kalfon and I am a student, an entrepreneur and a researcher
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          28 minute read
+          20 minute read
         
       </span>
     
@@ -538,7 +796,6 @@ My name is Jérémie Kalfon and I am a student, an entrepreneur and a researcher
 </p>
   </article>
 </div>
-
   
     
 
@@ -553,6 +810,11 @@ My name is Jérémie Kalfon and I am a student, an entrepreneur and a researcher
 </a>
       
     </h2>
+    
+      <div class="thumbnail-container">
+        <img src="/assets/images/engschool1.jpeg" alt="">
+      </div>
+    
     
 
   <p class="page__meta">
@@ -578,7 +840,6 @@ My name is Jérémie Kalfon and I am a student, an entrepreneur and a researcher
 </p>
   </article>
 </div>
-
   
 </div>
 
@@ -622,7 +883,6 @@ My name is Jérémie Kalfon and I am a student, an entrepreneur and a researcher
 </nav>
 
 
-
   </div>
 </div>
     </div>
@@ -654,19 +914,7 @@ My name is Jérémie Kalfon and I am a student, an entrepreneur and a researcher
     
       
         
-          <li><a href="mailto:jkobject@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
-        
-      
-        
-          <li><a href="https://twitter.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-        
-      
-        
-          <li><a href="https://github.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-        
-      
-        
-          <li><a href="https://ResearchGate.net/profile/jeremie_kalfon" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+          <li><a href="https://LinkedIn.com/in/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
         
       
         
@@ -674,7 +922,19 @@ My name is Jérémie Kalfon and I am a student, an entrepreneur and a researcher
         
       
         
-          <li><a href="https://LinkedIn.com/in/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+          <li><a href="https://github.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="mailto:jkobject@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+          <li><a href="https://ResearchGate.net/profile/jeremie_kalfon" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
         
       
     
@@ -685,7 +945,7 @@ My name is Jérémie Kalfon and I am a student, an entrepreneur and a researcher
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2023 Jérémie Kalfon. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2024 Jérémie Kalfon. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
@@ -704,7 +964,26 @@ My name is Jérémie Kalfon and I am a student, an entrepreneur and a researcher
 
 
 
-
+<script>
+  function dark_mode_btn_click() {
+    var node1 = document.getElementById('theme_source');
+    var node2 = document.getElementById('theme_source_2');
+    if(node1.getAttribute('rel')=='stylesheet'){
+      node2.setAttribute('rel', 'stylesheet');
+      setTimeout(function(){
+        node1.setAttribute('rel', 'stylesheet alternate');
+      }, 10);
+      sessionStorage.setItem('theme', 'dark');
+    }else{
+      node1.setAttribute('rel', 'stylesheet');
+      setTimeout(function(){
+        node2.setAttribute('rel', 'stylesheet alternate');
+      }, 10);
+      sessionStorage.setItem('theme', 'light');
+    }
+    return false;
+}
+</script>
 
               <script>
                 window.onload = function () {

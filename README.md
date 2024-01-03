@@ -39,11 +39,25 @@ LINKERS some of them are unique page which present and links to other websites. 
 archive: Where the previous website exists
 assests: Where the images and documents are placed
 
+## install
+
+install jekyll and bundler:
+
+- https://jekyllrb.com/docs/installation/
+- https://bundler.io/
+
+then do:
+
+`bundle install`
+
+then run it with:
+
+`bundle exec jekyll serve`
+
 ## publish
 
 to push a new version, just do:
-`bundle update && jekyll build && git add . && git commit -m 'new site version' && git push`
-
+`bundle update && bundle exec jekyll build && git add . && git commit -m 'new site version' && git push`
 
 ## legal
 
@@ -52,12 +66,12 @@ The templates and architecture might be reused at will.
 
 ## previously
 
--made in a couple of hours to display my proffessional life and maybe some personnal posts
--used MDL 
+-made in a couple of hours to display my professional life and maybe some personal posts
+-used MDL
 
+-the website itself is under a basic apache license but each project or paper has its own rights and terms
+-please use it accordingly
 
--the website itself is under a basic apache licence but each project or paper have its own rights and terms
--please use accordingly
 
 https://lingojam.com/🐌EmojiTranslator🎲
 

@@ -196,3 +196,8 @@ Thus my motto for this Ph.D. will be:
 ## Ph.D. proposal
 
 <a href="https://www.jkobject.com/assets/documents/PhD_project.pdf" class="btn btn--primary btn--large">Link to the proposal</a>
+
+### Previous proposals
+
+I have had a previous Ph.D. projects proposals for a Ph.D. that I then postponed. I [list it here](https://www.jkobject.com/assets/documents/researchobjectives.pdf) too for historical purposes.
+

@@ -3,6 +3,7 @@ title: "The Aqemia Story"
 excerpt: "I have spent a few months at Aqemia as a Research Scientist. This is my story."
 category: "Other Work Experience"
 date: 2022-12-20
+words_per_minute: 20
 tags:
  - Big Data
  - Drug Discovery

@@ -10,3 +10,18 @@
 img {
   border-radius: 10px
 }
+
+.thumbnail-container {
+  height: 200px; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Add this to hide the parts of the image that don't fit in the container */
+  border-radius: 10px;
+}
+.thumbnail-container img {
+  height: auto; /* Change from 100% to auto to maintain aspect ratio */
+  width: 100%; /* Set width to 100% to ensure the image always takes up the full width of the container */
+  min-height: 100%; /* Ensure the image always takes up the full height of the container */
+  margin-bottom: 0;
+}

@@ -75,6 +75,8 @@
 </script>
 
 
+  <meta name="google-site-verification" content="G-YTQBB5S9QB" />
+
 
 
 
@@ -95,10 +97,33 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/main.css" id="theme_source">
+
+  <link rel="stylesheet" href="/assets/css/theme2.css" id="theme_source_2">
+  <script>
+    if (sessionStorage.getItem('theme') === null) {
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        sessionStorage.setItem('theme', 'dark');
+      }
+      else{
+        sessionStorage.setItem('theme', 'light');
+      }
+    }
+
+    let theme = sessionStorage.getItem('theme');
+    if(theme === "dark"){
+      document.getElementById('theme_source').setAttribute('rel', 'stylesheet alternate'); 
+      sessionStorage.setItem('theme', 'dark');
+    }
+    else
+    {
+      document.getElementById('theme_source_2').setAttribute('rel', 'stylesheet alternate'); 
+      sessionStorage.setItem('theme', 'light');
+    }
+  </script>
+
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
-
 
 
     <!-- start custom head snippets -->
@@ -163,27 +188,34 @@
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/about/" title="I am a human. I wish to make the world better with science. <3">About</a>
             </li><li class="masthead__menu-item">
-              <a href="/projects/" title="">Projects</a>
+              <a href="/blog/" title="A short extract about my life experiences.">Blog</a>
             </li><li class="masthead__menu-item">
-              <a href="/opinions/">Opinions</a>
+              <a href="/projects/" title="">Projects</a>
             </li><li class="masthead__menu-item">
               <a href="/ideas/">Ideas</a>
             </li><li class="masthead__menu-item">
-              <a href="/blog/" title="A short extract about my life experiences.">Blog</a>
+              <a href="/opinions/">Opinions</a>
             </li><li class="masthead__menu-item">
-              <a href="/papers/">Papers</a>
+              <a href="/activities/" title="This is my personal list of books, Comics and films I love.">Activities</a>
+            </li><li class="masthead__menu-item">
+              <a href="/phd/">PhD</a>
             </li><li class="masthead__menu-item">
               <a href="/courses/" title="Here is the list of the Courses I have received and the one I have given.">Courses</a>
             </li><li class="masthead__menu-item">
-              <a href="/culture/" title="This is my personal list of books, Comics and films I love.">Culture</a>
+              <a href="https://jkobject.notion.site/92154f7b21da482b9a88daef49837bee?v=e0fc9c8764404f2e9804b889367758f6&pvs=74">Database</a>
             </li><li class="masthead__menu-item">
-              <a href="/categories/" title="Everything sorted by categories.">Subjects</a>
+              <a href="/papers/">Papers</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" title="Everything sorted by categories.">Categories</a>
             </li></ul>
         
         <button class="search__toggle" type="button">
           <span class="visually-hidden">Toggle search</span>
           <i class="fas fa-search"></i>
         </button>
+        
+        
+          <li><i class="fas fa-fw fa-adjust dark_mode_btn" aria-hidden="true" onclick="dark_mode_btn_click()"></i></li>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
@@ -194,8 +226,6 @@
     </div>
   </div>
 </div>
-
-
     <div class="initial-content">
       
   
@@ -285,7 +315,7 @@
           <aside class="sidebar__right ">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#courses-i-have-followed">Courses I have followed</a></li><li><a href="#courses-to-follow-or-following">Courses to follow (or following)</a><ul><li><a href="#videos">videos</a></li><li><a href="#slides">Slides</a></li></ul></li><li><a href="#ece---ing5---sante-2017-2018-to-review">ECE - ING5 - SANTE 2017-2018 (to review)</a></li><li><a href="#courses-i-have-given">Courses I have given</a><ul><li><a href="#highschool">HighSchool</a></li><li><a href="#undergraduate-level">undergraduate level</a></li><li><a href="#presenations">Presenations</a></li></ul></li><li><a href="#knowledge-in-informatics">Knowledge in informatics</a></li></ul>
+              <ul class="toc__menu"><li><a href="#about">About</a><ul><li><a href="#courses-i-have-followed">Courses I have followed</a><ul><li><a href="#videos-courses-i-have-followed-no-credits-obtained">videos courses I have followed (no credits obtained)</a></li><li><a href="#courses-i-have-followed-through-only-slides-being-shared-no-credits-obtained">Courses I have followed through only slides being shared (no credits obtained)</a></li></ul></li><li><a href="#courses-i-have-given">Courses I have given</a></li><li><a href="#presentations">Presentations</a></li><li><a href="#languages-i-speak">Languages I speak</a><ul><li><a href="#frameworks-i-use">Frameworks I use</a></li></ul></li></ul></li></ul>
 
             </nav>
           </aside>
@@ -332,13 +362,15 @@ input[type="range"]::-ms-fill-upper {
 }
 </style>
 
+<h1 id="about">About</h1>
+
+<p>Here is the list of the Courses I have received and the one I have given.</p>
+
 <h2 id="courses-i-have-followed">Courses I have followed</h2>
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTFCGs4Z_9DYuzHlHExLlPDFJQfyfHOQlDbJLbBLjo6tXiplFYn5eajH3tziJZWGYE9sGP_Jrz5iAvd/pubhtml?widget=true&amp;headers=false" height="800" width="600"></iframe>
 
-<h2 id="courses-to-follow-or-following">Courses to follow (or following)</h2>
-
-<h3 id="videos">videos</h3>
+<h3 id="videos-courses-i-have-followed-no-credits-obtained">videos courses I have followed (no credits obtained)</h3>
 
 <ul>
   <li><a href="https://www.youtube.com/playlist?list=PLXH5-WxRNyUXgpUG3-XLsrErywMlnR5vQ">ML to see</a>: (100) <input type="range" disabled="disabled" value="80" /></li>
@@ -348,16 +380,15 @@ input[type="range"]::-ms-fill-upper {
   <li><a href="https://podcasts.ox.ac.uk/series/computer-science">Oxford’s Strachey Lecture</a> <input type="range" disabled="disabled" value="10" /></li>
 </ul>
 
-<h3 id="slides">Slides</h3>
+<h3 id="courses-i-have-followed-through-only-slides-being-shared-no-credits-obtained">Courses I have followed through only slides being shared (no credits obtained)</h3>
+
 <p><em>most slides here have not been made public by the authors</em></p>
 
 <ul>
   <li>gene duplication L3 UE genomic ENS <input type="range" disabled="disabled" value="100" /></li>
   <li>the human aging problem L3 UE genomic ENS <input type="range" disabled="disabled" value="100" /></li>
   <li>MEG eukaryotic transcription and regulation ENS <input type="range" disabled="disabled" value="100" /></li>
-  <li>
-    <p>elements in genome and UE introduction L3 UE genomic ENS <input type="range" disabled="disabled" value="100" /></p>
-  </li>
+  <li>elements in genome and UE introduction L3 UE genomic ENS <input type="range" disabled="disabled" value="100" /></li>
   <li>Advanced Biomed imaging ECE M2 <input type="range" disabled="disabled" value="0" /></li>
   <li>Riemannian geometry ENS Math M2 <input type="range" disabled="disabled" value="20" /></li>
   <li>Human Anatomy ECE M2 <input type="range" disabled="disabled" value="0" /></li>
@@ -368,150 +399,49 @@ input[type="range"]::-ms-fill-upper {
   <li>Reinforcement Learning Class <input type="range" disabled="disabled" value="0" /></li>
 </ul>
 
-<h2 id="ece---ing5---sante-2017-2018-to-review">ECE - ING5 - SANTE 2017-2018 (to review)</h2>
-
-<ul>
-  <li>Neurosciences et implants</li>
-  <li>Physique de la matière molle</li>
-  <li>Biopuces</li>
-  <li>Objet co en santé</li>
-  <li>Handicaps et techno</li>
-  <li>Smart data et santé</li>
-  <li>Cristaux liquides</li>
-  <li>Telemédecine</li>
-  <li>
-    <p>Chirurgie assisté par ordinateur</p>
-  </li>
-  <li>Physiopathologie &amp; biocompatibilité</li>
-  <li>Chirurgie à distance</li>
-  <li>Physique des nanocomposants</li>
-  <li>Prothèses</li>
-  <li>Structures MIS</li>
-  <li>Spéctroscopie UV-Visible</li>
-  <li>Les techniques de lithographie</li>
-</ul>
-
 <h2 id="courses-i-have-given">Courses I have given</h2>
 
-<h3 id="highschool">HighSchool</h3>
-<p><em>as a private teacher</em></p>
 <ul>
-  <li>math</li>
-  <li>physics</li>
-  <li>chemistry</li>
-  <li>biology</li>
+  <li>math -highschool level-</li>
+  <li>physics -highschool level-</li>
+  <li>chemistry -highschool level-</li>
+  <li>biology -highschool level-</li>
+  <li>optics -undergrad level-</li>
+  <li>integrals (calculus) -undergrad level-</li>
 </ul>
 
-<h3 id="undergraduate-level">undergraduate level</h3>
-<p><em>as a private teacher</em></p>
-<ul>
-  <li>optics</li>
-  <li>integrals (calculus)</li>
-</ul>
+<h2 id="presentations">Presentations</h2>
 
-<h3 id="presenations">Presenations</h3>
+<p>I have given many presentations, during my carreer. They are all available now on this page:</p>
+
 <!-- Presentations I have given LINK TO slideShare -->
-<iframe src="https://www.slideshare.net/jkalfon/slideshelf" width="615px" height="470px" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:none;" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen=""></iframe>
+<iframe src="https://www.slideshare.net/jkalfon" width="615px" height="470px" frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:none;"></iframe>
 
-<h2 id="knowledge-in-informatics">Knowledge in informatics</h2>
+<h2 id="languages-i-speak">Languages I speak</h2>
 
 <ul>
-  <li>VHDL <input type="range" disabled="disabled" value="30" />
-    <ul>
-      <li>simple counting machine</li>
-      <li>simple games</li>
-    </ul>
-  </li>
-  <li>Arduino <input type="range" disabled="disabled" value="50" />
-    <ul>
-      <li>robots</li>
-      <li>car</li>
-      <li>drones</li>
-    </ul>
-  </li>
-  <li>gazebo <input type="range" disabled="disabled" value="40" />
-    <ul>
-      <li>shapes</li>
-      <li>events</li>
-      <li>controls</li>
-    </ul>
-  </li>
+  <li>VHDL <input type="range" disabled="disabled" value="30" /> (simple circuits of everyday objects)</li>
+  <li>Arduino <input type="range" disabled="disabled" value="50" /> (drones, robots)</li>
+  <li>gazebo <input type="range" disabled="disabled" value="40" /> (shapes, events, controls)</li>
   <li>C <input type="range" disabled="disabled" value="30" /></li>
   <li>OccamPi <input type="range" disabled="disabled" value="20" /></li>
   <li>Google Go <input type="range" disabled="disabled" value="10" /></li>
-  <li>C++ <input type="range" disabled="disabled" value="30" /></li>
-  <li>Java <input type="range" disabled="disabled" value="70" />
-    <ul>
-      <li>graphics</li>
-      <li>android</li>
-      <li>server</li>
-      <li>simple J2E</li>
-    </ul>
-  </li>
-  <li>R <input type="range" disabled="disabled" value="20" /></li>
-  <li>Python <input type="range" disabled="disabled" value="90" />
-    <ul>
-      <li>numpy</li>
-      <li>conda</li>
-      <li>bioconda</li>
-      <li>biopython</li>
-      <li>tensorflow</li>
-      <li>pandas</li>
-      <li>scikit learn</li>
-      <li>bokeh</li>
-      <li>jupyter</li>
-    </ul>
-  </li>
-  <li>Matlab <input type="range" disabled="disabled" value="50" />
-    <ul>
-      <li>GUI</li>
-      <li>signal proc</li>
-      <li>functions</li>
-      <li>parrallel</li>
-      <li>arrays</li>
-    </ul>
-  </li>
-  <li>computational genomics <input type="range" disabled="disabled" value="70" />
-    <ul>
-      <li>blast</li>
-      <li>
-        <p>ensembl</p>
-      </li>
-      <li>star</li>
-      <li>rsem</li>
-      <li>absolute</li>
-      <li>macs</li>
-      <li>ros</li>
-      <li>mutect</li>
-      <li>fastqc</li>
-      <li>gatk</li>
-      <li>
-        <p>strelka</p>
-      </li>
-      <li>samtools</li>
-      <li>bowtie</li>
-      <li>deeptools</li>
-      <li>
-        <p>bamtools</p>
-      </li>
-      <li>
-        <p>picard</p>
-      </li>
-      <li>terra</li>
-      <li>cromwell</li>
-      <li>wdl</li>
-      <li>gcp</li>
-      <li>
-        <p>nextflow</p>
-      </li>
-      <li>gsea</li>
-      <li>phylogenetics</li>
-      <li>RNAseq</li>
-      <li>DNAseq (targeted/ exome / whole)</li>
-      <li>Chip</li>
-      <li>HiC</li>
-    </ul>
-  </li>
+  <li>C++ <input type="range" disabled="disabled" value="30" /> (advanced courses)</li>
+  <li>Java <input type="range" disabled="disabled" value="70" /> (graphics, android, server, simple J2E)</li>
+  <li>R <input type="range" disabled="disabled" value="40" /></li>
+  <li>Python <input type="range" disabled="disabled" value="100" /></li>
+  <li>Matlab <input type="range" disabled="disabled" value="50" /> (gui, signal processing, machine learning, parallel computing, arrays)</li>
+  <li>PHP <input type="range" disabled="disabled" value="20" /> (20 pages servers)</li>
+  <li>SQL <input type="range" disabled="disabled" value="50" /> (noSQL, firebase, json, xml, mysql, mamp)</li>
+  <li>Shell <input type="range" disabled="disabled" value="70" /> (bash, zsh, fish)</li>
+  <li>Latex <input type="range" disabled="disabled" value="40" /></li>
+  <li>Markdown <input type="range" disabled="disabled" value="100" /></li>
+  <li>JavaScript <input type="range" disabled="disabled" value="90" /> (web, mobile, front, back, …)</li>
+  <li>react native / react.js <input type="range" disabled="disabled" value="90" /> (mobile, front, back, …)</li>
+</ul>
+
+<h3 id="frameworks-i-use">Frameworks I use</h3>
+<ul>
   <li>CI <input type="range" disabled="disabled" value="50" />
     <ul>
       <li>travis</li>
@@ -529,103 +459,28 @@ input[type="range"]::-ms-fill-upper {
       <li>macOS</li>
     </ul>
   </li>
-  <li>Latex <input type="range" disabled="disabled" value="40" /></li>
-  <li>Markdown <input type="range" disabled="disabled" value="100" /></li>
-  <li>HTML <input type="range" disabled="disabled" value="70" /></li>
-  <li>CSS <input type="range" disabled="disabled" value="70" /></li>
-  <li>JavaScript <input type="range" disabled="disabled" value="90" />
-    <ul>
-      <li>react native</li>
-      <li>angular.js</li>
-      <li>react.js</li>
-      <li>node</li>
-      <li>ES6</li>
-      <li>JSX</li>
-      <li>flow</li>
-      <li>mobx</li>
-      <li>webpack</li>
-      <li>electron</li>
-      <li>expo</li>
-      <li>async</li>
-      <li>navigation</li>
-      <li>npm, yarn</li>
-    </ul>
-  </li>
-  <li>PHP <input type="range" disabled="disabled" value="20" />
-    <ul>
-      <li>20 pages simple server</li>
-    </ul>
-  </li>
   <li>DNS management <input type="range" disabled="disabled" value="40" />
     <ul>
       <li>namecheap</li>
       <li>goDaddy</li>
     </ul>
   </li>
-  <li>Shell <input type="range" disabled="disabled" value="70" />
-    <ul>
-      <li>basics</li>
-      <li>server connection</li>
-      <li>git</li>
-      <li>brew</li>
-    </ul>
-  </li>
-  <li>vim <input type="range" disabled="disabled" value="20" /></li>
-  <li>sublime <input type="range" disabled="disabled" value="70" /></li>
-  <li>intelIJ <input type="range" disabled="disabled" value="70" /></li>
-  <li>
-    <p>vscode <input type="range" disabled="disabled" value="70" /></p>
-  </li>
-  <li>SQL <input type="range" disabled="disabled" value="50" />
-    <ul>
-      <li>nosql</li>
-      <li>firebase</li>
-      <li>Json</li>
-      <li>XML</li>
-      <li>MySQL</li>
-      <li>MaMp</li>
-    </ul>
-  </li>
   <li>google cloud platform <input type="range" disabled="disabled" value="50" /></li>
-  <li>aws <input type="range" disabled="disabled" value="30" />
+  <li>aws <input type="range" disabled="disabled" value="30" /> (s3, ec2, lambda, )
     <ul>
       <li>scientific computing</li>
       <li>web hosting</li>
     </ul>
   </li>
-  <li>Versioning
-    <ul>
-      <li>svn</li>
-      <li>github</li>
-      <li>gitKraken</li>
-      <li>github Desktop</li>
-      <li>sourceTree</li>
-    </ul>
-  </li>
-  <li>Google Suite</li>
-  <li>Adobe <input type="range" disabled="disabled" value="40" /></li>
-  <li>AE</li>
-  <li>XD</li>
-  <li>PS</li>
-  <li>
-    <p>AI</p>
-  </li>
-  <li>3D printing <input type="range" disabled="disabled" value="30" />
-    <ul>
-      <li>preform</li>
-      <li>solidworks</li>
-    </ul>
-  </li>
-  <li>other software based programming
-    <ul>
-      <li>LabVIEW</li>
-      <li>emergent</li>
-      <li>NRP</li>
-      <li>NMP</li>
-      <li>FluoroCT</li>
-      <li>Osirix</li>
-    </ul>
-  </li>
+  <li>HPC/SLURM systems</li>
+  <li>WDL/Nextflow</li>
+  <li>Neo4j</li>
+  <li>Docker <input type="range" disabled="disabled" value="50" /></li>
+  <li>Kubernetes <input type="range" disabled="disabled" value="30" /></li>
+  <li>Versioning</li>
+  <li>Adobe <input type="range" disabled="disabled" value="40" /> (XD, PS)</li>
+  <li>3D printing <input type="range" disabled="disabled" value="30" /> (solidworks, preform)</li>
+  <li>LabVIEW</li>
 </ul>
 
         
@@ -681,19 +536,7 @@ input[type="range"]::-ms-fill-upper {
     
       
         
-          <li><a href="mailto:jkobject@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
-        
-      
-        
-          <li><a href="https://twitter.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-        
-      
-        
-          <li><a href="https://github.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-        
-      
-        
-          <li><a href="https://ResearchGate.net/profile/jeremie_kalfon" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+          <li><a href="https://LinkedIn.com/in/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
         
       
         
@@ -701,7 +544,19 @@ input[type="range"]::-ms-fill-upper {
         
       
         
-          <li><a href="https://LinkedIn.com/in/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+          <li><a href="https://github.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="mailto:jkobject@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+          <li><a href="https://ResearchGate.net/profile/jeremie_kalfon" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
         
       
     
@@ -712,7 +567,7 @@ input[type="range"]::-ms-fill-upper {
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2023 Jérémie Kalfon. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2024 Jérémie Kalfon. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
@@ -731,7 +586,26 @@ input[type="range"]::-ms-fill-upper {
 
 
 
-
+<script>
+  function dark_mode_btn_click() {
+    var node1 = document.getElementById('theme_source');
+    var node2 = document.getElementById('theme_source_2');
+    if(node1.getAttribute('rel')=='stylesheet'){
+      node2.setAttribute('rel', 'stylesheet');
+      setTimeout(function(){
+        node1.setAttribute('rel', 'stylesheet alternate');
+      }, 10);
+      sessionStorage.setItem('theme', 'dark');
+    }else{
+      node1.setAttribute('rel', 'stylesheet');
+      setTimeout(function(){
+        node2.setAttribute('rel', 'stylesheet alternate');
+      }, 10);
+      sessionStorage.setItem('theme', 'light');
+    }
+    return false;
+}
+</script>
 
               <script>
                 window.onload = function () {

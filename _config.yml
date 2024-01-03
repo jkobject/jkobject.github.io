@@ -13,7 +13,7 @@
 # theme                    : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-
+minimal_mistakes_skin2: "dark"
 # Site Settings
 locale                   : "en-US"
 title                    : "Jérémie"
@@ -121,37 +121,39 @@ author:
   location         : "Paris - Boston"
   email            : "jkobject@gmail.com"
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/jkobject"
-    - label: "Scholar"
-      icon: "fas fa-fw fa-graduation-cap"
-      url: "https://Scholar.google.com/citations?user=zyXiydsAAAAJ"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://LinkedIn.com/in/jkobject"
+    - label: "Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://Scholar.google.com/citations?user=zyXiydsAAAAJ"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/jkobject"
 
 # Site Footer
 footer:
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:jkobject@gmail.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/jkobject"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/jkobject"
-    - label: "ResearchGate"
-      icon: "fab fa-fw fa-researchgate"
-      url: "https://ResearchGate.net/profile/jeremie_kalfon"
-    - label: "Scholar"
-      icon: "fas fa-fw fa-graduation-cap"
-      url: "https://Scholar.google.com/citations?user=zyXiydsAAAAJ"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://LinkedIn.com/in/jkobject"
+    - label: "Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://Scholar.google.com/citations?user=zyXiydsAAAAJ"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/jkobject"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/jkobject"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:jkobject@gmail.com"
+    - label: "ResearchGate"
+      icon: "fab fa-fw fa-researchgate"
+      url: "https://ResearchGate.net/profile/jeremie_kalfon"
+
+
 
 
 # Reading Files
@@ -264,21 +266,21 @@ collections:
 
 # Plugins (previously gems:)
 plugins:
- - amp-jekyll
- - jekyll
- - jekyll-feed
- - jekyll-gist
- - jekyll-include-cache
- - jekyll-maps
- - jekyll-paginate
- - jekyll-pwa-plugin
- - jekyll-remote-theme
- - jekyll-seo-tag
- - jekyll-sitemap
- - jekyll-toc
- - jekyll/scholar
- - jemoji
- - jekyll-redirect-from
+  - amp-jekyll
+  - jekyll
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-include-cache
+  - jekyll-maps
+  - jekyll-paginate
+  - jekyll-pwa-plugin
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-toc
+  - jekyll/scholar
+  - jemoji
+  - jekyll-redirect-from
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -297,7 +299,6 @@ whitelist:
   - jekyll/scholar
   - jemoji
   - jekyll-redirect-from
-
 
 # Archives
 #  Type

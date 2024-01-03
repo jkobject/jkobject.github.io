@@ -1,1 +1,3 @@
 .DS_Store
+*.sync-conflict-*
+_site/*

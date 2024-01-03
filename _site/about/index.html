@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>About me | Jérémie</title>
-<meta name="description" content="I am a human. I wish to make the world better with science.">
+<meta name="description" content="I wish to make the world better with science.">
 
 
   <meta name="author" content="Jérémie Kalfon">
@@ -24,7 +24,7 @@
 <meta property="og:url" content="https://jkobject.com/about/">
 
 
-  <meta property="og:description" content="I am a human. I wish to make the world better with science.">
+  <meta property="og:description" content="I wish to make the world better with science.">
 
 
 
@@ -34,7 +34,7 @@
 
   <meta name="twitter:site" content="@jkobject">
   <meta name="twitter:title" content="About me">
-  <meta name="twitter:description" content="I am a human. I wish to make the world better with science.">
+  <meta name="twitter:description" content="I wish to make the world better with science.">
   <meta name="twitter:url" content="https://jkobject.com/about/">
 
   
@@ -75,6 +75,8 @@
 </script>
 
 
+  <meta name="google-site-verification" content="G-YTQBB5S9QB" />
+
 
 
 
@@ -95,10 +97,33 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/main.css" id="theme_source">
+
+  <link rel="stylesheet" href="/assets/css/theme2.css" id="theme_source_2">
+  <script>
+    if (sessionStorage.getItem('theme') === null) {
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        sessionStorage.setItem('theme', 'dark');
+      }
+      else{
+        sessionStorage.setItem('theme', 'light');
+      }
+    }
+
+    let theme = sessionStorage.getItem('theme');
+    if(theme === "dark"){
+      document.getElementById('theme_source').setAttribute('rel', 'stylesheet alternate'); 
+      sessionStorage.setItem('theme', 'dark');
+    }
+    else
+    {
+      document.getElementById('theme_source_2').setAttribute('rel', 'stylesheet alternate'); 
+      sessionStorage.setItem('theme', 'light');
+    }
+  </script>
+
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
-
 
 
     <!-- start custom head snippets -->
@@ -163,27 +188,34 @@
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/about/" title="I am a human. I wish to make the world better with science. <3">About</a>
             </li><li class="masthead__menu-item">
-              <a href="/projects/" title="">Projects</a>
+              <a href="/blog/" title="A short extract about my life experiences.">Blog</a>
             </li><li class="masthead__menu-item">
-              <a href="/opinions/">Opinions</a>
+              <a href="/projects/" title="">Projects</a>
             </li><li class="masthead__menu-item">
               <a href="/ideas/">Ideas</a>
             </li><li class="masthead__menu-item">
-              <a href="/blog/" title="A short extract about my life experiences.">Blog</a>
+              <a href="/opinions/">Opinions</a>
             </li><li class="masthead__menu-item">
-              <a href="/papers/">Papers</a>
+              <a href="/activities/" title="This is my personal list of books, Comics and films I love.">Activities</a>
+            </li><li class="masthead__menu-item">
+              <a href="/phd/">PhD</a>
             </li><li class="masthead__menu-item">
               <a href="/courses/" title="Here is the list of the Courses I have received and the one I have given.">Courses</a>
             </li><li class="masthead__menu-item">
-              <a href="/culture/" title="This is my personal list of books, Comics and films I love.">Culture</a>
+              <a href="https://jkobject.notion.site/92154f7b21da482b9a88daef49837bee?v=e0fc9c8764404f2e9804b889367758f6&pvs=74">Database</a>
             </li><li class="masthead__menu-item">
-              <a href="/categories/" title="Everything sorted by categories.">Subjects</a>
+              <a href="/papers/">Papers</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" title="Everything sorted by categories.">Categories</a>
             </li></ul>
         
         <button class="search__toggle" type="button">
           <span class="visually-hidden">Toggle search</span>
           <i class="fas fa-search"></i>
         </button>
+        
+        
+          <li><i class="fas fa-fw fa-adjust dark_mode_btn" aria-hidden="true" onclick="dark_mode_btn_click()"></i></li>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
@@ -194,8 +226,6 @@
     </div>
   </div>
 </div>
-
-
     <div class="initial-content">
       
   
@@ -218,7 +248,7 @@
         
       </h1>
       
-        <p class="page__lead">I am a human. I wish to make the world better with science.
+        <p class="page__lead">I wish to make the world better with science.
 </p>
       
       
@@ -228,7 +258,7 @@
       
         <p>
         
-          <a href="https://linkedin.com/in/jkobject/" class="btn btn--light-outline btn--large">LinkedIn</a>
+          <a href="/assets/documents/CV-JEREMIE.pdf" class="btn btn--light-outline btn--large">Resume</a>
         
       
     </div>
@@ -244,7 +274,7 @@
 <div id="main" role="main">
   <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="About me">
-    <meta itemprop="description" content="I am a human. I wish to make the world better with science.">
+    <meta itemprop="description" content="I wish to make the world better with science.">
     
     
 
@@ -262,7 +292,7 @@
 
           
             <div class="archive__item-excerpt">
-              <p>Computational Biologist and Engineer. co-Founder of PiPle, I am keen on project management and development. Highly independent, I am interested in improving Genomics &amp; Biomedical research using Data Science and Machine Learning. I am now an Associate at the Broad Institute of MIT and Harvard.</p>
+              <p>Currently doing a Ph.D. in AI and Genomics. Researcher, Engineer &amp; Developper. My goal is to improve human healthspan. I have been a <a href="https://cancerdatascience.org/">Senior Associate</a> at the Broad Institute of MIT and Harvard and a team leader at <a href="https://whitelabgx.com/">Whitelab Genomics</a>. I have studied at ECE paris, the University of Kent, the TEC de monterey, the <a href="https://www.simonsfoundation.org/people/jeremie-kalfon-2/">Flatiron Institute</a> and Harvard. I am the co-Founder of <a href="https://apps.apple.com/fr/app/piple/id1399507297">PiPle</a></p>
 
             </div>
           
@@ -275,302 +305,32 @@
 
 </div>
 
-<div class="feature__wrapper">
-
-  
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <img src="/assets/images/resume.jpg" alt="my resume" />
-            
-          </div>
-        
-
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">Resume</h2>
-          
-
-          
-
-          
-            <p><a href="/assets/documents/CV-JEREMIE.pdf" class="btn btn--primary">Get it</a></p>
-          
-        </div>
-      </div>
-    </div>
-  
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <img src="/assets/images/objectives.jpg" alt="" />
-            
-          </div>
-        
-
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">research proposal 2019</h2>
-          
-
-          
-
-          
-            <p><a href="/assets/documents/researchobjectives.pdf" class="btn btn--primary">Get It</a></p>
-          
-        </div>
-      </div>
-    </div>
-  
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <img src="/assets/images/objectives.jpg" alt="" />
-            
-          </div>
-        
-
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">research proposal 2020</h2>
-          
-
-          
-
-          
-            <p><a href="/assets/documents/researchproposal.pdf" class="btn btn--primary">Get It</a></p>
-          
-        </div>
-      </div>
-    </div>
-  
-
-</div>
-
 <h2 id="about-this-website">About this website</h2>
 
 <!-- A longer presentation of what People will find in this website -->
 
-<p>This website was made with jekyll and minimal-mistake’s layout. You can see it in <a href="https://www.github.com/jkobject/jkobject.github.io">my github</a>
-The goal of using this framework is to allow me to maintain both a website, a blog and a portfolio without using third party closed source code. All of it while making sure that my website will never end like so many other blogs. Having an openly maintained layout will enable that.
-I have been able to migrate my medium articles super easily using <code class="language-plaintext highlighter-rouge">mediumexporter</code> command.</p>
+<p>This website was made with Jekyll and minimal-mistake’s layout. You can see it in <a href="https://www.github.com/jkobject/jkobject.github.io">my github</a>
+The goal of using this framework is to allow me to maintain a website, a blog, and a portfolio without using third-party closed-source code.
+I have migrated my medium articles super easily using <code class="language-plaintext highlighter-rouge">mediumexporter</code> command.</p>
 
 <p>The goal of the website is 3-fold:</p>
+
 <ul>
-  <li>be an open door to my proffesional activity.</li>
-  <li>share my opinions and ideas and allow debates to happen here, thanks to disqus.</li>
-  <li>gather some personnal information more related to lifestyle: sharing music, books, movies, science readings, etc.</li>
+  <li>be an open door to my professional activity.</li>
+  <li>share my opinions and ideas and allow debates to happen here, thanks to Disqus.</li>
+  <li>gather some personal information related to lifestyle: sharing music, books, movies, science readings, etc.</li>
 </ul>
 
 <p>Feel free to reuse everything not related to content on this website. 
 The content is property of Jérémie Kalfon and is under an <a href="/LICENSE">MIT license</a> and thus cannot be directly reused for commercial purposes and needs to be cited at any time.</p>
 
-<p><em>Every opinions and ideas mentioned in this website are solely mine and are not related to any other entity except if explained otherwise.</em></p>
+<p><em>Every opinion and ideas mentioned in this website are solely mine and are not related to any other entity except if explained otherwise.</em></p>
 
-<h2 id="some-more-about-me">Some More about me</h2>
+<h2 id="before">Before</h2>
 
-<h3 id="currently">Currently</h3>
+<p>This page used to contain recommendations letters I had received in 2019 by: <a href="https://www.linkedin.com/in/andrea-giovannucci-87133646">Andrea Giovannucci</a> (<a href="assets/documents/Andrea_Giovannucci.pdf">here</a>) - my internship advisor, <a href="https://www.linkedin.com/in/frederic-ravaut-a04916109/">Frederic Ravaut</a> (<a href="assets/documents/Frederic_Ravaut.pdf">here</a>) - my Master advisor and <a href="https://www.kent.ac.uk/computing/people/3075/chu-dominique">Dominique Chu</a> (<a href="assets/documents/Dominique_Chu.pdf">here</a>) - my second Master’s Thesis advisor.</p>
 
-<p>I am currently a computational biologist at the Broad Institute of MIT and Harvard in the Cancer Data Science group, which I joined in early 2019. Our team leads major research projects such as DepMap and the Cancer Cell Line Encyclopedia (CCLE) where, partnering with Pharma companies, we use Machine Learning methods to identify new targets and drugs from large scale gene knockouts and omics sequencing of thousands of cancer cell lines (e.g. patient derived lab grown cancers).</p>
-
-<p>I have worked with many collaborators on different research projects [1,2]. My two main projects were:</p>
-<ul>
-  <li>The management of the quarterly CCLE dataset generation, which I have transformed into a full fledged pipeline and data repository used by researchers and companies across the world. I have also laid the groundwork for extracting and releasing new features and new sequencing types in order to improve our target prediction [3].</li>
-  <li>A large functional genomics project called the AMLproject. Together with Maxim Pimkin, we have integrated hundreds of ChIP-seq, RNA-seq, together with TF knockouts, of a single cell line, to understand the mechanism of TF co-binding in the co-regulatory circuitry (CRC)[4]. This effort is now leading to multiple papers untangling the effect of gene transcription deregulation in the maintenance of the cancer state [5].</li>
-</ul>
-
-<p>At the Broad Institute, I have been inspired by great researchers such as Bill Sellers, Stew Orkin, Jesse Engrietz, Aviv Regev, or David Liu. I have gained knowledge of human genomic sequencing, cancer biology, computational biology and Machine Learning, supplemented by an independent training at Harvard in biology.
-I have gained a keen interest in papers using Deep Learning  methods to better map genotype to phenotype[6,7].</p>
-
-<p>I was trained as an engineer and specialized in biomedical engineering at ECE paris. I was able to do a double master’s degree in Machine Learning where I pursued research in applying ML methods to understand the relationship between fungi’s genome and their environment for my thesis. I also spent a year as a software engineer, during which I worked on building my own company and working on a large full stack software engineering project. I had the chance to do my last internship at the Flatiron Institute’s Center for Computational Neuroscience in New York, working on the CaImAn[8] project, which strengthened my passion for Machine Learning and Biology.</p>
-
-<h3 id="before-the-broad">Before the Broad</h3>
-
-<p>When I was young, I quickly became fan of astrophysics and science in general. During highschool and after profound questionings I realized that my passion for astrophysics was missing something. I got this idea that life is unfair, that death, scarcity, disease, aging make the human condition miserable and that I that we shall understand ourselves and our environment if we want to improve the life of every human being.</p>
-
-<p>It nourished my passion for learning and thinking about the intricate mechanisms of our beings, from the networks of our brains to the networks of pathways in our cells.</p>
-
-<p>I was lucky enough to discover my interest early. To make trips to foreign countries and to the infinite amount of knowledge I found on the web and my computer (see <a href="/blog/">blogs</a> &amp; <a href="/culture/">culture</a>.</p>
-
-<p>This interest was always interdisciplinary, ranging from mathematics, computer science, AI to genetics, physics and neuroscience (see <a href="/papers/">papers</a>).</p>
-
-<p>After my highschool at Janson de Sailly in Paris, I decided to first become an engineer, following advices from some researcher acquaintances. There in addition to basic science knowledge, I learnt how and why to bring people together to produce materials and tools that require the cohesion of a team : something echoed through my work in the making of the biggest music festival on my campus -<a href="/projects/no-larsen-festival/">the NoLarsen Festival</a>- as well as an award winning startup in professional messaging called <a href="/projects/piple-the-startup/">PiPle</a> which I started while on campus. This training started in 2013 in which I went to an integrated<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> preparatory school in Paris. During my two years of PTSI<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> studies , I was given intensive courses on a broad range of topics in mathematics, electronics, physics and computer science, which gave me the foundation I needed for the next stages of my studies.</p>
-
-<p>I was happy to master in Biomedical engineering and felt closer to where I wanted to be while studying data science, physiology, imaging, signal processing and robotics. I enjoyed gathering courses from friends in M.D. as well (see <a href="/courses/">courses</a>).</p>
-
-<p>I think it is thanks to this passion, together with a semester abroad in Mexico -at <a href="/blog/a-semester-in-mexico/">TEC de Monterrey</a> plus a particularly teaching internship at <a href="/blog/highlife-internship/">Highlife</a> -a R&amp;D startup in semi-biological heart valve implantology- that I have been able to make my way as an intern at the <a href="/blog/an-internship-in-new-york/">Flatiron Institute</a> after sending a spontaneous application to Pr. Mytia Chklovskii. In this NYC computational research facility, I grasped what research life is made of and I got the opportunity of meeting many interdisciplinary researchers and discovered a lot about machine learning and data science.</p>
-
-<p>By working under the supervision of Andrea Giovannucci and Eftychios Pnevmatikakis, I created a comparison function for CaImAn’s output, a -Calcium Imaging Analysis- software able to infer neurons and their activity from recordings of in vivo brain tissues, allowing better benchmarkings and debuggings. I also worked on explaining the software with a documentation &amp; description of the algorithms for our community of open source contributors and neuroscientists (see <a href="/projects/">project</a>). This experience confirmed my wish to use machine learning to augment biomedical research. An idea that drove me to participate to <a href="/blog/human-brain-project/">Human Brain Project</a> workshops in Lausanne and Geneva where I learnt about neural nets modeling and neuromorphic architectures.</p>
-
-<p>Teaching to students in my engineering school improved and matured my way of looking at topics and I realized that machine learning seemed to capture most of the complexity and potentials of my projects and ideas, I have felt I needed to focus on it. That is why I have managed to get a double degree arrangement with the University of Kent in England for an M.Sc. in Computational Intelligence, studying statistics, neural networks and data mining (see it <a href="/blog/a-msc-at-the-univeristy-of-kent/">here</a>). I directly applied this teaching at the University with a team of researchers in trying to understand the complexity of the codon usage bias -a genomic feature of many organism- through intensive statistical data exploration of thousands of genomes.</p>
-
-<h2 id="recommandations">Recommandations</h2>
-
-<p>During my work and studies, I have met formidable people and some of them were glad to write a bit about me! You can read what they have to say:</p>
-
-<div class="feature__wrapper">
-
-  
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <img src="/assets/images/dominique.jpg" alt="" />
-            
-          </div>
-        
-
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">From Dominique Chu</h2>
-          
-
-          
-
-          
-            <p><a href="/assets/documents/Dominique_Chu.pdf" class="btn btn--primary">Get it</a></p>
-          
-        </div>
-      </div>
-    </div>
-  
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <img src="/assets/images/andrea.png" alt="" />
-            
-          </div>
-        
-
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">From Andrea Giovannucci</h2>
-          
-
-          
-
-          
-            <p><a href="/assets/documents/Andrea_Giovannucci.pdf" class="btn btn--primary">Get it</a></p>
-          
-        </div>
-      </div>
-    </div>
-  
-    <div class="feature__item">
-      <div class="archive__item">
-        
-          <div class="archive__item-teaser">
-            <img src="/assets/images/frederic.jpg" alt="" />
-            
-          </div>
-        
-
-        <div class="archive__item-body">
-          
-            <h2 class="archive__item-title">From Frederic Ravaut</h2>
-          
-
-          
-
-          
-            <p><a href="/assets/documents/Frederic_Ravaut.pdf" class="btn btn--primary">Get It</a></p>
-          
-        </div>
-      </div>
-    </div>
-  
-
-</div>
-
-<h2 id="role-models">Role Models</h2>
-
-<ul>
-  <li>adam smith</li>
-  <li>albert einstein</li>
-  <li>alex graves</li>
-  <li>andrew ng</li>
-  <li>archimède</li>
-  <li>arthur clark</li>
-  <li>aubrey de grey</li>
-  <li>aviv regev</li>
-  <li>barbara Engelhardt</li>
-  <li>bernard weber</li>
-  <li>bernarhd riemann</li>
-  <li>bill sellers</li>
-  <li>brendan frey</li>
-  <li>Chiara Marletto</li>
-  <li>Claudia de Rham</li>
-  <li>craig venter</li>
-  <li>daphne koller</li>
-  <li>david iu</li>
-  <li>demis assabi</li>
-  <li>elon musk</li>
-  <li>enrico fermi</li>
-  <li>eric lander</li>
-  <li>eric schmidt</li>
-  <li>fei chen</li>
-  <li>feng sheng</li>
-  <li>françois cholet</li>
-  <li>friederick gauss</li>
-  <li>gad getz</li>
-  <li>galilée</li>
-  <li>geoffrey hinton</li>
-  <li>grant sanderson</li>
-  <li>ian goodfellow</li>
-  <li>ila stustkever</li>
-  <li>isaac asimov</li>
-  <li>isaac newton</li>
-  <li>jack dorsey</li>
-  <li>jelani nelson</li>
-  <li>jim simons</li>
-  <li>john von neuman</li>
-  <li>karl marx</li>
-  <li>kim stegmeyer</li>
-  <li>lang lang</li>
-  <li>larry page</li>
-  <li>leonard suskind</li>
-  <li>Lex fridman</li>
-  <li>manolis kellis</li>
-  <li>mark zuckerberg</li>
-  <li>mat botvinick</li>
-  <li>max tegmark</li>
-  <li>mickael stevens</li>
-  <li>nandos de freitas</li>
-  <li>Netta Engelhardt</li>
-  <li>paul dirac</li>
-  <li>ramarujan</li>
-  <li>ray kurzweil</li>
-  <li>richard feynmann</li>
-  <li>sean carrol</li>
-  <li>sénèque</li>
-  <li>sergey brin</li>
-  <li>socrates</li>
-  <li>stephen hawking</li>
-  <li>steve jobs</li>
-  <li>steven pinker</li>
-  <li>vinton cerf</li>
-  <li>vitalik butterin</li>
-  <li>wolfgang pauli</li>
-  <li>xiao wang</li>
-  <li>yann le cun</li>
-  <li>yoshua bengio</li>
-  <li>jurgen schmidthubert</li>
-</ul>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1" role="doc-endnote">
-      <p>PTSI - Physics Technology &amp; Engineering Sciences <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:2" role="doc-endnote">
-      <p>Even if they are quite arduous, integrated preparatory schools prepare students to integrate an Engineering school to which they are associated, allowing them to succeed. Instead of preparing for two years and then choosing a college according to an exam, they take the exam first for a subset of colleges and then prepare for it for two years, thus alleviating the uncertainty of the famous French Concours. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
+<p>I have since received recommendations from <a href="https://www.linkedin.com/in/aviadt/">Aviad Tsherniak</a>, <a href="https://www.linkedin.com/in/maxim-pimkin-8a2b17225/">Maxim Pimkin</a>, and <a href="https://www.linkedin.com/in/javadnoorbakhsh/">Javad Noorbakhsh</a></p>
 
     </section>
   </article>
@@ -605,19 +365,7 @@ I have gained a keen interest in papers using Deep Learning  methods to better m
     
       
         
-          <li><a href="mailto:jkobject@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
-        
-      
-        
-          <li><a href="https://twitter.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-        
-      
-        
-          <li><a href="https://github.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-        
-      
-        
-          <li><a href="https://ResearchGate.net/profile/jeremie_kalfon" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+          <li><a href="https://LinkedIn.com/in/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
         
       
         
@@ -625,7 +373,19 @@ I have gained a keen interest in papers using Deep Learning  methods to better m
         
       
         
-          <li><a href="https://LinkedIn.com/in/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+          <li><a href="https://github.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="mailto:jkobject@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+          <li><a href="https://ResearchGate.net/profile/jeremie_kalfon" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
         
       
     
@@ -636,7 +396,7 @@ I have gained a keen interest in papers using Deep Learning  methods to better m
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2023 Jérémie Kalfon. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2024 Jérémie Kalfon. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
@@ -655,7 +415,26 @@ I have gained a keen interest in papers using Deep Learning  methods to better m
 
 
 
-
+<script>
+  function dark_mode_btn_click() {
+    var node1 = document.getElementById('theme_source');
+    var node2 = document.getElementById('theme_source_2');
+    if(node1.getAttribute('rel')=='stylesheet'){
+      node2.setAttribute('rel', 'stylesheet');
+      setTimeout(function(){
+        node1.setAttribute('rel', 'stylesheet alternate');
+      }, 10);
+      sessionStorage.setItem('theme', 'dark');
+    }else{
+      node1.setAttribute('rel', 'stylesheet');
+      setTimeout(function(){
+        node2.setAttribute('rel', 'stylesheet alternate');
+      }, 10);
+      sessionStorage.setItem('theme', 'light');
+    }
+    return false;
+}
+</script>
 
               <script>
                 window.onload = function () {

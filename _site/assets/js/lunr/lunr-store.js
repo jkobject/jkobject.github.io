@@ -29,6 +29,12 @@ var store = [{
         "url": "/ideas/why-rick-invented-the-station-of-ricks/",
         "teaser": "/assets/images/rick_morty.jpg"
       },{
+        "title": "Revolutionizing Medical Care",
+        "excerpt":"The world of medicine is constantly evolving, with new research and advancements being made every day. In order to provide the best possible care to patients, it is crucial for healthcare professionals to stay updated on the latest standards of care. What if we could harness the power of technology...","categories": ["Frustrations and Solutions"],
+        "tags": [],
+        "url": "/ideas/wikipedia-for-doctors/",
+        "teaser": "/assets/images/cell_model.jpeg"
+      },{
         "title": "Are We Really Conscious? pt1",
         "excerpt":"1. On the emergence of life This is the first part of a Serie on consciousness, life and intelligence As far as I can recall, the idea of an intelligent design in life always seemed strange to me. It seemed like the adults had little imagination to involve yet another...","categories": ["On consciousness"],
         "tags": ["Artificial Intelligence","Consciousness","Life","Intelligent Design"],
@@ -72,7 +78,7 @@ var store = [{
         "teaser": "/assets/images/engschool1.jpeg"
       },{
         "title": "Boom Festivals & Eurotrips",
-        "excerpt":"I am not going to talk about thaat!!   I am trying to make it a somewhat professional blog! But feel free to ask me around a beer. 😉  ","categories": ["ECE"],
+        "excerpt":"I am trying to make it a somewhat professional blog! But feel free to ask me around a beer. 😉  ","categories": ["ECE"],
         "tags": ["PhD"],
         "url": "/blog/festivals/",
         "teaser": "/assets/images/.jpeg"
@@ -155,6 +161,36 @@ var store = [{
         "url": "/blog/two-years-at-the-broad/",
         "teaser": "/assets/images/broad_far.jpg"
       },{
+        "title": "Lessons learned from large scale genomics projects",
+        "excerpt":"If you are working in data sciences / genomics and on large-scale projects: This post might be of interest to you. Part of my work at the Broad Institute was to take charge of the burgeoning computational pipeline that was DepMap Omics 🏋️. DepMap Omics represents first a big dataset...","categories": ["BroadInstitute"],
+        "tags": ["Big Data","genomics","Python"],
+        "url": "/blog/DepMap-lessons-learned/",
+        "teaser": "/assets/images/depmap-lessons.png"
+      },{
+        "title": "Leaving Broad",
+        "excerpt":"Yes, I have decided to leave the Broad Institute. “Are you crazy?” 🤯 Well, I think there are many good reasons for it and I will try to explain why. But, before I go into the why, let’s talk about the last 1.5 years at Broad and what I have...","categories": ["BroadInstitute"],
+        "tags": ["Computational Biology","Data Science","Associate Computational Biologist"],
+        "url": "/blog/leaving-broad/",
+        "teaser": "/assets/images/broad_far.jpg"
+      },{
+        "title": "The Aqemia Story",
+        "excerpt":"During the summer of 2022, I was feeling pretty desperate. I had just experienced 6 months of many failed attempts at securing positions at high-profile companies like Deepmind, BenevolentAI, Isomorphic Labs, and Owkin. I had gone through very long and tedious interview processes where for some, it had felt like...","categories": ["Other Work Experience"],
+        "tags": ["Big Data","Drug Discovery","Python"],
+        "url": "/blog/the-aqemia-story-redacted/",
+        "teaser": "/assets/images/aqemia.jpg"
+      },{
+        "title": "My Work at Whitelab and Creating a Team",
+        "excerpt":"After a very deceptive end of the year, I decided I wanted to take a month or so to get my thoughts in order. To relax and find some peace with what had happened. :peace: However the day following my departure I was already looking at companies and contacting labs....","categories": ["Other Work Experience"],
+        "tags": ["Big Data","genomics","Python"],
+        "url": "/blog/WhitelabGx-and-being-team-lead-redacted/",
+        "teaser": "/assets/images/whitelabgx.jpeg"
+      },{
+        "title": "The Final Decision, PhD, Celligner2 and Foundational Models",
+        "excerpt":"This is a big story, and it seems that everything before led me to this point. 😊 I have decided to join Laura Cantini at Institut Pasteur and Gabriel Peyré at ENS ULM for a joint Ph.D. in Computational Biology and Applied Mathematics. 🧬📊 I will try to explain here...","categories": ["PhD"],
+        "tags": ["Startups","Comp-Bio"],
+        "url": "/blog/the-final-decision-phd-grn-foundation-model/",
+        "teaser": "/assets/images/photo-pasteur.jpg"
+      },{
         "title": "PiPle: The Beginnings",
         "excerpt":"PiPle is the next generation professional communication tool. It is a cross platform project led by a team of Engineering student, 👩‍🎓 from ECEparis which is led by me. We won a couple of Prizes for this project last year. The Berger Levrault Citizen Challenge as well as ECE innov...","categories": ["PiPle"],
         "tags": ["Project Management","Team Management","App Development","Innovation","Design"],
@@ -209,9 +245,33 @@ var store = [{
         "url": "/projects/AMLproject/",
         "teaser": "/assets/images/dependency-prediction.jpg"
       },{
+        "title": "how to work with multiple epigenomic assays on similar samples",
+        "excerpt":"Say you are working on a large-scale epigenomics project, receiving ChIPseq, ATACseq and other peak-callable data format. “What happens next? how do you combine them? how do you handle replicates?” :exploding_head: Although a few tools have been developed for this. They are very rare and uncharacterized compared to DNA-seq &amp;...","categories": ["BroadInstitute"],
+        "tags": ["Big Data","genomics","Python"],
+        "url": "/projects/epigenomics-aggregation/",
+        "teaser": "/assets/images/CREME-TF-main.jpg"
+      },{
         "title": "genepy",
         "excerpt":"If you too, want to do computational biology but have a strong opinion about R. You have come to the right place. When I arrived at the BroadInstitute in early 2019, I quickly realized that my goal of doing python at work was in jeopardy. what is going on Everyone...","categories": ["BroadInstitute"],
         "tags": ["Big Data","genomics","Python"],
         "url": "/projects/genepy/",
+        "teaser": "/assets/images/genepy.jpeg"
+      },{
+        "title": "scDataloader",
+        "excerpt":" ","categories": ["PhD"],
+        "tags": ["Big Data","AI","Python","genomics"],
+        "url": "/projects/scdataloader/",
+        "teaser": "/assets/images/genepy.jpeg"
+      },{
+        "title": "scDataloader",
+        "excerpt":" ","categories": ["PhD"],
+        "tags": ["Big Data","AI","Python","genomics"],
+        "url": "/projects/scdataloader.sync-conflict-20240102-165602-2FEYXUZ/",
+        "teaser": "/assets/images/genepy.jpeg"
+      },{
+        "title": "scDataloader",
+        "excerpt":" ","categories": ["PhD"],
+        "tags": ["Big Data","AI","Python","genomics"],
+        "url": "/projects/scdataloader.sync-conflict-20240102-165622-2FEYXUZ/",
         "teaser": "/assets/images/genepy.jpeg"
       }]

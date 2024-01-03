@@ -79,6 +79,8 @@
 </script>
 
 
+  <meta name="google-site-verification" content="G-YTQBB5S9QB" />
+
 
 
 
@@ -99,10 +101,33 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/main.css" id="theme_source">
+
+  <link rel="stylesheet" href="/assets/css/theme2.css" id="theme_source_2">
+  <script>
+    if (sessionStorage.getItem('theme') === null) {
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        sessionStorage.setItem('theme', 'dark');
+      }
+      else{
+        sessionStorage.setItem('theme', 'light');
+      }
+    }
+
+    let theme = sessionStorage.getItem('theme');
+    if(theme === "dark"){
+      document.getElementById('theme_source').setAttribute('rel', 'stylesheet alternate'); 
+      sessionStorage.setItem('theme', 'dark');
+    }
+    else
+    {
+      document.getElementById('theme_source_2').setAttribute('rel', 'stylesheet alternate'); 
+      sessionStorage.setItem('theme', 'light');
+    }
+  </script>
+
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
-
 
 
     <!-- start custom head snippets -->
@@ -169,28 +194,34 @@
               <a href="/about/" title="I am a human. I wish to make the world better with science. &lt;3">About</a>
             </li>
 <li class="masthead__menu-item">
-              <a href="/projects/" title="">Projects</a>
+              <a href="/blog/" title="A short extract about my life experiences.">Blog</a>
             </li>
 <li class="masthead__menu-item">
-              <a href="/opinions/">Opinions</a>
+              <a href="/projects/" title="">Projects</a>
             </li>
 <li class="masthead__menu-item">
               <a href="/ideas/">Ideas</a>
             </li>
 <li class="masthead__menu-item">
-              <a href="/blog/" title="A short extract about my life experiences.">Blog</a>
+              <a href="/opinions/">Opinions</a>
             </li>
 <li class="masthead__menu-item">
-              <a href="/papers/">Papers</a>
+              <a href="/activities/" title="This is my personal list of books, Comics and films I love.">Activities</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/phd/">PhD</a>
             </li>
 <li class="masthead__menu-item">
               <a href="/courses/" title="Here is the list of the Courses I have received and the one I have given.">Courses</a>
             </li>
 <li class="masthead__menu-item">
-              <a href="/culture/" title="This is my personal list of books, Comics and films I love.">Culture</a>
+              <a href="https://jkobject.notion.site/92154f7b21da482b9a88daef49837bee?v=e0fc9c8764404f2e9804b889367758f6&amp;pvs=74">Database</a>
             </li>
 <li class="masthead__menu-item">
-              <a href="/categories/" title="Everything sorted by categories.">Subjects</a>
+              <a href="/papers/">Papers</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/categories/" title="Everything sorted by categories.">Categories</a>
             </li>
 </ul>
         
@@ -198,6 +229,9 @@
           <span class="visually-hidden">Toggle search</span>
           <i class="fas fa-search"></i>
         </button>
+        
+        
+          <li><i class="fas fa-fw fa-adjust dark_mode_btn" aria-hidden="true" onclick="dark_mode_btn_click()"></i></li>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
@@ -208,8 +242,6 @@
     </div>
   </div>
 </div>
-
-
     <div class="initial-content">
       
   
@@ -344,7 +376,7 @@
       
         
           
-            <li><a href="https://twitter.com/jkobject" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+            <li><a href="https://LinkedIn.com/in/jkobject" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
           
         
           
@@ -352,7 +384,7 @@
           
         
           
-            <li><a href="https://LinkedIn.com/in/jkobject" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+            <li><a href="https://twitter.com/jkobject" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
           
         
       
@@ -610,15 +642,148 @@ And here is where the problem lies. Ask many of the companies which already trie
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
+        <img src="/assets/images/photo-pasteur.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/the-final-decision-phd-grn-foundation-model/" rel="permalink">The Final Decision, PhD, Celligner2 and Foundational Models
+</a>
+      
+    </h2>
+    
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          16 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">I take a big decision and provide many lessons learned along the way, about leading teams, companies, doing a Ph.D. and working in startups
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/whitelabgx.jpeg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/WhitelabGx-and-being-team-lead-redacted/" rel="permalink">My Work at Whitelab and Creating a Team
+</a>
+      
+    </h2>
+    
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          19 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">I have jointed an AI Biotech startup for CGTs in Paris. See my experience here
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/aqemia.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/the-aqemia-story-redacted/" rel="permalink">The Aqemia Story
+</a>
+      
+    </h2>
+    
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          20 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">I have spent a few months at Aqemia as a Research Scientist. This is my story.
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
         <img src="/assets/images/broad_far.jpg" alt="">
       </div>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/blog/two-years-at-the-broad/" rel="permalink">2 years at the Broad Institute
+        <a href="/blog/leaving-broad/" rel="permalink">Leaving Broad
 </a>
       
     </h2>
+    
     
 
   <p class="page__meta">
@@ -633,150 +798,17 @@ And here is where the problem lies. Ask many of the companies which already trie
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          9 minute read
+          11 minute read
         
       </span>
     
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">Short stories about my professional experiences.
+    <p class="archive__item-excerpt" itemprop="description">It has been an epic journey. I learned a lot and feel like an accomplished Computational Biologist &amp; Scientist. But it is time to move on.
 </p>
   </article>
 </div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="/assets/images/tf_cobinding.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/cds-presentation/" rel="permalink">A look at Cobinding Analysis
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">A look at my cobinding analysis as part of my research on the epigenetics of AML dependencies
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="/assets/images/yearbroaad.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/one-year-at-the-broad/" rel="permalink">A year at the Broad Institute
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          7 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Short stories about my professional experiences.
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="/assets/images/dimred.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/umap-explanation/" rel="permalink">UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          4 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Short stories about my professional experiences.
-</p>
-  </article>
-</div>
-
         
       </div>
     </div>
@@ -815,19 +847,7 @@ And here is where the problem lies. Ask many of the companies which already trie
     
       
         
-          <li><a href="mailto:jkobject@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
-        
-      
-        
-          <li><a href="https://twitter.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-        
-      
-        
-          <li><a href="https://github.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
-        
-      
-        
-          <li><a href="https://ResearchGate.net/profile/jeremie_kalfon" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+          <li><a href="https://LinkedIn.com/in/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
         
       
         
@@ -835,7 +855,19 @@ And here is where the problem lies. Ask many of the companies which already trie
         
       
         
-          <li><a href="https://LinkedIn.com/in/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+          <li><a href="https://github.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="mailto:jkobject@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+          <li><a href="https://ResearchGate.net/profile/jeremie_kalfon" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
         
       
     
@@ -846,7 +878,7 @@ And here is where the problem lies. Ask many of the companies which already trie
   </ul>
 </div>
 
-<div class="page__footer-copyright">© 2023 Jérémie Kalfon. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">© 2024 Jérémie Kalfon. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
@@ -885,7 +917,26 @@ And here is where the problem lies. Ask many of the companies which already trie
 
 
 
-
+<script>
+  function dark_mode_btn_click() {
+    var node1 = document.getElementById('theme_source');
+    var node2 = document.getElementById('theme_source_2');
+    if(node1.getAttribute('rel')=='stylesheet'){
+      node2.setAttribute('rel', 'stylesheet');
+      setTimeout(function(){
+        node1.setAttribute('rel', 'stylesheet alternate');
+      }, 10);
+      sessionStorage.setItem('theme', 'dark');
+    }else{
+      node1.setAttribute('rel', 'stylesheet');
+      setTimeout(function(){
+        node2.setAttribute('rel', 'stylesheet alternate');
+      }, 10);
+      sessionStorage.setItem('theme', 'light');
+    }
+    return false;
+}
+</script>
 
               <script>
                 window.onload = function () {
