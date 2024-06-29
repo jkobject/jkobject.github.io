@@ -1,5 +1,5 @@
 var store = [{
-        "title": "A democratic system",
+        "title": "Kuberism: A truly democratic system",
         "excerpt":"Politics have seem to become more and more polarized and divided. However, one thing that we have to agree on is that despite the fact that capitalism, liberalism &amp; democracy have improved the life of most of humanity on earth, it is still not a perfect system. It has many...","categories": ["Frustrations and Solutions"],
         "tags": [],
         "url": "/ideas/a-democratic-system/",
@@ -22,6 +22,12 @@ var store = [{
         "tags": [],
         "url": "/ideas/the-bioarxiv-of-the-future/",
         "teaser": "/assets/images/twitter.jpeg"
+      },{
+        "title": "The future: tiny story",
+        "excerpt":"I imagine a future that I might not live to see, a future that might never exist, but a future that I am craving, full of wonders, possibilities, and ideas—a future with fewer dumb problems and more complex ones. In it, people live very long and healthy lives. This was...","categories": ["Frustrations and Solutions"],
+        "tags": [],
+        "url": "/ideas/the-future-I-dream-about/",
+        "teaser": "/assets/images/brave-new5.jpg"
       },{
         "title": "Why Rick had to invent to station of Ricks? [FR]",
         "excerpt":"my take on an aspect of this serie, inspired by the many fan-made-explanations out there Pourquoi Rick a du inventer la station des Ricks ? Dans Rick et Morty, il existe une infinité d’univers parallèles et à travers tous ces univers, seulement une seule station des ricks. Donc si un...","categories": ["random"],

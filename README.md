@@ -61,8 +61,8 @@ to push a new version, just do:
 
 ## legal
 
-Any content in this website is strictly belonging to Jérémie Kalfon. 
-The templates and architecture might be reused at will. 
+Any content in this website is strictly belonging to Jérémie Kalfon.
+The templates and architecture might be reused at will.
 
 ## previously
 
