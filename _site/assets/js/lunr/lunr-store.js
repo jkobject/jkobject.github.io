@@ -1,15 +1,9 @@
 var store = [{
-        "title": "Kuberism: A truly democratic system",
-        "excerpt":"Politics have seem to become more and more polarized and divided. However, one thing that we have to agree on is that despite the fact that capitalism, liberalism &amp; democracy have improved the life of most of humanity on earth, it is still not a perfect system. It has many...","categories": ["Frustrations and Solutions"],
+        "title": "Why Rick had to invent to station of Ricks? [FR]",
+        "excerpt":"my take on an aspect of this serie, inspired by the many fan-made-explanations out there Pourquoi Rick a du inventer la station des Ricks ? Dans Rick et Morty, il existe une infinité d’univers parallèles et à travers tous ces univers, seulement une seule station des ricks. Donc si un...","categories": ["random"],
         "tags": [],
-        "url": "/ideas/a-democratic-system/",
-        "teaser": "/assets/images/brave-new.jpg"
-      },{
-        "title": "Creating a cell model",
-        "excerpt":"I always very much liked the fact that a lot of objectives of big companies and research lab in the AI space started with some hypothesis ➡️ model before going to find out how to build something that gets close to it. Making theories first in biology has been a...","categories": ["Frustrations and Solutions"],
-        "tags": [],
-        "url": "/ideas/creating-cell-model/",
-        "teaser": "/assets/images/cell_model.jpeg"
+        "url": "/ideas/why-rick-invented-the-station-of-ricks/",
+        "teaser": "/assets/images/rick_morty.jpg"
       },{
         "title": "hydroponics and vertical farming",
         "excerpt":"Recently I had fun making some short back of the envelop computation on the use of hydroponics 📨 in a future world. Unregarding any related challenges, what would be the footprint of a factory producing the world’s food supply? 🤔 what is hydroponics? Here by hydroponics I am talking about...","categories": ["Sustaining Humanity"],
@@ -23,23 +17,29 @@ var store = [{
         "url": "/ideas/the-bioarxiv-of-the-future/",
         "teaser": "/assets/images/twitter.jpeg"
       },{
-        "title": "The future: tiny story",
-        "excerpt":"I imagine a future that I might not live to see, a future that might never exist, but a future that I am craving, full of wonders, possibilities, and ideas—a future with fewer dumb problems and more complex ones. In it, people live very long and healthy lives. This was...","categories": ["Frustrations and Solutions"],
-        "tags": [],
-        "url": "/ideas/the-future-I-dream-about/",
-        "teaser": "/assets/images/brave-new5.jpg"
-      },{
-        "title": "Why Rick had to invent to station of Ricks? [FR]",
-        "excerpt":"my take on an aspect of this serie, inspired by the many fan-made-explanations out there Pourquoi Rick a du inventer la station des Ricks ? Dans Rick et Morty, il existe une infinité d’univers parallèles et à travers tous ces univers, seulement une seule station des ricks. Donc si un...","categories": ["random"],
-        "tags": [],
-        "url": "/ideas/why-rick-invented-the-station-of-ricks/",
-        "teaser": "/assets/images/rick_morty.jpg"
-      },{
         "title": "Revolutionizing Medical Care",
         "excerpt":"The world of medicine is constantly evolving, with new research and advancements being made every day. In order to provide the best possible care to patients, it is crucial for healthcare professionals to stay updated on the latest standards of care. What if we could harness the power of technology...","categories": ["Frustrations and Solutions"],
         "tags": [],
         "url": "/ideas/wikipedia-for-doctors/",
         "teaser": "/assets/images/cell_model.jpeg"
+      },{
+        "title": "Creating a cell model",
+        "excerpt":"I always very much liked the fact that a lot of objectives of big companies and research lab in the AI space started with some hypothesis ➡️ model before going to find out how to build something that gets close to it. Making theories first in biology has been a...","categories": ["Frustrations and Solutions"],
+        "tags": [],
+        "url": "/ideas/creating-cell-model/",
+        "teaser": "/assets/images/cell_model.jpeg"
+      },{
+        "title": "Kuberism: A truly democratic system",
+        "excerpt":"Politics have seem to become more and more polarized and divided. However, one thing that we have to agree on is that despite the fact that capitalism, liberalism &amp; democracy have improved the life of most of humanity on earth, it is still not a perfect system. It has many...","categories": ["Frustrations and Solutions"],
+        "tags": [],
+        "url": "/ideas/a-democratic-system/",
+        "teaser": "/assets/images/brave-new.jpg"
+      },{
+        "title": "The future: tiny story",
+        "excerpt":"I imagine a future that I might not live to see, a future that might never exist, but a future that I am craving, full of wonders, possibilities, and ideas—a future with fewer dumb problems and more complex ones. In it, people live very long and healthy lives. This was...","categories": ["Frustrations and Solutions"],
+        "tags": [],
+        "url": "/ideas/the-future-I-dream-about/",
+        "teaser": "/assets/images/brave-new5.jpg"
       },{
         "title": "Are We Really Conscious? pt1",
         "excerpt":"1. On the emergence of life This is the first part of a Serie on consciousness, life and intelligence As far as I can recall, the idea of an intelligent design in life always seemed strange to me. It seemed like the adults had little imagination to involve yet another...","categories": ["On consciousness"],
@@ -53,29 +53,29 @@ var store = [{
         "url": "/opinions/on-police-violence-french/",
         "teaser": "/assets/images/couverture.png"
       },{
-        "title": "Reproducibility in Biology",
-        "excerpt":"Reproducibility in biology - bioinformatics research Having now worked for more than 2 years in a research environment and having been very sensitive about good, reproducible and open science. I have seen from large group computational labs and small group bench labs the issues and reasoning that might lead to...","categories": ["Scientific Method"],
-        "tags": ["Computational Biology","Data Science","Research"],
-        "url": "/opinions/reproducibility_in_biology/",
-        "teaser": "/assets/images/pipetting_bio.jpg"
-      },{
-        "title": "the case against prisons",
-        "excerpt":"Title: The Case Against Prisons: Rethinking Punishment and Rehabilitation Introduction Prisons have long been a cornerstone of modern criminal justice systems. However, their efficacy as a means of punishment and rehabilitation is increasingly coming under scrutiny. In this op-ed, we will examine the historical context of prisons, highlighting that they...","categories": ["Frustrations and Solutions"],
-        "tags": [],
-        "url": "/opinions/the-case-against-prisons/",
-        "teaser": "/assets/images/prisons.jpg"
-      },{
         "title": "why most brain-machine interfaces ideas suck",
         "excerpt":"I have often heard 👂 how Brain Machine Interfaces, also known as BMIs, would one day be a consumer products. Imagine being able to have a third arm. To control machines from your thoughts. Imagine being able to not just be in virtual reality through a headset; but to live...","categories": ["Biology & Medecine"],
         "tags": [],
         "url": "/opinions/why-BMI-sucks/",
         "teaser": "/assets/images/BMIchip.jpeg"
       },{
+        "title": "Reproducibility in Biology",
+        "excerpt":"Reproducibility in biology - bioinformatics research Having now worked for more than 2 years in a research environment and having been very sensitive about good, reproducible and open science. I have seen from large group computational labs and small group bench labs the issues and reasoning that might lead to...","categories": ["Scientific Method"],
+        "tags": ["Computational Biology","Data Science","Research"],
+        "url": "/opinions/reproducibility_in_biology/",
+        "teaser": "/assets/images/pipetting_bio.jpg"
+      },{
         "title": "Why most ai discussions are dumb",
         "excerpt":"Today I wanted to share feelings and thoughts I often have while listening to discussions about Artificial Intelligence. We have heard a lot about this field, what it is doing now and its promises. We have also heard a lot about expectations and fears for the future. And it is...","categories": ["AI"],
         "tags": [],
         "url": "/opinions/why-most-ai-discussions-are-dumb/",
         "teaser": "/assets/images/ai-universe.jpg"
+      },{
+        "title": "the case against prisons",
+        "excerpt":"Title: The Case Against Prisons: Rethinking Punishment and Rehabilitation Introduction Prisons have long been a cornerstone of modern criminal justice systems. However, their efficacy as a means of punishment and rehabilitation is increasingly coming under scrutiny. In this op-ed, we will examine the historical context of prisons, highlighting that they...","categories": ["Frustrations and Solutions"],
+        "tags": [],
+        "url": "/opinions/the-case-against-prisons/",
+        "teaser": "/assets/images/prisons.jpg"
       },{
         "title": "A French Engineering School",
         "excerpt":"It has now been six months since I officially finished my Engineering school, 🏫 I just received my diploma of Engineering. After my HighSchool, not knowing exactly what I should do to become like my heros: famous entrepreneurs and researchers, I set out to pass a “concours“ in order to...","categories": ["ECE"],
@@ -226,12 +226,6 @@ var store = [{
         "tags": ["Comp-Bio"],
         "url": "/blog/what-are-large-cell-models/",
         "teaser": "/assets/images/aivc.jpg"
-      },{
-        "title": "A year in the PhD",
-        "excerpt":"I have been a PhD student for a year now. Many things have happened and here is some lessons learned. do it in 2 years and be prepared make as many connections as I can maximize impact on the community: make something useful enjoy it as much as possible The...","categories": ["PhD"],
-        "tags": ["PhD","Comp-Bio"],
-        "url": "/blog/a-year-in-the-phd/",
-        "teaser": "/assets/images/photo-pasteur.jpg"
       },{
         "title": "About the AIVC paper",
         "excerpt":"Reading the AIVC manuscript further, I felt like adding some more comments on this topic, which I did before on X too. Being able to model a cell with large amount of multi modal data and multi scale AI models is something I have talked about before on X and...","categories": ["PhD"],

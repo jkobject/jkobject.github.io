@@ -2,6 +2,7 @@
 title: "Revolutionizing Medical Care"
 excerpt: "An Open Knowledge Platform for Enhanced Diagnosis and Treatment"
 category: "Frustrations and Solutions"
+date: 2022-03-02
 header:
  teaser: "/assets/images/cell_model.jpeg"
 ---

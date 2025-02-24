@@ -2,6 +2,7 @@
 title: "The future: tiny story"
 excerpt: "What will the future hold? We choose. We imagine."
 category: "Frustrations and Solutions"
+date: 2023-12-02
 header:
  teaser: "/assets/images/brave-new5.jpg"
 ---

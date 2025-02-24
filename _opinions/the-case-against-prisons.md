@@ -2,6 +2,7 @@
 title: "the case against prisons"
 excerpt: "prisons are some of the worst places humanity has invented. Can we do something different?"
 category: "Frustrations and Solutions"
+date: 2023-04-02
 header:
  teaser: "/assets/images/prisons.jpg"
 ---

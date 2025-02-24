@@ -2,6 +2,7 @@
 title: "Why most ai discussions are dumb"
 excerpt: "Over some years, I have always been bewildered by the shallowness of non academical discussions around AI. Here are some ideas."
 category: "AI"
+date: 2022-07-02
 header:
  teaser: "/assets/images/ai-universe.jpg"
 ---

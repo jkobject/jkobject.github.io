@@ -2,6 +2,7 @@
 title: "Kuberism: A truly democratic system"
 excerpt: "I Present an idea of a society which I have long discussed with friends and family and I now want to submit for the internet to judge"
 category: "Frustrations and Solutions"
+date: 2023-10-10
 header:
  teaser: "/assets/images/brave-new.jpg"
 ---

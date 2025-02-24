@@ -2,6 +2,7 @@
 title: "Creating a cell model"
 excerpt: "Let's think about some idea for bridging genotype to phenotype"
 category: "Frustrations and Solutions"
+date: 2022-07-02
 header:
  teaser: "/assets/images/cell_model.jpeg"
 ---

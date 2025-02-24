@@ -2,6 +2,7 @@
 title: "The BiorXiv of the futuuure"
 excerpt: "If I could build my dream research information sharing experience, what would it be?"
 category: "Frustrations and Solutions"
+date: 2021-10-02
 header:
  teaser: "/assets/images/twitter.jpeg"
 ---

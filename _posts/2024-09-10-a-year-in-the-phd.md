@@ -3,7 +3,7 @@ title: "A year in the PhD"
 excerpt: "What has happened in the last year? How does it feel like to be a PhD student?"
 category: "PhD"
 toc: true
-date: 2024-09-20
+date: 2025-03-05
 tags:
  - PhD
  - Comp-Bio
