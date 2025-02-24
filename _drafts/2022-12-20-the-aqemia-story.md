@@ -31,7 +31,7 @@ Because of the nature of the subject and respect for anyone currently working at
 But I might at least let you know about what Aqemia was very open about as of the end of 2022:
 
 - Aqemia is a very fast environment.
-- A lot of people -more than half- leave the company after a few months. It is not clear if this is because of Aqemia's decisions or because of their own.
+- A lot of people -more than half- leave the company after a few months. Sometimes because of Aqemia's decisions and sometimes because of their own.
 This percentage is higher for people with previous experience in industry and biotech. Aqemia is largely composed of young graduates.
 - Aqemia is mostly composed of people coming from a small set of elite French engineering schools. They have, however, little to no experience in biomedical research and biology.
 
@@ -134,7 +134,7 @@ But there was also obviously a cultural layer in the company that was explaining
 
 ## Leaving Aqemia
 
-In hindsight again, I should have expected what was to come: after 3.5 months at Aqemia, I had a meeting with my boss. I knew he would continue my trial period and this is actually what I wanted. He came and told me he was in shock as well but he had been asked to tell me that continuing the trial period would not even be a good idea. Again when asked why, he could only give answers like: "This is how Aqemia is. We don't want to waste your time. It doesn't come from me at all. I don't really understand either. I am sorry. Sometimes I think of leaving the company when I see things like this...".
+In hindsight again, I should have expected what was to come: after 2.5 months at Aqemia, I had a meeting with my boss. I knew he would continue my trial period and this is actually what I wanted. He came and told me he was in shock as well but he had been asked to tell me that continuing the trial period would not even be a good idea. Again when asked why, he could only give answers like: "This is how Aqemia is. We don't want to waste your time. It doesn't come from me at all. I don't really understand either. I am sorry. Sometimes I think of leaving the company when I see things like this...".
 
 Knowing that he would be here today I then requested a meeting with the CEO. He said that we had not spoken a lot after my arrival. That he was sorry about this decision and he wasn't sure it was a sensible decision. However, Aqemia's policy is: "If there's any doubt [about someone], then there's no doubt [about the course of action to take]".
 
@@ -142,10 +142,10 @@ At that moment, I was really in shock. Shocked by this decision from them, by my
 
 I had initially planned on giving him my version of the story, explaining what I thought was happening and why it was nonsense. But, hearing all of this, I decided not to.
 
-"We can still wait a few more weeks if you want", the CEO said.
+"We can still wait a few more days if you want", the CEO said.
 
 I had realized the only thing I wanted was to leave this hellish situation and this place that had, in only a few weeks, become hell for me.
 
-"I am going to leave now," I said. "Now, now?" he asked. "Yes, now. I am going to pack my things and leave now". "Are you sure you don't want to wait a few more weeks, at least to outboard what you did?". "Nope" ...
+"I am going to leave now," I said. "Now, now?" he asked. "Yes, now. I am going to pack my things and leave now". "Are you sure you don't want to wait a few more days, at least to outboard what you did?". "Nope" ...
 
-And so ended the Aqemia story for me. And, from what I could hear from many friends and colleagues that were at Aqemia or arrived after me, this is how it went for quite a lot of -really brilliant- people.
+And so ended the Aqemia story for me. And, from what I could hear from many friends and colleagues that were at Aqemia or arrived after me, this is how it went for quite a lot of people.

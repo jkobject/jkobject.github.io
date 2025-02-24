@@ -12,29 +12,33 @@ header:
   teaser: "assets/images/aqemia.jpg"
 ---
 
-During the summer of 2022, I was feeling pretty desperate. I had just experienced 6 months of many failed attempts at securing positions at high-profile companies like Deepmind, BenevolentAI, Isomorphic Labs, and Owkin. I had gone through very long and tedious interview processes where for some, it had felt like I was mainly just missing a Ph.D.. Some other times it felt like bad luck. Or maybe I had not taken enough time outside work to review some important concepts.
+During the summer of 2022, I was feeling pretty desperate. I had just experienced 6 months of many failed attempts at securing positions at companies like Deepmind, BenevolentAI, Isomorphic Labs, and Owkin. I had gone through very long and tedious interview processes where for some, it had felt like I was mainly just missing a Ph.D.. Some times it felt like bad luck, bad timing.
 
 But at the end of July, everything went very fast. I had gone through a couple of interviews at a young promising French startup called Aqemia and was quickly hired as a Research Scientist to start their target discovery team.
 
-The pay was low compared to where I was coming from and I negotiated stock options and a relocation bonus. I accepted the offer and 2 months later I was in Paris.
+The pay was low compared to the US and what I was coming from (but I could have many things to say between US and Europe's pay vs actual buying power and quality of life) and I negotiated stock options and a relocation bonus. I accepted the offer and 2 months later I was in Paris. (see more in my [previous post](https://jkobject.com/blog/leaving-broad/))
 
-I will now try to present the 2 months I spent at Aqemia:
+I will now try to present the time I spent at Aqemia:
 
 ## Disclaimer:
 
 __Why am I doing that?__
 
-It is simple: I strongly believe in openness and honesty and I think the world is a better place every time someone speaks freely and openly about subject matters that have been kept behind closed doors.
+It is simple: I strongly believe in openness and honesty and I think the world is a better place every time someone talks openly about subject matters that  are important, like work.
 
 I am talking here about my sole experience at Aqemia with the management team of 2022. This is just one point of view at one specific moment in time. I also have my own values and reference frame that are at play. Please do not use anyone's experience to judge a current company on this account and do your due diligence.
 
-Because of the nature of the subject and respect for anyone currently working at Aqemia, I will keep this post private for now. If you are interested in reading it, please shout out an email and I will send it to you.
+I am not talking about anything related to IP, technology, or anything part of my non-disclosure agreement, I am only talking about my experience as I would tell it to my friends that are not in the industry.
+
+Because of the nature of the subject and respect for anyone currently working at Aqemia, I will keep this post private for now. If you are interested in reading it, please shout out an email and let me know why you want to read it and who you are. I might send it to you.
+
 But I might at least let you know about what Aqemia was very open about as of the end of 2022:
 
-- Aqemia is a very fast environment.
-- A lot of people -more than half- leave the company after a few months. It is not clear if this is because of Aqemia's decisions or because of their own.
-This percentage seemed higher for people with previous experience in industry and biotech.
-- is largely composed of young graduates from a small set of elite French engineering schools. They have, however, little experience in biomedical research and biology.
+- Aqemia is a very fast-paced environment.
+- A lot of people -more than half- leave the company after a few months. (It is not clear if this is because of Aqemia's decisions or because of their own) (this percentage seemed higher for people with previous experience in industry and biotech).
+- Aqemia is largely composed of young graduates from a small set of elite French engineering schools.
+- Aqemia is very diverse with people coming from all over the world.
+- Aqemia is a company that is building a platform to help develop, de-risk, and fasten the preclinical phase of small molecule drug discovery.
 
 ------------- REDACTED -------------
 

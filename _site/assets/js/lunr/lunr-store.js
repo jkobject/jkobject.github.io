@@ -180,21 +180,27 @@ var store = [{
         "teaser": "/assets/images/broad_far.jpg"
       },{
         "title": "The Aqemia Story",
-        "excerpt":"During the summer of 2022, I was feeling pretty desperate. I had just experienced 6 months of many failed attempts at securing positions at high-profile companies like Deepmind, BenevolentAI, Isomorphic Labs, and Owkin. I had gone through very long and tedious interview processes where for some, it had felt like...","categories": ["Other Work Experience"],
+        "excerpt":"During the summer of 2022, I was feeling pretty desperate. I had just experienced 6 months of many failed attempts at securing positions at companies like Deepmind, BenevolentAI, Isomorphic Labs, and Owkin. I had gone through very long and tedious interview processes where for some, it had felt like I...","categories": ["Other Work Experience"],
         "tags": ["Big Data","Drug Discovery","Python"],
         "url": "/blog/the-aqemia-story-redacted/",
         "teaser": "/assets/images/aqemia.jpg"
       },{
         "title": "My Work at Whitelab and Creating a Team",
-        "excerpt":"After a very deceptive end of the year, I decided I wanted to take a month or so to get my thoughts in order. To relax and find some peace with what had happened. :peace: However the day following my departure I was already looking at companies and contacting labs....","categories": ["Other Work Experience"],
+        "excerpt":"After a difficult end of the year, I decided I wanted to take a month or so to get my thoughts in order. To relax and find some closure with what had happened. ☮️ However the day following my departure I was already looking at companies and contacting labs. 📱...","categories": ["Other Work Experience"],
         "tags": ["Big Data","genomics","Python"],
         "url": "/blog/WhitelabGx-and-being-team-lead-redacted/",
         "teaser": "/assets/images/whitelabgx.jpeg"
       },{
-        "title": "The Final Decision, PhD, Celligner2 and Foundational Models",
-        "excerpt":"This is a big story, and it seems that everything before led me to this point. 😊 I have decided to join Laura Cantini at Institut Pasteur and Gabriel Peyré at ENS ULM for a joint Ph.D. in Computational Biology and Applied Mathematics. 🧬📊 I will try to explain here...","categories": ["PhD"],
+        "title": "The PhD Decision, Celligner2 and Foundational Models",
+        "excerpt":"This is an important moment for me, and it seems that many things led me to this point. 😊 I have decided to join Laura Cantini at Institut Pasteur and Gabriel Peyré at ENS ULM for a joint Ph.D. in Computational Biology and Applied Mathematics. 🧬📊 I will try to...","categories": ["PhD"],
         "tags": ["Startups","Comp-Bio"],
-        "url": "/blog/the-final-decision-phd-grn-foundation-model/",
+        "url": "/blog/the-phd-decision-grn-foundation-model/",
+        "teaser": "/assets/images/photo-pasteur.jpg"
+      },{
+        "title": "A year in the PhD",
+        "excerpt":"I have been a PhD student for a year now. Many things have happened and here is some lessons learned. do it in 2 years and be prepared make as many connections as I can maximize impact on the community: make something useful enjoy it as much as possible The...","categories": ["PhD"],
+        "tags": ["PhD","Comp-Bio"],
+        "url": "/blog/a-year-in-the-phd/",
         "teaser": "/assets/images/photo-pasteur.jpg"
       },{
         "title": "PiPle: The Beginnings",
@@ -269,15 +275,9 @@ var store = [{
         "url": "/projects/scdataloader/",
         "teaser": "/assets/images/genepy.jpeg"
       },{
-        "title": "scDataloader",
-        "excerpt":" ","categories": ["PhD"],
-        "tags": ["Big Data","AI","Python","genomics"],
-        "url": "/projects/scdataloader.sync-conflict-20240102-165602-2FEYXUZ/",
-        "teaser": "/assets/images/genepy.jpeg"
-      },{
-        "title": "scDataloader",
-        "excerpt":" ","categories": ["PhD"],
-        "tags": ["Big Data","AI","Python","genomics"],
-        "url": "/projects/scdataloader.sync-conflict-20240102-165622-2FEYXUZ/",
-        "teaser": "/assets/images/genepy.jpeg"
+        "title": "scPRINT: what can a large cell model do and tell us about biology?",
+        "excerpt":"the goal of this project presentation is not to go through the details of the projects. Everything can be found in the paper: scPRINT: a large cell model to predict and explain single-cell gene expression, the preprint and the code. No instead, I want to talk about scPRINT in a...","categories": ["PhD"],
+        "tags": ["PhD","Comp-Bio"],
+        "url": "/projects/scprint/",
+        "teaser": "/assets/images/photo-pasteur.jpg"
       }]

@@ -1,21 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://jkobject.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jkobject.com/" rel="alternate" type="text/html" /><updated>2024-06-29T14:15:22+02:00</updated><id>https://jkobject.com/feed.xml</id><title type="html">Jérémie</title><subtitle>My website and blog.</subtitle><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><entry><title type="html">The Final Decision, PhD, Celligner2 and Foundational Models</title><link href="https://jkobject.com/blog/the-final-decision-phd-grn-foundation-model/" rel="alternate" type="text/html" title="The Final Decision, PhD, Celligner2 and Foundational Models" /><published>2023-10-02T00:00:00+02:00</published><updated>2023-10-02T00:00:00+02:00</updated><id>https://jkobject.com/blog/the-final-decision-phd-grn-foundation-model</id><content type="html" xml:base="https://jkobject.com/blog/the-final-decision-phd-grn-foundation-model/"><![CDATA[<p>This is a big story, and it seems that everything before led me to this point. 😊 I have decided to join <a href="https://research.pasteur.fr/fr/team/machine-learning-for-integrative-genomics/">Laura Cantini</a> at Institut Pasteur and <a href="http://www.gpeyre.com/">Gabriel Peyré</a> at ENS ULM for a joint Ph.D. in Computational Biology and Applied Mathematics. 🧬📊 I will try to explain here my decision process for something that can appear as a very sudden change of direction and slightly crazy, given my current position at WhitelabGx.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://jkobject.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jkobject.com/" rel="alternate" type="text/html" /><updated>2025-02-24T09:00:45+01:00</updated><id>https://jkobject.com/feed.xml</id><title type="html">Jérémie</title><subtitle>My website and blog.</subtitle><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><entry><title type="html">A year in the PhD</title><link href="https://jkobject.com/blog/a-year-in-the-phd/" rel="alternate" type="text/html" title="A year in the PhD" /><published>2024-09-10T00:00:00+02:00</published><updated>2024-09-10T00:00:00+02:00</updated><id>https://jkobject.com/blog/a-year-in-the-phd</id><content type="html" xml:base="https://jkobject.com/blog/a-year-in-the-phd/"><![CDATA[<p>I have been a PhD student for a year now. Many things have happened and here is some lessons learned.</p>
+
+<ol>
+  <li>do it in 2 years and be prepared</li>
+  <li>make as many connections as I can</li>
+  <li>maximize impact on the community: make something useful</li>
+  <li>enjoy it as much as possible</li>
+</ol>
+
+<h2 id="the-environment">The environment</h2>
+
+<h2 id="the-successes">The successes</h2>
+
+<h2 id="the-difficulties">The difficulties</h2>
+
+<h2 id="the-good-and-the-bad-of-academia">The good and the bad of academia</h2>
+
+<h2 id="what-is-next">What is next?</h2>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="PhD" /><category term="Comp-Bio" /><summary type="html"><![CDATA[What has happened in the last year? How does it feel like to be a PhD student?]]></summary></entry><entry><title type="html">The PhD Decision, Celligner2 and Foundational Models</title><link href="https://jkobject.com/blog/the-phd-decision-grn-foundation-model/" rel="alternate" type="text/html" title="The PhD Decision, Celligner2 and Foundational Models" /><published>2023-10-02T00:00:00+02:00</published><updated>2023-10-02T00:00:00+02:00</updated><id>https://jkobject.com/blog/the-phd-decision-grn-foundation-model</id><content type="html" xml:base="https://jkobject.com/blog/the-phd-decision-grn-foundation-model/"><![CDATA[<p>This is an important moment for me, and it seems that many things  led me to this point. 😊 I have decided to join <a href="https://research.pasteur.fr/fr/team/machine-learning-for-integrative-genomics/">Laura Cantini</a> at Institut Pasteur and <a href="http://www.gpeyre.com/">Gabriel Peyré</a> at ENS ULM for a joint Ph.D. in Computational Biology and Applied Mathematics. 🧬📊 I will try to explain here my decision process for something that can appear as a very sudden change of direction and slightly crazy, given my current position at WhitelabGx.</p>
 
 <p>You can learn more about what I did <a href="https://www.jkobject.com/blog/whitelabgx-and-being-team-lead-redacted/">at WhitelabGx here</a> but I don’t think it would explain much of my decision. I will try to explain here the reasons that led me to this decision and the many lessons I learned along the way. 📚🤔</p>
 
 <p>First, as you might be able to see in this life story of mine, I was always into science and research. I got proposed quite a few Ph.D. positions along the way. At ECE, University of Kent, EPFL, and INSERM. I applied myself to quite a few competitive places. But always found some other directions that I was more inclined to follow. It always seemed like I was pushing it for later or just thinking I could do without it. In a way I did. I went to work at the Broad Institute. Worked on many research projects, published as first-author, and even started working on my own projects. I became a research scientist in companies and even came on to lead scientists themselves during my time at Whitelab.</p>
 
-<p>So research, although not my only muse, has always been very dear to me.🧪🔬</p>
-
-<p>So it seems obvious that I would go on and do a Ph.D. at some point. But why did I wait? Why now? 🤔</p>
+<p>So research, although not my only passion, has always been very important to me.🧪🔬 It always seemed obvious that I would go on and do a Ph.D. at some point. But why did I wait? Why now? 🤔</p>
 
 <h2 id="the-story">The story</h2>
 
-<p>I was not looking for any other positions. I had in mind to stay 1-2 years at Whitelab Gx, see where it had gone in that time, and then make a decision about my future.</p>
+<p>I was not looking for any other positions. I had in mind to stay at least a few years at Whitelab Gx, see where it had gone in that time, and then make a decision about my future.</p>
 
 <p>However, I was in contact with Laura Cantini with whom I had discussions about Ph.D. projects before joining Whitelab. At some point, Laura came back to me with this Ph.D. proposal. I spent the good part of a month in this tough dilemma. Thinking about it in all possible ways to try and find a solution that I would not regret in the future. 🤯</p>
 
 <p>I will try to explain below what led me to the decision to take this Ph.D. opportunity.
-But still, I did not want to let Whitelab down. during the end of my trial period, I asked for it to be extended and explained the reason why. That gave Whitelab 2.5 months to prepare for my departure. Moreover, I presented a proposition to keep an advisory role in the company during my Ph.D. and to spend a week or so preparing my substitute for the position. I also did not take any vacation between my time at Whitelab and the Ph.D. so as to give as much time to Whitelab as I could. 🤝📅</p>
+But still, I did not want to let Whitelab down. during the end of my review period, I asked for it to be extended and explained the reason why. That gave Whitelab 2.5 months to prepare for my departure. Moreover, I presented a proposition to keep an advisory role in the company during my Ph.D. and to spend a week or so preparing my substitute for the position. I also did not take any vacation between my time at Whitelab and the Ph.D. so as to give as much time to Whitelab as I could. 🤝📅</p>
 
 <p>I believe that this goes to show my dedication and interest in the company, its mission, and the respect I have for my colleagues. 🙏🏢</p>
 
@@ -23,7 +38,7 @@ But still, I did not want to let Whitelab down. during the end of my trial perio
 
 <p>All the opportunities I had were very exciting to me. They were allowing me to learn in some of the best environments. At Broad Institute, I learned how to do research, biology, genomics, and cutting-edge tools and techniques.</p>
 
-<p>At Whitelab I learned how to build a company, how to lead a team, and how to go from 0 to a validated plan, product, and strategy.</p>
+<p>At Whitelab I learned how people build companies, how to lead a team, and how to go start from scratch a unit, with a validated plan, product design, and layout a business strategy for it. From working with clients, the BD team and the management.</p>
 
 <p>Why now? Well, there is no perfect time. But I could summarize it into 1 reasons:</p>
 
@@ -34,14 +49,14 @@ But still, I did not want to let Whitelab down. during the end of my trial perio
 <p>Obviously not everything can be summarized into one reason and not everything was perfect otherwise:</p>
 
 <ul>
-  <li>Whitelab was  maybe a bit too early stage for me? At least it is something I thought about sometimes <a href="https://www.jkobject.com/blog/whitelabgx-and-being-team-lead-redacted/">see Whitelab post</a>)</li>
+  <li>Whitelab was  maybe a bit too early stage for me? At least it is something I thought about sometimes <a href="https://www.jkobject.com/blog/whitelabgx-and-being-team-lead-redacted/">see Whitelab post</a></li>
   <li>I thought a lot about open source in computational biology and having an impact which I will be able to outline further in this post.</li>
-  <li>I also had a couple  disillusions during job interviews with some high profile companies. 🏢🚀</li>
+  <li>I also had a couple  disillusions during job interviews with some high profile companies a few years back see <a href="https://www.jkobject.com/blog/leaving-broad/">leaving Broad</a>.</li>
 </ul>
 
 <p>However, while working at Whitelab and even before that, I started to notice a change in the community. AI is slowly becoming more and more powerful and solving real biological problems. I saw it from foundation models in structural biology -with equivariant models and protein language models-, to transcriptomics and DNA language models.🤖🧬</p>
 
-<p>During my work on celligner2 -at Broad-, I could already envision how foundational models would help in many aspects of my problem and many others. Working on the Atlas at Whitelab, they were always in our minds in many of our real-world scientific problems (<a href="https://www.jkobject.com/blog/whitelabgx-and-being-team-lead-redacted/">see my Whitelab post</a>). (wait for a potential paper from our team at Whitelab in “nature computational science perspectives”) I had so many projects in mind and so little time to try to tackle them.💡📝</p>
+<p>During my work on celligner2 -at Broad-, I could already envision how foundational models would help in many aspects of my problem and many others. Working on the Atlas at Whitelab, they were always on our minds as possible solutions to tackle some real-world scientific problems (<a href="https://www.jkobject.com/blog/whitelabgx-and-being-team-lead-redacted/">see my Whitelab post</a>). (wait for a potential paper from our team at Whitelab in “nature computational science perspectives”) I had so many projects in mind and so little time to try to tackle them.💡📝</p>
 
 <p>I also could see the speed of development of new papers and the breadth of possible research endeavors available to computational biologists. So there was some FOMO there for sure and I knew that if an AI-heavy transcriptomic research project was coming my way I might not say no.📈📊</p>
 
@@ -49,7 +64,7 @@ But still, I did not want to let Whitelab down. during the end of my trial perio
 
 <h3 id="issues-and-realizations">issues and realizations</h3>
 
-<p>But this is not the only reason: Before joining Whitelab and moving to France, I had interviewed at a few companies: BenevolentAI, DeepMind, Isomorphic Labs, Owkin, and DeepLife, and applied to many more. I could see for many of them that my not having a Ph.D. was an issue. I even strongly believe that it prevented me from joining a couple of those companies.🎓❌</p>
+<p>But this is not the only reason: Before joining Whitelab and moving to France, I had interviewed at a few companies: BenevolentAI, DeepMind, Isomorphic Labs, Owkin, and DeepLife, and applied to many more. I could see for many of them that my not having a Ph.D. was an issue.</p>
 
 <p>Other companies, like Whitelab or Aqemia, were very clear that my experience, to them was worth much more than what most Ph.D.s would bring.</p>
 
@@ -57,9 +72,9 @@ But still, I did not want to let Whitelab down. during the end of my trial perio
 
 <p>Finally, working in startup companies, I noticed their needs and challenges, some of them I believe specific to European startups:</p>
 
-<p>The funding in Europe is often much smaller than in the US, especially for seed and series A. This is problematic for biotech companies that need high CAPEX from the get-go to hire the best people, do experimental validation, build experimental facilities, and create a first pipeline. This is creating a state of slower initial growth than for their American counterpart.💰💼</p>
+<p>The funding in Europe is often much smaller than in the US. This is problematic for biotech companies that need high CAPEX from the get-go to hire the best people, do experimental validation, build experimental facilities, and create a first pipeline. This is creating a state of slower initial growth than for their American counterpart.💰💼</p>
 
-<p>This might seem to some like a small problem but it can become soul-crushing if you have been in the same company for years, waiting for it to enter exponential growth. It also can create issues, as the companies will lack key positions like CTOs, and HR managers, and the necessary power balance between the different stakeholders in the company.📉🤝</p>
+<p>This might seem to some like a small problem but it can become soul-crushing if you have been in the same company for years, waiting for it to enter exponential growth. It also can create issues, as the companies might lack important positions or teams with expertise that are harder to come by in Europe or need high investments.</p>
 
 <p>Another realization I have had in both companies I was at, is the open-sourcing scare.😱📦</p>
 
@@ -68,38 +83,35 @@ But still, I did not want to let Whitelab down. during the end of my trial perio
 <p>Knowing biologists and Business Developers, I can guess this is an issue in many if not most (non-GAFAM) companies. “Use as many open source software and tutorials as you want”, “but don’t open source anything we do, don’t talk about anything we do”.</p>
 
 <p>In software, since it is something that can get copied and pasted so easily, scarcity has to be artificial.
-However open source and open science are often beneficial as everyone can collaborate together and build on top of each other’s work. This is the inherent innovation and progress phenomena built into software development and research.🔍🌐</p>
+However open source and open science are often beneficial as everyone can collaborate and build on top of each other’s work. This is the inherent innovation and progress phenomena built into software development and research.🔍🌐</p>
 
 <p>However, external pressures tend to force privacy towards innovation to keep it for oneself.🤐🔬</p>
 
-<p>I would argue that for projects in which the result is very far off or unclear, this is even more important. If you are building a product like a lamp, say. You cannot cheat, will the lamp stay on for X years? this will define your company. For something like Facebook, even, you get usage metrics from very early on. For Biotechs, computational biology, and research. There might not be such a clear-cut goal: “Can you get people to believe in you to enter a partnership with you to try to figure out this thing”.</p>
+<p>I would argue that for projects in which the result is very far off or unclear, not open-sourcing can be problematic. If you are building a product like a lamp, say. You cannot cheat, will the lamp turn on? For how long? For something like Facebook, even, you get usage metrics from very early on. For Biotechs, computational biology, and research, The clear-cut goal is often “a drug that passed some clinical trials”. This creates many untangible and not very engineering-like objectives along the way like: “Can you get people to believe in you?”  how many partnerships do you enter?”.</p>
 
-<p>In this context, you can lie. You can lie to the client but also to yourself. You can design a very nice-looking “car” that doesn’t drive at all. but since you are selling to people who don’t even really understand what is a car and what to do with it: it might be okay.🚗🤫</p>
+<p>In this context, you can lie. You can lie to the client but also to yourself. You can design a very nice-looking “car” that doesn’t drive at all. but since you are selling to people who don’t even really understand what is a car and what to do with it: it might be okay.🚗🤫 I am not saying that this is what we do at Whitelab at all! But it is an issue that all biotechs face and struggle with.I haven’t been the first to mention it.</p>
 
-<p>This is why I think open source is so important: when you let people know how to use a car, try your car, you cannot lie.📚🚗</p>
+<p>But this is why I think open source is so important: when you let people know how to use a car, try your car, the iteration cycle is much faster. 📚🚗</p>
 
-<p>Computational biologists should prioritize companies and positions where they can build tools that will have a direct impact, through open source and through experimental validation. This is still rare and it requires tough lobbying when this isn’t the case.</p>
+<p>In this context computational biologists should strive to inventivize environments where they can build things that will have a more direct impact than “helping make a drug”, through open source and through experimental validation.</p>
 
-<p>This has been a big lesson learned for me too. Thinking more about global impact, direct impact, value creation, and value capture.🌍📈</p>
+<p>This has been a big lesson learned for me too. Thinking more about impact, direct impact, and value creation. 🌍📈</p>
 
 <h2 id="the-hard-decision">the hard decision</h2>
 
-<p>Despite reasons to doubt as always nothing was pushing me away from my current job and I felt welcomed, useful and that we were going forward in our grand vision. <a href="https://www.jkobject.com/blog/whitelabgx-and-being-team-lead-redacted/">See the Whitelab post</a> to under why also this was such a hard decision for me to take. It really felt like choosing the hard thing, the hard path. But in a more subtle way, it feels like doing the right thing.🤔🛤️</p>
+<p>Nothing was pushing me away from my current job and I felt welcomed, useful and that we were going forward in our grand vision <a href="https://www.jkobject.com/blog/whitelabgx-and-being-team-lead-redacted/">See the Whitelab post</a>. Choosing the Ph.D. really felt like choosing the hard thing, the hard path.</p>
 
 <p>It is a hard decision because of how it might be seen too.
-I so do not want people to see it as doing a U-turn, or as a start-over. To me, it is more of a continuation of my professional career. Ph.D.s can be many things and I see mine much more like a post-doc or a long sabbatical.</p>
+I so do not want people to see it as doing a U-turn, or as a start-over. I now have 5 years of experience in computational biology and I am afraid of hearing “you are just fresh out of your Ph.D. and we thus don’t think you are yet qualified for a lead role in our company.” from an HR manager after my Ph.D.📆👨‍💼
+To me, it is a continuation of my career. Ph.D.s can be many things and I see mine as a kind of post-doc or a long sabbatical.</p>
 
-<p>I know have 5 years of experience in computational biology and I am afraid of hearing “you are just fresh out of your Ph.D. and we thus don’t think you are yet qualified for a lead role in our company.” from an HR manager after my Ph.D.📆👨‍💼</p>
+<p>Moreover, staying for such a short period in companies is not seen well. For very sensible reasons. But startups are a special environment, especially so early-stage. I have stayed for 3.5 years at Broad. Much longer than most people in my position there. I have worked on my project, PiPle, for more than 5 years. I also think I have shown how much I cared for Whitelab and the personal dedication I have put in and continue to, in the company. 🌟🤝</p>
 
-<p>Moreover Staying for such a short period in companies is not seen well. For very sensible reasons. I have stayed 2.5 months at Aqemia and now 7.5 months at Whitelab.🏢⌛</p>
-
-<p>But startups are a special environment, especially early-stage series A European companies. I have stayed for 3.5 years at Broad. Much longer than most people in my position. I have worked on my project, PiPle, for more than 5 years. I also think I have shown how much I cared for Whitelab and the personal dedication I have put in and continue to, in the company. 🌟🤝</p>
-
-<p>Finally, I feel I have actually learned a lot more in these 10 months than I had in a long time. From structural biology and drug discovery to business and management, the startup ecosystem, and cell and gene therapies.</p>
+<p>Finally, I feel I have actually learned a lot more in these 10 months than I had in a long time. From structural biology and drug discovery to business and management, the startup ecosystem, and cell and gene therapies. This is really thanks to these fast-paced environments and all the people I have been lucky to work with.</p>
 
 <h2 id="the-many-lessons-learned">the many lessons learned</h2>
 
-<p>With my previous experience in building a company, I would not have expected to learn that much from being in a startup. I think I missed that going from 1 to 5 is really not the same as 5 to 20 and 20 -to 100, etc… each growth cycle is a full reinvention of the culture, it is new challenges and things get exponentially more complex for the C-levels (i.e. the executive team: CEO, CTO, CSO, CFO, HR manager, etc)</p>
+<p>With my previous experience in building a company, I would not have expected to learn that much from being in a startup. I think I did not realize the major steps that going from a company of 1 to 5 people is compared to 5 to 20 and 20 to 100, etc… each growth cycle is a full reinvention of the company culture, it is new challenges and things get exponentially more complex for the C-levels (i.e. the executive team: CEO, CTO, CSO, CFO, HR manager, etc)</p>
 
 <h3 id="being-a-great-c-level-in-a-startup">being a great C-level in a startup</h3>
 
@@ -120,38 +132,31 @@ It shows how much of an example they are for everyone.</p>
 
 <p>But the example they set needs is a constant balancing act between everyone’s needs and goals. Within all this chaos they need to keep fostering a culture of trust and respect. This “keep cool” in most situations is as hard as the balancing act they constantly play. 🤹‍♀️🤯</p>
 
-<p>Finally, their domain knowledge 💼🧠🔑 is key to success. This requires experience in their topic and what their clients and the market want. M.D.s, Ph.D.s, business developers, and Engineers, all with experience in their field are of the utmost importance in biotech. It is a complicated field layered with traps, fakes, and mistakes. 🌡️📈📚</p>
+<p>Finally, their domain knowledge 💼🧠🔑 is key to success. This requires experience in their topic and what their clients and the market want. All of this trickles down when they start hiring people: M.D.s, Ph.D.s, business developers, and engineers, with strong experience in their field are of the utmost importance in biotech. In here C levels again play a key role, who they are, the culture they have fostered allows them to recruit and keep the best people, especially when the company is still small and hasn’t reached a strong brand recognition yet.</p>
 
-<p>All of this trickles down when you start asking yourself: “How do I hire the best people?”</p>
-
-<p>In here C levels again play a key role. The culture they have fostered allows them to keep the best people.</p>
-
-<p>You need to also have their work be fulfilling and complete while being on high growth. Processes and being agile 🔄👥⏰🔑 is also super important to structure ideas/projects and gather everyone’s strength and contributions.</p>
+<p>Keeping good people is super tough: you need to pay them well, have their work be fulfilling while always showing them you are on a high growth trajectory. Processes and agility all play a role too. 🔄👥⏰🔑 Moreover, it is only through these well tought-out processes and structures that everyone’s strength and contributions can be channeled efficiently into the projects and products the company is building.</p>
 
 <h3 id="thinking-differently-than-in-academia">Thinking differently than in academia</h3>
 
-<p>Building a startup has many similarities with being a researcher. You have ideas you need to sell through a powerful story. This is how you get people and funding. These ideas although incomplete have to convince people. You spend a lot of time finding money and building a team of experts and beginners.💡💰👥</p>
+<p>Building a startup has many similarities with being a researcher, for example: you have ideas you need to sell through a powerful story. This is how you get people and funding. These ideas although incomplete have to convince people. You spend a lot of time finding money and building a team of experts and beginners.💡💰👥</p>
 
-<p>But if it was that similar. Every CEO would be an ex-PI. There are big differences. The first few discussions with the BD team at Whitelab sometimes gave me “aha” moments.</p>
+<p>But if it was that similar, every ex-PI would be a trememdous CEO. There are big differences too. The first few discussions with the BD team at Whitelab really made me understand them: First, you need to know at all times what you are selling and what people want, even though you might not have it yet. What counts is that you know you are able to have it and how you would do it.</p>
 
-<p>You need to know what you are selling and what people want. Even though you might not have it yet. What counts is that you know you are able to have it and how you would do it.
-Putting yourself out. to as many conferences and events, with a solution to people’s problems needs to happen from the get-go.</p>
+<p>Second, putting yourself out there: going to as many conferences and events, with a solution to people’s problems. This needs to happen from the get-go. (jeremie from the future here: I realize now that these 2 points are still things that many PIs would be familiar with haha)</p>
 
-<p>Your first product might be miserable, but if it solves someone’s problem, it’s okay. And thinking product first, even in comp bio, is not really a reflex. What is a product? when you see all these amazing databases, datasets, and tools. What does one bring? You don’t have to bring much initially. A product is really just this abstraction over the work that your team does to produce the result. Except it has to be polished. People want deadlines, outputs, cost estimates, and other requirements.🗂️📅📋</p>
-
-<p>Whatever you do inside is not really important to the “product” concept. It is important for the product to be good. But not for you to have a product.</p>
+<p>Finally, your first product might be miserable, but if it solves someone’s problem, it’s okay. And thinking product first, even in comp bio, is not really a reflex. What is a product? when you see all these amazing databases, datasets, and tools. What does one bring? You don’t have to bring much initially, it just need to be useful to people. What is a product? It is really an abstraction over the work that your team does. It has to be polished, output meaningful results, within deadlines, it must have a given cost upfront… 🗂️📅📋</p>
 
 <h2 id="the-future-of-cell-and-gene-therapies">The future of cell and gene therapies</h2>
 
-<p>I joined Whitelab because I strongly believe in the future of genetic therapies. Covid opened our eyes to the power of mRNAs, CAR-Ts have had a big impact on cancer therapies and many more are in the pipeline.</p>
+<p>I joined Whitelab because I strongly believe in the future of genetic therapies. Covid opened our eyes to the power of mRNAs, while CAR-Ts have had a big impact on cancer therapies, and many more drugs are in the pipeline.</p>
 
-<p>Especially seeing the issues with small molecules. It felt to me that we needed a more targeted approach to the medicine of the future.💉🧬🌐</p>
+<p>Especially understanding the issues that plague small molecules. It felt to me that we needed a more targeted approach for the medicine of the future.💉🧬🌐</p>
 
 <p>But first, what are cell and gene therapies (CGT)s?</p>
 
-<p>Cell and gene therapies (CGTs) represent a revolutionary approach to disease treatment, moving away from traditional methods towards more targeted and personalized solutions. These therapies work by altering the genetic material within a patient’s cells to fight or prevent disease. They can replace or repair abnormal genes, introduce new genes to fight disease or modulate the expression of an individual’s genes.🧬💊🌡️</p>
+<p>Cell and gene therapies (CGTs) represent a revolutionary approach to disease treatment, moving away from traditional methods towards more targeted and personalized solutions. These therapies work by altering the genetic material within a patient’s cells to fight or prevent disease. They can replace, remove or repair abnormal genes or introduce totally new genes to fight diseases.🧬💊🌡️</p>
 
-<p>A very famous subcategory: mRNA therapies, such as those used in some COVID-19 vaccines, are a type of gene therapy that works by introducing a small piece of mRNA into the body. This mRNA carries the instructions for making a protein, and once inside our cells, it uses the body’s own machinery to produce this protein. The produced protein then triggers an immune response. The advantage of mRNA therapies is that they don’t alter the DNA in our cells and are not permanent, reducing the risk of long-term side effects.💉🦠🧬</p>
+<p>A very famous subcategory: mRNA therapies, such as those used in some COVID-19 vaccines, are a type of gene therapy that works by introducing a small piece of mRNA into the body. This mRNA carries some instructions and once inside our cells, it uses the body’s own machinery to execute it. The advantage of mRNA therapies is that they don’t alter the DNA in our cells and are not permanent, reducing the risk of long-term side effects.💉🦠🧬</p>
 
 <p>Antisense oligonucleotides (ASOs) are another type of CGT that work by binding to the mRNA produced by certain genes and preventing them from being translated into proteins. This can be useful for diseases where a particular gene is overactive. ASOs can be designed to target almost any gene, making them a highly versatile tool in the fight against disease.💉🎯🧬</p>
 
@@ -159,9 +164,9 @@ Putting yourself out. to as many conferences and events, with a solution to peop
 
 <p>I believe that since genetic sequencing and machine learning, we are able to understand the root cause of disease in the name of one or a few cell types and their disregulation caused by often one or a few genes.</p>
 
-<p>Being able to target only these specific diseased cell types is within reach for CGTs but not for small molecules. Moreover being specific in what we are doing: what genes we are triggering is also what CGTs can do that most small molecules, for their pleiotropy, can’t</p>
+<p>Being able to target only these specific diseased cell types is within reach for CGTs but not for small molecules. Moreover being specific in what we are doing: what genes we are triggering is also what CGTs can do that most small molecules can’t.</p>
 
-<p>It feels like a perfect CGT would allow us to create a novel drug in hours. From a laptop and a DNA printing machine. It would be the perfect interface between man and life: The human-life interface.</p>
+<p>It feels like a perfect CGT would allow us to create a novel drug in hours. From a laptop and a DNA printing machine. It would be the perfect interface between man and life.</p>
 
 <h2 id="my-goals-and-objectives-for-the-phd">My goals and objectives for the Ph.D.</h2>
 
@@ -195,7 +200,7 @@ Thus my final goal is to enjoy it, as much as I can!😊🚀</p>
 
 <h3 id="previous-proposals">Previous proposals</h3>
 
-<p>I have had a previous Ph.D. projects proposals for a Ph.D. that I then postponed. I <a href="https://www.jkobject.com/assets/documents/researchobjectives.pdf">list it here</a> too for historical purposes.</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Startups" /><category term="Comp-Bio" /><summary type="html"><![CDATA[I take a big decision and provide many lessons learned along the way, about leading teams, companies, doing a Ph.D. and working in startups]]></summary></entry><entry><title type="html">My Work at Whitelab and Creating a Team</title><link href="https://jkobject.com/blog/WhitelabGx-and-being-team-lead-redacted/" rel="alternate" type="text/html" title="My Work at Whitelab and Creating a Team" /><published>2023-09-25T00:00:00+02:00</published><updated>2023-09-25T00:00:00+02:00</updated><id>https://jkobject.com/blog/WhitelabGx-and-being-team-lead-redacted</id><content type="html" xml:base="https://jkobject.com/blog/WhitelabGx-and-being-team-lead-redacted/"><![CDATA[<p>After a very deceptive end of the year, I decided I wanted to take a month or so to get my thoughts in order. To relax and find some peace with what had happened. :peace:</p>
+<p>I have had a previous Ph.D. projects proposals for a Ph.D. that I then postponed. I <a href="https://www.jkobject.com/assets/documents/researchobjectives.pdf">list it here</a> too for historical purposes.</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Startups" /><category term="Comp-Bio" /><summary type="html"><![CDATA[I take a big decision and provide many lessons learned along the way, about leading teams, companies, doing a Ph.D. and working in startups]]></summary></entry><entry><title type="html">My Work at Whitelab and Creating a Team</title><link href="https://jkobject.com/blog/WhitelabGx-and-being-team-lead-redacted/" rel="alternate" type="text/html" title="My Work at Whitelab and Creating a Team" /><published>2023-09-25T00:00:00+02:00</published><updated>2023-09-25T00:00:00+02:00</updated><id>https://jkobject.com/blog/WhitelabGx-and-being-team-lead-redacted</id><content type="html" xml:base="https://jkobject.com/blog/WhitelabGx-and-being-team-lead-redacted/"><![CDATA[<p>After a difficult end of the year, I decided I wanted to take a month or so to get my thoughts in order. To relax and find some closure with what had happened. ☮️</p>
 
 <p>However the day following my departure I was already looking at companies and contacting labs. 📱 I was in this state where the only thing that could make me feel better was to look at the future and the possibilities. 💭</p>
 
@@ -205,17 +210,17 @@ Thus my final goal is to enjoy it, as much as I can!😊🚀</p>
 
 <p>It actually only took a week or so before I got replies. One coming from Deep Life and one from WhitelabGx.</p>
 
-<p>I ended up being offered positions, but the choice was easy. DeepLife’s management seems to have a few red flags 🟥 in their behavior during my couple of meetings. After my previous experience, this is something I was now much more sensitive to. I was not really able to see these before.</p>
+<p>I ended up being offered positions. DeepLife was very early stage at the time and its interview process made me feel a bit uneasy about things. After my previous experience, this is something I was now much more sensitive to. I was not really able to see these before.</p>
 
-<p>Whitelab on the other hand was very welcoming. Excited about my profile and offered me a very rewarding position, especially compared to DeepLife. I would be a team lead in Computational Biology :muscle:. Here I saw how much my previous experience was valuable as I felt I was now much more able to see in between the lines during recruitment processes. Not what people say, but how they behave, what they offer, and the way they do it. Doing so I could also see the tremendous difference between how companies can see or not someone’s value and potential:moneybag:.</p>
+<p>Whitelab on the other hand was very welcoming. Excited about my profile and offered me a very rewarding position. I would be a team lead in Computational Biology :muscle:. Here I saw how much my previous experience was valuable as I felt I was now much more able to see in between the lines during recruitment processes. Not what people say, but how they behave, what they offer, and the way they do it. Doing so I could also see the tremendous difference in how companies can value any one person’s profile. While deep life was offering me an entry level position, after 4.5 years of experience, Whitelab was offering me a team lead position.</p>
 
-<p>In a way, it is like friendship. It is a matter of taste, need but most of all serendipity.</p>
+<p>In a way, recruitment feels like friendship sometimes. It is a matter of taste, of need but most of all serendipity.</p>
 
 <p>On the surface, the position looked a lot like what I had been told at Aqemia (although not really offered). But here, the team was already there waiting for me and the objectives were clear. 🥇</p>
 
 <h2 id="the-environment">the environment</h2>
 
-<p>Many things were green flags 🟩 for me. The company was actually thinking of itself as a Biotech, the CSO was a biologist with experience. They had an HR manager. They also had a team of biologists and both the CEO / CSO were very honest, aware of what they didn’t know, and were very open to my suggestions and ideas.</p>
+<p>Many things were green flags 🟩 for me. The company was really thinking of itself as a Biotech, the CSO was a biologist with experience. They had an HR manager. They also had a team of biologists and both the CEO / CSO were very honest, aware of what they didn’t know, and were very open to my suggestions and ideas.</p>
 
 <p>The place itself was a brand new incubator 👀 called Future4Care. As nice as Broad and less than 10 minutes from my place.</p>
 
@@ -223,53 +228,59 @@ Thus my final goal is to enjoy it, as much as I can!😊🚀</p>
 
 <p>The goal of WhitelabGx is to build a platform to help develop, de-risk, and fasten the preclinical phase of novel cell and gene therapies. The idea is to use ML and data science to drive the discovery, experimental design, and so on 📈.</p>
 
-<p>Especially after getting experience in small molecule preclinical development, I could see the huge potential of CGTs in their precision compared to regular small molecules. I also believe strongly that many diseases will only be cured through the use of CGTs. Finally, it is also a nice experience to add to my resume.</p>
+<p>Especially after getting experience in small molecule preclinical development, I could see the huge potential of CGTs in their precision compared to regular small molecules. I also believe strongly that many diseases will only be cured through the use of CGTs.</p>
 
 <h2 id="disclaimer">Disclaimer:</h2>
 
 <p>Why am I doing that?</p>
 
-<p>It is simple: I strongly believe in openness and honesty and I think the world is a better place every time someone speaks freely and openly about subject matters that have been kept behind closed doors.</p>
+<p>It is simple: I strongly believe in openness and honesty and I think the world is a better place every time people speak freely and openly about subject matters that are important, like work.</p>
 
 <p>I am talking here about my sole experience at WhitelabGx. With the management of 2023. This is just one point of view at one specific moment in time. I also have my own values and reference frame. Please do not use anyone’s past experience to judge a current company on this account and do your own due diligence.</p>
 
-<p>Because of the nature of the subject and with respect for anyone currently working at WhitelabGx, I will keep this post private for now. If you are interested in reading it, please send out an email and I will send it to you.</p>
+<p>I am not talking about anything related to IP, technology, or anything part of my non-disclosure agreement, I am only talking about my experience as I would tell it to my friends that are not in the industry.</p>
+
+<p>Because of the nature of the subject and with respect for anyone currently working at WhitelabGx, I will keep this post private for now. If you are interested in reading it, please send out an email with an explanation of why you want to read it and who you are and I might send it to you.</p>
 
 <p>But I might at least let you know about what WhitelabGx was very open about as of the end of 2023:</p>
 
 <ul>
   <li>Whitelab has a culture of kindness and honesty.</li>
-  <li>Almost everyone is staying in the company after their trial period.</li>
+  <li>Most people are staying in the company after their trial period.</li>
   <li>Whitelab is largely composed of people with past experience in research, biotech, and biology.</li>
   <li>Whitelab is very diverse, exactly half of the company is non-french. with people coming from all over the world. The culture is very American.</li>
 </ul>
 
 <p>————- REDACTED ————-</p>
 
-<p><a href="mailto:jkobject@gmail.com" class="btn btn--primary btn--large">send me an email to get the full story here</a></p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="Other Work Experience" /><category term="Big Data" /><category term="genomics" /><category term="Python" /><summary type="html"><![CDATA[I have jointed an AI Biotech startup for CGTs in Paris. See my experience here]]></summary></entry><entry><title type="html">The Aqemia Story</title><link href="https://jkobject.com/blog/the-aqemia-story-redacted/" rel="alternate" type="text/html" title="The Aqemia Story" /><published>2022-12-20T00:00:00+01:00</published><updated>2022-12-20T00:00:00+01:00</updated><id>https://jkobject.com/blog/the-aqemia-story-redacted</id><content type="html" xml:base="https://jkobject.com/blog/the-aqemia-story-redacted/"><![CDATA[<p>During the summer of 2022, I was feeling pretty desperate. I had just experienced 6 months of many failed attempts at securing positions at high-profile companies like Deepmind, BenevolentAI, Isomorphic Labs, and Owkin. I had gone through very long and tedious interview processes where for some, it had felt like I was mainly just missing a Ph.D.. Some other times it felt like bad luck. Or maybe I had not taken enough time outside work to review some important concepts.</p>
+<p><a href="mailto:jkobject@gmail.com" class="btn btn--primary btn--large">send me an email to get the full story here</a></p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="Other Work Experience" /><category term="Big Data" /><category term="genomics" /><category term="Python" /><summary type="html"><![CDATA[I have jointed an AI Biotech startup for CGTs in Paris. See my experience here]]></summary></entry><entry><title type="html">The Aqemia Story</title><link href="https://jkobject.com/blog/the-aqemia-story-redacted/" rel="alternate" type="text/html" title="The Aqemia Story" /><published>2022-12-20T00:00:00+01:00</published><updated>2022-12-20T00:00:00+01:00</updated><id>https://jkobject.com/blog/the-aqemia-story-redacted</id><content type="html" xml:base="https://jkobject.com/blog/the-aqemia-story-redacted/"><![CDATA[<p>During the summer of 2022, I was feeling pretty desperate. I had just experienced 6 months of many failed attempts at securing positions at companies like Deepmind, BenevolentAI, Isomorphic Labs, and Owkin. I had gone through very long and tedious interview processes where for some, it had felt like I was mainly just missing a Ph.D.. Some times it felt like bad luck, bad timing.</p>
 
 <p>But at the end of July, everything went very fast. I had gone through a couple of interviews at a young promising French startup called Aqemia and was quickly hired as a Research Scientist to start their target discovery team.</p>
 
-<p>The pay was low compared to where I was coming from and I negotiated stock options and a relocation bonus. I accepted the offer and 2 months later I was in Paris.</p>
+<p>The pay was low compared to the US and what I was coming from (but I could have many things to say between US and Europe’s pay vs actual buying power and quality of life) and I negotiated stock options and a relocation bonus. I accepted the offer and 2 months later I was in Paris. (see more in my <a href="https://jkobject.com/blog/leaving-broad/">previous post</a>)</p>
 
-<p>I will now try to present the 2 months I spent at Aqemia:</p>
+<p>I will now try to present the time I spent at Aqemia:</p>
 
 <h2 id="disclaimer">Disclaimer:</h2>
 
 <p><strong>Why am I doing that?</strong></p>
 
-<p>It is simple: I strongly believe in openness and honesty and I think the world is a better place every time someone speaks freely and openly about subject matters that have been kept behind closed doors.</p>
+<p>It is simple: I strongly believe in openness and honesty and I think the world is a better place every time someone talks openly about subject matters that  are important, like work.</p>
 
 <p>I am talking here about my sole experience at Aqemia with the management team of 2022. This is just one point of view at one specific moment in time. I also have my own values and reference frame that are at play. Please do not use anyone’s experience to judge a current company on this account and do your due diligence.</p>
 
-<p>Because of the nature of the subject and respect for anyone currently working at Aqemia, I will keep this post private for now. If you are interested in reading it, please shout out an email and I will send it to you.
-But I might at least let you know about what Aqemia was very open about as of the end of 2022:</p>
+<p>I am not talking about anything related to IP, technology, or anything part of my non-disclosure agreement, I am only talking about my experience as I would tell it to my friends that are not in the industry.</p>
+
+<p>Because of the nature of the subject and respect for anyone currently working at Aqemia, I will keep this post private for now. If you are interested in reading it, please shout out an email and let me know why you want to read it and who you are. I might send it to you.</p>
+
+<p>But I might at least let you know about what Aqemia was very open about as of the end of 2022:</p>
 
 <ul>
-  <li>Aqemia is a very fast environment.</li>
-  <li>A lot of people -more than half- leave the company after a few months. It is not clear if this is because of Aqemia’s decisions or because of their own.
-This percentage seemed higher for people with previous experience in industry and biotech.</li>
-  <li>is largely composed of young graduates from a small set of elite French engineering schools. They have, however, little experience in biomedical research and biology.</li>
+  <li>Aqemia is a very fast-paced environment.</li>
+  <li>A lot of people -more than half- leave the company after a few months. (It is not clear if this is because of Aqemia’s decisions or because of their own) (this percentage seemed higher for people with previous experience in industry and biotech).</li>
+  <li>Aqemia is largely composed of young graduates from a small set of elite French engineering schools.</li>
+  <li>Aqemia is very diverse with people coming from all over the world.</li>
+  <li>Aqemia is a company that is building a platform to help develop, de-risk, and fasten the preclinical phase of small molecule drug discovery.</li>
 </ul>
 
 <p>————- REDACTED ————-</p>
@@ -905,40 +916,4 @@ These two edges would get merged by using the <a href="https://en.wiktionary.org
 
 <p>The explanation defined in part 2 of the paper can be understood by anyone after reading <a href="https://books.google.com/books?id=xbL11KfgiEAC&amp;printsec=frontcover&amp;hl=fr&amp;source=gbs_ge_summary_r&amp;cad=0#v=onepage&amp;q&amp;f=false">this book</a> which will allow the reader to gain the vocabulary to understand the wikipedia pages defining the vocabulary used in the paper. :p</p>
 
-<p>More information about Riemannian topology can then be learned <a href="http://www.math.ens.fr/~feydy/Teaching/geometrie_riemannienne_espaces_de_formes.pdf">here</a>. It is in French however ;)</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="BroadInstitute" /><category term="Computational Biology" /><category term="Data Science" /><category term="Mathematics" /><category term="explanation" /><summary type="html"><![CDATA[Short stories about my professional experiences.]]></summary></entry><entry><title type="html">My first month at the Broad Institute</title><link href="https://jkobject.com/blog/a-month-at-the-broad/" rel="alternate" type="text/html" title="My first month at the Broad Institute" /><published>2019-05-25T00:00:00+02:00</published><updated>2019-05-25T00:00:00+02:00</updated><id>https://jkobject.com/blog/a-month-at-the-broad</id><content type="html" xml:base="https://jkobject.com/blog/a-month-at-the-broad/"><![CDATA[<p>I arrived 🛬 in Boston exactly a month ago. I managed to get my Visa 5 hours🕔 before catching my plane and the next➡️ thing you know. I was in an unfurnished apartment, waiting for it all to start.
-The  <a href="https://www.jkobject.com/blog/broadinstitute-interview/">Broad Institute</a> is part of these institute a lot of people have never heard👂 of. Backed by billionaire philanthropist. They do cutting edge research and give their members a dream job. In that regard they compete ➕more➕ with the silicon valley unicorn🦄 than any other company.</p>
-
-<p><img src="/assets/images/broad1.png" alt="" class="align-center" /></p>
-
-<p>I came at the broad and did not do a Ph.D. right now for a reason. In this place I am surrounded by people coming from the best schools🎒 in the US, they are driven and all extremely bright. See, I had never been in such an environment before the <a href="https://www.jkobject.com/blog/an-internship-in-new-york/">Flatiron Institute</a>. But last time.. I loved💝 it and felt I had learnt more in a couple of months than in 2 years at school.</p>
-
-<p>I want to do research, I want to have a Ph.D. I want to become an entrepreneur. I want for people to be free from disease😷 and untimely death💀. But what I know is that in order to do that I need to be surrounded with a  lot of people with a similar mindset and will. This is what I found🔎 in Boston and at the Broad.</p>
-
-<p><img src="/assets/images/advancedstudy.jpg" alt="" /></p>
-
-<p>Here I am working on a couple of subjects. I am part of <a href="http://cancerdatascience.org/">CDS</a>, which work on computational analysis and prediction of Big Biological Dataset in order to better❇️ understand the mechanism of the cell  in the context of human🚶 cancer.</p>
-
-<p>We are using Machine Learning, Bioinformatic and High Performance Computing in order to tackle a set of subjects.</p>
-
-<p>The main biological data and technique being used in our group👥 is <a href="https://en.wikipedia.org/wiki/Perturb-seq">Perturbation</a>. In a nutshell, we perturb a large amount of <a href="https://www.cancer.gov/publications/dictionaries/cancer-terms/def/cancer-cell-line">Cancer Cell Lines</a> -landmark,ex patient cancerous tissue that has  evolved to live and replicate in petri dish since decades- genes by removing❌ them with Crispr tools🔩, by destroying their <a href="https://en.wikipedia.org/wiki/RNA">RNA</a> with <a href="https://en.wikipedia.org/wiki/RNA_interference">RNAi</a>, by submitting the cells to doses of small molecules (drugs and others) and then looking 👀 at their growth📈 rate and sequencing their transcriptome (the quantity of RNA in the cell).</p>
-
-<p><img src="/assets/images/crisprscreen.png" alt="" /></p>
-
-<p>This effort is seconded by <a href="https://portals.broadinstitute.org/ccle">CCLE</a> which categorizes via many assays and tools🔭, each cancer cell lines〰️. All of it belong to the <a href="https://depmap.org/">DepMap Project</a>, around which a lot (&gt;50) of secondary project gravitate. these projects are made in partnership with research lab at Harvard and MIT and with hospitals in Boston, such as the Dana Farber Cancer Institute, MGH and Boston Children’s hospital🏥. But also with companies such as Novartis and Google.</p>
-
-<p>I have been tasked in taking care of the data💽 processing aspect of CCLE. with each new Cell Line release I will assay a lot of its genetic informationℹ️ and output it for a quarterly🌗 releases.</p>
-
-<p><img src="/assets/images/depmapmodel.svg" alt="" /></p>
-
-<p>My second work has to do with the analysis of the <a href="https://en.wikipedia.org/wiki/Epigenomics">epigenome</a>. Which is a set of features on the DNA that can be analyzed and used to understand how the cell is reading📖 and processing DNA at the time of analysis. this can help inferring the program of the cell and differentiate it to any other cells in our body -which all have the same DNA sequence, however not the same function.-
-In this epigenome I look👀 at networks of <a href="https://en.wikipedia.org/wiki/Gene_regulatory_network">regulatory processes</a> which involving <a href="https://en.wikipedia.org/wiki/Enhancer_(genetics)">enhancers</a> and <a href="https://en.wikipedia.org/wiki/Transcription_factor">transcription factors</a>. Some of them create a feed forward process called the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4772020/">Core Regulatory circuitry</a>.</p>
-
-<p>My goal is to understand and analyze it in the context of <a href="https://www.cancer.gov/types/leukemia/patient/adult-aml-treatment-pdq">Acute Myeloid Leukemia</a> in children👶. Understanding it might help in inferring the global cellular program and thus the possible actions that can be undertaken to disrupt or reverse it.</p>
-
-<hr />
-
-<h3 id="broad-life">Broad Life</h3>
-
-<p>Broadies as we are called  enjoy, in addition➕ to a life goal, an extremely decent salaries, food 🍦 everywhere (or maybe it is just the US) and talks🗨 twice per day. I know.. I am spoiled.</p>
-
-<p>You will be able to read 📗 much more about my projects and their results in the coming posts 🚩.</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="BroadInstitute" /><category term="Computational Biology" /><category term="Associate" /><category term="Job" /><category term="Boston" /><category term="Research" /><summary type="html"><![CDATA[I arrived in Boston exactly a month ago. I managed to get my Visa 5 hours before catching...]]></summary></entry></feed>
+<p>More information about Riemannian topology can then be learned <a href="http://www.math.ens.fr/~feydy/Teaching/geometrie_riemannienne_espaces_de_formes.pdf">here</a>. It is in French however ;)</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="BroadInstitute" /><category term="Computational Biology" /><category term="Data Science" /><category term="Mathematics" /><category term="explanation" /><summary type="html"><![CDATA[Short stories about my professional experiences.]]></summary></entry></feed>
