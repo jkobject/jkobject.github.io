@@ -275,9 +275,27 @@ var store = [{
         "url": "/projects/scdataloader/",
         "teaser": "/assets/images/genepy.jpeg"
       },{
-        "title": "scPRINT: what can a large cell model do and tell us about biology?",
-        "excerpt":"the goal of this project presentation is not to go through the details of the projects. Everything can be found in the paper: scPRINT: a large cell model to predict and explain single-cell gene expression, the preprint and the code. No instead, I want to talk about scPRINT in a...","categories": ["PhD"],
+        "title": "GRnnData",
+        "excerpt":" ","categories": ["PhD"],
+        "tags": ["PhD","Comp-Bio"],
+        "url": "/projects/grnndata/",
+        "teaser": "/assets/images/grnndata.png"
+      },{
+        "title": "scPRINT",
+        "excerpt":" ","categories": ["PhD"],
         "tags": ["PhD","Comp-Bio"],
         "url": "/projects/scprint/",
-        "teaser": "/assets/images/photo-pasteur.jpg"
+        "teaser": "/assets/images/scprint.png"
+      },{
+        "title": "BenGRN: a large cell model to predict and explain single-cell gene expression",
+        "excerpt":" ","categories": ["PhD"],
+        "tags": ["PhD","Comp-Bio"],
+        "url": "/projects/bengrn/",
+        "teaser": "/assets/images/bengrn.png"
+      },{
+        "title": "About scPRINT",
+        "excerpt":"the goal of this project presentation is not to go through the details of the projects. Everything can be found in the paper: scPRINT: a large cell model to predict and explain single-cell gene expression, the preprint and the code. No instead, I want to talk about scPRINT in a...","categories": ["PhD"],
+        "tags": ["PhD","Comp-Bio"],
+        "url": "/projects/about-scprint/",
+        "teaser": "/assets/images/scprint.jpg"
       }]
