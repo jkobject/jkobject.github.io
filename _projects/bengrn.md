@@ -1,6 +1,6 @@
 ---
-title: "BenGRN: a large cell model to predict and explain single-cell gene expression"
-excerpt: ""
+title: "BenGRN"
+excerpt: "a large cell model to predict and explain single-cell gene expression"
 category: "PhD"
 toc: true
 date: 2024-07-10

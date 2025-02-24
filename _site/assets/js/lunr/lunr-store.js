@@ -197,11 +197,47 @@ var store = [{
         "url": "/blog/the-phd-decision-grn-foundation-model/",
         "teaser": "/assets/images/photo-pasteur.jpg"
       },{
+        "title": "Enrichr, Prerank, GSEA or ssGSEA?",
+        "excerpt":"Bioinformatician’s main tool for discovery has often been differential expression analysis. But between Enrich, Prerank, GSEA, ssGSEA, which tool should you use? here is the quick reminder X-plainer: Enrichr is when you just have a list of genes (can be small): GENEA, GENEB, GENEC Prerank is when you have values...","categories": ["PhD"],
+        "tags": ["Comp-Bio","Research"],
+        "url": "/blog/enrichr-prerank-gsea/",
+        "teaser": "/assets/images/enrichment.png"
+      },{
+        "title": "AUPRC vs AP: Evaluating Binary Classification",
+        "excerpt":"When analysing a classification task for my recent paper scPRINT, I fell into a fascinating “data-sciency” rabbit-hole about AUPRC, AUC and AP. Understanding Classification Metrics When evaluating a binary classification model that outputs probabilities or has internal regularization, we need ways to assess its performance across different decision thresholds. ROC...","categories": ["PhD"],
+        "tags": ["Data-Science","Research"],
+        "url": "/blog/auprc-vs-ap/",
+        "teaser": "/assets/images/auprc2.png"
+      },{
+        "title": "Managing GRNs and What They Mean",
+        "excerpt":"Managing GRNs and What They Mean In my recent paper scPRINT, I went into a deep dive on gene regulatory networks. Many findings are in the manuscript but I had some additional thoughts to share and wanted to present a tool I built to work with GRNs. What are Gene...","categories": ["PhD"],
+        "tags": ["Comp-Bio","Research"],
+        "url": "/blog/manage-grn-and-what-they-mean/",
+        "teaser": "/assets/images/grn2.png"
+      },{
+        "title": "Ancestry Bias in CRISPR Screens",
+        "excerpt":"Ancestry Bias in CRISPR Screens 🎉 Thrilled to share our paper on ancestry biases in CRISPR screens published in Nature Communications! This work, led by Sean Misek, reveals an important discovery about potential biases in CRISPR screening technology. You can read the full paper here: https://www.nature.com/articles/s41467-024-48957-z How It Started 🧐...","categories": ["PhD"],
+        "tags": ["Comp-Bio","Research","CRISPR"],
+        "url": "/blog/ancestry-bias-in-crispr/",
+        "teaser": "/assets/images/ancestry.jpeg"
+      },{
+        "title": "What are large cell models?",
+        "excerpt":"In my recent paper scPRINT I define the term Large Cell Model but what are they? AI is everywhere nowadays, and in biology it is helping us enter a new era of what jacob kimmel describes as predictive biology. In this new field, we use complex computational approaches together with...","categories": ["PhD"],
+        "tags": ["Comp-Bio"],
+        "url": "/blog/what-are-large-cell-models/",
+        "teaser": "/assets/images/aivc.jpg"
+      },{
         "title": "A year in the PhD",
         "excerpt":"I have been a PhD student for a year now. Many things have happened and here is some lessons learned. do it in 2 years and be prepared make as many connections as I can maximize impact on the community: make something useful enjoy it as much as possible The...","categories": ["PhD"],
         "tags": ["PhD","Comp-Bio"],
         "url": "/blog/a-year-in-the-phd/",
         "teaser": "/assets/images/photo-pasteur.jpg"
+      },{
+        "title": "About the AIVC paper",
+        "excerpt":"Reading the AIVC manuscript further, I felt like adding some more comments on this topic, which I did before on X too. Being able to model a cell with large amount of multi modal data and multi scale AI models is something I have talked about before on X and...","categories": ["PhD"],
+        "tags": ["AI","Comp-Bio","Research"],
+        "url": "/blog/about-the-aivc-paper/",
+        "teaser": "/assets/images/aivc.jpg"
       },{
         "title": "PiPle: The Beginnings",
         "excerpt":"PiPle is the next generation professional communication tool. It is a cross platform project led by a team of Engineering student, 👩‍🎓 from ECEparis which is led by me. We won a couple of Prizes for this project last year. The Berger Levrault Citizen Challenge as well as ECE innov...","categories": ["PiPle"],
@@ -273,7 +309,7 @@ var store = [{
         "excerpt":" ","categories": ["PhD"],
         "tags": ["Big Data","AI","Python","genomics"],
         "url": "/projects/scdataloader/",
-        "teaser": "/assets/images/genepy.jpeg"
+        "teaser": "/assets/images/scdataloader.png"
       },{
         "title": "GRnnData",
         "excerpt":" ","categories": ["PhD"],
@@ -281,21 +317,21 @@ var store = [{
         "url": "/projects/grnndata/",
         "teaser": "/assets/images/grnndata.png"
       },{
-        "title": "scPRINT",
-        "excerpt":" ","categories": ["PhD"],
-        "tags": ["PhD","Comp-Bio"],
-        "url": "/projects/scprint/",
-        "teaser": "/assets/images/scprint.png"
-      },{
-        "title": "BenGRN: a large cell model to predict and explain single-cell gene expression",
+        "title": "BenGRN",
         "excerpt":" ","categories": ["PhD"],
         "tags": ["PhD","Comp-Bio"],
         "url": "/projects/bengrn/",
         "teaser": "/assets/images/bengrn.png"
       },{
-        "title": "About scPRINT",
-        "excerpt":"the goal of this project presentation is not to go through the details of the projects. Everything can be found in the paper: scPRINT: a large cell model to predict and explain single-cell gene expression, the preprint and the code. No instead, I want to talk about scPRINT in a...","categories": ["PhD"],
+        "title": "A new hierarchical classification methodology",
+        "excerpt":"As part of my recent paper scPRINT I stumbled upon an issue leading me to build a new kind of classifier for hierarchical-tree-based labels often defined in ontologies. What am I talking about? A big issue plaguing the field of cell biology and some others is the lack of common...","categories": ["PhD"],
+        "tags": ["AI","Comp-Bio","Research"],
+        "url": "/projects/new-hierarchical-classification-methodology/",
+        "teaser": "/assets/images/hierarchical-classification.png"
+      },{
+        "title": "scPRINT",
+        "excerpt":"The goal of this project presentation is not to go through the details of the projects. Everything can be found in the paper: scPRINT: a large cell model to predict and explain single-cell gene expression, the preprint and the code. No instead, I want to talk about scPRINT in a...","categories": ["PhD"],
         "tags": ["PhD","Comp-Bio"],
         "url": "/projects/about-scprint/",
-        "teaser": "/assets/images/scprint.jpg"
+        "teaser": "/assets/images/scprint.png"
       }]

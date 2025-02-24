@@ -1,7 +1,7 @@
                         importScripts("/assets/js/workbox-v3.6.3/workbox-sw.js");
             workbox.setConfig({modulePathPrefix: "/assets/js/workbox-v3.6.3"});
 
-            self.__precacheManifest = [{"url":"/index.html","revision":"decdc635cc51a23f6e01d138b8c0603a"},{"url":"/blog/a-year-in-the-phd/","revision":"42bcf5e3bc7d19c5efce65e187197f14"},{"url":"/blog/the-phd-decision-grn-foundation-model/","revision":"7e1bd02c8d9605b2a9ea95a30fc325bf"},{"url":"/blog/WhitelabGx-and-being-team-lead-redacted/","revision":"983030b3ffebea3bfe737bbabaf0dcb9"},{"url":"/blog/the-aqemia-story-redacted/","revision":"f4d9b5540b05f386289f5f58a4645fcf"},{"url":"/blog/leaving-broad/","revision":"3a31f8cdfda387eb04047a6558e111be"}];
+            self.__precacheManifest = [{"url":"/index.html","revision":"ed89862f6d9ade556b32c012218e488e"},{"url":"/blog/about-the-aivc-paper/","revision":"ef3da42a74254acf22beba088a200033"},{"url":"/blog/a-year-in-the-phd/","revision":"2a79aef5f1e4fb8ce96b77b8a7ceb71c"},{"url":"/blog/what-are-large-cell-models/","revision":"a03c3c83a5ed3cfffda6506b2f6d6f9a"},{"url":"/blog/ancestry-bias-in-crispr/","revision":"30c469109b64cd6a27b5b7a443f6a6ff"},{"url":"/blog/manage-grn-and-what-they-mean/","revision":"f806a40d529a4a690f757e04a24a8f4a"}];
             // service-worker.js
 
 // set names for both precache & runtime cache

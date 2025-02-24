@@ -21,16 +21,41 @@ I have been a PhD student for a year now. Many things have happened and here is 
 
 ## The environment
 
+- working at Pasteur with Laura
+- working at ENS with Gabriel
+- the administration
+- two PIs
+- the incentives
 
 ## The successes
 
+- was able to release scprint and 3 more tools
+- went to over 10 events and conferences
+- presented 4 times
+- did 3 poster presentations
+- 
 
 ## The difficulties
 
+- hard to completely switch projects
+- many more open questions about scprint
+- tough to be 
 
 ## The good and the bad of academia
+
+- the freedom
+- the time for oneself to think
+- the ability to connect with so many different people across the world
+
+- the bureaucracy
+- being alone a lot of the time
+- the lack of structure
+- one project only is tough
 
 
 ## What is next?
 
+- still have a goal to do it in around 2 years
+- for now I feel I have followed the path 4 points I made in the beginning
+- it is becomming harder as tasks and projects pile up
 

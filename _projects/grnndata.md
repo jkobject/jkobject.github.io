@@ -8,6 +8,6 @@ tags:
  - PhD
  - Comp-Bio
 header:
-  teaser: "assets/images/grnndata.png"
+  teaser: "/assets/images/grnndata.png"
 redirect_to: https://cantinilab.github.io/GRnnData/
 ---

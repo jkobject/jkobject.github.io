@@ -28,9 +28,9 @@ gem "minimal-mistakes-jekyll"
 group :jekyll_plugins do
 	gem 'amp-jekyll'
   gem "github-pages", group: :jekyll_plugins
-	gem 'jekyll-admin'
 	gem 'jekyll-figure'
 	gem 'jekyll-maps'
+	gem "jekyll-include-cache", group: :jekyll_plugins
 	gem 'jekyll-pwa-plugin', "= 2.2.3"
 	gem 'jekyll-remote-theme'
 	gem 'jekyll-scholar'
