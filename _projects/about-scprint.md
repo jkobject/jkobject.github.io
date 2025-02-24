@@ -3,7 +3,7 @@ title: "scPRINT"
 excerpt: "Going more in depth about lessons learned in building large cell models"
 category: "PhD"
 toc: true
-date: 2025-02-24
+date: 2025-03-05
 tags:
  - PhD
  - Comp-Bio
