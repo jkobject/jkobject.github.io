@@ -233,6 +233,12 @@ var store = [{
         "url": "/blog/about-the-aivc-paper/",
         "teaser": "/assets/images/aivc.jpg"
       },{
+        "title": "A year in the PhD",
+        "excerpt":"I have been a PhD student for a year now. Many things have happened and here is some lessons learned. do it in 2 years and be prepared make as many connections as I can maximize impact on the community: make something useful enjoy it as much as possible The...","categories": ["PhD"],
+        "tags": ["PhD","Comp-Bio"],
+        "url": "/blog/a-year-in-the-phd/",
+        "teaser": "/assets/images/photo-pasteur.jpg"
+      },{
         "title": "PiPle: The Beginnings",
         "excerpt":"PiPle is the next generation professional communication tool. It is a cross platform project led by a team of Engineering student, 👩‍🎓 from ECEparis which is led by me. We won a couple of Prizes for this project last year. The Berger Levrault Citizen Challenge as well as ECE innov...","categories": ["PiPle"],
         "tags": ["Project Management","Team Management","App Development","Innovation","Design"],
@@ -300,7 +306,7 @@ var store = [{
         "teaser": "/assets/images/genepy.jpeg"
       },{
         "title": "scDataloader",
-        "excerpt":" ","categories": ["PhD"],
+        "excerpt":"In my new manuscript scPRINT, I present a tool called scDataLoader 🧬. You can find more details in our preprint. The package is available on github and documentation is available here. Origins Last year, while starting my Ph.D. and after asking many questions on the cellxgene’s slack channel, I got...","categories": ["PhD"],
         "tags": ["Big Data","AI","Python","genomics"],
         "url": "/projects/scdataloader/",
         "teaser": "/assets/images/scdataloader.png"
@@ -324,7 +330,7 @@ var store = [{
         "teaser": "/assets/images/hierarchical-classification.png"
       },{
         "title": "scPRINT",
-        "excerpt":"The goal of this project presentation is not to go through the details of the projects. Everything can be found in the paper: scPRINT: a large cell model to predict and explain single-cell gene expression, the preprint and the code. No instead, I want to talk about scPRINT in a...","categories": ["PhD"],
+        "excerpt":"The Story Behind scPRINT: Beyond the Paper 📚 Rather than diving into the technical details (which you can find in our paper, preprint, or code repository), I want to share the journey and insights gained while building scPRINT. For those interested in technical presentations, check out my talks at LoGG...","categories": ["PhD"],
         "tags": ["PhD","Comp-Bio"],
         "url": "/projects/about-scprint/",
         "teaser": "/assets/images/scprint.png"

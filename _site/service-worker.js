@@ -1,7 +1,7 @@
                         importScripts("/assets/js/workbox-v3.6.3/workbox-sw.js");
             workbox.setConfig({modulePathPrefix: "/assets/js/workbox-v3.6.3"});
 
-            self.__precacheManifest = [{"url":"/index.html","revision":"80d374268a32d8d69e3768af76f9c5f4"},{"url":"/blog/about-the-aivc-paper/","revision":"ef3da42a74254acf22beba088a200033"},{"url":"/blog/what-are-large-cell-models/","revision":"a03c3c83a5ed3cfffda6506b2f6d6f9a"},{"url":"/blog/ancestry-bias-in-crispr/","revision":"30c469109b64cd6a27b5b7a443f6a6ff"},{"url":"/blog/manage-grn-and-what-they-mean/","revision":"f806a40d529a4a690f757e04a24a8f4a"},{"url":"/blog/auprc-vs-ap/","revision":"eb2e5db27c3ed3a8cb4e53797e38e2c0"}];
+            self.__precacheManifest = [{"url":"/index.html","revision":"20f09eb52b889cc4918ccb53377acfc8"},{"url":"/blog/a-year-in-the-phd/","revision":"80b704022807a65afa296c618547a558"},{"url":"/blog/about-the-aivc-paper/","revision":"ef3da42a74254acf22beba088a200033"},{"url":"/blog/what-are-large-cell-models/","revision":"a03c3c83a5ed3cfffda6506b2f6d6f9a"},{"url":"/blog/ancestry-bias-in-crispr/","revision":"30c469109b64cd6a27b5b7a443f6a6ff"},{"url":"/blog/manage-grn-and-what-they-mean/","revision":"f806a40d529a4a690f757e04a24a8f4a"}];
             // service-worker.js
 
 // set names for both precache & runtime cache

@@ -24,6 +24,7 @@ I have been a PhD student for a year now. Many things have happened and here is 
 - working at Pasteur with Laura
 - working at ENS with Gabriel
 - the administration
+- 
 - two PIs
 - the incentives
 
