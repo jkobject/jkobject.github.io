@@ -10,7 +10,7 @@ tags:
   - Foundation Models
   - Single-Cell
 header:
-  teaser: "/assets/images/scprint2-logo.jpg"
+  teaser: "/assets/images/scprint2logo.png"
 ---
 
 The field of single-cell foundation models is moving fast. In the past three

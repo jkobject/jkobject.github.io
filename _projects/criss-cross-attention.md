@@ -10,7 +10,7 @@ tags:
   - Transformers
   - Attention
 header:
-  teaser: "/assets/images/crisslogo.jpg"
+  teaser: "/assets/images/crisslogo.png"
 ---
 
 Self-attention is one of the most powerful ideas in modern machine learning. It
