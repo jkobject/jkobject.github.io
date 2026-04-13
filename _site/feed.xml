@@ -1,6 +1,255 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://jkobject.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jkobject.com/" rel="alternate" type="text/html" /><updated>2025-02-24T15:41:21+01:00</updated><id>https://jkobject.com/feed.xml</id><title type="html">Jérémie</title><subtitle>My website and blog.</subtitle><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><entry><title type="html">About the AIVC paper</title><link href="https://jkobject.com/blog/about-the-aivc-paper/" rel="alternate" type="text/html" title="About the AIVC paper" /><published>2024-12-02T00:00:00+01:00</published><updated>2024-12-02T00:00:00+01:00</updated><id>https://jkobject.com/blog/about-the-aivc-paper</id><content type="html" xml:base="https://jkobject.com/blog/about-the-aivc-paper/"><![CDATA[<p>Reading the <a href="https://arxiv.org/pdf/2409.11654">AIVC manuscript</a> further, I felt like adding some more comments on this topic, which I did before on <a href="https://x.com/jkobject/status/1836657509483888857">X too</a>.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-02-15T11:02:06+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jérémie</title><subtitle>My website and blog.</subtitle><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><entry><title type="html">VCC starter pack</title><link href="http://localhost:4000/blog/vcc-starter-pack/" rel="alternate" type="text/html" title="VCC starter pack" /><published>2025-10-10T00:00:00+02:00</published><updated>2025-10-10T00:00:00+02:00</updated><id>http://localhost:4000/blog/vcc-starter-pack</id><content type="html" xml:base="http://localhost:4000/blog/vcc-starter-pack/"><![CDATA[<p>To start the VCC, you need to know a few things. This is your starter pack:</p>
 
-<p>Being able to model a cell with large amount of multi modal data and multi scale AI models is something I have talked about before on X and in my recent <a href="https://www.biorxiv.org/content/10.1101/2024.07.29.605556v1">manuscript</a></p>
+<p><img src="/assets/images/starterpack.png" alt="image of a starter pack" /></p>
+
+<p>The main packages for single cell data analysis are <strong>scanpy</strong> - <strong>anndata</strong> -
+<strong>pertpy:</strong> with many other easy to use packages being part of the
+<strong><a href="https://scverse.org/">scverse</a></strong> ecosystem. In addition, both RNA-seq, csv,
+and image datasets management across thousands of datasets is enabled with
+<strong>lamindb</strong>.</p>
+
+<p>To get started there is a couple nice tutorials in the packages referenced above
+as well as some tutos
+<a href="https://open.substack.com/pub/surajparmar/p/from-molecules-to-matrices-part-1">here</a>,
+and <a href="https://huggingface.co/blog/virtual-cell-challenge">here</a> that are must
+reads!</p>
+
+<p><strong>For further readings:</strong></p>
+
+<p>I will shamelessly plug my paper and package
+<a href="https://www.nature.com/articles/s41467-025-58699-1">scPRINT</a> to understand
+where we are at with single cell foundation model. I will also mention the
+<a href="https://arcinstitute.org/news/virtual-cell-model-state">state</a> model that is
+the first to delve a lot into perturbations and how to do multiple cells at a
+time contrary to most other methods.</p>
+
+<p>A key perturbation method that is not foundation model based is
+<a href="https://academic.oup.com/bioinformatics/article/41/Supplement_1/i599/8199372">GPO-VAE</a>,
+which encompasses very similar idea to <strong>scVI, cradle-VAE</strong>, <strong>GEARS</strong>,
+<strong>chemCPA</strong>, <strong>Biolord</strong>, <strong><a href="https://arxiv.org/pdf/2505.14919">txpert</a></strong>, <strong><a href="https://www.nature.com/articles/s43588-025-00870-1">LPM</a></strong></p>
+
+<p>Many of these tools and others have been benchmarked in a few papers:</p>
+
+<ol>
+  <li><a href="https://www.biorxiv.org/content/10.1101/2024.12.23.630036v2.full">A Systematic Comparison of Single-Cell Perturbation Response Prediction Models</a></li>
+  <li><a href="https://www.biorxiv.org/content/10.1101/2024.12.20.629581v2.full">Benchmarking AI Models for In Silico Gene Perturbation of Cells</a></li>
+  <li><a href="https://www.nature.com/articles/s41592-025-02980-0">Benchmarking algorithms for generalizable single-cell perturbation response prediction</a></li>
+</ol>
+
+<p>But we know already that many of the previous losses used to train models and
+assess them on perturbation data suffered from issues as presented in this
+paper: <a href="https://arxiv.org/abs/2506.22641">mode collapse in current models</a> and
+this <a href="https://www.nature.com/articles/s41587-025-02777-8">paper</a>. This is also
+because current perturbation dataset are very noisy.</p>
+
+<p><strong>Things that many people don’t say and that should be our theory when designing
+the models:</strong></p>
+
+<ol>
+  <li>Many perturbations do nothing.</li>
+  <li>Many other perturbations kill the cell (but we don’t know it) and the readout
+is just really poor quality stuff because of it, or cells that survived
+somehow..</li>
+  <li>Many perturbations have very similar phenotypic effect. Triggering something
+like what happens when the cell has an issue in its genome.</li>
+  <li>Moreover the RNA-guides used to decide which region of the genome is
+perturbed have very different effect due to something called off-tagerting
+which was extensively studied and corrected for in the DepMap project.</li>
+  <li>Most datasets are super sparse (only some genes perturbed), or only a couple
+cell lines, and often low depth.</li>
+</ol>
+
+<p>Fortunately, we have depmap and LINCs/L1000. which are genome-wide perturbations
+in thousands of different cell models with guide-effect analysed However, while
+some of them have 1000 genes assessed post perturbation most of the data is only
+wether the cells died or not post perturbations. but we NEED to use this dataset
+somehow. This in addition to what we learned above will be differentiating
+factors. Another very similar
+<a href="https://www.nature.com/articles/s41467-019-13805-y">dataset</a> done by Sanger on
+the same set of cell lines and using very similar guides also exist and has many
+similarities and some differences with depmap.</p>
+
+<p>Additionally, an image-based dataset also exist, made by Recursion called
+<a href="https://www.rxrx.ai/">RxRx</a>. But it is using similar guides / molecules and
+cell lines that depmap and Sanger are using!</p>
+
+<p>Arc hasn’t released the guide sequences yet but we might infer it. we know also
+the genetic sequence of the cell line. We also know about the novel ideas for
+creating better losses. Now how would we do it well?</p>
+
+<p>Finally to know more about ideas for the future of this field, please read the
+2024 markov bio
+<a href="https://www.markov.bio/research/mech-interp-path-to-e2e-biology">blog post</a>,
+which I agree a lot with.</p>
+
+<p>Many perturbation datasets are easily available on lamindb’s own database
+<a href="https://lamin.ai/laminlabs/pertdata">here</a>, plus
+<a href="https://www.depmap.org/">depmap</a> (where you will need both the genedependency,
+expression, guide efficacy, and model files) and <a href="https://clue.io/">LINCS</a> (see
+the download instructions below).</p>
+
+<h2 id="outline-of-a-project">Outline of a project</h2>
+
+<ol>
+  <li>get the lamindb and add all other datasets we need (depmap, lincs, xaira,
+…) (3 weeks)</li>
+  <li>generate a good set of train/val/test datasets to test some hypothesis (more
+data, variability, adding chemical perturbation, multiple species, guide
+information, phenotypic only …) (3 weeks - 2 months)</li>
+  <li>reimplement all the scoring metrics used in previous papers</li>
+  <li>Define a MIN and MAX (MAX = subset of perturbed cells, same results from
+another dataset) (MIN=unperturbed cells, a linear model, a simple random
+forest, a gene embedding KNN model, ChatGPT, …)</li>
+  <li>answer some questions on identifiability, quality, and information content:
+    <ol>
+      <li>can we find perturbations that have no impact on cell state (might need to
+compare to average of perturbations) (1 week)</li>
+      <li>can we find perturbations that have the same effect? (cell death, growth
+arrest, …) (1 week)</li>
+      <li>what does correcting for off-targeting do in perturb-seq?</li>
+      <li>how much more predictive accuracy do we get from using a depmap / rxrx /
+10 genes / 1000 / … for different modalities, what information is only
+available in one of them? (3 months)</li>
+    </ol>
+  </li>
+  <li>looking at the benchmarking, get the best performing and/or simplest
+VAE-based architecture (1 week)</li>
+  <li>retrain it and test if adding more data, changing the losses, or other
+parameters improve the model, check how much using LINCS &amp; Depmap help (3
+months)</li>
+  <li>simple fine-tune of scPRINT with this data (1 month)</li>
+  <li>use a simple random forest model on crafted features to predict the
+perturbation and see how it does (1 month)</li>
+  <li>use a groundtruth dataset (literature and correlation (GENIE3)) to predict
+the perturbation and see how it does (1 month)</li>
+  <li>going further by mixing ideas of GPO-VAE to scPRINT in pseudo-bulk mode (3
+months)</li>
+  <li>going further by mixing ideas from STATE to scPRINT (3 months)</li>
+</ol>
+
+<h2 id="other-useful-dataset-ressources">other useful dataset ressources</h2>
+
+<ul>
+  <li><a href="https://virtualcellchallenge.org/datasets">VCC’s datasets</a></li>
+  <li><a href="https://github.com/Peekxel/PRISM">https://github.com/Peekxel/PRISM</a></li>
+  <li><a href="https://virtualcellmodels.cziscience.com/dataset/genome-scale-tcell-perturb-seq">CZI’s genome scale perturb seq</a></li>
+  <li><a href="https://thevirtualcell.com/">Ginkgo’s dataset</a></li>
+  <li><a href="https://www.kaggle.com/competitions/echoes-of-silenced-genes/leaderboard">Millya’s current challenge</a></li>
+</ul>
+
+<p>Another large dataset of perturbation, including some “unintended” double KO are
+available in iPSCs thanks to XAIRA, called
+<a href="https://plus.figshare.com/articles/dataset/Processed_data_for_X-Atlas_Orion_Genome-wide_Perturb-seq_Datasets_via_a_Scalable_Fix-Cryopreserve_Platform_for_Training_Dose-Dependent_Biological_Foundation_Models/29190726">orion</a>,
+with a
+<a href="https://www.biorxiv.org/content/10.1101/2024.11.28.625833v1">similar dataset</a>
+published by the sanger institute.</p>
+
+<p>Some dual guide KO was also done in colorectal cancer (CRC)
+<a href="https://www.nature.com/articles/s41467-025-67256-9#Abs1">here</a>.</p>
+
+<h3 id="lincs-download">LINCS download:</h3>
+
+<p><code class="language-plaintext highlighter-rouge">wget https://s3.amazonaws.com/macchiato.clue.io/builds/LINCS2020/level5/level5_beta_all_n1201944x12328.gctx</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">wget https://s3.amazonaws.com/macchiato.clue.io/builds/LINCS2020/siginfo_beta.txt</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">wget -r ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92742/suppl/GSE92742_Broad_LINCS_gene_info.txt.gz</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">wget -r ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92742/suppl/GSE92742_Broad_LINCS_sig_info.txt.gz</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">wget -r ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92742/suppl/GSE92742_Broad_LINCS_sig_metrics.txt.gz</code></p>
+
+<h3 id="companies-to-whatchout-for-their-perturbation-datasets">Companies to whatchout for their perturbation datasets</h3>
+
+<ul>
+  <li>recursion</li>
+  <li>xaira</li>
+  <li>tahoe</li>
+  <li>arc</li>
+  <li>illumina
+(<a href="https://www.illumina.com/company/news-center/press-releases/2026/fda84c92-b4b3-4691-a402-35555abe8605.html">yes indeed</a>)</li>
+  <li>cellular intelligence</li>
+  <li>czi</li>
+  <li>retro bio</li>
+  <li>ginkgo</li>
+</ul>
+
+<h2 id="edit-post-vccs-feedbacks">EDIT: post VCC’s feedbacks</h2>
+
+<p>interestingly, post VCC, it seems that many people that did not knew much about the data (icluding the organizers?) learnt a lot about things that had been published months, even years ago… This is great, because it still means that many people know learned collectively, we are at a better place now than before. We could have gotten there more efficiently of course.. I adviced to read some of the blog posts published by contenders on the topic:</p>
+
+<ul>
+  <li><a href="https://blog.turbine.ai/p/how-did-we-get-a-regression-model?hide_intro_popup=true">regression model ftw</a></li>
+  <li><a href="https://gmdbioinformatics.substack.com/p/arc-virtual-cell-challenge-my-diary">the VCC diary</a></li>
+  <li><a href="https://giovannipalla.substack.com/p/virtual-cell-perturbation-metrics">the VCC metrics issues</a></li>
+  <li><a href="https://newsletter.kiin.bio/p/arc-institutes-virtual-cell-challenge">are we just modelling cell’s fingerprints</a></li>
+</ul>
+
+<p>One thing that I find regretful is that no famous published models have been implemented openly to check for their abilities on this benchmark.</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="AI" /><category term="Comp-Bio" /><category term="Research" /><summary type="html"><![CDATA[If you do data science and machine learning, here is everything you need to know to get started on the Arc virtual cell challenge.]]></summary></entry><entry><title type="html">A year in the PhD</title><link href="http://localhost:4000/blog/a-year-in-the-phd/" rel="alternate" type="text/html" title="A year in the PhD" /><published>2025-03-05T00:00:00+01:00</published><updated>2025-03-05T00:00:00+01:00</updated><id>http://localhost:4000/blog/a-year-in-the-phd</id><content type="html" xml:base="http://localhost:4000/blog/a-year-in-the-phd/"><![CDATA[<p>I have been a PhD student for a year now. Many things have happened and here is some lessons learned.</p>
+
+<ol>
+  <li>do it in 2 years and be prepared</li>
+  <li>make as many connections as I can</li>
+  <li>maximize impact on the community: make something useful</li>
+  <li>enjoy it as much as possible</li>
+</ol>
+
+<h2 id="the-environment">The environment</h2>
+
+<ul>
+  <li>working at Pasteur with Laura</li>
+  <li>working at ENS with Gabriel</li>
+  <li>the administration</li>
+  <li></li>
+  <li>two PIs</li>
+  <li>the incentives</li>
+</ul>
+
+<h2 id="the-successes">The successes</h2>
+
+<ul>
+  <li>was able to release scprint and 3 more tools</li>
+  <li>went to over 10 events and conferences</li>
+  <li>presented 4 times</li>
+  <li>did 3 poster presentations</li>
+  <li></li>
+</ul>
+
+<h2 id="the-difficulties">The difficulties</h2>
+
+<ul>
+  <li>hard to completely switch projects</li>
+  <li>many more open questions about scprint</li>
+  <li>tough to be</li>
+</ul>
+
+<h2 id="the-good-and-the-bad-of-academia">The good and the bad of academia</h2>
+
+<ul>
+  <li>the freedom</li>
+  <li>the time for oneself to think</li>
+  <li>
+    <p>the ability to connect with so many different people across the world</p>
+  </li>
+  <li>the bureaucracy</li>
+  <li>being alone a lot of the time</li>
+  <li>the lack of structure</li>
+  <li>one project only is tough</li>
+</ul>
+
+<h2 id="what-is-next">What is next?</h2>
+
+<ul>
+  <li>still have a goal to do it in around 2 years</li>
+  <li>for now I feel I have followed the path 4 points I made in the beginning</li>
+  <li>it is becomming harder as tasks and projects pile up</li>
+</ul>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="PhD" /><category term="Comp-Bio" /><summary type="html"><![CDATA[What has happened in the last year? How does it feel like to be a PhD student?]]></summary></entry><entry><title type="html">About the AIVC paper</title><link href="http://localhost:4000/blog/about-the-aivc-paper/" rel="alternate" type="text/html" title="About the AIVC paper" /><published>2024-12-02T00:00:00+01:00</published><updated>2024-12-02T00:00:00+01:00</updated><id>http://localhost:4000/blog/about-the-aivc-paper</id><content type="html" xml:base="http://localhost:4000/blog/about-the-aivc-paper/"><![CDATA[<p>Reading the <a href="https://arxiv.org/pdf/2409.11654">AIVC manuscript</a> further, I felt
+like adding some more comments on this topic, which I did before on
+<a href="https://x.com/jkobject/status/1836657509483888857">X too</a>.</p>
+
+<p>Being able to model a cell with large amount of multi modal data and multi scale
+AI models is something I have talked about before on X and in my recent
+<a href="https://www.biorxiv.org/content/10.1101/2024.07.29.605556v1">manuscript</a></p>
 
 <p>To my mind there is two questions:</p>
 
@@ -9,9 +258,15 @@
   <li>Do we have the right data and scale?</li>
 </ol>
 
-<p>For the first part, while being just a guess, seeing the abilities of recent AI models and the scale of their deployment in both language, vision, and structural biology. It stands to reason that we might be able to model a cell with some $\epsilon$-accuracy with current software and hardware, e.g. 10^13 params model trained and doing inference on 10,000 GPUs.</p>
+<p>For the first part, while being just a guess, seeing the abilities of recent AI
+models and the scale of their deployment in both language, vision, and
+structural biology. It stands to reason that we might be able to model a cell
+with some $\epsilon$-accuracy with current software and hardware, e.g. 10^13
+params model trained and doing inference on 10,000 GPUs.</p>
 
-<p>For the second part it is harder to be as optimistic. A human body is comprised of 100 trillion cells and other microbes. All shaped by their environment. The cell doesn’t, in fact, follow the simple diagram presented in the AIVC paper:</p>
+<p>For the second part it is harder to be as optimistic. A human body is comprised
+of 100 trillion cells and other microbes. All shaped by their environment. The
+cell doesn’t, in fact, follow the simple diagram presented in the AIVC paper:</p>
 
 <p><img src="/assets/images/schema.png" alt="schema" /></p>
 
@@ -19,23 +274,33 @@
 
 <p><img src="/assets/images/aivc.jpg" alt="aivc" /></p>
 
-<p>Proteins are not RNAs and not genes. While genes can stay the same many RNAs can come out. Same with proteins. And vice versa. Thus one cannot encode it all in one representation. They are different objects.</p>
+<p>Proteins are not RNAs and not genes. While genes can stay the same many RNAs can
+come out. Same with proteins. And vice versa. Thus one cannot encode it all in
+one representation. They are different objects.</p>
 
 <p><img src="/assets/images/true-dogma.png" alt="true dogma" /></p>
 
 <p><img src="/assets/images/universal-mol-representation.png" alt="universal mol representation" /></p>
 
-<p>Is it just a modelling problem? No, and these apparent simplifications are not there by mistake. They are due to our measurement abilities or actually, inabilities. We cannot measure well these diverse proteins / RNAs nor their interactions…. yet #<a href="https://x.com/jkobject/status/1839993136048746565">ExSeq, #DNApaint</a>, …</p>
+<p>Is it just a modelling problem? No, and these apparent simplifications are not
+there by mistake. They are due to our measurement abilities or actually,
+inabilities. We cannot measure well these diverse proteins / RNAs nor their
+interactions….
+yet #<a href="https://x.com/jkobject/status/1839993136048746565">ExSeq, #DNApaint</a>, …</p>
 
-<p>We can use AI to model proteins indeed but we knew everything about the theory of proteins, their elements and could measure and model their structures for decades prior.</p>
+<p>We can use AI to model proteins indeed but we knew everything about the theory
+of proteins, their elements and could measure and model their structures for
+decades prior.</p>
 
-<p>So to me the future of AIVC is not really in the hands of the AI community but in the hands of the bio community. How do we measure these things better so as to have at least a good picture of how they work.</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="AI" /><category term="Comp-Bio" /><category term="Research" /><summary type="html"><![CDATA[A few thoughts on the AIVC paper from the genentech team]]></summary></entry><entry><title type="html">What are large cell models?</title><link href="https://jkobject.com/blog/what-are-large-cell-models/" rel="alternate" type="text/html" title="What are large cell models?" /><published>2024-09-07T00:00:00+02:00</published><updated>2024-09-07T00:00:00+02:00</updated><id>https://jkobject.com/blog/what-are-large-cell-models</id><content type="html" xml:base="https://jkobject.com/blog/what-are-large-cell-models/"><![CDATA[<p>In my recent paper <a href="https://www.biorxiv.org/content/10.1101/2024.07.29.605556v1">scPRINT</a> I define the term Large Cell Model but what are they?</p>
+<p>So to me the future of AIVC is not really in the hands of the AI community but
+in the hands of the bio community. How do we measure these things better so as
+to have at least a good picture of how they work.</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="AI" /><category term="Comp-Bio" /><category term="Research" /><summary type="html"><![CDATA[A few thoughts on the AIVC paper from the genentech team]]></summary></entry><entry><title type="html">About the AIVC paper</title><link href="http://localhost:4000/blog/finishing-the-phd/" rel="alternate" type="text/html" title="About the AIVC paper" /><published>2024-12-02T00:00:00+01:00</published><updated>2024-12-02T00:00:00+01:00</updated><id>http://localhost:4000/blog/finishing-the-phd</id><content type="html" xml:base="http://localhost:4000/blog/finishing-the-phd/"><![CDATA[]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="AI" /><category term="Comp-Bio" /><category term="Research" /><summary type="html"><![CDATA[A few thoughts on the AIVC paper from the genentech team]]></summary></entry><entry><title type="html">What are large cell models?</title><link href="http://localhost:4000/blog/what-are-large-cell-models/" rel="alternate" type="text/html" title="What are large cell models?" /><published>2024-09-07T00:00:00+02:00</published><updated>2024-09-07T00:00:00+02:00</updated><id>http://localhost:4000/blog/what-are-large-cell-models</id><content type="html" xml:base="http://localhost:4000/blog/what-are-large-cell-models/"><![CDATA[<p>In my recent paper <a href="https://www.biorxiv.org/content/10.1101/2024.07.29.605556v1">scPRINT</a> I define the term Large Cell Model but what are they?</p>
 
 <p>AI is everywhere nowadays, and in biology it is helping us enter a new era of what <a href="https://x.com/jacobkimmel/status/1829550511768674401">jacob kimmel</a> describes as predictive biology.</p>
 
 <p>In this new field, we use complex computational approaches together with high throughput data gathering to generate predictive models of physical phenoma like protein folding, binding, regulation, response, etc. 🧬</p>
 
-<p>scPRINT, like scGPT, geneformer, scFoundation, scLM and more is part of a bread of AI tools 🤖 that try to better model the cell regulation and response using a large amount of parameters and data. In this context they are -large- -cell models-. 🦠</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Comp-Bio" /><summary type="html"><![CDATA[A few thoughts on the term large cell models that I am using in my recent paper and my posts]]></summary></entry><entry><title type="html">Ancestry Bias in CRISPR Screens</title><link href="https://jkobject.com/blog/ancestry-bias-in-crispr/" rel="alternate" type="text/html" title="Ancestry Bias in CRISPR Screens" /><published>2024-06-21T00:00:00+02:00</published><updated>2024-06-21T00:00:00+02:00</updated><id>https://jkobject.com/blog/ancestry-bias-in-crispr</id><content type="html" xml:base="https://jkobject.com/blog/ancestry-bias-in-crispr/"><![CDATA[<h1 id="ancestry-bias-in-crispr-screens">Ancestry Bias in CRISPR Screens</h1>
+<p>scPRINT, like scGPT, geneformer, scFoundation, scLM and more is part of a bread of AI tools 🤖 that try to better model the cell regulation and response using a large amount of parameters and data. In this context they are -large- -cell models-. 🦠</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Comp-Bio" /><summary type="html"><![CDATA[A few thoughts on the term large cell models that I am using in my recent paper and my posts]]></summary></entry><entry><title type="html">Ancestry Bias in CRISPR Screens</title><link href="http://localhost:4000/blog/ancestry-bias-in-crispr/" rel="alternate" type="text/html" title="Ancestry Bias in CRISPR Screens" /><published>2024-06-21T00:00:00+02:00</published><updated>2024-06-21T00:00:00+02:00</updated><id>http://localhost:4000/blog/ancestry-bias-in-crispr</id><content type="html" xml:base="http://localhost:4000/blog/ancestry-bias-in-crispr/"><![CDATA[<h1 id="ancestry-bias-in-crispr-screens">Ancestry Bias in CRISPR Screens</h1>
 
 <p>🎉 Thrilled to share our paper on ancestry biases in CRISPR screens published in Nature Communications! This work, led by Sean Misek, reveals an important discovery about potential biases in CRISPR screening technology. You can read the full paper here: <a href="https://www.nature.com/articles/s41467-024-48957-z">https://www.nature.com/articles/s41467-024-48957-z</a></p>
 
@@ -57,7 +322,7 @@
 
 <p>🤩 What started as a search for new cancer targets led to the discovery of a significant bias in our CRISPR guide library affecting 1-2% of the guides. This finding has now been incorporated into our CRISPR dataset and has important implications for ensuring more equitable and accurate research outcomes.</p>
 
-<p>This project represents a true scientific journey - starting from an initially contested idea, leading to unexpected results, and culminating in an important discovery that helps address representation issues in cancer research. 🌍</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Comp-Bio" /><category term="Research" /><category term="CRISPR" /><summary type="html"><![CDATA[How we discovered ancestry biases in CRISPR screens and published in Nature Communications]]></summary></entry><entry><title type="html">Managing GRNs and What They Mean</title><link href="https://jkobject.com/blog/manage-grn-and-what-they-mean/" rel="alternate" type="text/html" title="Managing GRNs and What They Mean" /><published>2024-06-17T00:00:00+02:00</published><updated>2024-06-17T00:00:00+02:00</updated><id>https://jkobject.com/blog/manage-grn-and-what-they-mean</id><content type="html" xml:base="https://jkobject.com/blog/manage-grn-and-what-they-mean/"><![CDATA[<h1 id="managing-grns-and-what-they-mean">Managing GRNs and What They Mean</h1>
+<p>This project represents a true scientific journey - starting from an initially contested idea, leading to unexpected results, and culminating in an important discovery that helps address representation issues in cancer research. 🌍</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Comp-Bio" /><category term="Research" /><category term="CRISPR" /><summary type="html"><![CDATA[How we discovered ancestry biases in CRISPR screens and published in Nature Communications]]></summary></entry><entry><title type="html">Managing GRNs and What They Mean</title><link href="http://localhost:4000/blog/manage-grn-and-what-they-mean/" rel="alternate" type="text/html" title="Managing GRNs and What They Mean" /><published>2024-06-17T00:00:00+02:00</published><updated>2024-06-17T00:00:00+02:00</updated><id>http://localhost:4000/blog/manage-grn-and-what-they-mean</id><content type="html" xml:base="http://localhost:4000/blog/manage-grn-and-what-they-mean/"><![CDATA[<h1 id="managing-grns-and-what-they-mean">Managing GRNs and What They Mean</h1>
 
 <p>In my recent paper <a href="https://www.biorxiv.org/content/10.1101/2024.07.29.605556v1">scPRINT</a>, I went into a deep dive on gene regulatory networks. Many findings are in the manuscript but I had some additional thoughts to share and wanted to present a tool I built to work with GRNs.</p>
 
@@ -108,7 +373,7 @@
 
 <p><img src="/assets/images/grn2.png" alt="" /></p>
 
-<p>But <a href="https://github.com/cantinilab/GRnnData">GRnnData</a> can do more and integrates some utils functions doing things like clustering, centrality measures, enrichment and more. Go check [GRnnData]https://github.com/cantinilab/GRnnData if you work with gene networks!</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Comp-Bio" /><category term="Research" /><summary type="html"><![CDATA[Some thoughts on Gene Regulatory Networks and their meaning in biology]]></summary></entry><entry><title type="html">AUPRC vs AP: Evaluating Binary Classification</title><link href="https://jkobject.com/blog/auprc-vs-ap/" rel="alternate" type="text/html" title="AUPRC vs AP: Evaluating Binary Classification" /><published>2024-06-09T00:00:00+02:00</published><updated>2024-06-09T00:00:00+02:00</updated><id>https://jkobject.com/blog/auprc-vs-ap</id><content type="html" xml:base="https://jkobject.com/blog/auprc-vs-ap/"><![CDATA[<p>When analysing a classification task for my recent paper <a href="https://www.biorxiv.org/content/10.1101/2024.07.29.605556v1">scPRINT</a>, I fell into a fascinating “data-sciency” rabbit-hole about AUPRC, AUC and AP.</p>
+<p>But <a href="https://github.com/cantinilab/GRnnData">GRnnData</a> can do more and integrates some utils functions doing things like clustering, centrality measures, enrichment and more. Go check [GRnnData]https://github.com/cantinilab/GRnnData if you work with gene networks!</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Comp-Bio" /><category term="Research" /><summary type="html"><![CDATA[Some thoughts on Gene Regulatory Networks and their meaning in biology]]></summary></entry><entry><title type="html">AUPRC vs AP: Evaluating Binary Classification</title><link href="http://localhost:4000/blog/auprc-vs-ap/" rel="alternate" type="text/html" title="AUPRC vs AP: Evaluating Binary Classification" /><published>2024-06-09T00:00:00+02:00</published><updated>2024-06-09T00:00:00+02:00</updated><id>http://localhost:4000/blog/auprc-vs-ap</id><content type="html" xml:base="http://localhost:4000/blog/auprc-vs-ap/"><![CDATA[<p>When analysing a classification task for my recent paper <a href="https://www.biorxiv.org/content/10.1101/2024.07.29.605556v1">scPRINT</a>, I fell into a fascinating “data-sciency” rabbit-hole about AUPRC, AUC and AP.</p>
 
 <h2 id="understanding-classification-metrics">Understanding Classification Metrics</h2>
 
@@ -154,7 +419,7 @@
 
 <p><img src="/assets/images/auprc5.png" alt="AP Formula" /></p>
 
-<p>While AP is often recommended for skewed classification tasks, my rAUPRC implementation showed more consistent results across different parameters in practice.</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Data-Science" /><category term="Research" /><summary type="html"><![CDATA[A deep dive into classification metrics and their nuances]]></summary></entry><entry><title type="html">Enrichr, Prerank, GSEA or ssGSEA?</title><link href="https://jkobject.com/blog/enrichr-prerank-gsea/" rel="alternate" type="text/html" title="Enrichr, Prerank, GSEA or ssGSEA?" /><published>2024-02-19T00:00:00+01:00</published><updated>2024-02-19T00:00:00+01:00</updated><id>https://jkobject.com/blog/enrichr-prerank-gsea</id><content type="html" xml:base="https://jkobject.com/blog/enrichr-prerank-gsea/"><![CDATA[<p>Bioinformatician’s main tool for discovery has often been differential expression analysis. But between Enrich, Prerank, GSEA, ssGSEA, which tool should you use? here is the quick reminder X-plainer:</p>
+<p>While AP is often recommended for skewed classification tasks, my rAUPRC implementation showed more consistent results across different parameters in practice.</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Data-Science" /><category term="Research" /><summary type="html"><![CDATA[A deep dive into classification metrics and their nuances]]></summary></entry><entry><title type="html">Enrichr, Prerank, GSEA or ssGSEA?</title><link href="http://localhost:4000/blog/enrichr-prerank-gsea/" rel="alternate" type="text/html" title="Enrichr, Prerank, GSEA or ssGSEA?" /><published>2024-02-19T00:00:00+01:00</published><updated>2024-02-19T00:00:00+01:00</updated><id>http://localhost:4000/blog/enrichr-prerank-gsea</id><content type="html" xml:base="http://localhost:4000/blog/enrichr-prerank-gsea/"><![CDATA[<p>Bioinformatician’s main tool for discovery has often been differential expression analysis. But between Enrich, Prerank, GSEA, ssGSEA, which tool should you use? here is the quick reminder X-plainer:</p>
 
 <p><em>Enrichr</em> is when you just have a list of genes (can be small):</p>
 
@@ -273,7 +538,7 @@
       <td>4</td>
     </tr>
   </tbody>
-</table>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Comp-Bio" /><category term="Research" /><summary type="html"><![CDATA[A quick reminder of when to use which enrichment analysis tool]]></summary></entry><entry><title type="html">The PhD Decision, Celligner2 and Foundational Models</title><link href="https://jkobject.com/blog/the-phd-decision-grn-foundation-model/" rel="alternate" type="text/html" title="The PhD Decision, Celligner2 and Foundational Models" /><published>2023-10-02T00:00:00+02:00</published><updated>2023-10-02T00:00:00+02:00</updated><id>https://jkobject.com/blog/the-phd-decision-grn-foundation-model</id><content type="html" xml:base="https://jkobject.com/blog/the-phd-decision-grn-foundation-model/"><![CDATA[<p>This is an important moment for me, and it seems that many things  led me to this point. 😊 I have decided to join <a href="https://research.pasteur.fr/fr/team/machine-learning-for-integrative-genomics/">Laura Cantini</a> at Institut Pasteur and <a href="http://www.gpeyre.com/">Gabriel Peyré</a> at ENS ULM for a joint Ph.D. in Computational Biology and Applied Mathematics. 🧬📊 I will try to explain here my decision process for something that can appear as a very sudden change of direction and slightly crazy, given my current position at WhitelabGx.</p>
+</table>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Comp-Bio" /><category term="Research" /><summary type="html"><![CDATA[A quick reminder of when to use which enrichment analysis tool]]></summary></entry><entry><title type="html">The PhD Decision, Celligner2 and Foundational Models</title><link href="http://localhost:4000/blog/the-phd-decision-grn-foundation-model/" rel="alternate" type="text/html" title="The PhD Decision, Celligner2 and Foundational Models" /><published>2023-10-02T00:00:00+02:00</published><updated>2023-10-02T00:00:00+02:00</updated><id>http://localhost:4000/blog/the-phd-decision-grn-foundation-model</id><content type="html" xml:base="http://localhost:4000/blog/the-phd-decision-grn-foundation-model/"><![CDATA[<p>This is an important moment for me, and it seems that many things  led me to this point. 😊 I have decided to join <a href="https://research.pasteur.fr/fr/team/machine-learning-for-integrative-genomics/">Laura Cantini</a> at Institut Pasteur and <a href="http://www.gpeyre.com/">Gabriel Peyré</a> at ENS ULM for a joint Ph.D. in Computational Biology and Applied Mathematics. 🧬📊 I will try to explain here my decision process for something that can appear as a very sudden change of direction and slightly crazy, given my current position at WhitelabGx.</p>
 
 <p>You can learn more about what I did <a href="https://www.jkobject.com/blog/whitelabgx-and-being-team-lead-redacted/">at WhitelabGx here</a> but I don’t think it would explain much of my decision. I will try to explain here the reasons that led me to this decision and the many lessons I learned along the way. 📚🤔</p>
 
@@ -458,252 +723,4 @@ Thus my final goal is to enjoy it, as much as I can!😊🚀</p>
 
 <h3 id="previous-proposals">Previous proposals</h3>
 
-<p>I have had a previous Ph.D. projects proposals for a Ph.D. that I then postponed. I <a href="https://www.jkobject.com/assets/documents/researchobjectives.pdf">list it here</a> too for historical purposes.</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Startups" /><category term="Comp-Bio" /><summary type="html"><![CDATA[I take a big decision and provide many lessons learned along the way, about leading teams, companies, doing a Ph.D. and working in startups]]></summary></entry><entry><title type="html">My Work at Whitelab and Creating a Team</title><link href="https://jkobject.com/blog/WhitelabGx-and-being-team-lead-redacted/" rel="alternate" type="text/html" title="My Work at Whitelab and Creating a Team" /><published>2023-09-25T00:00:00+02:00</published><updated>2023-09-25T00:00:00+02:00</updated><id>https://jkobject.com/blog/WhitelabGx-and-being-team-lead-redacted</id><content type="html" xml:base="https://jkobject.com/blog/WhitelabGx-and-being-team-lead-redacted/"><![CDATA[<p>After a difficult end of the year, I decided I wanted to take a month or so to get my thoughts in order. To relax and find some closure with what had happened. ☮️</p>
-
-<p>However the day following my departure I was already looking at companies and contacting labs. 📱 I was in this state where the only thing that could make me feel better was to look at the future and the possibilities. 💭</p>
-
-<p>But it was still tough mentally, I was thinking about the option of going back to the Broad Institute. “Would it be hard? Should I go now? Would it be the easy way out? What about my apartment, my girlfriend? etc.” I felt like a way out, like cowardly going back “home” 🏠 after a failed attempt.</p>
-
-<p>I had, fortunately, all the support I could need.</p>
-
-<p>It actually only took a week or so before I got replies. One coming from Deep Life and one from WhitelabGx.</p>
-
-<p>I ended up being offered positions. DeepLife was very early stage at the time and its interview process made me feel a bit uneasy about things. After my previous experience, this is something I was now much more sensitive to. I was not really able to see these before.</p>
-
-<p>Whitelab on the other hand was very welcoming. Excited about my profile and offered me a very rewarding position. I would be a team lead in Computational Biology :muscle:. Here I saw how much my previous experience was valuable as I felt I was now much more able to see in between the lines during recruitment processes. Not what people say, but how they behave, what they offer, and the way they do it. Doing so I could also see the tremendous difference in how companies can value any one person’s profile. While deep life was offering me an entry level position, after 4.5 years of experience, Whitelab was offering me a team lead position.</p>
-
-<p>In a way, recruitment feels like friendship sometimes. It is a matter of taste, of need but most of all serendipity.</p>
-
-<p>On the surface, the position looked a lot like what I had been told at Aqemia (although not really offered). But here, the team was already there waiting for me and the objectives were clear. 🥇</p>
-
-<h2 id="the-environment">the environment</h2>
-
-<p>Many things were green flags 🟩 for me. The company was really thinking of itself as a Biotech, the CSO was a biologist with experience. They had an HR manager. They also had a team of biologists and both the CEO / CSO were very honest, aware of what they didn’t know, and were very open to my suggestions and ideas.</p>
-
-<p>The place itself was a brand new incubator 👀 called Future4Care. As nice as Broad and less than 10 minutes from my place.</p>
-
-<p>Every member of the team was nice and welcoming. It was small, however: 20 people.</p>
-
-<p>The goal of WhitelabGx is to build a platform to help develop, de-risk, and fasten the preclinical phase of novel cell and gene therapies. The idea is to use ML and data science to drive the discovery, experimental design, and so on 📈.</p>
-
-<p>Especially after getting experience in small molecule preclinical development, I could see the huge potential of CGTs in their precision compared to regular small molecules. I also believe strongly that many diseases will only be cured through the use of CGTs.</p>
-
-<h2 id="disclaimer">Disclaimer:</h2>
-
-<p>Why am I doing that?</p>
-
-<p>It is simple: I strongly believe in openness and honesty and I think the world is a better place every time people speak freely and openly about subject matters that are important, like work.</p>
-
-<p>I am talking here about my sole experience at WhitelabGx. With the management of 2023. This is just one point of view at one specific moment in time. I also have my own values and reference frame. Please do not use anyone’s past experience to judge a current company on this account and do your own due diligence.</p>
-
-<p>I am not talking about anything related to IP, technology, or anything part of my non-disclosure agreement, I am only talking about my experience as I would tell it to my friends that are not in the industry.</p>
-
-<p>Because of the nature of the subject and with respect for anyone currently working at WhitelabGx, I will keep this post private for now. If you are interested in reading it, please send out an email with an explanation of why you want to read it and who you are and I might send it to you.</p>
-
-<p>But I might at least let you know about what WhitelabGx was very open about as of the end of 2023:</p>
-
-<ul>
-  <li>Whitelab has a culture of kindness and honesty.</li>
-  <li>Most people are staying in the company after their trial period.</li>
-  <li>Whitelab is largely composed of people with past experience in research, biotech, and biology.</li>
-  <li>Whitelab is very diverse, exactly half of the company is non-french. with people coming from all over the world. The culture is very American.</li>
-</ul>
-
-<p>————- REDACTED ————-</p>
-
-<p><a href="mailto:jkobject@gmail.com" class="btn btn--primary btn--large">send me an email to get the full story here</a></p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="Other Work Experience" /><category term="Big Data" /><category term="genomics" /><category term="Python" /><summary type="html"><![CDATA[I have jointed an AI Biotech startup for CGTs in Paris. See my experience here]]></summary></entry><entry><title type="html">The Aqemia Story</title><link href="https://jkobject.com/blog/the-aqemia-story-redacted/" rel="alternate" type="text/html" title="The Aqemia Story" /><published>2022-12-20T00:00:00+01:00</published><updated>2022-12-20T00:00:00+01:00</updated><id>https://jkobject.com/blog/the-aqemia-story-redacted</id><content type="html" xml:base="https://jkobject.com/blog/the-aqemia-story-redacted/"><![CDATA[<p>During the summer of 2022, I was feeling pretty desperate. I had just experienced 6 months of many failed attempts at securing positions at companies like Deepmind, BenevolentAI, Isomorphic Labs, and Owkin. I had gone through very long and tedious interview processes where for some, it had felt like I was mainly just missing a Ph.D.. Some times it felt like bad luck, bad timing.</p>
-
-<p>But at the end of July, everything went very fast. I had gone through a couple of interviews at a young promising French startup called Aqemia and was quickly hired as a Research Scientist to start their target discovery team.</p>
-
-<p>The pay was low compared to the US and what I was coming from (but I could have many things to say between US and Europe’s pay vs actual buying power and quality of life) and I negotiated stock options and a relocation bonus. I accepted the offer and 2 months later I was in Paris. (see more in my <a href="https://jkobject.com/blog/leaving-broad/">previous post</a>)</p>
-
-<p>I will now try to present the time I spent at Aqemia:</p>
-
-<h2 id="disclaimer">Disclaimer:</h2>
-
-<p><strong>Why am I doing that?</strong></p>
-
-<p>It is simple: I strongly believe in openness and honesty and I think the world is a better place every time someone talks openly about subject matters that  are important, like work.</p>
-
-<p>I am talking here about my sole experience at Aqemia with the management team of 2022. This is just one point of view at one specific moment in time. I also have my own values and reference frame that are at play. Please do not use anyone’s experience to judge a current company on this account and do your due diligence.</p>
-
-<p>I am not talking about anything related to IP, technology, or anything part of my non-disclosure agreement, I am only talking about my experience as I would tell it to my friends that are not in the industry.</p>
-
-<p>Because of the nature of the subject and respect for anyone currently working at Aqemia, I will keep this post private for now. If you are interested in reading it, please shout out an email and let me know why you want to read it and who you are. I might send it to you.</p>
-
-<p>But I might at least let you know about what Aqemia was very open about as of the end of 2022:</p>
-
-<ul>
-  <li>Aqemia is a very fast-paced environment.</li>
-  <li>A lot of people -more than half- leave the company after a few months. (It is not clear if this is because of Aqemia’s decisions or because of their own) (this percentage seemed higher for people with previous experience in industry and biotech).</li>
-  <li>Aqemia is largely composed of young graduates from a small set of elite French engineering schools.</li>
-  <li>Aqemia is very diverse with people coming from all over the world.</li>
-  <li>Aqemia is a company that is building a platform to help develop, de-risk, and fasten the preclinical phase of small molecule drug discovery.</li>
-</ul>
-
-<p>————- REDACTED ————-</p>
-
-<p><a href="mailto:jkobject@gmail.com" class="btn btn--primary btn--large">send me an email to get the full story here</a></p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="Other Work Experience" /><category term="Big Data" /><category term="Drug Discovery" /><category term="Python" /><summary type="html"><![CDATA[I have spent a few months at Aqemia as a Research Scientist. This is my story.]]></summary></entry><entry><title type="html">Leaving Broad</title><link href="https://jkobject.com/blog/leaving-broad/" rel="alternate" type="text/html" title="Leaving Broad" /><published>2022-09-01T00:00:00+02:00</published><updated>2022-09-01T00:00:00+02:00</updated><id>https://jkobject.com/blog/leaving-broad</id><content type="html" xml:base="https://jkobject.com/blog/leaving-broad/"><![CDATA[<p>Yes, I have decided to leave the Broad Institute.</p>
-
-<blockquote>
-  <p>“Are you crazy?” 🤯</p>
-</blockquote>
-
-<p>Well, I think there are many good reasons for it and I will try to explain why. But, before I go into the why, let’s talk about the last 1.5 years at Broad and what I have been able to do. 🔍</p>
-
-<h2 id="35-years-at-the-broad">3.5 years at the Broad</h2>
-
-<p>There have been quite some changes and many successes in the recent year. I have finished my main research project at DFCI with Maxim Pimkin and I have now been 100% a Broadie. :partying_face:</p>
-
-<p>My two main projects have been on what I liked to call CCLE3 and Celligner2.</p>
-
-<h3 id="depmap-omics-ccle3">DepMap Omics: CCLE3</h3>
-
-<p>At <a href="http://cancerdatascience.org/">CDS</a>, some people have come and gone, mainly someone joined my team: Simone Zhang. Taking more Engineering responsibilities from me and helping me on the depmap-omics project. 💪</p>
-
-<p>I was also quickly promoted to Senior Associate Computational Biologist. The last ladder before becoming a Research Scientist at Broad. Simone coming was also given to me as a way to show my ability to coach and be a mentor to a junior scientist.</p>
-
-<p>This allowed us to define a lot more avenues of research, which I packaged into a project called: CCLE3. 💡</p>
-
-<p>The main question was: “What can we do with the data we have at the Broad, in depmap-omics, to help the community?”</p>
-
-<p>I was proud to be given the responsibility of presenting this vision to the Cancer Program leadership in 2021. Here is the presentation I gave:</p>
-
-<p><a href="https://docs.google.com/presentation/d/1JifqKvIVmwEtroBxgZAq5avyLnACnC2xNt6V5j3bbus/edit#slide=id.g123f2acd6c3_0_171">presentation</a></p>
-
-<p>Mostly one can see that it was axed around the idea of generating novel features from omics data we already have, improving the metadata, and harmonizing our omics. having the same sequencing data across all our samples -at least for RNAseq &amp; WGS-. 🟩</p>
-
-<p>I strongly believed -and still do- that these were the low-hanging fruits 🥝 for us, allowing us to discover new targets cheaply and squeeze more value out of our current database.</p>
-
-<p>Let me present that in more detail.</p>
-
-<h3 id="new-features">new features</h3>
-
-<p>I believe that in the last 2 years, we have made an impact on the community by open-sourcing our toolkit and making our data reproducible and more generally available. 📖</p>
-
-<p>However, from all the fancy Machine Learning and prediction tools we have tried and designed to make better predictions of gene dependency &amp; cancer targets. Almost every time, without a doubt, nothing had a greater impact than generating a new genomic feature from our dataset. 🤯</p>
-
-<p>I think this is a big “lessons learned”, for me at least. That data comes first and domain knowledge comes second. I think this is a lesson that is not only true for genomics but for all data science.</p>
-
-<p>Let me present some of the new features we have developed:</p>
-
-<ul>
-  <li>
-    <p>Recreating &amp; improving the microsatellite instabilities from DNAseq –&gt; initially lead to the WRN / MSI paper.</p>
-  </li>
-  <li>
-    <p>Associating features based on gene sets, gene proximity, etc.. –&gt; initially lead to the 2022 VPS4A/VPS4B paper</p>
-  </li>
-  <li>
-    <p>Getting info about viral infection of the tumor sample.</p>
-  </li>
-  <li>
-    <p>Getting at somatic &amp; germline structural variants from WES and WGS and associating them with fusion variants in RNAseq –&gt; Lead to a <a href="https://aacrjournals.org/cancerres/article/82/12_Supplement/2710/703992">new paper</a> with the <a href="https://beroukhimlab.org/publications/">Rameen Beroukhim lab</a>.</p>
-  </li>
-  <li>
-    <p>getting info about splicing QTLs using spliceAI on mutation data and associating them with transcript abundance –&gt; paper in progress as of 2023 also with the Beroukhim lab.</p>
-  </li>
-  <li>
-    <p>getting info about the global functional status of genes (based on CNV/SV/SNPs/ INDELS/ etc) and their phasing and expression –&gt; has already been shown to improve most of our dependency prediction data.</p>
-  </li>
-  <li>
-    <p>Germline mutations &amp; their associations to dependency –&gt; something I pushed for a lot. And led to a <a href="https://aacrjournals.org/cancerres/article/82/12_Supplement/2173/703368">couple papers</a> on <a href="https://www.biorxiv.org/content/10.1101/2022.11.18.517155v1.abstract">ancestry bias</a> with Sean Misek and improvement of our Achilles Algorithm.</p>
-  </li>
-</ul>
-
-<p>The last project is one which I was really proud 🥇 of as it is something I had pushed for two years without much success.</p>
-
-<p>Until Sean, a new research scientist in the Beroukhim lab, was able to help me convince the rest of the team that this would be a worthwhile endeavor.</p>
-
-<p>During Broad’s 2021 Retreat, I was able to present this work to the whole Broad community. Here is the poster:</p>
-
-<p><a href="https://docs.google.com/presentation/d/1wqyzTE5qctXq33Lq7VwI1UK7cPBnEIkf_yczeUMH8Gs/edit#slide=id.p1">poster broad retreat</a></p>
-
-<p>I am sad that despite publishing a couple of first-author papers and being part of a dozen other collaborations, 🙄 I was not able to see from that even a hint of a CCLE3 paper. I hope it will be published someday but I have been told that to be guaranteed a Nature, one needs more than new features and new predictions, one -apparently- also needs a crazy new sequencing dataset 🗻 (a la Broad).</p>
-
-<h3 id="metadata-improvement">metadata improvement</h3>
-
-<p>MetaData had always been one of our Achilles’ heel. We knew they were not great but we also knew that no one had great metadata for their cell line. What made the group become quickly convinced to start working on it, was how much better any improvement made the prediction algorithm work. Seeing that we started running many parallel efforts to map duplicate samples (using genomics), similar-looking models (using transcriptomics), sex, age, etc. :bar_chart:</p>
-
-<p>Moreover, we started merging our cell line annotations with <a href="https://www.cellosaurus.org/index.html">Cellosaurus</a> to discover more issues in both our databases and started merging our disease annotations with the <a href="https://www.ebi.ac.uk/ols/ontologies/ncit">NCIT</a> to realize that many more cancers than we thought were related in some way. or were simply improbable annotations. 🧭</p>
-
-<p>This effort is also something I had pushed for, for a while, and reused many of the improvements I had already put forward. This is also something I am proud of. I think it is a great example of how such a small, boring effort can have a big impact on science and therapeutic discovery.</p>
-
-<h3 id="next-steps-for-sequencing">next steps for sequencing</h3>
-
-<p>Moreover, since it is the Broad, in 2019 we had goals of going 10x in the coming years. However, we soon realize that there were not a lot of “good” models left 🪹 and that our capacity for creating them was very limited. We wanted more cell lines / 3D models but it was hard to get good ones.</p>
-
-<p>Given that we have 12 different sequencing data types for 1700 lines but almost none of them have all of those sequencing 🧬 done, our first goal was to do WGS &amp; RNAseq on everything. representing more than 200 RNAseq and 1000 WGS, the reordering of 400 lines, and the likely drop of dozens of lines that do not exist anymore.</p>
-
-<p>Why do that?</p>
-
-<p>Because these are the low-hanging fruits for us. Without changing anything, without generating new models, and changing pipelines and platform, we just get a lot more information allowing us to discover new targets cheaply and squeeze more value out of our current database. When your model can work on modality A+B+C but only 300 samples / 1700 have each of those modalities, you are missing out on a lot of potential. 🟩</p>
-
-<p>But a second objective. Even more ambitious came to us in the form of <a href="https://www.buenrostrolab.com/">Jason Buenrostro</a>: Inventor of ATACseq &amp; SHARE-seq. Jason wanted to apply SHARE-seq to all our cell lines. likely millions of cells. Then, apply it for post-perturbation 🔫. This would allow us to see the effect of a drug on the chromatin accessibility of a cell line and its expression at single-cell resolution. This was a very exciting project. And I was tasked to coordinate it on the CDS side by Paquita Vazquez.</p>
-
-<p>However, this was not all, and the other half of my time was also spent on a pet peeve of mine: Celligner.</p>
-
-<h3 id="celligner2-and-the-hint-of-foundational-models">Celligner2 and the hint of foundational models</h3>
-
-<p>Celligner was initially developed by Allie Warren. Its goal is to align bulk RNAseq data from cancer models (CCLE) with data from patients’ tumors (TCGA). Comparing the two 🍎 / 🍊 to:</p>
-
-<ol>
-  <li>assess annotation quality.</li>
-  <li>assess model quality as its similarity to the patient’s tumor.</li>
-  <li>assess model coverage &amp; diversity.</li>
-</ol>
-
-<p>Initially, they don’t align well and one needs to apply an alignment method for those datasets to work together.</p>
-
-<p>She did that by reusing the MNN tool from Seurat and adding in additional preprocessing using contrastive PCA, differential expression, etc.</p>
-
-<p>The project work very well and led to a lot of excitement.</p>
-
-<p>As Allie left, I took over the project and started working on a new version of the tool. I wanted to answer biologists’ needs. Initially by adding new features and making the tool more scalable.</p>
-
-<p>But I soon started to think that we could do so much more by using a different approach.</p>
-
-<p>Reusing VAE-based autoencoders like scVI and scArches and training them to make a model look like a tumor and vice versa. Training them to predict features like tumor type, sex, and age. And using explainable AI (XAI) 🗨️ to understand what the model was learning and what gene sets and pathways were explaining these features.</p>
-
-<p>We actually went pretty far with this and I started making early presentations for the team. 🧑‍🔬</p>
-
-<p><a href="https://docs.google.com/presentation/d/1gvuVkxLUJCql1lE5z_l0AEKwAZY9-rLNhI8MRygDfhc/edit?usp=sharing">presentation</a></p>
-
-<p>I think I showed many interesting results that could have fit into a paper.</p>
-
-<p>Senior Members were intrigued by 2 ideas:</p>
-
-<ol>
-  <li>using annotations during training as semi-supervision constraints to improve model quality.</li>
-  <li>using additional data like <a href="https://gtexportal.org/">GTEX</a> that was containing normal samples as a way to also improve model quality. 💹</li>
-</ol>
-
-<p>For the first part, the debate was mostly around: “What if the annotation is wrong?”, “what about overfitting to annotations?”, “it seems like using what you will test your model on”…</p>
-
-<p>But I was able to show that since it was only part of the loss function, it was not leading to this issue. By making wrongful annotations, up to a point, the model was able to still create the right mapping (e.g. fake “lung models” 🫁 that were actually “breast models” were still aligning with breast cancer). Moreover adding these annotations was in fact improving the model quality, and quality here is defined not by annotation but by many other metrics 📈 as shown in the <a href="https://github.com/theislab/scib">scIB package</a>.</p>
-
-<p>For the second part, it just seemed nonsensical to some to use data that was not cancer: “What does it mean to align normals to cancer?”, “Is it really useful?”, “Why do you want to do this?”</p>
-
-<p>I think here I had the first hint of what would soon be the foundation models in scRNAseq that would come out in the following year. I was seeing Gtex as pretraining. Helping the neural network to also learn how genes are related and differences in tissues. I was seeing it as a way to make the model more robust and more generalizable. 🧠 It showed in the metrics that doing that was improving the model on every downstream tasks. It was also interesting to see cancers that were mapping to their original tissue of origin and the ones that were completely diverging. 📉</p>
-
-<p>The Celligner project was going well, the results were there. However many changes at CDS and Broad came together to slowly end it.</p>
-
-<h2 id="leaving-broad">Leaving Broad</h2>
-
-<p>In the last year at Broad 3 prominent colleagues left Broad: CDS founder Aviad Tsherniak, CDS director James McFarland, and Javad Noorbakhsh. This departure of multiple colleagues was a lot but it was also the only 3 people pushing for Celligner and bringing more AI in CDS.</p>
-
-<p>Moreover, there was a change in the cancer program leadership itself. With Eric Lander, Broad’s Director <a href="https://www.whitehouse.gov/ostp/news-updates/2021/05/28/u-s-senate-unanimously-confirms-dr-eric-lander-to-become-director-of-the-white-house-office-of-science-and-technology-policy/">leaving for Senate</a> 🇺🇸 (and then <a href="https://www.scientificamerican.com/article/two-scientists-will-replace-u-s-science-adviser-eric-lander/">quickly leaving</a> 🙊 ). <a href="https://www.broadinstitute.org/bios/todd-r-golub">Todd Golub</a> became Broad’s new director and <a href="https://www.broadinstitute.org/bios/william-sellers">Bill Sellers</a>, a world-renowned cancer scientist from Novartis and heavily involved in CCLE and DepMap, became the new cancer program’s director ♋ .</p>
-
-<p>Bill wanted to rationalize a bit more the objectives of the Cancer Program toward drug discovery. And he wanted to do that by focusing on a few key areas :bow_and_arrow: . This meant that some projects were going to be stopped and some others were going to be prioritized. So you can guess where this is going for Celligner… 🛑</p>
-
-<p>But the new projects were still very exciting. But other factors were very important in my decision too. I was missing my family, my father was ill, I could see that life was moving fast for my siblings and my friends. I felt that I had to take a life decision: I had to make a choice and decided to move back to France. 🇫🇷</p>
-
-<p>I won’t take you through covid’s time and my SO being away too (see <a href="https://www.jkobject.com/blog/two-years-at-the-broad/">2 years at Broad</a>) but everything played a role.</p>
-
-<h2 id="whats-next">What’s next?</h2>
-
-<p>I also got a sense that I need to see drug development firsthand. I need to get back in the weeds of building a company and a project. I spent a year doing that before Broad and such a fast-paced. product-first 📦 environment is also something that I am missing. I will try to see what I can do in the field of target discovery with this acquired knowledge.</p>
-
-<p>In no time I got into this up-and-coming French StartUp called Aqemia. Let’s see what is next.</p>
-
-<p>If you want to see what I presented to the companies 🏛️ I have applied to. Here is my <a href="https://docs.google.com/presentation/d/1Uz6ZW13MwWot8yChssegNPPmknPvb0HJcLXyGHOqSIo/edit#slide=id.g12f138bad5c_0_972">interview presentation</a>, used in a couple fancy companies’ interview 😁.</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="BroadInstitute" /><category term="Computational Biology" /><category term="Data Science" /><category term="Associate Computational Biologist" /><summary type="html"><![CDATA[It has been an epic journey. I learned a lot and feel like an accomplished Computational Biologist & Scientist. But it is time to move on.]]></summary></entry></feed>
+<p>I have had a previous Ph.D. projects proposals for a Ph.D. that I then postponed. I <a href="https://www.jkobject.com/assets/documents/researchobjectives.pdf">list it here</a> too for historical purposes.</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Startups" /><category term="Comp-Bio" /><summary type="html"><![CDATA[I take a big decision and provide many lessons learned along the way, about leading teams, companies, doing a Ph.D. and working in startups]]></summary></entry></feed>

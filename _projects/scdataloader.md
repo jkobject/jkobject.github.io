@@ -10,10 +10,11 @@ tags:
  - genomics
 header:
   teaser: "/assets/images/scdataloader.png"
-redirect_to: https://www.jkobject.com/scDataLoader/
+redirect_to: 
 ---
 
 In my new manuscript scPRINT, I present a tool called scDataLoader 🧬. You can find more details in our [preprint](https://www.biorxiv.org/content/10.1101/2024.07.29.605556v1).
+The package is available on [github](https://github.com/jkobject/scdataloader) and documentation is available __[here](https://www.jkobject.com/scDataLoader/)__.
 
 ## Origins
 
@@ -28,7 +29,7 @@ We discussed my need for a dataloader, which aligned with their thinking and pre
 
 ## Why Dataloaders Matter
 
-Recent papers ([paper 1](https://www.biorxiv.org/content/10.1101/2023.10.24.563625v1.full), [paper 2](https://www.nature.com/articles/s42256-023-00757-8)) have shown that scRNAseq training datasets containing many similar cell types can cause imbalance issues for foundation models training and low performance on rare cell types.
+Recent papers (["Foundation Models Meet Imbalanced Single-Cell Data When Learning Cell Type Annotations"](https://www.biorxiv.org/content/10.1101/2023.10.24.563625v1.full), ["Reusability report: Learning the transcriptional grammar in single-cell RNA-sequencing data using transformers"](https://www.nature.com/articles/s42256-023-00757-8)) have shown that scRNAseq training datasets containing many similar cell types can cause imbalance issues for foundation models training and low performance on rare cell types.
 
 For example, if you train a model on 50% images of cars, it might overfit to cars. We wanted to prevent scPRINT from similar overfitting issues 😱
 

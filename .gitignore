@@ -1,3 +1,6 @@
 .DS_Store
 *.sync-conflict-*
 _site/*
+.bundle/
+vendor/bundle/
+_site/
