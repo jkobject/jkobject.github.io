@@ -46,14 +46,33 @@ If you want to know more about scPRINT feel free also to check out my presentati
 - create embeddings of cells in a low dimensional space that is concept-specific (e.g. cell type embedding, tissue embedding, disease embedding, etc.)
 - recreate a counterfactual expression profile given an embedding
 
-## what about gene networks
+## What About Gene Networks?
 
-- issues in the way we think about gene networks:
-  - the cell is not a network but a complex system
-  - being able to predict networks of size 10-50 nodes defined with simple ODEs is nothing related to what happens in the cell
-- issues in the way we work with gene networks and represent them.
-- created GRnnData, which builds on top of AnnData and allows for the efficient storage and manipulation of gene networks
-- created BenGRN, which is a set of 4 different tasks, 5 metrics and many datasets to benchmark the performance of GRN models from single cell RNA-seq data
+One of scPRINT's most distinctive capabilities is predicting genome-wide gene regulatory networks (GRNs) zero-shot — no fine-tuning required. But to understand why that matters, it helps to understand how broken the field was to begin with.
+
+### The conceptual problem
+
+Gene regulatory networks have a branding problem. The term suggests something clean and graph-like: nodes (genes), directed edges (regulations), a tidy structure you can reason about. The reality is messier. The cell is not a network — it's a complex dynamical system where thousands of molecular species interact simultaneously, with nonlinear feedback, stochastic noise, and context-dependence at every level.
+
+Most GRN benchmarks have historically evaluated models on networks of 10–50 carefully curated genes, defined by simple ODEs and synthetic data. That's a tractable problem, but it's almost entirely disconnected from what actually happens inside a real cell. We needed to step back and ask: what would a *meaningful* genome-wide GRN even look like, and how would we evaluate it honestly?
+
+### The tooling problem
+
+Beyond the conceptual issues, the field lacked basic infrastructure. There was no standard way to store, manipulate, or share gene networks alongside single-cell expression data. Existing tools forced awkward workarounds — networks stored in separate files, incompatible formats, no way to keep network data aligned with cell metadata.
+
+To fix this, I built **[GRnnData](https://github.com/jkobject/GRnnData)**, a lightweight extension of AnnData that treats gene networks as first-class citizens. It stores networks efficiently alongside expression data and makes it easy to slice, filter, and compare networks across cell types or conditions. Essentially: if AnnData is the standard for single-cell expression, GRnnData is the same for expression + networks.
+
+### The evaluation problem
+
+Even with better tooling, it was unclear how to *fairly* evaluate GRN predictions. Different papers used different tasks, different metrics, and different ground truth datasets — making comparisons nearly impossible.
+
+I built **[BenGRN](https://github.com/jkobject/BenGRN)** to address this: a benchmark suite with 4 distinct tasks, 5 complementary metrics, and multiple datasets covering different experimental contexts. Some findings from running scPRINT and other models through it were surprising:
+
+- Z-scoring expression data dramatically improves performance against Omnipath ground truth, but *hurts* performance on perturbation-based benchmarks. This matters because Omnipath contains many connections derived from early cancer cell line data, where co-expression of housekeeping genes creates a correlation bias. Z-scoring aligns to that bias — which isn't the same as being more correct.
+- Geneformer's attention-based networks improve significantly when you aggregate attention scores *across cells* rather than per-cell, because it artificially increases co-occurrence scores for genes expressed together — again, a correlation bias masquerading as a regulatory signal.
+- GENIE3 at scale hits a wall: more cells and more trees eventually produces runs that simply never finish. We had to prune our benchmark runs significantly to make them tractable on a cluster.
+
+If you want the full rant on what's wrong with how the field evaluates GRNs, I posted a more polemical version [on X](https://x.com/jkobject/status/1831989215485169762).
 
 ## Interesting things I learned
 
