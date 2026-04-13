@@ -4,7 +4,7 @@ excerpt: "A Next-Generation Cell Foundation Model"
 category: "Thesis"
 layout: "single"
 toc: true
-date: 2026-04-17
+date: 2026-03-30
 tags:
   - Comp-Bio
   - Foundation Models
