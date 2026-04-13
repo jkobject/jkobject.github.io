@@ -62,4 +62,4 @@ I thus decided to formalize this usage by creating [GRnnData](https://github.com
 
 ![](/assets/images/grn2.png)
 
-But [GRnnData](https://github.com/cantinilab/GRnnData) can do more and integrates some utils functions doing things like clustering, centrality measures, enrichment and more. Go check [GRnnData]https://github.com/cantinilab/GRnnData if you work with gene networks! 
+But [GRnnData](https://github.com/cantinilab/GRnnData) can do more and integrates some utils functions doing things like clustering, centrality measures, enrichment and more. Go check [GRnnData](https://github.com/cantinilab/GRnnData) if you work with gene networks! 
