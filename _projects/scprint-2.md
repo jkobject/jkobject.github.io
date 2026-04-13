@@ -150,6 +150,5 @@ attention.
 _scPRINT-2 is available at
 [github.com/cantinilab/scPRINT-2](https://github.com/cantinilab/scPRINT-2) under
 GPL-v3. Read the companion posts:
-[We Trained 42 Models So You Don't Have To](./02-benchmark.md) ·
-[350 Million Cells, 16 Organisms](./03-dataset.md) ·
-[Criss-Cross Attention](./04-criss-cross-attention.md)._
+[350 Million Cells, 16 Organisms](./the-scprint2-corpus.md) ·
+[Criss-Cross Attention](./criss-cross-attention.md)._
