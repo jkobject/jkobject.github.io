@@ -83,11 +83,11 @@ var store = [{
         "url": "/blog/a-french-engineering-school/",
         "teaser": "/assets/images/engschool1.jpeg"
       },{
-        "title": "Boom Festivals & Eurotrips",
+        "title": "Festivals & Trips",
         "excerpt":"I am trying to make it a somewhat professional blog! But feel free to ask me around a beer. 😉  ","categories": ["ECE"],
         "tags": ["PhD"],
         "url": "/blog/festivals/",
-        "teaser": "/assets/images/.jpeg"
+        "teaser": "/assets/images/trips.jpg"
       },{
         "title": "A semester abroad in Mexico",
         "excerpt":"During my third year of undergraduate studies, I went on to do a semester exchange in Mexico.🇲🇽 The city, 🌃 of Queretaro of the eponym region is placed in the center of Mexico and tops a 2000m plateau. There I studied computer, 💻 science, design and statistics at the Tec...","categories": ["ECE"],
@@ -179,6 +179,12 @@ var store = [{
         "url": "/blog/leaving-broad/",
         "teaser": "/assets/images/broad_far.jpg"
       },{
+        "title": "A Startup idea to accelerate the transition to smart-things",
+        "excerpt":"Last time, I was in my kitchen, looking at my google home and the 3 lights + thermostat it was able to control. I felt quite underwhelmed with the effort I had to go through to find and install these. Amongst the many objects in my home, there is still...","categories": ["Frustrations and Solutions"],
+        "tags": [],
+        "url": "/blog/smart-things-company/",
+        "teaser": "/assets/images/couverture.png"
+      },{
         "title": "The Aqemia Story",
         "excerpt":"During the summer of 2022, I was feeling pretty desperate. I had just experienced 6 months of many failed attempts at securing positions at companies like Deepmind, BenevolentAI, Isomorphic Labs, and Owkin. I had gone through very long and tedious interview processes where for some, it had felt like I...","categories": ["Other Work Experience"],
         "tags": ["Big Data","Drug Discovery","Python"],
@@ -233,11 +239,23 @@ var store = [{
         "url": "/blog/about-the-aivc-paper/",
         "teaser": "/assets/images/aivc.jpg"
       },{
+        "title": "About the AIVC paper",
+        "excerpt":" ","categories": ["PhD"],
+        "tags": ["AI","Comp-Bio","Research"],
+        "url": "/blog/finishing-the-phd/",
+        "teaser": "/assets/images/aivc.jpg"
+      },{
         "title": "A year in the PhD",
         "excerpt":"I have been a PhD student for a year now. Many things have happened and here is some lessons learned. do it in 2 years and be prepared make as many connections as I can maximize impact on the community: make something useful enjoy it as much as possible The...","categories": ["PhD"],
         "tags": ["PhD","Comp-Bio"],
         "url": "/blog/a-year-in-the-phd/",
         "teaser": "/assets/images/photo-pasteur.jpg"
+      },{
+        "title": "VCC starter pack",
+        "excerpt":"To start the VCC, you need to know a few things. This is your starter pack: The main packages for single cell data analysis are scanpy - anndata - pertpy: with many other easy to use packages being part of the scverse ecosystem. In addition, both RNA-seq, csv, and image...","categories": ["PhD"],
+        "tags": ["AI","Comp-Bio","Research"],
+        "url": "/blog/vcc-starter-pack/",
+        "teaser": "/assets/images/starterpack.png"
       },{
         "title": "PiPle: The Beginnings",
         "excerpt":"PiPle is the next generation professional communication tool. It is a cross platform project led by a team of Engineering student, 👩‍🎓 from ECEparis which is led by me. We won a couple of Prizes for this project last year. The Berger Levrault Citizen Challenge as well as ECE innov...","categories": ["PiPle"],
@@ -334,4 +352,16 @@ var store = [{
         "tags": ["PhD","Comp-Bio"],
         "url": "/projects/about-scprint/",
         "teaser": "/assets/images/scprint.png"
+      },{
+        "title": "Xpressor",
+        "excerpt":"This work initially stemmed from a related but different question we were working on with Gabriel: “How could we rethink the attention mechanism in transformers to make it more efficient or better?” Unfortunately, we had to reduce the project’s scope for 2 reasons: Time was lacking, Laura wanted us to...","categories": ["PhD"],
+        "tags": ["PhD","Comp-Bio"],
+        "url": "/projects/xpressor/",
+        "teaser": "/assets/images/xpressor.png"
+      },{
+        "title": "scPRINT-2",
+        "excerpt":"hello  ","categories": ["PhD"],
+        "tags": ["PhD","Comp-Bio"],
+        "url": "/projects/about-scprint2/",
+        "teaser": "/assets/images/scprint2.png"
       }]
