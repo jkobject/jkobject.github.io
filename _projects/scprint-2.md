@@ -71,10 +71,10 @@ spanning multiple sequencing technologies. It outperforms MAGIC and DCA — two
 methods specifically built for this task — including on the challenging regime
 of low-sequencing-depth cells, where scPRINT-1 struggled.
 
-The generalization results are where it gets interesting. Using a cat and tiger
+The generalization results are probably the most surprising. Using a cat and tiger
 lung dataset that was never seen during training, scPRINT-2 correctly classifies
 42.2% of cells zero-shot — comparable to the agreement between two independent
-sets of expert annotations on the same dataset, which was 55.3%. More tellingly,
+sets of expert annotations on the same dataset, which was 55.3%. Better yet,
 scPRINT-2 flags cells labeled as macrophages that express SFTPC, a canonical
 type-2 pneumocyte marker. A differential expression analysis confirms the model
 is right and the ground truth is wrong.
@@ -86,22 +86,18 @@ scPRINT-2 denoises expression profiles that correlate more than 30% better with
 a matched 10X reference dataset than raw Xenium does. And using its generative
 architecture, it imputes 5,000 genes entirely absent from the Xenium panel.
 
-scPRINT-2 can also perform counterfactual reasoning: given mouse cell expression
-profiles, it generates human-like profiles by swapping the organism cell
-embedding. The resulting profiles show a 58% enrichment of correctly predicted
-differentially expressed genes compared to random, and the pathway-level shifts
-align with known biology — immune function differences, extracellular matrix
-composition, membrane interactions.
+scPRINT-2 can also do counterfactual generation: swap the organism embedding on
+mouse cells and it produces human-like profiles. 58% enrichment of correctly
+predicted differentially expressed genes vs random, and the pathway shifts match
+known biology (immune function, ECM, membrane interactions).
 
 ## Gene Regulatory Networks, Zero-Shot
 
 ![scPRINT-2 gene regulatory network predictions](/assets/images/scprint2-fig-grn.png)
 
-Beyond expression and cell type tasks, scPRINT-2 can predict genome-wide gene
-regulatory networks (GRNs) directly from expression data — no fine-tuning, no
-per-dataset retraining. The attention patterns learned during pre-training
-encode implicit gene-gene relationships, and scPRINT-2 learns to surface them as
-explicit, interpretable networks.
+scPRINT-2 can also predict genome-wide gene regulatory networks (GRNs) directly
+from expression data, zero-shot. The attention patterns from pre-training encode
+gene-gene relationships, and we extract them as explicit networks.
 
 This is harder to evaluate than cell type classification, because ground truth
 for GRNs is itself contested. Most benchmarks use regulatory databases (like

@@ -15,7 +15,7 @@ toc: true
 ## Abstract
 
 Single-cell RNA sequencing has opened a window into the cellular diversity of
-living organisms at unprecedented resolution — but making sense of millions of
+living organisms at unprecedented resolution, but making sense of millions of
 cells across thousands of studies remains a formidable challenge. My PhD,
 completed in March 2026 at ENS and Institut Pasteur under the supervision of
 [Laura Cantini](https://research.pasteur.fr/fr/team/machine-learning-for-integrative-genomics/)
@@ -25,13 +25,13 @@ models capable of learning universal representations of transcriptomic data.
 
 The central contribution is **scPRINT**, a foundation model trained on tens of
 millions of single cells that can denoise expression profiles, embed cells in a
-meaningful latent space, and — most distinctively — infer **gene regulatory
+meaningful latent space, and, most distinctively, infer **gene regulatory
 networks (GRNs)** directly from single-cell data. Unlike prior methods, scPRINT
 leverages the full complexity of large-scale single-cell atlases to produce
 cell-type-specific regulatory landscapes, without requiring bulk ATAC-seq or
 ChIP-seq. scPRINT was published in _Nature Communications_ (2025).
 
-A parallel contribution, **[Xpressor](https://www.biorxiv.org/content/10.1101/2025.05.16.653447v2)**, introduced a novel attention mechanism enabling cross-scale biological learning and parameter-efficient fine-tuning — with applications from single-cell to protein embeddings.
+A parallel contribution, **[Xpressor](https://www.biorxiv.org/content/10.1101/2025.05.16.653447v2)**, introduced a novel attention mechanism enabling cross-scale biological learning and parameter-efficient fine-tuning with applications from single-cell to protein embeddings.
 
 Its successor, **scPRINT-2**, extends the framework with improved scalability
 and generalization, and is currently under revision at _Nature Methods_.

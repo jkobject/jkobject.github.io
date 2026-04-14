@@ -12,59 +12,61 @@ header:
   overlay_image: "assets/images/photo-pasteur.jpg"
 ---
 
-I have been a PhD student for a year and a half now. When I wrote [the PhD decision post](https://www.jkobject.com/blog/the-phd-decision-grn-foundation-model/), I laid out four goals I wanted to hold myself accountable to. Time to check in honestly. Many things have happened and here are the lessons learned. 🧬
+A year and a half in. When I wrote [the PhD decision post](https://www.jkobject.com/blog/the-phd-decision-grn-foundation-model/), I set four goals:
 
 1. do it in 2 years and be prepared
 2. make as many connections as I can
 3. maximize impact on the community: make something useful
 4. enjoy it as much as possible
 
+Time to check in. 🧬
+
 ## The environment
 
-My PhD is split between two worlds that couldn't be more different, and yet somehow that contrast is exactly what makes it work.
+My PhD is split between Institut Pasteur and ENS, which are very different places.
 
-At Institut Pasteur, I work with Laura Cantini. Pasteur has this particular energy — serious science, long corridors, a rich history that almost feels tangible when you walk through the campus. Laura runs a tight, focused group working at the intersection of machine learning and genomics. She's exacting in the best way: she pushes me to make sure every claim is grounded, every figure tells a clear story. Working with her has made me a more rigorous scientist.
+At Pasteur, I work with Laura Cantini. Pasteur is serious science, long corridors, old campus. Laura runs a small group at the intersection of ML and genomics. She pushes hard on rigor — every claim grounded, every figure telling a clear story. I've become a better scientist working with her.
 
-At ENS, things are different. Gabriel Peyré's world is applied mathematics — optimal transport, signal processing, the kind of theoretical depth I had always admired from afar. Having two PIs means navigating two different sets of expectations, two lab cultures, and sometimes two conflicting intuitions about what matters. It took months to figure out how to make both relationships work simultaneously without dropping the ball on either side. The key, I've found, is being very explicit about what I'm working on and where I'm stuck — over-communicating rather than assuming.
+At ENS, Gabriel Peyré does applied math — optimal transport, signal processing, things I'd admired from afar for a while. Having two PIs means two sets of expectations, two lab cultures, sometimes two conflicting intuitions about what matters. It took months to find a rhythm. What works: being very explicit about what I'm doing and where I'm stuck. Over-communicating rather than assuming.
 
-The administration at these institutions is... an experience. Between the paperwork, the bureaucratic layers of a French public research environment, and the logistics of being enrolled across two institutions, I probably spent the equivalent of two full working weeks last year just filling out forms and chasing approvals. Not my favorite part.
+The admin side is... well, French public research bureaucracy across two institutions. I probably spent two full working weeks last year on forms and approvals alone.
 
-But having two advisors from such distinct backgrounds is genuinely an intellectual privilege. The incentives in academia are different from what I was used to in industry. Here, the currency is ideas, papers, and reputation in the community — not delivery milestones or quarterly revenue. That shift in timescale took some getting used to.
+Having two advisors from such different backgrounds has been great, though. Academia runs on different incentives than industry — ideas and papers instead of delivery milestones and quarterly revenue. That took some adjusting.
 
 ## The successes
 
-Honestly? I'm proud of what got done this year. 🙌
+I'm proud of what got done this year. 🙌
 
-The main achievement is [scPRINT](https://github.com/cantinilab/scPRINT) — a large-scale foundation model for single-cell RNA sequencing. Getting it to work the way I envisioned, getting it published, and seeing people in the community actually use it — that felt real. On top of that, I shipped three more open-source tools that came out of the work around scPRINT: utilities for benchmarking, data processing, and evaluation that I think will genuinely be useful to others.
+The main thing is [scPRINT](https://github.com/cantinilab/scPRINT) — a large foundation model for single-cell RNA sequencing. Getting it to work, getting it published, seeing people actually use it. I also shipped three more open-source tools around scPRINT for benchmarking, data processing, and evaluation.
 
-On the visibility side, I went to over 10 conferences and events across Europe (and beyond). I gave 4 oral presentations — nerve-wracking every time, but getting better — and did 3 poster sessions. There's something I love about poster sessions: the conversations are real, people stop because they're actually curious, and you end up talking through your work in a way that forces you to understand it better yourself.
+I went to over 10 conferences and events across Europe. 4 oral presentations (still nerve-wracking), 3 poster sessions. I actually like poster sessions — the conversations are real, people stop because they want to, and you end up understanding your own work better by explaining it 30 times.
 
-Making connections has been one of the most rewarding parts. I've met researchers I'll be collaborating with for years, and that network is something I'm actively building.
+I've also met researchers I'll be working with for years. Building that network has been one of the best parts of the PhD so far.
 
 ## The difficulties
 
-I won't pretend everything was smooth. A few things were genuinely hard.
+Some things were harder than expected.
 
-Switching projects completely when I started the PhD was tougher than I expected. I came from industry work on cell atlases and drug discovery; diving back into a more theoretical research mode required resetting a lot of assumptions about what "good work" looks like and what counts as progress.
+Switching projects completely when I started — I came from industry work on cell atlases and drug discovery, and going back to a more theoretical research mode meant resetting my idea of what "progress" looks like.
 
-scPRINT itself opened more questions than it answered — which is great for science, but disorienting when you're trying to ship something coherent. Every experiment surfaced something new to investigate, and learning to say "this is out of scope for now" without feeling like I was cutting corners took real discipline.
+scPRINT opened more questions than it answered. Every experiment surfaced something new to investigate, and learning to say "this is out of scope for now" without feeling like I was cutting corners took discipline.
 
-Being a PhD student can also be surprisingly isolating at times. You're responsible for your own direction in a way that's different from any job I've had. There are weeks where no one is telling you whether you're doing the right thing, and you have to generate your own signal. That's a muscle I've been building, but it's not always comfortable.
+The isolation is real. You're responsible for your own direction in a way that's different from any job I've had. Some weeks nobody is telling you whether you're on the right track. You have to figure that out yourself.
 
 ## The good and the bad of academia
 
-Let me be honest about both sides, because I see a lot of people either romanticizing academia or being unnecessarily cynical about it.
+I see a lot of people either romanticizing academia or being cynical about it. I'll try to be straight.
 
-The good is real. The freedom to pursue a question without a product manager asking if it's "strategically aligned" is genuinely extraordinary. I can spend two weeks going deep on a mathematical idea just because it might matter. I can collaborate with anyone who's interested — across institutions, across countries — and that porosity of the academic world is something I've come to treasure. The people I've met this year: brilliant, curious, generous with their time and ideas. That community is irreplaceable.
+The freedom is real. No product manager asking if your idea is "strategically aligned". I can spend two weeks on a mathematical question just because it might matter. I can collaborate with anyone across institutions and countries. The people I've met are great — generous with time and ideas.
 
-And then there's the hard stuff. The bureaucracy, as I mentioned. The lack of structure — which is a feature if you handle it well and a bug if you don't. Being essentially a solo contributor on one main project means that if you get stuck, there's no teammate to hand it off to. One project only, for potentially three years, is a very different rhythm than the fast-paced multi-track work I was used to. Some days that focus feels like a superpower. Other days it feels like a constraint.
+But the hard stuff is also real. The bureaucracy I already mentioned. The lack of structure (great when you're focused, bad when you're stuck). Being a solo contributor on one main project for three years is a very different rhythm than industry. When you're stuck, there's no teammate to take over.
 
 ## What is next?
 
-I still have the goal to finish in around 2 years from start — which means the clock is ticking and the work is accelerating. 🚀
+Still aiming to finish in about 2 years from start, so the clock is ticking. 🚀
 
-Looking back at those 4 original goals: I think I've genuinely followed the path so far. I shipped something useful. I made connections. I showed up at conferences. I've mostly enjoyed it — even the hard parts in hindsight.
+Looking at those 4 original goals: I think I'm on track. I shipped something useful, I made connections, I showed up at conferences, and I've mostly enjoyed it.
 
-But it is becoming harder as the tasks pile up and the project grows in scope. The deeper you go into a research problem, the more you see what's left to do. The goal now is to convert that momentum into something publishable and impactful, without losing the thread of what made it exciting in the first place.
+It's getting harder though. The deeper you go into a research problem, the more you see what's left. The project keeps growing in scope while the deadline doesn't move.
 
-More to come. Watch this space. 👀
+More to come. 👀

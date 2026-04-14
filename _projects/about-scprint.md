@@ -20,8 +20,7 @@ This post is just a paper summary
 (_Nature Communications_, 2025), with code at
 [github.com/cantinilab/scPRINT](https://github.com/cantinilab/scPRINT). What I
 want to do here is tell the story behind it — the design choices, the dead ends,
-the things we found that surprised us, and the infrastructure we had to build
-along the way.
+the surprises, and the infrastructure we had to build.
 
 If you prefer watching over reading, check out my talks at
 [LoGG](https://www.youtube.com/watch?v=s9_DZz9E1To&t=1645s) or at the
@@ -31,15 +30,15 @@ If you prefer watching over reading, check out my talks at
 
 ## Why scPRINT?
 
-The origin story is partly told in
+The backstory is in
 [The PhD Decision](https://www.jkobject.com/blog/the-phd-decision-grn-foundation-model/),
-but the short version is: existing foundation models for single-cell RNA-seq
-were impressive in scope but frustrating in practice. scGPT had momentum, but
-the code was hard to extend, the reproducibility was shaky, and — perhaps most
-importantly — none of these models were actually designed to output _gene
+but the short version: existing foundation models for single-cell RNA-seq
+looked impressive on paper but were frustrating to actually use. scGPT had momentum, but
+the code was hard to extend, the reproducibility was shaky, and, perhaps most
+importantly, none of these models were actually designed to output _gene
 networks_. They mentioned it as a feature, but it was an afterthought.
 
-The case for building something from scratch came down to four observations:
+Four things convinced me to build from scratch:
 
 1. **The data is there, but it's not being used well.** CellxGene (CxG) had
    accumulated 50+ million cells from diverse species, tissues, diseases, and
@@ -113,8 +112,7 @@ dropouts. This sounds obvious in hindsight, but it wasn't.
 
 **Bottleneck learning.** The model generates a compact cell embedding, then uses
 only that embedding (without seeing the raw expression values again) to
-reconstruct the expression profile. This forces the embedding to be genuinely
-informative. It's similar in spirit to how autoencoders work, but integrated
+reconstruct the expression profile. This forces the embedding to be informative. It's similar in spirit to how autoencoders work, but integrated
 into the transformer pretraining loop.
 
 **Hierarchical label prediction.** Because CxG requires complete metadata
@@ -268,8 +266,7 @@ partially removes batch effects without using batch labels as prior information.
 On the OpenProblems lung and pancreas benchmarks, it achieves the top scIB score
 among all methods that don't use batch label information. It doesn't match
 dedicated integration tools like scVI or scGEN — which is expected — but it
-demonstrates that the cell model has genuinely learned to disentangle biological
-state from technical noise.
+shows the cell model has learned to disentangle biological state from technical noise.
 
 ---
 
@@ -314,10 +311,9 @@ database would probably yield more gains than scaling to 500M parameters.
 
 ## What Comes Next
 
-A lot of what I learned building scPRINT is being carried forward into scPRINT-2
-and into collaborations with Open Problems. The benchmarking infrastructure
-(BenGRN, GRnnData) is available for anyone who wants to use or extend it. The
-model weights and training code are public.
+Most of what I learned building scPRINT went into scPRINT-2. BenGRN and GRnnData
+are available if you want to use or extend them. Model weights and training code
+are public.
 
 If you want to dig further:
 
