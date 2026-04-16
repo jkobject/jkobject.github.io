@@ -1,90 +1,164 @@
 ---
 title: "Finishing the PhD"
-excerpt: "2.5 years, two labs, one foundation model, and a defense. Here is what I learned."
+excerpt:
+  "2.5 years, two labs, one foundation model, and a defense. Here is what I
+  learned."
 category: "PhD"
 toc: true
-date: 2026-03-01
+date: 2026-05-01
 tags:
- - PhD
- - Comp-Bio
- - Foundation Models
+  - PhD
+  - Comp-Bio
+  - Foundation Models
 header:
   teaser: "assets/images/photo-pasteur.jpg"
   overlay_image: "assets/images/photo-pasteur.jpg"
 ---
 
-It's done. On March 25, 2026, I defended my PhD at ENS. 🎓
+It's done. March 25, 2026, 1:30pm, Duclaux amphitheater at Institut Pasteur. 🎓
 
-I started this in October 2023 with [four goals](https://www.jkobject.com/blog/the-phd-decision-grn-foundation-model/): do it in two years and be prepared, make as many connections as I can, maximize impact on the community, and enjoy it as much as possible. I ended up taking 2.5 years — not two — but looking back, I think I held the line on the other three pretty well.
+I started in October 2023. Took 2.5 years instead of two. Here's what happened.
 
-This post is a retrospective. What happened, what I built, what I struggled with, and what I'm walking into next.
+## What I set out to do
 
-## What I built
+The project was building foundation models for single-cell transcriptomics —
+taking the pretraining ideas from NLP and applying them to gene expression at
+scale. The goal: a model that could infer gene regulatory networks, classify
+cell types zero-shot, denoise expression, and actually be useful to biologists.
+Not just publishable, usable.
 
-The core of my thesis was [scPRINT](https://github.com/cantinilab/scPRINT): a large pre-trained transformer for single-cell transcriptomics. The idea was simple in principle and extremely hard in practice — take the ideas that had worked so well in NLP (pretraining on massive unlabeled data, then fine-tuning on downstream tasks) and apply them seriously to gene expression data at scale.
+%% WIP$$$ I was split between two labs:
+[Laura Cantini](https://research.pasteur.fr/fr/team/machine-learning-for-integrative-genomics/)
+at Institut Pasteur (computational biology, gene networks) and
+[Gabriel Peyré](http://www.gpeyre.com/) at ENS (applied mathematics, optimal
+transport). Two very different worlds, two sets of expectations, two weekly
+meetings.
 
-scPRINT was published in **Nature Communications** in 2025. That felt like a major milestone. Seeing it in print after years of wrangling datasets, debugging attention layers, and writing response letters was genuinely satisfying. 🙏
+Outside the lab, I wanted to keep training — endurance sports had become
+important to me during this period, and I wanted to see more of the world while
+I could.
 
-The second paper, **scPRINT-2**, is currently in revision at Nature Methods. It goes further — better architecture, broader benchmarks, more biological insights baked in. I'm proud of it. It will come out.
+## What I did
 
-Beyond the two main papers, I built tooling, presented at over a dozen conferences and workshops, and tried to make every piece of the work usable by the community — not just publishable.
+### The papers
 
-## Two labs, two PIs
+The thesis produced three papers:
 
-My setup was unusual: I was split between [Laura Cantini's group](https://research.pasteur.fr/fr/team/machine-learning-for-integrative-genomics/) at Institut Pasteur and [Gabriel Peyré](http://www.gpeyre.com/)'s group at ENS. That's two labs, two cultures, two weekly meeting schedules, and two sets of expectations to manage.
+**scPRINT**
+([Nature Communications, 2025](https://www.nature.com/articles/s41467-025-58126-9))
+— a large cell model trained on 50M+ cells for gene network inference. Novel
+gene tokens from ESM2 protein embeddings, learned expression tokenization,
+genomic positional encoding. State-of-the-art on GRN inference benchmarks,
+zero-shot cell type classification, denoising. Code at
+[github.com/cantinilab/scPRINT](https://github.com/cantinilab/scPRINT).
 
-Honestly? It was one of the richest parts of the experience. Laura brought deep biological grounding and a very direct, no-nonsense style of scientific feedback. Gabriel brought mathematical rigor and a kind of elegant skepticism that forced me to really understand what I was doing. The combination made me a better scientist than either lab alone would have.
+**Xpressor** — a cross-attention architecture for learning across biological
+scales. The idea: compress gene-level representations into cell-state vectors,
+and fine-tune protein language models using cellular tasks. Improved cell-type
+prediction (+28%) and embedding quality (+8%) over standard architectures.
 
-But it was also genuinely hard. Being a full member of neither lab has a loneliness to it that's hard to explain. You are always a little bit a guest. You hold context that no one else fully shares. And when things are slow or unclear, there is no natural anchor.
+**scPRINT-2** (in revision, Nature Methods) — trained on 350M cells from 16
+organisms, 25 TB of data. 42-model ablation study to figure out what actually
+matters in scFM design. 75% zero-shot cell type classification on OpenProblems
+(up from 47% with scPRINT-1). State-of-the-art denoising, batch correction,
+cross-species generalization, counterfactual generation.
 
-## The hard parts
+### The tools
 
-I won't pretend it was all great. A few things I found genuinely difficult:
+Seven Python packages released:
+[scPRINT](https://github.com/cantinilab/scPRINT),
+[BenGRN](https://github.com/jkobject/BenGRN) (GRN benchmarking),
+[GRnnData](https://github.com/cantinilab/GRnnData) (gene networks in AnnData),
+and more for data processing, evaluation, and model serving. Everything
+open-source under GPL-v3.
 
-**The administration.** PhD paperwork at French institutions is its own special adventure. Between Pasteur's admin, ENS's admin, and the doctoral school coordinating between both, I spent more hours than I care to count on forms, attestations, and bureaucratic loops that had nothing to do with science. 
+<!-- TODO: add the full list of packages with links -->
 
-**The solitude.** [I wrote about this after year one](https://www.jkobject.com/blog/a-year-in-the-phd/). It didn't get easier. Doing research means spending a lot of time alone — debugging, reading, thinking. When experiments don't work and papers are in revision and you can't tell if you're making progress, the isolation gets heavy. The communities I built around me — the people at Pasteur, at ENS, at conferences — were what kept me going.
+### The conferences
 
-**Knowing when to stop.** A foundation model is a bottomless pit of possible improvements. I could have kept iterating on scPRINT forever. Learning to say "this is good enough to ship" — and meaning it — was one of the hardest things I had to internalize.
+<!-- TODO: fill in the full list — Jérémie should add the specific conferences -->
 
-**The pressure of two simultaneous timelines.** One paper in Nature Comms, one in revision at Nature Methods, while also preparing the actual manuscript and defense. The last few months were a juggling act I would not want to repeat. ⚡
+Over a dozen conferences and workshops across Europe and beyond. Oral
+presentations, poster sessions, invited talks. Each one forced me to sharpen the
+story and meet people working on adjacent problems.
 
-## The defense itself
+### The outreach
 
-March 25. ENS, rue d'Ulm.
+I mentored a student during the PhD. Wrote blog posts (you're reading one), made
+videos, gave talks to non-specialist audiences. I think this kind of work
+matters — it's how ideas spread beyond the 50 people who read your paper.
 
-I won't over-dramatize it — I had prepared well, and the jury was rigorous but fair. There's a strange feeling to defending years of work in a single afternoon. You have to hold the whole arc of the project in your head — the original intuitions, the detours, the things that didn't work, and the ones that did — and present it as if it was all obvious from the start.
+### The people
 
-What I remember most is the Q&A. Real questions, hard ones. Questions that made me think. That's what makes a defense feel worthwhile. Not the ritual, but the sense that serious people took the work seriously.
+The labs at Pasteur and ENS. Jules Samaran, Remi Trimbour, Geert Huizing at ENS.
+Alex Wolf, Sergei Ribakov, Brice Rafestin for software help. The Nucleate
+community, Whitelab Genomics, Blossom, dot Omics, Biographica. A lot of people
+made this work possible.
 
-> "The goal of a PhD is not to become a PhD. The goal is to learn how to do research."
+### Outside the lab
 
-Someone told me that early on. I think it's right.
+I trained for and ran a medium triathlon, a half-marathon, the Mont-Blanc trail,
+and the Paris Marathon. Traveled to the UK, Portugal, Spain, Guadeloupe,
+Vancouver, Thailand. I needed this. Long runs are good for thinking, and getting
+away from the screen makes you come back sharper.
 
-## What I learned — beyond the science
+## The defense
 
-A few things I'll carry forward:
+March 25. Pasteur, Duclaux amphitheater.
 
-**Autonomy is a skill you have to develop.** No one tells you what to do during a PhD, which sounds like freedom and feels like vertigo for the first six months. Getting comfortable with self-direction — setting my own objectives, deciding when something is done — was the most transferable thing I learned.
+I was stressed. I'd prepared well, but defending years of work in one afternoon
+is a strange exercise. You try to make it look like everything was planned from
+the start, when in reality half of the good ideas came from accidents.
 
-**Community is infrastructure.** The conferences, the collaborations, the DMs with people working on similar problems — these are not distractions from the work. They are part of the work. Ideas move through people.
+The jury was rigorous but fair. Hard questions in the Q&A — the kind that make
+you think, not the kind designed to trip you up. That's what makes a defense
+feel worth it.
 
-**Open source is how you have an impact.** I [wrote about this before](https://www.jkobject.com/blog/the-phd-decision-grn-foundation-model/), but doing it for 2.5 years only reinforced it. If scPRINT is useful, it's because people can actually use it. Every hour spent on documentation and APIs is an investment in impact.
+Having my mentoree there meant a lot. And the next week, I finished a marathon.
+Different kind of endurance, same feeling at the end.
 
-**Being a researcher at a company and being a PhD student are different things.** Both are valuable. The PhD gave me something I couldn't have gotten any other way: the space to go deep, to be wrong for months, and to follow a thread until it either broke or became a paper.
+## What I learned
+
+How to write papers. How to think about research impact beyond citations. How to
+set goals when nobody is setting them for you.
+
+The research community matters more than I expected. Not just for collaboration
+— for sanity. The conferences, the DMs, the random conversations at poster
+sessions.
+[Open source](https://www.jkobject.com/blog/the-phd-decision-grn-foundation-model/)
+is how you actually have an impact: if scPRINT is useful, it's because people
+can use it.
+
+Technically: a lot about transformers, diffusion models, optimal transport, the
+math of self-supervised learning. But also about the gaps — the missing data,
+the incomplete benchmarks, the things we still don't know how to measure
+properly.
+
+Company research and a PhD are different. The PhD gave me time to go deep, be
+wrong for months, follow a thread until it broke or became a paper. I wouldn't
+trade that.
 
 ## What's next
 
-I'm not going back into academia. I never planned to. 🚀
+I'm not going back into academia. Never planned to. 🚀
 
-The mission that's been forming for years is now crystallizing: I want to use AI and biology to extend healthy human lifespan. Not marginally. Significantly. I believe this is one of the most important problems of our time and that we're close enough to the necessary tools that it's time to go build something.
+I'm thinking of building **Jouvence** — a company using AI and biology to extend
+healthy human lifespan. The thesis work on foundation models, gene networks, and
+cellular representation is directly relevant: if you can model how cells work
+and how they break, you can start to intervene.
+<!-- TODO: add 2-3 sentences about Jouvence's approach, from Notion pages -->
 
-That means starting a company. That means going back to the US, probably. It means bringing together the foundation model work, the biological intuitions, and the product-first mindset I built at Whitelab and Broad — and pointing all of it at aging and disease.
+I'm also looking at companies working on similar goals: longevity, disease
+modeling, AI-driven high-throughput data generation. Places like Lilas
+Bioscience and Xaira Therapeutics are doing interesting work in this space.
 
-There is so much to do. I'm impatient to start.
+Lots to do.
 
 ---
 
-If you want to read the full arc: [the PhD decision](https://www.jkobject.com/blog/the-phd-decision-grn-foundation-model/), [a year in the PhD](https://www.jkobject.com/blog/a-year-in-the-phd/), and now this.
+The full arc:
+[the PhD decision](https://www.jkobject.com/blog/the-phd-decision-grn-foundation-model/),
+[a year in](https://www.jkobject.com/blog/a-year-in-the-phd/), and now this.
 
-Thank you to Laura, Gabriel, and everyone who worked alongside me these last 2.5 years. It was worth it.
+Thanks to Laura, Gabriel, Juliette, my family, and everyone who was part of the
+last 2.5 years.
