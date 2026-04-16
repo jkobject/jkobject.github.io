@@ -27,7 +27,10 @@ scale. The goal: a model that could infer gene regulatory networks, classify
 cell types zero-shot, denoise expression, and actually be useful to biologists.
 Not just publishable, usable.
 
-%% WIP$$$ I was split between two labs:
+%% WIP$$$ 
+
+
+I was split between two labs:
 [Laura Cantini](https://research.pasteur.fr/fr/team/machine-learning-for-integrative-genomics/)
 at Institut Pasteur (computational biology, gene networks) and
 [Gabriel Peyré](http://www.gpeyre.com/) at ENS (applied mathematics, optimal
