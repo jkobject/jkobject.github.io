@@ -34,7 +34,9 @@ So I gave the main mechanisms nicknames. Not because the nicknames are perfect,
 but because naming is a way to think. I hope the map is useful, and maybe sparks
 discussions.
 
-![Gene Regulation Landscape](/assets/images/gene-reg-v7.png)
+[![Gene Regulation Landscape](/assets/images/gene-reg-v7.png)](/assets/images/gene-reg-v7.png)
+
+[Open the full-resolution zoomable image](/assets/images/gene-reg-v7.png).
 
 ## The Seven Layers
 
@@ -99,29 +101,6 @@ and can influence co-translational folding.
 That is the central idea of the landscape: gene regulation is not just a list of
 mechanisms. It is a multi-layer control architecture built from recurring design
 patterns.
-
-## Does The Map Hold Up?
-
-As a conceptual atlas, yes. The strongest axes are the coupling between Pol II,
-chromatin, and splicing; the m6A/RBP/miRNA layer as a post-transcriptional
-decision hub; and the feedbacks that bring translation and protein degradation
-back to transcription.
-
-But a map like this necessarily compresses biology. A few caveats matter:
-
-- `HUBS` merges super-enhancers and transcriptional condensates. This is useful
-  visually, but a ChIP-seq-defined enhancer cluster and a microscopy-observed
-  condensate are not strictly the same object.
-- `STAMP` compresses m6A writers, erasers, and readers into a single node. Good
-  for a map, too compact for detailed mechanism.
-- `TEMPO` merges codon usage, tRNA modifications, and ribosome heterogeneity.
-  This is defensible as “decoding kinetics,” but each subfield has its own
-  nuances.
-- `SPONGE` should be read carefully: ceRNA effects exist in some contexts, but
-  they depend strongly on stoichiometry and have often been overclaimed.
-
-So the map should be read as a mental topology, not as a claim that every arrow
-is universal, equally causal, or independent of cell type.
 
 ## Why This Matters For AI Biology
 
