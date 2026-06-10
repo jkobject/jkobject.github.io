@@ -14,16 +14,18 @@ header:
 published: true
 intro:
   - excerpt:
-      "I hold 2 Masters in Biomedical Engineering & Machine Learning and a Ph.D.
-      in AI and Genomics. I am a Researcher, Engineer & Developer. My goal is to
-      improve human healthspan. I have been a [Senior
-      Associate](https://cancerdatascience.org/) at the Broad Institute of MIT
-      and Harvard and a team leader at [Whitelab
-      Genomics](https://whitelabgx.com/). I have studied at ECE paris, the
-      University of Kent, the TEC de monterey, the [Flatiron
-      Institute](https://www.simonsfoundation.org/people/jeremie-kalfon-2/) and
-      Harvard. I am the co-Founder of
-      [PiPle](https://apps.apple.com/fr/app/piple/id1399507297)"
+      "I am a Researcher, Engineer & Developer. My goal is to improve human
+      healthspan through therapeutic abundance. I hold a Ph.D. in Artificial
+      Intelligence from Institut Pasteur and ENS, as well as two Masters in
+      Biomedical Engineering and Machine Learning. I have been a [Senior
+      Associate Computationalist](https://cancerdatascience.org/) at the Broad
+      Institute of MIT and Harvard and a team leader at [Whitelab
+      Genomics](https://whitelabgx.com/). I have studied at ECE Paris, the
+      University of Kent, the TEC de Monterrey, the [Flatiron
+      Institute](https://www.simonsfoundation.org/people/jeremie-kalfon-2/),
+      and Harvard. I am the ex-co-founder of
+      [PiPle](https://apps.apple.com/fr/app/piple/id1399507297), a company to
+      rethink messaging."
 ---
 
 {% include feature_row id="intro" type="center" %}

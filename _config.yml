@@ -117,8 +117,8 @@ author:
   name: "Jérémie Kalfon"
   avatar: "/assets/images/id.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio:
-    "I am an Engineer, Researcher and Entrepreneur. I wish to make the world a
-    better place with science!"
+    "Researcher, Engineer & Developer working to improve human healthspan
+    through therapeutic abundance."
   location: "Paris - Boston"
   email: "jkobject@gmail.com"
   links:
@@ -149,7 +149,7 @@ footer:
       icon: "fab fa-fw fa-twitter-square"
       url: "https://x.com/jkobject"
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+      icon: "fas fa-fw fa-envelope"
       url: "mailto:jkobject@gmail.com"
     - label: "ResearchGate"
       icon: "fab fa-fw fa-researchgate"
