@@ -36,6 +36,9 @@ discussions.
 
 The map is very large, so the embedded version below is mostly a preview. You
 can [open the full-resolution zoomable map here](/assets/images/gene-reg-v7.png).
+For the full mechanism catalogue and the detailed edge list used to build the
+figure, see the [Gene Regulation Landscape technical notes](/assets/documents/gene-regulation-landscape-details.md)
+and the [Graphviz DOT source](/assets/documents/gene-reg-v7.dot).
 
 [![Gene Regulation Landscape](/assets/images/gene-reg-v7.png)](/assets/images/gene-reg-v7.png)
 

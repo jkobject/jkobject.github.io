@@ -1,0 +1,323 @@
+digraph gene_regulation {
+    graph [
+        rankdir=TB
+        fontname="Helvetica Neue"
+        fontsize=14
+        bgcolor="#111827"
+        pad=0.6
+        splines=polyline
+        overlap=false
+        nodesep=0.45
+        ranksep=0.85
+        label="Gene Regulation Landscape\nFrom DNA to proteins — reductionist architecture (v7)\n38 mechanisms · 7 layers"
+        labelloc=t
+        labeljust=c
+        fontcolor="#e5e7eb"
+    ]
+
+    node [
+        fontname="Helvetica Neue"
+        fontsize=10
+        style="filled,rounded"
+        penwidth=1.6
+        shape=box
+        margin="0.18,0.10"
+    ]
+
+    edge [
+        fontname="Helvetica Neue"
+        fontsize=8
+        penwidth=1.1
+        arrowsize=0.65
+    ]
+
+    // ============================================================
+    // LAYER 0 — 3D GENOME
+    // ============================================================
+    subgraph cluster_3d {
+        label="LAYER 0 — 3D Genome"
+        fontcolor="#93c5fd"
+        fontsize=12
+        style="rounded,dashed"
+        color="#93c5fd"
+        bgcolor="#0c1e35"
+        margin=14
+
+        ZONES [label="ZONES\nCompartiments A/B\n(Hi-C  A=active / B=inactive)" fillcolor="#1e3a5f" fontcolor="#bfdbfe" color="#60a5fa"]
+        FENCES [label="FENCES\nTADs (CTCF + Cohesin)\nloop extrusion → insulation" fillcolor="#1e3a5f" fontcolor="#bfdbfe" color="#60a5fa"]
+        BRIDGES [label="BRIDGES\nBoucles Enhancer→Promoter\n(Mediator + Cohesin + YY1)" fillcolor="#1e3a5f" fontcolor="#bfdbfe" color="#60a5fa"]
+        HUBS [label="HUBS\nSuper-enhancers / Condensats Pol II\n(LLPS + BRD4 + TF maîtres)" fillcolor="#162d4a" fontcolor="#bfdbfe" color="#60a5fa" style="filled,rounded,bold" penwidth=2.2]
+    }
+
+    // ============================================================
+    // LAYER 1 — EPIGENETICS
+    // ============================================================
+    subgraph cluster_epi {
+        label="LAYER 1 — Epigenetics"
+        fontcolor="#86efac"
+        fontsize=12
+        style="rounded,dashed"
+        color="#86efac"
+        bgcolor="#0a2215"
+        margin=14
+
+        SILENCER [label="SILENCER\nDNA methylation\n(DNMT1/3A/3B ↔ TET  5mC→5hmC)" fillcolor="#14532d" fontcolor="#bbf7d0" color="#4ade80"]
+        OPENER   [label="OPENER\nHistone acetylation\n(HATs: p300/CBP  HDACs)\nH3K27ac, H3K9ac" fillcolor="#14532d" fontcolor="#bbf7d0" color="#4ade80"]
+        WRITER_A [label="WRITER-A\nActivating histone methylation\nH3K4me3 (MLL)  H3K36me3 (SETD2)" fillcolor="#14532d" fontcolor="#bbf7d0" color="#4ade80"]
+        WRITER_R [label="WRITER-R\nRepressive histone methylation\nH3K27me3 (PRC2/EZH2)\nH3K9me3 (SUV39H)  bivalent domains" fillcolor="#14532d" fontcolor="#bbf7d0" color="#4ade80"]
+        SHUFFLER [label="SHUFFLER\nRemodelage chromatine ATP-dep.\n(SWI/SNF, ISWI, CHD, INO80)" fillcolor="#14532d" fontcolor="#bbf7d0" color="#4ade80"]
+        GUIDES   [label="GUIDES\nEpigenetic ncRNAs\n(piRNA → DNMT3  lncRNA→PRC2\nXIST, HOTAIR, KCNQ1OT1)" fillcolor="#0f3d23" fontcolor="#bbf7d0" color="#4ade80"]
+    }
+
+    // ============================================================
+    // LAYER 2 — TRANSCRIPTION
+    // ============================================================
+    subgraph cluster_tx {
+        label="LAYER 2 — Transcription"
+        fontcolor="#fde68a"
+        fontsize=12
+        style="rounded,dashed"
+        color="#fde68a"
+        bgcolor="#2a2000"
+        margin=14
+
+        KEYS  [label="KEYS\nFacteurs de transcription (TF)\n(Pioneer: FOXA1, OCT4, GATA3\n~1600 TF humains)" fillcolor="#78350f" fontcolor="#fef3c7" color="#f59e0b"]
+        SCRIBE [label="SCRIBE\nPol II + Pausing\n(NELF+DSIF → P-TEFb / CDK9)\nCTD phospho-code: Ser5/Ser2/Ser7" fillcolor="#78350f" fontcolor="#fef3c7" color="#f59e0b" style="filled,rounded,bold" penwidth=2.2]
+    }
+
+    // ============================================================
+    // LAYER 3 — CO-TRANSCRIPTIONAL
+    // ============================================================
+    subgraph cluster_cotx {
+        label="LAYER 3 — Co-transcriptional"
+        fontcolor="#fdba74"
+        fontsize=12
+        style="rounded,dashed"
+        color="#fdba74"
+        bgcolor="#2d1200"
+        margin=14
+
+        SHIELD  [label="SHIELD\n5' Capping (m7G)\n(Ser5-P CTD → CBC → eIF4E)" fillcolor="#7c2d12" fontcolor="#fed7aa" color="#fb923c"]
+        SPLICER [label="SPLICER\nSplicing alternatif\n(SR proteins, hnRNPs, spliceosome)\nkinetic coupling avec Pol II" fillcolor="#7c2d12" fontcolor="#fed7aa" color="#fb923c" style="filled,rounded,bold" penwidth=2.2]
+        TRIMMER [label="TRIMMER\nAlternative polyadenylation (APA)\nCPSF/CstF  AAUAAA\n→ 3'UTR length" fillcolor="#7c2d12" fontcolor="#fed7aa" color="#fb923c"]
+        RECODER [label="RECODER\nA→I Editing (ADAR1/ADAR2)\nADARs → inosine\n→ recoding + splice + NMD" fillcolor="#6b2500" fontcolor="#fed7aa" color="#fb923c"]
+    }
+
+    // ============================================================
+    // LAYER 4 — POST-TRANSCRIPTIONAL
+    // ============================================================
+    subgraph cluster_ptx {
+        label="LAYER 4 — Post-transcriptional"
+        fontcolor="#c4b5fd"
+        fontsize=12
+        style="rounded,dashed"
+        color="#c4b5fd"
+        bgcolor="#1a0830"
+        margin=14
+
+        STAMP   [label="STAMP\nm6A epitranscriptome\n(METTL3/14 → FTO/ALKBH5\nYTHDF1/2/3, YTHDC1)" fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#a78bfa" style="filled,rounded,bold" penwidth=2.2]
+        READERS [label="READERS\nRegulatory RBPs (~1500)\n(HuR, TTP, FMRP, Staufen\nSR proteins, hnRNPs)" fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#a78bfa" style="filled,rounded,bold" penwidth=2.2]
+        DARTS   [label="DARTS\nmiRNA-RISC\n(Drosha→Dicer→AGO2)\n~2500 miRNA · 7 nt seed" fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#a78bfa"]
+        SPONGE  [label="SPONGE\nlncRNA cytoplasmiques\n(ceRNA: CDR1as, HULC\nlincRNA-p21, GAS5)" fillcolor="#3b1570" fontcolor="#ddd6fe" color="#a78bfa"]
+        CENSOR  [label="CENSOR\nNMD\n(UPF1 + EJC + SMG1\nPTC >50 nt en amont EJC)" fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#a78bfa"]
+        TIMER   [label="TIMER\nmRNA stability / decay\n(CCR4-NOT→XRN1\ndeadenylation→decapping)" fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#a78bfa"]
+        CLIPS   [label="CLIPS\nRNA G-quadruplexes (rG4)\n5'UTR → blocks scanning\nDHX36, eIF4A helicase" fillcolor="#3b1570" fontcolor="#ddd6fe" color="#a78bfa"]
+        VAULT   [label="VAULT\nStress granules / P-bodies\n(G3BP1, TIA-1 / DCP1/2\nLLPS → storage or decay)" fillcolor="#3b1570" fontcolor="#ddd6fe" color="#a78bfa"]
+    }
+
+    // ============================================================
+    // LAYER 5 — TRANSLATION
+    // ============================================================
+    subgraph cluster_trad {
+        label="LAYER 5 — Translation"
+        fontcolor="#fca5a5"
+        fontsize=12
+        style="rounded,dashed"
+        color="#fca5a5"
+        bgcolor="#2d0000"
+        margin=14
+
+        FORGE  [label="FORGE\nmTOR → eIF4F\n(4E-BP1 → eIF4E-eIF4G-eIF4A)\ncap-dependent · 5'UTR scanning" fillcolor="#7f1d1d" fontcolor="#fee2e2" color="#f87171"]
+        BRAKE  [label="BRAKE\nISR / eIF2α-P\n(GCN2, PERK, HRI, PKR)\n→ global repression + ATF4 induction" fillcolor="#7f1d1d" fontcolor="#fee2e2" color="#f87171" style="filled,rounded,bold" penwidth=2.2]
+        DECOY  [label="DECOY\nuORFs\n(~50% mammalian mRNAs)\nATF4, GCN4 bypass under ISR" fillcolor="#7f1d1d" fontcolor="#fee2e2" color="#f87171"]
+        BYPASS [label="BYPASS\nIRES\n(cap-independent\nITAFs: PTB, DAP5, hnRNPQ)\nATF4, HIF-1α, VEGF, p53" fillcolor="#7f1d1d" fontcolor="#fee2e2" color="#f87171"]
+    }
+
+    // ============================================================
+    // LAYER 6 — POST-TRANSLATIONAL
+    // ============================================================
+    subgraph cluster_ptl {
+        label="LAYER 6 — Post-translational"
+        fontcolor="#cbd5e1"
+        fontsize=12
+        style="rounded,dashed"
+        color="#cbd5e1"
+        bgcolor="#1c1c1c"
+        margin=14
+
+        PHOSPHO    [label="PHOSPHO / O-GlcNAc\nPhosphorylation\n(kinases ↔ phosphatases)" fillcolor="#1e293b" fontcolor="#e2e8f0" color="#94a3b8"]
+        UBI        [label="UBIQUITIN CODE\nK48→proteasome · K63→signal\n(E1/E2/E3 cascade)" fillcolor="#1e293b" fontcolor="#e2e8f0" color="#94a3b8" style="filled,rounded,bold" penwidth=2.2]
+        SUMO_NEDD  [label="SUMO / NEDDylation\n(UBL family\nSTUbLs: SUMO→Ub)" fillcolor="#172030" fontcolor="#e2e8f0" color="#94a3b8"]
+        PROTEASOME [label="UPS / Proteasome\n26S (19S+20S)\n+ proteolytic condensates" fillcolor="#1e293b" fontcolor="#e2e8f0" color="#94a3b8"]
+        AUTOPHAGY  [label="Selective autophagy\n(p62/SQSTM1 → lysosome\nNBR1, OPTN)" fillcolor="#172030" fontcolor="#e2e8f0" color="#94a3b8"]
+        CHAPERONES [label="Chaperones / UPR\n(Hsp70, Hsp90, CCT\nIRE1, PERK, ATF6)" fillcolor="#1e293b" fontcolor="#e2e8f0" color="#94a3b8"]
+        PAR        [label="ADP-ribosylation\nPARP1 / PAR\n(DDR + condensates)" fillcolor="#172030" fontcolor="#e2e8f0" color="#94a3b8"]
+    }
+
+    // ============================================================
+    // PRINCIPE TRANSVERSAL — LLPS
+    // ============================================================
+    LLPS [label="LLPS\nPhase Separation\n(transversal physical principle)" fillcolor="#0f172a" fontcolor="#67e8f9" color="#22d3ee" shape=ellipse style="filled,bold" fontsize=11 penwidth=2]
+
+    // ============================================================
+    // METAPRINCIPLES (visual legend in the graph)
+    // ============================================================
+    // A = physical accessibility, B = reversible mark, C = kinetic coupling
+    // (encoded in edge annotations)
+
+    // ============================================================
+    // INTRA-LAYER 0 RELATIONS
+    // ============================================================
+    ZONES  -> FENCES  [label="constrains" color="#60a5fa" fontcolor="#60a5fa" style=dashed]
+    FENCES -> BRIDGES [label="delimits" color="#60a5fa" fontcolor="#60a5fa"]
+    BRIDGES -> HUBS   [label="anchors" color="#60a5fa" fontcolor="#60a5fa"]
+
+    // ============================================================
+    // INTRA-LAYER 1 RELATIONS
+    // ============================================================
+    SILENCER -> WRITER_R [label="co-recruit\nco-occupy" color="#4ade80" fontcolor="#4ade80" style=dashed dir=both]
+    OPENER   -> SHUFFLER [label="H3K27ac → BRD4\n→ BAF recruit" color="#4ade80" fontcolor="#4ade80" style=dashed]
+
+    // ============================================================
+    // LAYER 1 → LAYER 0 (marks define compartments)
+    // ============================================================
+    WRITER_R -> ZONES [label="H3K27me3/K9me3\n→ comp. B" color="#4ade80" fontcolor="#4ade80" style=dashed penwidth=1.5]
+    SILENCER -> ZONES [label="5mC\n→ comp. B" color="#4ade80" fontcolor="#4ade80" style=dashed]
+    OPENER   -> ZONES [label="H3K27ac\n→ comp. A" color="#4ade80" fontcolor="#4ade80" style=dashed]
+    SCRIBE   -> ZONES [label="active txn\n→ comp. A" color="#f59e0b" fontcolor="#f59e0b" style=dashed]
+
+    // ============================================================
+    // LAYER 0 → LAYER 1 (compartments maintain marks)
+    // ============================================================
+    ZONES  -> WRITER_R [label="B comp. ↔\nH3K27/9me3" color="#60a5fa" fontcolor="#60a5fa" style=dashed]
+    HUBS   -> OPENER   [label="BRD4 reads\nH3K27ac" color="#60a5fa" fontcolor="#60a5fa" dir=back style=dashed]
+    GUIDES -> SILENCER [label="piRNA→DNMT3\nde novo 5mC" color="#4ade80" fontcolor="#4ade80"]
+
+    // ============================================================
+    // LAYER 1 → LAYER 2
+    // ============================================================
+    OPENER   -> KEYS   [label="open chromatin\n→ TF access" color="#4ade80" fontcolor="#4ade80"]
+    WRITER_R -> KEYS   [label="PRC2 represses\nTF loci" color="#ef4444" fontcolor="#ef4444" arrowhead=tee]
+    SHUFFLER -> KEYS   [label="nucleosome\nremodeling" color="#4ade80" fontcolor="#4ade80"]
+    WRITER_A -> SCRIBE [label="H3K4me3\n→ Pol II recruit" color="#4ade80" fontcolor="#4ade80"]
+    HUBS     -> SCRIBE [label="P-TEFb release\npause→elongation" color="#f59e0b" fontcolor="#f59e0b" penwidth=2]
+
+    // ============================================================
+    // LAYER 1 — missing connections (WRITER_A, GUIDES, SPONGE)
+    // ============================================================
+    KEYS   -> WRITER_A [label="TF→MLL\n→ H3K4me3" color="#f59e0b" fontcolor="#f59e0b" style=dashed]
+    KEYS   -> GUIDES   [label="TF drives\npiRNA/lncRNA loci" color="#f59e0b" fontcolor="#f59e0b" style=dashed]
+    KEYS   -> SPONGE   [label="TF drives\nlncRNA txn" color="#f59e0b" fontcolor="#f59e0b" style=dashed]
+
+    // ============================================================
+    // LAYER 2 → LAYER 3
+    // ============================================================
+    SCRIBE -> SHIELD  [label="Ser5-P CTD\n→ capping co-tx" color="#f59e0b" fontcolor="#f59e0b"]
+    SCRIBE -> SPLICER [label="Pol II rate\n→ exon inclusion\n(kinetic coupling C)" color="#f59e0b" fontcolor="#f59e0b" penwidth=2 style=bold]
+    SCRIBE -> TRIMMER [label="CTD → CstF\ncleavage/polyA" color="#f59e0b" fontcolor="#f59e0b"]
+    SCRIBE -> STAMP   [label="CTD recruits METTL3/14\n(co-tx m6A, B)" color="#f59e0b" fontcolor="#f59e0b" penwidth=2]
+    SCRIBE -> WRITER_A [label="SETD2 coupled\nSer2-P → H3K36me3 (C)" color="#f59e0b" fontcolor="#f59e0b" penwidth=2 style=bold]
+    WRITER_A -> SPLICER [label="H3K36me3→MRG15\n→PTB→exon incl.(B)" color="#4ade80" fontcolor="#4ade80" penwidth=2 style=bold]
+
+    // ============================================================
+    // LAYER 3 → LAYER 4
+    // ============================================================
+    SPLICER -> CENSOR  [label="PTC from\nalternative exons" color="#fb923c" fontcolor="#fb923c"]
+    TRIMMER -> READERS [label="3'UTR length\n→ RBP sites" color="#fb923c" fontcolor="#fb923c"]
+    TRIMMER -> DARTS   [label="3'UTR length\n→ miRNA sites" color="#fb923c" fontcolor="#fb923c"]
+    RECODER -> SPLICER [label="A→I at 5'SS\n→ splice change" color="#fb923c" fontcolor="#fb923c" dir=both penwidth=2 style=bold]
+    RECODER -> CENSOR  [label="Alu exon→PTC\n→ NMD (or prevents)" color="#fb923c" fontcolor="#fb923c"]
+
+    // ============================================================
+    // m6A (STAMP) — transversal layer 4 mechanism
+    // ============================================================
+    STAMP -> SPLICER [label="YTHDC1→SRSF\n(co-tx, B)" color="#a78bfa" fontcolor="#a78bfa" dir=back style=dashed]
+    STAMP -> TIMER   [label="YTHDF2→CCR4-NOT\n(decay)" color="#a78bfa" fontcolor="#a78bfa"]
+    STAMP -> FORGE   [label="YTHDF1→eIF3\n(init. ↑)" color="#a78bfa" fontcolor="#a78bfa"]
+    STAMP -> BYPASS  [label="5'UTR m6A\n→ cap-indep. tx" color="#a78bfa" fontcolor="#a78bfa"]
+
+    // ============================================================
+    // RBPs (READERS) — transversal
+    // ============================================================
+    READERS -> SPLICER [label="SR/hnRNP\n→ splice (A)" color="#a78bfa" fontcolor="#a78bfa" dir=back style=dashed]
+    READERS -> TIMER   [label="HuR (stabilize)\nTTP (decay)" color="#a78bfa" fontcolor="#a78bfa"]
+    READERS -> FORGE   [label="FMRP represses\ninitiation" color="#a78bfa" fontcolor="#a78bfa" arrowhead=tee]
+
+    // ============================================================
+    // Relations intra-couche 4
+    // ============================================================
+    DARTS  -> TIMER  [label="deadenylation\n+ decay" color="#a78bfa" fontcolor="#a78bfa"]
+    SPONGE -> DARTS  [label="ceRNA sponge\n(A)" color="#a78bfa" fontcolor="#a78bfa" arrowhead=tee]
+    CENSOR -> TIMER  [label="triggers\ndegradation" color="#a78bfa" fontcolor="#a78bfa"]
+    TIMER  -> VAULT  [label="stored or\ndegraded" color="#a78bfa" fontcolor="#a78bfa" dir=both]
+    CLIPS  -> FORGE  [label="5'UTR rG4\nblocks scanning" color="#a78bfa" fontcolor="#a78bfa" arrowhead=tee]
+    CLIPS  -> BYPASS [label="modulates\nIRES activity" color="#a78bfa" fontcolor="#a78bfa"]
+    STAMP  -> CLIPS  [label="m6A destab.\nrG4 structure" color="#a78bfa" fontcolor="#a78bfa" style=dashed]
+
+    // ============================================================
+    // LAYER 4 → LAYER 5
+    // ============================================================
+    DARTS  -> FORGE  [label="blocks\ninitiation" color="#a78bfa" fontcolor="#a78bfa" arrowhead=tee]
+    SHIELD -> FORGE  [label="cap→eIF4E\nbinding" color="#fb923c" fontcolor="#fb923c"]
+
+    // ============================================================
+    // Relations intra-couche 5
+    // ============================================================
+    BRAKE -> DECOY  [label="eIF2α-P → TC↓\nuORF bypass → ATF4(C)" color="#ef4444" fontcolor="#ef4444" penwidth=2 style=bold]
+    BRAKE -> BYPASS [label="cap-dep blocked\n→ IRES active" color="#ef4444" fontcolor="#ef4444"]
+    DECOY -> FORGE  [label="regulate\ninitiation" color="#ef4444" fontcolor="#ef4444" arrowhead=tee]
+
+    // ============================================================
+    // LAYER 5 → LAYER 6
+    // ============================================================
+    FORGE  -> CHAPERONES [label="co-translational\nfolding" color="#f87171" fontcolor="#f87171"]
+    FORGE  -> PHOSPHO    [label="mTOR→AKT\n→ kinases" color="#f87171" fontcolor="#f87171" style=dashed]
+
+    // ============================================================
+    // Relations intra-couche 6
+    // ============================================================
+    PHOSPHO    -> UBI        [label="phospho-degron\n→ E3 ligase" color="#94a3b8" fontcolor="#94a3b8"]
+    UBI        -> PROTEASOME [label="K48 chains\n→ 26S (A)" color="#94a3b8" fontcolor="#94a3b8" penwidth=2]
+    UBI        -> AUTOPHAGY  [label="p62 reads\nK63 chains" color="#94a3b8" fontcolor="#94a3b8"]
+    SUMO_NEDD  -> UBI        [label="STUbLs:\nSUMO→Ub" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
+    PHOSPHO    -> SUMO_NEDD  [label="phospho-dep.\nSUMO recruit" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
+    PAR        -> PROTEASOME [label="PARylation →\nproteolytic condensates" color="#94a3b8" fontcolor="#94a3b8"]
+
+    // ============================================================
+    // FEEDBACKS LAYER 6 → upstream layers
+    // ============================================================
+    CHAPERONES -> BRAKE [label="UPR: PERK\n= eIF2α kinase" color="#94a3b8" fontcolor="#94a3b8" style=dashed penwidth=2]
+    PHOSPHO    -> SCRIBE [label="P-TEFb/CDK9\nSer2-CTD" color="#94a3b8" fontcolor="#94a3b8"]
+    PHOSPHO    -> BRAKE  [label="eIF2α kinases\n(PERK, GCN2)" color="#94a3b8" fontcolor="#94a3b8"]
+    PROTEASOME -> KEYS   [label="IκBα decay\n→ NF-κB activ." color="#94a3b8" fontcolor="#94a3b8" style=dashed]
+
+    // ============================================================
+    // LLPS transversal
+    // ============================================================
+    LLPS -> HUBS       [label="" color="#22d3ee" fontcolor="#22d3ee" style=dotted penwidth=1.8]
+    LLPS -> VAULT      [label="" color="#22d3ee" fontcolor="#22d3ee" style=dotted penwidth=1.8]
+    LLPS -> PROTEASOME [label="" color="#22d3ee" fontcolor="#22d3ee" style=dotted penwidth=1.8]
+    LLPS -> PAR        [label="" color="#22d3ee" fontcolor="#22d3ee" style=dotted penwidth=1.8]
+
+    // ============================================================
+    // RANKING
+    // ============================================================
+    { rank=same; ZONES; FENCES; BRIDGES; HUBS }
+    { rank=same; SILENCER; OPENER; WRITER_A; WRITER_R; SHUFFLER; GUIDES }
+    { rank=same; KEYS; SCRIBE }
+    { rank=same; SHIELD; SPLICER; TRIMMER; RECODER }
+    { rank=same; STAMP; READERS; DARTS; SPONGE; CENSOR; TIMER; CLIPS; VAULT }
+    { rank=same; FORGE; BRAKE; DECOY; BYPASS }
+    { rank=same; PHOSPHO; UBI; SUMO_NEDD; PROTEASOME; AUTOPHAGY; CHAPERONES; PAR }
+    { rank=min; LLPS }
+}
