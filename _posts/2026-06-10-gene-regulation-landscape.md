@@ -34,9 +34,10 @@ So I gave the main mechanisms nicknames. Not because the nicknames are perfect,
 but because naming is a way to think. I hope the map is useful, and maybe sparks
 discussions.
 
-[![Gene Regulation Landscape](/assets/images/gene-reg-v7.png)](/assets/images/gene-reg-v7.png)
+The map is very large, so the embedded version below is mostly a preview. You
+can [open the full-resolution zoomable map here](/assets/images/gene-reg-v7.png).
 
-[Open the full-resolution zoomable image](/assets/images/gene-reg-v7.png).
+[![Gene Regulation Landscape](/assets/images/gene-reg-v7.png)](/assets/images/gene-reg-v7.png)
 
 ## The Seven Layers
 
