@@ -1,4 +1,373 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-02-15T11:02:06+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jérémie</title><subtitle>My website and blog.</subtitle><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><entry><title type="html">VCC starter pack</title><link href="http://localhost:4000/blog/vcc-starter-pack/" rel="alternate" type="text/html" title="VCC starter pack" /><published>2025-10-10T00:00:00+02:00</published><updated>2025-10-10T00:00:00+02:00</updated><id>http://localhost:4000/blog/vcc-starter-pack</id><content type="html" xml:base="http://localhost:4000/blog/vcc-starter-pack/"><![CDATA[<p>To start the VCC, you need to know a few things. This is your starter pack:</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://jkobject.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jkobject.com/" rel="alternate" type="text/html" /><updated>2026-06-15T17:20:31+00:00</updated><id>https://jkobject.com/feed.xml</id><title type="html">Jérémie</title><subtitle>My website and blog.</subtitle><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><entry><title type="html">The Gene Regulation Landscape</title><link href="https://jkobject.com/blog/gene-regulation-landscape/" rel="alternate" type="text/html" title="The Gene Regulation Landscape" /><published>2026-06-10T00:00:00+00:00</published><updated>2026-06-10T00:00:00+00:00</updated><id>https://jkobject.com/blog/gene-regulation-landscape</id><content type="html" xml:base="https://jkobject.com/blog/gene-regulation-landscape/"><![CDATA[<p>I have always wanted to understand how a cell works.</p>
+
+<p>Most of the time, even when textbooks go into molecular detail, the story is
+still organized around dogmas. One chapter adds chromatin. Another adds
+transcription factors. Later, RNA processing appears. Then translation, protein
+degradation, signaling, condensates, non-coding RNAs, and so on. Each new
+mechanism is real, but they often arrive as separate layers of complexity, not
+as one formal picture of what we collectively know.</p>
+
+<p>That is what I tried to build here: a summary of our current formal knowledge of
+gene regulation, placed into one landscape.</p>
+
+<p>While doing it, I noticed something that surprised me. Biology has many
+measurements and many local names, but sometimes no clean conceptual object for
+things that are probably views of the same underlying cellular structure. For
+example, super-enhancers in ChIP-seq and transcriptional condensates in
+microscopy are not strictly identical, but they are clearly not unrelated
+either. In other places, molecular biology has long descriptive sentences for
+mechanisms, but no short handle that makes the mechanism easy to reason about.</p>
+
+<p>So I gave the main mechanisms nicknames. Not because the nicknames are perfect,
+but because naming is a way to think. I hope the map is useful, and maybe sparks
+discussions.</p>
+
+<p>The map is very large, so the embedded version below is mostly a preview. You
+can <a href="/assets/images/gene-reg-v7.png">open the full-resolution zoomable map here</a>.
+For the full mechanism catalogue and the detailed edge list used to build the
+figure, see the <a href="/assets/documents/gene-regulation-landscape-details.md">Gene Regulation Landscape technical notes</a>
+and the <a href="/assets/documents/gene-reg-v7.dot">Graphviz DOT source</a>.</p>
+
+<p><a href="/assets/images/gene-reg-v7.png"><img src="/assets/images/gene-reg-v7.png" alt="Gene Regulation Landscape" /></a></p>
+
+<h2 id="the-seven-layers">The Seven Layers</h2>
+
+<p>The map follows the flow from DNA to RNA to protein:</p>
+
+<ol>
+  <li><strong>3D genome</strong>: <code class="language-plaintext highlighter-rouge">ZONES</code>, <code class="language-plaintext highlighter-rouge">FENCES</code>, <code class="language-plaintext highlighter-rouge">BRIDGES</code>, and <code class="language-plaintext highlighter-rouge">HUBS</code> represent A/B
+compartments, TADs, enhancer-promoter loops, and super-enhancers or
+transcriptional condensates.</li>
+  <li><strong>Epigenetics</strong>: <code class="language-plaintext highlighter-rouge">SILENCER</code>, <code class="language-plaintext highlighter-rouge">OPENER</code>, <code class="language-plaintext highlighter-rouge">WRITER-A</code>, <code class="language-plaintext highlighter-rouge">WRITER-R</code>, <code class="language-plaintext highlighter-rouge">SHUFFLER</code>,
+and <code class="language-plaintext highlighter-rouge">GUIDES</code> cover DNA methylation, histone marks, chromatin remodeling, and
+non-coding RNAs that guide chromatin complexes.</li>
+  <li><strong>Transcription</strong>: <code class="language-plaintext highlighter-rouge">KEYS</code> are transcription factors; <code class="language-plaintext highlighter-rouge">SCRIBE</code> is Pol II,
+promoter-proximal pausing, and the phosphorylation code of its CTD.</li>
+  <li><strong>Co-transcriptional processing</strong>: <code class="language-plaintext highlighter-rouge">SHIELD</code>, <code class="language-plaintext highlighter-rouge">SPLICER</code>, <code class="language-plaintext highlighter-rouge">TRIMMER</code>, and
+<code class="language-plaintext highlighter-rouge">RECODER</code> cover capping, alternative splicing, alternative polyadenylation,
+and A-to-I RNA editing.</li>
+  <li><strong>Post-transcriptional control</strong>: <code class="language-plaintext highlighter-rouge">STAMP</code>, <code class="language-plaintext highlighter-rouge">READERS</code>, <code class="language-plaintext highlighter-rouge">DARTS</code>, <code class="language-plaintext highlighter-rouge">SPONGE</code>,
+<code class="language-plaintext highlighter-rouge">CENSOR</code>, <code class="language-plaintext highlighter-rouge">TIMER</code>, <code class="language-plaintext highlighter-rouge">CLIPS</code>, and <code class="language-plaintext highlighter-rouge">VAULT</code> cover m6A, RNA-binding proteins,
+miRNAs, lncRNAs, nonsense-mediated decay, mRNA stability, RNA structures, and
+cytoplasmic granules.</li>
+  <li><strong>Translation</strong>: <code class="language-plaintext highlighter-rouge">FORGE</code>, <code class="language-plaintext highlighter-rouge">BRAKE</code>, <code class="language-plaintext highlighter-rouge">DECOY</code>, <code class="language-plaintext highlighter-rouge">BYPASS</code>, <code class="language-plaintext highlighter-rouge">TEMPO</code>, and
+<code class="language-plaintext highlighter-rouge">INSPECTOR</code> describe cap-dependent initiation, the integrated stress
+response, uORFs, IRES elements, decoding kinetics, and ribosome quality
+control.</li>
+  <li><strong>Post-translational regulation</strong>: <code class="language-plaintext highlighter-rouge">SWITCH</code>, <code class="language-plaintext highlighter-rouge">TAG</code>, <code class="language-plaintext highlighter-rouge">STAMP2</code>, <code class="language-plaintext highlighter-rouge">SHREDDER</code>,
+<code class="language-plaintext highlighter-rouge">RECYCLER</code>, <code class="language-plaintext highlighter-rouge">FOLDER</code>, and <code class="language-plaintext highlighter-rouge">ALARM</code> cover phosphorylation, ubiquitin,
+SUMO/NEDD8, the proteasome, autophagy, chaperones/UPR, and PARP/PAR
+signaling.</li>
+</ol>
+
+<p>Across the whole diagram, <code class="language-plaintext highlighter-rouge">DROPLETS</code> represents liquid-liquid phase separation.
+It is not an extra regulatory layer. It is a physical principle reused in
+several places: transcriptional condensates, stress granules, P-bodies,
+proteolytic condensates, and DNA damage repair assemblies.</p>
+
+<h2 id="the-useful-reduction">The Useful Reduction</h2>
+
+<p>The full map contains 38 mechanisms and dozens of interactions. But
+conceptually, most of gene regulation reduces to three strategies.</p>
+
+<p><strong>1. Control accessibility.</strong><br />
+Make a substrate accessible or inaccessible to its molecular machinery.
+Chromatin opening lets transcription factors bind. TADs constrain which
+enhancers can contact which promoters. Stress granules temporarily remove mRNAs
+from translation. miRNAs and lncRNAs tune whether an mRNA is available to the
+ribosome.</p>
+
+<p><strong>2. Write a reversible mark, then interpret it.</strong><br />
+Histone methylation, DNA methylation, m6A, phosphorylation, ubiquitination,
+SUMOylation: the mark alone is never the full story. The reader and the context
+determine the output. m6A can promote translation or accelerate decay. A K48
+ubiquitin chain points toward the proteasome; K63 often acts in signaling or
+selective autophagy. Phosphorylation can activate a transcription factor or
+create a degron.</p>
+
+<p><strong>3. Couple two processes through kinetics.</strong><br />
+Some regulation is not a static state but a timing problem. Pol II elongation
+speed influences exon choice. SETD2 deposits H3K36me3 during elongation, linking
+transcription to splicing. eIF2α phosphorylation globally slows translation but
+selectively favors ATF4 through uORF logic. Codon usage changes ribosome speed
+and can influence co-translational folding.</p>
+
+<p>That is the central idea of the landscape: gene regulation is not just a list of
+mechanisms. It is a multi-layer control architecture built from recurring design
+patterns.</p>
+
+<h2 id="why-this-matters-for-ai-biology">Why This Matters For AI Biology</h2>
+
+<p>For AI biology, this kind of map is not only educational. It shows why
+predicting “gene expression” cannot be reduced to reading a promoter sequence.</p>
+
+<p>The output of a gene depends on chromatin state, 3D contacts, Pol II kinetics,
+splicing, RNA modifications, RNA-binding proteins, translational control, and
+protein lifetime. A model that wants to predict perturbation response, cell
+state, or disease mechanism needs to represent at least part of this stack.</p>
+
+<p>The lesson of the Gene Regulation Landscape is simple: gene expression is not a
+scalar. It is the endpoint of a control system.</p>
+
+<h2 id="sources-to-anchor-the-map">Sources To Anchor The Map</h2>
+
+<ul>
+  <li>Core &amp; Adelman, 2019, promoter-proximal Pol II pausing:
+https://pubmed.ncbi.nlm.nih.gov/31123063/</li>
+  <li>Naftelberg et al., 2015, transcription/chromatin/splicing coupling:
+https://pubmed.ncbi.nlm.nih.gov/26034889/</li>
+  <li>Wang &amp; He, 2014, dynamic RNA modifications:
+https://pubmed.ncbi.nlm.nih.gov/25263552/</li>
+  <li>Wang et al., 2015, m6A and translation efficiency:
+https://www.cell.com/cell/fulltext/S0092-8674(15)00562-0</li>
+  <li>Shi et al., 2017, YTHDF3 translation/decay:
+https://pmc.ncbi.nlm.nih.gov/articles/PMC5339834/</li>
+  <li>Sabari et al., 2018, coactivator condensation at super-enhancers:
+https://pmc.ncbi.nlm.nih.gov/articles/PMC6092193/</li>
+  <li>Robson et al., 2019, chromatin topology:
+https://pubmed.ncbi.nlm.nih.gov/31324893/</li>
+</ul>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Cell Bio" /><category term="Comp-Bio" /><summary type="html"><![CDATA[A compact map of how cells decide which genes become proteins]]></summary></entry><entry><title type="html">Finishing the PhD</title><link href="https://jkobject.com/blog/finishing-the-phd/" rel="alternate" type="text/html" title="Finishing the PhD" /><published>2026-05-01T00:00:00+00:00</published><updated>2026-05-01T00:00:00+00:00</updated><id>https://jkobject.com/blog/finishing-the-phd</id><content type="html" xml:base="https://jkobject.com/blog/finishing-the-phd/"><![CDATA[<p>It’s done. March 25, 2026, 1:30pm, Duclaux amphitheater at Institut Pasteur. 🎓</p>
+
+<p>I started in October 2023. Took 2.5 years instead of two. Here’s what happened.</p>
+
+<h2 id="what-i-set-out-to-do">What I set out to do</h2>
+
+<p>The project was building foundation models for single-cell transcriptomics —
+taking the pretraining ideas from NLP and applying them to gene expression at
+scale. The goal: a model that could infer gene regulatory networks, classify
+cell types zero-shot, denoise expression, and actually be useful to biologists.
+Not just publishable, usable.</p>
+
+<p>%% WIP$$$</p>
+
+<p>I was split between two labs:
+<a href="https://research.pasteur.fr/fr/team/machine-learning-for-integrative-genomics/">Laura Cantini</a>
+at Institut Pasteur (computational biology, gene networks) and
+<a href="http://www.gpeyre.com/">Gabriel Peyré</a> at ENS (applied mathematics, optimal
+transport). Two very different worlds, two sets of expectations, two weekly
+meetings.</p>
+
+<p>Outside the lab, I wanted to keep training — endurance sports had become
+important to me during this period, and I wanted to see more of the world while
+I could.</p>
+
+<h2 id="what-i-did">What I did</h2>
+
+<h3 id="the-papers">The papers</h3>
+
+<p>The thesis produced three papers:</p>
+
+<p><strong>scPRINT</strong>
+(<a href="https://www.nature.com/articles/s41467-025-58126-9">Nature Communications, 2025</a>)
+— a large cell model trained on 50M+ cells for gene network inference. Novel
+gene tokens from ESM2 protein embeddings, learned expression tokenization,
+genomic positional encoding. State-of-the-art on GRN inference benchmarks,
+zero-shot cell type classification, denoising. Code at
+<a href="https://github.com/cantinilab/scPRINT">github.com/cantinilab/scPRINT</a>.</p>
+
+<p><strong>Xpressor</strong> — a cross-attention architecture for learning across biological
+scales. The idea: compress gene-level representations into cell-state vectors,
+and fine-tune protein language models using cellular tasks. Improved cell-type
+prediction (+28%) and embedding quality (+8%) over standard architectures.</p>
+
+<p><strong>scPRINT-2</strong> (in revision, Nature Methods) — trained on 350M cells from 16
+organisms, 25 TB of data. 42-model ablation study to figure out what actually
+matters in scFM design. 75% zero-shot cell type classification on OpenProblems
+(up from 47% with scPRINT-1). State-of-the-art denoising, batch correction,
+cross-species generalization, counterfactual generation.</p>
+
+<h3 id="the-tools">The tools</h3>
+
+<p>Seven Python packages released:
+<a href="https://github.com/cantinilab/scPRINT">scPRINT</a>,
+<a href="https://github.com/jkobject/BenGRN">BenGRN</a> (GRN benchmarking),
+<a href="https://github.com/cantinilab/GRnnData">GRnnData</a> (gene networks in AnnData),
+and more for data processing, evaluation, and model serving. Everything
+open-source under GPL-v3.</p>
+
+<!-- TODO: add the full list of packages with links -->
+
+<h3 id="the-conferences">The conferences</h3>
+
+<!-- TODO: fill in the full list — Jérémie should add the specific conferences -->
+
+<p>Over a dozen conferences and workshops across Europe and beyond. Oral
+presentations, poster sessions, invited talks. Each one forced me to sharpen the
+story and meet people working on adjacent problems.</p>
+
+<h3 id="the-outreach">The outreach</h3>
+
+<p>I mentored a student during the PhD. Wrote blog posts (you’re reading one), made
+videos, gave talks to non-specialist audiences. I think this kind of work
+matters — it’s how ideas spread beyond the 50 people who read your paper.</p>
+
+<h3 id="the-people">The people</h3>
+
+<p>The labs at Pasteur and ENS. Jules Samaran, Remi Trimbour, Geert Huizing at ENS.
+Alex Wolf, Sergei Ribakov, Brice Rafestin for software help. The Nucleate
+community, Whitelab Genomics, Blossom, dot Omics, Biographica. A lot of people
+made this work possible.</p>
+
+<h3 id="outside-the-lab">Outside the lab</h3>
+
+<p>I trained for and ran a medium triathlon, a half-marathon, the Mont-Blanc trail,
+and the Paris Marathon. Traveled to the UK, Portugal, Spain, Guadeloupe,
+Vancouver, Thailand. I needed this. Long runs are good for thinking, and getting
+away from the screen makes you come back sharper.</p>
+
+<h2 id="the-defense">The defense</h2>
+
+<p>March 25. Pasteur, Duclaux amphitheater.</p>
+
+<p>I was stressed. I’d prepared well, but defending years of work in one afternoon
+is a strange exercise. You try to make it look like everything was planned from
+the start, when in reality half of the good ideas came from accidents.</p>
+
+<p>The jury was rigorous but fair. Hard questions in the Q&amp;A — the kind that make
+you think, not the kind designed to trip you up. That’s what makes a defense
+feel worth it.</p>
+
+<p>Having my mentoree there meant a lot. And the next week, I finished a marathon.
+Different kind of endurance, same feeling at the end.</p>
+
+<h2 id="what-i-learned">What I learned</h2>
+
+<p>How to write papers. How to think about research impact beyond citations. How to
+set goals when nobody is setting them for you.</p>
+
+<p>The research community matters more than I expected. Not just for collaboration
+— for sanity. The conferences, the DMs, the random conversations at poster
+sessions.
+<a href="https://www.jkobject.com/blog/the-phd-decision-grn-foundation-model/">Open source</a>
+is how you actually have an impact: if scPRINT is useful, it’s because people
+can use it.</p>
+
+<p>Technically: a lot about transformers, diffusion models, optimal transport, the
+math of self-supervised learning. But also about the gaps — the missing data,
+the incomplete benchmarks, the things we still don’t know how to measure
+properly.</p>
+
+<p>Company research and a PhD are different. The PhD gave me time to go deep, be
+wrong for months, follow a thread until it broke or became a paper. I wouldn’t
+trade that.</p>
+
+<h2 id="whats-next">What’s next</h2>
+
+<p>I’m not going back into academia. Never planned to. 🚀</p>
+
+<p>I’m thinking of building <strong>Jouvence</strong> — a company using AI and biology to extend
+healthy human lifespan. The thesis work on foundation models, gene networks, and
+cellular representation is directly relevant: if you can model how cells work
+and how they break, you can start to intervene.
+<!-- TODO: add 2-3 sentences about Jouvence's approach, from Notion pages --></p>
+
+<p>I’m also looking at companies working on similar goals: longevity, disease
+modeling, AI-driven high-throughput data generation. Places like Lilas
+Bioscience and Xaira Therapeutics are doing interesting work in this space.</p>
+
+<p>Lots to do.</p>
+
+<hr />
+
+<p>The full arc:
+<a href="https://www.jkobject.com/blog/the-phd-decision-grn-foundation-model/">the PhD decision</a>,
+<a href="https://www.jkobject.com/blog/a-year-in-the-phd/">a year in</a>, and now this.</p>
+
+<p>Thanks to Laura, Gabriel, Juliette, my family, and everyone who was part of the
+last 2.5 years.</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="PhD" /><category term="Comp-Bio" /><category term="Foundation Models" /><summary type="html"><![CDATA[2.5 years, two labs, one foundation model, and a defense. Here is what I learned.]]></summary></entry><entry><title type="html">How I managed thousands of datasets to build the scPRINT family of scRNA-seq foundation models</title><link href="https://jkobject.com/blog/lamindb-these/" rel="alternate" type="text/html" title="How I managed thousands of datasets to build the scPRINT family of scRNA-seq foundation models" /><published>2026-04-20T00:00:00+00:00</published><updated>2026-04-20T00:00:00+00:00</updated><id>https://jkobject.com/blog/lamindb-these</id><content type="html" xml:base="https://jkobject.com/blog/lamindb-these/"><![CDATA[<p>At the start of my PhD, I was faced with what seemed like a mountain to climb:
+build, largely alone, a foundation model for single-cell RNA-seq data. As anyone
+in the field knows, building the model is not the hard part. Getting the data
+is.</p>
+
+<p>To train a cell foundation model that actually generalizes, you need thousands
+of datasets. You need to find them, download them, harmonize gene names across
+species, align cell type labels to controlled ontologies, preprocess everything
+consistently, store it in a way that doesn’t collapse under its own weight, and
+feed it to a model at scale. Managing a dozen datasets is already painful for
+most computational biologists. I needed to handle thousands.</p>
+
+<p>Thirty months ago, three things came at exactly the right moment. The Chan
+Zuckerberg Initiative had made around 700 datasets easily accessible through
+CellxGene. The LaminDB project gave me a way to manage large, heterogeneous
+collections of biological data with metadata that actually meant something. And
+Sergei Rybakov was building a loader for streaming single-cell data at scale.</p>
+
+<h2 id="managing-scale-with-lamindb">Managing scale with LaminDB</h2>
+
+<p>The core problem with large-scale single-cell data is not raw file size. It’s
+the metadata. A dataset from a 2019 mouse lung study uses different gene IDs,
+different tissue labels, and different cell type annotations than a 2023 human
+heart study. Reconciling these across hundreds of datasets by hand is a losing
+battle that compounds as the corpus grows.</p>
+
+<p>LaminDB treats biological ontologies as first-class citizens. Every dataset I
+ingested was linked to standardized terms: Cell Ontology for cell types, Uberon
+for tissues, NCBI Taxonomy for species. That ontological consistency is what
+made it possible to build scPRINT-2’s hierarchical classification loss, which
+penalizes predictions based on their distance in the ontology graph rather than
+just correct/wrong. The loss knows that “T cell” and “CD8-positive T cell” are
+related in a way that “T cell” and “hepatocyte” are not. That knowledge came
+from having the data structured correctly from the start.</p>
+
+<p>Without LaminDB I would have spent months on this. With it, it took weeks.</p>
+
+<h2 id="streaming-350-million-cells">Streaming 350 million cells</h2>
+
+<p>Loading 350 million cells into memory is not an option. You need streaming,
+shuffling across datasets, and batching that mixes cell types, species, and
+sequencing technologies, without the dataloader becoming the bottleneck.</p>
+
+<p><code class="language-plaintext highlighter-rouge">scDataLoader</code> handles this. It’s built on top of LaminDB’s <code class="language-plaintext highlighter-rouge">MappedCollection</code>
+interface, which lets you treat hundreds of separate datasets as a single object
+you can sample, filter, and iterate over. It streams directly from the artifact
+store and integrates cleanly with PyTorch’s DataLoader. I was able to train
+scPRINT-2<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">1</a></sup> on 350 million cells and 25 TB of data on a single cluster without
+writing custom data infrastructure. That felt like a minor miracle at the time.</p>
+
+<h2 id="beyond-training">Beyond training</h2>
+
+<p>Once scPRINT<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">2</a></sup> was published and colleagues and interns started using the
+infrastructure, having a LaminDB instance meant they could reproduce my work
+exactly: same artifacts, same lineage, same ontology mappings. Data lineage made
+it easy to answer “which datasets went into this version of the model?” or “was
+this processed before or after the normalization change?” without digging
+through scripts.</p>
+
+<p>It also meant I could serve processed data to the team with enough context
+attached that they didn’t need me to explain what they were looking at.</p>
+
+<h2 id="the-reflex-it-created">The reflex it created</h2>
+
+<p>I used LaminDB throughout my PhD. It let me do a lot alone, in a reasonable
+time, in a reproducible way. That’s a rare combination in this field.</p>
+
+<p>These days, when I start a computational biology project, I set up a git repo
+and a LaminDB instance. In that order, roughly.</p>
+
+<h2 id="background">Background</h2>
+
+<p>In fall 2023, Jeremie &amp; Alex met in CZI’s CellXGene Slack channel both trying to
+figure out how to best manage metadata of thousands of scRNA-seq datasets.
+Jeremie for his work on scRNA-seq foundation models, and Alex for his work on
+LaminDB.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:2" role="doc-endnote">
+
+      <p>Kalfon, J., Peyre, G., &amp; Cantini, L. (2026). scPRINT-2: Towards the
+next-generation of cell foundation models and benchmarks. <em>bioRxiv</em>.
+https://doi.org/10.64898/2025.12.11.693702 <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:1" role="doc-endnote">
+
+      <p>Kalfon, J., Samaran, J., Peyre, G., &amp; Cantini, L. (2025). scPRINT:
+pre-training on 50 million cells allows robust gene network predictions.
+<em>Nature Communications</em>, 16, 3607.
+https://doi.org/10.1038/s41467-025-58699-1 <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Startups" /><category term="Comp-Bio" /><summary type="html"><![CDATA[Short stories about my professional experiences.]]></summary></entry><entry><title type="html">VCC starter pack</title><link href="https://jkobject.com/blog/vcc-starter-pack/" rel="alternate" type="text/html" title="VCC starter pack" /><published>2025-10-10T00:00:00+00:00</published><updated>2025-10-10T00:00:00+00:00</updated><id>https://jkobject.com/blog/vcc-starter-pack</id><content type="html" xml:base="https://jkobject.com/blog/vcc-starter-pack/"><![CDATA[<p>To start the VCC, you need to know a few things. This is your starter pack:</p>
 
 <p><img src="/assets/images/starterpack.png" alt="image of a starter pack" /></p>
 
@@ -185,7 +554,7 @@ published by the sanger institute.</p>
   <li><a href="https://newsletter.kiin.bio/p/arc-institutes-virtual-cell-challenge">are we just modelling cell’s fingerprints</a></li>
 </ul>
 
-<p>One thing that I find regretful is that no famous published models have been implemented openly to check for their abilities on this benchmark.</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="AI" /><category term="Comp-Bio" /><category term="Research" /><summary type="html"><![CDATA[If you do data science and machine learning, here is everything you need to know to get started on the Arc virtual cell challenge.]]></summary></entry><entry><title type="html">A year in the PhD</title><link href="http://localhost:4000/blog/a-year-in-the-phd/" rel="alternate" type="text/html" title="A year in the PhD" /><published>2025-03-05T00:00:00+01:00</published><updated>2025-03-05T00:00:00+01:00</updated><id>http://localhost:4000/blog/a-year-in-the-phd</id><content type="html" xml:base="http://localhost:4000/blog/a-year-in-the-phd/"><![CDATA[<p>I have been a PhD student for a year now. Many things have happened and here is some lessons learned.</p>
+<p>One thing that I find regretful is that no famous published models have been implemented openly to check for their abilities on this benchmark.</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="AI" /><category term="Comp-Bio" /><category term="Research" /><summary type="html"><![CDATA[If you do data science and machine learning, here is everything you need to know to get started on the Arc virtual cell challenge.]]></summary></entry><entry><title type="html">A year in the PhD</title><link href="https://jkobject.com/blog/a-year-in-the-phd/" rel="alternate" type="text/html" title="A year in the PhD" /><published>2025-03-05T00:00:00+00:00</published><updated>2025-03-05T00:00:00+00:00</updated><id>https://jkobject.com/blog/a-year-in-the-phd</id><content type="html" xml:base="https://jkobject.com/blog/a-year-in-the-phd/"><![CDATA[<p>A year and a half in. When I wrote <a href="https://www.jkobject.com/blog/the-phd-decision-grn-foundation-model/">the PhD decision post</a>, I set four goals:</p>
 
 <ol>
   <li>do it in 2 years and be prepared</li>
@@ -194,113 +563,120 @@ published by the sanger institute.</p>
   <li>enjoy it as much as possible</li>
 </ol>
 
+<p>Time to check in. 🧬</p>
+
 <h2 id="the-environment">The environment</h2>
 
-<ul>
-  <li>working at Pasteur with Laura</li>
-  <li>working at ENS with Gabriel</li>
-  <li>the administration</li>
-  <li></li>
-  <li>two PIs</li>
-  <li>the incentives</li>
-</ul>
+<p>My PhD is split between Institut Pasteur and ENS, which are very different places.</p>
+
+<p>At Pasteur, I work with Laura Cantini. Pasteur is serious science, long corridors, old campus. Laura runs a small group at the intersection of ML and genomics. She pushes hard on rigor — every claim grounded, every figure telling a clear story. I’ve become a better scientist working with her.</p>
+
+<p>At ENS, Gabriel Peyré does applied math — optimal transport, signal processing, things I’d admired from afar for a while. Having two PIs means two sets of expectations, two lab cultures, sometimes two conflicting intuitions about what matters. It took months to find a rhythm. What works: being very explicit about what I’m doing and where I’m stuck. Over-communicating rather than assuming.</p>
+
+<p>The admin side is… well, French public research bureaucracy across two institutions. I probably spent two full working weeks last year on forms and approvals alone.</p>
+
+<p>Having two advisors from such different backgrounds has been great, though. Academia runs on different incentives than industry — ideas and papers instead of delivery milestones and quarterly revenue. That took some adjusting.</p>
 
 <h2 id="the-successes">The successes</h2>
 
-<ul>
-  <li>was able to release scprint and 3 more tools</li>
-  <li>went to over 10 events and conferences</li>
-  <li>presented 4 times</li>
-  <li>did 3 poster presentations</li>
-  <li></li>
-</ul>
+<p>I’m proud of what got done this year. 🙌</p>
+
+<p>The main thing is <a href="https://github.com/cantinilab/scPRINT">scPRINT</a> — a large foundation model for single-cell RNA sequencing. Getting it to work, getting it published, seeing people actually use it. I also shipped three more open-source tools around scPRINT for benchmarking, data processing, and evaluation.</p>
+
+<p>I went to over 10 conferences and events across Europe. 4 oral presentations (still nerve-wracking), 3 poster sessions. I actually like poster sessions — the conversations are real, people stop because they want to, and you end up understanding your own work better by explaining it 30 times.</p>
+
+<p>I’ve also met researchers I’ll be working with for years. Building that network has been one of the best parts of the PhD so far.</p>
 
 <h2 id="the-difficulties">The difficulties</h2>
 
-<ul>
-  <li>hard to completely switch projects</li>
-  <li>many more open questions about scprint</li>
-  <li>tough to be</li>
-</ul>
+<p>Some things were harder than expected.</p>
+
+<p>Switching projects completely when I started — I came from industry work on cell atlases and drug discovery, and going back to a more theoretical research mode meant resetting my idea of what “progress” looks like.</p>
+
+<p>scPRINT opened more questions than it answered. Every experiment surfaced something new to investigate, and learning to say “this is out of scope for now” without feeling like I was cutting corners took discipline.</p>
+
+<p>The isolation is real. You’re responsible for your own direction in a way that’s different from any job I’ve had. Some weeks nobody is telling you whether you’re on the right track. You have to figure that out yourself.</p>
 
 <h2 id="the-good-and-the-bad-of-academia">The good and the bad of academia</h2>
 
-<ul>
-  <li>the freedom</li>
-  <li>the time for oneself to think</li>
-  <li>
-    <p>the ability to connect with so many different people across the world</p>
-  </li>
-  <li>the bureaucracy</li>
-  <li>being alone a lot of the time</li>
-  <li>the lack of structure</li>
-  <li>one project only is tough</li>
-</ul>
+<p>I see a lot of people either romanticizing academia or being cynical about it. I’ll try to be straight.</p>
+
+<p>The freedom is real. No product manager asking if your idea is “strategically aligned”. I can spend two weeks on a mathematical question just because it might matter. I can collaborate with anyone across institutions and countries. The people I’ve met are great — generous with time and ideas.</p>
+
+<p>But the hard stuff is also real. The bureaucracy I already mentioned. The lack of structure (great when you’re focused, bad when you’re stuck). Being a solo contributor on one main project for three years is a very different rhythm than industry. When you’re stuck, there’s no teammate to take over.</p>
 
 <h2 id="what-is-next">What is next?</h2>
 
-<ul>
-  <li>still have a goal to do it in around 2 years</li>
-  <li>for now I feel I have followed the path 4 points I made in the beginning</li>
-  <li>it is becomming harder as tasks and projects pile up</li>
-</ul>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="PhD" /><category term="Comp-Bio" /><summary type="html"><![CDATA[What has happened in the last year? How does it feel like to be a PhD student?]]></summary></entry><entry><title type="html">About the AIVC paper</title><link href="http://localhost:4000/blog/about-the-aivc-paper/" rel="alternate" type="text/html" title="About the AIVC paper" /><published>2024-12-02T00:00:00+01:00</published><updated>2024-12-02T00:00:00+01:00</updated><id>http://localhost:4000/blog/about-the-aivc-paper</id><content type="html" xml:base="http://localhost:4000/blog/about-the-aivc-paper/"><![CDATA[<p>Reading the <a href="https://arxiv.org/pdf/2409.11654">AIVC manuscript</a> further, I felt
-like adding some more comments on this topic, which I did before on
-<a href="https://x.com/jkobject/status/1836657509483888857">X too</a>.</p>
+<p>Still aiming to finish in about 2 years from start, so the clock is ticking. 🚀</p>
 
-<p>Being able to model a cell with large amount of multi modal data and multi scale
-AI models is something I have talked about before on X and in my recent
-<a href="https://www.biorxiv.org/content/10.1101/2024.07.29.605556v1">manuscript</a></p>
+<p>Looking at those 4 original goals: I think I’m on track. I shipped something useful, I made connections, I showed up at conferences, and I’ve mostly enjoyed it.</p>
 
-<p>To my mind there is two questions:</p>
+<p>It’s getting harder though. The deeper you go into a research problem, the more you see what’s left. The project keeps growing in scope while the deadline doesn’t move.</p>
 
-<ol>
-  <li>Do we have the right algorithm and compute?</li>
-  <li>Do we have the right data and scale?</li>
-</ol>
-
-<p>For the first part, while being just a guess, seeing the abilities of recent AI
-models and the scale of their deployment in both language, vision, and
-structural biology. It stands to reason that we might be able to model a cell
-with some $\epsilon$-accuracy with current software and hardware, e.g. 10^13
-params model trained and doing inference on 10,000 GPUs.</p>
-
-<p>For the second part it is harder to be as optimistic. A human body is comprised
-of 100 trillion cells and other microbes. All shaped by their environment. The
-cell doesn’t, in fact, follow the simple diagram presented in the AIVC paper:</p>
-
-<p><img src="/assets/images/schema.png" alt="schema" /></p>
-
-<p>But likely this diagram:</p>
-
-<p><img src="/assets/images/aivc.jpg" alt="aivc" /></p>
-
-<p>Proteins are not RNAs and not genes. While genes can stay the same many RNAs can
-come out. Same with proteins. And vice versa. Thus one cannot encode it all in
-one representation. They are different objects.</p>
-
-<p><img src="/assets/images/true-dogma.png" alt="true dogma" /></p>
-
-<p><img src="/assets/images/universal-mol-representation.png" alt="universal mol representation" /></p>
-
-<p>Is it just a modelling problem? No, and these apparent simplifications are not
-there by mistake. They are due to our measurement abilities or actually,
-inabilities. We cannot measure well these diverse proteins / RNAs nor their
-interactions….
-yet #<a href="https://x.com/jkobject/status/1839993136048746565">ExSeq, #DNApaint</a>, …</p>
-
-<p>We can use AI to model proteins indeed but we knew everything about the theory
-of proteins, their elements and could measure and model their structures for
-decades prior.</p>
-
-<p>So to me the future of AIVC is not really in the hands of the AI community but
-in the hands of the bio community. How do we measure these things better so as
-to have at least a good picture of how they work.</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="AI" /><category term="Comp-Bio" /><category term="Research" /><summary type="html"><![CDATA[A few thoughts on the AIVC paper from the genentech team]]></summary></entry><entry><title type="html">About the AIVC paper</title><link href="http://localhost:4000/blog/finishing-the-phd/" rel="alternate" type="text/html" title="About the AIVC paper" /><published>2024-12-02T00:00:00+01:00</published><updated>2024-12-02T00:00:00+01:00</updated><id>http://localhost:4000/blog/finishing-the-phd</id><content type="html" xml:base="http://localhost:4000/blog/finishing-the-phd/"><![CDATA[]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="AI" /><category term="Comp-Bio" /><category term="Research" /><summary type="html"><![CDATA[A few thoughts on the AIVC paper from the genentech team]]></summary></entry><entry><title type="html">What are large cell models?</title><link href="http://localhost:4000/blog/what-are-large-cell-models/" rel="alternate" type="text/html" title="What are large cell models?" /><published>2024-09-07T00:00:00+02:00</published><updated>2024-09-07T00:00:00+02:00</updated><id>http://localhost:4000/blog/what-are-large-cell-models</id><content type="html" xml:base="http://localhost:4000/blog/what-are-large-cell-models/"><![CDATA[<p>In my recent paper <a href="https://www.biorxiv.org/content/10.1101/2024.07.29.605556v1">scPRINT</a> I define the term Large Cell Model but what are they?</p>
+<p>More to come. 👀</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="PhD" /><category term="Comp-Bio" /><summary type="html"><![CDATA[What has happened in the last year? How does it feel like to be a PhD student?]]></summary></entry><entry><title type="html">What are large cell models?</title><link href="https://jkobject.com/blog/what-are-large-cell-models/" rel="alternate" type="text/html" title="What are large cell models?" /><published>2024-09-07T00:00:00+00:00</published><updated>2024-09-07T00:00:00+00:00</updated><id>https://jkobject.com/blog/what-are-large-cell-models</id><content type="html" xml:base="https://jkobject.com/blog/what-are-large-cell-models/"><![CDATA[<p>In my recent paper <a href="https://www.biorxiv.org/content/10.1101/2024.07.29.605556v1">scPRINT</a> I define the term Large Cell Model but what are they?</p>
 
 <p>AI is everywhere nowadays, and in biology it is helping us enter a new era of what <a href="https://x.com/jacobkimmel/status/1829550511768674401">jacob kimmel</a> describes as predictive biology.</p>
 
 <p>In this new field, we use complex computational approaches together with high throughput data gathering to generate predictive models of physical phenoma like protein folding, binding, regulation, response, etc. 🧬</p>
 
-<p>scPRINT, like scGPT, geneformer, scFoundation, scLM and more is part of a bread of AI tools 🤖 that try to better model the cell regulation and response using a large amount of parameters and data. In this context they are -large- -cell models-. 🦠</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Comp-Bio" /><summary type="html"><![CDATA[A few thoughts on the term large cell models that I am using in my recent paper and my posts]]></summary></entry><entry><title type="html">Ancestry Bias in CRISPR Screens</title><link href="http://localhost:4000/blog/ancestry-bias-in-crispr/" rel="alternate" type="text/html" title="Ancestry Bias in CRISPR Screens" /><published>2024-06-21T00:00:00+02:00</published><updated>2024-06-21T00:00:00+02:00</updated><id>http://localhost:4000/blog/ancestry-bias-in-crispr</id><content type="html" xml:base="http://localhost:4000/blog/ancestry-bias-in-crispr/"><![CDATA[<h1 id="ancestry-bias-in-crispr-screens">Ancestry Bias in CRISPR Screens</h1>
+<p>scPRINT, like scGPT, geneformer, scFoundation, scLM and more is part of a bread of AI tools 🤖 that try to better model the cell regulation and response using a large amount of parameters and data. In this context they are -large- -cell models-. 🦠</p>
+
+<h2 id="why-this-name">Why This Name?</h2>
+
+<p>The analogy to Large Language Models (LLMs) is intentional and I think it’s a good one. LLMs are trained on massive corpora of text and learn to model the “language” of human expression — grammar, semantics, context, all of it emergently, without being hand-coded. The hope with LCMs is exactly the same: train on massive datasets of single-cell transcriptomics and let the model learn the “language” of the cell. 🔤</p>
+
+<p>A cell expresses thousands of genes at once. Which genes are active, how much, in what combination — this is the cell’s way of encoding its state, its identity, its response to the environment. If we squint, gene expression profiles look a lot like sentences in a high-dimensional language. So it makes sense to apply similar techniques. Transformers, masked token prediction, large-scale pretraining — the same toolkit that gave us GPT-4 and BERT, now applied to biology.</p>
+
+<p>The “Large” part matters too. These models are trained on tens of millions of single-cell profiles. Geneformer (~40M parameters) used 30M cells for pretraining. scGPT (~50M parameters) used 33M. scFoundation pushed further with ~100M parameters and 50M cells. And the field keeps scaling. 📈</p>
+
+<h2 id="what-can-they-actually-do">What Can They Actually Do?</h2>
+
+<p>This is where things get interesting — and also where a lot of hype meets hard reality.</p>
+
+<p>In principle, LCMs can do several useful things:</p>
+
+<ul>
+  <li><strong>Cell embeddings</strong>: Compress a high-dimensional gene expression profile into a compact vector that captures biological meaning. Useful for cell type annotation, clustering, comparison across datasets.</li>
+  <li><strong>Perturbation prediction</strong>: Given a cell state, predict how gene expression would change if you knock out a gene, add a drug, or apply a cytokine. This is the holy grail for drug discovery. 💊</li>
+  <li><strong>GRN inference</strong>: Extract which genes regulate which other genes — reconstructing the regulatory logic of a cell from the patterns the model learned.</li>
+  <li><strong>Batch integration</strong>: Harmonize data from different labs, technologies, or conditions into a shared embedding space.</li>
+</ul>
+
+<p>In practice? It’s more nuanced. Recent benchmarking shows that in zero-shot settings (using these models without fine-tuning), both scGPT and Geneformer can be outperformed by simpler methods like selecting highly variable genes and running scVI or Harmony. That’s a bit sobering. 😅</p>
+
+<p>But the fine-tuned performance is real. And unlike classic approaches, LCMs don’t need you to specify the regulatory logic upfront — they learn it from data. That’s the paradigm shift.</p>
+
+<h2 id="how-are-they-different-from-classical-approaches">How Are They Different from Classical Approaches?</h2>
+
+<p>Before LCMs, the computational biology toolkit included things like pseudotime analysis, diffusion maps, factor analysis, and simple regression models for GRN inference. These are great tools! But they require a lot of prior knowledge and don’t generalize well. You’d fit a model per dataset, per question.</p>
+
+<p>LCMs change the frame: you pretrain once on the universe of available data, then adapt to specific questions. It’s the transfer learning paradigm that revolutionized NLP and computer vision — finally landing in single-cell biology. The bet is that the representations learned at scale will capture something more fundamental about how cells work.</p>
+
+<h2 id="the-hard-challenges">The Hard Challenges</h2>
+
+<p>I won’t sugarcoat it. LCMs face serious obstacles:</p>
+
+<p><strong>Data quality and scale.</strong> Tens of millions of cells sounds like a lot, but the human body has ~37 trillion cells across hundreds of types and states. Most training data is heavily biased toward easy-to-measure cell types (blood, PBMCs, cell lines). Rare cell types, spatial context, and dynamic states are vastly underrepresented. 🔍</p>
+
+<p><strong>Evaluation is hard.</strong> What does it mean for a cell model to be “good”? We don’t have ground-truth labels for most biological processes. Perturbation benchmarks help, but they’re limited in scale and often use the same few datasets everyone trains on. The field badly needs better, truly held-out evaluation.</p>
+
+<p><strong>The measurement bottleneck.</strong> As I’ve <a href="/PhD/about-the-aivc-paper/">written before</a>, the fundamental constraint isn’t really the algorithm or even the compute — it’s our ability to measure cellular state accurately. Current scRNA-seq gives us a snapshot of messenger RNA, but misses proteins, non-coding RNAs, spatial organization, dynamic timescales… A model can only be as good as the data it learns from.</p>
+
+<p><strong>What’s actually learned?</strong> Recent interpretability work using sparse autoencoders on Geneformer and scGPT suggests these models have internalized rich biological structure — pathway membership, protein interactions, cell type identity. But they capture mostly <em>co-expression</em> patterns, not genuine <em>causal regulatory logic</em>. Whether scaling will fix this or whether we need different architectures is an open question. 🤔</p>
+
+<h2 id="where-is-this-going">Where Is This Going?</h2>
+
+<p>I’m genuinely excited about the trajectory of this field, even with all the caveats above.</p>
+
+<p>The next few years will likely bring bigger models trained on more diverse, multimodal data — combining transcriptomics with proteomics, epigenomics, spatial information. Better measurement technologies (total RNA-seq, multiplexed protein imaging, long-read sequencing) will give us richer training signal. And the benchmarking community is getting sharper about what “good” actually means.</p>
+
+<p>The analogy to LLMs is instructive here too: early language models also seemed to fail on out-of-distribution tasks, often beaten by simpler methods. What changed? More data, better training objectives, and scale. I think we’re at an early BERT moment for cell biology.</p>
+
+<p>LCMs won’t model a whole cell anytime soon — the biology is just too complex and our measurements too incomplete. But as tools for learning transferable, generalizable representations of cell state? They’re already changing how we do science, and the best is yet to come. 🚀</p>
+
+<hr />
+
+<p><em>If you want to dig deeper into how scPRINT specifically fits into this landscape, check out <a href="https://www.biorxiv.org/content/10.1101/2024.07.29.605556v1">the paper</a> or my other posts on <a href="/PhD/manage-grn-and-what-they-mean/">GRN inference</a> and <a href="/PhD/about-the-aivc-paper/">the vision for AI virtual cells</a>.</em></p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Comp-Bio" /><summary type="html"><![CDATA[A few thoughts on the term large cell models that I am using in my recent paper and my posts]]></summary></entry><entry><title type="html">Ancestry Bias in CRISPR Screens</title><link href="https://jkobject.com/blog/ancestry-bias-in-crispr/" rel="alternate" type="text/html" title="Ancestry Bias in CRISPR Screens" /><published>2024-06-21T00:00:00+00:00</published><updated>2024-06-21T00:00:00+00:00</updated><id>https://jkobject.com/blog/ancestry-bias-in-crispr</id><content type="html" xml:base="https://jkobject.com/blog/ancestry-bias-in-crispr/"><![CDATA[<h1 id="ancestry-bias-in-crispr-screens">Ancestry Bias in CRISPR Screens</h1>
 
 <p>🎉 Thrilled to share our paper on ancestry biases in CRISPR screens published in Nature Communications! This work, led by Sean Misek, reveals an important discovery about potential biases in CRISPR screening technology. You can read the full paper here: <a href="https://www.nature.com/articles/s41467-024-48957-z">https://www.nature.com/articles/s41467-024-48957-z</a></p>
 
@@ -322,7 +698,7 @@ to have at least a good picture of how they work.</p>]]></content><author><name>
 
 <p>🤩 What started as a search for new cancer targets led to the discovery of a significant bias in our CRISPR guide library affecting 1-2% of the guides. This finding has now been incorporated into our CRISPR dataset and has important implications for ensuring more equitable and accurate research outcomes.</p>
 
-<p>This project represents a true scientific journey - starting from an initially contested idea, leading to unexpected results, and culminating in an important discovery that helps address representation issues in cancer research. 🌍</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Comp-Bio" /><category term="Research" /><category term="CRISPR" /><summary type="html"><![CDATA[How we discovered ancestry biases in CRISPR screens and published in Nature Communications]]></summary></entry><entry><title type="html">Managing GRNs and What They Mean</title><link href="http://localhost:4000/blog/manage-grn-and-what-they-mean/" rel="alternate" type="text/html" title="Managing GRNs and What They Mean" /><published>2024-06-17T00:00:00+02:00</published><updated>2024-06-17T00:00:00+02:00</updated><id>http://localhost:4000/blog/manage-grn-and-what-they-mean</id><content type="html" xml:base="http://localhost:4000/blog/manage-grn-and-what-they-mean/"><![CDATA[<h1 id="managing-grns-and-what-they-mean">Managing GRNs and What They Mean</h1>
+<p>This project represents a true scientific journey - starting from an initially contested idea, leading to unexpected results, and culminating in an important discovery that helps address representation issues in cancer research. 🌍</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Comp-Bio" /><category term="Research" /><category term="CRISPR" /><summary type="html"><![CDATA[How we discovered ancestry biases in CRISPR screens and published in Nature Communications]]></summary></entry><entry><title type="html">Managing GRNs and What They Mean</title><link href="https://jkobject.com/blog/manage-grn-and-what-they-mean/" rel="alternate" type="text/html" title="Managing GRNs and What They Mean" /><published>2024-06-17T00:00:00+00:00</published><updated>2024-06-17T00:00:00+00:00</updated><id>https://jkobject.com/blog/manage-grn-and-what-they-mean</id><content type="html" xml:base="https://jkobject.com/blog/manage-grn-and-what-they-mean/"><![CDATA[<h1 id="managing-grns-and-what-they-mean">Managing GRNs and What They Mean</h1>
 
 <p>In my recent paper <a href="https://www.biorxiv.org/content/10.1101/2024.07.29.605556v1">scPRINT</a>, I went into a deep dive on gene regulatory networks. Many findings are in the manuscript but I had some additional thoughts to share and wanted to present a tool I built to work with GRNs.</p>
 
@@ -373,7 +749,7 @@ to have at least a good picture of how they work.</p>]]></content><author><name>
 
 <p><img src="/assets/images/grn2.png" alt="" /></p>
 
-<p>But <a href="https://github.com/cantinilab/GRnnData">GRnnData</a> can do more and integrates some utils functions doing things like clustering, centrality measures, enrichment and more. Go check [GRnnData]https://github.com/cantinilab/GRnnData if you work with gene networks!</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Comp-Bio" /><category term="Research" /><summary type="html"><![CDATA[Some thoughts on Gene Regulatory Networks and their meaning in biology]]></summary></entry><entry><title type="html">AUPRC vs AP: Evaluating Binary Classification</title><link href="http://localhost:4000/blog/auprc-vs-ap/" rel="alternate" type="text/html" title="AUPRC vs AP: Evaluating Binary Classification" /><published>2024-06-09T00:00:00+02:00</published><updated>2024-06-09T00:00:00+02:00</updated><id>http://localhost:4000/blog/auprc-vs-ap</id><content type="html" xml:base="http://localhost:4000/blog/auprc-vs-ap/"><![CDATA[<p>When analysing a classification task for my recent paper <a href="https://www.biorxiv.org/content/10.1101/2024.07.29.605556v1">scPRINT</a>, I fell into a fascinating “data-sciency” rabbit-hole about AUPRC, AUC and AP.</p>
+<p>But <a href="https://github.com/cantinilab/GRnnData">GRnnData</a> can do more and integrates some utils functions doing things like clustering, centrality measures, enrichment and more. Go check <a href="https://github.com/cantinilab/GRnnData">GRnnData</a> if you work with gene networks!</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Comp-Bio" /><category term="Research" /><summary type="html"><![CDATA[Some thoughts on Gene Regulatory Networks and their meaning in biology]]></summary></entry><entry><title type="html">AUPRC vs AP: Evaluating Binary Classification</title><link href="https://jkobject.com/blog/auprc-vs-ap/" rel="alternate" type="text/html" title="AUPRC vs AP: Evaluating Binary Classification" /><published>2024-06-09T00:00:00+00:00</published><updated>2024-06-09T00:00:00+00:00</updated><id>https://jkobject.com/blog/auprc-vs-ap</id><content type="html" xml:base="https://jkobject.com/blog/auprc-vs-ap/"><![CDATA[<p>When analysing a classification task for my recent paper <a href="https://www.biorxiv.org/content/10.1101/2024.07.29.605556v1">scPRINT</a>, I fell into a fascinating “data-sciency” rabbit-hole about AUPRC, AUC and AP.</p>
 
 <h2 id="understanding-classification-metrics">Understanding Classification Metrics</h2>
 
@@ -406,12 +782,15 @@ to have at least a good picture of how they work.</p>]]></content><author><name>
 
 <h2 id="introducing-rauprc">Introducing rAUPRC</h2>
 
-<p>To address these limitations, I developed rAUPRC, which includes:</p>
-<ul>
-  <li>Correction for random precision</li>
-  <li>Proper handling of incomplete predictions</li>
-  <li>A modified approach for drawing the curve from partial to complete recall</li>
-</ul>
+<p>To address these limitations, I developed <strong>rAUPRC</strong> (random-baseline-corrected AUPRC), implemented in <a href="https://github.com/jkobject/benGRN">benGRN</a>. It differs from vanilla AUPRC in three key ways:</p>
+
+<p><strong>1. Baseline correction</strong> — Standard AUPRC is heavily influenced by the positive class ratio. A dataset with 1% positives will have a baseline AUPRC of ~0.01, making comparisons across tasks meaningless. rAUPRC normalizes for this: a random classifier always scores 0, a perfect classifier scores 1, regardless of class imbalance. 🎯</p>
+
+<p><strong>2. Handling missing predictions</strong> — In gene network inference, most tools only predict a subset of possible links; the rest are simply absent (not predicted as negative). Vanilla AUPRC breaks here. rAUPRC handles this by treating missing predictions explicitly when drawing the recall axis, giving a fair picture even when coverage is partial. 🔍</p>
+
+<p><strong>3. Curve interpolation</strong> — PR curves are notoriously jagged, especially at low recall. rAUPRC uses a modified interpolation that avoids the artificial inflation that naive linear interpolation can introduce between operating points.</p>
+
+<p>In practice on GRN benchmarks, rAUPRC produced more stable rankings across different network densities and prediction tool outputs than either vanilla AUPRC or AP. 📊</p>
 
 <h2 id="average-precision-ap">Average Precision (AP)</h2>
 
@@ -419,13 +798,72 @@ to have at least a good picture of how they work.</p>]]></content><author><name>
 
 <p><img src="/assets/images/auprc5.png" alt="AP Formula" /></p>
 
-<p>While AP is often recommended for skewed classification tasks, my rAUPRC implementation showed more consistent results across different parameters in practice.</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Data-Science" /><category term="Research" /><summary type="html"><![CDATA[A deep dive into classification metrics and their nuances]]></summary></entry><entry><title type="html">Enrichr, Prerank, GSEA or ssGSEA?</title><link href="http://localhost:4000/blog/enrichr-prerank-gsea/" rel="alternate" type="text/html" title="Enrichr, Prerank, GSEA or ssGSEA?" /><published>2024-02-19T00:00:00+01:00</published><updated>2024-02-19T00:00:00+01:00</updated><id>http://localhost:4000/blog/enrichr-prerank-gsea</id><content type="html" xml:base="http://localhost:4000/blog/enrichr-prerank-gsea/"><![CDATA[<p>Bioinformatician’s main tool for discovery has often been differential expression analysis. But between Enrich, Prerank, GSEA, ssGSEA, which tool should you use? here is the quick reminder X-plainer:</p>
+<p>AP is a discrete approximation of AUPRC — rather than integrating the continuous curve, it sums precision at each threshold where a positive is retrieved, weighted by the change in recall:</p>
 
-<p><em>Enrichr</em> is when you just have a list of genes (can be small):</p>
+\[AP = \sum_n (R_n - R_{n-1}) \cdot P_n\]
 
-<p>GENEA, GENEB, GENEC</p>
+<p>In practice, AP and AUPRC give very similar values when the PR curve is sampled densely. The key difference is that AP is purely a summary statistic (one number per run), while AUPRC can be computed from the full curve and lends itself better to baseline correction.</p>
 
-<p><em>Prerank</em> is when you have values that you can rank your list of genes from:</p>
+<p><strong>AP is often recommended</strong> for object detection and ranking tasks (it’s the default in PASCAL VOC and COCO benchmarks). For gene network inference and other sparse biological tasks, rAUPRC is more appropriate. ✅</p>
+
+<h2 id="when-to-use-what">When to use what</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Use when</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>AUROC</strong></td>
+      <td>Classes are roughly balanced, you care about ranking overall</td>
+    </tr>
+    <tr>
+      <td><strong>AUPRC / AP</strong></td>
+      <td>Strong class imbalance, precision matters</td>
+    </tr>
+    <tr>
+      <td><strong>rAUPRC</strong></td>
+      <td>Gene networks, partial predictions, cross-task comparison</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For a deeper dive into the implementation, see the <a href="https://github.com/jkobject/benGRN">benGRN repo</a> and the benchmarking section of the <a href="https://www.biorxiv.org/content/10.1101/2024.07.29.605556v1">scPRINT paper</a>.</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Data-Science" /><category term="Research" /><summary type="html"><![CDATA[A deep dive into classification metrics and their nuances]]></summary></entry><entry><title type="html">Enrichr, Prerank, GSEA or ssGSEA?</title><link href="https://jkobject.com/blog/enrichr-prerank-gsea/" rel="alternate" type="text/html" title="Enrichr, Prerank, GSEA or ssGSEA?" /><published>2024-02-19T00:00:00+00:00</published><updated>2024-02-19T00:00:00+00:00</updated><id>https://jkobject.com/blog/enrichr-prerank-gsea</id><content type="html" xml:base="https://jkobject.com/blog/enrichr-prerank-gsea/"><![CDATA[<p>Bioinformatician’s main tool for discovery has often been differential expression analysis. But between Enrichr, Prerank, GSEA, and ssGSEA, which tool should you use? Here is the quick reminder X-plainer. 🧬</p>
+
+<h2 id="the-decision-tree">The Decision Tree</h2>
+
+<p>The key question is: <strong>what shape is your data?</strong></p>
+
+<hr />
+
+<h3 id="enrichr--you-have-a-gene-list-nothing-else">Enrichr — you have a gene list, nothing else</h3>
+
+<p><em>Enrichr</em> is when you just have a list of genes (can be small). No values, no conditions — just names. 📋</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GENEA, GENEB, GENEC
+</code></pre></div></div>
+
+<p>Under the hood, Enrichr tests each gene set in its databases using a <strong>Fisher’s exact test</strong> (hypergeometric). It asks: is my list enriched for genes in pathway X more than expected by chance?</p>
+
+<p>Best for: DE gene lists, hit lists from CRISPR screens, manually curated sets.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>👉 <a href="https://maayanlab.cloud/Enrichr/">Enrichr</a></td>
+      <td>Python: <a href="https://gseapy.readthedocs.io/en/latest/">gseapy.enrichr</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h3 id="prerank--you-have-a-ranked-gene-list">Prerank — you have a ranked gene list</h3>
+
+<p><em>Prerank</em> is when you have a continuous value per gene that you can rank — a fold change, a correlation, a t-statistic, anything. 📊</p>
 
 <table>
   <thead>
@@ -450,7 +888,17 @@ to have at least a good picture of how they work.</p>]]></content><author><name>
   </tbody>
 </table>
 
-<p><em>GSEA</em> works best when you have a list of genes, with values associated with them across multiple conditions (and replicates):</p>
+<p>Prerank runs GSEA logic (the enrichment score / walking statistic) on your pre-ranked list, without needing raw expression data or phenotype labels. Useful when you already have a score but not the underlying samples.</p>
+
+<p>Best for: correlation with a phenotype, output from another model, single-sample pseudo-bulk scores.</p>
+
+<p>👉 Python: <a href="https://gseapy.readthedocs.io/en/latest/">gseapy.prerank</a></p>
+
+<hr />
+
+<h3 id="gsea--you-have-expression-data-with-two-conditions">GSEA — you have expression data with two conditions</h3>
+
+<p><em>GSEA</em> works best when you have a matrix of gene expression values across multiple samples with a clear phenotype label (treated vs control, disease vs healthy, etc.). It computes its own gene ranking internally. 🔬</p>
 
 <table>
   <thead>
@@ -495,7 +943,24 @@ to have at least a good picture of how they work.</p>]]></content><author><name>
   </tbody>
 </table>
 
-<p><em>ssGSEA</em> is when you have many values associated with them but not 2 specific condition and want to compare 1 vs the rest</p>
+<p>The key advantage over Enrichr: GSEA doesn’t require you to define a hard cutoff (“top 200 DE genes”). It uses the full ranked list and identifies pathways enriched at the top or bottom. This makes it more sensitive and less arbitrary. ✅</p>
+
+<p>Best for: bulk RNA-seq, any two-condition comparison with replicates (n ≥ 3 per group recommended).</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>👉 <a href="https://www.gsea-msigdb.org/gsea/index.jsp">GSEA software</a></td>
+      <td>Python: <a href="https://gseapy.readthedocs.io/en/latest/">gseapy.gsea</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h3 id="ssgsea--you-want-a-per-sample-enrichment-score">ssGSEA — you want a per-sample enrichment score</h3>
+
+<p><em>ssGSEA</em> is for when you have many samples with no clear two-group contrast — or when you want a continuous enrichment score <em>per sample</em> rather than a comparison between groups. 🗂️</p>
 
 <table>
   <thead>
@@ -538,189 +1003,53 @@ to have at least a good picture of how they work.</p>]]></content><author><name>
       <td>4</td>
     </tr>
   </tbody>
-</table>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Comp-Bio" /><category term="Research" /><summary type="html"><![CDATA[A quick reminder of when to use which enrichment analysis tool]]></summary></entry><entry><title type="html">The PhD Decision, Celligner2 and Foundational Models</title><link href="http://localhost:4000/blog/the-phd-decision-grn-foundation-model/" rel="alternate" type="text/html" title="The PhD Decision, Celligner2 and Foundational Models" /><published>2023-10-02T00:00:00+02:00</published><updated>2023-10-02T00:00:00+02:00</updated><id>http://localhost:4000/blog/the-phd-decision-grn-foundation-model</id><content type="html" xml:base="http://localhost:4000/blog/the-phd-decision-grn-foundation-model/"><![CDATA[<p>This is an important moment for me, and it seems that many things  led me to this point. 😊 I have decided to join <a href="https://research.pasteur.fr/fr/team/machine-learning-for-integrative-genomics/">Laura Cantini</a> at Institut Pasteur and <a href="http://www.gpeyre.com/">Gabriel Peyré</a> at ENS ULM for a joint Ph.D. in Computational Biology and Applied Mathematics. 🧬📊 I will try to explain here my decision process for something that can appear as a very sudden change of direction and slightly crazy, given my current position at WhitelabGx.</p>
-
-<p>You can learn more about what I did <a href="https://www.jkobject.com/blog/whitelabgx-and-being-team-lead-redacted/">at WhitelabGx here</a> but I don’t think it would explain much of my decision. I will try to explain here the reasons that led me to this decision and the many lessons I learned along the way. 📚🤔</p>
-
-<p>First, as you might be able to see in this life story of mine, I was always into science and research. I got proposed quite a few Ph.D. positions along the way. At ECE, University of Kent, EPFL, and INSERM. I applied myself to quite a few competitive places. But always found some other directions that I was more inclined to follow. It always seemed like I was pushing it for later or just thinking I could do without it. In a way I did. I went to work at the Broad Institute. Worked on many research projects, published as first-author, and even started working on my own projects. I became a research scientist in companies and even came on to lead scientists themselves during my time at Whitelab.</p>
-
-<p>So research, although not my only passion, has always been very important to me.🧪🔬 It always seemed obvious that I would go on and do a Ph.D. at some point. But why did I wait? Why now? 🤔</p>
-
-<h2 id="the-story">The story</h2>
-
-<p>I was not looking for any other positions. I had in mind to stay at least a few years at Whitelab Gx, see where it had gone in that time, and then make a decision about my future.</p>
-
-<p>However, I was in contact with Laura Cantini with whom I had discussions about Ph.D. projects before joining Whitelab. At some point, Laura came back to me with this Ph.D. proposal. I spent the good part of a month in this tough dilemma. Thinking about it in all possible ways to try and find a solution that I would not regret in the future. 🤯</p>
-
-<p>I will try to explain below what led me to the decision to take this Ph.D. opportunity.
-But still, I did not want to let Whitelab down. during the end of my review period, I asked for it to be extended and explained the reason why. That gave Whitelab 2.5 months to prepare for my departure. Moreover, I presented a proposition to keep an advisory role in the company during my Ph.D. and to spend a week or so preparing my substitute for the position. I also did not take any vacation between my time at Whitelab and the Ph.D. so as to give as much time to Whitelab as I could. 🤝📅</p>
-
-<p>I believe that this goes to show my dedication and interest in the company, its mission, and the respect I have for my colleagues. 🙏🏢</p>
-
-<h2 id="the-why">the why</h2>
-
-<p>All the opportunities I had were very exciting to me. They were allowing me to learn in some of the best environments. At Broad Institute, I learned how to do research, biology, genomics, and cutting-edge tools and techniques.</p>
-
-<p>At Whitelab I learned how people build companies, how to lead a team, and how to go start from scratch a unit, with a validated plan, product design, and layout a business strategy for it. From working with clients, the BD team and the management.</p>
-
-<p>Why now? Well, there is no perfect time. But I could summarize it into 1 reasons:</p>
-
-<ul>
-  <li>The Ph.D. topic and group which I believe was a great fit for me.</li>
-</ul>
-
-<p>Obviously not everything can be summarized into one reason and not everything was perfect otherwise:</p>
-
-<ul>
-  <li>Whitelab was  maybe a bit too early stage for me? At least it is something I thought about sometimes <a href="https://www.jkobject.com/blog/whitelabgx-and-being-team-lead-redacted/">see Whitelab post</a></li>
-  <li>I thought a lot about open source in computational biology and having an impact which I will be able to outline further in this post.</li>
-  <li>I also had a couple  disillusions during job interviews with some high profile companies a few years back see <a href="https://www.jkobject.com/blog/leaving-broad/">leaving Broad</a>.</li>
-</ul>
-
-<p>However, while working at Whitelab and even before that, I started to notice a change in the community. AI is slowly becoming more and more powerful and solving real biological problems. I saw it from foundation models in structural biology -with equivariant models and protein language models-, to transcriptomics and DNA language models.🤖🧬</p>
-
-<p>During my work on celligner2 -at Broad-, I could already envision how foundational models would help in many aspects of my problem and many others. Working on the Atlas at Whitelab, they were always on our minds as possible solutions to tackle some real-world scientific problems (<a href="https://www.jkobject.com/blog/whitelabgx-and-being-team-lead-redacted/">see my Whitelab post</a>). (wait for a potential paper from our team at Whitelab in “nature computational science perspectives”) I had so many projects in mind and so little time to try to tackle them.💡📝</p>
-
-<p>I also could see the speed of development of new papers and the breadth of possible research endeavors available to computational biologists. So there was some FOMO there for sure and I knew that if an AI-heavy transcriptomic research project was coming my way I might not say no.📈📊</p>
-
-<p>So when I received this proposal from Laura and Gabriel I was very excited. It felt like the perfect fit for me. It had it all plus lots of applied math and stats plus gene regulatory networks which I spent years studying with Max Pimkin.💯📈</p>
-
-<h3 id="issues-and-realizations">issues and realizations</h3>
-
-<p>But this is not the only reason: Before joining Whitelab and moving to France, I had interviewed at a few companies: BenevolentAI, DeepMind, Isomorphic Labs, Owkin, and DeepLife, and applied to many more. I could see for many of them that my not having a Ph.D. was an issue.</p>
-
-<p>Other companies, like Whitelab or Aqemia, were very clear that my experience, to them was worth much more than what most Ph.D.s would bring.</p>
-
-<p>But this really made me realize that life would be that much tougher without this diploma and that many doors would be closed or harder to open.🚪🔐</p>
-
-<p>Finally, working in startup companies, I noticed their needs and challenges, some of them I believe specific to European startups:</p>
-
-<p>The funding in Europe is often much smaller than in the US. This is problematic for biotech companies that need high CAPEX from the get-go to hire the best people, do experimental validation, build experimental facilities, and create a first pipeline. This is creating a state of slower initial growth than for their American counterpart.💰💼</p>
-
-<p>This might seem to some like a small problem but it can become soul-crushing if you have been in the same company for years, waiting for it to enter exponential growth. It also can create issues, as the companies might lack important positions or teams with expertise that are harder to come by in Europe or need high investments.</p>
-
-<p>Another realization I have had in both companies I was at, is the open-sourcing scare.😱📦</p>
-
-<h3 id="open-source-and-creating-value">Open-source and creating value</h3>
-
-<p>Knowing biologists and Business Developers, I can guess this is an issue in many if not most (non-GAFAM) companies. “Use as many open source software and tutorials as you want”, “but don’t open source anything we do, don’t talk about anything we do”.</p>
-
-<p>In software, since it is something that can get copied and pasted so easily, scarcity has to be artificial.
-However open source and open science are often beneficial as everyone can collaborate and build on top of each other’s work. This is the inherent innovation and progress phenomena built into software development and research.🔍🌐</p>
-
-<p>However, external pressures tend to force privacy towards innovation to keep it for oneself.🤐🔬</p>
-
-<p>I would argue that for projects in which the result is very far off or unclear, not open-sourcing can be problematic. If you are building a product like a lamp, say. You cannot cheat, will the lamp turn on? For how long? For something like Facebook, even, you get usage metrics from very early on. For Biotechs, computational biology, and research, The clear-cut goal is often “a drug that passed some clinical trials”. This creates many untangible and not very engineering-like objectives along the way like: “Can you get people to believe in you?”  how many partnerships do you enter?”.</p>
-
-<p>In this context, you can lie. You can lie to the client but also to yourself. You can design a very nice-looking “car” that doesn’t drive at all. but since you are selling to people who don’t even really understand what is a car and what to do with it: it might be okay.🚗🤫 I am not saying that this is what we do at Whitelab at all! But it is an issue that all biotechs face and struggle with.I haven’t been the first to mention it.</p>
-
-<p>But this is why I think open source is so important: when you let people know how to use a car, try your car, the iteration cycle is much faster. 📚🚗</p>
-
-<p>In this context computational biologists should strive to inventivize environments where they can build things that will have a more direct impact than “helping make a drug”, through open source and through experimental validation.</p>
-
-<p>This has been a big lesson learned for me too. Thinking more about impact, direct impact, and value creation. 🌍📈</p>
-
-<h2 id="the-hard-decision">the hard decision</h2>
-
-<p>Nothing was pushing me away from my current job and I felt welcomed, useful and that we were going forward in our grand vision <a href="https://www.jkobject.com/blog/whitelabgx-and-being-team-lead-redacted/">See the Whitelab post</a>. Choosing the Ph.D. really felt like choosing the hard thing, the hard path.</p>
-
-<p>It is a hard decision because of how it might be seen too.
-I so do not want people to see it as doing a U-turn, or as a start-over. I now have 5 years of experience in computational biology and I am afraid of hearing “you are just fresh out of your Ph.D. and we thus don’t think you are yet qualified for a lead role in our company.” from an HR manager after my Ph.D.📆👨‍💼
-To me, it is a continuation of my career. Ph.D.s can be many things and I see mine as a kind of post-doc or a long sabbatical.</p>
-
-<p>Moreover, staying for such a short period in companies is not seen well. For very sensible reasons. But startups are a special environment, especially so early-stage. I have stayed for 3.5 years at Broad. Much longer than most people in my position there. I have worked on my project, PiPle, for more than 5 years. I also think I have shown how much I cared for Whitelab and the personal dedication I have put in and continue to, in the company. 🌟🤝</p>
-
-<p>Finally, I feel I have actually learned a lot more in these 10 months than I had in a long time. From structural biology and drug discovery to business and management, the startup ecosystem, and cell and gene therapies. This is really thanks to these fast-paced environments and all the people I have been lucky to work with.</p>
-
-<h2 id="the-many-lessons-learned">the many lessons learned</h2>
-
-<p>With my previous experience in building a company, I would not have expected to learn that much from being in a startup. I think I did not realize the major steps that going from a company of 1 to 5 people is compared to 5 to 20 and 20 to 100, etc… each growth cycle is a full reinvention of the company culture, it is new challenges and things get exponentially more complex for the C-levels (i.e. the executive team: CEO, CTO, CSO, CFO, HR manager, etc)</p>
-
-<h3 id="being-a-great-c-level-in-a-startup">being a great C-level in a startup</h3>
-
-<blockquote>
-  <p>It shows how much of an example they are for everyone.</p>
-</blockquote>
-
-<p>Here are the 4 points I learned for the C-levels:</p>
-
-<ol>
-  <li>The C-levels’ domain knowledge is key to success. 💼🧠🔑</li>
-  <li>The ability to create agile processes and to hire the right people at the right time is also key to success. 🔄👥⏰🔑</li>
-  <li>Fostering a culture of trust and respect is how you can keep the best people in your company. 🤝💼</li>
-</ol>
-
-<p>It might seem obvious but I really was shocked by the Impact of C levels on a startup culture. I was shocked also by the key “glue role” that C-levels need to play during this 1-100 people size. They are the connection between people inside the company and the partners outside it.🚀🔗
-It shows how much of an example they are for everyone.</p>
-
-<p>But the example they set needs is a constant balancing act between everyone’s needs and goals. Within all this chaos they need to keep fostering a culture of trust and respect. This “keep cool” in most situations is as hard as the balancing act they constantly play. 🤹‍♀️🤯</p>
-
-<p>Finally, their domain knowledge 💼🧠🔑 is key to success. This requires experience in their topic and what their clients and the market want. All of this trickles down when they start hiring people: M.D.s, Ph.D.s, business developers, and engineers, with strong experience in their field are of the utmost importance in biotech. In here C levels again play a key role, who they are, the culture they have fostered allows them to recruit and keep the best people, especially when the company is still small and hasn’t reached a strong brand recognition yet.</p>
-
-<p>Keeping good people is super tough: you need to pay them well, have their work be fulfilling while always showing them you are on a high growth trajectory. Processes and agility all play a role too. 🔄👥⏰🔑 Moreover, it is only through these well tought-out processes and structures that everyone’s strength and contributions can be channeled efficiently into the projects and products the company is building.</p>
-
-<h3 id="thinking-differently-than-in-academia">Thinking differently than in academia</h3>
-
-<p>Building a startup has many similarities with being a researcher, for example: you have ideas you need to sell through a powerful story. This is how you get people and funding. These ideas although incomplete have to convince people. You spend a lot of time finding money and building a team of experts and beginners.💡💰👥</p>
-
-<p>But if it was that similar, every ex-PI would be a trememdous CEO. There are big differences too. The first few discussions with the BD team at Whitelab really made me understand them: First, you need to know at all times what you are selling and what people want, even though you might not have it yet. What counts is that you know you are able to have it and how you would do it.</p>
-
-<p>Second, putting yourself out there: going to as many conferences and events, with a solution to people’s problems. This needs to happen from the get-go. (jeremie from the future here: I realize now that these 2 points are still things that many PIs would be familiar with haha)</p>
-
-<p>Finally, your first product might be miserable, but if it solves someone’s problem, it’s okay. And thinking product first, even in comp bio, is not really a reflex. What is a product? when you see all these amazing databases, datasets, and tools. What does one bring? You don’t have to bring much initially, it just need to be useful to people. What is a product? It is really an abstraction over the work that your team does. It has to be polished, output meaningful results, within deadlines, it must have a given cost upfront… 🗂️📅📋</p>
-
-<h2 id="the-future-of-cell-and-gene-therapies">The future of cell and gene therapies</h2>
-
-<p>I joined Whitelab because I strongly believe in the future of genetic therapies. Covid opened our eyes to the power of mRNAs, while CAR-Ts have had a big impact on cancer therapies, and many more drugs are in the pipeline.</p>
-
-<p>Especially understanding the issues that plague small molecules. It felt to me that we needed a more targeted approach for the medicine of the future.💉🧬🌐</p>
-
-<p>But first, what are cell and gene therapies (CGT)s?</p>
-
-<p>Cell and gene therapies (CGTs) represent a revolutionary approach to disease treatment, moving away from traditional methods towards more targeted and personalized solutions. These therapies work by altering the genetic material within a patient’s cells to fight or prevent disease. They can replace, remove or repair abnormal genes or introduce totally new genes to fight diseases.🧬💊🌡️</p>
-
-<p>A very famous subcategory: mRNA therapies, such as those used in some COVID-19 vaccines, are a type of gene therapy that works by introducing a small piece of mRNA into the body. This mRNA carries some instructions and once inside our cells, it uses the body’s own machinery to execute it. The advantage of mRNA therapies is that they don’t alter the DNA in our cells and are not permanent, reducing the risk of long-term side effects.💉🦠🧬</p>
-
-<p>Antisense oligonucleotides (ASOs) are another type of CGT that work by binding to the mRNA produced by certain genes and preventing them from being translated into proteins. This can be useful for diseases where a particular gene is overactive. ASOs can be designed to target almost any gene, making them a highly versatile tool in the fight against disease.💉🎯🧬</p>
-
-<p>Overall, the main advantage of CGTs is their precision. They target the root cause of diseases at the genetic level, offering the potential for more effective and longer-lasting treatments with fewer side effects. This precision, combined with the rapid advancements in technology and our understanding of the human genome, is why many believe CGTs represent the future of medicine.💉🌍🔬</p>
-
-<p>I believe that since genetic sequencing and machine learning, we are able to understand the root cause of disease in the name of one or a few cell types and their disregulation caused by often one or a few genes.</p>
-
-<p>Being able to target only these specific diseased cell types is within reach for CGTs but not for small molecules. Moreover being specific in what we are doing: what genes we are triggering is also what CGTs can do that most small molecules can’t.</p>
-
-<p>It feels like a perfect CGT would allow us to create a novel drug in hours. From a laptop and a DNA printing machine. It would be the perfect interface between man and life.</p>
-
-<h2 id="my-goals-and-objectives-for-the-phd">My goals and objectives for the Ph.D.</h2>
-
-<p>A main mistake during one’s Ph.D. is to not see the time passing by. My goal for this Ph.D. is to be as product-first as I was at Whitelab. Delivering results quickly &amp; improving until it is publishable.🏆📊📚</p>
-
-<p>This mistake, thinking “Well I have 3 years…” is what makes people go overboard, finish stressed, and unprepared for what is next. Thus I plan for doing mine in 2 years. And I will prepare everything around this idea. I will also start to think about what is next ASAP.</p>
-
-<p>To do that best, one needs to take the chance of the Ph.D. to make connections with other labs (industry or academic) on my end I am thinking for example at Broad, the Theis lab, the Yosef lab, Valence labs, …🤝🔗</p>
-
-<p>Moreover, a good advice I have been given is to know what you want to do and what you don’t want to do. Know what you are here for. Learn to say no. And I learned to say no in the last 4 years. My goal is to work on large models &amp; large datasets, mostly transcriptomics. But also making sure to always go back to first principles and biology.🧬🧪🔍</p>
-
-<p>I also know I want to make something useful, make something that can be a stepping stone for others. Something that has an impact on the community. I know that to do that you have to go the extra mile in terms of dev with and be honest with yourself about any shortcomings.</p>
-
-<p>Finally, I have been very lucky to often become addicted to my work. I like working hard and I like challenges. But for this to happen, I need to keep enjoying what I am doing. I also wish to have no regrets about this decision.
-Thus my final goal is to enjoy it, as much as I can!😊🚀</p>
-
-<h3 id="recap">Recap</h3>
-
-<p>Thus my motto for this Ph.D. will be:</p>
-
-<ol>
-  <li>do it in 2 years and be prepared</li>
-  <li>make as many connections as I can</li>
-  <li>maximize impact on the community: make something useful</li>
-  <li>enjoy it as much as possible</li>
-</ol>
-
-<h2 id="phd-proposal">Ph.D. proposal</h2>
-
-<p><a href="https://www.jkobject.com/assets/documents/PhD_project.pdf" class="btn btn--primary btn--large">Link to the proposal</a></p>
-
-<h3 id="previous-proposals">Previous proposals</h3>
-
-<p>I have had a previous Ph.D. projects proposals for a Ph.D. that I then postponed. I <a href="https://www.jkobject.com/assets/documents/researchobjectives.pdf">list it here</a> too for historical purposes.</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Startups" /><category term="Comp-Bio" /><summary type="html"><![CDATA[I take a big decision and provide many lessons learned along the way, about leading teams, companies, doing a Ph.D. and working in startups]]></summary></entry></feed>
+</table>
+
+<p>Each sample gets its own enrichment score for each pathway, independently. The output is a sample × pathway matrix. Great for downstream analysis — clustering, survival analysis, correlating pathway activity with other variables.</p>
+
+<p>Best for: large cohorts (TCGA, GTEx), single-cell pseudo-bulk, any analysis where you want pathway activity as a continuous feature.</p>
+
+<p>👉 Python: <a href="https://gseapy.readthedocs.io/en/latest/">gseapy.ssgsea</a></p>
+
+<hr />
+
+<h2 id="quick-summary-table">Quick summary table</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>Input</th>
+      <th>Statistics</th>
+      <th>Best for</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Enrichr</strong></td>
+      <td>Gene list only</td>
+      <td>Fisher / hypergeometric</td>
+      <td>Small lists, no values</td>
+    </tr>
+    <tr>
+      <td><strong>Prerank</strong></td>
+      <td>Genes + score</td>
+      <td>GSEA walking statistic</td>
+      <td>Pre-computed rankings</td>
+    </tr>
+    <tr>
+      <td><strong>GSEA</strong></td>
+      <td>Expression matrix + 2 conditions</td>
+      <td>GSEA walking statistic</td>
+      <td>Bulk RNA-seq DE</td>
+    </tr>
+    <tr>
+      <td><strong>ssGSEA</strong></td>
+      <td>Expression matrix, no labels</td>
+      <td>Per-sample enrichment</td>
+      <td>Large cohorts, per-sample scores</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For most single-cell work: compute pseudo-bulk, run GSEA or Prerank per cell type. For single-cell pathway scoring directly, <a href="https://decoupler-py.readthedocs.io/">decoupleR</a> is worth a look. 🔍</p>]]></content><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><category term="PhD" /><category term="Comp-Bio" /><category term="Research" /><summary type="html"><![CDATA[A quick reminder of when to use which enrichment analysis tool]]></summary></entry></feed>

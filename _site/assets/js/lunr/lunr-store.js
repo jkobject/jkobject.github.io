@@ -1,10 +1,4 @@
 var store = [{
-        "title": "Why Rick had to invent to station of Ricks? [FR]",
-        "excerpt":"my take on an aspect of this serie, inspired by the many fan-made-explanations out there Pourquoi Rick a du inventer la station des Ricks ? Dans Rick et Morty, il existe une infinité d’univers parallèles et à travers tous ces univers, seulement une seule station des ricks. Donc si un...","categories": ["random"],
-        "tags": [],
-        "url": "/ideas/why-rick-invented-the-station-of-ricks/",
-        "teaser": "/assets/images/rick_morty.jpg"
-      },{
         "title": "hydroponics and vertical farming",
         "excerpt":"Recently I had fun making some short back of the envelop computation on the use of hydroponics 📨 in a future world. Unregarding any related challenges, what would be the footprint of a factory producing the world’s food supply? 🤔 what is hydroponics? Here by hydroponics I am talking about...","categories": ["Sustaining Humanity"],
         "tags": [],
@@ -17,17 +11,17 @@ var store = [{
         "url": "/ideas/the-bioarxiv-of-the-future/",
         "teaser": "/assets/images/twitter.jpeg"
       },{
-        "title": "Revolutionizing Medical Care",
-        "excerpt":"The world of medicine is constantly evolving, with new research and advancements being made every day. In order to provide the best possible care to patients, it is crucial for healthcare professionals to stay updated on the latest standards of care. What if we could harness the power of technology...","categories": ["Frustrations and Solutions"],
-        "tags": [],
-        "url": "/ideas/wikipedia-for-doctors/",
-        "teaser": "/assets/images/cell_model.jpeg"
-      },{
         "title": "Creating a cell model",
         "excerpt":"I always very much liked the fact that a lot of objectives of big companies and research lab in the AI space started with some hypothesis ➡️ model before going to find out how to build something that gets close to it. Making theories first in biology has been a...","categories": ["Frustrations and Solutions"],
         "tags": [],
         "url": "/ideas/creating-cell-model/",
         "teaser": "/assets/images/cell_model.jpeg"
+      },{
+        "title": "Accelerate the transition to smart-things",
+        "excerpt":"Last time, I was in my kitchen, looking at my google home and the 3 lights + thermostat it was able to control. I felt quite underwhelmed with the effort I had to go through to find and install these. Amongst the many objects in my home, there is still...","categories": ["Frustrations and Solutions"],
+        "tags": [],
+        "url": "/ideas/smart-things-company/",
+        "teaser": "/assets/images/couverture.png"
       },{
         "title": "Kuberism: A truly democratic system",
         "excerpt":"Politics have seem to become more and more polarized and divided. However, one thing that we have to agree on is that despite the fact that capitalism, liberalism &amp; democracy have improved the life of most of humanity on earth, it is still not a perfect system. It has many...","categories": ["Frustrations and Solutions"],
@@ -40,6 +34,30 @@ var store = [{
         "tags": [],
         "url": "/ideas/the-future-I-dream-about/",
         "teaser": "/assets/images/brave-new5.jpg"
+      },{
+        "title": "The new way we’ll do science",
+        "excerpt":"Science still has a strange little habit. A lab spends three years collecting samples. Someone writes a preprocessing script. Someone else changes a threshold. A model gets trained on version 3 of a dataset, evaluated with a slightly different split, plotted into Figure 4, summarized in one cautious sentence, then...","categories": ["Frustrations and Solutions"],
+        "tags": [],
+        "url": "/ideas/the-new-way-well-do-science/",
+        "teaser": "/assets/images/science-paper-bundle.svg"
+      },{
+        "title": "The ultimate commuting: part 1",
+        "excerpt":"What if during the coming decades we could see teleportation and pain-free travel becoming somewhat of a reality? Today, transportation of goods, of people has never been so easy. We can go around the world in a day, spend a one week holiday in another continent and no one really...","categories": ["Frustrations and Solutions"],
+        "tags": [],
+        "url": "/ideas/the-ultimate-urban-commuting-part1/",
+        "teaser": "/assets/images/commuting.avif"
+      },{
+        "title": "Why Rick had to invent to station of Ricks? [FR]",
+        "excerpt":"my take on an aspect of this serie, inspired by the many fan-made-explanations out there Pourquoi Rick a du inventer la station des Ricks ? Dans Rick et Morty, il existe une infinité d’univers parallèles et à travers tous ces univers, seulement une seule station des ricks. Donc si un...","categories": ["random"],
+        "tags": [],
+        "url": "/ideas/why-rick-invented-the-station-of-ricks/",
+        "teaser": "/assets/images/rick_morty.jpg"
+      },{
+        "title": "Revolutionizing Medical Care",
+        "excerpt":"The world of medicine is constantly evolving, with new research and advancements being made every day. In order to provide the best possible care to patients, it is crucial for healthcare professionals to stay updated on the latest standards of care. What if we could harness the power of technology...","categories": ["Frustrations and Solutions"],
+        "tags": [],
+        "url": "/ideas/wikipedia-for-doctors/",
+        "teaser": "/assets/images/cell_model.jpeg"
       },{
         "title": "Are We Really Conscious? pt1",
         "excerpt":"1. On the emergence of life This is the first part of a Serie on consciousness, life and intelligence As far as I can recall, the idea of an intelligent design in life always seemed strange to me. It seemed like the adults had little imagination to involve yet another...","categories": ["On consciousness"],
@@ -76,6 +94,12 @@ var store = [{
         "tags": [],
         "url": "/opinions/the-case-against-prisons/",
         "teaser": "/assets/images/prisons.jpg"
+      },{
+        "title": "About the AIVC paper",
+        "excerpt":"Reading the AIVC manuscript further, I felt like adding some more comments on this topic, which I did before on X too. Being able to model a cell with large amount of multi modal data and multi scale AI models is something I have talked about before on X and...","categories": ["PhD"],
+        "tags": ["AI","Comp-Bio","Research"],
+        "url": "/opinions/about-the-aivc-paper/",
+        "teaser": "/assets/images/aivc.jpg"
       },{
         "title": "A French Engineering School",
         "excerpt":"It has now been six months since I officially finished my Engineering school, 🏫 I just received my diploma of Engineering. After my HighSchool, not knowing exactly what I should do to become like my heros: famous entrepreneurs and researchers, I set out to pass a “concours“ in order to...","categories": ["ECE"],
@@ -179,12 +203,6 @@ var store = [{
         "url": "/blog/leaving-broad/",
         "teaser": "/assets/images/broad_far.jpg"
       },{
-        "title": "A Startup idea to accelerate the transition to smart-things",
-        "excerpt":"Last time, I was in my kitchen, looking at my google home and the 3 lights + thermostat it was able to control. I felt quite underwhelmed with the effort I had to go through to find and install these. Amongst the many objects in my home, there is still...","categories": ["Frustrations and Solutions"],
-        "tags": [],
-        "url": "/blog/smart-things-company/",
-        "teaser": "/assets/images/couverture.png"
-      },{
         "title": "The Aqemia Story",
         "excerpt":"During the summer of 2022, I was feeling pretty desperate. I had just experienced 6 months of many failed attempts at securing positions at companies like Deepmind, BenevolentAI, Isomorphic Labs, and Owkin. I had gone through very long and tedious interview processes where for some, it had felt like I...","categories": ["Other Work Experience"],
         "tags": ["Big Data","Drug Discovery","Python"],
@@ -204,7 +222,7 @@ var store = [{
         "teaser": "/assets/images/photo-pasteur.jpg"
       },{
         "title": "Enrichr, Prerank, GSEA or ssGSEA?",
-        "excerpt":"Bioinformatician’s main tool for discovery has often been differential expression analysis. But between Enrich, Prerank, GSEA, ssGSEA, which tool should you use? here is the quick reminder X-plainer: Enrichr is when you just have a list of genes (can be small): GENEA, GENEB, GENEC Prerank is when you have values...","categories": ["PhD"],
+        "excerpt":"Bioinformatician’s main tool for discovery has often been differential expression analysis. But between Enrichr, Prerank, GSEA, and ssGSEA, which tool should you use? Here is the quick reminder X-plainer. 🧬 The Decision Tree The key question is: what shape is your data? Enrichr — you have a gene list, nothing...","categories": ["PhD"],
         "tags": ["Comp-Bio","Research"],
         "url": "/blog/enrichr-prerank-gsea/",
         "teaser": "/assets/images/enrichment.png"
@@ -233,20 +251,8 @@ var store = [{
         "url": "/blog/what-are-large-cell-models/",
         "teaser": "/assets/images/aivc.jpg"
       },{
-        "title": "About the AIVC paper",
-        "excerpt":"Reading the AIVC manuscript further, I felt like adding some more comments on this topic, which I did before on X too. Being able to model a cell with large amount of multi modal data and multi scale AI models is something I have talked about before on X and...","categories": ["PhD"],
-        "tags": ["AI","Comp-Bio","Research"],
-        "url": "/blog/about-the-aivc-paper/",
-        "teaser": "/assets/images/aivc.jpg"
-      },{
-        "title": "About the AIVC paper",
-        "excerpt":" ","categories": ["PhD"],
-        "tags": ["AI","Comp-Bio","Research"],
-        "url": "/blog/finishing-the-phd/",
-        "teaser": "/assets/images/aivc.jpg"
-      },{
         "title": "A year in the PhD",
-        "excerpt":"I have been a PhD student for a year now. Many things have happened and here is some lessons learned. do it in 2 years and be prepared make as many connections as I can maximize impact on the community: make something useful enjoy it as much as possible The...","categories": ["PhD"],
+        "excerpt":"A year and a half in. When I wrote the PhD decision post, I set four goals: do it in 2 years and be prepared make as many connections as I can maximize impact on the community: make something useful enjoy it as much as possible Time to check in....","categories": ["PhD"],
         "tags": ["PhD","Comp-Bio"],
         "url": "/blog/a-year-in-the-phd/",
         "teaser": "/assets/images/photo-pasteur.jpg"
@@ -256,6 +262,24 @@ var store = [{
         "tags": ["AI","Comp-Bio","Research"],
         "url": "/blog/vcc-starter-pack/",
         "teaser": "/assets/images/starterpack.png"
+      },{
+        "title": "How I managed thousands of datasets to build the scPRINT family of scRNA-seq foundation models",
+        "excerpt":"At the start of my PhD, I was faced with what seemed like a mountain to climb: build, largely alone, a foundation model for single-cell RNA-seq data. As anyone in the field knows, building the model is not the hard part. Getting the data is. To train a cell foundation...","categories": ["PhD"],
+        "tags": ["Startups","Comp-Bio"],
+        "url": "/blog/lamindb-these/",
+        "teaser": "/assets/images/lamin.png"
+      },{
+        "title": "Finishing the PhD",
+        "excerpt":"It’s done. March 25, 2026, 1:30pm, Duclaux amphitheater at Institut Pasteur. 🎓 I started in October 2023. Took 2.5 years instead of two. Here’s what happened. What I set out to do The project was building foundation models for single-cell transcriptomics — taking the pretraining ideas from NLP and applying...","categories": ["PhD"],
+        "tags": ["PhD","Comp-Bio","Foundation Models"],
+        "url": "/blog/finishing-the-phd/",
+        "teaser": "/assets/images/photo-pasteur.jpg"
+      },{
+        "title": "The Gene Regulation Landscape",
+        "excerpt":"I have always wanted to understand how a cell works. Most of the time, even when textbooks go into molecular detail, the story is still organized around dogmas. One chapter adds chromatin. Another adds transcription factors. Later, RNA processing appears. Then translation, protein degradation, signaling, condensates, non-coding RNAs, and so...","categories": ["PhD"],
+        "tags": ["Cell Bio","Comp-Bio"],
+        "url": "/blog/gene-regulation-landscape/",
+        "teaser": "/assets/images/gene-expr.png"
       },{
         "title": "PiPle: The Beginnings",
         "excerpt":"PiPle is the next generation professional communication tool. It is a cross platform project led by a team of Engineering student, 👩‍🎓 from ECEparis which is led by me. We won a couple of Prizes for this project last year. The Berger Levrault Citizen Challenge as well as ECE innov...","categories": ["PiPle"],
@@ -348,8 +372,8 @@ var store = [{
         "teaser": "/assets/images/hierarchical-classification.png"
       },{
         "title": "scPRINT",
-        "excerpt":"The Story Behind scPRINT: Beyond the Paper 📚 Rather than diving into the technical details (which you can find in our paper, preprint, or code repository), I want to share the journey and insights gained while building scPRINT. For those interested in technical presentations, check out my talks at LoGG...","categories": ["PhD"],
-        "tags": ["PhD","Comp-Bio"],
+        "excerpt":"This post is just a paper summary scPRINT: a large cell model to predict and explain single-cell gene expression (Nature Communications, 2025), with code at github.com/cantinilab/scPRINT. What I want to do here is tell the story behind it — the design choices, the dead ends, the surprises, and the infrastructure...","categories": ["PhD"],
+        "tags": ["PhD","Comp-Bio","Foundation Models","Gene Networks"],
         "url": "/projects/about-scprint/",
         "teaser": "/assets/images/scprint.png"
       },{
@@ -359,9 +383,21 @@ var store = [{
         "url": "/projects/xpressor/",
         "teaser": "/assets/images/xpressor.png"
       },{
-        "title": "scPRINT-2",
-        "excerpt":"hello  ","categories": ["PhD"],
-        "tags": ["PhD","Comp-Bio"],
-        "url": "/projects/about-scprint2/",
-        "teaser": "/assets/images/scprint2.png"
+        "title": "The scPRINT-2 Corpus",
+        "excerpt":"In foundation models, data is the fuel. Language models have Common Crawl. Protein models have UniProt &amp; PDB. For single cell, it is cellxgene: 50M cells. But training scPRINT-2 required assembling the largest single-cell RNA-seq dataset ever used for a foundation model: over 350 million cells from 16 eukaryotic organisms,...","categories": ["Thesis"],
+        "tags": ["Single-Cell","Foundation Models","Datasets"],
+        "url": "/projects/the-scprint2-corpus/",
+        "teaser": "/assets/images/scprint2logo.png"
+      },{
+        "title": "Criss-Cross Attention",
+        "excerpt":"Self-attention is one of the most powerful ideas in modern machine learning. It is also, famously, expensive, with O(n²) complexity in sequence length. For most language models, the sequence is made of word tokens. For cell foundation models, the sequence is made of genes. scPRINT-2 processes up to 3,200 genes...","categories": ["Thesis"],
+        "tags": ["Machine Learning","Transformers","Attention"],
+        "url": "/projects/criss-cross-attention/",
+        "teaser": "/assets/images/crisslogo.png"
+      },{
+        "title": "Introducing scPRINT-2",
+        "excerpt":"The field of single-cell foundation models is moving fast. In the past three years, a wave of transformer-based models — Geneformer, scGPT, scFoundation, and our own scPRINT — have been trained on tens of millions of cells and applied to everything from cell type annotation to perturbation prediction. Each paper...","categories": ["Thesis"],
+        "tags": ["Comp-Bio","Foundation Models","Single-Cell"],
+        "url": "/projects/scprint-2/",
+        "teaser": "/assets/images/scprint2logo.png"
       }]

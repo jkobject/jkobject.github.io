@@ -1,7 +1,7 @@
                         importScripts("/assets/js/workbox-v3.6.3/workbox-sw.js");
             workbox.setConfig({modulePathPrefix: "/assets/js/workbox-v3.6.3"});
 
-            self.__precacheManifest = [{"url":"/index.html","revision":"008f0167c2db84654510950e4de7a703"},{"url":"/blog/vcc-starter-pack/","revision":"306b2da00f21394ac3534d20395809ca"},{"url":"/blog/a-year-in-the-phd/","revision":"80b704022807a65afa296c618547a558"},{"url":"/blog/finishing-the-phd/","revision":"78ff0f58d8fbd42d94f29f1638ed2d8a"},{"url":"/blog/about-the-aivc-paper/","revision":"16147e620d3ed7ba6d7468c31d04ac71"},{"url":"/blog/what-are-large-cell-models/","revision":"a03c3c83a5ed3cfffda6506b2f6d6f9a"}];
+            self.__precacheManifest = [{"url":"/index.html","revision":"0dd08443c5b8a8a97060ab3c126adbf2"},{"url":"/blog/gene-regulation-landscape/","revision":"517f8352936231ebc716c78ffcc1aac8"},{"url":"/blog/finishing-the-phd/","revision":"33e6878e58ca24d2741af39b5c77b05d"},{"url":"/blog/lamindb-these/","revision":"fae046d50e720c7e5460195971bc7ee0"},{"url":"/blog/vcc-starter-pack/","revision":"306b2da00f21394ac3534d20395809ca"},{"url":"/blog/a-year-in-the-phd/","revision":"4f3d101095d5ac2bfd5dee2b9a815f7a"}];
             // service-worker.js
 
 // set names for both precache & runtime cache

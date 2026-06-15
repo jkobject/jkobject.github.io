@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#f7f4ef"/>
+<text x="60" y="75" font-family="Inter,Arial" font-size="38" font-weight="700" fill="#222">A null model is a tool</text>
+<rect x="90" y="145" width="250" height="110" rx="18" fill="#d7e8ff" stroke="#222" stroke-width="3"/>
+<text x="145" y="213" font-family="Inter,Arial" font-size="28" font-weight="700" fill="#222">Input D</text>
+<rect x="475" y="145" width="260" height="110" rx="18" fill="#dff4dc" stroke="#222" stroke-width="3"/>
+<text x="518" y="213" font-family="Inter,Arial" font-size="28" font-weight="700" fill="#222">Null model M0</text>
+<rect x="860" y="90" width="250" height="110" rx="18" fill="#fff" stroke="#777" stroke-width="3"/>
+<text x="905" y="158" font-family="Inter,Arial" font-size="24" fill="#222">random D' #1</text>
+<rect x="860" y="230" width="250" height="110" rx="18" fill="#fff" stroke="#777" stroke-width="3"/>
+<text x="905" y="298" font-family="Inter,Arial" font-size="24" fill="#222">random D' #2</text>
+<rect x="860" y="370" width="250" height="110" rx="18" fill="#fff" stroke="#777" stroke-width="3"/>
+<text x="905" y="438" font-family="Inter,Arial" font-size="24" fill="#222">random D' #n</text>
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#222"/></marker></defs>
+<path d="M350 200 L465 200" stroke="#222" stroke-width="5" marker-end="url(#arrow)"/>
+<path d="M745 200 C800 150, 820 145, 850 145" stroke="#222" stroke-width="4" marker-end="url(#arrow)" fill="none"/>
+<path d="M745 200 C805 245, 820 280, 850 285" stroke="#222" stroke-width="4" marker-end="url(#arrow)" fill="none"/>
+<path d="M745 200 C805 350, 810 420, 850 425" stroke="#222" stroke-width="4" marker-end="url(#arrow)" fill="none"/>
+<rect x="390" y="500" width="420" height="70" rx="16" fill="#eadcff" stroke="#222" stroke-width="3"/>
+<text x="430" y="545" font-family="Inter,Arial" font-size="25" font-weight="700" fill="#222">Compare observed R to generated data</text>
+</svg>
