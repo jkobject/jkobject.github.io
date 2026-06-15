@@ -4,7 +4,7 @@ excerpt: "Papers should become human-readable views over a graph of data, tools,
 category: "Frustrations and Solutions"
 date: 2026-06-15
 header:
- teaser: "/assets/images/science-paper-bundle.svg"
+ teaser: "/assets/images/science-library-british.jpg"
 ---
 
 Science still has a strange little habit.
@@ -23,7 +23,9 @@ A paper is a bundle. Inside it are datasets, protocols, pieces of code, models, 
 
 A citation to a paper is a terrible pointer. It rarely says whether we depend on the dataset, the model, the preprocessing step, the theorem, the statistical test, one figure, the code, the protocol, or merely the framing. It gestures toward a bundle and says: trust me, it’s somewhere in there.
 
-![A paper hides a bundle of scientific objects](/assets/images/science-paper-bundle.svg)
+![The British Library: scientific trust still mostly moves through document-shaped objects](/assets/images/science-library-british.jpg)
+
+*The British Library, via Wikimedia Commons / public domain.*
 
 The objects inside a paper do not fail in the same way. A dataset can be contaminated. A model can leak. A protocol can be underspecified. A statistical test can be invalid under the wrong distribution. A proof can have a gap. A benchmark can be saturated or gamed. Lumping all of that into one citation is not sophistication. It is loss of information.
 
@@ -42,8 +44,6 @@ A useful way to split the bundle is into four kinds of objects: **data, tools, r
 Data are the things science can work on. Tools are the things that transform data. Results are data that have become scientific outputs. Certificates are the checks, proofs, protocols, or validation records that explain why a result deserves trust under particular conditions.
 
 This is not meant to be a grand ontology of everything. It is just a cleaner grammar for what papers already contain.
-
-![Data, tools, results, and certificates](/assets/images/science-dtrc-grammar.svg)
 
 ## Data
 
@@ -199,7 +199,18 @@ In biology, the same grammar applies to count matrices, perturbation labels, pro
 
 The fields differ. The objects differ. The standards of trust differ. But the paper is still doing the same overloaded job: packaging data, tools, results, certificates, conditions, and narrative into one object, then asking citations to point at the whole bundle.
 
-![The same grammar across scientific fields](/assets/images/science-cross-fields.svg)
+![ATLAS detector event display: a result is already a structured object, not just a sentence](/assets/images/science-atlas-event.png)
+
+*ATLAS Collaboration event display, via Wikimedia Commons, CC BY-SA 3.0.*
+
+![A molecular spectroscope: tools and conditions are often physical machines and protocols](/assets/images/science-chemistry-spectrometer.jpg)
+
+*Milda 444, Wikimedia Commons, CC BY-SA 4.0.*
+
+![Economics in OpenAlex: even “the literature” can be data](/assets/images/science-economics-openalex.svg)
+
+*OpenAlex economics works chart, Wikimedia Commons, CC BY 4.0.*
+
 
 ## Science as a graph
 
@@ -219,6 +230,10 @@ P2 certifies R2 under conditions C2
 This is what science already does. We just hide it in paragraphs.
 
 The article becomes the view. The graph is where the data, tools, results, and certificates live.
+
+![A network visualization: the shape of knowledge is already graph-like](/assets/images/science-c-elegans-network.jpg)
+
+*C. elegans brain network visualization, via Wikimedia Commons, CC BY-SA 3.0.*
 
 Not a blockchain-for-science gimmick. Not a PDF with a token attached. A real provenance layer for knowledge. Each object has a stable identifier. Each version is explicit. Each dependency is inspectable. Each contributor is attached to the thing they actually contributed. Each downstream use creates an edge in the graph.
 

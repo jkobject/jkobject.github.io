@@ -39,7 +39,7 @@ var store = [{
         "excerpt":"Science still has a strange little habit. A lab spends three years collecting samples. Someone writes a preprocessing script. Someone else changes a threshold. A model gets trained on version 3 of a dataset, evaluated with a slightly different split, plotted into Figure 4, summarized in one cautious sentence, then...","categories": ["Frustrations and Solutions"],
         "tags": [],
         "url": "/ideas/the-new-way-well-do-science/",
-        "teaser": "/assets/images/science-paper-bundle.svg"
+        "teaser": "/assets/images/science-library-british.jpg"
       },{
         "title": "The ultimate commuting: part 1",
         "excerpt":"What if during the coming decades we could see teleportation and pain-free travel becoming somewhat of a reality? Today, transportation of goods, of people has never been so easy. We can go around the world in a day, spend a one week holiday in another continent and no one really...","categories": ["Frustrations and Solutions"],
