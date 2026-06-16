@@ -146,7 +146,7 @@ So the grammar becomes:
 ```text
 Data D
 Tool T, usable under conditions C_T
-Result R = T(D)
+Result R = T(D) = D'
 Certificate P checks the relation between D, T, R, and conditions C_P
 Statement S renders R and P in natural language
 ```
@@ -160,9 +160,9 @@ The structure underneath is closer to:
 ```text
 D = the data
 T = the tool, model, protocol, or analysis
-R = the result
-P = the certificate that checks the relation
-C = the conditions under which the tool and certificate apply
+R = D' = the result
+P = the certificate that checks the relation (often basic and intuitive)
+C = the conditions under which the tool and certificate apply (metadata of the tool) 
 S = the sentence humans read
 ```
 
@@ -170,9 +170,9 @@ For example:
 
 ```text
 D = cohort + expression matrix + phenotype labels
-T = preprocessing pipeline + regression model + statistical test
-M0 = null/reference tool generating expected data under no association
-R = coefficient, p-value, effect size, confidence interval
+T1 = preprocessing pipeline + regression model + statistical test
+T2 = M0 = null/reference tool generating expected data under no association
+R = D' = coefficient, p-value, effect size, confidence interval
 P = certificate comparing R to M0 under conditions C
 S = “Gene X is statistically associated with phenotype Y in this cohort.”
 ```
@@ -199,7 +199,7 @@ In biology, the same grammar applies to count matrices, perturbation labels, pro
 
 The fields differ. The objects differ. The standards of trust differ. But the paper is still doing the same overloaded job: packaging data, tools, results, certificates, conditions, and narrative into one object, then asking citations to point at the whole bundle.
 
-![ATLAS detector event display: a result is already a structured object, not just a sentence](/assets/images/science-atlas-event.png)
+![ATLAS detector event display: a scientific output is already a structured data object, not just a sentence](/assets/images/science-atlas-event.png)
 
 *ATLAS Collaboration event display, via Wikimedia Commons, CC BY-SA 3.0.*
 
@@ -223,7 +223,7 @@ And because results are data, the graph is cumulative:
 ```text
 D0 --T1--> R1
 R1 becomes D1
-D1 --T2--> R2
+D1 + D2 --T2--> R2
 P2 certifies R2 under conditions C2
 ```
 
@@ -250,6 +250,10 @@ This should not be fully automatic. The analogy is formalized mathematics. A mod
 ![AI extracts structure; communities review it](/assets/images/science-ai-formalization.svg)
 
 AI changes the economics of scientific prose. It does not automatically improve scientific trust. If the literature becomes easier to generate than to audit, the unit of trust has to move below the paragraph.
+
+It also raises a more uncomfortable question: do we actually need every scientist to write a full research paper by hand? If the underlying graph contains the citation structure, the dataset lineage, the tools developed, the models used, the certificates attached, the conditions of validity, and a short explanation from the researchers about what they believe matters, then an AI system could often write a better paper-shaped explanation than the authors themselves. Or not just one explanation: a rigorous paper for a reviewer, a short blog post for a neighboring field, a podcast script for a broader audience, a methods-first view for an engineer, or a personalized narrative for a reader who already knows half the background.
+
+In that world, the author's job shifts. The scarce human contribution is not producing generic scientific prose. It is saying what was actually done, what is new, what should be trusted, what remains uncertain, and how the objects connect. The prose becomes a rendering layer over a more precise scientific substrate.
 
 ## Damage control
 
@@ -287,6 +291,8 @@ That combination changes the problem. We no longer need every scientist to manua
 
 The hard part will not be generating more scientific text. That will be easy. The hard part will be maintaining the architecture of trust underneath the text.
 
+This is also why the timing is different. Earlier semantic web projects asked researchers to annotate their work for a hypothetical future machine. Today, machines can help create the annotation, and then turn that structure back into whatever human-facing artifact is needed. The same validated graph could become a paper, a review report, a teaching note, a grant summary, a blog post, or a podcast. The bottleneck moves from writing the canonical text to maintaining the canonical structure.
+
 Future rigorous work will look less like “write another paper” and more like: define the objects clearly, expose their dependencies, say what each citation contributes, record what conditions apply, attach certificates where possible, and track whether each result is supported, contradicted, obsolete, reproduced, or still uncertain.
 
 That is a different kind of scientific labor. It is closer to formalizing mathematics, maintaining open-source infrastructure, and curating a living knowledge graph than to simply publishing another PDF. It will still need human judgment. But AI can make the first pass cheap enough that communities can spend their effort on review, correction, and trust.
@@ -297,12 +303,14 @@ The goal is not to kill the paper. The goal is to stop asking it to be a databas
 
 Keep the essay. Keep the story. Keep the part where a scientist explains why the result is surprising, why the method is elegant, why the negative result matters, or why a strange observation might open a new field. That is not decoration. It is how humans understand science.
 
+But maybe we should stop treating the full paper as the one sacred object that every researcher must manually produce. A paper could be one view among many. The researcher provides the scientific objects, the graph of dependencies, the caveats, and the short human explanation of what they think happened. Then different texts can be generated from that substrate: long or short, technical or intuitive, skeptical or pedagogical, personalized to the reader's background, and updated when the graph changes.
+
 But underneath the story, the scientific objects should be exposed.
 
 This dataset. This version. This tool. This model. This result. This certificate. This condition. This citation edge. This correction. This dependency. This trust status.
 
 If a tool breaks, we should know what breaks downstream. If a result survives three independent certificate paths, we should see that too. If a citation is only borrowing a dataset, it should not be counted as support for a result. If someone built the dataset, maintained the benchmark, proved the lemma, or found the bug, the graph should make that visible.
 
-A PDF is a good way to tell the story of a result. It is a bad place to hide the machinery of trust.
+A PDF is a good way to tell the story of a result. It is a bad place to hide the machinery of trust. And increasingly, the PDF itself may not need to be the thing the scientist writes. It may be the thing the system renders from the machinery, with the scientist accountable for the machinery and for the claims they choose to stand behind.
 
 The next version of science should keep the story and expose the machinery.

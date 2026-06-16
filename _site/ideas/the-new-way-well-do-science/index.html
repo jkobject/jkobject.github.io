@@ -24,14 +24,14 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Jérémie">
 <meta property="og:title" content="The new way we’ll do science">
-<meta property="og:url" content="https://jkobject.com/ideas/the-new-way-well-do-science/">
+<meta property="og:url" content="https://www.jkobject.com/ideas/the-new-way-well-do-science/">
 
 
   <meta property="og:description" content="Papers should become human-readable views over a graph of data, tools, results, and certificates.">
 
 
 
-  <meta property="og:image" content="https://jkobject.com/assets/images/science-library-british.jpg">
+  <meta property="og:image" content="https://www.jkobject.com/assets/images/science-library-british.jpg">
   
 
 
@@ -39,12 +39,12 @@
   <meta name="twitter:site" content="@jkobject">
   <meta name="twitter:title" content="The new way we’ll do science">
   <meta name="twitter:description" content="Papers should become human-readable views over a graph of data, tools, results, and certificates.">
-  <meta name="twitter:url" content="https://jkobject.com/ideas/the-new-way-well-do-science/">
+  <meta name="twitter:url" content="https://www.jkobject.com/ideas/the-new-way-well-do-science/">
 
   
     <meta name="twitter:card" content="summary">
     
-      <meta name="twitter:image" content="https://jkobject.com/assets/images/science-library-british.jpg">
+      <meta name="twitter:image" content="https://www.jkobject.com/assets/images/science-library-british.jpg">
       
     
   
@@ -68,7 +68,7 @@
   
 
 
-<link rel="canonical" href="https://jkobject.com/ideas/the-new-way-well-do-science/">
+<link rel="canonical" href="https://www.jkobject.com/ideas/the-new-way-well-do-science/">
 
 
 
@@ -286,7 +286,7 @@
 
   
     <div class="author__avatar">
-      <a href="https://jkobject.com/">
+      <a href="https://www.jkobject.com/">
         <img src="/assets/images/id.png" alt="Jérémie Kalfon" itemprop="image" class="u-photo">
       </a>
     </div>
@@ -294,7 +294,7 @@
 
   <div class="author__content">
     <h3 class="author__name p-name" itemprop="name">
-      <a class="u-url" rel="me" href="https://jkobject.com/" itemprop="url">Jérémie Kalfon</a>
+      <a class="u-url" rel="me" href="https://www.jkobject.com/" itemprop="url">Jérémie Kalfon</a>
     </h3>
     
       <div class="author__bio p-note" itemprop="description">
@@ -413,7 +413,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="https://jkobject.com/ideas/the-new-way-well-do-science/" itemprop="url">The new way we’ll do science
+            <a href="https://www.jkobject.com/ideas/the-new-way-well-do-science/" itemprop="url">The new way we’ll do science
 </a>
           </h1>
           
@@ -431,7 +431,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          17 minute read
+          19 minute read
         
       </span>
     
@@ -594,7 +594,7 @@
 
 <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Data D
 Tool T, usable under conditions C_T
-Result R = T(D)
+Result R = T(D) = D'
 Certificate P checks the relation between D, T, R, and conditions C_P
 Statement S renders R and P in natural language
 </code></pre></div></div>
@@ -609,18 +609,18 @@ Statement S renders R and P in natural language
 
 <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>D = the data
 T = the tool, model, protocol, or analysis
-R = the result
-P = the certificate that checks the relation
-C = the conditions under which the tool and certificate apply
+R = D' = the result
+P = the certificate that checks the relation (often basic and intuitive)
+C = the conditions under which the tool and certificate apply (metadata of the tool) 
 S = the sentence humans read
 </code></pre></div></div>
 
 <p>For example:</p>
 
 <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>D = cohort + expression matrix + phenotype labels
-T = preprocessing pipeline + regression model + statistical test
-M0 = null/reference tool generating expected data under no association
-R = coefficient, p-value, effect size, confidence interval
+T1 = preprocessing pipeline + regression model + statistical test
+T2 = M0 = null/reference tool generating expected data under no association
+R = D' = coefficient, p-value, effect size, confidence interval
 P = certificate comparing R to M0 under conditions C
 S = “Gene X is statistically associated with phenotype Y in this cohort.”
 </code></pre></div></div>
@@ -647,7 +647,7 @@ S = “Gene X is statistically associated with phenotype Y in this cohort.”
 
 <p>The fields differ. The objects differ. The standards of trust differ. But the paper is still doing the same overloaded job: packaging data, tools, results, certificates, conditions, and narrative into one object, then asking citations to point at the whole bundle.</p>
 
-<p><img src="/assets/images/science-atlas-event.png" alt="ATLAS detector event display: a result is already a structured object, not just a sentence" /></p>
+<p><img src="/assets/images/science-atlas-event.png" alt="ATLAS detector event display: a scientific output is already a structured data object, not just a sentence" /></p>
 
 <p><em>ATLAS Collaboration event display, via Wikimedia Commons, CC BY-SA 3.0.</em></p>
 
@@ -669,7 +669,7 @@ S = “Gene X is statistically associated with phenotype Y in this cohort.”
 
 <div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>D0 --T1--&gt; R1
 R1 becomes D1
-D1 --T2--&gt; R2
+D1 + D2 --T2--&gt; R2
 P2 certifies R2 under conditions C2
 </code></pre></div></div>
 
@@ -696,6 +696,10 @@ P2 certifies R2 under conditions C2
 <p><img src="/assets/images/science-ai-formalization.svg" alt="AI extracts structure; communities review it" /></p>
 
 <p>AI changes the economics of scientific prose. It does not automatically improve scientific trust. If the literature becomes easier to generate than to audit, the unit of trust has to move below the paragraph.</p>
+
+<p>It also raises a more uncomfortable question: do we actually need every scientist to write a full research paper by hand? If the underlying graph contains the citation structure, the dataset lineage, the tools developed, the models used, the certificates attached, the conditions of validity, and a short explanation from the researchers about what they believe matters, then an AI system could often write a better paper-shaped explanation than the authors themselves. Or not just one explanation: a rigorous paper for a reviewer, a short blog post for a neighboring field, a podcast script for a broader audience, a methods-first view for an engineer, or a personalized narrative for a reader who already knows half the background.</p>
+
+<p>In that world, the author’s job shifts. The scarce human contribution is not producing generic scientific prose. It is saying what was actually done, what is new, what should be trusted, what remains uncertain, and how the objects connect. The prose becomes a rendering layer over a more precise scientific substrate.</p>
 
 <h2 id="damage-control">Damage control</h2>
 
@@ -733,6 +737,8 @@ P2 certifies R2 under conditions C2
 
 <p>The hard part will not be generating more scientific text. That will be easy. The hard part will be maintaining the architecture of trust underneath the text.</p>
 
+<p>This is also why the timing is different. Earlier semantic web projects asked researchers to annotate their work for a hypothetical future machine. Today, machines can help create the annotation, and then turn that structure back into whatever human-facing artifact is needed. The same validated graph could become a paper, a review report, a teaching note, a grant summary, a blog post, or a podcast. The bottleneck moves from writing the canonical text to maintaining the canonical structure.</p>
+
 <p>Future rigorous work will look less like “write another paper” and more like: define the objects clearly, expose their dependencies, say what each citation contributes, record what conditions apply, attach certificates where possible, and track whether each result is supported, contradicted, obsolete, reproduced, or still uncertain.</p>
 
 <p>That is a different kind of scientific labor. It is closer to formalizing mathematics, maintaining open-source infrastructure, and curating a living knowledge graph than to simply publishing another PDF. It will still need human judgment. But AI can make the first pass cheap enough that communities can spend their effort on review, correction, and trust.</p>
@@ -743,13 +749,15 @@ P2 certifies R2 under conditions C2
 
 <p>Keep the essay. Keep the story. Keep the part where a scientist explains why the result is surprising, why the method is elegant, why the negative result matters, or why a strange observation might open a new field. That is not decoration. It is how humans understand science.</p>
 
+<p>But maybe we should stop treating the full paper as the one sacred object that every researcher must manually produce. A paper could be one view among many. The researcher provides the scientific objects, the graph of dependencies, the caveats, and the short human explanation of what they think happened. Then different texts can be generated from that substrate: long or short, technical or intuitive, skeptical or pedagogical, personalized to the reader’s background, and updated when the graph changes.</p>
+
 <p>But underneath the story, the scientific objects should be exposed.</p>
 
 <p>This dataset. This version. This tool. This model. This result. This certificate. This condition. This citation edge. This correction. This dependency. This trust status.</p>
 
 <p>If a tool breaks, we should know what breaks downstream. If a result survives three independent certificate paths, we should see that too. If a citation is only borrowing a dataset, it should not be counted as support for a result. If someone built the dataset, maintained the benchmark, proved the lemma, or found the bug, the graph should make that visible.</p>
 
-<p>A PDF is a good way to tell the story of a result. It is a bad place to hide the machinery of trust.</p>
+<p>A PDF is a good way to tell the story of a result. It is a bad place to hide the machinery of trust. And increasingly, the PDF itself may not need to be the thing the scientist writes. It may be the thing the system renders from the machinery, with the scientist accountable for the machinery and for the claims they choose to stand behind.</p>
 
 <p>The next version of science should keep the story and expose the machinery.</p>
 
@@ -794,19 +802,19 @@ P2 certifies R2 under conditions C2
 <section class="page__share">
   <h4 class="page__share-title">Share on</h4>
 
-  <a href="https://x.com/intent/tweet?via=jkobject&text=The+new+way+we%E2%80%99ll+do+science%20https%3A%2F%2Fjkobject.com%2Fideas%2Fthe-new-way-well-do-science%2F" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on X">
+  <a href="https://x.com/intent/tweet?via=jkobject&text=The+new+way+we%E2%80%99ll+do+science%20https%3A%2F%2Fwww.jkobject.com%2Fideas%2Fthe-new-way-well-do-science%2F" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on X">
     <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span> X</span>
   </a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjkobject.com%2Fideas%2Fthe-new-way-well-do-science%2F" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.jkobject.com%2Fideas%2Fthe-new-way-well-do-science%2F" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook">
     <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
   </a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://jkobject.com/ideas/the-new-way-well-do-science/" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.jkobject.com/ideas/the-new-way-well-do-science/" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
     <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
   </a>
 
-  <a href="https://bsky.app/intent/compose?text=The+new+way+we%E2%80%99ll+do+science%20https%3A%2F%2Fjkobject.com%2Fideas%2Fthe-new-way-well-do-science%2F" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Bluesky">
+  <a href="https://bsky.app/intent/compose?text=The+new+way+we%E2%80%99ll+do+science%20https%3A%2F%2Fwww.jkobject.com%2Fideas%2Fthe-new-way-well-do-science%2F" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Bluesky">
     <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span> Bluesky</span>
   </a>
 </section>
@@ -1101,7 +1109,7 @@ P2 certifies R2 under conditions C2
 </div>
 
 
-<div class="page__footer-copyright">&copy; 2026 <a href="https://jkobject.com">Jérémie</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2026 <a href="https://www.jkobject.com">Jérémie</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
@@ -1125,7 +1133,7 @@ P2 certifies R2 under conditions C2
     
   <script>
     var disqus_config = function () {
-      this.page.url = "https://jkobject.com/ideas/the-new-way-well-do-science/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.url = "https://www.jkobject.com/ideas/the-new-way-well-do-science/";  /* Replace PAGE_URL with your page's canonical URL variable */
       this.page.identifier = "/ideas/the-new-way-well-do-science"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
