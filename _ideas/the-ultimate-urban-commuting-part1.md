@@ -3,8 +3,8 @@ title: "The ultimate commuting: part 1"
 excerpt: "What would be the ultimate urban transportation system?"
 category: "Frustrations and Solutions"
 header:
-  teaser: "/assets/images/commuting.avif"
-data: 2021-10-02
+  teaser: "/assets/images/commuting.png"
+date: 2021-10-02
 ---
 
 What if during the coming decades we could see teleportation and pain-free

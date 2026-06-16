@@ -6,7 +6,9 @@ layout: archive
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
-{% if paginator %}
+{% if page.all_recent %}
+  {% assign posts = site.posts | concat: site.ideas | concat: site.opinions | concat: site.projects | where_exp: "item", "item.published != false" | sort: "date" | reverse %}
+{% elsif paginator %}
   {% assign posts = paginator.posts %}
 {% else %}
   {% assign posts = site.posts %}
@@ -14,9 +16,17 @@ layout: archive
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">
-  {% for post in posts %}
-    {% include archive-single.html type=entries_layout %}
-  {% endfor %}
+  {% if page.all_recent %}
+    {% for post in posts limit: site.paginate %}
+      {% include archive-single.html type=entries_layout %}
+    {% endfor %}
+  {% else %}
+    {% for post in posts %}
+      {% include archive-single.html type=entries_layout %}
+    {% endfor %}
+  {% endif %}
 </div>
 
-{% include paginator.html %}
+{% unless page.all_recent %}
+  {% include paginator.html %}
+{% endunless %}

@@ -1,4 +1,10 @@
 var store = [{
+        "title": "Why Rick had to invent to station of Ricks? [FR]",
+        "excerpt":"my take on an aspect of this serie, inspired by the many fan-made-explanations out there Pourquoi Rick a du inventer la station des Ricks ? Dans Rick et Morty, il existe une infinité d’univers parallèles et à travers tous ces univers, seulement une seule station des ricks. Donc si un...","categories": ["random"],
+        "tags": [],
+        "url": "/ideas/why-rick-invented-the-station-of-ricks/",
+        "teaser": "/assets/images/rick_morty.jpg"
+      },{
         "title": "hydroponics and vertical farming",
         "excerpt":"Recently I had fun making some short back of the envelop computation on the use of hydroponics 📨 in a future world. Unregarding any related challenges, what would be the footprint of a factory producing the world’s food supply? 🤔 what is hydroponics? Here by hydroponics I am talking about...","categories": ["Sustaining Humanity"],
         "tags": [],
@@ -10,6 +16,18 @@ var store = [{
         "tags": [],
         "url": "/ideas/the-bioarxiv-of-the-future/",
         "teaser": "/assets/images/twitter.jpeg"
+      },{
+        "title": "The ultimate commuting: part 1",
+        "excerpt":"What if during the coming decades we could see teleportation and pain-free travel becoming somewhat of a reality? Today, transportation of goods, of people has never been so easy. We can go around the world in a day, spend a one week holiday in another continent and no one really...","categories": ["Frustrations and Solutions"],
+        "tags": [],
+        "url": "/ideas/the-ultimate-urban-commuting-part1/",
+        "teaser": "/assets/images/commuting.png"
+      },{
+        "title": "Revolutionizing Medical Care",
+        "excerpt":"The world of medicine is constantly evolving, with new research and advancements being made every day. In order to provide the best possible care to patients, it is crucial for healthcare professionals to stay updated on the latest standards of care. What if we could harness the power of technology...","categories": ["Frustrations and Solutions"],
+        "tags": [],
+        "url": "/ideas/wikipedia-for-doctors/",
+        "teaser": "/assets/images/cell_model.jpeg"
       },{
         "title": "Creating a cell model",
         "excerpt":"I always very much liked the fact that a lot of objectives of big companies and research lab in the AI space started with some hypothesis ➡️ model before going to find out how to build something that gets close to it. Making theories first in biology has been a...","categories": ["Frustrations and Solutions"],
@@ -40,24 +58,6 @@ var store = [{
         "tags": [],
         "url": "/ideas/the-new-way-well-do-science/",
         "teaser": "/assets/images/science-library-british.jpg"
-      },{
-        "title": "The ultimate commuting: part 1",
-        "excerpt":"What if during the coming decades we could see teleportation and pain-free travel becoming somewhat of a reality? Today, transportation of goods, of people has never been so easy. We can go around the world in a day, spend a one week holiday in another continent and no one really...","categories": ["Frustrations and Solutions"],
-        "tags": [],
-        "url": "/ideas/the-ultimate-urban-commuting-part1/",
-        "teaser": "/assets/images/commuting.avif"
-      },{
-        "title": "Why Rick had to invent to station of Ricks? [FR]",
-        "excerpt":"my take on an aspect of this serie, inspired by the many fan-made-explanations out there Pourquoi Rick a du inventer la station des Ricks ? Dans Rick et Morty, il existe une infinité d’univers parallèles et à travers tous ces univers, seulement une seule station des ricks. Donc si un...","categories": ["random"],
-        "tags": [],
-        "url": "/ideas/why-rick-invented-the-station-of-ricks/",
-        "teaser": "/assets/images/rick_morty.jpg"
-      },{
-        "title": "Revolutionizing Medical Care",
-        "excerpt":"The world of medicine is constantly evolving, with new research and advancements being made every day. In order to provide the best possible care to patients, it is crucial for healthcare professionals to stay updated on the latest standards of care. What if we could harness the power of technology...","categories": ["Frustrations and Solutions"],
-        "tags": [],
-        "url": "/ideas/wikipedia-for-doctors/",
-        "teaser": "/assets/images/cell_model.jpeg"
       },{
         "title": "Are We Really Conscious? pt1",
         "excerpt":"1. On the emergence of life This is the first part of a Serie on consciousness, life and intelligence As far as I can recall, the idea of an intelligent design in life always seemed strange to me. It seemed like the adults had little imagination to involve yet another...","categories": ["On consciousness"],

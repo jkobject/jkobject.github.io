@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://jkobject.com/ideas/why-rick-invented-the-station-of-ricks/</loc>
+<lastmod>2018-08-10T00:00:00+00:00</lastmod>
+</url>
+<url>
 <loc>https://jkobject.com/ideas/hydropony/</loc>
 <lastmod>2020-10-10T00:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>https://jkobject.com/ideas/the-bioarxiv-of-the-future/</loc>
 <lastmod>2021-10-02T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>https://jkobject.com/ideas/the-ultimate-urban-commuting-part1/</loc>
+<lastmod>2021-10-02T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>https://jkobject.com/ideas/wikipedia-for-doctors/</loc>
+<lastmod>2022-03-02T00:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>https://jkobject.com/ideas/creating-cell-model/</loc>
@@ -27,18 +39,6 @@
 <url>
 <loc>https://jkobject.com/ideas/the-new-way-well-do-science/</loc>
 <lastmod>2026-06-15T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://jkobject.com/ideas/the-ultimate-urban-commuting-part1/</loc>
-<lastmod>2026-06-15T17:24:15+00:00</lastmod>
-</url>
-<url>
-<loc>https://jkobject.com/ideas/why-rick-invented-the-station-of-ricks/</loc>
-<lastmod>2018-08-10T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://jkobject.com/ideas/wikipedia-for-doctors/</loc>
-<lastmod>2022-03-02T00:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>https://jkobject.com/opinions/on-the-intelligent-design/</loc>
@@ -387,6 +387,9 @@
 </url>
 <url>
 <loc>https://jkobject.com/tags/</loc>
+</url>
+<url>
+<loc>https://jkobject.com/CLAUDE/</loc>
 </url>
 <url>
 <loc>https://jkobject.com/SECURITY/</loc>
