@@ -52,7 +52,8 @@ La cellule régule l'expression de ses gènes à **7 niveaux emboîtés**, de l'
 | `NSD` | Non-Stop Decay. Dégradation liée à un ARNm sans codon stop fonctionnel. |
 | `SUMO` | Small Ubiquitin-like Modifier. Petite protéine conjuguée aux substrats comme marque post-traductionnelle. |
 | `NEDDylation` | Conjugaison de NEDD8, notamment sur les cullines pour activer des E3 ligases CRL. |
-| italique | Dans les descriptions, l'italique sert aux noms de gènes/protéines quand cela aide la lecture ; les boîtes du graphe restent des noms de mécanismes. |
+| gras | Dans l'image, le nom en haut de chaque boîte est le nom code du mécanisme et correspond à une entrée 1-to-1 du glossaire. |
+| italique | Dans l'image et les descriptions, l'italique sert aux noms de gènes/protéines quand cela aide la lecture ; les boîtes du graphe restent des noms de mécanismes. |
 
 ## Architecture réductionniste — 3 stratégies fondamentales
 

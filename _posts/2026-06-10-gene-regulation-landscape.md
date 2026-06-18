@@ -51,6 +51,52 @@ mechanisms, not separate boxes in the pathway.
 
 [![Gene Regulation Landscape](/assets/images/gene-reg-v7.png)](/assets/images/gene-reg-v7.png)
 
+## Box Glossary
+
+Each box in the image has exactly one entry here. Box titles are the short code
+names; italic text inside the image marks genes or proteins when the label needs
+examples.
+
+| Code | Layer | Meaning |
+|------|-------|---------|
+| `ZONES` | 3D genome | A/B chromatin compartments. |
+| `FENCES` | 3D genome | TAD boundaries and insulation by CTCF/cohesin. |
+| `BRIDGES` | 3D genome | Enhancer-promoter loops. |
+| `HUBS` | 3D genome | Super-enhancers and Pol II condensates. |
+| `SILENCER` | Epigenetics | DNA methylation and repressive chromatin memory. |
+| `OPENER` | Epigenetics | Histone acetylation that opens chromatin. |
+| `WRITER-A` | Epigenetics | Activating histone methylation marks. |
+| `WRITER-R` | Epigenetics | Repressive histone methylation marks. |
+| `SHUFFLER` | Epigenetics | ATP-dependent nucleosome remodeling. |
+| `GUIDES` | Epigenetics | ncRNAs that recruit chromatin regulators. |
+| `KEYS` | Transcription | Transcription factors, including pioneer factors. |
+| `SCRIBE` | Transcription | Pol II pausing, release, and CTD phosphorylation. |
+| `SHIELD` | Co-transcriptional | 5' capping and cap-dependent protection/export. |
+| `SPLICER` | Co-transcriptional | Alternative splicing coupled to Pol II kinetics. |
+| `TRIMMER` | Co-transcriptional | Alternative polyadenylation and 3'UTR choice. |
+| `RECODER` | Co-transcriptional | A-to-I RNA editing by ADARs. |
+| `STAMP` | Post-transcriptional | m6A RNA marking and reader-dependent fate choices. |
+| `READERS` | Post-transcriptional | RNA-binding proteins that tune RNA processing, stability, localization, and translation. |
+| `DARTS` | Post-transcriptional | miRNA-RISC targeting. |
+| `SPONGE` | Post-transcriptional | Cytoplasmic lncRNAs and ceRNA-like buffering. |
+| `CENSOR` | Post-transcriptional | Nonsense-mediated mRNA decay. |
+| `TIMER` | Post-transcriptional | mRNA half-life, deadenylation, decapping, and decay. |
+| `CLIPS` | Post-transcriptional | RNA G-quadruplex structures that affect scanning and translation. |
+| `VAULT` | Post-transcriptional | Stress granules and P-bodies for RNA storage or decay. |
+| `FORGE` | Translation | Starting cap-dependent translation through mTOR/eIF4F. |
+| `BRAKE` | Translation | Slowing global translation during stress through ISR/eIF2α-P. |
+| `DECOY` | Translation | uORFs that divert scanning ribosomes and gate main ORF translation. |
+| `BYPASS` | Translation | IRES-driven translation without the normal cap/scanning route. |
+| `TEMPO` | Translation | Ribosome speed, pausing, codon usage, and co-translational folding. |
+| `INSPECTOR` | Translation | RQC/NGD/NSD surveillance of stalled or broken translation. |
+| `PHOSPHO` | Post-translational | Phosphorylation/O-GlcNAc switches for protein activity and interactions. |
+| `UBI` | Post-translational | Ubiquitin-chain logic that routes proteins to signaling, proteasome, or autophagy. |
+| `SUMO_NEDD` | Post-translational | SUMO and NEDD8 marks controlling localization, repression, and E3 ligase activity. |
+| `PROTEASOME` | Post-translational | Ubiquitin-proteasome degradation of short-lived or damaged proteins. |
+| `AUTOPHAGY` | Post-translational | Lysosomal clearance of large protein or organellar cargo. |
+| `CHAPERONES` | Post-translational | Protein folding, refolding, triage, and ER-stress UPR. |
+| `PAR` | Post-translational | PARP/PAR signaling at DNA damage and repair condensates. |
+
 ## The Seven Layers
 
 The map follows the flow from DNA to RNA to protein:

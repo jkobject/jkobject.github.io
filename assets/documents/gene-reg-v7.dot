@@ -43,10 +43,34 @@ digraph gene_regulation {
         bgcolor="#0c1e35"
         margin=14
 
-        ZONES [label="ZONES\nA/B compartments\n(Hi-C  A=active / B=inactive)" fillcolor="#1e3a5f" fontcolor="#bfdbfe" color="#60a5fa"]
-        FENCES [label="FENCES\nTADs (CTCF + Cohesin)\nloop extrusion → insulation" fillcolor="#1e3a5f" fontcolor="#bfdbfe" color="#60a5fa"]
-        BRIDGES [label="BRIDGES\nEnhancer→Promoter loops\n(Mediator + Cohesin + YY1)" fillcolor="#1e3a5f" fontcolor="#bfdbfe" color="#60a5fa"]
-        HUBS [label="HUBS\nSuper-enhancers / Pol II condensates\n(LLPS + BRD4 + master TFs)" fillcolor="#162d4a" fontcolor="#bfdbfe" color="#22d3ee" style="filled,rounded,dotted,bold" penwidth=2.8]
+        ZONES [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>ZONES</B></TD></TR>
+                    <TR><TD>A/B compartments</TD></TR>
+                    <TR><TD>(Hi-C  A=active / B=inactive)</TD></TR>
+                </TABLE>
+            > fillcolor="#1e3a5f" fontcolor="#bfdbfe" color="#60a5fa"]
+        FENCES [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>FENCES</B></TD></TR>
+                    <TR><TD>TADs (CTCF + Cohesin)</TD></TR>
+                    <TR><TD>loop extrusion → insulation</TD></TR>
+                </TABLE>
+            > fillcolor="#1e3a5f" fontcolor="#bfdbfe" color="#60a5fa"]
+        BRIDGES [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>BRIDGES</B></TD></TR>
+                    <TR><TD>Enhancer→Promoter loops</TD></TR>
+                    <TR><TD>(Mediator + Cohesin + YY1)</TD></TR>
+                </TABLE>
+            > fillcolor="#1e3a5f" fontcolor="#bfdbfe" color="#60a5fa"]
+        HUBS [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>HUBS</B></TD></TR>
+                    <TR><TD>Super-enhancers / Pol II condensates</TD></TR>
+                    <TR><TD>(LLPS + BRD4 + master TFs)</TD></TR>
+                </TABLE>
+            > fillcolor="#162d4a" fontcolor="#bfdbfe" color="#22d3ee" style="filled,rounded,dotted,bold" penwidth=2.8]
     }
 
     // ============================================================
@@ -61,12 +85,51 @@ digraph gene_regulation {
         bgcolor="#0a2215"
         margin=14
 
-        SILENCER [label="SILENCER\nDNA methylation\n(DNMT1/3A/3B ↔ TET  5mC→5hmC)" fillcolor="#14532d" fontcolor="#bbf7d0" color="#4ade80"]
-        OPENER   [label="OPENER\nHistone acetylation\n(HATs: p300/CBP  HDACs)\nH3K27ac, H3K9ac" fillcolor="#14532d" fontcolor="#bbf7d0" color="#4ade80"]
-        WRITER_A [label="WRITER-A\nActivating histone methylation\nH3K4me3 (MLL)  H3K36me3 (SETD2)" fillcolor="#14532d" fontcolor="#bbf7d0" color="#4ade80"]
-        WRITER_R [label="WRITER-R\nRepressive histone methylation\nH3K27me3 (PRC2/EZH2)\nH3K9me3 (SUV39H)  bivalent domains" fillcolor="#14532d" fontcolor="#bbf7d0" color="#4ade80"]
-        SHUFFLER [label="SHUFFLER\nATP-dependent chromatin remodeling\n(SWI/SNF, ISWI, CHD, INO80)" fillcolor="#14532d" fontcolor="#bbf7d0" color="#4ade80"]
-        GUIDES   [label="GUIDES\nEpigenetic ncRNAs\n(piRNA → DNMT3  lncRNA→PRC2\nXIST, HOTAIR, KCNQ1OT1)" fillcolor="#0f3d23" fontcolor="#bbf7d0" color="#4ade80"]
+        SILENCER [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>SILENCER</B></TD></TR>
+                    <TR><TD>DNA methylation</TD></TR>
+                    <TR><TD>(DNMT1/3A/3B ↔ TET  5mC→5hmC)</TD></TR>
+                </TABLE>
+            > fillcolor="#14532d" fontcolor="#bbf7d0" color="#4ade80"]
+        OPENER   [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>OPENER</B></TD></TR>
+                    <TR><TD>Histone acetylation</TD></TR>
+                    <TR><TD>(HATs: p300/CBP  HDACs)</TD></TR>
+                    <TR><TD>H3K27ac, H3K9ac</TD></TR>
+                </TABLE>
+            > fillcolor="#14532d" fontcolor="#bbf7d0" color="#4ade80"]
+        WRITER_A [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>WRITER-A</B></TD></TR>
+                    <TR><TD>Activating histone methylation</TD></TR>
+                    <TR><TD>H3K4me3 (MLL)  H3K36me3 (SETD2)</TD></TR>
+                </TABLE>
+            > fillcolor="#14532d" fontcolor="#bbf7d0" color="#4ade80"]
+        WRITER_R [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>WRITER-R</B></TD></TR>
+                    <TR><TD>Repressive histone methylation</TD></TR>
+                    <TR><TD>H3K27me3 (PRC2/EZH2)</TD></TR>
+                    <TR><TD>H3K9me3 (SUV39H)  bivalent domains</TD></TR>
+                </TABLE>
+            > fillcolor="#14532d" fontcolor="#bbf7d0" color="#4ade80"]
+        SHUFFLER [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>SHUFFLER</B></TD></TR>
+                    <TR><TD>ATP-dependent chromatin remodeling</TD></TR>
+                    <TR><TD>(SWI/SNF, ISWI, CHD, INO80)</TD></TR>
+                </TABLE>
+            > fillcolor="#14532d" fontcolor="#bbf7d0" color="#4ade80"]
+        GUIDES   [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>GUIDES</B></TD></TR>
+                    <TR><TD>Epigenetic ncRNAs</TD></TR>
+                    <TR><TD>(piRNA → DNMT3  lncRNA→PRC2</TD></TR>
+                    <TR><TD>XIST, HOTAIR, KCNQ1OT1)</TD></TR>
+                </TABLE>
+            > fillcolor="#0f3d23" fontcolor="#bbf7d0" color="#4ade80"]
     }
 
     // ============================================================
@@ -81,8 +144,22 @@ digraph gene_regulation {
         bgcolor="#2a2000"
         margin=14
 
-        KEYS  [label="KEYS\nTranscription factors (TFs)\n(Pioneer: FOXA1, OCT4, GATA3\n~1600 human TFs)" fillcolor="#78350f" fontcolor="#fef3c7" color="#f59e0b"]
-        SCRIBE [label="SCRIBE\nPol II + Pausing\n(NELF+DSIF → P-TEFb / CDK9)\nCTD phospho-code: Ser5/Ser2/Ser7" fillcolor="#78350f" fontcolor="#fef3c7" color="#f59e0b" style="filled,rounded,bold" penwidth=2.2]
+        KEYS  [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>KEYS</B></TD></TR>
+                    <TR><TD>Transcription factors (TFs)</TD></TR>
+                    <TR><TD>(Pioneer: FOXA1, OCT4, GATA3</TD></TR>
+                    <TR><TD>~1600 human TFs)</TD></TR>
+                </TABLE>
+            > fillcolor="#78350f" fontcolor="#fef3c7" color="#f59e0b"]
+        SCRIBE [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>SCRIBE</B></TD></TR>
+                    <TR><TD>Pol II + Pausing</TD></TR>
+                    <TR><TD>(NELF+DSIF → P-TEFb / <I>CDK9</I>)</TD></TR>
+                    <TR><TD>CTD phospho-code: Ser5/Ser2/Ser7</TD></TR>
+                </TABLE>
+            > fillcolor="#78350f" fontcolor="#fef3c7" color="#f59e0b" style="filled,rounded,bold" penwidth=2.2]
     }
 
     // ============================================================
@@ -97,10 +174,37 @@ digraph gene_regulation {
         bgcolor="#2d1200"
         margin=14
 
-        SHIELD  [label="SHIELD\n5' Capping (m7G)\n(Ser5-P CTD → CBC → eIF4E)" fillcolor="#7c2d12" fontcolor="#fed7aa" color="#fb923c"]
-        SPLICER [label="SPLICER\nAlternative splicing\n(SR proteins, hnRNPs, spliceosome)\nkinetic coupling with Pol II" fillcolor="#7c2d12" fontcolor="#fed7aa" color="#fb923c" style="filled,rounded,bold" penwidth=2.2]
-        TRIMMER [label="TRIMMER\nAlternative polyadenylation (APA)\nCPSF/CstF  AAUAAA\n→ 3'UTR length" fillcolor="#7c2d12" fontcolor="#fed7aa" color="#fb923c"]
-        RECODER [label="RECODER\nA→I Editing (ADAR1/ADAR2)\nADARs → inosine\n→ recoding + splice + NMD" fillcolor="#6b2500" fontcolor="#fed7aa" color="#fb923c"]
+        SHIELD  [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>SHIELD</B></TD></TR>
+                    <TR><TD>5' Capping (m7G)</TD></TR>
+                    <TR><TD>(Ser5-P CTD → CBC → <I>eIF4E</I>)</TD></TR>
+                </TABLE>
+            > fillcolor="#7c2d12" fontcolor="#fed7aa" color="#fb923c"]
+        SPLICER [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>SPLICER</B></TD></TR>
+                    <TR><TD>Alternative splicing</TD></TR>
+                    <TR><TD>(SR proteins, hnRNPs, spliceosome)</TD></TR>
+                    <TR><TD>kinetic coupling with Pol II</TD></TR>
+                </TABLE>
+            > fillcolor="#7c2d12" fontcolor="#fed7aa" color="#fb923c" style="filled,rounded,bold" penwidth=2.2]
+        TRIMMER [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>TRIMMER</B></TD></TR>
+                    <TR><TD>Alternative polyadenylation (APA)</TD></TR>
+                    <TR><TD>CPSF/CstF  AAUAAA</TD></TR>
+                    <TR><TD>→ 3'UTR length</TD></TR>
+                </TABLE>
+            > fillcolor="#7c2d12" fontcolor="#fed7aa" color="#fb923c"]
+        RECODER [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>RECODER</B></TD></TR>
+                    <TR><TD>A→I Editing (ADAR1/ADAR2)</TD></TR>
+                    <TR><TD>ADARs → inosine</TD></TR>
+                    <TR><TD>→ recoding + splice + NMD</TD></TR>
+                </TABLE>
+            > fillcolor="#6b2500" fontcolor="#fed7aa" color="#fb923c"]
     }
 
     // ============================================================
@@ -115,14 +219,70 @@ digraph gene_regulation {
         bgcolor="#1a0830"
         margin=14
 
-        STAMP   [label="STAMP\nm6A epitranscriptome\n(METTL3/14 → FTO/ALKBH5\nYTHDF1/2/3, YTHDC1)" fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#a78bfa" style="filled,rounded,bold" penwidth=2.2]
-        READERS [label="READERS\nRegulatory RBPs (~1500)\n(HuR, TTP, FMRP, Staufen\nSR proteins, hnRNPs)" fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#a78bfa" style="filled,rounded,bold" penwidth=2.2]
-        DARTS   [label="DARTS\nmiRNA-RISC\n(Drosha→Dicer→AGO2)\n~2500 miRNA · 7 nt seed" fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#a78bfa"]
-        SPONGE  [label="SPONGE\nCytoplasmic lncRNAs\n(ceRNA: CDR1as, HULC\nlincRNA-p21, GAS5)" fillcolor="#3b1570" fontcolor="#ddd6fe" color="#a78bfa"]
-        CENSOR  [label="CENSOR\nNMD\n(UPF1 + EJC + SMG1\nPTC >50 nt upstream of EJC)" fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#f472b6" style="filled,rounded,dashed" penwidth=2.4]
-        TIMER   [label="TIMER\nmRNA stability / decay\n(CCR4-NOT→XRN1\ndeadenylation→decapping)" fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#f472b6" style="filled,rounded,dashed" penwidth=2.4]
-        CLIPS   [label="CLIPS\nRNA G-quadruplexes (rG4)\n5'UTR → blocks scanning\nDHX36, eIF4A helicase" fillcolor="#3b1570" fontcolor="#ddd6fe" color="#a78bfa"]
-        VAULT   [label="VAULT\nStress granules / P-bodies\n(G3BP1, TIA-1 / DCP1/2\nLLPS → storage or decay)" fillcolor="#3b1570" fontcolor="#ddd6fe" color="#22d3ee" style="filled,rounded,dotted" penwidth=2.4]
+        STAMP   [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>STAMP</B></TD></TR>
+                    <TR><TD>m6A epitranscriptome</TD></TR>
+                    <TR><TD>(<I>METTL3/14</I> → <I>FTO/ALKBH5</I></TD></TR>
+                    <TR><TD><I>YTHDF1/2/3</I>, <I>YTHDC1</I>)</TD></TR>
+                </TABLE>
+            > fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#a78bfa" style="filled,rounded,bold" penwidth=2.2]
+        READERS [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>READERS</B></TD></TR>
+                    <TR><TD>Regulatory RBPs (~1500)</TD></TR>
+                    <TR><TD>(<I>HuR</I>, <I>TTP</I>, <I>FMRP</I>, <I>Staufen</I></TD></TR>
+                    <TR><TD>SR proteins, hnRNPs)</TD></TR>
+                </TABLE>
+            > fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#a78bfa" style="filled,rounded,bold" penwidth=2.2]
+        DARTS   [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>DARTS</B></TD></TR>
+                    <TR><TD>miRNA-RISC</TD></TR>
+                    <TR><TD>(<I>Drosha</I>→<I>Dicer</I>→<I>AGO2</I>)</TD></TR>
+                    <TR><TD>~2500 miRNA · 7 nt seed</TD></TR>
+                </TABLE>
+            > fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#a78bfa"]
+        SPONGE  [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>SPONGE</B></TD></TR>
+                    <TR><TD>Cytoplasmic lncRNAs</TD></TR>
+                    <TR><TD>(ceRNA: <I>CDR1as</I>, <I>HULC</I></TD></TR>
+                    <TR><TD><I>lincRNA-p21</I>, <I>GAS5</I>)</TD></TR>
+                </TABLE>
+            > fillcolor="#3b1570" fontcolor="#ddd6fe" color="#a78bfa"]
+        CENSOR  [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>CENSOR</B></TD></TR>
+                    <TR><TD>NMD</TD></TR>
+                    <TR><TD>(<I>UPF1</I> + EJC + <I>SMG1</I></TD></TR>
+                    <TR><TD>PTC &gt;50 nt upstream of EJC)</TD></TR>
+                </TABLE>
+            > fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#f472b6" style="filled,rounded,dashed" penwidth=2.4]
+        TIMER   [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>TIMER</B></TD></TR>
+                    <TR><TD>mRNA stability / decay</TD></TR>
+                    <TR><TD>(<I>CCR4-NOT</I>→<I>XRN1</I></TD></TR>
+                    <TR><TD>deadenylation→decapping)</TD></TR>
+                </TABLE>
+            > fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#f472b6" style="filled,rounded,dashed" penwidth=2.4]
+        CLIPS   [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>CLIPS</B></TD></TR>
+                    <TR><TD>RNA G-quadruplexes (rG4)</TD></TR>
+                    <TR><TD>5'UTR → blocks scanning</TD></TR>
+                    <TR><TD><I>DHX36</I>, <I>eIF4A</I> helicase</TD></TR>
+                </TABLE>
+            > fillcolor="#3b1570" fontcolor="#ddd6fe" color="#a78bfa"]
+        VAULT   [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>VAULT</B></TD></TR>
+                    <TR><TD>Stress granules / P-bodies</TD></TR>
+                    <TR><TD>(<I>G3BP1</I>, <I>TIA-1</I> / <I>DCP1/2</I></TD></TR>
+                    <TR><TD>LLPS → storage or decay)</TD></TR>
+                </TABLE>
+            > fillcolor="#3b1570" fontcolor="#ddd6fe" color="#22d3ee" style="filled,rounded,dotted" penwidth=2.4]
     }
 
     // ============================================================
@@ -137,12 +297,54 @@ digraph gene_regulation {
         bgcolor="#2d0000"
         margin=14
 
-        FORGE  [label="FORGE\nmTOR → eIF4F\n(4E-BP1 → eIF4E-eIF4G-eIF4A)\ncap-dependent · 5'UTR scanning" fillcolor="#7f1d1d" fontcolor="#fee2e2" color="#f87171"]
-        BRAKE  [label="BRAKE\nISR / eIF2α-P\n(GCN2, PERK, HRI, PKR)\n→ global repression + ATF4 induction" fillcolor="#7f1d1d" fontcolor="#fee2e2" color="#f87171" style="filled,rounded,bold" penwidth=2.2]
-        DECOY  [label="DECOY\nuORFs\n(~50% mammalian mRNAs)\nATF4, GCN4 bypass under ISR" fillcolor="#7f1d1d" fontcolor="#fee2e2" color="#f87171"]
-        BYPASS [label="BYPASS\nIRES\n(cap-independent\nITAFs: PTB, DAP5, hnRNPQ)\nATF4, HIF-1α, VEGF, p53" fillcolor="#7f1d1d" fontcolor="#fee2e2" color="#f87171"]
-        TEMPO [label="TEMPO\nCodon usage / tRNA mods\nribosome speed + stalling\nco-translational folding" fillcolor="#7f1d1d" fontcolor="#fee2e2" color="#f87171"]
-        INSPECTOR [label="INSPECTOR\nTranslation surveillance\n(RQC / NGD / NSD)\nPELO, HBS1L, LTN1" fillcolor="#7f1d1d" fontcolor="#fee2e2" color="#f87171"]
+        FORGE  [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>FORGE</B></TD></TR>
+                    <TR><TD>start cap-dependent translation</TD></TR>
+                    <TR><TD><I>mTORC1</I> → <I>eIF4F</I> assembly</TD></TR>
+                    <TR><TD><I>4E-BP1</I> frees <I>eIF4E</I>; 5'UTR scan</TD></TR>
+                </TABLE>
+            > fillcolor="#7f1d1d" fontcolor="#fee2e2" color="#f87171"]
+        BRAKE  [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>BRAKE</B></TD></TR>
+                    <TR><TD>slow global translation under stress</TD></TR>
+                    <TR><TD>ISR: <I>eIF2α</I>-P limits ternary complex</TD></TR>
+                    <TR><TD><I>GCN2</I>/<I>PERK</I>/<I>HRI</I>/<I>PKR</I> → <I>ATF4</I></TD></TR>
+                </TABLE>
+            > fillcolor="#7f1d1d" fontcolor="#fee2e2" color="#f87171" style="filled,rounded,bold" penwidth=2.2]
+        DECOY  [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>DECOY</B></TD></TR>
+                    <TR><TD>divert scanning ribosomes with uORFs</TD></TR>
+                    <TR><TD>stress bypass can expose main ORF</TD></TR>
+                    <TR><TD><I>ATF4</I>, <I>GCN4</I> logic</TD></TR>
+                </TABLE>
+            > fillcolor="#7f1d1d" fontcolor="#fee2e2" color="#f87171"]
+        BYPASS [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>BYPASS</B></TD></TR>
+                    <TR><TD>translate without cap/scanning</TD></TR>
+                    <TR><TD>IRES + ITAFs recruit 40S directly</TD></TR>
+                    <TR><TD><I>PTB</I>, <I>DAP5</I>, <I>hnRNPQ</I>; <I>HIF1A</I>, <I>VEGFA</I></TD></TR>
+                </TABLE>
+            > fillcolor="#7f1d1d" fontcolor="#fee2e2" color="#f87171"]
+        TEMPO [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>TEMPO</B></TD></TR>
+                    <TR><TD>tune ribosome speed and pausing</TD></TR>
+                    <TR><TD>codon bias + tRNA/rRNA modifications</TD></TR>
+                    <TR><TD>stalling + co-translational folding</TD></TR>
+                </TABLE>
+            > fillcolor="#7f1d1d" fontcolor="#fee2e2" color="#f87171"]
+        INSPECTOR [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>INSPECTOR</B></TD></TR>
+                    <TR><TD>rescue stalled or broken translation</TD></TR>
+                    <TR><TD>RQC / NGD / NSD surveillance</TD></TR>
+                    <TR><TD><I>PELO</I>, <I>HBS1L</I>, <I>LTN1</I></TD></TR>
+                </TABLE>
+            > fillcolor="#7f1d1d" fontcolor="#fee2e2" color="#f87171"]
     }
 
     // ============================================================
@@ -157,24 +359,66 @@ digraph gene_regulation {
         bgcolor="#1c1c1c"
         margin=14
 
-        PHOSPHO    [label="PHOSPHO / O-GlcNAc\nPhosphorylation\n(kinases ↔ phosphatases)" fillcolor="#1e293b" fontcolor="#e2e8f0" color="#94a3b8"]
-        UBI        [label="UBIQUITIN CODE\nK48→proteasome · K63→signal\n(E1/E2/E3 cascade)" fillcolor="#1e293b" fontcolor="#e2e8f0" color="#94a3b8" style="filled,rounded,bold" penwidth=2.2]
-        SUMO_NEDD  [label="SUMO / NEDDylation\n(UBL family\nSTUbLs: SUMO→Ub)" fillcolor="#172030" fontcolor="#e2e8f0" color="#94a3b8"]
+        PHOSPHO    [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>PHOSPHO</B></TD></TR>
+                    <TR><TD>switch protein activity or interactions</TD></TR>
+                    <TR><TD>kinases ↔ phosphatases; O-GlcNAc crosstalk</TD></TR>
+                    <TR><TD><I>PERK</I>/<I>GCN2</I> → <I>eIF2α</I>; <I>CDK9</I> → Pol II</TD></TR>
+                </TABLE>
+            > fillcolor="#1e293b" fontcolor="#e2e8f0" color="#94a3b8"]
+        UBI        [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>UBI</B></TD></TR>
+                    <TR><TD>route proteins by ubiquitin chain type</TD></TR>
+                    <TR><TD>K48→proteasome · K63→signal/autophagy</TD></TR>
+                    <TR><TD>E1/E2/E3 cascade; degron readers</TD></TR>
+                </TABLE>
+            > fillcolor="#1e293b" fontcolor="#e2e8f0" color="#94a3b8" style="filled,rounded,bold" penwidth=2.2]
+        SUMO_NEDD  [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>SUMO_NEDD</B></TD></TR>
+                    <TR><TD>change localization, repression, or E3 activity</TD></TR>
+                    <TR><TD>SUMO marks nuclear complexes</TD></TR>
+                    <TR><TD>NEDD8 activates cullin-RING ligases</TD></TR>
+                </TABLE>
+            > fillcolor="#172030" fontcolor="#e2e8f0" color="#94a3b8"]
         PROTEASOME [
             label=<
                 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
                     <TR>
-                        <TD><FONT POINT-SIZE="10">UPS / Proteasome</FONT></TD>
+                        <TD><FONT POINT-SIZE="10"><B>PROTEASOME</B></FONT></TD>
                         <TD><FONT POINT-SIZE="8" COLOR="#22d3ee">LLPS</FONT></TD>
                     </TR>
-                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="9">26S (19S+20S)<BR/>+ proteolytic condensates</FONT></TD></TR>
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="9">destroy short-lived/damaged proteins<BR/>26S UPS reads K48-polyUb<BR/>condensates concentrate cargo</FONT></TD></TR>
                 </TABLE>
             >
             fillcolor="#1e293b" fontcolor="#e2e8f0" color="#f472b6" style="filled,rounded,dashed,bold" penwidth=2.8
         ]
-        AUTOPHAGY  [label="Selective autophagy\n(p62/SQSTM1 → lysosome\nNBR1, OPTN)" fillcolor="#172030" fontcolor="#e2e8f0" color="#f472b6" style="filled,rounded,dashed" penwidth=2.4]
-        CHAPERONES [label="Chaperones / UPR\n(Hsp70, Hsp90, CCT\nIRE1, PERK, ATF6)" fillcolor="#1e293b" fontcolor="#e2e8f0" color="#94a3b8"]
-        PAR        [label="ADP-ribosylation\nPARP1 / PAR\n(DDR + condensates)" fillcolor="#172030" fontcolor="#e2e8f0" color="#22d3ee" style="filled,rounded,dotted" penwidth=2.4]
+        AUTOPHAGY  [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>AUTOPHAGY</B></TD></TR>
+                    <TR><TD>clear large protein/organellar cargo</TD></TR>
+                    <TR><TD><I>p62/SQSTM1</I> bridges ubiquitin to <I>LC3</I></TD></TR>
+                    <TR><TD>lysosome recycling feeds <I>mTORC1</I></TD></TR>
+                </TABLE>
+            > fillcolor="#172030" fontcolor="#e2e8f0" color="#f472b6" style="filled,rounded,dashed" penwidth=2.4]
+        CHAPERONES [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>CHAPERONES</B></TD></TR>
+                    <TR><TD>fold, refold, or triage proteins</TD></TR>
+                    <TR><TD><I>Hsp70/Hsp90/CCT</I> assist folding</TD></TR>
+                    <TR><TD>UPR: <I>IRE1</I>, <I>PERK</I>, <I>ATF6</I> sense ER stress</TD></TR>
+                </TABLE>
+            > fillcolor="#1e293b" fontcolor="#e2e8f0" color="#94a3b8"]
+        PAR        [label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR><TD><B>PAR</B></TD></TR>
+                    <TR><TD>mark DNA damage with ADP-ribose chains</TD></TR>
+                    <TR><TD><I>PARP1</I> builds PAR to recruit repair factors</TD></TR>
+                    <TR><TD>PAR nucleates repair condensates</TD></TR>
+                </TABLE>
+            > fillcolor="#172030" fontcolor="#e2e8f0" color="#22d3ee" style="filled,rounded,dotted" penwidth=2.4]
     }
 
     // ============================================================
@@ -200,6 +444,13 @@ digraph gene_regulation {
                     <TR><TD ALIGN="LEFT"><FONT COLOR="#ef4444">⊣ blunt arrow = inhibition/repression</FONT></TD></TR>
                     <TR><TD ALIGN="LEFT"><FONT COLOR="#22d3ee">cyan dotted border = LLPS / condensate mechanism</FONT></TD></TR>
                     <TR><TD ALIGN="LEFT"><FONT COLOR="#f472b6">pink dashed border = decay / clearance mechanism</FONT></TD></TR>
+                    <TR><TD ALIGN="LEFT"><FONT COLOR="#93c5fd">blue boxes = layer 0 / 3D genome</FONT></TD></TR>
+                    <TR><TD ALIGN="LEFT"><FONT COLOR="#86efac">green boxes = layer 1 / epigenetics</FONT></TD></TR>
+                    <TR><TD ALIGN="LEFT"><FONT COLOR="#fde68a">gold boxes = layer 2 / transcription</FONT></TD></TR>
+                    <TR><TD ALIGN="LEFT"><FONT COLOR="#fdba74">orange boxes = layer 3 / co-transcriptional</FONT></TD></TR>
+                    <TR><TD ALIGN="LEFT"><FONT COLOR="#c4b5fd">purple boxes = layer 4 / post-transcriptional</FONT></TD></TR>
+                    <TR><TD ALIGN="LEFT"><FONT COLOR="#fca5a5">red boxes = layer 5 / translation</FONT></TD></TR>
+                    <TR><TD ALIGN="LEFT"><FONT COLOR="#cbd5e1">gray boxes = layer 6 / post-translational</FONT></TD></TR>
                     <TR><TD ALIGN="LEFT"><FONT COLOR="#e5e7eb">co-tx=co-transcriptional · A=accessibility · B=mark/readout · C=kinetic coupling</FONT></TD></TR>
                 </TABLE>
             >
