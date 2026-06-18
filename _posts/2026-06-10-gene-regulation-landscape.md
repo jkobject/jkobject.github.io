@@ -53,6 +53,8 @@ Post-translational control is shown with representative feedback routes rather
 than every substrate-specific event. `SWITCH`, `ROUTER`, and `DESTROY` can touch
 many upstream programs; the map draws the main recurring routes to TF activity,
 Pol II, stress translation, proteostasis, and mTOR/NF-κB-style feedback.
+`LICENSE` is intentionally narrower: NEDDylation mainly activates cullin-RING E3
+ligases, so its main graph role is to feed `ROUTER`.
 
 [![Gene Regulation Landscape](/assets/images/gene-reg-v7.png)](/assets/images/gene-reg-v7.png)
 

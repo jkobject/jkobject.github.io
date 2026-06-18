@@ -583,7 +583,7 @@ digraph gene_regulation {
     SWITCH    -> ROUTER        [label="phospho-degron\n→ E3 ligase" color="#94a3b8" fontcolor="#94a3b8"]
     ROUTER        -> DESTROY [label="K48→26S\nK63→p62/LC3" color="#94a3b8" fontcolor="#94a3b8" penwidth=2]
     TETHER  -> ROUTER        [label="STUbLs:\nSUMO→Ub" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
-    LICENSE -> ROUTER        [label="activates CRLs\n→ substrate Ub" color="#94a3b8" fontcolor="#94a3b8"]
+    LICENSE -> ROUTER        [label="NEDD8 licenses CRLs\n→ Ub routing" color="#e5e7eb" fontcolor="#e5e7eb" penwidth=3 style=bold]
     SWITCH    -> TETHER  [label="phospho-dep.\nSUMO recruit" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
     PAR        -> DESTROY [label="PARylation →\nproteolytic condensates" color="#94a3b8" fontcolor="#94a3b8"]
     DESTROY    -> FORGE [label="lysosomal AA\n→ mTORC1" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
