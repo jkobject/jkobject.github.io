@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://www.jkobject.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.jkobject.com/" rel="alternate" type="text/html" /><updated>2026-06-18T15:42:46+00:00</updated><id>https://www.jkobject.com/feed.xml</id><title type="html">Jérémie</title><subtitle>My website and blog.</subtitle><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><entry><title type="html">The Gene Regulation Landscape</title><link href="https://www.jkobject.com/blog/gene-regulation-landscape/" rel="alternate" type="text/html" title="The Gene Regulation Landscape" /><published>2026-06-10T00:00:00+00:00</published><updated>2026-06-10T00:00:00+00:00</updated><id>https://www.jkobject.com/blog/gene-regulation-landscape</id><content type="html" xml:base="https://www.jkobject.com/blog/gene-regulation-landscape/"><![CDATA[<p>I have always wanted to understand how a cell works.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://www.jkobject.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.jkobject.com/" rel="alternate" type="text/html" /><updated>2026-06-18T15:50:29+00:00</updated><id>https://www.jkobject.com/feed.xml</id><title type="html">Jérémie</title><subtitle>My website and blog.</subtitle><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><entry><title type="html">The Gene Regulation Landscape</title><link href="https://www.jkobject.com/blog/gene-regulation-landscape/" rel="alternate" type="text/html" title="The Gene Regulation Landscape" /><published>2026-06-10T00:00:00+00:00</published><updated>2026-06-10T00:00:00+00:00</updated><id>https://www.jkobject.com/blog/gene-regulation-landscape</id><content type="html" xml:base="https://www.jkobject.com/blog/gene-regulation-landscape/"><![CDATA[<p>I have always wanted to understand how a cell works.</p>
 
 <p>Most of the time, even when textbooks go into molecular detail, the story is
 still organized around dogmas. One chapter adds chromatin. Another adds
@@ -36,6 +36,11 @@ tee-headed arrows indicate repression; bold arrows mark especially important
 coupling edges. Border styles mark meta-principles such as <code class="language-plaintext highlighter-rouge">LLPS</code> and <code class="language-plaintext highlighter-rouge">DECAY</code>:
 these are recurring physical or regulatory motifs that appear across several
 mechanisms, not separate boxes in the pathway.</p>
+
+<p>Post-translational control is shown with representative feedback routes rather
+than every substrate-specific event. <code class="language-plaintext highlighter-rouge">SWITCH</code>, <code class="language-plaintext highlighter-rouge">ROUTER</code>, and <code class="language-plaintext highlighter-rouge">DESTROY</code> can touch
+many upstream programs; the map draws the main recurring routes to TF activity,
+Pol II, stress translation, proteostasis, and mTOR/NF-κB-style feedback.</p>
 
 <p><a href="/assets/images/gene-reg-v7.png"><img src="/assets/images/gene-reg-v7.png" alt="Gene Regulation Landscape" /></a></p>
 

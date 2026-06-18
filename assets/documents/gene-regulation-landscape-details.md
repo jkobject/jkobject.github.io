@@ -4,7 +4,7 @@
 *Clawd · 2026-05-01 / updated 2026-06-18 · 37 mechanisms · 2 meta-principles · 7 layers*
 
 These notes are the technical companion to the current Gene Regulation
-Landscape v7 graph. They document the 37 mechanism boxes, 2 meta-principles, 73
+Landscape v7 graph. They document the 37 mechanism boxes, 2 meta-principles, 78
 mechanism relations, and 7 meta-style annotations used in the rendered figure.
 The rendered figure was generated from the Graphviz source file
 [`gene-reg-v7.dot`](/assets/documents/gene-reg-v7.dot).
@@ -26,7 +26,7 @@ kinetic coupling between processes.
 - The **37 mechanisms** are the boxes in the graph, grouped into 7 layers.
 - **LLPS** and **DECAY** are not ordinary mechanism boxes; they are
   meta-principles indicated by border styles on relevant boxes.
-- The **73 mechanism edges** describe causal, coupling, or feedback relations
+- The **78 mechanism edges** describe causal, coupling, or feedback relations
   between mechanism boxes.
 - The **7 meta annotations** connect LLPS and DECAY to the mechanisms that
   instantiate them.
@@ -220,7 +220,7 @@ Strategy C — KINETIC COUPLING
 | **LLPS** | Liquid-liquid phase separation | A thermodynamic process in which macromolecules concentrate into a dense phase or condensate-like assembly. Driven by multivalent interactions among IDRs, RGG repeats, tyrosines, RNA, and RNA-binding proteins. LLPS is not a single regulatory mechanism but a physical principle used by stress granules, P-bodies, PAR-damage foci, some transcriptional condensates, and some polyUb/proteolytic condensates. |
 | **DECAY** | Turnover / clearance | A functional output that removes a molecule from the system: mRNA decay through TIMER/CENSOR, protein destruction through DESTROY, and broader switches between temporary storage and elimination. |
 
-## II. Relation Catalogue (73 Mechanism Edges + 7 Meta Annotations)
+## II. Relation Catalogue (78 Mechanism Edges + 7 Meta Annotations)
 
 ### Color Code
 | Color | Type | Meaning |
@@ -375,6 +375,11 @@ Strategy C — KINETIC COUPLING
 |--------|--------|------|-----------|
 | SWITCH | SCRIBE | **CDK9-CTD** | Activated CDK9/P-TEFb phosphorylates Ser2-CTD and releases paused Pol II. |
 | SWITCH | BRAKE | **KINASE-EIF2A** | GCN2, PERK, HRI, and PKR phosphorylate eIF2α Ser51 and activate BRAKE. |
+| SWITCH | KEYS | **SWITCH-TF** | Phosphorylation changes TF activity, localization, stability, or interaction partners. |
+| SWITCH | PAR | **DDR-PARP** | DDR kinase context modulates PARP1 activation and PAR-dependent repair assemblies. |
+| ROUTER | KEYS | **UB-SIGNAL-TF** | K63/M1 ubiquitin scaffolds activate signaling routes such as NF-κB without necessarily destroying the TF. |
+| ROUTER | MATURE | **UB-CHAPERONE** | Ubiquitin tags and chaperone systems are coupled during proteostasis and substrate triage. |
+| MATURE | DESTROY | **TRIAGE-DESTROY** | Chaperone triage sends persistently misfolded proteins toward proteasomal or autophagic clearance. |
 
 #### Cross-Cutting Meta-Principles
 | Source | Target | Name | Mechanism |
@@ -432,6 +437,6 @@ Strategy C — KINETIC COUPLING
 
 ---
 
-*v7 — 37 mechanisms, 2 meta-principles, 73 mechanism relations + 7 meta annotations*
+*v7 — 37 mechanisms, 2 meta-principles, 78 mechanism relations + 7 meta annotations*
 *File: `assets/documents/gene-regulation-landscape-details.md`*
 *Diagram: `assets/documents/gene-reg-v7.dot` + `assets/images/gene-reg-v7.png`*

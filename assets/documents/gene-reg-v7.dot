@@ -594,6 +594,11 @@ digraph gene_regulation {
     MATURE -> BRAKE [label="UPR: PERK\n= eIF2α kinase" color="#94a3b8" fontcolor="#94a3b8" style=dashed penwidth=2]
     SWITCH    -> SCRIBE [label="P-TEFb/CDK9\nSer2-CTD" color="#94a3b8" fontcolor="#94a3b8"]
     SWITCH    -> BRAKE  [label="eIF2α kinases\n(PERK, GCN2)" color="#94a3b8" fontcolor="#94a3b8"]
+    SWITCH    -> KEYS   [label="TF phospho\nactivity/localization" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
+    SWITCH    -> PAR    [label="DDR kinases\n→ PARP context" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
+    ROUTER    -> KEYS   [label="K63/M1 Ub\n→ NF-κB signaling" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
+    ROUTER    -> MATURE [label="Ub-chaperone\nproteostasis" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
+    MATURE    -> DESTROY [label="misfolded cargo\ntriage" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
     DESTROY -> KEYS   [label="IκBα decay\n→ NF-κB activ." color="#94a3b8" fontcolor="#94a3b8" style=dashed]
 
     // ============================================================

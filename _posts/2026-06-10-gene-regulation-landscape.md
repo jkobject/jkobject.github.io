@@ -49,6 +49,11 @@ coupling edges. Border styles mark meta-principles such as `LLPS` and `DECAY`:
 these are recurring physical or regulatory motifs that appear across several
 mechanisms, not separate boxes in the pathway.
 
+Post-translational control is shown with representative feedback routes rather
+than every substrate-specific event. `SWITCH`, `ROUTER`, and `DESTROY` can touch
+many upstream programs; the map draws the main recurring routes to TF activity,
+Pol II, stress translation, proteostasis, and mTOR/NF-κB-style feedback.
+
 [![Gene Regulation Landscape](/assets/images/gene-reg-v7.png)](/assets/images/gene-reg-v7.png)
 
 ## Box Glossary

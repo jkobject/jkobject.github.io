@@ -1,7 +1,7 @@
                         importScripts("/assets/js/workbox-v3.6.3/workbox-sw.js");
             workbox.setConfig({modulePathPrefix: "/assets/js/workbox-v3.6.3"});
 
-            self.__precacheManifest = [{"url":"/index.html","revision":"f7e5e53b3f0ba2221c0ec30cd4359197"},{"url":"/blog/gene-regulation-landscape/","revision":"c23afb8ba46abcee1cd9ec60ebe684a5"},{"url":"/blog/finishing-the-phd/","revision":"33e6878e58ca24d2741af39b5c77b05d"},{"url":"/blog/lamindb-these/","revision":"fae046d50e720c7e5460195971bc7ee0"},{"url":"/blog/vcc-starter-pack/","revision":"306b2da00f21394ac3534d20395809ca"},{"url":"/blog/a-year-in-the-phd/","revision":"4f3d101095d5ac2bfd5dee2b9a815f7a"}];
+            self.__precacheManifest = [{"url":"/index.html","revision":"565b3524220123094ba6f0447de6b587"},{"url":"/blog/gene-regulation-landscape/","revision":"d1801231ceaae6996120990f67eb96fb"},{"url":"/blog/finishing-the-phd/","revision":"33e6878e58ca24d2741af39b5c77b05d"},{"url":"/blog/lamindb-these/","revision":"fae046d50e720c7e5460195971bc7ee0"},{"url":"/blog/vcc-starter-pack/","revision":"306b2da00f21394ac3534d20395809ca"},{"url":"/blog/a-year-in-the-phd/","revision":"4f3d101095d5ac2bfd5dee2b9a815f7a"}];
             // service-worker.js
 
 // set names for both precache & runtime cache
