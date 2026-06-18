@@ -146,9 +146,9 @@ Stratégie C — COUPLAGE CINÉTIQUE
 | Nom code | Nom complet | Définition exacte |
 |----------|-------------|-------------------|
 | **ZONES** | Compartiments A/B | Grandes régions chromatiniennes (~5–20 Mb) détectées par Hi-C. Compartiment **A** = euchromatine transcriptionnellement active (H3K27ac, H3K4me3). Compartiment **B** = hétérochromatine inactive (H3K27me3, H3K9me3, méthylation ADN, lamina nucléaire). La transition A↔B accompagne la différenciation cellulaire. |
-| **FENCES** | TADs (Topologically Associating Domains) | Domaines d'interactions préférentielles de ~0.1–2 Mb délimités par des frontières CTCF convergentes. Mécanisme : Cohesin extrude activement des boucles jusqu'à blocage par paires CTCF convergentes → insulation des interactions inter-domaine. Empêche les fusions enhancer-promoteur aberrantes. |
-| **BRIDGES** | Boucles Enhancer→Promoteur | Contacts physiques spécifiques entre un enhancer distal et son promoteur cible à l'intérieur d'un TAD. Médiés par Mediator (pont TF-Pol II), Cohesin (stabilisation), YY1, ZNF143. Peuvent dépasser 1 Mb de distance linéaire. |
-| **HUBS** | Super-enhancers / Condensats Pol II | Clusters d'enhancers ordinaires couvrant 5–50 kb, très denses en TF maîtres, BRD4, Mediator, Pol II. Correspondent physiquement à des **condensats de phase liquide** (LLPS). Très sensibles à JQ1 (inhibiteur BET). Pilotent les gènes d'identité cellulaire et les oncogènes. |
+| **FENCES** | TADs (Topologically Associating Domains) | Domaines d'interactions préférentielles de ~0.1–2 Mb souvent délimités par des frontières CTCF convergentes. Mécanisme dominant : Cohesin extrude des boucles jusqu'à blocage par paires CTCF convergentes → insulation partielle des interactions inter-domaine. Les frontières réduisent fortement les contacts enhancer-promoteur aberrants, mais ne les abolissent pas toujours ; l'effet sur l'expression dépend du locus et du type cellulaire. |
+| **BRIDGES** | Boucles Enhancer→Promoteur | Contacts physiques spécifiques entre un enhancer distal et son promoteur cible, souvent mais pas exclusivement à l'intérieur d'un même TAD. Médiés ou stabilisés selon le contexte par Mediator, Cohesin, YY1, ZNF143, LDB1 et d'autres facteurs. Peuvent dépasser 1 Mb de distance linéaire. |
+| **HUBS** | Super-enhancers / Condensats Pol II | Clusters d'enhancers ordinaires couvrant 5–50 kb, très denses en TF maîtres, BRD4, Mediator, Pol II. Ils peuvent former ou alimenter des condensats transcriptionnels enrichis en coactivateurs, mais "super-enhancer" (définition ChIP-seq) et "condensat" (objet physique dynamique) ne sont pas strictement synonymes. Très sensibles à JQ1 (inhibiteur BET) dans plusieurs modèles, surtout oncogéniques. Pilotent souvent les gènes d'identité cellulaire et certains oncogènes. |
 
 ---
 
@@ -171,7 +171,7 @@ Stratégie C — COUPLAGE CINÉTIQUE
 
 | Nom code | Nom complet | Définition exacte |
 |----------|-------------|-------------------|
-| **KEYS** | Facteurs de transcription (TF) | Protéines à domaines de liaison à l'ADN (séquence-spécifiques) et domaines d'activation/répression. **Activateurs** : recrutent HATs (p300/CBP → H3K27ac), KMTs (MLL → H3K4me3), CRC (SWI/SNF), Mediator → Pol II. **Répresseurs** : recrutent HDACs, PRC, NuRD. **Pioneer factors** (FOXA1, OCT4, GATA3) : peuvent ouvrir la chromatine compacte. ~1600 TF humains. Les TF maîtres (OCT4, SOX2, MYC) définissent les super-enhancers. Feedback : les protéines synthétisées via IRES (ATF4, HIF-1α) sont elles-mêmes des TF. Le protéasome active des TF en dégradant leurs inhibiteurs (IκBα → NF-κB). |
+| **KEYS** | Facteurs de transcription (TF) | Protéines à domaines de liaison à l'ADN (séquence-spécifiques) et domaines d'activation/répression. **Activateurs** : recrutent HATs (p300/CBP → H3K27ac), KMTs (MLL → H3K4me3), CRC (SWI/SNF), Mediator → Pol II. **Répresseurs** : recrutent HDACs, PRC, NuRD. **Pioneer factors** (FOXA1, OCT4, GATA3) : peuvent ouvrir la chromatine compacte. ~1600 TF humains. Les TF maîtres (OCT4, SOX2, MYC) définissent les super-enhancers. Feedback : plusieurs protéines traduites par des routes non canoniques ou stress-dépendantes (ATF4 via uORF/réinitiation ; HIF-1α ou c-MYC via mécanismes proposés de type IRES selon contexte) sont elles-mêmes des TF. Le protéasome active des TF en dégradant leurs inhibiteurs (IκBα → NF-κB). |
 | **SCRIBE** | Pol II + pausing | ARN polymérase II : enzyme ~550 kDa, 12 sous-unités. La queue CTD (répétition YSPTSPS ×52) est un hub de signalisation : **Ser5-P** (CDK7/TFIIH) = initiation/capping ; **Ser2-P** (CDK9/P-TEFb) = élongation ; **Ser7-P** = ARN non-codants. **Pausing proximal** : Pol II stalled 25–50 bp après le TSS par NELF + DSIF. Libération par P-TEFb (recrutée par BRD4 des super-enhancers). ~30–50 % des gènes mammifères sont pausés — permet une réponse rapide et un contrôle précis. **Couplage** : SETD2 (H3K36me3 writer) est lié à la Pol II Ser2-P → H3K36me3 est déposé pendant l'élongation. METTL3/14 est recruté par la CTD → m6A co-transcriptionnel. |
 
 ---
@@ -193,10 +193,10 @@ Stratégie C — COUPLAGE CINÉTIQUE
 
 | Nom code | Nom complet | Définition exacte |
 |----------|-------------|-------------------|
-| **STAMP** | m6A épitranscriptome | **N6-méthyladénosine (m6A)** : modification chimique la plus abondante des ARNm eucaryotes (~3–5 sites par ARNm). **Writers** : complexe METTL3/14/WTAP ; déposé co-transcriptionnellement. **Erasers** : FTO, ALKBH5. **Readers directs** : YTHDF1 (→ recrutement eIF3 → initiation ↑) ; YTHDF2 (→ CCR4-NOT déadénylation → decay ↑) ; YTHDF3 (→ traduction ↑) ; YTHDC1 (nucléaire → SRSF3/SRSF10 → splicing). **Readers indirects** : HNRNPC/HNRNPA2B1 (m6A switch structural → accessibilité). m6A agit simultanément sur splicing, export, stabilité et traduction → mécanisme transversal, pas un seul mécanisme. |
+| **STAMP** | m6A épitranscriptome | **N6-méthyladénosine (m6A)** : modification chimique abondante des ARNm eucaryotes, enrichie près des stop codons, dans les longs exons et parfois dans les 5'UTR. **Writers** : complexe METTL3/14/WTAP ; dépôt souvent co-transcriptionnel. **Erasers** : FTO, ALKBH5. **Readers directs** : YTHDF1/2/3 et YTHDC1. Le modèle classique associe YTHDF1 à la traduction, YTHDF2 au decay, YTHDF3 à la coopération entre sorties, et YTHDC1 au splicing/export nucléaire ; des travaux récents soulignent aussi la redondance partielle des YTHDF cytoplasmiques et leur contribution commune au decay/compartimentage des ARNm m6A. **Readers indirects** : HNRNPC/HNRNPA2B1 (m6A switch structural → accessibilité). m6A agit simultanément sur splicing, export, stabilité et traduction → mécanisme transversal, pas un seul mécanisme. |
 | **READERS** | RBPs régulateurs | ~1500 protéines de liaison à l'ARN (RNA-Binding Proteins) humaines. Modules de liaison : RRM, KH, CCCH zinc finger, PAZ, DEAD-box. Régulent toutes les étapes : splicing (SR proteins comme SRSF1-12 = activateurs ; hnRNPs comme PTBP1 = répresseurs) ; stabilité (HuR/ELAVL1 stabilise via ARES ; TTP/ZFP36 déstabilise via ARES → CCR4-NOT) ; traduction (FMRP réprime initiation) ; localisation (Staufen1 → SMD) ; IRES (ITAFs : PTB, DAP5/eIF4G2, hnRNPQ activent IRES). Mutations dans les RBPs → nombreuses maladies (ALS, SMA, syndrome X fragile). |
 | **DARTS** | miRNA-RISC | MicroARNs de ~22 nt. Biogenèse : pri-miRNA (Pol II) → **Drosha**/DGCR8 → pre-miRNA (~70 nt hairpin) → export Exportine-5 → **Dicer**/TRBP → miRNA duplex → chargement dans **AGO2** → RISC actif. Mécanisme : appariement imparfait (seed 7 nt, positions 2–8) du miRNA avec le 3'UTR → recrutement CCR4-NOT/TNRC6 → déadénylation + décapping + inhibition traductionnelle. ~2500 miRNA humains, chacun régule ~200–1000 ARNm. |
-| **SPONGE** | lncRNA cytoplasmiques | lncRNAs (>200 nt) à localisation cytoplasmique. **ceRNA / éponge à miRNA** : circRNA CDR1as (>70 sites miR-7), HULC, HOTAIR cytoplasm. → séquestrent des miRNAs → décompression des ARNm cibles. **Activation traductionnelle** : UCHL1-AS (domaine SINEB2) → recrutement de polyribosomes. **Répression traductionnelle** : lincRNA-p21 → recrutement de Rck (hélicase répresseur). **Décoy** : GAS5 (glucocorticoid decoy) imite les GRE → séquestre GR. |
+| **SPONGE** | lncRNA cytoplasmiques | lncRNAs (>200 nt) à localisation cytoplasmique. **ceRNA / éponge à miRNA** : circRNA CDR1as (>70 sites miR-7), HULC, HOTAIR cytoplasm. peuvent séquestrer des miRNAs et décompresser des ARNm cibles lorsque la stoechiométrie miRNA/sites cibles, la colocalisation et l'affinité le permettent. La fonction ceRNA est donc plausible mais souvent surestimée sans validation quantitative. **Activation traductionnelle** : UCHL1-AS (domaine SINEB2) → recrutement de polyribosomes. **Répression traductionnelle** : lincRNA-p21 → recrutement de Rck (hélicase répresseur). **Décoy** : GAS5 (glucocorticoid decoy) imite les GRE → séquestre GR. |
 | **CENSOR** | NMD (Nonsense-Mediated mRNA Decay) | Surveillance des ARNm aberrants portant des codons stop prématurés (PTCs). Mécanisme : lors de la traduction, si un ribosome termine à >50–55 nt en amont d'un **EJC** (Exon Junction Complex) → recrutement de UPF1/UPF2/UPF3 → phosphorylation UPF1 par SMG1 → dégradation rapide (décapping + exonucléases). ~5–10 % du transcriptome humain est régulé physiologiquement par NMD (splicing productif vs improductif alternatif). Lien editing : A→I editing au 5'SS d'un exon Alu → prévention exonisation → pas de PTC → pas de NMD (circuit ADAR-SPLICER-CENSOR). |
 | **TIMER** | Stabilité / dégradation des ARNm | La demi-vie des ARNm varie de ~20 min (proto-oncogènes) à >24 h (globine). Voie principale : **déadénylation** (CCR4-NOT/PAN2-PAN3 → queue polyA) → **décapping** (DCP1/2 → suppression m7G) → **dégradation 5'→3'** (XRN1). Voie alternative : **exosome** (dégradation 3'→5', complexe ~14 sous-unités). Régulateurs : ARE-binding proteins (HuR stabilise ; TTP déstabilise), miRNAs (→ CCR4-NOT), m6A (YTHDF2 → CCR4-NOT). |
 | **CLIPS** | RNA G-quadruplexes (rG4) | Structures secondaires quaternaires formées de tétrades de guanines (G4) stabilisées par des ions K+. Présents dans les 5'UTR (→ bloquent la progression du ribosome 43S → inhibition traduction cap-dépendante), 3'UTR, régions de pause Pol II, télomères. Déroulés par des helicases : DHX36, eIF4A, RHAU. Régulation : m6A peut déstabiliser les rG4 en modifiant la structure secondaire de l'ARN. Interaction avec IRES : rG4 dans 5'UTR peut moduler l'accessibilité des IRES. |
@@ -212,8 +212,8 @@ Stratégie C — COUPLAGE CINÉTIQUE
 | **FORGE** | mTOR → initiation cap-dépendante | **mTORC1** phosphoryle 4E-BP1 → libère eIF4E → assemblage du complexe **eIF4F** (eIF4E-eIF4G-eIF4A). eIF4F recrute le 43S PIC → scanning 5'UTR → reconnaissance AUG (contexte Kozak optimal : GCCRCCAUGG). Régulation : insuline/nutriments → PI3K/AKT → mTORC1 actif ; AMPK → mTORC1 inhibé. eIF4A (DEAD-box hélicase) déroule les structures secondaires du 5'UTR pendant le scanning. |
 | **BRAKE** | ISR / eIF2α-P | **Integrated Stress Response** : 4 kinases phosphorylent eIF2α Ser51 : **GCN2** (AA deprivation → uncharged tRNA) ; **PERK** (ER stress → UPR branch) ; **HRI** (hème deprivation) ; **PKR** (dsRNA viral). eIF2α-P séquestre eIF2B (GEF) → diminution du ternary complex (eIF2-GTP-Met-tRNA) → répression globale de la traduction cap-dépendante. **Paradoxe ATF4** : sous eIF2α-P, ATF4/GCN4 est sélectivement traduit via bypass des uORFs inhibiteurs (delayed reinitiation). |
 | **DECOY** | uORFs (upstream ORFs) | ~50 % des ARNm eucaryotes contiennent ≥1 uORF dans leur 5'UTR. Effet général : les uORFs séquestrent les ribosomes → réduction de la traduction du mORF principal. **Mécanisme de réinitiation** : uORF court → ribosome conserve certains eIFs → réinitiation en aval (efficacité proportionnelle à la longueur de l'uORF et la distance inter-ORF). **Mécanisme ATF4 sous stress** : eIF2α-P → TC limitant → ribosomes bypassent les uORFs inhibiteurs distaux → induction sélective du mORF ATF4. Interaction avec IRES : uORFs et IRES coexistent sur certains ARNm et se régulent mutuellement ("zipper model"). |
-| **BYPASS** | IRES (Internal Ribosome Entry Sites) | Structures secondaires dans le 5'UTR qui recrutent directement le 40S ribosomal sans coiffe ni scanning. Mécanisme : IRES ± **ITAFs** (IRES trans-acting factors — PTB, DAP5/eIF4G2, hnRNPQ, Annexine A2) → positionnement du ribosome au voisinage de l'AUG. Activés quand la traduction cap-dépendante est bloquée (stress, ISR, infection virale). Exemples physiologiques : **ATF4, HIF-1α, VEGF-A, FGF2, p53 isoformes**. circRNA : traduction IRES-dépendante (ou m6A-dépendante) de circARN. |
-| **TEMPO** | Codon usage + modifications tRNA + ribosomes spécialisés | **Codon usage bias** : codons synonymes traduits à des vitesses différentes selon l'abondance des tRNA cognats → influence le folding co-traductionnel et le stalling. **Modifications tRNA** (>100 types) : wobble modifications (mnm5U, mcm5s2U) → fidélité du décodage ; m1A, m3C → structure tRNA ; absence → frameshifting ou stalling. **Ribosomes spécialisés** : variation dans les protéines ribosomales (RPL10A vs RPL10 ; RPS25 pour certains IRES) ou modifications rRNA (pseudouridylation, 2'OMe par snoRNAs) → sélection préférentielle de certains ARNm. Ribosomopathies : DBA (Diamond-Blackfan anemia), Treacher Collins. |
+| **BYPASS** | IRES (Internal Ribosome Entry Sites) | Éléments ARN capables de recruter le ribosome par une route moins dépendante de la coiffe. Mécanisme : IRES ± **ITAFs** (IRES trans-acting factors — PTB, DAP5/eIF4G2, hnRNPQ, Annexine A2) → positionnement du ribosome au voisinage de l'AUG. Les IRES viraux sont bien établis ; beaucoup d'IRES cellulaires restent plus controversés parce que les tests bicistroniques peuvent confondre cryptic promoters, splicing ou readthrough. Activés ou révélés quand la traduction cap-dépendante est bloquée (stress, ISR, infection virale). Exemples proposés/étudiés : **HIF-1α, VEGF-A, FGF2, p53 isoformes, c-MYC** ; ATF4 relève surtout de la réinitiation contrôlée par uORF plutôt que d'un IRES canonique. circRNA : traduction IRES-dépendante ou m6A-dépendante de certains circARN. |
+| **TEMPO** | Codon usage + modifications tRNA + hétérogénéité ribosomale | **Codon usage bias** : codons synonymes traduits à des vitesses différentes selon l'abondance des tRNA cognats → influence le folding co-traductionnel et le stalling. **Modifications tRNA** (>100 types) : wobble modifications (mnm5U, mcm5s2U) → fidélité du décodage ; m1A, m3C → structure tRNA ; absence → frameshifting ou stalling. **Hétérogénéité ribosomale** : variation dans des protéines ribosomales (par exemple RPS25 pour certains IRES) ou modifications rRNA (pseudouridylation, 2'OMe par snoRNAs) peut biaiser la traduction de classes d'ARNm, mais le concept de "ribosomes spécialisés" reste expérimentalement difficile et doit être formulé comme une hypothèse contextuelle plutôt qu'un code général établi. Ribosomopathies : DBA (Diamond-Blackfan anemia), Treacher Collins. |
 | **INSPECTOR** | Surveillance traductionnelle (RQC/NGD/NSD) | Mécanismes de surveillance qui détectent et dégradent les ARNm et polypeptides défectueux. **NGD** (No-Go Decay) : ribosome bloqué sur structure secondaire ou pseudoknot → endonucléase PELO + HBS1L → clivage ARNm. **NSD** (Non-Stop Decay) : ribosome atteint la fin de l'ARNm sans codon stop → Ski7 (levure) / PELO (mammifère) → dégradation. **RQC** (Ribosome-associated Quality Control) : ribosome coincé → **LTN1 E3 ligase** → ubiquitination polypeptide nascent → dégradation 26S. NEMF **CAT-tailing** : ajout d'alanine/thréonine sur le polypeptide bloqué → signal de dégradation. |
 
 ---
@@ -229,7 +229,7 @@ Stratégie C — COUPLAGE CINÉTIQUE
 | **LICENSE** | Neddylation / activation des CRL | **NEDD8** est une UBL conjuguée surtout aux cullines. La neddylation active les **Cullin-RING ligases** (CRL), une grande famille d'E3 ubiquitin ligases, en favorisant le recrutement/positionnement des substrats et de l'E2. Ce n'est pas une voie de dégradation autonome : c'est un interrupteur en amont du système ROUTER qui augmente la capacité d'ubiquitination de substrats spécifiques. Le nom LICENSE reflète cette activation/licensing des CRL. |
 | **DESTROY** | Destruction protéique : protéasome + autophagie sélective | Boîte fusionnée pour les deux grandes sorties de clearance protéique. **Protéasome 26S** : lit surtout K48-polyUb, déubiquitine, déplie et dégrade les protéines courtes ou endommagées. **Autophagie sélective** : récepteurs comme **p62/SQSTM1** relient les cargos ubiquitinés à **LC3/GABARAP** puis au lysosome, surtout pour agrégats, organites ou cargos volumineux. Les condensats polyUb peuvent concentrer ces cargos ; les acides aminés libérés par le lysosome réactivent mTORC1. |
 | **MATURE** | Chaperones / UPR | **Chaperones** : Hsp70/Hsc70 (assistance co-traductionnelle) ; Hsp90 (maturation kinases, TF, récepteurs stéroïdiens) ; CCT/TRiC (folding en chambre isolée — actine, tubuline). Lien avec l'ubiquitination : **CHIP** (C-terminus of Hsp70-Interacting Protein) = E3 ubiquitin ligase qui ubiquitine les substrats mal foldés liés à Hsp70/Hsp90 → protéasome. **UPR** (Unfolded Protein Response, ER stress) : **PERK** (phosphoryle eIF2α = branche ISR), **IRE1** (épissage non-conventionnel de XBP1 mRNA), **ATF6** (TF activateur de gènes chaperonnage ER). |
-| **PAR** | ADP-ribosylation / PARP / PAR | **PARP1** (Poly ADP-Ribose Polymérase 1) détecte les cassures ADN (DDR) et synthétise des chaînes de **PAR** (Poly-ADP-Ribose) sur lui-même et d'autres protéines (Asp, Glu, Lys). Activé par les kinases DDR (ATM/ATR, phospho-dépendant). PAR est une molécule multivalente → nucléation rapide de **condensats de phase** (LLPS) au niveau des dommages ADN → recrutement de la machinerie de réparation. Les longues chaînes PAR recrutent aussi des E3 ubiquitin ligases → lien PAR-ubiquitination. Inhibiteurs PARP (olaparib) = thérapeutique cancer (synthetic lethality avec BRCA1/2). |
+| **PAR** | ADP-ribosylation / PARP / PAR | **PARP1** (Poly ADP-Ribose Polymérase 1) détecte les cassures ADN (DDR) et synthétise des chaînes de **PAR** (Poly-ADP-Ribose) sur lui-même et d'autres protéines (Asp, Glu, Lys). Activé et modulé par le contexte DDR, y compris ATM/ATR et d'autres PTM. PAR est une molécule multivalente → nucléation rapide de **condensats de phase** au niveau des dommages ADN → recrutement de facteurs comme FUS, XRCC1, RPA ou autres machines de réparation. Les chaînes PAR peuvent aussi recruter des facteurs ubiquitine/E3 et coupler réparation, remodelage et turnover local, mais le lien vers une "destruction" protéasomale générale est contexte-dépendant. Inhibiteurs PARP (olaparib) = thérapeutique cancer (synthetic lethality avec BRCA1/2). |
 
 ---
 
@@ -237,7 +237,7 @@ Stratégie C — COUPLAGE CINÉTIQUE
 
 | Nom code | Nom complet | Définition exacte |
 |----------|-------------|-------------------|
-| **LLPS** | Liquid-Liquid Phase Separation | Processus thermodynamique par lequel des macromolécules (protéines IDR-riches, ARN, protéines de liaison à l'ARN) se concentrent spontanément en une phase dense distincte (condensat liquide). Conduit par des **interactions multivalentes** : domaines IDR (Intrinsically Disordered Regions), répétitions RGG, tyrosines, interactions ARN-protéine. LLPS n'est **pas un mécanisme de régulation** : c'est le principe physique exploité par plusieurs mécanismes. Instances biologiques : super-enhancers (BRD4 + Mediator + Pol II CTD), stress granules (G3BP1 + TIA-1 + ARNm), P-bodies (DCP1/2 + XRN1), condensats protéolytiques (hHR23B + polyUb), condensats de réparation ADN (PAR + FUS + RPA). |
+| **LLPS** | Liquid-Liquid Phase Separation | Processus thermodynamique par lequel des macromolécules (protéines IDR-riches, ARN, protéines de liaison à l'ARN) se concentrent en une phase dense distincte ou dans un assemblage condensat-like. Conduit par des **interactions multivalentes** : domaines IDR (Intrinsically Disordered Regions), répétitions RGG, tyrosines, interactions ARN-protéine. LLPS n'est **pas un mécanisme de régulation unique** : c'est un principe physique exploité par plusieurs mécanismes, avec une preuve plus forte pour certains condensats (stress granules, PAR-damage foci) que pour d'autres. Instances biologiques : condensats transcriptionnels enrichis en BRD4/Mediator/Pol II CTD, stress granules (G3BP1 + TIA-1 + ARNm), P-bodies (DCP1/2 + XRN1), condensats protéolytiques/polyUb dans certains contextes, condensats de réparation ADN (PAR + FUS + RPA). |
 | **DECAY** | Turnover / clearance | Métaprincipe de retrait d'une molécule du système : dégradation d'ARNm (TIMER, CENSOR), destruction protéique protéasomale ou lysosomale (DESTROY), et plus généralement bascule entre stockage temporaire et élimination. DECAY n'est pas un seul complexe moléculaire ; c'est une sortie fonctionnelle récurrente. |
 
 ---
@@ -277,8 +277,8 @@ Stratégie C — COUPLAGE CINÉTIQUE
 | Source | Cible | Nom | Mécanisme |
 |--------|-------|-----|-----------|
 | SILENCER | WRITER-R | **CO-RECRUIT** (bidirectionnel) | MBD → recrute SUV39H1 → H3K9me3 ; et inversement HP1 → recrute DNMT3 |
+| OPENER | SHUFFLER | **ACETYL-REMODEL** | Les marques acétylées, via des readers bromodomaines, favorisent le recrutement de remodelers comme SWI/SNF/BAF |
 | GUIDES | SILENCER | **PIRNAGUIDE** | piRNA-PIWI guident DNMT3L/3A vers les transposons → méthylation *de novo* |
-| GUIDES | WRITER-R | **LNCRNAPRC2** | lncRNAs scaffolds (XIST, HOTAIR) recrutent PRC2 → H3K27me3 régional |
 
 #### Épigénétique → Transcription
 | Source | Cible | Nom | Mécanisme |
@@ -288,8 +288,8 @@ Stratégie C — COUPLAGE CINÉTIQUE
 | SHUFFLER | KEYS | **REMODELS** | Les CRC repositionnent/éjectent des nucléosomes → fenêtre de liaison TF |
 | WRITER-A | SCRIBE | **RECRUITS-POL2** | H3K4me3 recrute TAF3 (TFIID) → Pol II recruitment |
 | HUBS | SCRIBE | **RELEASES-PAUSE** | P-TEFb concentrée dans les SE → phosphoryle Ser2-CTD → libération Pol II |
-| ZONES (A) | WRITER-A | **COMPART-A** (back) | Les compartiments A co-localisent avec H3K27ac/K4me3 (causalité circulaire) |
-| ZONES (B) | WRITER-R | **COMPART-B** (back) | Les compartiments B co-localisent avec H3K27/9me3 |
+| OPENER | ZONES | **ACETYL-TO-A** | H3K27ac et chromatine active favorisent l'appartenance au compartiment A |
+| WRITER-R | ZONES | **REPRESS-TO-B** | H3K27me3/H3K9me3 et hétérochromatine favorisent l'appartenance au compartiment B |
 | SILENCER | ZONES | **METH-TO-B** | Méthylation CpG → recrutement MBD → compaction → compartiment B |
 
 #### Transcription → Épigénétique (feedbacks)
@@ -298,6 +298,8 @@ Stratégie C — COUPLAGE CINÉTIQUE
 | KEYS | OPENER | **TF-HAT** | TF activateurs recrutent p300/CBP → dépôt H3K27ac sur les enhancers cibles |
 | KEYS | WRITER-A | **TF-KMT** | TF recrutent MLL1-4/KMT2 → dépôt H3K4me3 aux promoteurs actifs |
 | KEYS | SHUFFLER | **TF-CRC** (back) | TF recrutent SWI/SNF → remodeling sur leurs gènes cibles |
+| KEYS | GUIDES | **TF-NCRNA-EPI** | Les TF peuvent activer des loci piRNA/lncRNA qui guident ensuite des complexes chromatiniennes |
+| KEYS | SPONGE | **TF-LNCRNA** | Les TF activent des loci lncRNA cytoplasmiques, ajoutant une sortie post-transcriptionnelle au programme transcriptionnel |
 
 #### Transcription → Transcription
 | Source | Cible | Nom | Mécanisme |
@@ -313,8 +315,7 @@ Stratégie C — COUPLAGE CINÉTIQUE
 | SCRIBE | SPLICER | **RATE-SPLICE** (**) | Vitesse d'élongation de Pol II = fenêtre d'opportunité pour l'inclusion des exons faibles |
 | SCRIBE | TRIMMER | **CTD-CST** | Pol II Ser2-P recrute CstF → clivage et polyadénylation |
 | SCRIBE | STAMP | **CTD-M6A** | METTL3/14 est recruté par la CTD co-transcriptionnellement → m6A |
-| SCRIBE | SPONGE | **POL2-LNCRNA** | Pol II transcrit les lncRNAs cytoplasmiques (UCHL1-AS, lincRNA-p21...) |
-| SCRIBE | GUIDES | **POL2-NCRNAEPI** | Pol II transcrit les précurseurs piRNA et lncRNAs épigénétiques |
+| SCRIBE | ZONES | **TXN-TO-A** | L'activité transcriptionnelle contribue à maintenir les régions actives dans le compartiment A |
 | WRITER-A | SPLICER | **HISTONE-SPLICE** (**) | H3K36me3 (déposé par SETD2 associé à Pol II) recrute MRG15 → PTB → exon inclusion |
 | SCRIBE | WRITER-A | **SETD2-COUPLING** (**) | SETD2 est lié physiquement à Pol II Ser2-P → H3K36me3 déposé pendant l'élongation |
 
@@ -338,23 +339,21 @@ Stratégie C — COUPLAGE CINÉTIQUE
 #### Post-transcriptionnel intra
 | Source | Cible | Nom | Mécanisme |
 |--------|-------|-----|-----------|
-| STAMP | TIMER | **M6A-DECAY** | YTHDF2 recrute CCR4-NOT → déadénylation accélérée → decay |
+| STAMP | TIMER | **M6A-DECAY** | Les YTHDF cytoplasmiques, avec un rôle classique de YTHDF2, recrutent ou favorisent CCR4-NOT/P-bodies → déadénylation accélérée → decay |
 | STAMP | CLIPS | **M6A-G4** | m6A déstabilise la structure secondaire → déstabilisation des G-quadruplexes adjacents |
 | DARTS | TIMER | **MIRNA-DECAY** | AGO2-RISC recrute CCR4-NOT → déadénylation + décapping |
-| SPONGE | DARTS | **CERNA** ⊣ | lncRNA ceRNA séquestre les miRNA → décompression des ARNm cibles |
+| SPONGE | DARTS | **CERNA** ⊣ | lncRNA/circRNA ceRNA peut séquestrer des miRNA → décompression des ARNm cibles si la stoechiométrie et la colocalisation sont suffisantes |
 | CENSOR | TIMER | **NMD-DECAY** | UPF1-P recrute SMG6 (endonucléase) + SMG5/7 → dégradation rapide |
 | TIMER | VAULT | **MRNA-SG** (bidirectionnel) | ARNm non traduits → stress granules ; SG dissolus → ARNm libérés |
 | READERS | TIMER | **RBP-STABILITY** | HuR/ELAVL1 (stabilise AREs) vs TTP/ZFP36 (déstabilise AREs → CCR4-NOT) |
 | CLIPS | BYPASS | **G4-IRES** | rG4 dans 5'UTR peut moduler l'accessibilité de l'IRES (zipper model) |
-| VAULT | FORGE | **SG-RELEASE** | Résolution du stress → dissolution des SGs → ARNm libérés vers les ribosomes |
 
 #### Post-transcriptionnel → Traductionnel
 | Source | Cible | Nom | Mécanisme |
 |--------|-------|-----|-----------|
-| STAMP | FORGE | **M6A-INIT** | YTHDF1 recrute eIF3 → stimule l'initiation cap-dépendante |
+| STAMP | FORGE | **M6A-INIT** | m6A peut stimuler l'initiation via YTHDF1/eIF3 ou des mécanismes 5'UTR dépendants du contexte |
 | STAMP | BYPASS | **M6A-IRES** | m6A dans le 5'UTR → traduction cap-indépendante (sous stress) |
 | READERS | FORGE | **FMRP-REPRESS** ⊣ | FMRP lie les polysomes et bloque l'élongation |
-| READERS | BYPASS | **ITAF-IRES** | ITAFs (PTB, DAP5, hnRNPQ) = RBPs qui activent/inhibent les IRES |
 | DARTS | FORGE | **MIRNA-TRANSL** ⊣ | RISC bloque la jonction 80S ou la réinitiation → inhibition traductionnelle |
 | CLIPS | FORGE | **G4-BLOCK** ⊣ | rG4 en 5'UTR bloque la progression du ribosome 43S scanning |
 
@@ -367,31 +366,29 @@ Stratégie C — COUPLAGE CINÉTIQUE
 | Source | Cible | Nom | Mécanisme |
 |--------|-------|-----|-----------|
 | BRAKE | DECOY | **ISR-UORF** (**) | eIF2α-P → TC limitant → ribosomes bypassent les uORFs distaux → ATF4 |
-| BRAKE | BYPASS | **ISR-IRES** | Cap-dep bloqué → switch vers IRES (ATF4, HIF-1α, c-Myc) |
+| BRAKE | BYPASS | **ISR-IRES** | Cap-dep bloqué → favorise des routes alternatives ; ATF4 passe surtout par uORF/réinitiation, tandis que HIF-1α/c-Myc sont des exemples proposés de contrôle de type IRES |
 | DECOY | FORGE | **UORF-COMPETE** ⊣ | uORFs séquestrent les ribosomes → réduction traduction mORF principal |
 | FORGE | INSPECTOR | **STALL-RQC** | Traduction active → stalling sur codons rares ou structures → RQC/NGD |
 | TEMPO | INSPECTOR | **CODON-STALL** | Codons rares → pause ribosomale prolongée → NGD/NSD/RQC |
 | TEMPO | MATURE | **COTRANSL-FOLD** | Rythme de traduction (codon usage) → cinétique de repliement co-traductionnel |
 | INSPECTOR | DESTROY | **RQC-26S** | CAT-tailing du polypeptide nascent bloqué → reconnaissance LTN1 → dégradation |
 
-#### Traduction → Transcription (feedback)
+#### Traduction → Post-traductionnel
 | Source | Cible | Nom | Mécanisme |
 |--------|-------|-----|-----------|
-| BYPASS | KEYS | **IRES-TF-LOOP** (**) | ATF4 (ISR), HIF-1α (hypoxie), c-Myc (IRES) synthétisés → TF qui reprogramment la transcription → boucle de rétroaction |
+| FORGE | MATURE | **COTRANSL-MATURATION** | La traduction naissante expose les chaînes aux chaperones co-traductionnelles et lance le repliement |
+| FORGE | SWITCH | **MTOR-KINASES** | mTORC1 et les voies de croissance couplent l'initiation traductionnelle à AKT/S6K et à d'autres cascades kinases |
 
 #### Post-traductionnel intra
 | Source | Cible | Nom | Mécanisme |
 |--------|-------|-----|-----------|
 | SWITCH | ROUTER | **SWITCH-DEGRON** | Phospho-dégron reconnu par E3 SCF (β-TrCP, Fbxw7) ou APC/C |
 | SWITCH | TETHER | **PDSM** | Motif PDSM (ψKxExxSP) → phospho de la Ser → activation SUMOylation de la Lys |
-| SWITCH | PAR | **DDR-PARP** | ATM/ATR activés par DSBs → phosphorylent et activent PARP1 |
-| SWITCH | KEYS | **SWITCH-TF** | Phosphorylation active/inactive les TF (IKK→IκB→NF-κB, JAK→STAT, MAPK→ELK1) |
 | ROUTER | DESTROY | **ROUTER-DESTROY** | K48-polyUb → protéasome 26S ; K63-polyUb peut recruter p62/SQSTM1 → autophagie sélective |
 | TETHER | ROUTER | **STUBLS** | polySUMO → reconnu par RNF4/RNF111 (STUbL E3) → ubiquitination → protéasome |
 | LICENSE | ROUTER | **CRL-ACTIVATION** | Neddylation des cullines → activation des CRL E3 ligases → ubiquitination de substrats spécifiques |
-| PAR | DESTROY | **PAR-CONDENSATE** | PAR chaînes longues → nucléation de condensats protéolytiques → protéasome |
+| PAR | DESTROY | **PAR-CONDENSATE** | PAR longues chaînes → condensats DDR et recrutement contextuel de facteurs ubiquitine/protéostase → turnover local possible |
 | MATURE | BRAKE | **UPR-ISR** | PERK (branche UPR) = kinase eIF2α → ISR = pont ER stress–ISR |
-| MATURE | ROUTER | **CHIP-E3** | CHIP (Hsp70/90-associated E3) ubiquitine les protéines mal foldées → 26S |
 | DESTROY | FORGE | **LYSOSOME-MTOR** | Acides aminés libérés par la voie lysosomale → Ragulator/RRAG GTPases surface lysosomale → mTORC1 réactivé |
 | DESTROY | KEYS | **DESTROY-TF** | Dégradation des inhibiteurs de TF (IκBα→NF-κB ; β-catenin→TCF/LEF) |
 
@@ -404,7 +401,7 @@ Stratégie C — COUPLAGE CINÉTIQUE
 #### Métaprincipes transversaux
 | Source | Cible | Nom | Mécanisme |
 |--------|-------|-----|-----------|
-| LLPS | HUBS | **LLPS-SE** | LLPS forme les condensats de transcription = super-enhancers |
+| LLPS | HUBS | **LLPS-SE** | LLPS/condensats transcriptionnels peuvent contribuer à l'activité des super-enhancers, sans identité stricte entre les deux concepts |
 | LLPS | VAULT | **LLPS-SG-PB** | LLPS forme les stress granules et P-bodies |
 | LLPS | DESTROY | **LLPS-DESTROY** | LLPS forme les condensats protéolytiques (hHR23B + polyUb) |
 | LLPS | PAR | **LLPS-PAR** | Les chaînes PAR nucléent des condensats de réparation ADN |
@@ -418,15 +415,15 @@ Stratégie C — COUPLAGE CINÉTIQUE
 
 | Entités fusionnées | Justification |
 |--------------------|---------------|
-| Super-enhancers + Condensats de transcription | Même structure biologique, deux techniques (ChIP-seq vs microscopie LLPS) |
+| Super-enhancers + Condensats de transcription | Concepts très liés mais non identiques : super-enhancer = définition génomique/ChIP-seq ; condensat = assemblage physique dynamique souvent enrichi en coactivateurs |
 | Compartiments A/B + État épigénétique global | Corrélation forte ; les compartiments *émergent* des marques mais ne sont pas identiques |
-| YTHDF1 + YTHDF2 + YTHDF3 → **STAMP** | Un seul signal (m6A), 3 lecteurs = 3 sorties d'un même mécanisme |
+| YTHDF1 + YTHDF2 + YTHDF3 → **STAMP** | Un seul signal (m6A), lecteurs partiellement spécialisés mais aussi redondants selon contexte cellulaire |
 | Codon usage + tRNA modifications + Ribosome hétérogénéité → **TEMPO** | Trois facettes du même principe "efficacité de décodage" |
 | SWI/SNF + ISWI + CHD + INO80 → **SHUFFLER** | Même principe ATP-dependent, 4 sous-familles |
 | eRNAs (enhancer RNAs) | Sous-produits de l'activité enhancer = readout, pas mécanisme propre |
 | ISR branch PERK / UPR | PERK est à la fois une kinase ISR et la branche PERK de l'UPR : intégré via MATURE → BRAKE |
 | siRNA / miRNA | Partagent RISC/AGO2 ; siRNA chez les animaux = variante outil expérimental surtout → fusionné dans DARTS |
-| ceRNA hypothesis | Conséquence de la saturation du pool miRNA = cas particulier de SPONGE + DARTS |
+| ceRNA hypothesis | Cas particulier de SPONGE + DARTS, à garder comme mécanisme conditionnel dépendant de la stoechiométrie miRNA/sites cibles |
 
 ---
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://www.jkobject.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.jkobject.com/" rel="alternate" type="text/html" /><updated>2026-06-16T13:26:33+00:00</updated><id>https://www.jkobject.com/feed.xml</id><title type="html">Jérémie</title><subtitle>My website and blog.</subtitle><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><entry><title type="html">The Gene Regulation Landscape</title><link href="https://www.jkobject.com/blog/gene-regulation-landscape/" rel="alternate" type="text/html" title="The Gene Regulation Landscape" /><published>2026-06-10T00:00:00+00:00</published><updated>2026-06-10T00:00:00+00:00</updated><id>https://www.jkobject.com/blog/gene-regulation-landscape</id><content type="html" xml:base="https://www.jkobject.com/blog/gene-regulation-landscape/"><![CDATA[<p>I have always wanted to understand how a cell works.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://www.jkobject.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.jkobject.com/" rel="alternate" type="text/html" /><updated>2026-06-18T14:55:36+00:00</updated><id>https://www.jkobject.com/feed.xml</id><title type="html">Jérémie</title><subtitle>My website and blog.</subtitle><author><name>Jérémie Kalfon</name><email>jkobject@gmail.com</email></author><entry><title type="html">The Gene Regulation Landscape</title><link href="https://www.jkobject.com/blog/gene-regulation-landscape/" rel="alternate" type="text/html" title="The Gene Regulation Landscape" /><published>2026-06-10T00:00:00+00:00</published><updated>2026-06-10T00:00:00+00:00</updated><id>https://www.jkobject.com/blog/gene-regulation-landscape</id><content type="html" xml:base="https://www.jkobject.com/blog/gene-regulation-landscape/"><![CDATA[<p>I have always wanted to understand how a cell works.</p>
 
 <p>Most of the time, even when textbooks go into molecular detail, the story is
 still organized around dogmas. One chapter adds chromatin. Another adds
@@ -18,17 +18,388 @@ microscopy are not strictly identical, but they are clearly not unrelated
 either. In other places, molecular biology has long descriptive sentences for
 mechanisms, but no short handle that makes the mechanism easy to reason about.</p>
 
-<p>So I gave the main mechanisms nicknames. Not because the nicknames are perfect,
-but because naming is a way to think. I hope the map is useful, and maybe sparks
-discussions.</p>
+<p>So I gave each main mechanism a short code name. The names are not meant to
+replace the biology; they are handles that point back to precise glossary
+entries. I hope the map is useful, and maybe sparks discussions.</p>
 
-<p>The map is very large, so the embedded version below is mostly a preview. You
-can <a href="/assets/images/gene-reg-v7.png">open the full-resolution zoomable map here</a>.
-For the full mechanism catalogue and the detailed edge list used to build the
-figure, see the <a href="/assets/documents/gene-regulation-landscape-details.md">Gene Regulation Landscape technical notes</a>
-and the <a href="/assets/documents/gene-reg-v7.dot">Graphviz DOT source</a>.</p>
+<p>The map is very large, so the embedded version below is mostly a preview. You can
+<a href="/assets/images/gene-reg-v7.png">open the full-resolution zoomable map here</a>.
+The companion <a href="/assets/documents/gene-regulation-landscape-details.md">technical notes</a>
+contain the 1-to-1 glossary for every box name, the full mechanism catalogue,
+link rationale, and legend details. The <a href="/assets/documents/gene-reg-v7.dot">Graphviz DOT source</a>
+is also available.</p>
+
+<p>In the figure, each box title is a code name that maps 1-to-1 to the catalogue
+entry in the technical notes. Solid arrows are the main mechanistic relations;
+dashed arrows indicate contextual, feedback, or association-style links;
+tee-headed arrows indicate repression; bold arrows mark especially important
+coupling edges. Border styles mark meta-principles such as <code class="language-plaintext highlighter-rouge">LLPS</code> and <code class="language-plaintext highlighter-rouge">DECAY</code>:
+these are recurring physical or regulatory motifs that appear across several
+mechanisms, not separate boxes in the pathway.</p>
 
 <p><a href="/assets/images/gene-reg-v7.png"><img src="/assets/images/gene-reg-v7.png" alt="Gene Regulation Landscape" /></a></p>
+
+<h2 id="box-glossary">Box Glossary</h2>
+
+<p>Each box in the image has exactly one entry here. Box titles are the short code
+names; italic text inside the image marks genes or proteins when the label needs
+examples.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Layer</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ZONES</code></td>
+      <td>3D genome</td>
+      <td>A/B chromatin compartments.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">FENCES</code></td>
+      <td>3D genome</td>
+      <td>TAD boundaries and insulation by CTCF/cohesin.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">BRIDGES</code></td>
+      <td>3D genome</td>
+      <td>Enhancer-promoter loops.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">HUBS</code></td>
+      <td>3D genome</td>
+      <td>Super-enhancers that can form or feed Pol II/coactivator condensates.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SILENCER</code></td>
+      <td>Epigenetics</td>
+      <td>DNA methylation and repressive chromatin memory.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">OPENER</code></td>
+      <td>Epigenetics</td>
+      <td>Histone acetylation that opens chromatin.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">WRITER-A</code></td>
+      <td>Epigenetics</td>
+      <td>Activating histone methylation marks.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">WRITER-R</code></td>
+      <td>Epigenetics</td>
+      <td>Repressive histone methylation marks.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SHUFFLER</code></td>
+      <td>Epigenetics</td>
+      <td>ATP-dependent nucleosome remodeling.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">GUIDES</code></td>
+      <td>Epigenetics</td>
+      <td>ncRNAs that recruit chromatin regulators.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">KEYS</code></td>
+      <td>Transcription</td>
+      <td>Transcription factors, including pioneer factors.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SCRIBE</code></td>
+      <td>Transcription</td>
+      <td>Pol II pausing, release, and CTD phosphorylation.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SHIELD</code></td>
+      <td>Co-transcriptional</td>
+      <td>5’ capping and cap-dependent protection/export.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SPLICER</code></td>
+      <td>Co-transcriptional</td>
+      <td>Alternative splicing coupled to Pol II kinetics.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TRIMMER</code></td>
+      <td>Co-transcriptional</td>
+      <td>Alternative polyadenylation and 3’UTR choice.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">RECODER</code></td>
+      <td>Co-transcriptional</td>
+      <td>A-to-I RNA editing by ADARs.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">STAMP</code></td>
+      <td>Post-transcriptional</td>
+      <td>m6A RNA marking and reader-dependent fate choices.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">READERS</code></td>
+      <td>Post-transcriptional</td>
+      <td>RNA-binding proteins that tune RNA processing, stability, localization, and translation.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DARTS</code></td>
+      <td>Post-transcriptional</td>
+      <td>miRNA-RISC targeting.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SPONGE</code></td>
+      <td>Post-transcriptional</td>
+      <td>Cytoplasmic lncRNAs and stoichiometry-dependent ceRNA-like buffering.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">CENSOR</code></td>
+      <td>Post-transcriptional</td>
+      <td>Nonsense-mediated mRNA decay.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TIMER</code></td>
+      <td>Post-transcriptional</td>
+      <td>mRNA half-life, deadenylation, decapping, and decay.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">CLIPS</code></td>
+      <td>Post-transcriptional</td>
+      <td>RNA G-quadruplex structures that affect scanning and translation.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">VAULT</code></td>
+      <td>Post-transcriptional</td>
+      <td>Stress granules and P-bodies for RNA storage or decay.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">FORGE</code></td>
+      <td>Translation</td>
+      <td>Starting cap-dependent translation through mTOR/eIF4F.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">BRAKE</code></td>
+      <td>Translation</td>
+      <td>Slowing global translation during stress through ISR/eIF2α-P.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DECOY</code></td>
+      <td>Translation</td>
+      <td>uORFs that divert scanning ribosomes and gate main ORF translation.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">BYPASS</code></td>
+      <td>Translation</td>
+      <td>Non-canonical initiation routes, including IRES-like and m6A-dependent cases.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TEMPO</code></td>
+      <td>Translation</td>
+      <td>Decoding kinetics, tRNA/codon effects, and contextual ribosome heterogeneity.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">INSPECTOR</code></td>
+      <td>Translation</td>
+      <td>RQC/NGD/NSD surveillance of stalled or broken translation.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SWITCH</code></td>
+      <td>Post-translational</td>
+      <td>Phosphorylation/O-GlcNAc switches for protein activity and interactions.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ROUTER</code></td>
+      <td>Post-translational</td>
+      <td>Ubiquitin-chain logic that routes proteins to signaling, proteasome, or autophagy.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">TETHER</code></td>
+      <td>Post-translational</td>
+      <td>SUMOylation that tethers proteins into nuclear complexes, repression modules, or repair assemblies.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">LICENSE</code></td>
+      <td>Post-translational</td>
+      <td>Neddylation that licenses cullin-RING E3 ubiquitin ligases for substrate routing.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DESTROY</code></td>
+      <td>Post-translational</td>
+      <td>Protein clearance through the proteasome and selective autophagy.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">MATURE</code></td>
+      <td>Post-translational</td>
+      <td>Protein folding, refolding, triage, and ER-stress UPR.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PAR</code></td>
+      <td>Post-translational</td>
+      <td>PARP/PAR signaling at DNA damage and repair condensates.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="term-glossary">Term Glossary</h2>
+
+<p>These are the main non-gene, non-protein terms used in the figure and glossary.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Term</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A/B compartments</td>
+      <td>Large Hi-C chromatin domains; A is generally active/euchromatic, B is generally inactive/heterochromatic.</td>
+    </tr>
+    <tr>
+      <td>TAD</td>
+      <td>Topologically associating domain; a chromatin neighborhood insulated by boundaries such as CTCF/cohesin sites.</td>
+    </tr>
+    <tr>
+      <td>Enhancer-promoter loop</td>
+      <td>A 3D contact that brings a distal enhancer near a target promoter.</td>
+    </tr>
+    <tr>
+      <td>Super-enhancer</td>
+      <td>A dense enhancer cluster with high transcription-factor, Mediator, BRD4, and Pol II occupancy.</td>
+    </tr>
+    <tr>
+      <td>Condensate / LLPS</td>
+      <td>Liquid-liquid phase separation; concentration of molecules into a dense phase without a membrane.</td>
+    </tr>
+    <tr>
+      <td>DNA methylation</td>
+      <td>Addition of methyl groups to cytosines, often linked to transcriptional repression at promoters.</td>
+    </tr>
+    <tr>
+      <td>Histone mark</td>
+      <td>A chemical modification on histones, such as acetylation or methylation, read by chromatin proteins.</td>
+    </tr>
+    <tr>
+      <td>Chromatin remodeling</td>
+      <td>ATP-driven repositioning, eviction, or exchange of nucleosomes.</td>
+    </tr>
+    <tr>
+      <td>ncRNA</td>
+      <td>Non-coding RNA; RNA that functions without being translated into protein.</td>
+    </tr>
+    <tr>
+      <td>Pol II pausing</td>
+      <td>Promoter-proximal RNA polymerase II stalling before productive elongation.</td>
+    </tr>
+    <tr>
+      <td>CTD phosphorylation</td>
+      <td>Phosphorylation of the Pol II C-terminal domain, coordinating transcription with RNA processing.</td>
+    </tr>
+    <tr>
+      <td>5’ capping</td>
+      <td>Addition of an m7G cap to nascent RNA, protecting it and enabling export/translation.</td>
+    </tr>
+    <tr>
+      <td>Alternative splicing</td>
+      <td>Regulated exon choice that produces multiple transcript isoforms from one gene.</td>
+    </tr>
+    <tr>
+      <td>Alternative polyadenylation</td>
+      <td>Choice of different cleavage/polyA sites, often changing 3’UTR length.</td>
+    </tr>
+    <tr>
+      <td>A-to-I editing</td>
+      <td>Adenosine-to-inosine RNA editing; inosine is read like guanosine by many machines.</td>
+    </tr>
+    <tr>
+      <td>m6A</td>
+      <td>N6-methyladenosine, a reversible RNA modification interpreted by reader proteins.</td>
+    </tr>
+    <tr>
+      <td>RBP</td>
+      <td>RNA-binding protein.</td>
+    </tr>
+    <tr>
+      <td>miRNA-RISC</td>
+      <td>MicroRNA loaded into the RISC complex to repress or destabilize target RNAs.</td>
+    </tr>
+    <tr>
+      <td>ceRNA</td>
+      <td>Competing endogenous RNA; an RNA that can buffer miRNAs by sharing target sites, when abundance, affinity, and colocalization are sufficient.</td>
+    </tr>
+    <tr>
+      <td>NMD</td>
+      <td>Nonsense-mediated decay; surveillance and degradation of transcripts with premature stop codons.</td>
+    </tr>
+    <tr>
+      <td>Deadenylation / decapping</td>
+      <td>Removal of the polyA tail and 5’ cap, usually committing an mRNA to decay.</td>
+    </tr>
+    <tr>
+      <td>RNA G-quadruplex</td>
+      <td>A guanine-rich RNA structure that can block scanning or alter RNA fate.</td>
+    </tr>
+    <tr>
+      <td>Stress granule / P-body</td>
+      <td>Cytoplasmic RNA-protein condensates involved in RNA storage, repression, or decay.</td>
+    </tr>
+    <tr>
+      <td>Cap-dependent translation</td>
+      <td>Canonical translation initiation through cap recognition and 5’UTR scanning.</td>
+    </tr>
+    <tr>
+      <td>ISR / eIF2α-P</td>
+      <td>Integrated stress response; phosphorylation of eIF2α lowers global initiation but favors selected mRNAs.</td>
+    </tr>
+    <tr>
+      <td>uORF</td>
+      <td>Upstream open reading frame in a 5’UTR that can divert scanning ribosomes.</td>
+    </tr>
+    <tr>
+      <td>IRES / ITAF</td>
+      <td>Internal ribosome entry site and its helper factors. Viral IRESs are strong examples; many cellular IRES claims need context-specific validation.</td>
+    </tr>
+    <tr>
+      <td>RQC / NGD / NSD</td>
+      <td>Ribosome quality control, no-go decay, and non-stop decay; surveillance of stalled or abnormal translation.</td>
+    </tr>
+    <tr>
+      <td>O-GlcNAc</td>
+      <td>Reversible sugar modification on Ser/Thr residues that can crosstalk with phosphorylation.</td>
+    </tr>
+    <tr>
+      <td>Ubiquitin chain</td>
+      <td>A polymeric ubiquitin mark whose linkage type, such as K48 or K63, helps determine protein fate.</td>
+    </tr>
+    <tr>
+      <td>SUMOylation</td>
+      <td>Conjugation of SUMO proteins, often changing nuclear interactions or complex assembly.</td>
+    </tr>
+    <tr>
+      <td>Neddylation</td>
+      <td>Conjugation of NEDD8, especially to cullins, activating cullin-RING E3 ligases.</td>
+    </tr>
+    <tr>
+      <td>Proteasome</td>
+      <td>Protease complex that degrades many short-lived or damaged ubiquitinated proteins.</td>
+    </tr>
+    <tr>
+      <td>Selective autophagy</td>
+      <td>Lysosomal clearance of selected cargo such as aggregates, organelles, or ubiquitinated complexes.</td>
+    </tr>
+    <tr>
+      <td>UPR</td>
+      <td>Unfolded protein response; ER-stress response that expands folding capacity or slows translation.</td>
+    </tr>
+    <tr>
+      <td>PAR / ADP-ribosylation</td>
+      <td>Poly-ADP-ribose signaling, often used around DNA damage and condensate formation.</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="the-seven-layers">The Seven Layers</h2>
 
@@ -36,8 +407,8 @@ and the <a href="/assets/documents/gene-reg-v7.dot">Graphviz DOT source</a>.</p>
 
 <ol>
   <li><strong>3D genome</strong>: <code class="language-plaintext highlighter-rouge">ZONES</code>, <code class="language-plaintext highlighter-rouge">FENCES</code>, <code class="language-plaintext highlighter-rouge">BRIDGES</code>, and <code class="language-plaintext highlighter-rouge">HUBS</code> represent A/B
-compartments, TADs, enhancer-promoter loops, and super-enhancers or
-transcriptional condensates.</li>
+compartments, TADs, enhancer-promoter loops, and super-enhancers that can
+overlap with transcriptional condensates without being identical to them.</li>
   <li><strong>Epigenetics</strong>: <code class="language-plaintext highlighter-rouge">SILENCER</code>, <code class="language-plaintext highlighter-rouge">OPENER</code>, <code class="language-plaintext highlighter-rouge">WRITER-A</code>, <code class="language-plaintext highlighter-rouge">WRITER-R</code>, <code class="language-plaintext highlighter-rouge">SHUFFLER</code>,
 and <code class="language-plaintext highlighter-rouge">GUIDES</code> cover DNA methylation, histone marks, chromatin remodeling, and
 non-coding RNAs that guide chromatin complexes.</li>
@@ -52,23 +423,25 @@ miRNAs, lncRNAs, nonsense-mediated decay, mRNA stability, RNA structures, and
 cytoplasmic granules.</li>
   <li><strong>Translation</strong>: <code class="language-plaintext highlighter-rouge">FORGE</code>, <code class="language-plaintext highlighter-rouge">BRAKE</code>, <code class="language-plaintext highlighter-rouge">DECOY</code>, <code class="language-plaintext highlighter-rouge">BYPASS</code>, <code class="language-plaintext highlighter-rouge">TEMPO</code>, and
 <code class="language-plaintext highlighter-rouge">INSPECTOR</code> describe cap-dependent initiation, the integrated stress
-response, uORFs, IRES elements, decoding kinetics, and ribosome quality
-control.</li>
-  <li><strong>Post-translational regulation</strong>: <code class="language-plaintext highlighter-rouge">SWITCH</code>, <code class="language-plaintext highlighter-rouge">TAG</code>, <code class="language-plaintext highlighter-rouge">STAMP2</code>, <code class="language-plaintext highlighter-rouge">SHREDDER</code>,
-<code class="language-plaintext highlighter-rouge">RECYCLER</code>, <code class="language-plaintext highlighter-rouge">FOLDER</code>, and <code class="language-plaintext highlighter-rouge">ALARM</code> cover phosphorylation, ubiquitin,
-SUMO/NEDD8, the proteasome, autophagy, chaperones/UPR, and PARP/PAR
-signaling.</li>
+response, uORFs, non-canonical initiation, decoding kinetics, and ribosome
+quality control.</li>
+  <li><strong>Post-translational regulation</strong>: <code class="language-plaintext highlighter-rouge">SWITCH</code>, <code class="language-plaintext highlighter-rouge">ROUTER</code>, <code class="language-plaintext highlighter-rouge">TETHER</code>, <code class="language-plaintext highlighter-rouge">LICENSE</code>,
+<code class="language-plaintext highlighter-rouge">DESTROY</code>, <code class="language-plaintext highlighter-rouge">MATURE</code>, and <code class="language-plaintext highlighter-rouge">PAR</code> cover phosphorylation/O-GlcNAc, ubiquitin,
+SUMOylation, neddylation, proteasome/autophagy clearance, maturation/UPR,
+and PARP/PAR signaling.</li>
 </ol>
 
-<p>Across the whole diagram, <code class="language-plaintext highlighter-rouge">DROPLETS</code> represents liquid-liquid phase separation.
-It is not an extra regulatory layer. It is a physical principle reused in
-several places: transcriptional condensates, stress granules, P-bodies,
-proteolytic condensates, and DNA damage repair assemblies.</p>
+<p>Across the whole diagram, border styles flag recurring meta-principles. <code class="language-plaintext highlighter-rouge">LLPS</code>
+marks liquid-liquid phase separation, and <code class="language-plaintext highlighter-rouge">DECAY</code> marks turnover or clearance.
+They are not extra regulatory layers. They are reused in several places:
+transcriptional condensates, stress granules and P-bodies, mRNA decay,
+proteolytic condensates, autophagy, and DNA damage repair assemblies.</p>
 
 <h2 id="the-useful-reduction">The Useful Reduction</h2>
 
-<p>The full map contains 38 mechanisms and dozens of interactions. But
-conceptually, most of gene regulation reduces to three strategies.</p>
+<p>The full map contains 37 mechanism boxes, 2 meta-principles, and dozens of
+interactions. But conceptually, most of gene regulation reduces to three
+strategies.</p>
 
 <p><strong>1. Control accessibility.</strong><br />
 Make a substrate accessible or inaccessible to its molecular machinery.

@@ -62,7 +62,7 @@ examples.
 | `ZONES` | 3D genome | A/B chromatin compartments. |
 | `FENCES` | 3D genome | TAD boundaries and insulation by CTCF/cohesin. |
 | `BRIDGES` | 3D genome | Enhancer-promoter loops. |
-| `HUBS` | 3D genome | Super-enhancers and Pol II condensates. |
+| `HUBS` | 3D genome | Super-enhancers that can form or feed Pol II/coactivator condensates. |
 | `SILENCER` | Epigenetics | DNA methylation and repressive chromatin memory. |
 | `OPENER` | Epigenetics | Histone acetylation that opens chromatin. |
 | `WRITER-A` | Epigenetics | Activating histone methylation marks. |
@@ -78,7 +78,7 @@ examples.
 | `STAMP` | Post-transcriptional | m6A RNA marking and reader-dependent fate choices. |
 | `READERS` | Post-transcriptional | RNA-binding proteins that tune RNA processing, stability, localization, and translation. |
 | `DARTS` | Post-transcriptional | miRNA-RISC targeting. |
-| `SPONGE` | Post-transcriptional | Cytoplasmic lncRNAs and ceRNA-like buffering. |
+| `SPONGE` | Post-transcriptional | Cytoplasmic lncRNAs and stoichiometry-dependent ceRNA-like buffering. |
 | `CENSOR` | Post-transcriptional | Nonsense-mediated mRNA decay. |
 | `TIMER` | Post-transcriptional | mRNA half-life, deadenylation, decapping, and decay. |
 | `CLIPS` | Post-transcriptional | RNA G-quadruplex structures that affect scanning and translation. |
@@ -86,8 +86,8 @@ examples.
 | `FORGE` | Translation | Starting cap-dependent translation through mTOR/eIF4F. |
 | `BRAKE` | Translation | Slowing global translation during stress through ISR/eIF2α-P. |
 | `DECOY` | Translation | uORFs that divert scanning ribosomes and gate main ORF translation. |
-| `BYPASS` | Translation | IRES-driven translation without the normal cap/scanning route. |
-| `TEMPO` | Translation | Ribosome speed, pausing, codon usage, and co-translational folding. |
+| `BYPASS` | Translation | Non-canonical initiation routes, including IRES-like and m6A-dependent cases. |
+| `TEMPO` | Translation | Decoding kinetics, tRNA/codon effects, and contextual ribosome heterogeneity. |
 | `INSPECTOR` | Translation | RQC/NGD/NSD surveillance of stalled or broken translation. |
 | `SWITCH` | Post-translational | Phosphorylation/O-GlcNAc switches for protein activity and interactions. |
 | `ROUTER` | Post-translational | Ubiquitin-chain logic that routes proteins to signaling, proteasome, or autophagy. |
@@ -121,7 +121,7 @@ These are the main non-gene, non-protein terms used in the figure and glossary.
 | m6A | N6-methyladenosine, a reversible RNA modification interpreted by reader proteins. |
 | RBP | RNA-binding protein. |
 | miRNA-RISC | MicroRNA loaded into the RISC complex to repress or destabilize target RNAs. |
-| ceRNA | Competing endogenous RNA; an RNA that can buffer miRNAs by sharing target sites. |
+| ceRNA | Competing endogenous RNA; an RNA that can buffer miRNAs by sharing target sites, when abundance, affinity, and colocalization are sufficient. |
 | NMD | Nonsense-mediated decay; surveillance and degradation of transcripts with premature stop codons. |
 | Deadenylation / decapping | Removal of the polyA tail and 5' cap, usually committing an mRNA to decay. |
 | RNA G-quadruplex | A guanine-rich RNA structure that can block scanning or alter RNA fate. |
@@ -129,7 +129,7 @@ These are the main non-gene, non-protein terms used in the figure and glossary.
 | Cap-dependent translation | Canonical translation initiation through cap recognition and 5'UTR scanning. |
 | ISR / eIF2α-P | Integrated stress response; phosphorylation of eIF2α lowers global initiation but favors selected mRNAs. |
 | uORF | Upstream open reading frame in a 5'UTR that can divert scanning ribosomes. |
-| IRES / ITAF | Internal ribosome entry site and its helper factors, enabling cap-independent initiation. |
+| IRES / ITAF | Internal ribosome entry site and its helper factors. Viral IRESs are strong examples; many cellular IRES claims need context-specific validation. |
 | RQC / NGD / NSD | Ribosome quality control, no-go decay, and non-stop decay; surveillance of stalled or abnormal translation. |
 | O-GlcNAc | Reversible sugar modification on Ser/Thr residues that can crosstalk with phosphorylation. |
 | Ubiquitin chain | A polymeric ubiquitin mark whose linkage type, such as K48 or K63, helps determine protein fate. |
@@ -145,8 +145,8 @@ These are the main non-gene, non-protein terms used in the figure and glossary.
 The map follows the flow from DNA to RNA to protein:
 
 1. **3D genome**: `ZONES`, `FENCES`, `BRIDGES`, and `HUBS` represent A/B
-   compartments, TADs, enhancer-promoter loops, and super-enhancers or
-   transcriptional condensates.
+   compartments, TADs, enhancer-promoter loops, and super-enhancers that can
+   overlap with transcriptional condensates without being identical to them.
 2. **Epigenetics**: `SILENCER`, `OPENER`, `WRITER-A`, `WRITER-R`, `SHUFFLER`,
    and `GUIDES` cover DNA methylation, histone marks, chromatin remodeling, and
    non-coding RNAs that guide chromatin complexes.
@@ -161,8 +161,8 @@ The map follows the flow from DNA to RNA to protein:
    cytoplasmic granules.
 6. **Translation**: `FORGE`, `BRAKE`, `DECOY`, `BYPASS`, `TEMPO`, and
    `INSPECTOR` describe cap-dependent initiation, the integrated stress
-   response, uORFs, IRES elements, decoding kinetics, and ribosome quality
-   control.
+   response, uORFs, non-canonical initiation, decoding kinetics, and ribosome
+   quality control.
 7. **Post-translational regulation**: `SWITCH`, `ROUTER`, `TETHER`, `LICENSE`,
    `DESTROY`, `MATURE`, and `PAR` cover phosphorylation/O-GlcNAc, ubiquitin,
    SUMOylation, neddylation, proteasome/autophagy clearance, maturation/UPR,
