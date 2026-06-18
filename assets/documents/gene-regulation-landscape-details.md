@@ -4,8 +4,8 @@
 *Clawd · 2026-05-01 / updated 2026-06-18 · 37 mechanisms · 2 meta-principles · 7 layers*
 
 These notes are the technical companion to the current Gene Regulation
-Landscape v7 graph. They document the 37 mechanism boxes, 2 meta-principles, 72
-mechanism relations, and 8 meta-style annotations used in the rendered figure.
+Landscape v7 graph. They document the 37 mechanism boxes, 2 meta-principles, 73
+mechanism relations, and 7 meta-style annotations used in the rendered figure.
 The rendered figure was generated from the Graphviz source file
 [`gene-reg-v7.dot`](/assets/documents/gene-reg-v7.dot). The content preserves
 the original French working language while keeping the counts and mappings
@@ -30,8 +30,8 @@ La cellule régule l'expression de ses gènes à **7 niveaux emboîtés**, de l'
 
 - Les **37 mécanismes** sont les boîtes du graphe, réparties en 7 couches.
 - Les **2 métaprincipes**, **LLPS** et **DECAY**, ne sont pas des boîtes mécanistiques ordinaires : ils sont indiqués par des styles de bordure sur les mécanismes concernés.
-- Les **72 arêtes mécanistiques** décrivent des relations causales, de couplage ou de feedback entre mécanismes.
-- Les **8 annotations méta** rattachent LLPS et DECAY aux mécanismes qui les incarnent.
+- Les **73 arêtes mécanistiques** décrivent des relations causales, de couplage ou de feedback entre mécanismes.
+- Les **7 annotations méta** rattachent LLPS et DECAY aux mécanismes qui les incarnent.
 
 ## Notation du graphe et abréviations
 
@@ -72,15 +72,15 @@ Stratégie B — MARQUE RÉVERSIBLE + LECTURE CONTEXTUELLE
   "La même marque produit des effets différents selon le lecteur et le contexte"
   Instances : SILENCER/WRITER-A/WRITER-R (histone code + DNA methylation)
               STAMP (m6A → YTHDF1 ou YTHDF2 selon le contexte)
-              UBI (K48 → PROTEASOME ; K63 → AUTOPHAGY)
-              PHOSPHO (phospho → activation ou dégradation selon le substrat)
+              UBI (K48 → protéasome ; K63 → signalisation/autophagie)
+              SWITCH (phospho → activation ou dégradation selon le substrat)
 
 Stratégie C — COUPLAGE CINÉTIQUE
   "La vitesse du processus A détermine le résultat du processus B"
   Instances : Pol II rate → SPLICER (kinetic window)
               H3K36me3 déposé par SCRIBE → SPLICER (même couplage, autre niveau)
               TC limiting (BRAKE) → DECOY bypass → FORGE sélectif ATF4
-              Codon pause (TEMPO) → CHAPERONES co-traductionnel
+              Codon pause (TEMPO) → MATURE co-traductionnel
               IRES-TF loop (synthèse ATF4 → reprogrammation transcriptomique)
 ```
 
@@ -94,7 +94,7 @@ Stratégie C — COUPLAGE CINÉTIQUE
 | 3 — Co-transcriptionnel | SHIELD, SPLICER, TRIMMER, RECODER |
 | 4 — Post-transcriptionnel | STAMP, READERS, DARTS, SPONGE, CENSOR, TIMER, CLIPS, VAULT |
 | 5 — Traductionnel | FORGE, BRAKE, DECOY, BYPASS, TEMPO, INSPECTOR |
-| 6 — Post-traductionnel | PHOSPHO, UBI, SUMO_NEDD, PROTEASOME, AUTOPHAGY, CHAPERONES, PAR |
+| 6 — Post-traductionnel | SWITCH, UBI, SUMO, DESTROY, NEDD8, MATURE, PAR |
 | Méta | LLPS, DECAY |
 
 ## I. Les 7 couches — Explication et mécanismes
@@ -182,12 +182,12 @@ Stratégie C — COUPLAGE CINÉTIQUE
 
 | Nom code | Nom complet | Définition exacte |
 |----------|-------------|-------------------|
-| **PHOSPHO** | Phosphorylation / O-GlcNAcylation | **Phosphorylation** : ~500 kinases humaines phosphorylent Ser/Thr/Tyr → changements de conformation, création/destruction de sites d'interaction, activation/inactivation d'enzymes et TF (NF-κB, STAT1/3/5, SMAD, ERK→ELK1). ~30 % du protéome est phosphorylé. Réversible par ~200 phosphatases. **O-GlcNAcylation** : OGT ajoute GlcNAc sur Ser/Thr (mêmes sites que phospho) → "yin-yang" switch métabolique/signalisation. La phosphorylation active les kinases eIF2α (PERK, GCN2 → ISR), CDK9 (Pol II CTD Ser2), DDR kinases (ATM/ATR → PARP1). |
+| **SWITCH** | Phosphorylation / O-GlcNAcylation | **Phosphorylation** : ~500 kinases humaines phosphorylent Ser/Thr/Tyr → changements de conformation, création/destruction de sites d'interaction, activation/inactivation d'enzymes et TF (NF-κB, STAT1/3/5, SMAD, ERK→ELK1). ~30 % du protéome est phosphorylé. Réversible par ~200 phosphatases. **O-GlcNAcylation** : OGT ajoute GlcNAc sur Ser/Thr (mêmes sites que phospho) → "yin-yang" switch métabolique/signalisation. La phosphorylation active les kinases eIF2α (PERK, GCN2 → ISR), CDK9 (Pol II CTD Ser2), DDR kinases (ATM/ATR → PARP1). |
 | **UBI** | Ubiquitin code | La **cascade E1-E2-E3** (~2 E1, ~40 E2, ~600 E3 ligases humaines) conjugue l'ubiquitine sur les Lys des substrats. La topologie des chaînes polyUb détermine le destin : **K48** (4+ Ub) → protéasome 26S ; **K63** → signalisation (NF-κB, DDR, endocytose) ; **K11** → dégradation mitotique ; **M1/linéaire** → NF-κB signalisation. Activation par dégron : souvent **phospho-dégron** (phospho → reconnaissance par E3 SCF-F-box ou APC/C). |
-| **SUMO_NEDD** | SUMOylation / Neddylation (UBL family) | Protéines **Ubiquitin-Like** (UBL) conjuguées par des cascades analogues. **SUMO1/2/3** : conjuguées par SAE1/SAE2 (E1), UBC9 (E2 unique), ~10 SUMO E3 ligases. Effets : changements de localisation nucléaire, recrutement de co-répresseurs, protection contre l'ubiquitination. Souvent phospho-dépendant : motif **PDSM** (ψKxExxSP → SUMOylation sur K activée par phospho sur S). **Neddylation** : NEDD8 conjugué sur Cullines (CRL E3 ligases) → activation → ciblage de substrats vers le protéasome. Lien SUMO-Ubiquitin : **STUbL** E3 ligases (RNF4, RNF111) reconnaissent les chaînes polySUMO → ubiquitination → protéasome. |
-| **PROTEASOME** | Ubiquitin-Protéasome (26S UPS) | Le **26S protéasome** = **20S** (chambre catalytique avec 3 activités protéasiques : chymotrypsin-like, trypsin-like, caspase-like) + 2 × **19S regulatory particle** (reconnaît K48-polyUb, déubiquitine, déplie, transloque vers 20S). Dégrade ~80 % de toutes les protéines. Régulation par **condensats** : RAD23B/hHR23B phase-sépare avec les chaînes polyUb → foci nucléaires protéolytiques. La dégradation de certains inhibiteurs (IκBα, β-catenin) **active des TF** (NF-κB, TCF) → feedback vers la transcription. |
-| **AUTOPHAGY** | Autophagie sélective | Dégradation lysosomale sélective de protéines/organites ubiquitinés. **p62/SQSTM1** : récepteur cargo qui lie les chaînes K63/K48-polyUb + LC3/GABARAP sur les autophagosomes. **p62 phase-sépare** avec les chaînes polyUb → condensats → initiation de la séquestration autophagique. Flux : autophagosome (double membrane, LC3-II) + lysosome → autophagolysosome → dégradation. Les acides aminés libérés atteignent la surface lysosomale → signalisation Ragulator → **réactivation de mTORC1** (feedback majeur). |
-| **CHAPERONES** | Chaperones / UPR | **Chaperones** : Hsp70/Hsc70 (assistance co-traductionnelle) ; Hsp90 (maturation kinases, TF, récepteurs stéroïdiens) ; CCT/TRiC (folding en chambre isolée — actine, tubuline). Lien avec l'ubiquitination : **CHIP** (C-terminus of Hsp70-Interacting Protein) = E3 ubiquitin ligase qui ubiquitine les substrats mal foldés liés à Hsp70/Hsp90 → protéasome. **UPR** (Unfolded Protein Response, ER stress) : **PERK** (phosphoryle eIF2α = branche ISR), **IRE1** (épissage non-conventionnel de XBP1 mRNA), **ATF6** (TF activateur de gènes chaperonnage ER). |
+| **SUMO** | SUMOylation | Marque UBL surtout nucléaire. **SUMO1/2/3** sont conjuguées par SAE1/SAE2, **UBC9** et des E3 PIAS. Effets principaux : changer les interactions protéine-protéine, stabiliser des complexes nucléaires, recruter des co-répresseurs, moduler la réparation ADN et parfois protéger contre l'ubiquitination. Peut aussi créer un pont vers UBI via les **STUbL** (RNF4/RNF111), qui reconnaissent les chaînes polySUMO et déclenchent l'ubiquitination. |
+| **NEDD8** | Neddylation / activation des CRL | **NEDD8** est une UBL conjuguée surtout aux cullines. La neddylation active les **Cullin-RING ligases** (CRL), une grande famille d'E3 ubiquitin ligases, en favorisant le recrutement/positionnement des substrats et de l'E2. Ce n'est pas une voie de dégradation autonome : c'est un interrupteur en amont du système UBI qui augmente la capacité d'ubiquitination de substrats spécifiques. |
+| **DESTROY** | Destruction protéique : protéasome + autophagie sélective | Boîte fusionnée pour les deux grandes sorties de clearance protéique. **Protéasome 26S** : lit surtout K48-polyUb, déubiquitine, déplie et dégrade les protéines courtes ou endommagées. **Autophagie sélective** : récepteurs comme **p62/SQSTM1** relient les cargos ubiquitinés à **LC3/GABARAP** puis au lysosome, surtout pour agrégats, organites ou cargos volumineux. Les condensats polyUb peuvent concentrer ces cargos ; les acides aminés libérés par le lysosome réactivent mTORC1. |
+| **MATURE** | Chaperones / UPR | **Chaperones** : Hsp70/Hsc70 (assistance co-traductionnelle) ; Hsp90 (maturation kinases, TF, récepteurs stéroïdiens) ; CCT/TRiC (folding en chambre isolée — actine, tubuline). Lien avec l'ubiquitination : **CHIP** (C-terminus of Hsp70-Interacting Protein) = E3 ubiquitin ligase qui ubiquitine les substrats mal foldés liés à Hsp70/Hsp90 → protéasome. **UPR** (Unfolded Protein Response, ER stress) : **PERK** (phosphoryle eIF2α = branche ISR), **IRE1** (épissage non-conventionnel de XBP1 mRNA), **ATF6** (TF activateur de gènes chaperonnage ER). |
 | **PAR** | ADP-ribosylation / PARP / PAR | **PARP1** (Poly ADP-Ribose Polymérase 1) détecte les cassures ADN (DDR) et synthétise des chaînes de **PAR** (Poly-ADP-Ribose) sur lui-même et d'autres protéines (Asp, Glu, Lys). Activé par les kinases DDR (ATM/ATR, phospho-dépendant). PAR est une molécule multivalente → nucléation rapide de **condensats de phase** (LLPS) au niveau des dommages ADN → recrutement de la machinerie de réparation. Les longues chaînes PAR recrutent aussi des E3 ubiquitin ligases → lien PAR-ubiquitination. Inhibiteurs PARP (olaparib) = thérapeutique cancer (synthetic lethality avec BRCA1/2). |
 
 ---
@@ -197,11 +197,11 @@ Stratégie C — COUPLAGE CINÉTIQUE
 | Nom code | Nom complet | Définition exacte |
 |----------|-------------|-------------------|
 | **LLPS** | Liquid-Liquid Phase Separation | Processus thermodynamique par lequel des macromolécules (protéines IDR-riches, ARN, protéines de liaison à l'ARN) se concentrent spontanément en une phase dense distincte (condensat liquide). Conduit par des **interactions multivalentes** : domaines IDR (Intrinsically Disordered Regions), répétitions RGG, tyrosines, interactions ARN-protéine. LLPS n'est **pas un mécanisme de régulation** : c'est le principe physique exploité par plusieurs mécanismes. Instances biologiques : super-enhancers (BRD4 + Mediator + Pol II CTD), stress granules (G3BP1 + TIA-1 + ARNm), P-bodies (DCP1/2 + XRN1), condensats protéolytiques (hHR23B + polyUb), condensats de réparation ADN (PAR + FUS + RPA). |
-| **DECAY** | Turnover / clearance | Métaprincipe de retrait d'une molécule du système : dégradation d'ARNm (TIMER, CENSOR), dégradation protéasomale (PROTEASOME), autophagie sélective (AUTOPHAGY), et plus généralement bascule entre stockage temporaire et élimination. DECAY n'est pas un seul complexe moléculaire ; c'est une sortie fonctionnelle récurrente. |
+| **DECAY** | Turnover / clearance | Métaprincipe de retrait d'une molécule du système : dégradation d'ARNm (TIMER, CENSOR), destruction protéique protéasomale ou lysosomale (DESTROY), et plus généralement bascule entre stockage temporaire et élimination. DECAY n'est pas un seul complexe moléculaire ; c'est une sortie fonctionnelle récurrente. |
 
 ---
 
-## II. Catalogue des relations (72 arêtes mécanistiques + 8 annotations méta)
+## II. Catalogue des relations (73 arêtes mécanistiques + 7 annotations méta)
 
 ### Code couleur
 | Couleur | Type | Signification |
@@ -330,8 +330,8 @@ Stratégie C — COUPLAGE CINÉTIQUE
 | DECOY | FORGE | **UORF-COMPETE** ⊣ | uORFs séquestrent les ribosomes → réduction traduction mORF principal |
 | FORGE | INSPECTOR | **STALL-RQC** | Traduction active → stalling sur codons rares ou structures → RQC/NGD |
 | TEMPO | INSPECTOR | **CODON-STALL** | Codons rares → pause ribosomale prolongée → NGD/NSD/RQC |
-| TEMPO | CHAPERONES | **COTRANSL-FOLD** | Rythme de traduction (codon usage) → cinétique de repliement co-traductionnel |
-| INSPECTOR | PROTEASOME | **RQC-26S** | CAT-tailing du polypeptide nascent bloqué → reconnaissance LTN1 → dégradation |
+| TEMPO | MATURE | **COTRANSL-FOLD** | Rythme de traduction (codon usage) → cinétique de repliement co-traductionnel |
+| INSPECTOR | DESTROY | **RQC-26S** | CAT-tailing du polypeptide nascent bloqué → reconnaissance LTN1 → dégradation |
 
 #### Traduction → Transcription (feedback)
 | Source | Cible | Nom | Mécanisme |
@@ -341,36 +341,35 @@ Stratégie C — COUPLAGE CINÉTIQUE
 #### Post-traductionnel intra
 | Source | Cible | Nom | Mécanisme |
 |--------|-------|-----|-----------|
-| PHOSPHO | UBI | **PHOSPHO-DEGRON** | Phospho-dégron reconnu par E3 SCF (β-TrCP, Fbxw7) ou APC/C |
-| PHOSPHO | SUMO_NEDD | **PDSM** | Motif PDSM (ψKxExxSP) → phospho de la Ser → activation SUMOylation de la Lys |
-| PHOSPHO | PAR | **DDR-PARP** | ATM/ATR activés par DSBs → phosphorylent et activent PARP1 |
-| PHOSPHO | KEYS | **PHOSPHO-TF** | Phosphorylation active/inactive les TF (IKK→IκB→NF-κB, JAK→STAT, MAPK→ELK1) |
-| UBI | PROTEASOME | **K48-PROTEASOME** | K48-polyUb (4+) → dégradation par le 26S protéasome |
-| UBI | AUTOPHAGY | **K63-AUTOPHAGY** | K63-polyUb → récepteur p62/SQSTM1 → autophagosomes |
-| SUMO_NEDD | UBI | **STUBLS** | polySUMO → reconnu par RNF4/RNF111 (STUbL E3) → ubiquitination → protéasome |
-| PAR | PROTEASOME | **PAR-CONDENSATE** | PAR chaînes longues → nucléation de condensats protéolytiques → protéasome |
-| CHAPERONES | BRAKE | **UPR-ISR** | PERK (branche UPR) = kinase eIF2α → ISR = pont ER stress–ISR |
-| CHAPERONES | UBI | **CHIP-E3** | CHIP (Hsp70/90-associated E3) ubiquitine les protéines mal foldées → 26S |
-| AUTOPHAGY | FORGE | **AUTOPHAGY-MTOR** | Acides aminés libérés → Ragulator/RRAG GTPases surface lysosomale → mTORC1 réactivé |
-| PROTEASOME | KEYS | **PROTEASOME-TF** | Dégradation des inhibiteurs de TF (IκBα→NF-κB ; β-catenin→TCF/LEF) |
+| SWITCH | UBI | **SWITCH-DEGRON** | Phospho-dégron reconnu par E3 SCF (β-TrCP, Fbxw7) ou APC/C |
+| SWITCH | SUMO | **PDSM** | Motif PDSM (ψKxExxSP) → phospho de la Ser → activation SUMOylation de la Lys |
+| SWITCH | PAR | **DDR-PARP** | ATM/ATR activés par DSBs → phosphorylent et activent PARP1 |
+| SWITCH | KEYS | **SWITCH-TF** | Phosphorylation active/inactive les TF (IKK→IκB→NF-κB, JAK→STAT, MAPK→ELK1) |
+| UBI | DESTROY | **UBI-DESTROY** | K48-polyUb → protéasome 26S ; K63-polyUb peut recruter p62/SQSTM1 → autophagie sélective |
+| SUMO | UBI | **STUBLS** | polySUMO → reconnu par RNF4/RNF111 (STUbL E3) → ubiquitination → protéasome |
+| NEDD8 | UBI | **CRL-ACTIVATION** | Neddylation des cullines → activation des CRL E3 ligases → ubiquitination de substrats spécifiques |
+| PAR | DESTROY | **PAR-CONDENSATE** | PAR chaînes longues → nucléation de condensats protéolytiques → protéasome |
+| MATURE | BRAKE | **UPR-ISR** | PERK (branche UPR) = kinase eIF2α → ISR = pont ER stress–ISR |
+| MATURE | UBI | **CHIP-E3** | CHIP (Hsp70/90-associated E3) ubiquitine les protéines mal foldées → 26S |
+| DESTROY | FORGE | **LYSOSOME-MTOR** | Acides aminés libérés par la voie lysosomale → Ragulator/RRAG GTPases surface lysosomale → mTORC1 réactivé |
+| DESTROY | KEYS | **DESTROY-TF** | Dégradation des inhibiteurs de TF (IκBα→NF-κB ; β-catenin→TCF/LEF) |
 
 #### Post-traductionnel → Transcription / Pol II
 | Source | Cible | Nom | Mécanisme |
 |--------|-------|-----|-----------|
-| PHOSPHO | SCRIBE | **CDK9-CTD** | CDK9/P-TEFb (phosphorylé et activé) → Ser2-CTD → libération de la pause Pol II |
-| PHOSPHO | BRAKE | **KINASE-EIF2A** | GCN2, PERK, HRI, PKR phosphorylent eIF2α Ser51 → BRAKE activé |
+| SWITCH | SCRIBE | **CDK9-CTD** | CDK9/P-TEFb (phosphorylé et activé) → Ser2-CTD → libération de la pause Pol II |
+| SWITCH | BRAKE | **KINASE-EIF2A** | GCN2, PERK, HRI, PKR phosphorylent eIF2α Ser51 → BRAKE activé |
 
 #### Métaprincipes transversaux
 | Source | Cible | Nom | Mécanisme |
 |--------|-------|-----|-----------|
 | LLPS | HUBS | **LLPS-SE** | LLPS forme les condensats de transcription = super-enhancers |
 | LLPS | VAULT | **LLPS-SG-PB** | LLPS forme les stress granules et P-bodies |
-| LLPS | PROTEASOME | **LLPS-PROTEASOME** | LLPS forme les condensats protéolytiques (hHR23B + polyUb) |
+| LLPS | DESTROY | **LLPS-DESTROY** | LLPS forme les condensats protéolytiques (hHR23B + polyUb) |
 | LLPS | PAR | **LLPS-PAR** | Les chaînes PAR nucléent des condensats de réparation ADN |
 | DECAY | TIMER | **DECAY-MRNA** | Turnover des ARNm par déadénylation, décapping et exonucléases |
 | DECAY | CENSOR | **DECAY-NMD** | NMD comme branche de surveillance et élimination des ARNm aberrants |
-| DECAY | PROTEASOME | **DECAY-PROTEASOME** | Dégradation protéique ubiquitine-dépendante |
-| DECAY | AUTOPHAGY | **DECAY-AUTOPHAGY** | Clearance lysosomale sélective de protéines, agrégats ou organites |
+| DECAY | DESTROY | **DECAY-DESTROY** | Dégradation protéique ubiquitine-dépendante ou clearance lysosomale sélective de protéines, agrégats ou organites |
 
 ---
 
@@ -384,7 +383,7 @@ Stratégie C — COUPLAGE CINÉTIQUE
 | Codon usage + tRNA modifications + Ribosome hétérogénéité → **TEMPO** | Trois facettes du même principe "efficacité de décodage" |
 | SWI/SNF + ISWI + CHD + INO80 → **SHUFFLER** | Même principe ATP-dependent, 4 sous-familles |
 | eRNAs (enhancer RNAs) | Sous-produits de l'activité enhancer = readout, pas mécanisme propre |
-| ISR branch PERK / UPR | PERK est à la fois une kinase ISR et la branche PERK de l'UPR : intégré via CHAPERONES → BRAKE |
+| ISR branch PERK / UPR | PERK est à la fois une kinase ISR et la branche PERK de l'UPR : intégré via MATURE → BRAKE |
 | siRNA / miRNA | Partagent RISC/AGO2 ; siRNA chez les animaux = variante outil expérimental surtout → fusionné dans DARTS |
 | ceRNA hypothesis | Conséquence de la saturation du pool miRNA = cas particulier de SPONGE + DARTS |
 
@@ -421,6 +420,6 @@ Stratégie C — COUPLAGE CINÉTIQUE
 
 ---
 
-*v7 — 37 mécanismes, 2 métaprincipes, 72 relations mécanistiques + 8 annotations méta*
+*v7 — 37 mécanismes, 2 métaprincipes, 73 relations mécanistiques + 7 annotations méta*
 *Fichier : `assets/documents/gene-regulation-landscape-details.md`*
 *Diagramme : `assets/documents/gene-reg-v7.dot` + `assets/images/gene-reg-v7.png`*

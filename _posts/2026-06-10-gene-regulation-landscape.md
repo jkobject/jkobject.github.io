@@ -89,12 +89,12 @@ examples.
 | `BYPASS` | Translation | IRES-driven translation without the normal cap/scanning route. |
 | `TEMPO` | Translation | Ribosome speed, pausing, codon usage, and co-translational folding. |
 | `INSPECTOR` | Translation | RQC/NGD/NSD surveillance of stalled or broken translation. |
-| `PHOSPHO` | Post-translational | Phosphorylation/O-GlcNAc switches for protein activity and interactions. |
+| `SWITCH` | Post-translational | Phosphorylation/O-GlcNAc switches for protein activity and interactions. |
 | `UBI` | Post-translational | Ubiquitin-chain logic that routes proteins to signaling, proteasome, or autophagy. |
-| `SUMO_NEDD` | Post-translational | SUMO and NEDD8 marks controlling localization, repression, and E3 ligase activity. |
-| `PROTEASOME` | Post-translational | Ubiquitin-proteasome degradation of short-lived or damaged proteins. |
-| `AUTOPHAGY` | Post-translational | Lysosomal clearance of large protein or organellar cargo. |
-| `CHAPERONES` | Post-translational | Protein folding, refolding, triage, and ER-stress UPR. |
+| `SUMO` | Post-translational | SUMOylation that tunes nuclear localization, repression, complex assembly, and DNA repair. |
+| `NEDD8` | Post-translational | Neddylation that activates cullin-RING E3 ubiquitin ligases. |
+| `DESTROY` | Post-translational | Protein clearance through the proteasome and selective autophagy. |
+| `MATURE` | Post-translational | Protein folding, refolding, triage, and ER-stress UPR. |
 | `PAR` | Post-translational | PARP/PAR signaling at DNA damage and repair condensates. |
 
 ## The Seven Layers
@@ -120,10 +120,10 @@ The map follows the flow from DNA to RNA to protein:
    `INSPECTOR` describe cap-dependent initiation, the integrated stress
    response, uORFs, IRES elements, decoding kinetics, and ribosome quality
    control.
-7. **Post-translational regulation**: `PHOSPHO`, `UBI`, `SUMO_NEDD`,
-   `PROTEASOME`, `AUTOPHAGY`, `CHAPERONES`, and `PAR` cover
-   phosphorylation/O-GlcNAc, ubiquitin, SUMO/NEDD8, proteasomal degradation,
-   selective autophagy, chaperones/UPR, and PARP/PAR signaling.
+7. **Post-translational regulation**: `SWITCH`, `UBI`, `SUMO`, `NEDD8`,
+   `DESTROY`, `MATURE`, and `PAR` cover phosphorylation/O-GlcNAc, ubiquitin,
+   SUMOylation, neddylation, proteasome/autophagy clearance, maturation/UPR,
+   and PARP/PAR signaling.
 
 Across the whole diagram, border styles flag recurring meta-principles. `LLPS`
 marks liquid-liquid phase separation, and `DECAY` marks turnover or clearance.

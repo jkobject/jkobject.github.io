@@ -53,7 +53,7 @@ digraph gene_regulation {
         FENCES [label=<
                 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
                     <TR><TD><B>FENCES</B></TD></TR>
-                    <TR><TD>TADs (CTCF + Cohesin)</TD></TR>
+                    <TR><TD>TADs (<I>CTCF</I> + <I>Cohesin</I>)</TD></TR>
                     <TR><TD>loop extrusion → insulation</TD></TR>
                 </TABLE>
             > fillcolor="#1e3a5f" fontcolor="#bfdbfe" color="#60a5fa"]
@@ -61,14 +61,14 @@ digraph gene_regulation {
                 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
                     <TR><TD><B>BRIDGES</B></TD></TR>
                     <TR><TD>Enhancer→Promoter loops</TD></TR>
-                    <TR><TD>(Mediator + Cohesin + YY1)</TD></TR>
+                    <TR><TD>(<I>Mediator</I> + <I>Cohesin</I> + <I>YY1</I>)</TD></TR>
                 </TABLE>
             > fillcolor="#1e3a5f" fontcolor="#bfdbfe" color="#60a5fa"]
         HUBS [label=<
                 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
                     <TR><TD><B>HUBS</B></TD></TR>
                     <TR><TD>Super-enhancers / Pol II condensates</TD></TR>
-                    <TR><TD>(LLPS + BRD4 + master TFs)</TD></TR>
+                    <TR><TD>(LLPS + <I>BRD4</I> + master TFs)</TD></TR>
                 </TABLE>
             > fillcolor="#162d4a" fontcolor="#bfdbfe" color="#22d3ee" style="filled,rounded,dotted,bold" penwidth=2.8]
     }
@@ -89,14 +89,14 @@ digraph gene_regulation {
                 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
                     <TR><TD><B>SILENCER</B></TD></TR>
                     <TR><TD>DNA methylation</TD></TR>
-                    <TR><TD>(DNMT1/3A/3B ↔ TET  5mC→5hmC)</TD></TR>
+                    <TR><TD>(<I>DNMT1/3A/3B</I> ↔ <I>TET</I>  5mC→5hmC)</TD></TR>
                 </TABLE>
             > fillcolor="#14532d" fontcolor="#bbf7d0" color="#4ade80"]
         OPENER   [label=<
                 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
                     <TR><TD><B>OPENER</B></TD></TR>
                     <TR><TD>Histone acetylation</TD></TR>
-                    <TR><TD>(HATs: p300/CBP  HDACs)</TD></TR>
+                    <TR><TD>(HATs: <I>p300/CBP</I>  <I>HDACs</I>)</TD></TR>
                     <TR><TD>H3K27ac, H3K9ac</TD></TR>
                 </TABLE>
             > fillcolor="#14532d" fontcolor="#bbf7d0" color="#4ade80"]
@@ -104,30 +104,30 @@ digraph gene_regulation {
                 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
                     <TR><TD><B>WRITER-A</B></TD></TR>
                     <TR><TD>Activating histone methylation</TD></TR>
-                    <TR><TD>H3K4me3 (MLL)  H3K36me3 (SETD2)</TD></TR>
+                    <TR><TD>H3K4me3 (<I>MLL</I>)  H3K36me3 (<I>SETD2</I>)</TD></TR>
                 </TABLE>
             > fillcolor="#14532d" fontcolor="#bbf7d0" color="#4ade80"]
         WRITER_R [label=<
                 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
                     <TR><TD><B>WRITER-R</B></TD></TR>
                     <TR><TD>Repressive histone methylation</TD></TR>
-                    <TR><TD>H3K27me3 (PRC2/EZH2)</TD></TR>
-                    <TR><TD>H3K9me3 (SUV39H)  bivalent domains</TD></TR>
+                    <TR><TD>H3K27me3 (<I>PRC2/EZH2</I>)</TD></TR>
+                    <TR><TD>H3K9me3 (<I>SUV39H</I>)  bivalent domains</TD></TR>
                 </TABLE>
             > fillcolor="#14532d" fontcolor="#bbf7d0" color="#4ade80"]
         SHUFFLER [label=<
                 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
                     <TR><TD><B>SHUFFLER</B></TD></TR>
                     <TR><TD>ATP-dependent chromatin remodeling</TD></TR>
-                    <TR><TD>(SWI/SNF, ISWI, CHD, INO80)</TD></TR>
+                    <TR><TD>(<I>SWI/SNF</I>, <I>ISWI</I>, <I>CHD</I>, <I>INO80</I>)</TD></TR>
                 </TABLE>
             > fillcolor="#14532d" fontcolor="#bbf7d0" color="#4ade80"]
         GUIDES   [label=<
                 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
                     <TR><TD><B>GUIDES</B></TD></TR>
                     <TR><TD>Epigenetic ncRNAs</TD></TR>
-                    <TR><TD>(piRNA → DNMT3  lncRNA→PRC2</TD></TR>
-                    <TR><TD>XIST, HOTAIR, KCNQ1OT1)</TD></TR>
+                    <TR><TD>(piRNA → <I>DNMT3</I>  lncRNA→<I>PRC2</I></TD></TR>
+                    <TR><TD><I>XIST</I>, <I>HOTAIR</I>, <I>KCNQ1OT1</I>)</TD></TR>
                 </TABLE>
             > fillcolor="#0f3d23" fontcolor="#bbf7d0" color="#4ade80"]
     }
@@ -148,7 +148,7 @@ digraph gene_regulation {
                 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
                     <TR><TD><B>KEYS</B></TD></TR>
                     <TR><TD>Transcription factors (TFs)</TD></TR>
-                    <TR><TD>(Pioneer: FOXA1, OCT4, GATA3</TD></TR>
+                    <TR><TD>(Pioneer: <I>FOXA1</I>, <I>OCT4</I>, <I>GATA3</I></TD></TR>
                     <TR><TD>~1600 human TFs)</TD></TR>
                 </TABLE>
             > fillcolor="#78350f" fontcolor="#fef3c7" color="#f59e0b"]
@@ -156,7 +156,7 @@ digraph gene_regulation {
                 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
                     <TR><TD><B>SCRIBE</B></TD></TR>
                     <TR><TD>Pol II + Pausing</TD></TR>
-                    <TR><TD>(NELF+DSIF → P-TEFb / <I>CDK9</I>)</TD></TR>
+                    <TR><TD>(<I>NELF</I>+<I>DSIF</I> → <I>P-TEFb</I> / <I>CDK9</I>)</TD></TR>
                     <TR><TD>CTD phospho-code: Ser5/Ser2/Ser7</TD></TR>
                 </TABLE>
             > fillcolor="#78350f" fontcolor="#fef3c7" color="#f59e0b" style="filled,rounded,bold" penwidth=2.2]
@@ -178,14 +178,14 @@ digraph gene_regulation {
                 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
                     <TR><TD><B>SHIELD</B></TD></TR>
                     <TR><TD>5' Capping (m7G)</TD></TR>
-                    <TR><TD>(Ser5-P CTD → CBC → <I>eIF4E</I>)</TD></TR>
+                    <TR><TD>(Ser5-P CTD → <I>CBC</I> → <I>eIF4E</I>)</TD></TR>
                 </TABLE>
             > fillcolor="#7c2d12" fontcolor="#fed7aa" color="#fb923c"]
         SPLICER [label=<
                 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
                     <TR><TD><B>SPLICER</B></TD></TR>
                     <TR><TD>Alternative splicing</TD></TR>
-                    <TR><TD>(SR proteins, hnRNPs, spliceosome)</TD></TR>
+                    <TR><TD>(<I>SR proteins</I>, <I>hnRNPs</I>, spliceosome)</TD></TR>
                     <TR><TD>kinetic coupling with Pol II</TD></TR>
                 </TABLE>
             > fillcolor="#7c2d12" fontcolor="#fed7aa" color="#fb923c" style="filled,rounded,bold" penwidth=2.2]
@@ -200,8 +200,8 @@ digraph gene_regulation {
         RECODER [label=<
                 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
                     <TR><TD><B>RECODER</B></TD></TR>
-                    <TR><TD>A→I Editing (ADAR1/ADAR2)</TD></TR>
-                    <TR><TD>ADARs → inosine</TD></TR>
+                    <TR><TD>A→I Editing (<I>ADAR1/ADAR2</I>)</TD></TR>
+                    <TR><TD><I>ADARs</I> → inosine</TD></TR>
                     <TR><TD>→ recoding + splice + NMD</TD></TR>
                 </TABLE>
             > fillcolor="#6b2500" fontcolor="#fed7aa" color="#fb923c"]
@@ -232,7 +232,7 @@ digraph gene_regulation {
                     <TR><TD><B>READERS</B></TD></TR>
                     <TR><TD>Regulatory RBPs (~1500)</TD></TR>
                     <TR><TD>(<I>HuR</I>, <I>TTP</I>, <I>FMRP</I>, <I>Staufen</I></TD></TR>
-                    <TR><TD>SR proteins, hnRNPs)</TD></TR>
+                    <TR><TD><I>SR proteins</I>, <I>hnRNPs</I>)</TD></TR>
                 </TABLE>
             > fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#a78bfa" style="filled,rounded,bold" penwidth=2.2]
         DARTS   [label=<
@@ -359,9 +359,9 @@ digraph gene_regulation {
         bgcolor="#1c1c1c"
         margin=14
 
-        PHOSPHO    [label=<
+        SWITCH     [label=<
                 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
-                    <TR><TD><B>PHOSPHO</B></TD></TR>
+                    <TR><TD><B>SWITCH</B></TD></TR>
                     <TR><TD>switch protein activity or interactions</TD></TR>
                     <TR><TD>kinases ↔ phosphatases; O-GlcNAc crosstalk</TD></TR>
                     <TR><TD><I>PERK</I>/<I>GCN2</I> → <I>eIF2α</I>; <I>CDK9</I> → Pol II</TD></TR>
@@ -375,37 +375,33 @@ digraph gene_regulation {
                     <TR><TD>E1/E2/E3 cascade; degron readers</TD></TR>
                 </TABLE>
             > fillcolor="#1e293b" fontcolor="#e2e8f0" color="#94a3b8" style="filled,rounded,bold" penwidth=2.2]
-        SUMO_NEDD  [label=<
+        SUMO       [label=<
                 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
-                    <TR><TD><B>SUMO_NEDD</B></TD></TR>
-                    <TR><TD>change localization, repression, or E3 activity</TD></TR>
-                    <TR><TD>SUMO marks nuclear complexes</TD></TR>
-                    <TR><TD>NEDD8 activates cullin-RING ligases</TD></TR>
+                    <TR><TD><B>SUMO</B></TD></TR>
+                    <TR><TD>tune nuclear localization and repression</TD></TR>
+                    <TR><TD>SUMOylation marks protein complexes</TD></TR>
+                    <TR><TD><I>SUMO1/2/3</I>, <I>UBC9</I>, <I>PIAS</I></TD></TR>
                 </TABLE>
             > fillcolor="#172030" fontcolor="#e2e8f0" color="#94a3b8"]
-        PROTEASOME [
-            label=<
+        NEDD8      [label=<
                 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
-                    <TR>
-                        <TD><FONT POINT-SIZE="10"><B>PROTEASOME</B></FONT></TD>
-                        <TD><FONT POINT-SIZE="8" COLOR="#22d3ee">LLPS</FONT></TD>
-                    </TR>
-                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="9">destroy short-lived/damaged proteins<BR/>26S UPS reads K48-polyUb<BR/>condensates concentrate cargo</FONT></TD></TR>
+                    <TR><TD><B>NEDD8</B></TD></TR>
+                    <TR><TD>activate cullin-RING E3 ligases</TD></TR>
+                    <TR><TD>NEDDylation turns on CRL ubiquitin ligases</TD></TR>
+                    <TR><TD><I>NEDD8</I> → cullins → substrate ubiquitination</TD></TR>
                 </TABLE>
-            >
-            fillcolor="#1e293b" fontcolor="#e2e8f0" color="#f472b6" style="filled,rounded,dashed,bold" penwidth=2.8
-        ]
-        AUTOPHAGY  [label=<
+            > fillcolor="#172030" fontcolor="#e2e8f0" color="#94a3b8"]
+        DESTROY    [label=<
                 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
-                    <TR><TD><B>AUTOPHAGY</B></TD></TR>
-                    <TR><TD>clear large protein/organellar cargo</TD></TR>
-                    <TR><TD><I>p62/SQSTM1</I> bridges ubiquitin to <I>LC3</I></TD></TR>
-                    <TR><TD>lysosome recycling feeds <I>mTORC1</I></TD></TR>
+                    <TR><TD><B>DESTROY</B> <FONT POINT-SIZE="8" COLOR="#22d3ee">LLPS</FONT></TD></TR>
+                    <TR><TD>remove proteins or large cargo</TD></TR>
+                    <TR><TD>proteasome: K48-polyUb short-lived proteins</TD></TR>
+                    <TR><TD>autophagy: <I>p62/SQSTM1</I> + <I>LC3</I> to lysosome</TD></TR>
                 </TABLE>
-            > fillcolor="#172030" fontcolor="#e2e8f0" color="#f472b6" style="filled,rounded,dashed" penwidth=2.4]
-        CHAPERONES [label=<
+            > fillcolor="#1e293b" fontcolor="#e2e8f0" color="#f472b6" style="filled,rounded,dashed,bold" penwidth=2.8]
+        MATURE     [label=<
                 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
-                    <TR><TD><B>CHAPERONES</B></TD></TR>
+                    <TR><TD><B>MATURE</B></TD></TR>
                     <TR><TD>fold, refold, or triage proteins</TD></TR>
                     <TR><TD><I>Hsp70/Hsp90/CCT</I> assist folding</TD></TR>
                     <TR><TD>UPR: <I>IRE1</I>, <I>PERK</I>, <I>ATF6</I> sense ER stress</TD></TR>
@@ -572,32 +568,33 @@ digraph gene_regulation {
     DECOY -> FORGE  [label="regulate\ninitiation" color="#ef4444" fontcolor="#ef4444" arrowhead=tee]
     FORGE -> INSPECTOR [label="elongation stalls\n→ RQC/NGD" color="#ef4444" fontcolor="#ef4444"]
     TEMPO -> INSPECTOR [label="codon/tRNA tempo\n→ ribosome stalls" color="#ef4444" fontcolor="#ef4444"]
-    TEMPO -> CHAPERONES [label="translation speed\n→ co-translational folding" color="#ef4444" fontcolor="#ef4444" style=dashed]
-    INSPECTOR -> PROTEASOME [label="RQC ubiquitinates\nnascent chains" color="#94a3b8" fontcolor="#94a3b8"]
+    TEMPO -> MATURE [label="translation speed\n→ co-translational folding" color="#ef4444" fontcolor="#ef4444" style=dashed]
+    INSPECTOR -> DESTROY [label="RQC ubiquitinates\nnascent chains" color="#94a3b8" fontcolor="#94a3b8"]
 
     // ============================================================
     // LAYER 5 → LAYER 6
     // ============================================================
-    FORGE  -> CHAPERONES [label="co-translational\nfolding" color="#f87171" fontcolor="#f87171"]
-    FORGE  -> PHOSPHO    [label="mTOR→AKT\n→ kinases" color="#f87171" fontcolor="#f87171" style=dashed]
+    FORGE  -> MATURE [label="co-translational\nfolding" color="#f87171" fontcolor="#f87171"]
+    FORGE  -> SWITCH    [label="mTOR→AKT\n→ kinases" color="#f87171" fontcolor="#f87171" style=dashed]
 
     // ============================================================
     // Relations intra-couche 6
     // ============================================================
-    PHOSPHO    -> UBI        [label="phospho-degron\n→ E3 ligase" color="#94a3b8" fontcolor="#94a3b8"]
-    UBI        -> PROTEASOME [label="K48 chains\n→ 26S (A)" color="#94a3b8" fontcolor="#94a3b8" penwidth=2]
-    UBI        -> AUTOPHAGY  [label="p62 reads\nK63 chains" color="#94a3b8" fontcolor="#94a3b8"]
-    SUMO_NEDD  -> UBI        [label="STUbLs:\nSUMO→Ub" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
-    PHOSPHO    -> SUMO_NEDD  [label="phospho-dep.\nSUMO recruit" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
-    PAR        -> PROTEASOME [label="PARylation →\nproteolytic condensates" color="#94a3b8" fontcolor="#94a3b8"]
+    SWITCH    -> UBI        [label="phospho-degron\n→ E3 ligase" color="#94a3b8" fontcolor="#94a3b8"]
+    UBI        -> DESTROY [label="K48→26S\nK63→p62/LC3" color="#94a3b8" fontcolor="#94a3b8" penwidth=2]
+    SUMO  -> UBI        [label="STUbLs:\nSUMO→Ub" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
+    NEDD8 -> UBI        [label="activates CRLs\n→ substrate Ub" color="#94a3b8" fontcolor="#94a3b8"]
+    SWITCH    -> SUMO  [label="phospho-dep.\nSUMO recruit" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
+    PAR        -> DESTROY [label="PARylation →\nproteolytic condensates" color="#94a3b8" fontcolor="#94a3b8"]
+    DESTROY    -> FORGE [label="lysosomal AA\n→ mTORC1" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
 
     // ============================================================
     // FEEDBACKS LAYER 6 → upstream layers
     // ============================================================
-    CHAPERONES -> BRAKE [label="UPR: PERK\n= eIF2α kinase" color="#94a3b8" fontcolor="#94a3b8" style=dashed penwidth=2]
-    PHOSPHO    -> SCRIBE [label="P-TEFb/CDK9\nSer2-CTD" color="#94a3b8" fontcolor="#94a3b8"]
-    PHOSPHO    -> BRAKE  [label="eIF2α kinases\n(PERK, GCN2)" color="#94a3b8" fontcolor="#94a3b8"]
-    PROTEASOME -> KEYS   [label="IκBα decay\n→ NF-κB activ." color="#94a3b8" fontcolor="#94a3b8" style=dashed]
+    MATURE -> BRAKE [label="UPR: PERK\n= eIF2α kinase" color="#94a3b8" fontcolor="#94a3b8" style=dashed penwidth=2]
+    SWITCH    -> SCRIBE [label="P-TEFb/CDK9\nSer2-CTD" color="#94a3b8" fontcolor="#94a3b8"]
+    SWITCH    -> BRAKE  [label="eIF2α kinases\n(PERK, GCN2)" color="#94a3b8" fontcolor="#94a3b8"]
+    DESTROY -> KEYS   [label="IκBα decay\n→ NF-κB activ." color="#94a3b8" fontcolor="#94a3b8" style=dashed]
 
     // ============================================================
     // RANKING
@@ -608,6 +605,6 @@ digraph gene_regulation {
     { rank=same; SHIELD; SPLICER; TRIMMER; RECODER }
     { rank=same; STAMP; READERS; DARTS; SPONGE; CENSOR; TIMER; CLIPS; VAULT }
     { rank=same; FORGE; BRAKE; DECOY; BYPASS; TEMPO; INSPECTOR }
-    { rank=same; PHOSPHO; UBI; SUMO_NEDD; PROTEASOME; AUTOPHAGY; CHAPERONES; PAR }
+    { rank=same; SWITCH; UBI; SUMO; NEDD8; DESTROY; MATURE; PAR }
     { rank=min; LEGEND }
 }
