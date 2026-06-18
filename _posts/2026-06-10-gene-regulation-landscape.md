@@ -90,12 +90,55 @@ examples.
 | `TEMPO` | Translation | Ribosome speed, pausing, codon usage, and co-translational folding. |
 | `INSPECTOR` | Translation | RQC/NGD/NSD surveillance of stalled or broken translation. |
 | `SWITCH` | Post-translational | Phosphorylation/O-GlcNAc switches for protein activity and interactions. |
-| `UBI` | Post-translational | Ubiquitin-chain logic that routes proteins to signaling, proteasome, or autophagy. |
-| `SUMO` | Post-translational | SUMOylation that tunes nuclear localization, repression, complex assembly, and DNA repair. |
-| `NEDD8` | Post-translational | Neddylation that activates cullin-RING E3 ubiquitin ligases. |
+| `ROUTER` | Post-translational | Ubiquitin-chain logic that routes proteins to signaling, proteasome, or autophagy. |
+| `TETHER` | Post-translational | SUMOylation that tethers proteins into nuclear complexes, repression modules, or repair assemblies. |
+| `LICENSE` | Post-translational | Neddylation that licenses cullin-RING E3 ubiquitin ligases for substrate routing. |
 | `DESTROY` | Post-translational | Protein clearance through the proteasome and selective autophagy. |
 | `MATURE` | Post-translational | Protein folding, refolding, triage, and ER-stress UPR. |
 | `PAR` | Post-translational | PARP/PAR signaling at DNA damage and repair condensates. |
+
+## Term Glossary
+
+These are the main non-gene, non-protein terms used in the figure and glossary.
+
+| Term | Meaning |
+|------|---------|
+| A/B compartments | Large Hi-C chromatin domains; A is generally active/euchromatic, B is generally inactive/heterochromatic. |
+| TAD | Topologically associating domain; a chromatin neighborhood insulated by boundaries such as CTCF/cohesin sites. |
+| Enhancer-promoter loop | A 3D contact that brings a distal enhancer near a target promoter. |
+| Super-enhancer | A dense enhancer cluster with high transcription-factor, Mediator, BRD4, and Pol II occupancy. |
+| Condensate / LLPS | Liquid-liquid phase separation; concentration of molecules into a dense phase without a membrane. |
+| DNA methylation | Addition of methyl groups to cytosines, often linked to transcriptional repression at promoters. |
+| Histone mark | A chemical modification on histones, such as acetylation or methylation, read by chromatin proteins. |
+| Chromatin remodeling | ATP-driven repositioning, eviction, or exchange of nucleosomes. |
+| ncRNA | Non-coding RNA; RNA that functions without being translated into protein. |
+| Pol II pausing | Promoter-proximal RNA polymerase II stalling before productive elongation. |
+| CTD phosphorylation | Phosphorylation of the Pol II C-terminal domain, coordinating transcription with RNA processing. |
+| 5' capping | Addition of an m7G cap to nascent RNA, protecting it and enabling export/translation. |
+| Alternative splicing | Regulated exon choice that produces multiple transcript isoforms from one gene. |
+| Alternative polyadenylation | Choice of different cleavage/polyA sites, often changing 3'UTR length. |
+| A-to-I editing | Adenosine-to-inosine RNA editing; inosine is read like guanosine by many machines. |
+| m6A | N6-methyladenosine, a reversible RNA modification interpreted by reader proteins. |
+| RBP | RNA-binding protein. |
+| miRNA-RISC | MicroRNA loaded into the RISC complex to repress or destabilize target RNAs. |
+| ceRNA | Competing endogenous RNA; an RNA that can buffer miRNAs by sharing target sites. |
+| NMD | Nonsense-mediated decay; surveillance and degradation of transcripts with premature stop codons. |
+| Deadenylation / decapping | Removal of the polyA tail and 5' cap, usually committing an mRNA to decay. |
+| RNA G-quadruplex | A guanine-rich RNA structure that can block scanning or alter RNA fate. |
+| Stress granule / P-body | Cytoplasmic RNA-protein condensates involved in RNA storage, repression, or decay. |
+| Cap-dependent translation | Canonical translation initiation through cap recognition and 5'UTR scanning. |
+| ISR / eIF2α-P | Integrated stress response; phosphorylation of eIF2α lowers global initiation but favors selected mRNAs. |
+| uORF | Upstream open reading frame in a 5'UTR that can divert scanning ribosomes. |
+| IRES / ITAF | Internal ribosome entry site and its helper factors, enabling cap-independent initiation. |
+| RQC / NGD / NSD | Ribosome quality control, no-go decay, and non-stop decay; surveillance of stalled or abnormal translation. |
+| O-GlcNAc | Reversible sugar modification on Ser/Thr residues that can crosstalk with phosphorylation. |
+| Ubiquitin chain | A polymeric ubiquitin mark whose linkage type, such as K48 or K63, helps determine protein fate. |
+| SUMOylation | Conjugation of SUMO proteins, often changing nuclear interactions or complex assembly. |
+| Neddylation | Conjugation of NEDD8, especially to cullins, activating cullin-RING E3 ligases. |
+| Proteasome | Protease complex that degrades many short-lived or damaged ubiquitinated proteins. |
+| Selective autophagy | Lysosomal clearance of selected cargo such as aggregates, organelles, or ubiquitinated complexes. |
+| UPR | Unfolded protein response; ER-stress response that expands folding capacity or slows translation. |
+| PAR / ADP-ribosylation | Poly-ADP-ribose signaling, often used around DNA damage and condensate formation. |
 
 ## The Seven Layers
 
@@ -120,7 +163,7 @@ The map follows the flow from DNA to RNA to protein:
    `INSPECTOR` describe cap-dependent initiation, the integrated stress
    response, uORFs, IRES elements, decoding kinetics, and ribosome quality
    control.
-7. **Post-translational regulation**: `SWITCH`, `UBI`, `SUMO`, `NEDD8`,
+7. **Post-translational regulation**: `SWITCH`, `ROUTER`, `TETHER`, `LICENSE`,
    `DESTROY`, `MATURE`, and `PAR` cover phosphorylation/O-GlcNAc, ubiquitin,
    SUMOylation, neddylation, proteasome/autophagy clearance, maturation/UPR,
    and PARP/PAR signaling.

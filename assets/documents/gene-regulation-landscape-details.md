@@ -55,6 +55,47 @@ La cellule régule l'expression de ses gènes à **7 niveaux emboîtés**, de l'
 | gras | Dans l'image, le nom en haut de chaque boîte est le nom code du mécanisme et correspond à une entrée 1-to-1 du glossaire. |
 | italique | Dans l'image et les descriptions, l'italique sert aux noms de gènes/protéines quand cela aide la lecture ; les boîtes du graphe restent des noms de mécanismes. |
 
+## Glossaire des concepts non-gènes
+
+| Terme | Sens |
+|-------|------|
+| Compartiments A/B | Domaines chromatinien vus en Hi-C ; A est plutôt actif/euchromatique, B plutôt inactif/hétérochromatique. |
+| TAD | Domaine d'association topologique ; voisinage chromatinien isolé par des frontières comme CTCF/cohésine. |
+| Boucle enhancer-promoteur | Contact 3D rapprochant un enhancer distal d'un promoteur cible. |
+| Super-enhancer | Cluster dense d'enhancers enrichi en TF maîtres, Mediator, BRD4 et Pol II. |
+| Condensat / LLPS | Séparation de phase liquide-liquide concentrant des molécules dans une phase dense sans membrane. |
+| Méthylation ADN | Ajout de groupements méthyle sur l'ADN, souvent lié à la répression transcriptionnelle des promoteurs. |
+| Marque histone | Modification chimique d'une histone, par exemple acétylation ou méthylation, lue par des protéines de chromatine. |
+| Remodelage chromatine | Repositionnement, éjection ou échange de nucléosomes par des complexes ATP-dépendants. |
+| ncRNA | ARN non-codant fonctionnel non traduit en protéine. |
+| Pausing Pol II | Pause proximale de l'ARN polymérase II avant l'élongation productive. |
+| Phosphorylation CTD | Phosphorylation de la queue CTD de Pol II coordonnant transcription et maturation de l'ARN. |
+| 5' capping | Ajout d'une coiffe m7G à l'ARN naissant, nécessaire à la protection, l'export et la traduction. |
+| Splicing alternatif | Choix régulé des exons produisant plusieurs isoformes depuis un même gène. |
+| Polyadénylation alternative | Choix de sites de clivage/polyA différents, souvent avec changement de longueur du 3'UTR. |
+| A-to-I editing | Édition adénosine-inosine ; l'inosine est souvent lue comme une guanosine. |
+| m6A | N6-méthyladénosine, modification réversible de l'ARN interprétée par des readers. |
+| RBP | RNA-binding protein, protéine de liaison à l'ARN. |
+| miRNA-RISC | MicroARN chargé dans le complexe RISC pour réprimer ou déstabiliser des ARNm cibles. |
+| ceRNA | Competing endogenous RNA ; ARN pouvant tamponner des miRNA via des sites cibles partagés. |
+| NMD | Nonsense-mediated decay ; surveillance et dégradation des transcrits à codon stop prématuré. |
+| Déadénylation / décapping | Retrait de la queue polyA et de la coiffe 5', engageant souvent un ARNm vers la dégradation. |
+| RNA G-quadruplex | Structure ARN riche en guanines pouvant bloquer le scanning ou changer le destin de l'ARN. |
+| Stress granule / P-body | Condensats cytoplasmiques ARN-protéine associés au stockage, à la répression ou au decay. |
+| Traduction cap-dépendante | Initiation canonique par reconnaissance de la coiffe puis scanning du 5'UTR. |
+| ISR / eIF2α-P | Integrated Stress Response ; phosphorylation d'eIF2α diminuant l'initiation globale mais favorisant certains ARNm. |
+| uORF | Upstream open reading frame, ORF dans le 5'UTR pouvant détourner les ribosomes. |
+| IRES / ITAF | Internal Ribosome Entry Site et facteurs auxiliaires permettant une initiation cap-indépendante. |
+| RQC / NGD / NSD | Ribosome quality control, no-go decay et non-stop decay ; surveillance de la traduction anormale. |
+| O-GlcNAc | Modification sucre réversible sur Ser/Thr pouvant interagir avec la phosphorylation. |
+| Chaîne ubiquitine | Polymère d'ubiquitine dont le type de liaison, par exemple K48 ou K63, influence le destin du substrat. |
+| SUMOylation | Conjugaison de SUMO, souvent impliquée dans les interactions nucléaires et l'assemblage de complexes. |
+| Neddylation | Conjugaison de NEDD8, surtout aux cullines, activant des E3 ligases CRL. |
+| Protéasome | Complexe protéolytique dégradant beaucoup de protéines ubiquitinées courtes ou endommagées. |
+| Autophagie sélective | Clearance lysosomale de cargos spécifiques : agrégats, organites ou complexes ubiquitinés. |
+| UPR | Unfolded Protein Response ; réponse au stress du réticulum endoplasmique. |
+| PAR / ADP-ribosylation | Signalisation par poly-ADP-ribose, souvent autour des dommages ADN et des condensats. |
+
 ## Architecture réductionniste — 3 stratégies fondamentales
 
 Le graphe ne cherche pas seulement à lister des mécanismes. Il les réduit à
@@ -72,7 +113,7 @@ Stratégie B — MARQUE RÉVERSIBLE + LECTURE CONTEXTUELLE
   "La même marque produit des effets différents selon le lecteur et le contexte"
   Instances : SILENCER/WRITER-A/WRITER-R (histone code + DNA methylation)
               STAMP (m6A → YTHDF1 ou YTHDF2 selon le contexte)
-              UBI (K48 → protéasome ; K63 → signalisation/autophagie)
+              ROUTER (K48 → protéasome ; K63 → signalisation/autophagie)
               SWITCH (phospho → activation ou dégradation selon le substrat)
 
 Stratégie C — COUPLAGE CINÉTIQUE
@@ -94,7 +135,7 @@ Stratégie C — COUPLAGE CINÉTIQUE
 | 3 — Co-transcriptionnel | SHIELD, SPLICER, TRIMMER, RECODER |
 | 4 — Post-transcriptionnel | STAMP, READERS, DARTS, SPONGE, CENSOR, TIMER, CLIPS, VAULT |
 | 5 — Traductionnel | FORGE, BRAKE, DECOY, BYPASS, TEMPO, INSPECTOR |
-| 6 — Post-traductionnel | SWITCH, UBI, SUMO, DESTROY, NEDD8, MATURE, PAR |
+| 6 — Post-traductionnel | SWITCH, ROUTER, TETHER, LICENSE, DESTROY, MATURE, PAR |
 | Méta | LLPS, DECAY |
 
 ## I. Les 7 couches — Explication et mécanismes
@@ -183,9 +224,9 @@ Stratégie C — COUPLAGE CINÉTIQUE
 | Nom code | Nom complet | Définition exacte |
 |----------|-------------|-------------------|
 | **SWITCH** | Phosphorylation / O-GlcNAcylation | **Phosphorylation** : ~500 kinases humaines phosphorylent Ser/Thr/Tyr → changements de conformation, création/destruction de sites d'interaction, activation/inactivation d'enzymes et TF (NF-κB, STAT1/3/5, SMAD, ERK→ELK1). ~30 % du protéome est phosphorylé. Réversible par ~200 phosphatases. **O-GlcNAcylation** : OGT ajoute GlcNAc sur Ser/Thr (mêmes sites que phospho) → "yin-yang" switch métabolique/signalisation. La phosphorylation active les kinases eIF2α (PERK, GCN2 → ISR), CDK9 (Pol II CTD Ser2), DDR kinases (ATM/ATR → PARP1). |
-| **UBI** | Ubiquitin code | La **cascade E1-E2-E3** (~2 E1, ~40 E2, ~600 E3 ligases humaines) conjugue l'ubiquitine sur les Lys des substrats. La topologie des chaînes polyUb détermine le destin : **K48** (4+ Ub) → protéasome 26S ; **K63** → signalisation (NF-κB, DDR, endocytose) ; **K11** → dégradation mitotique ; **M1/linéaire** → NF-κB signalisation. Activation par dégron : souvent **phospho-dégron** (phospho → reconnaissance par E3 SCF-F-box ou APC/C). |
-| **SUMO** | SUMOylation | Marque UBL surtout nucléaire. **SUMO1/2/3** sont conjuguées par SAE1/SAE2, **UBC9** et des E3 PIAS. Effets principaux : changer les interactions protéine-protéine, stabiliser des complexes nucléaires, recruter des co-répresseurs, moduler la réparation ADN et parfois protéger contre l'ubiquitination. Peut aussi créer un pont vers UBI via les **STUbL** (RNF4/RNF111), qui reconnaissent les chaînes polySUMO et déclenchent l'ubiquitination. |
-| **NEDD8** | Neddylation / activation des CRL | **NEDD8** est une UBL conjuguée surtout aux cullines. La neddylation active les **Cullin-RING ligases** (CRL), une grande famille d'E3 ubiquitin ligases, en favorisant le recrutement/positionnement des substrats et de l'E2. Ce n'est pas une voie de dégradation autonome : c'est un interrupteur en amont du système UBI qui augmente la capacité d'ubiquitination de substrats spécifiques. |
+| **ROUTER** | Ubiquitin code | La **cascade E1-E2-E3** (~2 E1, ~40 E2, ~600 E3 ligases humaines) conjugue l'ubiquitine sur les Lys des substrats. La topologie des chaînes polyUb détermine le destin : **K48** (4+ Ub) → protéasome 26S ; **K63** → signalisation (NF-κB, DDR, endocytose) ; **K11** → dégradation mitotique ; **M1/linéaire** → NF-κB signalisation. Activation par dégron : souvent **phospho-dégron** (phospho → reconnaissance par E3 SCF-F-box ou APC/C). |
+| **TETHER** | SUMOylation | Marque UBL surtout nucléaire. **SUMO1/2/3** sont conjuguées par SAE1/SAE2, **UBC9** et des E3 PIAS. Effets principaux : changer les interactions protéine-protéine, stabiliser des complexes nucléaires, recruter des co-répresseurs, moduler la réparation ADN et parfois protéger contre l'ubiquitination. Peut aussi créer un pont vers ROUTER via les **STUbL** (RNF4/RNF111), qui reconnaissent les chaînes polySUMO et déclenchent l'ubiquitination. Le nom TETHER insiste sur le rôle de recrutement/scaffold plutôt que sur la molécule SUMO elle-même. |
+| **LICENSE** | Neddylation / activation des CRL | **NEDD8** est une UBL conjuguée surtout aux cullines. La neddylation active les **Cullin-RING ligases** (CRL), une grande famille d'E3 ubiquitin ligases, en favorisant le recrutement/positionnement des substrats et de l'E2. Ce n'est pas une voie de dégradation autonome : c'est un interrupteur en amont du système ROUTER qui augmente la capacité d'ubiquitination de substrats spécifiques. Le nom LICENSE reflète cette activation/licensing des CRL. |
 | **DESTROY** | Destruction protéique : protéasome + autophagie sélective | Boîte fusionnée pour les deux grandes sorties de clearance protéique. **Protéasome 26S** : lit surtout K48-polyUb, déubiquitine, déplie et dégrade les protéines courtes ou endommagées. **Autophagie sélective** : récepteurs comme **p62/SQSTM1** relient les cargos ubiquitinés à **LC3/GABARAP** puis au lysosome, surtout pour agrégats, organites ou cargos volumineux. Les condensats polyUb peuvent concentrer ces cargos ; les acides aminés libérés par le lysosome réactivent mTORC1. |
 | **MATURE** | Chaperones / UPR | **Chaperones** : Hsp70/Hsc70 (assistance co-traductionnelle) ; Hsp90 (maturation kinases, TF, récepteurs stéroïdiens) ; CCT/TRiC (folding en chambre isolée — actine, tubuline). Lien avec l'ubiquitination : **CHIP** (C-terminus of Hsp70-Interacting Protein) = E3 ubiquitin ligase qui ubiquitine les substrats mal foldés liés à Hsp70/Hsp90 → protéasome. **UPR** (Unfolded Protein Response, ER stress) : **PERK** (phosphoryle eIF2α = branche ISR), **IRE1** (épissage non-conventionnel de XBP1 mRNA), **ATF6** (TF activateur de gènes chaperonnage ER). |
 | **PAR** | ADP-ribosylation / PARP / PAR | **PARP1** (Poly ADP-Ribose Polymérase 1) détecte les cassures ADN (DDR) et synthétise des chaînes de **PAR** (Poly-ADP-Ribose) sur lui-même et d'autres protéines (Asp, Glu, Lys). Activé par les kinases DDR (ATM/ATR, phospho-dépendant). PAR est une molécule multivalente → nucléation rapide de **condensats de phase** (LLPS) au niveau des dommages ADN → recrutement de la machinerie de réparation. Les longues chaînes PAR recrutent aussi des E3 ubiquitin ligases → lien PAR-ubiquitination. Inhibiteurs PARP (olaparib) = thérapeutique cancer (synthetic lethality avec BRCA1/2). |
@@ -341,16 +382,16 @@ Stratégie C — COUPLAGE CINÉTIQUE
 #### Post-traductionnel intra
 | Source | Cible | Nom | Mécanisme |
 |--------|-------|-----|-----------|
-| SWITCH | UBI | **SWITCH-DEGRON** | Phospho-dégron reconnu par E3 SCF (β-TrCP, Fbxw7) ou APC/C |
-| SWITCH | SUMO | **PDSM** | Motif PDSM (ψKxExxSP) → phospho de la Ser → activation SUMOylation de la Lys |
+| SWITCH | ROUTER | **SWITCH-DEGRON** | Phospho-dégron reconnu par E3 SCF (β-TrCP, Fbxw7) ou APC/C |
+| SWITCH | TETHER | **PDSM** | Motif PDSM (ψKxExxSP) → phospho de la Ser → activation SUMOylation de la Lys |
 | SWITCH | PAR | **DDR-PARP** | ATM/ATR activés par DSBs → phosphorylent et activent PARP1 |
 | SWITCH | KEYS | **SWITCH-TF** | Phosphorylation active/inactive les TF (IKK→IκB→NF-κB, JAK→STAT, MAPK→ELK1) |
-| UBI | DESTROY | **UBI-DESTROY** | K48-polyUb → protéasome 26S ; K63-polyUb peut recruter p62/SQSTM1 → autophagie sélective |
-| SUMO | UBI | **STUBLS** | polySUMO → reconnu par RNF4/RNF111 (STUbL E3) → ubiquitination → protéasome |
-| NEDD8 | UBI | **CRL-ACTIVATION** | Neddylation des cullines → activation des CRL E3 ligases → ubiquitination de substrats spécifiques |
+| ROUTER | DESTROY | **ROUTER-DESTROY** | K48-polyUb → protéasome 26S ; K63-polyUb peut recruter p62/SQSTM1 → autophagie sélective |
+| TETHER | ROUTER | **STUBLS** | polySUMO → reconnu par RNF4/RNF111 (STUbL E3) → ubiquitination → protéasome |
+| LICENSE | ROUTER | **CRL-ACTIVATION** | Neddylation des cullines → activation des CRL E3 ligases → ubiquitination de substrats spécifiques |
 | PAR | DESTROY | **PAR-CONDENSATE** | PAR chaînes longues → nucléation de condensats protéolytiques → protéasome |
 | MATURE | BRAKE | **UPR-ISR** | PERK (branche UPR) = kinase eIF2α → ISR = pont ER stress–ISR |
-| MATURE | UBI | **CHIP-E3** | CHIP (Hsp70/90-associated E3) ubiquitine les protéines mal foldées → 26S |
+| MATURE | ROUTER | **CHIP-E3** | CHIP (Hsp70/90-associated E3) ubiquitine les protéines mal foldées → 26S |
 | DESTROY | FORGE | **LYSOSOME-MTOR** | Acides aminés libérés par la voie lysosomale → Ragulator/RRAG GTPases surface lysosomale → mTORC1 réactivé |
 | DESTROY | KEYS | **DESTROY-TF** | Dégradation des inhibiteurs de TF (IκBα→NF-κB ; β-catenin→TCF/LEF) |
 

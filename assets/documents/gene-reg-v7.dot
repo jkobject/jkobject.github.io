@@ -367,25 +367,25 @@ digraph gene_regulation {
                     <TR><TD><I>PERK</I>/<I>GCN2</I> → <I>eIF2α</I>; <I>CDK9</I> → Pol II</TD></TR>
                 </TABLE>
             > fillcolor="#1e293b" fontcolor="#e2e8f0" color="#94a3b8"]
-        UBI        [label=<
+        ROUTER        [label=<
                 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
-                    <TR><TD><B>UBI</B></TD></TR>
+                    <TR><TD><B>ROUTER</B></TD></TR>
                     <TR><TD>route proteins by ubiquitin chain type</TD></TR>
                     <TR><TD>K48→proteasome · K63→signal/autophagy</TD></TR>
                     <TR><TD>E1/E2/E3 cascade; degron readers</TD></TR>
                 </TABLE>
             > fillcolor="#1e293b" fontcolor="#e2e8f0" color="#94a3b8" style="filled,rounded,bold" penwidth=2.2]
-        SUMO       [label=<
+        TETHER       [label=<
                 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
-                    <TR><TD><B>SUMO</B></TD></TR>
+                    <TR><TD><B>TETHER</B></TD></TR>
                     <TR><TD>tune nuclear localization and repression</TD></TR>
                     <TR><TD>SUMOylation marks protein complexes</TD></TR>
                     <TR><TD><I>SUMO1/2/3</I>, <I>UBC9</I>, <I>PIAS</I></TD></TR>
                 </TABLE>
             > fillcolor="#172030" fontcolor="#e2e8f0" color="#94a3b8"]
-        NEDD8      [label=<
+        LICENSE      [label=<
                 <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
-                    <TR><TD><B>NEDD8</B></TD></TR>
+                    <TR><TD><B>LICENSE</B></TD></TR>
                     <TR><TD>activate cullin-RING E3 ligases</TD></TR>
                     <TR><TD>NEDDylation turns on CRL ubiquitin ligases</TD></TR>
                     <TR><TD><I>NEDD8</I> → cullins → substrate ubiquitination</TD></TR>
@@ -580,11 +580,11 @@ digraph gene_regulation {
     // ============================================================
     // Relations intra-couche 6
     // ============================================================
-    SWITCH    -> UBI        [label="phospho-degron\n→ E3 ligase" color="#94a3b8" fontcolor="#94a3b8"]
-    UBI        -> DESTROY [label="K48→26S\nK63→p62/LC3" color="#94a3b8" fontcolor="#94a3b8" penwidth=2]
-    SUMO  -> UBI        [label="STUbLs:\nSUMO→Ub" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
-    NEDD8 -> UBI        [label="activates CRLs\n→ substrate Ub" color="#94a3b8" fontcolor="#94a3b8"]
-    SWITCH    -> SUMO  [label="phospho-dep.\nSUMO recruit" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
+    SWITCH    -> ROUTER        [label="phospho-degron\n→ E3 ligase" color="#94a3b8" fontcolor="#94a3b8"]
+    ROUTER        -> DESTROY [label="K48→26S\nK63→p62/LC3" color="#94a3b8" fontcolor="#94a3b8" penwidth=2]
+    TETHER  -> ROUTER        [label="STUbLs:\nSUMO→Ub" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
+    LICENSE -> ROUTER        [label="activates CRLs\n→ substrate Ub" color="#94a3b8" fontcolor="#94a3b8"]
+    SWITCH    -> TETHER  [label="phospho-dep.\nSUMO recruit" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
     PAR        -> DESTROY [label="PARylation →\nproteolytic condensates" color="#94a3b8" fontcolor="#94a3b8"]
     DESTROY    -> FORGE [label="lysosomal AA\n→ mTORC1" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
 
@@ -605,6 +605,6 @@ digraph gene_regulation {
     { rank=same; SHIELD; SPLICER; TRIMMER; RECODER }
     { rank=same; STAMP; READERS; DARTS; SPONGE; CENSOR; TIMER; CLIPS; VAULT }
     { rank=same; FORGE; BRAKE; DECOY; BYPASS; TEMPO; INSPECTOR }
-    { rank=same; SWITCH; UBI; SUMO; NEDD8; DESTROY; MATURE; PAR }
+    { rank=same; SWITCH; ROUTER; TETHER; LICENSE; DESTROY; MATURE; PAR }
     { rank=min; LEGEND }
 }
