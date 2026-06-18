@@ -215,6 +215,8 @@ digraph gene_regulation {
     // ============================================================
     // LAYER 1 — missing connections (WRITER_A, GUIDES, SPONGE)
     // ============================================================
+    KEYS   -> OPENER   [label="TF→p300/CBP\n→ H3K27ac" color="#f59e0b" fontcolor="#f59e0b" penwidth=1.8]
+    KEYS   -> SHUFFLER [label="TF→BAF/SWI-SNF\nrecruitment" color="#f59e0b" fontcolor="#f59e0b" penwidth=1.8]
     KEYS   -> WRITER_A [label="TF→MLL\n→ H3K4me3" color="#f59e0b" fontcolor="#f59e0b" style=dashed]
     KEYS   -> GUIDES   [label="TF drives\npiRNA/lncRNA loci" color="#f59e0b" fontcolor="#f59e0b" style=dashed]
     KEYS   -> SPONGE   [label="TF drives\nlncRNA txn" color="#f59e0b" fontcolor="#f59e0b" style=dashed]
