@@ -36,9 +36,17 @@ discussions.
 
 The map is very large, so the embedded version below is mostly a preview. You
 can [open the full-resolution zoomable map here](/assets/images/gene-reg-v7.png).
-For the full mechanism catalogue and the detailed edge list used to build the
-figure, see the [Gene Regulation Landscape technical notes](/assets/documents/gene-regulation-landscape-details.md)
+For the box-by-box glossary, full mechanism catalogue, and detailed edge list
+used to build the figure, see the [Gene Regulation Landscape technical notes](/assets/documents/gene-regulation-landscape-details.md)
 and the [Graphviz DOT source](/assets/documents/gene-reg-v7.dot).
+
+In the figure, each box title is a code name that maps 1-to-1 to the catalogue
+entry in the technical notes. Solid arrows are the main mechanistic relations;
+dashed arrows indicate contextual, feedback, or association-style links;
+tee-headed arrows indicate repression; bold arrows mark especially important
+coupling edges. Starred dotted overlays mark meta-principles such as `LLPS` and
+`DECAY`, which are reused across several mechanisms rather than treated as
+ordinary boxes.
 
 [![Gene Regulation Landscape](/assets/images/gene-reg-v7.png)](/assets/images/gene-reg-v7.png)
 
@@ -65,20 +73,22 @@ The map follows the flow from DNA to RNA to protein:
    `INSPECTOR` describe cap-dependent initiation, the integrated stress
    response, uORFs, IRES elements, decoding kinetics, and ribosome quality
    control.
-7. **Post-translational regulation**: `SWITCH`, `TAG`, `STAMP2`, `SHREDDER`,
-   `RECYCLER`, `FOLDER`, and `ALARM` cover phosphorylation, ubiquitin,
-   SUMO/NEDD8, the proteasome, autophagy, chaperones/UPR, and PARP/PAR
-   signaling.
+7. **Post-translational regulation**: `PHOSPHO`, `UBI`, `SUMO_NEDD`,
+   `PROTEASOME`, `AUTOPHAGY`, `CHAPERONES`, and `PAR` cover
+   phosphorylation/O-GlcNAc, ubiquitin, SUMO/NEDD8, proteasomal degradation,
+   selective autophagy, chaperones/UPR, and PARP/PAR signaling.
 
-Across the whole diagram, `DROPLETS` represents liquid-liquid phase separation.
-It is not an extra regulatory layer. It is a physical principle reused in
-several places: transcriptional condensates, stress granules, P-bodies,
-proteolytic condensates, and DNA damage repair assemblies.
+Across the whole diagram, `LLPS` represents liquid-liquid phase separation, and
+`DECAY` represents turnover or clearance. They are not extra regulatory layers.
+They are meta-principles reused in several places: transcriptional condensates,
+stress granules and P-bodies, mRNA decay, proteolytic condensates, autophagy,
+and DNA damage repair assemblies.
 
 ## The Useful Reduction
 
-The full map contains 38 mechanisms and dozens of interactions. But
-conceptually, most of gene regulation reduces to three strategies.
+The full map contains 37 mechanism boxes, 2 meta-principles, and dozens of
+interactions. But conceptually, most of gene regulation reduces to three
+strategies.
 
 **1. Control accessibility.**  
 Make a substrate accessible or inaccessible to its molecular machinery.

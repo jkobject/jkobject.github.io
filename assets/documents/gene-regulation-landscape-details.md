@@ -1,13 +1,14 @@
 # Gene Regulation Landscape — detailed construction notes
 ### From DNA to proteins — reductionist architecture (v7)
 
-*Clawd · 2026-05-01 / updated 2026-06-18 · 38 mechanisms · 76 rendered relations · 7 layers*
+*Clawd · 2026-05-01 / updated 2026-06-18 · 37 mechanisms · 2 meta-principles · 7 layers*
 
 These are the original detailed working notes used to construct the Gene
 Regulation Landscape. They contain the full mechanism catalogue, edge list, and
 reduction principles. The rendered figure was generated from the Graphviz source
 file [`gene-reg-v7.dot`](/assets/documents/gene-reg-v7.dot). The current rendered
-v7 graph contains 38 mechanism nodes and 76 visible edges.
+v7 graph contains 37 mechanism boxes, 2 starred meta-principles, 72 mechanism
+relations, and 8 meta-overlay links.
 
 The notes below are preserved in French because they were the original working
 document.
@@ -17,13 +18,13 @@ document.
 # Cartographie des mécanismes de régulation génétique
 ### De l'ADN aux protéines — Architecture réductionniste (v7)
 
-*Clawd · 2026-05-01 / mis à jour 2026-06-18 · 38 mécanismes · 76 relations rendues · 7 couches*
+*Clawd · 2026-05-01 / mis à jour 2026-06-18 · 37 mécanismes · 2 métaprincipes · 7 couches*
 
 ---
 
 ## Résumé exécutif
 
-La cellule régule l'expression de ses gènes à **7 niveaux emboîtés**, de l'organisation tridimensionnelle du génome à la dégradation sélective des protéines. On dénombre 38 mécanismes distincts, mais une analyse transversale révèle **3 métaprincipes** récurrents : (A) contrôle de l'accessibilité physique d'un substrat, (B) écriture/lecture/effacement d'une marque réversible, (C) couplage cinétique entre deux processus. Tout le reste est une implémentation moléculaire de l'un de ces trois principes à un niveau différent.
+La cellule régule l'expression de ses gènes à **7 niveaux emboîtés**, de l'organisation tridimensionnelle du génome à la dégradation sélective des protéines. On dénombre 37 mécanismes distincts dans les boîtes du graphe, plus 2 métaprincipes transversaux marqués par des étoiles (**LLPS** et **DECAY**). Une analyse transversale révèle aussi **3 stratégies** récurrentes : (A) contrôle de l'accessibilité physique d'un substrat, (B) écriture/lecture/effacement d'une marque réversible, (C) couplage cinétique entre deux processus. Tout le reste est une implémentation moléculaire de l'un de ces trois principes à un niveau différent.
 
 ---
 
@@ -122,15 +123,16 @@ La cellule régule l'expression de ses gènes à **7 niveaux emboîtés**, de l'
 
 ---
 
-### Principe transversal — LLPS
+### Métaprincipes transversaux
 
 | Nom code | Nom complet | Définition exacte |
 |----------|-------------|-------------------|
-| **LLPS** | Liquid-Liquid Phase Separation | Processus thermodynamique par lequel des macromolécules (protéines IDR-riches, ARN, protéines de liaison à l'ARN) se concentrent spontanément en une phase dense distincte (condensat liquide). Conduit par des **interactions multivalentes** : domaines IDR (Intrinsically Disordered Regions), répétitions RGG, tyrosines, interactions ARN-protéine. LLPS n'est **pas un mécanisme de régulation** : c'est le principe physique exploité par de nombreux mécanismes. Instances biologiques : super-enhancers (BRD4 + Mediator + Pol II CTD), stress granules (G3BP1 + TIA-1 + ARNm), P-bodies (DCP1/2 + XRN1), condensats protéolytiques (hHR23B + polyUb), condensats de réparation ADN (PAR + FUS + RPA). |
+| **LLPS** | Liquid-Liquid Phase Separation | Processus thermodynamique par lequel des macromolécules (protéines IDR-riches, ARN, protéines de liaison à l'ARN) se concentrent spontanément en une phase dense distincte (condensat liquide). Conduit par des **interactions multivalentes** : domaines IDR (Intrinsically Disordered Regions), répétitions RGG, tyrosines, interactions ARN-protéine. LLPS n'est **pas un mécanisme de régulation** : c'est le principe physique exploité par plusieurs mécanismes. Instances biologiques : super-enhancers (BRD4 + Mediator + Pol II CTD), stress granules (G3BP1 + TIA-1 + ARNm), P-bodies (DCP1/2 + XRN1), condensats protéolytiques (hHR23B + polyUb), condensats de réparation ADN (PAR + FUS + RPA). |
+| **DECAY** | Turnover / clearance | Métaprincipe de retrait d'une molécule du système : dégradation d'ARNm (TIMER, CENSOR), dégradation protéasomale (PROTEASOME), autophagie sélective (AUTOPHAGY), et plus généralement bascule entre stockage temporaire et élimination. DECAY n'est pas un seul complexe moléculaire ; c'est une sortie fonctionnelle récurrente. |
 
 ---
 
-## II. Catalogue des relations (76 arêtes rendues)
+## II. Catalogue des relations (72 arêtes mécanistiques + 8 liens méta)
 
 ### Code couleur
 | Couleur | Type | Signification |
@@ -143,6 +145,24 @@ La cellule régule l'expression de ses gènes à **7 niveaux emboîtés**, de l'
 | ⚫ Gris `#566573` | PTM / signalisation post-trad | Régulation post-traductionnelle |
 | 🔵 Bleu `#2e86c1` | Structural / 3D | Organisation tridimensionnelle |
 | 🔵 Cyan `#5dade2` (pointillé) | LLPS | Participation au principe LLPS |
+| 🩷 Rose `#f472b6` (pointillé) | DECAY | Participation au principe turnover / clearance |
+
+### Abréviations et notation des labels DOT
+
+| Terme | Sens |
+|-------|------|
+| `tx` | Transcription. Le graphe évite de l'utiliser pour la traduction afin de ne pas créer d'ambiguïté. |
+| `co-tx` | Co-transcriptionnel : couplé à la progression de Pol II ou à l'ARN naissant. |
+| `A` | Principe d'accessibilité : rendre un substrat disponible ou inaccessible. |
+| `B` | Principe marque/lecture : une marque réversible produit un effet selon son lecteur et son contexte. |
+| `C` | Principe de couplage cinétique : la vitesse d'un processus change l'issue d'un autre. |
+| `initiation ↑` | Augmentation de l'initiation de la traduction. |
+| `RQC` | Ribosome-associated Quality Control. Surveillance des ribosomes bloqués et dégradation du peptide naissant. |
+| `NGD` | No-Go Decay. Dégradation liée à un ribosome bloqué sur l'ARNm. |
+| `NSD` | Non-Stop Decay. Dégradation liée à un ARNm sans codon stop fonctionnel. |
+| `SUMO` | Small Ubiquitin-like Modifier. Petite protéine conjuguée aux substrats comme marque post-traductionnelle. |
+| `NEDDylation` | Conjugaison de NEDD8, notamment sur les cullines pour activer des E3 ligases CRL. |
+| italique | Dans les descriptions, l'italique sert aux noms de gènes/protéines quand cela aide la lecture ; les boîtes du graphe restent des noms de mécanismes. |
 
 ### Toutes les relations par couche source
 
@@ -288,13 +308,17 @@ La cellule régule l'expression de ses gènes à **7 niveaux emboîtés**, de l'
 | PHOSPHO | SCRIBE | **CDK9-CTD** | CDK9/P-TEFb (phosphorylé et activé) → Ser2-CTD → libération de la pause Pol II |
 | PHOSPHO | BRAKE | **KINASE-EIF2A** | GCN2, PERK, HRI, PKR phosphorylent eIF2α Ser51 → BRAKE activé |
 
-#### LLPS transversal
+#### Métaprincipes transversaux
 | Source | Cible | Nom | Mécanisme |
 |--------|-------|-----|-----------|
 | LLPS | HUBS | **LLPS-SE** | LLPS forme les condensats de transcription = super-enhancers |
 | LLPS | VAULT | **LLPS-SG-PB** | LLPS forme les stress granules et P-bodies |
 | LLPS | PROTEASOME | **LLPS-PROTEASOME** | LLPS forme les condensats protéolytiques (hHR23B + polyUb) |
 | LLPS | PAR | **LLPS-PAR** | Les chaînes PAR nucléent des condensats de réparation ADN |
+| DECAY | TIMER | **DECAY-MRNA** | Turnover des ARNm par deadenylation, decapping et exonucléases |
+| DECAY | CENSOR | **DECAY-NMD** | NMD comme branche de surveillance et élimination des ARNm aberrants |
+| DECAY | PROTEASOME | **DECAY-PROTEASOME** | Dégradation protéique ubiquitine-dépendante |
+| DECAY | AUTOPHAGY | **DECAY-AUTOPHAGY** | Clearance lysosomale sélective de protéines, agrégats ou organites |
 
 ---
 
@@ -373,6 +397,6 @@ Stratégie C — COUPLAGE CINÉTIQUE
 
 ---
 
-*v7 — 38 mécanismes, 76 relations rendues, 7 couches + LLPS transversal*
+*v7 — 37 mécanismes, 2 métaprincipes, 72 relations mécanistiques + 8 liens méta*
 *Fichier : `assets/documents/gene-regulation-landscape-details.md`*
 *Diagramme : `assets/documents/gene-reg-v7.dot` + `assets/images/gene-reg-v7.png`*

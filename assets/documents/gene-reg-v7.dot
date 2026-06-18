@@ -9,7 +9,7 @@ digraph gene_regulation {
         overlap=false
         nodesep=0.45
         ranksep=0.85
-        label="Gene Regulation Landscape\nFrom DNA to proteins — reductionist architecture (v7)\n38 mechanisms · 7 layers"
+        label="Gene Regulation Landscape\nFrom DNA to proteins — reductionist architecture (v7)\n37 mechanisms · 7 layers · 2 meta-principles"
         labelloc=t
         labeljust=c
         fontcolor="#e5e7eb"
@@ -167,9 +167,26 @@ digraph gene_regulation {
     }
 
     // ============================================================
-    // PRINCIPE TRANSVERSAL — LLPS
+    // TRANSVERSAL META-PRINCIPLES
     // ============================================================
-    LLPS [label="LLPS\nPhase Separation\n(transversal physical principle)" fillcolor="#0f172a" fontcolor="#67e8f9" color="#22d3ee" shape=ellipse style="filled,bold" fontsize=11 penwidth=2]
+    LLPS_META [label="★ LLPS\nphase separation" fillcolor="#0f172a" fontcolor="#67e8f9" color="#22d3ee" shape=polygon sides=5 style="filled,bold" fontsize=9 penwidth=2]
+    DECAY_META [label="★ DECAY\nturnover / clearance" fillcolor="#0f172a" fontcolor="#f9a8d4" color="#f472b6" shape=polygon sides=5 style="filled,bold" fontsize=9 penwidth=2]
+
+    subgraph cluster_legend {
+        label="LEGEND"
+        fontcolor="#e5e7eb"
+        fontsize=11
+        style="rounded"
+        color="#64748b"
+        bgcolor="#111827"
+        margin=10
+
+        LEGEND_FULL [label="solid arrow\nprimary/direct relation" fillcolor="#1f2937" fontcolor="#e5e7eb" color="#e5e7eb"]
+        LEGEND_DASH [label="dashed arrow\nindirect/context/feedback" fillcolor="#1f2937" fontcolor="#e5e7eb" color="#e5e7eb"]
+        LEGEND_TEE [label="⊣ blunt arrow\ninhibition/repression" fillcolor="#1f2937" fontcolor="#e5e7eb" color="#ef4444"]
+        LEGEND_STAR [label="★ star\nmeta-principle overlay" fillcolor="#1f2937" fontcolor="#e5e7eb" color="#22d3ee"]
+        LEGEND_ABBR [label="Abbrev.\nco-tx=co-transcriptional · A=accessibility\nB=mark/readout · C=kinetic coupling\ninitiation ↑=increased initiation" fillcolor="#1f2937" fontcolor="#e5e7eb" color="#64748b"]
+    }
 
     // ============================================================
     // METAPRINCIPLES (visual legend in the graph)
@@ -251,8 +268,8 @@ digraph gene_regulation {
     // ============================================================
     STAMP -> SPLICER [label="YTHDC1→SRSF\n(co-tx, B)" color="#a78bfa" fontcolor="#a78bfa" dir=back style=dashed]
     STAMP -> TIMER   [label="YTHDF2→CCR4-NOT\n(decay)" color="#a78bfa" fontcolor="#a78bfa"]
-    STAMP -> FORGE   [label="YTHDF1→eIF3\n(init. ↑)" color="#a78bfa" fontcolor="#a78bfa"]
-    STAMP -> BYPASS  [label="5'UTR m6A\n→ cap-indep. tx" color="#a78bfa" fontcolor="#a78bfa"]
+    STAMP -> FORGE   [label="YTHDF1→eIF3\n(initiation ↑)" color="#a78bfa" fontcolor="#a78bfa"]
+    STAMP -> BYPASS  [label="5'UTR m6A\n→ cap-independent translation" color="#a78bfa" fontcolor="#a78bfa"]
 
     // ============================================================
     // RBPs (READERS) — transversal
@@ -286,7 +303,7 @@ digraph gene_regulation {
     DECOY -> FORGE  [label="regulate\ninitiation" color="#ef4444" fontcolor="#ef4444" arrowhead=tee]
     FORGE -> INSPECTOR [label="elongation stalls\n→ RQC/NGD" color="#ef4444" fontcolor="#ef4444"]
     TEMPO -> INSPECTOR [label="codon/tRNA tempo\n→ ribosome stalls" color="#ef4444" fontcolor="#ef4444"]
-    TEMPO -> CHAPERONES [label="translation speed\n→ co-tx folding" color="#ef4444" fontcolor="#ef4444" style=dashed]
+    TEMPO -> CHAPERONES [label="translation speed\n→ co-translational folding" color="#ef4444" fontcolor="#ef4444" style=dashed]
     INSPECTOR -> PROTEASOME [label="RQC ubiquitinates\nnascent chains" color="#94a3b8" fontcolor="#94a3b8"]
 
     // ============================================================
@@ -314,12 +331,16 @@ digraph gene_regulation {
     PROTEASOME -> KEYS   [label="IκBα decay\n→ NF-κB activ." color="#94a3b8" fontcolor="#94a3b8" style=dashed]
 
     // ============================================================
-    // LLPS transversal
+    // META-PRINCIPLE OVERLAYS
     // ============================================================
-    LLPS -> HUBS       [label="" color="#22d3ee" fontcolor="#22d3ee" style=dotted penwidth=1.8]
-    LLPS -> VAULT      [label="" color="#22d3ee" fontcolor="#22d3ee" style=dotted penwidth=1.8]
-    LLPS -> PROTEASOME [label="" color="#22d3ee" fontcolor="#22d3ee" style=dotted penwidth=1.8]
-    LLPS -> PAR        [label="" color="#22d3ee" fontcolor="#22d3ee" style=dotted penwidth=1.8]
+    LLPS_META -> HUBS       [label="" color="#22d3ee" fontcolor="#22d3ee" style=dotted penwidth=1.8]
+    LLPS_META -> VAULT      [label="" color="#22d3ee" fontcolor="#22d3ee" style=dotted penwidth=1.8]
+    LLPS_META -> PROTEASOME [label="" color="#22d3ee" fontcolor="#22d3ee" style=dotted penwidth=1.8]
+    LLPS_META -> PAR        [label="" color="#22d3ee" fontcolor="#22d3ee" style=dotted penwidth=1.8]
+    DECAY_META -> TIMER     [label="" color="#f472b6" fontcolor="#f472b6" style=dotted penwidth=1.8]
+    DECAY_META -> CENSOR    [label="" color="#f472b6" fontcolor="#f472b6" style=dotted penwidth=1.8]
+    DECAY_META -> PROTEASOME [label="" color="#f472b6" fontcolor="#f472b6" style=dotted penwidth=1.8]
+    DECAY_META -> AUTOPHAGY [label="" color="#f472b6" fontcolor="#f472b6" style=dotted penwidth=1.8]
 
     // ============================================================
     // RANKING
@@ -331,5 +352,5 @@ digraph gene_regulation {
     { rank=same; STAMP; READERS; DARTS; SPONGE; CENSOR; TIMER; CLIPS; VAULT }
     { rank=same; FORGE; BRAKE; DECOY; BYPASS; TEMPO; INSPECTOR }
     { rank=same; PHOSPHO; UBI; SUMO_NEDD; PROTEASOME; AUTOPHAGY; CHAPERONES; PAR }
-    { rank=min; LLPS }
+    { rank=min; LLPS_META; DECAY_META; LEGEND_FULL; LEGEND_DASH; LEGEND_TEE; LEGEND_STAR; LEGEND_ABBR }
 }
