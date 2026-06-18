@@ -43,10 +43,10 @@ digraph gene_regulation {
         bgcolor="#0c1e35"
         margin=14
 
-        ZONES [label="ZONES\nCompartiments A/B\n(Hi-C  A=active / B=inactive)" fillcolor="#1e3a5f" fontcolor="#bfdbfe" color="#60a5fa"]
+        ZONES [label="ZONES\nA/B compartments\n(Hi-C  A=active / B=inactive)" fillcolor="#1e3a5f" fontcolor="#bfdbfe" color="#60a5fa"]
         FENCES [label="FENCES\nTADs (CTCF + Cohesin)\nloop extrusion → insulation" fillcolor="#1e3a5f" fontcolor="#bfdbfe" color="#60a5fa"]
-        BRIDGES [label="BRIDGES\nBoucles Enhancer→Promoter\n(Mediator + Cohesin + YY1)" fillcolor="#1e3a5f" fontcolor="#bfdbfe" color="#60a5fa"]
-        HUBS [label="HUBS\nSuper-enhancers / Condensats Pol II\n(LLPS + BRD4 + TF maîtres)" fillcolor="#162d4a" fontcolor="#bfdbfe" color="#60a5fa" style="filled,rounded,bold" penwidth=2.2]
+        BRIDGES [label="BRIDGES\nEnhancer→Promoter loops\n(Mediator + Cohesin + YY1)" fillcolor="#1e3a5f" fontcolor="#bfdbfe" color="#60a5fa"]
+        HUBS [label="HUBS\nSuper-enhancers / Pol II condensates\n(LLPS + BRD4 + master TFs)" fillcolor="#162d4a" fontcolor="#bfdbfe" color="#60a5fa" style="filled,rounded,bold" penwidth=2.2]
     }
 
     // ============================================================
@@ -65,7 +65,7 @@ digraph gene_regulation {
         OPENER   [label="OPENER\nHistone acetylation\n(HATs: p300/CBP  HDACs)\nH3K27ac, H3K9ac" fillcolor="#14532d" fontcolor="#bbf7d0" color="#4ade80"]
         WRITER_A [label="WRITER-A\nActivating histone methylation\nH3K4me3 (MLL)  H3K36me3 (SETD2)" fillcolor="#14532d" fontcolor="#bbf7d0" color="#4ade80"]
         WRITER_R [label="WRITER-R\nRepressive histone methylation\nH3K27me3 (PRC2/EZH2)\nH3K9me3 (SUV39H)  bivalent domains" fillcolor="#14532d" fontcolor="#bbf7d0" color="#4ade80"]
-        SHUFFLER [label="SHUFFLER\nRemodelage chromatine ATP-dep.\n(SWI/SNF, ISWI, CHD, INO80)" fillcolor="#14532d" fontcolor="#bbf7d0" color="#4ade80"]
+        SHUFFLER [label="SHUFFLER\nATP-dependent chromatin remodeling\n(SWI/SNF, ISWI, CHD, INO80)" fillcolor="#14532d" fontcolor="#bbf7d0" color="#4ade80"]
         GUIDES   [label="GUIDES\nEpigenetic ncRNAs\n(piRNA → DNMT3  lncRNA→PRC2\nXIST, HOTAIR, KCNQ1OT1)" fillcolor="#0f3d23" fontcolor="#bbf7d0" color="#4ade80"]
     }
 
@@ -81,7 +81,7 @@ digraph gene_regulation {
         bgcolor="#2a2000"
         margin=14
 
-        KEYS  [label="KEYS\nFacteurs de transcription (TF)\n(Pioneer: FOXA1, OCT4, GATA3\n~1600 TF humains)" fillcolor="#78350f" fontcolor="#fef3c7" color="#f59e0b"]
+        KEYS  [label="KEYS\nTranscription factors (TFs)\n(Pioneer: FOXA1, OCT4, GATA3\n~1600 human TFs)" fillcolor="#78350f" fontcolor="#fef3c7" color="#f59e0b"]
         SCRIBE [label="SCRIBE\nPol II + Pausing\n(NELF+DSIF → P-TEFb / CDK9)\nCTD phospho-code: Ser5/Ser2/Ser7" fillcolor="#78350f" fontcolor="#fef3c7" color="#f59e0b" style="filled,rounded,bold" penwidth=2.2]
     }
 
@@ -98,7 +98,7 @@ digraph gene_regulation {
         margin=14
 
         SHIELD  [label="SHIELD\n5' Capping (m7G)\n(Ser5-P CTD → CBC → eIF4E)" fillcolor="#7c2d12" fontcolor="#fed7aa" color="#fb923c"]
-        SPLICER [label="SPLICER\nSplicing alternatif\n(SR proteins, hnRNPs, spliceosome)\nkinetic coupling avec Pol II" fillcolor="#7c2d12" fontcolor="#fed7aa" color="#fb923c" style="filled,rounded,bold" penwidth=2.2]
+        SPLICER [label="SPLICER\nAlternative splicing\n(SR proteins, hnRNPs, spliceosome)\nkinetic coupling with Pol II" fillcolor="#7c2d12" fontcolor="#fed7aa" color="#fb923c" style="filled,rounded,bold" penwidth=2.2]
         TRIMMER [label="TRIMMER\nAlternative polyadenylation (APA)\nCPSF/CstF  AAUAAA\n→ 3'UTR length" fillcolor="#7c2d12" fontcolor="#fed7aa" color="#fb923c"]
         RECODER [label="RECODER\nA→I Editing (ADAR1/ADAR2)\nADARs → inosine\n→ recoding + splice + NMD" fillcolor="#6b2500" fontcolor="#fed7aa" color="#fb923c"]
     }
@@ -118,8 +118,8 @@ digraph gene_regulation {
         STAMP   [label="STAMP\nm6A epitranscriptome\n(METTL3/14 → FTO/ALKBH5\nYTHDF1/2/3, YTHDC1)" fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#a78bfa" style="filled,rounded,bold" penwidth=2.2]
         READERS [label="READERS\nRegulatory RBPs (~1500)\n(HuR, TTP, FMRP, Staufen\nSR proteins, hnRNPs)" fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#a78bfa" style="filled,rounded,bold" penwidth=2.2]
         DARTS   [label="DARTS\nmiRNA-RISC\n(Drosha→Dicer→AGO2)\n~2500 miRNA · 7 nt seed" fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#a78bfa"]
-        SPONGE  [label="SPONGE\nlncRNA cytoplasmiques\n(ceRNA: CDR1as, HULC\nlincRNA-p21, GAS5)" fillcolor="#3b1570" fontcolor="#ddd6fe" color="#a78bfa"]
-        CENSOR  [label="CENSOR\nNMD\n(UPF1 + EJC + SMG1\nPTC >50 nt en amont EJC)" fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#a78bfa"]
+        SPONGE  [label="SPONGE\nCytoplasmic lncRNAs\n(ceRNA: CDR1as, HULC\nlincRNA-p21, GAS5)" fillcolor="#3b1570" fontcolor="#ddd6fe" color="#a78bfa"]
+        CENSOR  [label="CENSOR\nNMD\n(UPF1 + EJC + SMG1\nPTC >50 nt upstream of EJC)" fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#a78bfa"]
         TIMER   [label="TIMER\nmRNA stability / decay\n(CCR4-NOT→XRN1\ndeadenylation→decapping)" fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#a78bfa"]
         CLIPS   [label="CLIPS\nRNA G-quadruplexes (rG4)\n5'UTR → blocks scanning\nDHX36, eIF4A helicase" fillcolor="#3b1570" fontcolor="#ddd6fe" color="#a78bfa"]
         VAULT   [label="VAULT\nStress granules / P-bodies\n(G3BP1, TIA-1 / DCP1/2\nLLPS → storage or decay)" fillcolor="#3b1570" fontcolor="#ddd6fe" color="#a78bfa"]
@@ -141,6 +141,8 @@ digraph gene_regulation {
         BRAKE  [label="BRAKE\nISR / eIF2α-P\n(GCN2, PERK, HRI, PKR)\n→ global repression + ATF4 induction" fillcolor="#7f1d1d" fontcolor="#fee2e2" color="#f87171" style="filled,rounded,bold" penwidth=2.2]
         DECOY  [label="DECOY\nuORFs\n(~50% mammalian mRNAs)\nATF4, GCN4 bypass under ISR" fillcolor="#7f1d1d" fontcolor="#fee2e2" color="#f87171"]
         BYPASS [label="BYPASS\nIRES\n(cap-independent\nITAFs: PTB, DAP5, hnRNPQ)\nATF4, HIF-1α, VEGF, p53" fillcolor="#7f1d1d" fontcolor="#fee2e2" color="#f87171"]
+        TEMPO [label="TEMPO\nCodon usage / tRNA mods\nribosome speed + stalling\nco-translational folding" fillcolor="#7f1d1d" fontcolor="#fee2e2" color="#f87171"]
+        INSPECTOR [label="INSPECTOR\nTranslation surveillance\n(RQC / NGD / NSD)\nPELO, HBS1L, LTN1" fillcolor="#7f1d1d" fontcolor="#fee2e2" color="#f87171"]
     }
 
     // ============================================================
@@ -186,7 +188,7 @@ digraph gene_regulation {
     // INTRA-LAYER 1 RELATIONS
     // ============================================================
     SILENCER -> WRITER_R [label="co-recruit\nco-occupy" color="#4ade80" fontcolor="#4ade80" style=dashed dir=both]
-    OPENER   -> SHUFFLER [label="H3K27ac → BRD4\n→ BAF recruit" color="#4ade80" fontcolor="#4ade80" style=dashed]
+    OPENER   -> SHUFFLER [label="acetyl marks\nrecruit readers/remodelers" color="#4ade80" fontcolor="#4ade80" style=dashed]
 
     // ============================================================
     // LAYER 1 → LAYER 0 (marks define compartments)
@@ -200,14 +202,15 @@ digraph gene_regulation {
     // LAYER 0 → LAYER 1 (compartments maintain marks)
     // ============================================================
     ZONES  -> WRITER_R [label="B comp. ↔\nH3K27/9me3" color="#60a5fa" fontcolor="#60a5fa" style=dashed]
-    HUBS   -> OPENER   [label="BRD4 reads\nH3K27ac" color="#60a5fa" fontcolor="#60a5fa" dir=back style=dashed]
+    OPENER -> HUBS     [label="H3K27ac\n→ BRD4 hubs" color="#60a5fa" fontcolor="#60a5fa" style=dashed]
+    HUBS   -> OPENER   [label="SEs maintain\nenhancer acetylation" color="#60a5fa" fontcolor="#60a5fa" style=dashed]
     GUIDES -> SILENCER [label="piRNA→DNMT3\nde novo 5mC" color="#4ade80" fontcolor="#4ade80"]
 
     // ============================================================
     // LAYER 1 → LAYER 2
     // ============================================================
     OPENER   -> KEYS   [label="open chromatin\n→ TF access" color="#4ade80" fontcolor="#4ade80"]
-    WRITER_R -> KEYS   [label="PRC2 represses\nTF loci" color="#ef4444" fontcolor="#ef4444" arrowhead=tee]
+    WRITER_R -> KEYS   [label="compact chromatin\n→ TF exclusion" color="#ef4444" fontcolor="#ef4444" arrowhead=tee]
     SHUFFLER -> KEYS   [label="nucleosome\nremodeling" color="#4ade80" fontcolor="#4ade80"]
     WRITER_A -> SCRIBE [label="H3K4me3\n→ Pol II recruit" color="#4ade80" fontcolor="#4ade80"]
     HUBS     -> SCRIBE [label="P-TEFb release\npause→elongation" color="#f59e0b" fontcolor="#f59e0b" penwidth=2]
@@ -220,6 +223,9 @@ digraph gene_regulation {
     KEYS   -> WRITER_A [label="TF→MLL\n→ H3K4me3" color="#f59e0b" fontcolor="#f59e0b" style=dashed]
     KEYS   -> GUIDES   [label="TF drives\npiRNA/lncRNA loci" color="#f59e0b" fontcolor="#f59e0b" style=dashed]
     KEYS   -> SPONGE   [label="TF drives\nlncRNA txn" color="#f59e0b" fontcolor="#f59e0b" style=dashed]
+    KEYS   -> SCRIBE   [label="TF→Mediator/PIC\n→ Pol II recruitment" color="#f59e0b" fontcolor="#f59e0b" penwidth=2]
+    KEYS   -> HUBS     [label="master TF clusters\n→ SE identity" color="#f59e0b" fontcolor="#f59e0b" penwidth=1.8]
+    KEYS   -> RECODER  [label="IFN TFs\n→ ADAR1p150" color="#f59e0b" fontcolor="#f59e0b" style=dashed]
 
     // ============================================================
     // LAYER 2 → LAYER 3
@@ -278,6 +284,10 @@ digraph gene_regulation {
     BRAKE -> DECOY  [label="eIF2α-P → TC↓\nuORF bypass → ATF4(C)" color="#ef4444" fontcolor="#ef4444" penwidth=2 style=bold]
     BRAKE -> BYPASS [label="cap-dep blocked\n→ IRES active" color="#ef4444" fontcolor="#ef4444"]
     DECOY -> FORGE  [label="regulate\ninitiation" color="#ef4444" fontcolor="#ef4444" arrowhead=tee]
+    FORGE -> INSPECTOR [label="elongation stalls\n→ RQC/NGD" color="#ef4444" fontcolor="#ef4444"]
+    TEMPO -> INSPECTOR [label="codon/tRNA tempo\n→ ribosome stalls" color="#ef4444" fontcolor="#ef4444"]
+    TEMPO -> CHAPERONES [label="translation speed\n→ co-tx folding" color="#ef4444" fontcolor="#ef4444" style=dashed]
+    INSPECTOR -> PROTEASOME [label="RQC ubiquitinates\nnascent chains" color="#94a3b8" fontcolor="#94a3b8"]
 
     // ============================================================
     // LAYER 5 → LAYER 6
@@ -319,7 +329,7 @@ digraph gene_regulation {
     { rank=same; KEYS; SCRIBE }
     { rank=same; SHIELD; SPLICER; TRIMMER; RECODER }
     { rank=same; STAMP; READERS; DARTS; SPONGE; CENSOR; TIMER; CLIPS; VAULT }
-    { rank=same; FORGE; BRAKE; DECOY; BYPASS }
+    { rank=same; FORGE; BRAKE; DECOY; BYPASS; TEMPO; INSPECTOR }
     { rank=same; PHOSPHO; UBI; SUMO_NEDD; PROTEASOME; AUTOPHAGY; CHAPERONES; PAR }
     { rank=min; LLPS }
 }
