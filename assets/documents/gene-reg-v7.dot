@@ -46,7 +46,7 @@ digraph gene_regulation {
         ZONES [label="ZONES\nA/B compartments\n(Hi-C  A=active / B=inactive)" fillcolor="#1e3a5f" fontcolor="#bfdbfe" color="#60a5fa"]
         FENCES [label="FENCES\nTADs (CTCF + Cohesin)\nloop extrusion → insulation" fillcolor="#1e3a5f" fontcolor="#bfdbfe" color="#60a5fa"]
         BRIDGES [label="BRIDGES\nEnhancer→Promoter loops\n(Mediator + Cohesin + YY1)" fillcolor="#1e3a5f" fontcolor="#bfdbfe" color="#60a5fa"]
-        HUBS [label="HUBS\nSuper-enhancers / Pol II condensates\n(LLPS + BRD4 + master TFs)" fillcolor="#162d4a" fontcolor="#bfdbfe" color="#60a5fa" style="filled,rounded,bold" penwidth=2.2]
+        HUBS [label="HUBS\nSuper-enhancers / Pol II condensates\n(LLPS + BRD4 + master TFs)" fillcolor="#162d4a" fontcolor="#bfdbfe" color="#22d3ee" style="filled,rounded,dotted,bold" penwidth=2.8]
     }
 
     // ============================================================
@@ -119,10 +119,10 @@ digraph gene_regulation {
         READERS [label="READERS\nRegulatory RBPs (~1500)\n(HuR, TTP, FMRP, Staufen\nSR proteins, hnRNPs)" fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#a78bfa" style="filled,rounded,bold" penwidth=2.2]
         DARTS   [label="DARTS\nmiRNA-RISC\n(Drosha→Dicer→AGO2)\n~2500 miRNA · 7 nt seed" fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#a78bfa"]
         SPONGE  [label="SPONGE\nCytoplasmic lncRNAs\n(ceRNA: CDR1as, HULC\nlincRNA-p21, GAS5)" fillcolor="#3b1570" fontcolor="#ddd6fe" color="#a78bfa"]
-        CENSOR  [label="CENSOR\nNMD\n(UPF1 + EJC + SMG1\nPTC >50 nt upstream of EJC)" fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#a78bfa"]
-        TIMER   [label="TIMER\nmRNA stability / decay\n(CCR4-NOT→XRN1\ndeadenylation→decapping)" fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#a78bfa"]
+        CENSOR  [label="CENSOR\nNMD\n(UPF1 + EJC + SMG1\nPTC >50 nt upstream of EJC)" fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#f472b6" style="filled,rounded,dashed" penwidth=2.4]
+        TIMER   [label="TIMER\nmRNA stability / decay\n(CCR4-NOT→XRN1\ndeadenylation→decapping)" fillcolor="#4c1d95" fontcolor="#ddd6fe" color="#f472b6" style="filled,rounded,dashed" penwidth=2.4]
         CLIPS   [label="CLIPS\nRNA G-quadruplexes (rG4)\n5'UTR → blocks scanning\nDHX36, eIF4A helicase" fillcolor="#3b1570" fontcolor="#ddd6fe" color="#a78bfa"]
-        VAULT   [label="VAULT\nStress granules / P-bodies\n(G3BP1, TIA-1 / DCP1/2\nLLPS → storage or decay)" fillcolor="#3b1570" fontcolor="#ddd6fe" color="#a78bfa"]
+        VAULT   [label="VAULT\nStress granules / P-bodies\n(G3BP1, TIA-1 / DCP1/2\nLLPS → storage or decay)" fillcolor="#3b1570" fontcolor="#ddd6fe" color="#22d3ee" style="filled,rounded,dotted" penwidth=2.4]
     }
 
     // ============================================================
@@ -160,18 +160,26 @@ digraph gene_regulation {
         PHOSPHO    [label="PHOSPHO / O-GlcNAc\nPhosphorylation\n(kinases ↔ phosphatases)" fillcolor="#1e293b" fontcolor="#e2e8f0" color="#94a3b8"]
         UBI        [label="UBIQUITIN CODE\nK48→proteasome · K63→signal\n(E1/E2/E3 cascade)" fillcolor="#1e293b" fontcolor="#e2e8f0" color="#94a3b8" style="filled,rounded,bold" penwidth=2.2]
         SUMO_NEDD  [label="SUMO / NEDDylation\n(UBL family\nSTUbLs: SUMO→Ub)" fillcolor="#172030" fontcolor="#e2e8f0" color="#94a3b8"]
-        PROTEASOME [label="UPS / Proteasome\n26S (19S+20S)\n+ proteolytic condensates" fillcolor="#1e293b" fontcolor="#e2e8f0" color="#94a3b8"]
-        AUTOPHAGY  [label="Selective autophagy\n(p62/SQSTM1 → lysosome\nNBR1, OPTN)" fillcolor="#172030" fontcolor="#e2e8f0" color="#94a3b8"]
+        PROTEASOME [
+            label=<
+                <TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+                    <TR>
+                        <TD><FONT POINT-SIZE="10">UPS / Proteasome</FONT></TD>
+                        <TD><FONT POINT-SIZE="8" COLOR="#22d3ee">LLPS</FONT></TD>
+                    </TR>
+                    <TR><TD COLSPAN="2"><FONT POINT-SIZE="9">26S (19S+20S)<BR/>+ proteolytic condensates</FONT></TD></TR>
+                </TABLE>
+            >
+            fillcolor="#1e293b" fontcolor="#e2e8f0" color="#f472b6" style="filled,rounded,dashed,bold" penwidth=2.8
+        ]
+        AUTOPHAGY  [label="Selective autophagy\n(p62/SQSTM1 → lysosome\nNBR1, OPTN)" fillcolor="#172030" fontcolor="#e2e8f0" color="#f472b6" style="filled,rounded,dashed" penwidth=2.4]
         CHAPERONES [label="Chaperones / UPR\n(Hsp70, Hsp90, CCT\nIRE1, PERK, ATF6)" fillcolor="#1e293b" fontcolor="#e2e8f0" color="#94a3b8"]
-        PAR        [label="ADP-ribosylation\nPARP1 / PAR\n(DDR + condensates)" fillcolor="#172030" fontcolor="#e2e8f0" color="#94a3b8"]
+        PAR        [label="ADP-ribosylation\nPARP1 / PAR\n(DDR + condensates)" fillcolor="#172030" fontcolor="#e2e8f0" color="#22d3ee" style="filled,rounded,dotted" penwidth=2.4]
     }
 
     // ============================================================
     // TRANSVERSAL META-PRINCIPLES
     // ============================================================
-    LLPS_META [label="★ LLPS\nphase separation" fillcolor="#0f172a" fontcolor="#67e8f9" color="#22d3ee" shape=polygon sides=5 style="filled,bold" fontsize=9 penwidth=2]
-    DECAY_META [label="★ DECAY\nturnover / clearance" fillcolor="#0f172a" fontcolor="#f9a8d4" color="#f472b6" shape=polygon sides=5 style="filled,bold" fontsize=9 penwidth=2]
-
     subgraph cluster_legend {
         label="LEGEND"
         fontcolor="#e5e7eb"
@@ -181,11 +189,21 @@ digraph gene_regulation {
         bgcolor="#111827"
         margin=10
 
-        LEGEND_FULL [label="solid arrow\nprimary/direct relation" fillcolor="#1f2937" fontcolor="#e5e7eb" color="#e5e7eb"]
-        LEGEND_DASH [label="dashed arrow\nindirect/context/feedback" fillcolor="#1f2937" fontcolor="#e5e7eb" color="#e5e7eb"]
-        LEGEND_TEE [label="⊣ blunt arrow\ninhibition/repression" fillcolor="#1f2937" fontcolor="#e5e7eb" color="#ef4444"]
-        LEGEND_STAR [label="★ star\nmeta-principle overlay" fillcolor="#1f2937" fontcolor="#e5e7eb" color="#22d3ee"]
-        LEGEND_ABBR [label="Abbrev.\nco-tx=co-transcriptional · A=accessibility\nB=mark/readout · C=kinetic coupling\ninitiation ↑=increased initiation" fillcolor="#1f2937" fontcolor="#e5e7eb" color="#64748b"]
+        LEGEND [
+            shape=plain
+            margin=0
+            label=<
+                <TABLE BORDER="1" COLOR="#64748b" BGCOLOR="#111827" CELLBORDER="0" CELLSPACING="4" CELLPADDING="4">
+                    <TR><TD ALIGN="CENTER"><FONT COLOR="#e5e7eb"><B>Legend</B></FONT></TD></TR>
+                    <TR><TD ALIGN="LEFT"><FONT COLOR="#e5e7eb">solid arrow = primary/direct relation</FONT></TD></TR>
+                    <TR><TD ALIGN="LEFT"><FONT COLOR="#e5e7eb">dashed arrow = indirect/context/feedback</FONT></TD></TR>
+                    <TR><TD ALIGN="LEFT"><FONT COLOR="#ef4444">⊣ blunt arrow = inhibition/repression</FONT></TD></TR>
+                    <TR><TD ALIGN="LEFT"><FONT COLOR="#22d3ee">cyan dotted border = LLPS / condensate mechanism</FONT></TD></TR>
+                    <TR><TD ALIGN="LEFT"><FONT COLOR="#f472b6">pink dashed border = decay / clearance mechanism</FONT></TD></TR>
+                    <TR><TD ALIGN="LEFT"><FONT COLOR="#e5e7eb">co-tx=co-transcriptional · A=accessibility · B=mark/readout · C=kinetic coupling</FONT></TD></TR>
+                </TABLE>
+            >
+        ]
     }
 
     // ============================================================
@@ -331,18 +349,6 @@ digraph gene_regulation {
     PROTEASOME -> KEYS   [label="IκBα decay\n→ NF-κB activ." color="#94a3b8" fontcolor="#94a3b8" style=dashed]
 
     // ============================================================
-    // META-PRINCIPLE OVERLAYS
-    // ============================================================
-    LLPS_META -> HUBS       [label="" color="#22d3ee" fontcolor="#22d3ee" style=dotted penwidth=1.8]
-    LLPS_META -> VAULT      [label="" color="#22d3ee" fontcolor="#22d3ee" style=dotted penwidth=1.8]
-    LLPS_META -> PROTEASOME [label="" color="#22d3ee" fontcolor="#22d3ee" style=dotted penwidth=1.8]
-    LLPS_META -> PAR        [label="" color="#22d3ee" fontcolor="#22d3ee" style=dotted penwidth=1.8]
-    DECAY_META -> TIMER     [label="" color="#f472b6" fontcolor="#f472b6" style=dotted penwidth=1.8]
-    DECAY_META -> CENSOR    [label="" color="#f472b6" fontcolor="#f472b6" style=dotted penwidth=1.8]
-    DECAY_META -> PROTEASOME [label="" color="#f472b6" fontcolor="#f472b6" style=dotted penwidth=1.8]
-    DECAY_META -> AUTOPHAGY [label="" color="#f472b6" fontcolor="#f472b6" style=dotted penwidth=1.8]
-
-    // ============================================================
     // RANKING
     // ============================================================
     { rank=same; ZONES; FENCES; BRIDGES; HUBS }
@@ -352,5 +358,5 @@ digraph gene_regulation {
     { rank=same; STAMP; READERS; DARTS; SPONGE; CENSOR; TIMER; CLIPS; VAULT }
     { rank=same; FORGE; BRAKE; DECOY; BYPASS; TEMPO; INSPECTOR }
     { rank=same; PHOSPHO; UBI; SUMO_NEDD; PROTEASOME; AUTOPHAGY; CHAPERONES; PAR }
-    { rank=min; LLPS_META; DECAY_META; LEGEND_FULL; LEGEND_DASH; LEGEND_TEE; LEGEND_STAR; LEGEND_ABBR }
+    { rank=min; LEGEND }
 }

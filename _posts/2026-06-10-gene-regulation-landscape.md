@@ -30,23 +30,24 @@ microscopy are not strictly identical, but they are clearly not unrelated
 either. In other places, molecular biology has long descriptive sentences for
 mechanisms, but no short handle that makes the mechanism easy to reason about.
 
-So I gave the main mechanisms nicknames. Not because the nicknames are perfect,
-but because naming is a way to think. I hope the map is useful, and maybe sparks
-discussions.
+So I gave each main mechanism a short code name. The names are not meant to
+replace the biology; they are handles that point back to precise glossary
+entries. I hope the map is useful, and maybe sparks discussions.
 
-The map is very large, so the embedded version below is mostly a preview. You
-can [open the full-resolution zoomable map here](/assets/images/gene-reg-v7.png).
-For the box-by-box glossary, full mechanism catalogue, and detailed edge list
-used to build the figure, see the [Gene Regulation Landscape technical notes](/assets/documents/gene-regulation-landscape-details.md)
-and the [Graphviz DOT source](/assets/documents/gene-reg-v7.dot).
+The map is very large, so the embedded version below is mostly a preview. You can
+[open the full-resolution zoomable map here](/assets/images/gene-reg-v7.png).
+The companion [technical notes](/assets/documents/gene-regulation-landscape-details.md)
+contain the 1-to-1 glossary for every box name, the full mechanism catalogue,
+link rationale, and legend details. The [Graphviz DOT source](/assets/documents/gene-reg-v7.dot)
+is also available.
 
 In the figure, each box title is a code name that maps 1-to-1 to the catalogue
 entry in the technical notes. Solid arrows are the main mechanistic relations;
 dashed arrows indicate contextual, feedback, or association-style links;
 tee-headed arrows indicate repression; bold arrows mark especially important
-coupling edges. Starred dotted overlays mark meta-principles such as `LLPS` and
-`DECAY`, which are reused across several mechanisms rather than treated as
-ordinary boxes.
+coupling edges. Border styles mark meta-principles such as `LLPS` and `DECAY`:
+these are recurring physical or regulatory motifs that appear across several
+mechanisms, not separate boxes in the pathway.
 
 [![Gene Regulation Landscape](/assets/images/gene-reg-v7.png)](/assets/images/gene-reg-v7.png)
 
@@ -78,11 +79,11 @@ The map follows the flow from DNA to RNA to protein:
    phosphorylation/O-GlcNAc, ubiquitin, SUMO/NEDD8, proteasomal degradation,
    selective autophagy, chaperones/UPR, and PARP/PAR signaling.
 
-Across the whole diagram, `LLPS` represents liquid-liquid phase separation, and
-`DECAY` represents turnover or clearance. They are not extra regulatory layers.
-They are meta-principles reused in several places: transcriptional condensates,
-stress granules and P-bodies, mRNA decay, proteolytic condensates, autophagy,
-and DNA damage repair assemblies.
+Across the whole diagram, border styles flag recurring meta-principles. `LLPS`
+marks liquid-liquid phase separation, and `DECAY` marks turnover or clearance.
+They are not extra regulatory layers. They are reused in several places:
+transcriptional condensates, stress granules and P-bodies, mRNA decay,
+proteolytic condensates, autophagy, and DNA damage repair assemblies.
 
 ## The Useful Reduction
 

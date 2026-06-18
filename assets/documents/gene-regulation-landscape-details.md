@@ -3,15 +3,13 @@
 
 *Clawd · 2026-05-01 / updated 2026-06-18 · 37 mechanisms · 2 meta-principles · 7 layers*
 
-These are the original detailed working notes used to construct the Gene
-Regulation Landscape. They contain the full mechanism catalogue, edge list, and
-reduction principles. The rendered figure was generated from the Graphviz source
-file [`gene-reg-v7.dot`](/assets/documents/gene-reg-v7.dot). The current rendered
-v7 graph contains 37 mechanism boxes, 2 starred meta-principles, 72 mechanism
-relations, and 8 meta-overlay links.
-
-The notes below are preserved in French because they were the original working
-document.
+These notes are the technical companion to the current Gene Regulation
+Landscape v7 graph. They document the 37 mechanism boxes, 2 meta-principles, 72
+mechanism relations, and 8 meta-style annotations used in the rendered figure.
+The rendered figure was generated from the Graphviz source file
+[`gene-reg-v7.dot`](/assets/documents/gene-reg-v7.dot). The content preserves
+the original French working language while keeping the counts and mappings
+aligned with the current graph.
 
 ---
 
@@ -24,9 +22,79 @@ document.
 
 ## Résumé exécutif
 
-La cellule régule l'expression de ses gènes à **7 niveaux emboîtés**, de l'organisation tridimensionnelle du génome à la dégradation sélective des protéines. On dénombre 37 mécanismes distincts dans les boîtes du graphe, plus 2 métaprincipes transversaux marqués par des étoiles (**LLPS** et **DECAY**). Une analyse transversale révèle aussi **3 stratégies** récurrentes : (A) contrôle de l'accessibilité physique d'un substrat, (B) écriture/lecture/effacement d'une marque réversible, (C) couplage cinétique entre deux processus. Tout le reste est une implémentation moléculaire de l'un de ces trois principes à un niveau différent.
+La cellule régule l'expression de ses gènes à **7 niveaux emboîtés**, de l'organisation tridimensionnelle du génome à la dégradation sélective des protéines. On dénombre 37 mécanismes distincts dans les boîtes du graphe, plus 2 métaprincipes transversaux indiqués par des styles de bordure (**LLPS** et **DECAY**). Une analyse transversale révèle aussi **3 stratégies** récurrentes : (A) contrôle de l'accessibilité physique d'un substrat, (B) écriture/lecture/effacement d'une marque réversible, (C) couplage cinétique entre deux processus. Tout le reste est une implémentation moléculaire de l'un de ces trois principes à un niveau différent.
 
 ---
+
+## Comment lire ces notes
+
+- Les **37 mécanismes** sont les boîtes du graphe, réparties en 7 couches.
+- Les **2 métaprincipes**, **LLPS** et **DECAY**, ne sont pas des boîtes mécanistiques ordinaires : ils sont indiqués par des styles de bordure sur les mécanismes concernés.
+- Les **72 arêtes mécanistiques** décrivent des relations causales, de couplage ou de feedback entre mécanismes.
+- Les **8 annotations méta** rattachent LLPS et DECAY aux mécanismes qui les incarnent.
+
+## Notation du graphe et abréviations
+
+| Terme | Sens |
+|-------|------|
+| `tx` | Transcription. Le graphe évite de l'utiliser pour la traduction afin de ne pas créer d'ambiguïté. |
+| `co-tx` | Co-transcriptionnel : couplé à la progression de Pol II ou à l'ARN naissant. |
+| `A` | Principe d'accessibilité : rendre un substrat disponible ou inaccessible. |
+| `B` | Principe marque/lecture : une marque réversible produit un effet selon son lecteur et son contexte. |
+| `C` | Principe de couplage cinétique : la vitesse d'un processus change l'issue d'un autre. |
+| `⊣` | Répression, inhibition ou blocage direct. |
+| `(back)` | Feedback ou relation de retour vers une couche amont. |
+| `(bidirectionnel)` | Relation réciproque représentée comme couplage à double sens. |
+| `(**)` | Couplage cinétique particulièrement important, relié au principe C. |
+| `initiation ↑` | Augmentation de l'initiation de la traduction. |
+| `RQC` | Ribosome-associated Quality Control. Surveillance des ribosomes bloqués et dégradation du peptide naissant. |
+| `NGD` | No-Go Decay. Dégradation liée à un ribosome bloqué sur l'ARNm. |
+| `NSD` | Non-Stop Decay. Dégradation liée à un ARNm sans codon stop fonctionnel. |
+| `SUMO` | Small Ubiquitin-like Modifier. Petite protéine conjuguée aux substrats comme marque post-traductionnelle. |
+| `NEDDylation` | Conjugaison de NEDD8, notamment sur les cullines pour activer des E3 ligases CRL. |
+| italique | Dans les descriptions, l'italique sert aux noms de gènes/protéines quand cela aide la lecture ; les boîtes du graphe restent des noms de mécanismes. |
+
+## Architecture réductionniste — 3 stratégies fondamentales
+
+Le graphe ne cherche pas seulement à lister des mécanismes. Il les réduit à
+trois logiques récurrentes qui réapparaissent à chaque couche.
+
+```
+Stratégie A — CONTRÔLE DE L'ACCESSIBILITÉ
+  "Rend un substrat accessible ou inaccessible à sa machinerie"
+  Instances : OPENER/SHUFFLER → TF access
+              FENCES/BRIDGES → E-P proximity
+              DARTS/SPONGE → mRNA availability
+              VAULT → translational access
+
+Stratégie B — MARQUE RÉVERSIBLE + LECTURE CONTEXTUELLE
+  "La même marque produit des effets différents selon le lecteur et le contexte"
+  Instances : SILENCER/WRITER-A/WRITER-R (histone code + DNA methylation)
+              STAMP (m6A → YTHDF1 ou YTHDF2 selon le contexte)
+              UBI (K48 → PROTEASOME ; K63 → AUTOPHAGY)
+              PHOSPHO (phospho → activation ou dégradation selon le substrat)
+
+Stratégie C — COUPLAGE CINÉTIQUE
+  "La vitesse du processus A détermine le résultat du processus B"
+  Instances : Pol II rate → SPLICER (kinetic window)
+              H3K36me3 déposé par SCRIBE → SPLICER (même couplage, autre niveau)
+              TC limiting (BRAKE) → DECOY bypass → FORGE sélectif ATF4
+              Codon pause (TEMPO) → CHAPERONES co-traductionnel
+              IRES-TF loop (synthèse ATF4 → reprogrammation transcriptomique)
+```
+
+## Carte des boîtes du graphe
+
+| Couche | Mécanismes |
+|--------|------------|
+| 0 — Génome 3D | ZONES, FENCES, BRIDGES, HUBS |
+| 1 — Épigénétique | SILENCER, OPENER, WRITER-A, WRITER-R, SHUFFLER, GUIDES |
+| 2 — Transcription | KEYS, SCRIBE |
+| 3 — Co-transcriptionnel | SHIELD, SPLICER, TRIMMER, RECODER |
+| 4 — Post-transcriptionnel | STAMP, READERS, DARTS, SPONGE, CENSOR, TIMER, CLIPS, VAULT |
+| 5 — Traductionnel | FORGE, BRAKE, DECOY, BYPASS, TEMPO, INSPECTOR |
+| 6 — Post-traductionnel | PHOSPHO, UBI, SUMO_NEDD, PROTEASOME, AUTOPHAGY, CHAPERONES, PAR |
+| Méta | LLPS, DECAY |
 
 ## I. Les 7 couches — Explication et mécanismes
 
@@ -73,7 +141,7 @@ La cellule régule l'expression de ses gènes à **7 niveaux emboîtés**, de l'
 |----------|-------------|-------------------|
 | **SHIELD** | 5' Capping | Ajout d'une 7-méthylguanosine (m7G) sur le 5' de l'ARN nascent dès ~25-30 nt, co-transcriptionnellement via la Ser5-P CTD. Protection contre les 5'→3' exonucléases. La coiffe est reconnue par eIF4E (initiation traductionnelle) et par CBC (nuclear cap-binding complex → export). Échange CBC → eIF4E lors de l'export nucléaire. |
 | **SPLICER** | Splicing alternatif | Excision des introns et jonction des exons par le **spliceosome** (U1/U2/U4/U6/U5 snRNPs + ~150 protéines). ~95 % des gènes multi-exoniques humains produisent plusieurs isoformes. Modes : exon skipping, intron retention, 5'/3' alternative SS, exons mutuellement exclusifs. **Régulation cinétique** : la vitesse d'élongation de Pol II contrôle l'inclusion des exons ("window of opportunity" — Pol II lente → temps pour reconnaître exons faibles). **Code épigénétique** : H3K36me3 recrute MRG15 → PTB/PSF → exon inclusion ; H3K9me3 → Pol II lente → exon skipping. |
-| **TRIMMER** | Polyadénylation alternative (APA) | ~70 % des gènes mammifères ont plusieurs sites de clivage/polyadénylation → isoformes avec 3'UTR de longueurs différentes. Mécanism : complexe CPA (CPSF, CstF, CFI/II) reconnaît la séquence AAUAAA ~20 nt en amont du site polyA. Conséquence : 3'UTR long → plus de sites miRNA et de sites RBP exposés → régulation post-transcriptionnelle plus intense. |
+| **TRIMMER** | Polyadénylation alternative (APA) | ~70 % des gènes mammifères ont plusieurs sites de clivage/polyadénylation → isoformes avec 3'UTR de longueurs différentes. Mécanisme : complexe CPA (CPSF, CstF, CFI/II) reconnaît la séquence AAUAAA ~20 nt en amont du site polyA. Conséquence : 3'UTR long → plus de sites miRNA et de sites RBP exposés → régulation post-transcriptionnelle plus intense. |
 | **RECODER** | A→I Editing (ADAR) | Les **ADARs** (Adenosine Deaminases Acting on RNA) hydrolysent les adénosines en inosines dans des dsRNA. L'inosine est lu comme guanosine → recoding de l'information génétique. **ADAR1 p150** : induit par l'interféron (IRF3/7), cytoplasmique, marque les dsRNA endogènes Alu comme "self". **ADAR2** : constitutif, nucléaire, spécialiste du recoding neuronal (GluR-B Q→R site). Couplage avec le splicing : A→I editing au 5'SS d'éléments Alu → prévention de l'exonisation → prévention du NMD. |
 
 ---
@@ -90,7 +158,7 @@ La cellule régule l'expression de ses gènes à **7 niveaux emboîtés**, de l'
 | **CENSOR** | NMD (Nonsense-Mediated mRNA Decay) | Surveillance des ARNm aberrants portant des codons stop prématurés (PTCs). Mécanisme : lors de la traduction, si un ribosome termine à >50–55 nt en amont d'un **EJC** (Exon Junction Complex) → recrutement de UPF1/UPF2/UPF3 → phosphorylation UPF1 par SMG1 → dégradation rapide (décapping + exonucléases). ~5–10 % du transcriptome humain est régulé physiologiquement par NMD (splicing productif vs improductif alternatif). Lien editing : A→I editing au 5'SS d'un exon Alu → prévention exonisation → pas de PTC → pas de NMD (circuit ADAR-SPLICER-CENSOR). |
 | **TIMER** | Stabilité / dégradation des ARNm | La demi-vie des ARNm varie de ~20 min (proto-oncogènes) à >24 h (globine). Voie principale : **déadénylation** (CCR4-NOT/PAN2-PAN3 → queue polyA) → **décapping** (DCP1/2 → suppression m7G) → **dégradation 5'→3'** (XRN1). Voie alternative : **exosome** (dégradation 3'→5', complexe ~14 sous-unités). Régulateurs : ARE-binding proteins (HuR stabilise ; TTP déstabilise), miRNAs (→ CCR4-NOT), m6A (YTHDF2 → CCR4-NOT). |
 | **CLIPS** | RNA G-quadruplexes (rG4) | Structures secondaires quaternaires formées de tétrades de guanines (G4) stabilisées par des ions K+. Présents dans les 5'UTR (→ bloquent la progression du ribosome 43S → inhibition traduction cap-dépendante), 3'UTR, régions de pause Pol II, télomères. Déroulés par des helicases : DHX36, eIF4A, RHAU. Régulation : m6A peut déstabiliser les rG4 en modifiant la structure secondaire de l'ARN. Interaction avec IRES : rG4 dans 5'UTR peut moduler l'accessibilité des IRES. |
-| **VAULT** | Stress granules / P-bodies | Deux types de **condensats cytoplasmiques** (LLPS) de stockage/dégradation des ARNm. **Stress granules** (G3BP1, TIA-1, PABPC) : stockage temporaire des ARNm sous stress → dissolution lors de la résolution → libération vers la traduction. **P-bodies** (DCP1/2, XRN1, CNOT) : sites de décapping et dégradation. Échange dynamique de matière entre SG et PB. Formation déclenchée par : ISR (eIF2α-P), stress oxidatif, chaleur, infection virale. |
+| **VAULT** | Stress granules / P-bodies | Deux types de **condensats cytoplasmiques** (LLPS) de stockage/dégradation des ARNm. **Stress granules** (G3BP1, TIA-1, PABPC) : stockage temporaire des ARNm sous stress → dissolution lors de la résolution → libération vers la traduction. **P-bodies** (DCP1/2, XRN1, CNOT) : sites de décapping et dégradation. Échange dynamique de matière entre SG et PB. Formation déclenchée par : ISR (eIF2α-P), stress oxydatif, chaleur, infection virale. |
 
 ---
 
@@ -132,37 +200,20 @@ La cellule régule l'expression de ses gènes à **7 niveaux emboîtés**, de l'
 
 ---
 
-## II. Catalogue des relations (72 arêtes mécanistiques + 8 liens méta)
+## II. Catalogue des relations (72 arêtes mécanistiques + 8 annotations méta)
 
 ### Code couleur
 | Couleur | Type | Signification |
 |---------|------|---------------|
 | 🟢 Vert `#27ae60` | Activation directe | A recrute/active/dépose B |
 | 🔴 Rouge `#c0392b` | Répression directe | A bloque/empêche B (arrowhead=tee) |
-| 🟡 Jaune `#f4d03f` | Couplage Pol II | Mécanisme lié à la progression de Pol II |
+| 🟡 Jaune `#f4d03f` | Couplage à Pol II | Mécanisme lié à la progression de Pol II |
 | 🟠 Orange `#e67e22` | Couplage co-transcriptionnel | Régulation couplée à la transcription |
-| 🟣 Violet `#8e44ad` | Mécanisme post-Tx / m6A / RBP | Régulation post-transcriptionnelle |
+| 🟣 Violet `#8e44ad` | Mécanisme post-transcriptionnel / m6A / RBP | Régulation post-transcriptionnelle |
 | ⚫ Gris `#566573` | PTM / signalisation post-trad | Régulation post-traductionnelle |
 | 🔵 Bleu `#2e86c1` | Structural / 3D | Organisation tridimensionnelle |
-| 🔵 Cyan `#5dade2` (pointillé) | LLPS | Participation au principe LLPS |
-| 🩷 Rose `#f472b6` (pointillé) | DECAY | Participation au principe turnover / clearance |
-
-### Abréviations et notation des labels DOT
-
-| Terme | Sens |
-|-------|------|
-| `tx` | Transcription. Le graphe évite de l'utiliser pour la traduction afin de ne pas créer d'ambiguïté. |
-| `co-tx` | Co-transcriptionnel : couplé à la progression de Pol II ou à l'ARN naissant. |
-| `A` | Principe d'accessibilité : rendre un substrat disponible ou inaccessible. |
-| `B` | Principe marque/lecture : une marque réversible produit un effet selon son lecteur et son contexte. |
-| `C` | Principe de couplage cinétique : la vitesse d'un processus change l'issue d'un autre. |
-| `initiation ↑` | Augmentation de l'initiation de la traduction. |
-| `RQC` | Ribosome-associated Quality Control. Surveillance des ribosomes bloqués et dégradation du peptide naissant. |
-| `NGD` | No-Go Decay. Dégradation liée à un ribosome bloqué sur l'ARNm. |
-| `NSD` | Non-Stop Decay. Dégradation liée à un ARNm sans codon stop fonctionnel. |
-| `SUMO` | Small Ubiquitin-like Modifier. Petite protéine conjuguée aux substrats comme marque post-traductionnelle. |
-| `NEDDylation` | Conjugaison de NEDD8, notamment sur les cullines pour activer des E3 ligases CRL. |
-| italique | Dans les descriptions, l'italique sert aux noms de gènes/protéines quand cela aide la lecture ; les boîtes du graphe restent des noms de mécanismes. |
+| 🔵 Cyan `#22d3ee` (bordure pointillée) | LLPS | Participation au principe LLPS / condensats |
+| 🩷 Rose `#f472b6` (bordure tiretée) | DECAY | Participation au principe turnover / clearance |
 
 ### Toutes les relations par couche source
 
@@ -246,7 +297,7 @@ La cellule régule l'expression de ses gènes à **7 niveaux emboîtés**, de l'
 | Source | Cible | Nom | Mécanisme |
 |--------|-------|-----|-----------|
 | STAMP | TIMER | **M6A-DECAY** | YTHDF2 recrute CCR4-NOT → déadénylation accélérée → decay |
-| STAMP | CLIPS | **M6A-G4** | m6A déstabilise la structure secondaire → destabilize G-quadruplexes adjacents |
+| STAMP | CLIPS | **M6A-G4** | m6A déstabilise la structure secondaire → déstabilisation des G-quadruplexes adjacents |
 | DARTS | TIMER | **MIRNA-DECAY** | AGO2-RISC recrute CCR4-NOT → déadénylation + décapping |
 | SPONGE | DARTS | **CERNA** ⊣ | lncRNA ceRNA séquestre les miRNA → décompression des ARNm cibles |
 | CENSOR | TIMER | **NMD-DECAY** | UPF1-P recrute SMG6 (endonucléase) + SMG5/7 → dégradation rapide |
@@ -315,7 +366,7 @@ La cellule régule l'expression de ses gènes à **7 niveaux emboîtés**, de l'
 | LLPS | VAULT | **LLPS-SG-PB** | LLPS forme les stress granules et P-bodies |
 | LLPS | PROTEASOME | **LLPS-PROTEASOME** | LLPS forme les condensats protéolytiques (hHR23B + polyUb) |
 | LLPS | PAR | **LLPS-PAR** | Les chaînes PAR nucléent des condensats de réparation ADN |
-| DECAY | TIMER | **DECAY-MRNA** | Turnover des ARNm par deadenylation, decapping et exonucléases |
+| DECAY | TIMER | **DECAY-MRNA** | Turnover des ARNm par déadénylation, décapping et exonucléases |
 | DECAY | CENSOR | **DECAY-NMD** | NMD comme branche de surveillance et élimination des ARNm aberrants |
 | DECAY | PROTEASOME | **DECAY-PROTEASOME** | Dégradation protéique ubiquitine-dépendante |
 | DECAY | AUTOPHAGY | **DECAY-AUTOPHAGY** | Clearance lysosomale sélective de protéines, agrégats ou organites |
@@ -338,35 +389,7 @@ La cellule régule l'expression de ses gènes à **7 niveaux emboîtés**, de l'
 
 ---
 
-## IV. Architecture mentale finale — 3 stratégies fondamentales
-
-```
-Stratégie A — CONTRÔLE DE L'ACCESSIBILITÉ
-  "Rend un substrat accessible ou inaccessible à sa machinerie"
-  Instances : OPENER/SHUFFLER → TF access
-              FENCES/BRIDGES → E-P proximity
-              DARTS/SPONGE → mRNA availability
-              VAULT → translational access
-
-Stratégie B — MARQUE RÉVERSIBLE + LECTURE CONTEXTUELLE
-  "La même marque produit des effets différents selon le lecteur et le contexte"
-  Instances : SILENCER/WRITER-A/WRITER-R (histone code + DNA methylation)
-              STAMP (m6A → YTHDF1 ou YTHDF2 selon le contexte)
-              UBI (K48 → PROTEASOME ; K63 → AUTOPHAGY)
-              PHOSPHO (phospho → activation ou dégradation selon le substrat)
-
-Stratégie C — COUPLAGE CINÉTIQUE
-  "La vitesse du processus A détermine le résultat du processus B"
-  Instances : Pol II rate → SPLICER (kinetic window)
-              H3K36me3 déposé par SCRIBE → SPLICER (même couplage, autre niveau)
-              TC limiting (BRAKE) → DECOY bypass → FORGE sélectif ATF4
-              Codon pause (TEMPO) → CHAPERONES co-traductionnel
-              IRES-TF loop (synthèse ATF4 → reprogrammation transcriptomique)
-```
-
----
-
-## V. Bases de données et ressources
+## Annexe A — Bases de données et ressources
 
 | Ressource | URL | Contenu |
 |-----------|-----|---------|
@@ -377,12 +400,12 @@ Stratégie C — COUPLAGE CINÉTIQUE
 | miRBase | https://mirbase.org | Catalogue miRNA |
 | POSTAR3 | http://postar.ncrnalab.org | Sites de liaison RBPs (CLIP-seq) |
 | RMBase v3 | https://rmbase.sysu.edu.cn | Sites de modifications ARN (m6A, m5C, Ψ...) |
-| G4IMOTIF | — | G-quadruplexes dans les transcriptomes |
+| G4 motif resources | À vérifier | G-quadruplexes dans les transcriptomes |
 | PhosphoSitePlus | https://phosphosite.org | Sites PTM (phospho, ubiq, acétyl, méthyl) |
 | STRING | https://string-db.org | Interactions protéine-protéine |
 | UniProt | https://uniprot.org | Annotations protéines + PTMs |
 
-## VI. Références fondamentales
+## Annexe B — Références fondamentales
 
 - Kouzarides T. (2007). Chromatin modifications and their function. *Cell* 128(4):693-705.
 - Wang X. & He C. (2014). Dynamic RNA modifications in posttranscriptional regulation. *Mol Cell* 56(1):5-12.
@@ -397,6 +420,6 @@ Stratégie C — COUPLAGE CINÉTIQUE
 
 ---
 
-*v7 — 37 mécanismes, 2 métaprincipes, 72 relations mécanistiques + 8 liens méta*
+*v7 — 37 mécanismes, 2 métaprincipes, 72 relations mécanistiques + 8 annotations méta*
 *Fichier : `assets/documents/gene-regulation-landscape-details.md`*
 *Diagramme : `assets/documents/gene-reg-v7.dot` + `assets/images/gene-reg-v7.png`*
