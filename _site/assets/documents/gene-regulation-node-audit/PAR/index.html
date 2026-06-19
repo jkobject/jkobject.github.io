@@ -1,0 +1,403 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>PAR audit | Jérémie</title>
+<meta name="description" content="My website and blog.">
+
+
+  <meta name="author" content="Jérémie Kalfon">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Jérémie">
+<meta property="og:title" content="PAR audit">
+<meta property="og:url" content="https://www.jkobject.com/assets/documents/gene-regulation-node-audit/PAR/">
+
+
+  <meta property="og:description" content="My website and blog.">
+
+
+
+  <meta property="og:image" content="https://www.jkobject.com/assets/images/id.png">
+  
+
+
+
+  <meta name="twitter:site" content="@jkobject">
+  <meta name="twitter:title" content="PAR audit">
+  <meta name="twitter:description" content="My website and blog.">
+  <meta name="twitter:url" content="https://www.jkobject.com/assets/documents/gene-regulation-node-audit/PAR/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://www.jkobject.com/assets/images/id.png">
+      
+    
+  
+
+  
+
+
+
+
+
+
+
+
+
+  
+    <meta property="article:publisher" content="https://www.facebook.com/jkobject">
+  
+
+  
+
+
+<link rel="canonical" href="https://www.jkobject.com/assets/documents/gene-regulation-node-audit/PAR/">
+
+
+
+
+
+
+
+  <meta name="google-site-verification" content="G-YTQBB5S9QB" />
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Jérémie Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css" id="theme_source">
+
+  <link rel="stylesheet" href="/assets/css/theme2.css" id="theme_source_2">
+  <script>
+    if (sessionStorage.getItem('theme') === null) {
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        sessionStorage.setItem('theme', 'dark');
+      }
+      else{
+        sessionStorage.setItem('theme', 'light');
+      }
+    }
+
+    let theme = sessionStorage.getItem('theme');
+    if(theme === "dark"){
+      document.getElementById('theme_source').setAttribute('rel', 'stylesheet alternate'); 
+      sessionStorage.setItem('theme', 'dark');
+    }
+    else
+    {
+      document.getElementById('theme_source_2').setAttribute('rel', 'stylesheet alternate'); 
+      sessionStorage.setItem('theme', 'light');
+    }
+  </script>
+
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+    <!-- start custom head snippets -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--default">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/id-88.png" alt="Jérémie K."></a>
+        
+        <a class="site-title" href="/">
+          Jérémie K.
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/" title="I am a human. I wish to make the world better with science. <3">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blog/" title="A short extract about my life experiences.">Blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/" title="">Projects</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ideas/">Ideas</a>
+            </li><li class="masthead__menu-item">
+              <a href="/opinions/">Opinions</a>
+            </li><li class="masthead__menu-item">
+              <a href="/activities/" title="This is my personal list of books, Comics and films I love.">Activities</a>
+            </li><li class="masthead__menu-item">
+              <a href="/phd/">PhD</a>
+            </li><li class="masthead__menu-item">
+              <a href="/courses/" title="Here is the list of the Courses I have received and the one I have given.">Courses</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://jkobject.notion.site/92154f7b21da482b9a88daef49837bee?v=e0fc9c8764404f2e9804b889367758f6&pvs=74">Database</a>
+            </li><li class="masthead__menu-item">
+              <a href="/papers/">Papers</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/" title="Everything sorted by categories.">Categories</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        
+          <li><i class="fas fa-fw fa-adjust dark_mode_btn" aria-hidden="true" onclick="dark_mode_btn_click()"></i></li>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+    <div class="initial-content">
+      <h1 id="par-audit">PAR audit</h1>
+
+<h2 id="verdict">Verdict</h2>
+<ul>
+  <li>Status: revise connections</li>
+  <li>Confidence: high</li>
+  <li>Short verdict: Keep. PAR at DNA damage is well supported; broad connection to proteolytic condensates/destruction should be narrowed.</li>
+</ul>
+
+<h2 id="what-the-current-graph-claims">What the current graph claims</h2>
+<ul>
+  <li>Node definition: PARP-mediated ADP-ribosylation/PAR chains, especially at DNA damage, recruiting repair factors and organizing local assemblies.</li>
+  <li>Incoming edges:
+    <ul>
+      <li>SWITCH -&gt; PAR: DDR kinases / → PARP context [context/dashed]</li>
+    </ul>
+  </li>
+  <li>Outgoing edges:
+    <ul>
+      <li>PAR -&gt; DESTROY: PARylation → / proteolytic condensates</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="literature-grounded-assessment">Literature-grounded assessment</h2>
+<ul>
+  <li>What is strongly supported: PARP1 rapidly detects DNA breaks and synthesizes PAR; PAR recruits repair, chromatin remodeling, and RNA-binding proteins and can nucleate transient repair assemblies.</li>
+  <li>What is context-dependent: Mono-ADP-ribosylation and poly-ADP-ribosylation have distinct writers/readers/erasers; PARP trapping/inhibitor effects complicate interpretation.</li>
+  <li>What is weak, controversial, or assay-biased: LLPS framing for PAR repair condensates is useful but can be overclaimed; direct material-property evidence matters.</li>
+  <li>What may be duplicate biology under another name: Overlaps with TETHER and ROUTER in DNA damage turnover/signaling.</li>
+</ul>
+
+<h2 id="missing-or-excessive-graph-structure">Missing or excessive graph structure</h2>
+<ul>
+  <li>Missing edges: Add PAR -&gt; SHUFFLER/OPENER/WRITER chromatin repair context if scope allows; PARP recruits chromatin remodelers.</li>
+  <li>Excess edges: PAR -&gt; DESTROY should be changed to PAR -&gt; ROUTER/TETHER/repair-factor recruitment with a dashed degradation caveat.</li>
+  <li>Candidate splits: No split at current scale.</li>
+  <li>Candidate merges: No merge.</li>
+  <li>Candidate renames: ADP-RIBOSE.</li>
+</ul>
+
+<h2 id="recommendation">Recommendation</h2>
+<ul>
+  <li>Concrete graph change, if any: Keep; narrow degradation edge and mention chromatin remodeling/DNA repair recruitment.</li>
+  <li>Concrete technical-notes/blog wording change, if any: Mirror the graph recommendation in the glossary and relation catalogue, and explicitly mark the confidence/caveat where the claim is context-dependent or assay-sensitive.</li>
+</ul>
+
+<h2 id="key-sources">Key sources</h2>
+<ul>
+  <li>PMID 29453264 — ADP-ribosylation/PARP DNA damage signaling review.</li>
+  <li>PMID 33147445 — PARP biology and repair-factor recruitment review.</li>
+  <li>PMID 31133750 — PAR-dependent phase separation in DNA damage response context.</li>
+  <li>PMID 34349274 — PARP inhibitor/trapping biology and interpretation caveats.</li>
+</ul>
+
+    </div>
+
+    
+      <div class="search-content">
+        
+<div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://LinkedIn.com/in/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://Scholar.google.com/citations?user=zyXiydsAAAAJ" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i> Scholar</a></li>
+        
+      
+        
+          <li><a href="https://github.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://x.com/jkobject" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> X</a></li>
+        
+      
+        
+          <li><a href="mailto:jkobject@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+          <li><a href="https://ResearchGate.net/profile/jeremie_kalfon" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="https://www.jkobject.com">Jérémie</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+<script>
+  function dark_mode_btn_click() {
+    var node1 = document.getElementById('theme_source');
+    var node2 = document.getElementById('theme_source_2');
+    if(node1.getAttribute('rel')=='stylesheet'){
+      node2.setAttribute('rel', 'stylesheet');
+      setTimeout(function(){
+        node1.setAttribute('rel', 'stylesheet alternate');
+      }, 10);
+      sessionStorage.setItem('theme', 'dark');
+    }else{
+      node1.setAttribute('rel', 'stylesheet');
+      setTimeout(function(){
+        node2.setAttribute('rel', 'stylesheet alternate');
+      }, 10);
+      sessionStorage.setItem('theme', 'light');
+    }
+    return false;
+}
+</script>
+
+              <script>
+                window.onload = function () {
+                    var script = document.createElement('script');
+                    var firstScript = document.getElementsByTagName('script')[0];
+                    script.type = 'text/javascript';
+                    script.async = true;
+                    script.src = '/sw-register.js?v=' + Date.now();
+                    firstScript.parentNode.insertBefore(script, firstScript);
+                };
+            </script>
+            </body>
+
+</html>

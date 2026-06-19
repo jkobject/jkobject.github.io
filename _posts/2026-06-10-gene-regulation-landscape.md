@@ -40,6 +40,9 @@ The companion [technical notes](/assets/documents/gene-regulation-landscape-deta
 contain the 1-to-1 glossary for every box name, the full mechanism catalogue,
 link rationale, and legend details. The [Graphviz DOT source](/assets/documents/gene-reg-v7.dot)
 is also available.
+A node-by-node [literature audit](/assets/documents/gene-regulation-node-audit/SYNTHESIS.md)
+now reviews the biological support, caveats, and proposed graph revisions for
+all 37 mechanism boxes.
 
 In the figure, each box title is a code name that maps 1-to-1 to the catalogue
 entry in the technical notes. Solid arrows are the main mechanistic relations;
