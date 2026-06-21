@@ -48,6 +48,31 @@ Most code names can remain as mnemonic labels, but the technical notes should pr
 - FORGE -> SWITCH: fix mTOR/AKT directionality; AKT is often upstream of mTORC1, while mTORC1 signals through S6K/4E-BP.
 - PAR -> DESTROY: narrow to PAR-dependent repair-factor recruitment, ubiquitin crosstalk, or local turnover; broad proteolytic-condensate output is too strong.
 
+
+## Applied patch — 2026-06-21
+
+The first post-audit patch was applied to the DOT, rendered image, public blog
+post, and detailed technical notes.
+
+Applied edge additions/caveats:
+- Added `GUIDES -> WRITER-R` for XIST/nuclear-lncRNA Polycomb/repressive-mark contexts.
+- Added `SHIELD -> TIMER` for cap protection and decapping-to-decay logic.
+- Added `READERS -> TRIMMER` and `READERS -> VAULT` for RBP control of APA and RNP-granule partitioning.
+- Added `TEMPO -> TIMER` for codon optimality / elongation effects on mRNA stability.
+- Added `KEYS -> TEMPO` for MYC/growth-state regulation of tRNA/ribosome-biogenesis/translation-capacity programs.
+- Added `FORGE -> TEMPO` and `BRAKE -> TEMPO` for initiation-load and stress-flux effects on ribosome density and elongation context.
+- Added `INSPECTOR -> TIMER` for NGD/NSD mRNA decay outputs.
+- Added `MATURE -> ROUTER` for CHIP/ERAD/chaperone-to-ubiquitin triage.
+- Added `SWITCH -> LICENSE` for signaling control of CRL substrate receptors, assembly, and effective neddylation/deneddylation balance.
+- Replaced broad `PAR -> DESTROY` with contextual `PAR -> ROUTER` repair/ubiquitin/local-turnover logic.
+- Softened over-strong edges: `FENCES -> BRIDGES`, `BRIDGES -> HUBS`, `STAMP` outputs, `DARTS -> FORGE`, `TIMER <-> VAULT`, `BRAKE -> BYPASS`, `FORGE -> INSPECTOR`, and `FORGE -> SWITCH`.
+
+Node-level decisions:
+- `HUBS` was kept as one compact node but strongly caveated: super-enhancer is an enhancer-cluster/ChIP-seq annotation; transcriptional condensate is a physical model requiring direct evidence.
+- `SPONGE` was kept as a skeptical/contextual node requiring abundance, affinity, localization, and loss-of-function stoichiometric support.
+- `BYPASS` was kept as a skeptical/contextual noncanonical-initiation node: viral IRESs are robust, while many cellular IRES-like claims are reporter-artifact-prone.
+- `DESTROY` was kept fused for layout compactness but explicitly described as two major outputs, proteasome and selective autophagy; split remains an option for a larger map.
+
 ## Literature-risk notes
 - Condensates/LLPS: require direct material-property and functional evidence; puncta, overexpression, and 1,6-hexanediol sensitivity are weak alone.
 - lncRNA mechanisms: distinguish localization and abundance; PRC2 binding or miRNA-site prediction alone is not mechanism.

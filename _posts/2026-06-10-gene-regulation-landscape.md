@@ -42,7 +42,13 @@ link rationale, and legend details. The [Graphviz DOT source](/assets/documents/
 is also available.
 A node-by-node [literature audit](/assets/documents/gene-regulation-node-audit/SYNTHESIS.md)
 now reviews the biological support, caveats, and proposed graph revisions for
-all 37 mechanism boxes.
+all 37 mechanism boxes. Several arrows were added or softened after that audit:
+for example, the cap now links to mRNA stability, growth and translation state
+now regulate decoding tempo, codon optimality and translation surveillance now
+link to mRNA decay, chaperone triage links back to ubiquitin routing, signaling
+links to CRL licensing, and nuclear lncRNA guides link to repressive histone writers.
+Other arrows are deliberately dashed because the evidence is contextual rather
+than universal.
 
 In the figure, each box title is a code name that maps 1-to-1 to the catalogue
 entry in the technical notes. Solid arrows are the main mechanistic relations;
@@ -51,6 +57,27 @@ tee-headed arrows indicate repression; bold arrows mark especially important
 coupling edges. Border styles mark meta-principles such as `LLPS` and `DECAY`:
 these are recurring physical or regulatory motifs that appear across several
 mechanisms, not separate boxes in the pathway.
+
+The map is also intentionally reductionist. I did not try to draw every
+important named event as its own box. Some biological phenomena are real and
+important, but they are better understood as outputs of several lower-level
+mechanisms already shown in the graph. For example, promoter/TSS choice depends
+on transcription-factor grammar, chromatin accessibility, enhancer contacts,
+and Pol II initiation/pausing. Transcription termination depends on Pol II
+state, cleavage/polyadenylation, chromatin context, and RNA decay machinery.
+Whether an RNA leaves the nucleus depends on capping, splicing, 3' processing,
+RNA-binding proteins, RNA marks, and quality control. In those cases, the goal
+is not to add a new named event whenever biology has a label for one. The goal
+is to ask whether the underlying decision mechanisms and their links are already
+represented.
+
+This is also why some familiar topics, such as R-loops, DNA torsional stress,
+transcription-replication conflicts, nuclear bodies, broad epitranscriptomic
+marks beyond m6A, repeats/transposons, motif grammar, and Pol I/Pol III
+rRNA/tRNA biology are handled as caveats, extensions, or submechanisms in the
+technical notes rather than as new boxes in the main landscape. That choice is
+not a claim that they are unimportant. It is a claim about map resolution: this
+figure prioritizes reusable regulatory mechanisms over named composite events.
 
 Post-translational control is shown with representative feedback routes rather
 than every substrate-specific event. `SWITCH`, `ROUTER`, and `DESTROY` can touch
@@ -72,7 +99,7 @@ examples.
 | `ZONES` | 3D genome | A/B chromatin compartments. |
 | `FENCES` | 3D genome | TAD boundaries and insulation by CTCF/cohesin. |
 | `BRIDGES` | 3D genome | Enhancer-promoter loops. |
-| `HUBS` | 3D genome | Super-enhancers that can form or feed Pol II/coactivator condensates. |
+| `HUBS` | 3D genome | Super-enhancers / enhancer hubs, with Pol II/coactivator condensates treated as a related but not identical physical model. |
 | `SILENCER` | Epigenetics | DNA methylation and repressive chromatin memory. |
 | `OPENER` | Epigenetics | Histone acetylation that opens chromatin. |
 | `WRITER-A` | Epigenetics | Activating histone methylation marks. |
@@ -88,7 +115,7 @@ examples.
 | `STAMP` | Post-transcriptional | m6A RNA marking and reader-dependent fate choices. |
 | `READERS` | Post-transcriptional | RNA-binding proteins that tune RNA processing, stability, localization, and translation. |
 | `DARTS` | Post-transcriptional | miRNA-RISC targeting. |
-| `SPONGE` | Post-transcriptional | Cytoplasmic lncRNAs and stoichiometry-dependent ceRNA-like buffering. |
+| `SPONGE` | Post-transcriptional | Cytoplasmic lncRNA/circRNA competition with miRNAs, kept as a strongly stoichiometry- and localization-dependent mechanism. |
 | `CENSOR` | Post-transcriptional | Nonsense-mediated mRNA decay. |
 | `TIMER` | Post-transcriptional | mRNA half-life, deadenylation, decapping, and decay. |
 | `CLIPS` | Post-transcriptional | RNA G-quadruplex structures that affect scanning and translation. |
@@ -96,14 +123,14 @@ examples.
 | `FORGE` | Translation | Starting cap-dependent translation through mTOR/eIF4F. |
 | `BRAKE` | Translation | Slowing global translation during stress through ISR/eIF2α-P. |
 | `DECOY` | Translation | uORFs that divert scanning ribosomes and gate main ORF translation. |
-| `BYPASS` | Translation | Non-canonical initiation routes, including IRES-like and m6A-dependent cases. |
-| `TEMPO` | Translation | Decoding kinetics, tRNA/codon effects, and contextual ribosome heterogeneity. |
+| `BYPASS` | Translation | Non-canonical initiation routes; viral IRESs are robust, while many cellular IRES-like claims need strict controls. |
+| `TEMPO` | Translation | Decoding kinetics, tRNA/codon effects, ribosome state, and their regulation by growth, initiation load, and stress context. |
 | `INSPECTOR` | Translation | RQC/NGD/NSD surveillance of stalled or broken translation. |
 | `SWITCH` | Post-translational | Phosphorylation/O-GlcNAc switches for protein activity and interactions. |
 | `ROUTER` | Post-translational | Ubiquitin-chain logic that routes proteins to signaling, proteasome, or autophagy. |
 | `TETHER` | Post-translational | SUMOylation that tethers proteins into nuclear complexes, repression modules, or repair assemblies. |
-| `LICENSE` | Post-translational | Neddylation that licenses cullin-RING E3 ubiquitin ligases for substrate routing. |
-| `DESTROY` | Post-translational | Protein clearance through the proteasome and selective autophagy. |
+| `LICENSE` | Post-translational | Neddylation that licenses cullin-RING E3 ubiquitin ligases, regulated by CRL assembly and signaling context. |
+| `DESTROY` | Post-translational | Protein clearance through two fused outputs: proteasome and selective autophagy. |
 | `MATURE` | Post-translational | Protein folding, refolding, triage, and ER-stress UPR. |
 | `PAR` | Post-translational | PARP/PAR signaling at DNA damage and repair condensates. |
 
@@ -116,7 +143,7 @@ These are the main non-gene, non-protein terms used in the figure and glossary.
 | A/B compartments | Large Hi-C chromatin domains; A is generally active/euchromatic, B is generally inactive/heterochromatic. |
 | TAD | Topologically associating domain; a chromatin neighborhood insulated by boundaries such as CTCF/cohesin sites. |
 | Enhancer-promoter loop | A 3D contact that brings a distal enhancer near a target promoter. |
-| Super-enhancer | A dense enhancer cluster with high transcription-factor, Mediator, BRD4, and Pol II occupancy. |
+| Super-enhancer | A dense enhancer cluster with high transcription-factor, Mediator, BRD4, and Pol II occupancy; an operational enhancer annotation, not automatically proof of a condensate. |
 | Condensate / LLPS | Liquid-liquid phase separation; concentration of molecules into a dense phase without a membrane. |
 | DNA methylation | Addition of methyl groups to cytosines, often linked to transcriptional repression at promoters. |
 | Histone mark | A chemical modification on histones, such as acetylation or methylation, read by chromatin proteins. |
@@ -139,7 +166,7 @@ These are the main non-gene, non-protein terms used in the figure and glossary.
 | Cap-dependent translation | Canonical translation initiation through cap recognition and 5'UTR scanning. |
 | ISR / eIF2α-P | Integrated stress response; phosphorylation of eIF2α lowers global initiation but favors selected mRNAs. |
 | uORF | Upstream open reading frame in a 5'UTR that can divert scanning ribosomes. |
-| IRES / ITAF | Internal ribosome entry site and its helper factors. Viral IRESs are strong examples; many cellular IRES claims need context-specific validation. |
+| IRES / ITAF | Internal ribosome entry site and its helper factors. Viral IRESs are strong examples; many cellular IRES claims need strict controls for cryptic promoters, splicing, readthrough, and RNA abundance. |
 | RQC / NGD / NSD | Ribosome quality control, no-go decay, and non-stop decay; surveillance of stalled or abnormal translation. |
 | O-GlcNAc | Reversible sugar modification on Ser/Thr residues that can crosstalk with phosphorylation. |
 | Ubiquitin chain | A polymeric ubiquitin mark whose linkage type, such as K48 or K63, helps determine protein fate. |

@@ -1,10 +1,10 @@
 # Gene Regulation Landscape — detailed construction notes
 ### From DNA to proteins — reductionist architecture (v7)
 
-*Clawd · 2026-05-01 / updated 2026-06-18 · 37 mechanisms · 2 meta-principles · 7 layers*
+*Clawd · 2026-05-01 / updated 2026-06-21 · 37 mechanisms · 2 meta-principles · 7 layers*
 
 These notes are the technical companion to the current Gene Regulation
-Landscape v7 graph. They document the 37 mechanism boxes, 2 meta-principles, 78
+Landscape v7 graph. They document the 37 mechanism boxes, 2 meta-principles, 89
 mechanism relations, and 7 meta-style annotations used in the rendered figure.
 The rendered figure was generated from the Graphviz source file
 [`gene-reg-v7.dot`](/assets/documents/gene-reg-v7.dot).
@@ -26,7 +26,7 @@ kinetic coupling between processes.
 - The **37 mechanisms** are the boxes in the graph, grouped into 7 layers.
 - **LLPS** and **DECAY** are not ordinary mechanism boxes; they are
   meta-principles indicated by border styles on relevant boxes.
-- The **78 mechanism edges** describe causal, coupling, or feedback relations
+- The **89 mechanism edges** describe causal, coupling, or feedback relations
   between mechanism boxes.
 - The **7 meta annotations** connect LLPS and DECAY to the mechanisms that
   instantiate them.
@@ -132,6 +132,57 @@ Strategy C — KINETIC COUPLING
 | 6 — Post-translational | SWITCH, ROUTER, TETHER, LICENSE, DESTROY, MATURE, PAR |
 | Meta | LLPS, DECAY |
 
+## Mechanisms Intentionally Abstracted Or Not Drawn As Boxes
+
+The v7 map is a high-level Pol II/mRNA-centered gene-expression landscape, not
+an exhaustive catalogue of every molecular state that affects regulation. Several
+important mechanisms are therefore treated as cross-layer constraints, caveats,
+or candidate v2 annotations rather than separate boxes:
+
+| Mechanism or axis | Why it matters | Current placement / v2 handling |
+|-------------------|----------------|---------------------------------|
+| **R-loops / RNA:DNA hybrids** | Nascent RNA can hybridize with template DNA, affecting transcription, chromatin, replication conflicts, and genome instability. | Not a current box. Add as a cross-layer note around `SCRIBE`, `GUIDES`, and `PAR`; strongest when discussing co-transcriptional genome stress rather than generic RNA fate. |
+| **DNA supercoiling / torsional stress / topoisomerases** | Pol II movement and enhancer-promoter activity generate and respond to torsional stress; topoisomerases can tune elongation and chromatin accessibility. | Cross-layer physical constraint near `SCRIBE`, `BRIDGES`, and `FENCES`; not a modular regulatory layer at current resolution. |
+| **Transcription-replication conflicts** | Collisions between transcription and replication can create DNA damage, R-loops, fork stress, and selection against certain transcriptional states. | Mostly outside the expression-control scope; mention near `SCRIBE` and `PAR` as a genome-stability extension. |
+| **Alternative promoter / TSS choice** | Which promoter or start site is used changes 5'UTRs, isoforms, regulatory inputs, and sometimes protein N-termini. | Important named output, but do not add as a box by default. Reduce to `KEYS`, chromatin accessibility/marks, `BRIDGES`/`HUBS`, and `SCRIBE` unless a future map specifically focuses on promoter architecture. |
+| **Transcription termination and readthrough** | Termination, pause-release failure, and readthrough shape antisense transcription, downstream gene interference, 3' processing, and chromatin state. | Important named output, but reduce first to `SCRIBE`, `TRIMMER`, `TIMER`, and chromatin-context edges; add a node only if termination machinery itself becomes central. |
+| **RNA nuclear export / nuclear retention** | Mature RNAs do not automatically reach the cytoplasm; export competence and retention alter the expressed transcriptome. | Important named output/checkpoint, but reduce first to `SHIELD`, `SPLICER`, `TRIMMER`, `STAMP`, `READERS`, and nuclear-retention/LLPS logic; add `EXPORT/GATE` only if export machinery needs explicit treatment. |
+| **Nuclear bodies and subnuclear organization** | Speckles, paraspeckles, nucleoli, Cajal bodies, and other compartments concentrate processing or retention factors. | Covered only indirectly through LLPS/condensate language. Candidate cross-layer annotation rather than one universal box. |
+| **RNA modifications beyond m6A and A-to-I** | Pseudouridine, m5C, m1A, ac4C, and 2'-O-methylation can affect RNA stability, translation, structure, or immune recognition. | Add as scope note under `STAMP`; m6A remains the main drawn example because it has the clearest broad mRNA regulatory literature. |
+| **Repeats, transposons, and repeat-derived regulatory elements** | Transposons are silenced by piRNA/DNA methylation pathways, supply regulatory DNA, and can produce dsRNA or innate-immune triggers. | Add to `GUIDES`/`SILENCER` caveats; repeat-derived enhancers also touch `KEYS`/`BRIDGES`. |
+| **Enhancer/promoter motif grammar** | TF motif identity, spacing, orientation, affinity, and cooperative syntax help determine which enhancers and promoters are active. | Not a `GUIDES` mechanism; best treated as a `KEYS`/`BRIDGES` design principle. |
+| **Pol I/Pol III, rRNA/tRNA abundance, and ribosome biogenesis** | rRNA/tRNA production and ribosome biogenesis set translational capacity and growth-state feedback; MYC/mTOR/nutrient signaling couple this to broader gene-expression programs. | Mostly outside the Pol II/mRNA map. Existing `TEMPO` covers tRNA abundance and rRNA/ribosome heterogeneity at translation; a separate node would only be justified in a growth/ribosome-biogenesis-expanded map. |
+
+### Reduction rule for named checkpoint events
+
+Some named events are biologically important but should not automatically become
+new boxes. The map is meant to reduce regulation to underlying mechanisms. If an
+event is fully explained by existing mechanisms, the right action is to make sure
+those mechanisms and their edges are present, not to add a redundant event node.
+
+- **Promoter/TSS choice** is an output of DNA motif grammar and TF occupancy,
+  chromatin accessibility, promoter sequence architecture, enhancer contacts,
+  initiation/pausing-factor availability, and cell-state signaling. Before adding
+  a TSS-choice node, check that `KEYS`, `OPENER`/`SHUFFLER`, `WRITER-A/R`,
+  `BRIDGES`/`HUBS`, and `SCRIBE` capture these determinants and that the missing
+  edges are represented.
+- **Transcription termination** is an output of cleavage/polyA signals, Pol II
+  elongation speed and CTD state, termination factors such as XRN2/torpedo and
+  allosteric Pol II changes, chromatin context, and fail-safe RNA decay systems.
+  It may need explicit edges between `SCRIBE`, `TRIMMER`, `TIMER`, and chromatin
+  nodes, but not necessarily a separate box.
+- **RNA nuclear export versus retention** is an output of capping, splicing and
+  exon-junction history, 3' end processing, mRNP packaging by RBPs, RNA
+  modifications such as m6A/YTHDC1 contexts, RNA quality-control retention, and
+  specialized nuclear compartments. It may need an `EXPORT/GATE` node only if
+  export machinery itself becomes a focus; otherwise the determinants should be
+  represented through `SHIELD`, `SPLICER`, `TRIMMER`, `STAMP`, `READERS`, and
+  `VAULT`/LLPS-like retention logic.
+
+Decision note: for v7/v8, prefer this reductionist treatment for promoter/TSS
+choice, termination, and export/retention unless a review goal specifically
+requires the named event as its own module.
+
 ## I. The 7 Layers — Explanations And Mechanisms
 
 ### Layer 0 — 3D Genome
@@ -154,14 +205,14 @@ Strategy C — KINETIC COUPLING
 | **WRITER-A** | Activating histone methylation | H3K4me3 at active promoters, H3K4me1 at enhancers, H3K36me3 in elongating gene bodies, H3K79me2 at telomeres/elongation. **Writers**: MLL1-4/KMT2A-D and SET1A/B for H3K4; SETD2 for H3K36me3 coupled to Pol II Ser2-P. **Readers**: PHD fingers for H3K4me3 and PWWP domains for H3K36me3. H3K36me3 recruits splicing regulators, linking chromatin state to exon choice. |
 | **WRITER-R** | Repressive histone methylation | H3K27me3 for facultative Polycomb repression, H3K9me3 for constitutive heterochromatin, and H4K20me3 in heterochromatin. **Writers**: EZH1/2 in PRC2 for H3K27me3; SUV39H1/2 and SETDB1 for H3K9me3. **Readers**: CBX/PRC1 and HP1/CBX1/3/5. H3K27me3 and H3K27ac compete on the same residue, forming an activation/repression switch. |
 | **SHUFFLER** | ATP-dependent chromatin remodeling | Complexes that use ATP to reposition, evict, or replace nucleosomes. Families include **SWI/SNF** (BAF/PBAF), **ISWI**, **CHD**, and **INO80**. They are recruited by TFs and by histone marks through reader modules. |
-| **GUIDES** | Epigenetic ncRNAs | Small and long non-coding RNAs that guide chromatin-modifying complexes to target loci. **piRNAs** guide transposon silencing by *de novo* DNA methylation in the germline. **lncRNA scaffolds** such as XIST, HOTAIR, and KCNQ1OT1 recruit PRC2 or related complexes to regional chromatin targets. |
+| **GUIDES** | Epigenetic ncRNAs | Small and long non-coding RNAs that guide chromatin-modifying complexes to target loci. **piRNAs** guide transposon silencing by *de novo* DNA methylation in the germline. **lncRNA scaffolds** such as XIST, HOTAIR, and KCNQ1OT1 recruit PRC2 or related complexes to regional chromatin targets. Repeat-derived RNAs and transposon-associated small-RNA pathways are included here when they guide silencing; repeat-derived enhancers or TF motif grammar instead belong to `KEYS`/`BRIDGES`. |
 
 ### Layer 2 — Transcription
 *Control of RNA polymerase II initiation and progression.*
 
 | Code name | Full name | Exact definition |
 |-----------|-----------|------------------|
-| **KEYS** | Transcription factors (TFs) | Sequence-specific DNA-binding proteins with activation or repression domains. **Activators** recruit HATs, KMTs, CRCs, Mediator, and Pol II. **Repressors** recruit HDACs, PRC, or NuRD. **Pioneer factors** such as FOXA1, OCT4, and GATA3 can open compact chromatin. Master TFs such as OCT4, SOX2, and MYC define super-enhancers. Some stress-dependent or non-canonically translated proteins, such as ATF4 via uORF/reinitiation and proposed HIF-1α or c-MYC IRES-like routes, are themselves TFs. |
+| **KEYS** | Transcription factors (TFs) | Sequence-specific DNA-binding proteins with activation or repression domains. **Activators** recruit HATs, KMTs, CRCs, Mediator, and Pol II. **Repressors** recruit HDACs, PRC, or NuRD. **Pioneer factors** such as FOXA1, OCT4, and GATA3 can open compact chromatin. Master TFs such as OCT4, SOX2, and MYC define super-enhancers. TF motif grammar — motif identity, spacing, orientation, affinity, and cooperative syntax — helps decide enhancer and promoter usage, but is abstracted into this node rather than drawn separately. Some stress-dependent or non-canonically translated proteins, such as ATF4 via uORF/reinitiation and proposed HIF-1α or c-MYC IRES-like routes, are themselves TFs. |
 | **SCRIBE** | Pol II + pausing | RNA polymerase II is a ~550 kDa, 12-subunit enzyme. Its CTD tail (YSPTSPS repeats) is a signaling hub: **Ser5-P** marks initiation/capping, **Ser2-P** elongation, and **Ser7-P** non-coding RNA programs. Promoter-proximal pausing stalls Pol II 25-50 bp after the TSS through NELF and DSIF. P-TEFb release enables productive elongation. SETD2 and METTL3/14 are recruited through Pol II, coupling elongation to H3K36me3 and m6A deposition. |
 
 ### Layer 3 — Co-Transcriptional Processing
@@ -179,7 +230,7 @@ Strategy C — KINETIC COUPLING
 
 | Code name | Full name | Exact definition |
 |-----------|-----------|------------------|
-| **STAMP** | m6A epitranscriptome | **N6-methyladenosine (m6A)** is an abundant mRNA modification enriched near stop codons, long exons, and some 5'UTRs. **Writers**: METTL3/14/WTAP. **Erasers**: FTO, ALKBH5. **Readers**: YTHDF1/2/3 and YTHDC1. The classic model links YTHDF1 to translation, YTHDF2 to decay, YTHDF3 to output coordination, and YTHDC1 to splicing/export, but recent work also emphasizes partial redundancy among cytoplasmic YTHDF proteins. |
+| **STAMP** | m6A epitranscriptome | **N6-methyladenosine (m6A)** is an abundant mRNA modification enriched near stop codons, long exons, and some 5'UTRs. **Writers**: METTL3/14/WTAP. **Erasers**: FTO, ALKBH5. **Readers**: YTHDF1/2/3 and YTHDC1. The classic model links YTHDF1 to translation, YTHDF2 to decay, YTHDF3 to output coordination, and YTHDC1 to splicing/export, but recent work also emphasizes partial redundancy among cytoplasmic YTHDF proteins. Other RNA modifications such as pseudouridine, m5C, m1A, ac4C, and 2'-O-methylation are treated as related epitranscriptomic extensions rather than separate boxes in v7. |
 | **READERS** | Regulatory RBPs | Roughly 1500 human RNA-binding proteins use RRM, KH, CCCH zinc finger, PAZ, DEAD-box, and other modules. They regulate splicing, stability, translation, localization, and IRES activity. Examples include SRSF proteins, hnRNPs, HuR/ELAVL1, TTP/ZFP36, FMRP, Staufen1, PTB, DAP5/eIF4G2, and hnRNPQ. |
 | **DARTS** | miRNA-RISC | ~22 nt microRNAs are processed by Drosha/DGCR8, Exportin-5, Dicer/TRBP, and AGO2 loading. Imperfect seed pairing to 3'UTRs recruits TNRC6/CCR4-NOT, causing deadenylation, decapping, and translational repression. |
 | **SPONGE** | Cytoplasmic lncRNAs | Cytoplasmic lncRNAs can act as ceRNAs or miRNA sponges, but only when target-site abundance, affinity, and colocalization support meaningful competition. Examples include CDR1as/miR-7, HULC, and cytoplasmic HOTAIR contexts. Other lncRNAs modulate translation or act as decoys. |
@@ -197,7 +248,7 @@ Strategy C — KINETIC COUPLING
 | **BRAKE** | ISR / eIF2α-P | The integrated stress response uses GCN2, PERK, HRI, and PKR to phosphorylate eIF2α Ser51. eIF2α-P sequesters eIF2B, lowers ternary complex, and represses global cap-dependent translation while selectively favoring mRNAs such as ATF4 through uORF/reinitiation logic. |
 | **DECOY** | uORFs (upstream ORFs) | Upstream ORFs in 5'UTRs divert scanning ribosomes and usually reduce main ORF translation. Short uORFs can permit reinitiation, and under stress ATF4 is selectively translated because low ternary complex causes bypass of inhibitory downstream uORFs. |
 | **BYPASS** | IRES (Internal Ribosome Entry Sites) | RNA elements that recruit ribosomes through routes less dependent on the cap. Viral IRESs are well established; many cellular IRES claims remain context-dependent because bicistronic assays can confound cryptic promoters, splicing, or readthrough. Proposed cellular examples include HIF-1α, VEGF-A, FGF2, p53 isoforms, and c-MYC; ATF4 is mainly uORF/reinitiation-driven. |
-| **TEMPO** | Codon usage + tRNA modifications + ribosome heterogeneity | Synonymous codons translate at different speeds depending on cognate tRNA abundance. tRNA modifications affect decoding fidelity, frameshifting, and stalling. Ribosomal protein variation or rRNA modifications may bias translation in some contexts, but "specialized ribosomes" remain experimentally difficult and should be treated as contextual rather than a settled general code. |
+| **TEMPO** | Codon usage + tRNA modifications + ribosome heterogeneity | Synonymous codons translate at different speeds depending on cognate tRNA abundance. tRNA modifications affect decoding fidelity, frameshifting, and stalling. Ribosomal protein variation or rRNA modifications may bias translation in some contexts, but "specialized ribosomes" remain experimentally difficult and should be treated as contextual rather than a settled general code. TEMPO is not autonomous: tRNA abundance, ribosome biogenesis, and rRNA/ribosome state are shaped by growth programs such as MYC/mTOR/Pol I/Pol III, while initiation load and stress change ribosome density and elongation context. |
 | **INSPECTOR** | Translation surveillance (RQC/NGD/NSD) | Quality-control mechanisms detect defective mRNAs and peptides. **NGD** responds to stalled ribosomes, **NSD** to mRNAs lacking stop codons, and **RQC** to stuck ribosomes whose nascent chains are ubiquitinated by LTN1. NEMF CAT-tailing can mark stalled peptides for degradation. |
 
 ### Layer 6 — Post-Translational Regulation
@@ -208,7 +259,7 @@ Strategy C — KINETIC COUPLING
 | **SWITCH** | Phosphorylation / O-GlcNAcylation | Phosphorylation on Ser/Thr/Tyr changes conformation, interaction sites, and enzyme or TF activity. It is reversible through phosphatases. O-GlcNAcylation adds GlcNAc on Ser/Thr and can crosstalk with phosphorylation. These switches activate kinases, Pol II CTD regulators, ISR kinases, and DDR pathways. |
 | **ROUTER** | Ubiquitin code | The E1-E2-E3 cascade conjugates ubiquitin to substrate Lys residues. Chain topology determines fate: **K48** often routes to proteasome, **K63** supports signaling/scaffolding/autophagy routing, **K11** marks mitotic degradation, and **M1/linear** supports NF-κB signaling. |
 | **TETHER** | SUMOylation | SUMO1/2/3 are conjugated by SAE1/SAE2, UBC9, and PIAS-family E3s. SUMOylation changes protein-protein interactions, stabilizes nuclear complexes, recruits co-repressors, modulates DNA repair, and can bridge to ROUTER through STUbL E3 ligases such as RNF4/RNF111. |
-| **LICENSE** | Neddylation / CRL activation | NEDD8 is a ubiquitin-like protein conjugated mainly to cullins. Neddylation activates Cullin-RING ligases by improving substrate/E2 positioning. It is not an autonomous degradation route but an upstream switch that licenses ROUTER capacity for specific substrates. |
+| **LICENSE** | Neddylation / CRL activation | NEDD8 is a ubiquitin-like protein conjugated mainly to cullins. Neddylation activates Cullin-RING ligases by improving substrate/E2 positioning. It is not an autonomous degradation route but an upstream switch that licenses ROUTER capacity for specific substrates. CRL licensing is itself regulated by assembly state, substrate-adaptor availability, CAND1/CSN cycles, and signaling context. |
 | **DESTROY** | Protein destruction: proteasome + selective autophagy | A fused box for the two major protein-clearance outputs. The **26S proteasome** reads mostly K48-polyUb, deubiquitinates, unfolds, and degrades short-lived or damaged proteins. **Selective autophagy** uses receptors such as p62/SQSTM1 to link ubiquitinated cargo to LC3/GABARAP and lysosomes, especially for aggregates, organelles, or bulky cargo. |
 | **MATURE** | Chaperones / UPR | Chaperones such as Hsp70/Hsc70, Hsp90, and CCT/TRiC fold, refold, or triage proteins. CHIP links chaperones to ubiquitination of misfolded substrates. The ER **UPR** uses PERK, IRE1, and ATF6 to slow translation, expand folding capacity, and induce ER chaperone programs. |
 | **PAR** | ADP-ribosylation / PARP / PAR | PARP1 detects DNA breaks and synthesizes poly-ADP-ribose on itself and other proteins. PAR chains nucleate DNA-damage condensates and recruit repair factors such as FUS, XRCC1, and RPA. PAR can also recruit ubiquitin/E3 factors and couple repair, remodeling, and local turnover, but broad proteasomal destruction is context-dependent. |
@@ -220,7 +271,7 @@ Strategy C — KINETIC COUPLING
 | **LLPS** | Liquid-liquid phase separation | A thermodynamic process in which macromolecules concentrate into a dense phase or condensate-like assembly. Driven by multivalent interactions among IDRs, RGG repeats, tyrosines, RNA, and RNA-binding proteins. LLPS is not a single regulatory mechanism but a physical principle used by stress granules, P-bodies, PAR-damage foci, some transcriptional condensates, and some polyUb/proteolytic condensates. |
 | **DECAY** | Turnover / clearance | A functional output that removes a molecule from the system: mRNA decay through TIMER/CENSOR, protein destruction through DESTROY, and broader switches between temporary storage and elimination. |
 
-## II. Relation Catalogue (78 Mechanism Edges + 7 Meta Annotations)
+## II. Relation Catalogue (89 Mechanism Edges + 7 Meta Annotations)
 
 ### Color Code
 | Color | Type | Meaning |
@@ -240,10 +291,10 @@ Strategy C — KINETIC COUPLING
 #### 3D → 3D
 | Source | Target | Relation name | Mechanism |
 |--------|--------|---------------|-----------|
-| ZONES | FENCES | **CONTAINS** | A/B compartments constrain TAD formation within them. |
+| ZONES | FENCES | **CONTAINS** | A/B compartments and TADs coexist and influence each other, but compartments do not simply create TADs. |
 | ZONES | WRITER-R | **ANCHORS-B** | B compartments anchor at the lamina and co-localize with H3K9/27me3. |
-| FENCES | BRIDGES | **DELIMITS** | TAD boundaries insulate E-P loops within the same domain. |
-| BRIDGES | HUBS | **ANCHORS-SE** | E-P loops anchor super-enhancers to target promoters. |
+| FENCES | BRIDGES | **BIASES/INSULATES** | TAD boundaries probabilistically constrain enhancer-promoter contacts; they bias and insulate rather than absolutely delimit all loops. |
+| BRIDGES | HUBS | **SUPPORTS-SE-CONTACTS** | Enhancer-promoter contacts can support super-enhancer function, but super-enhancers are not simply anchored by individual loops. |
 
 #### 3D → Epigenetics
 | Source | Target | Name | Mechanism |
@@ -257,6 +308,7 @@ Strategy C — KINETIC COUPLING
 | SILENCER | WRITER-R | **CO-RECRUIT** (bidirectional) | MBD recruits SUV39H1 to H3K9me3, and HP1 can recruit DNMT3. |
 | OPENER | SHUFFLER | **ACETYL-REMODEL** | Acetylated marks recruit bromodomain readers and remodelers such as SWI/SNF/BAF. |
 | GUIDES | SILENCER | **PIRNAGUIDE** | piRNA-PIWI guides DNMT3L/3A toward transposons for *de novo* methylation. |
+| GUIDES | WRITER-R | **LNCRNA-POLYCOMB** | XIST and some nuclear lncRNA contexts recruit or organize Polycomb/repressive histone systems; specificity is context-dependent. |
 
 #### Epigenetics → Transcription
 | Source | Target | Name | Mechanism |
@@ -285,6 +337,11 @@ Strategy C — KINETIC COUPLING
 | KEYS | SCRIBE | **INITIATES** | TFs recruit Mediator, assemble the PIC, and recruit Pol II. |
 | KEYS | HUBS | **DEFINES-SE** | Master TFs such as OCT4, MYC, and SOX2 define and maintain SE identity. |
 | KEYS | RECODER | **IFN-ADAR** | IFN-response TFs such as IRF3/7 transcribe ADAR1p150. |
+
+#### Transcription → Translation
+| Source | Target | Name | Mechanism |
+|--------|--------|------|-----------|
+| KEYS | TEMPO | **GROWTH-DECODING-BUDGET** | MYC and other growth-state TF programs regulate ribosome-biogenesis, Pol I/Pol III, tRNA, and translation-capacity genes, indirectly shaping the decoding budget represented by TEMPO. |
 
 #### Transcription → Co-Transcriptional
 | Source | Target | Name | Mechanism |
@@ -317,45 +374,52 @@ Strategy C — KINETIC COUPLING
 #### Post-Transcriptional Intra-Layer
 | Source | Target | Name | Mechanism |
 |--------|--------|------|-----------|
-| STAMP | TIMER | **M6A-DECAY** | Cytoplasmic YTHDF proteins, classically YTHDF2, promote CCR4-NOT/P-body decay routes. |
+| STAMP | TIMER | **M6A-DECAY** | m6A can promote decay through reader context, but YTHDF redundancy and transcript context make this a contextual rather than one-reader-one-output edge. |
 | STAMP | CLIPS | **M6A-G4** | m6A can destabilize adjacent RNA G-quadruplex structures. |
 | DARTS | TIMER | **MIRNA-DECAY** | AGO2-RISC recruits CCR4-NOT for deadenylation and decapping. |
 | SPONGE | DARTS | **CERNA** ⊣ | lncRNA/circRNA ceRNAs can sponge miRNAs when stoichiometry and colocalization are sufficient. |
 | CENSOR | TIMER | **NMD-DECAY** | UPF1-P recruits SMG6 and SMG5/7 for rapid degradation. |
-| TIMER | VAULT | **MRNA-SG** (bidirectional) | Untranslated mRNAs enter granules; dissolved granules release mRNAs. |
+| TIMER | VAULT | **MRNA-SG** (bidirectional/contextual) | Untranslated mRNAs can enter granules and later return to translation or decay; granule localization alone is not proof of degradation. |
 | READERS | TIMER | **RBP-STABILITY** | HuR/ELAVL1 stabilizes AREs, while TTP/ZFP36 destabilizes through CCR4-NOT. |
+| READERS | TRIMMER | **RBP-APA** | RBPs regulate cleavage/polyadenylation and alternative polyA-site choice in many contexts. |
+| READERS | VAULT | **RBP-GRANULES** | RBPs help partition mRNPs into stress granules, P-bodies, or other RNP assemblies. |
 | CLIPS | BYPASS | **G4-IRES** | rG4 structures in 5'UTRs can modulate IRES accessibility. |
 
 #### Post-Transcriptional → Translational
 | Source | Target | Name | Mechanism |
 |--------|--------|------|-----------|
-| STAMP | FORGE | **M6A-INIT** | m6A can stimulate initiation via YTHDF1/eIF3 or context-dependent 5'UTR mechanisms. |
-| STAMP | BYPASS | **M6A-IRES** | 5'UTR m6A can promote cap-independent translation under stress. |
+| STAMP | FORGE | **M6A-INIT** | m6A can stimulate initiation through reader/context-dependent mechanisms, but this should not be read as a universal YTHDF1 activation arrow. |
+| STAMP | BYPASS | **M6A-NONCANONICAL** | 5'UTR m6A can support noncanonical initiation in selected contexts; evidence is transcript- and assay-dependent. |
 | READERS | FORGE | **FMRP-REPRESS** ⊣ | FMRP binds polysomes and represses translation. |
-| DARTS | FORGE | **MIRNA-TRANSL** ⊣ | RISC blocks 80S joining or reinitiation, inhibiting translation. |
+| DARTS | FORGE | **MIRNA-TRANSL** ⊣ | miRNAs can repress translation, but mammalian miRNA effects often proceed through deadenylation and decay; direct translational repression is context-dependent. |
 | CLIPS | FORGE | **G4-BLOCK** ⊣ | 5'UTR rG4 blocks 43S scanning. |
 
 #### Capping → Translation
 | Source | Target | Name | Mechanism |
 |--------|--------|------|-----------|
 | SHIELD | FORGE | **CAP-EIF4E** | The m7G cap is recognized by eIF4E, enabling eIF4F assembly and initiation. |
+| SHIELD | TIMER | **CAP-PROTECTS** | The cap protects mRNAs from 5' decay; decapping commits many transcripts to XRN1-mediated turnover. |
 
 #### Translational Intra-Layer
 | Source | Target | Name | Mechanism |
 |--------|--------|------|-----------|
 | BRAKE | DECOY | **ISR-UORF** (**) | eIF2α-P limits ternary complex, causing ribosomes to bypass inhibitory uORFs and induce ATF4. |
-| BRAKE | BYPASS | **ISR-IRES** | Cap-dependent translation is blocked, favoring alternative routes; ATF4 is mainly uORF/reinitiation-driven, while HIF-1α/c-MYC are proposed IRES-like cases. |
+| BRAKE | BYPASS | **ISR-NONCANONICAL** | Stress can favor selected noncanonical initiation routes, but stress does not generally activate all IRES-like translation; ATF4 is mainly uORF/reinitiation-driven. |
+| BRAKE | TEMPO | **STRESS-DECODING-CONTEXT** | ISR/stress lowers initiation flux and changes ribosome loading, making elongation-speed and codon/tRNA constraints matter in a different context. |
 | DECOY | FORGE | **UORF-COMPETE** ⊣ | uORFs sequester ribosomes and reduce main ORF translation. |
-| FORGE | INSPECTOR | **STALL-RQC** | Active translation can stall on rare codons or structures, triggering RQC/NGD. |
+| FORGE | INSPECTOR | **TRANSLATION-EXPOSES-STALLS** | Translation exposes ribosomes to stall risk; stalls or defective elongation, not initiation itself, trigger NGD/NSD/RQC. |
+| FORGE | TEMPO | **INITIATION-LOAD** | Cap-dependent initiation rate sets ribosome density on transcripts; higher loading can expose elongation bottlenecks, collisions, or codon/tRNA constraints. |
 | TEMPO | INSPECTOR | **CODON-STALL** | Rare codons can prolong ribosome pauses and trigger NGD/NSD/RQC. |
+| TEMPO | TIMER | **CODON-STABILITY** | Codon optimality and translation elongation can affect mRNA stability through ribosome-speed-dependent decay pathways. |
 | TEMPO | MATURE | **COTRANSL-FOLD** | Translation rhythm shapes co-translational folding kinetics. |
+| INSPECTOR | TIMER | **NGD-NSD-DECAY** | NGD and NSD surveillance produce mRNA decay outputs, not only nascent-chain destruction. |
 | INSPECTOR | DESTROY | **RQC-26S** | CAT-tailed stalled nascent peptides are recognized by LTN1 and degraded. |
 
 #### Translation → Post-Translational
 | Source | Target | Name | Mechanism |
 |--------|--------|------|-----------|
 | FORGE | MATURE | **COTRANSL-MATURATION** | Nascent translation exposes chains to co-translational chaperones and folding. |
-| FORGE | SWITCH | **MTOR-KINASES** | mTORC1 and growth pathways couple initiation to AKT/S6K and other kinase cascades. |
+| FORGE | SWITCH | **MTOR-GROWTH-FEEDBACK** | Translation/growth signaling is coupled mainly through mTORC1 outputs such as S6K and 4E-BP; AKT is usually upstream of mTORC1 rather than a simple downstream output. |
 
 #### Post-Translational Intra-Layer
 | Source | Target | Name | Mechanism |
@@ -365,7 +429,8 @@ Strategy C — KINETIC COUPLING
 | ROUTER | DESTROY | **ROUTER-DESTROY** | K48-polyUb routes to 26S proteasome; K63-polyUb can recruit p62/SQSTM1 for selective autophagy. |
 | TETHER | ROUTER | **STUBLS** | polySUMO is recognized by RNF4/RNF111 STUbL E3s and converted into ubiquitin routing. |
 | LICENSE | ROUTER | **CRL-ACTIVATION** | Cullin neddylation activates CRL E3 ligases for substrate ubiquitination. |
-| PAR | DESTROY | **PAR-CONDENSATE** | Long PAR chains support DDR condensates and contextual recruitment of ubiquitin/proteostasis factors. |
+| SWITCH | LICENSE | **SIGNAL-CRL-LICENSE** | Kinase/signaling context can regulate CRL substrate receptors, substrate engagement, CAND1 exchange, CSN deneddylation balance, and therefore effective CRL licensing. |
+| PAR | ROUTER | **PAR-UB-REPAIR** | PAR-dependent repair assemblies can recruit ubiquitin/E3 factors and local turnover machinery in context; broad PAR→proteolytic-condensate destruction is too strong. |
 | MATURE | BRAKE | **UPR-ISR** | PERK in the UPR phosphorylates eIF2α and activates the ISR. |
 | DESTROY | FORGE | **LYSOSOME-MTOR** | Amino acids released by lysosomes activate Ragulator/RRAG and reactivate mTORC1. |
 | DESTROY | KEYS | **DESTROY-TF** | Degradation of TF inhibitors, such as IκBα, activates TF programs such as NF-κB. |
@@ -379,6 +444,7 @@ Strategy C — KINETIC COUPLING
 | SWITCH | PAR | **DDR-PARP** | DDR kinase context modulates PARP1 activation and PAR-dependent repair assemblies. |
 | ROUTER | KEYS | **UB-SIGNAL-TF** | K63/M1 ubiquitin scaffolds activate signaling routes such as NF-κB without necessarily destroying the TF. |
 | ROUTER | MATURE | **UB-CHAPERONE** | Ubiquitin tags and chaperone systems are coupled during proteostasis and substrate triage. |
+| MATURE | ROUTER | **CHAPERONE-UB** | CHIP, ERAD, and other chaperone-triage systems connect misfolded or immature proteins to ubiquitin routing. |
 | MATURE | DESTROY | **TRIAGE-DESTROY** | Chaperone triage sends persistently misfolded proteins toward proteasomal or autophagic clearance. |
 
 #### Cross-Cutting Meta-Principles
@@ -386,7 +452,7 @@ Strategy C — KINETIC COUPLING
 |--------|--------|------|-----------|
 | LLPS | HUBS | **LLPS-SE** | LLPS/transcriptional condensates can contribute to super-enhancer activity without being identical to it. |
 | LLPS | VAULT | **LLPS-SG-PB** | LLPS forms stress granules and P-bodies. |
-| LLPS | DESTROY | **LLPS-DESTROY** | LLPS can form proteolytic or polyUb condensates in some contexts. |
+| LLPS | DESTROY | **LLPS-DESTROY** | LLPS can form proteolytic or polyUb condensates in some contexts, but not all proteasomal or autophagic degradation is condensate-based. |
 | LLPS | PAR | **LLPS-PAR** | PAR chains nucleate DNA-repair condensates. |
 | DECAY | TIMER | **DECAY-MRNA** | mRNA turnover through deadenylation, decapping, and exonucleases. |
 | DECAY | CENSOR | **DECAY-NMD** | NMD as a surveillance and elimination branch for aberrant mRNAs. |
@@ -396,7 +462,7 @@ Strategy C — KINETIC COUPLING
 
 | Merged entities | Rationale |
 |-----------------|-----------|
-| Super-enhancers + transcriptional condensates | Closely related but not identical: super-enhancer is a genomic/ChIP-seq definition; condensate is a dynamic physical assembly enriched in coactivators. |
+| Super-enhancers + transcriptional condensates | Kept fused in the main graph for compactness but strongly caveated: super-enhancer is a genomic/ChIP-seq enhancer-cluster definition; condensate is a dynamic physical assembly enriched in coactivators and requires direct biophysical evidence. |
 | A/B compartments + global epigenetic state | Strongly correlated; compartments emerge from marks but are not identical to them. |
 | YTHDF1 + YTHDF2 + YTHDF3 → **STAMP** | One signal, m6A, with partly specialized but also redundant readers depending on context. |
 | Codon usage + tRNA modifications + ribosome heterogeneity → **TEMPO** | Three facets of decoding-efficiency control. |
@@ -404,7 +470,7 @@ Strategy C — KINETIC COUPLING
 | eRNAs (enhancer RNAs) | Mostly enhancer-activity readouts, not a separate mechanism box here. |
 | ISR branch PERK / UPR | PERK is both an ISR kinase and a UPR branch, integrated through MATURE → BRAKE. |
 | siRNA / miRNA | Share RISC/AGO2; animal siRNA is mostly an experimental/tool-like variant here, folded into DARTS. |
-| ceRNA hypothesis | Special case of SPONGE + DARTS, kept as a conditional mechanism requiring stoichiometric support. |
+| ceRNA hypothesis | Special case of SPONGE + DARTS, kept as a skeptical/conditional mechanism requiring abundance, affinity, localization, and loss-of-function stoichiometric support. |
 
 ## Appendix A — Databases And Resources
 
@@ -437,6 +503,6 @@ Strategy C — KINETIC COUPLING
 
 ---
 
-*v7 — 37 mechanisms, 2 meta-principles, 78 mechanism relations + 7 meta annotations*
+*v7 — 37 mechanisms, 2 meta-principles, 89 mechanism relations + 7 meta annotations*
 *File: `assets/documents/gene-regulation-landscape-details.md`*
 *Diagram: `assets/documents/gene-reg-v7.dot` + `assets/images/gene-reg-v7.png`*

@@ -463,8 +463,8 @@ digraph gene_regulation {
     // INTRA-LAYER 0 RELATIONS
     // ============================================================
     ZONES  -> FENCES  [label="constrains" color="#60a5fa" fontcolor="#60a5fa" style=dashed]
-    FENCES -> BRIDGES [label="delimits" color="#60a5fa" fontcolor="#60a5fa"]
-    BRIDGES -> HUBS   [label="anchors" color="#60a5fa" fontcolor="#60a5fa"]
+    FENCES -> BRIDGES [label="biases/insulates\nE-P contacts" color="#60a5fa" fontcolor="#60a5fa" style=dashed]
+    BRIDGES -> HUBS   [label="can support\nSE contacts" color="#60a5fa" fontcolor="#60a5fa" style=dashed]
 
     // ============================================================
     // INTRA-LAYER 1 RELATIONS
@@ -487,6 +487,7 @@ digraph gene_regulation {
     OPENER -> HUBS     [label="H3K27ac\n→ BRD4 hubs" color="#60a5fa" fontcolor="#60a5fa" style=dashed]
     HUBS   -> OPENER   [label="SEs maintain\nenhancer acetylation" color="#60a5fa" fontcolor="#60a5fa" style=dashed]
     GUIDES -> SILENCER [label="piRNA→DNMT3\nde novo 5mC" color="#4ade80" fontcolor="#4ade80"]
+    GUIDES -> WRITER_R [label="XIST/lncRNA\n→ Polycomb/H3K27me3" color="#4ade80" fontcolor="#4ade80" style=dashed]
 
     // ============================================================
     // LAYER 1 → LAYER 2
@@ -505,6 +506,7 @@ digraph gene_regulation {
     KEYS   -> WRITER_A [label="TF→MLL\n→ H3K4me3" color="#f59e0b" fontcolor="#f59e0b" style=dashed]
     KEYS   -> GUIDES   [label="TF drives\npiRNA/lncRNA loci" color="#f59e0b" fontcolor="#f59e0b" style=dashed]
     KEYS   -> SPONGE   [label="TF drives\nlncRNA txn" color="#f59e0b" fontcolor="#f59e0b" style=dashed]
+    KEYS   -> TEMPO    [label="MYC/growth programs\n→ tRNA/ribosome budget" color="#f59e0b" fontcolor="#f59e0b" style=dashed]
     KEYS   -> SCRIBE   [label="TF→Mediator/PIC\n→ Pol II recruitment" color="#f59e0b" fontcolor="#f59e0b" penwidth=2]
     KEYS   -> HUBS     [label="master TF clusters\n→ SE identity" color="#f59e0b" fontcolor="#f59e0b" penwidth=1.8]
     KEYS   -> RECODER  [label="IFN TFs\n→ ADAR1p150" color="#f59e0b" fontcolor="#f59e0b" style=dashed]
@@ -532,15 +534,17 @@ digraph gene_regulation {
     // m6A (STAMP) — transversal layer 4 mechanism
     // ============================================================
     STAMP -> SPLICER [label="YTHDC1→SRSF\n(co-tx, B)" color="#a78bfa" fontcolor="#a78bfa" dir=back style=dashed]
-    STAMP -> TIMER   [label="YTHDF2→CCR4-NOT\n(decay)" color="#a78bfa" fontcolor="#a78bfa"]
-    STAMP -> FORGE   [label="YTHDF1→eIF3\n(initiation ↑)" color="#a78bfa" fontcolor="#a78bfa"]
-    STAMP -> BYPASS  [label="5'UTR m6A\n→ cap-independent translation" color="#a78bfa" fontcolor="#a78bfa"]
+    STAMP -> TIMER   [label="m6A readers\n→ decay context" color="#a78bfa" fontcolor="#a78bfa" style=dashed]
+    STAMP -> FORGE   [label="m6A readers\n→ initiation context" color="#a78bfa" fontcolor="#a78bfa" style=dashed]
+    STAMP -> BYPASS  [label="5'UTR m6A\n→ noncanonical init.\n(context)" color="#a78bfa" fontcolor="#a78bfa" style=dashed]
 
     // ============================================================
     // RBPs (READERS) — transversal
     // ============================================================
     READERS -> SPLICER [label="SR/hnRNP\n→ splice (A)" color="#a78bfa" fontcolor="#a78bfa" dir=back style=dashed]
     READERS -> TIMER   [label="HuR (stabilize)\nTTP (decay)" color="#a78bfa" fontcolor="#a78bfa"]
+    READERS -> TRIMMER [label="RBPs tune\nAPA choice" color="#a78bfa" fontcolor="#a78bfa" style=dashed]
+    READERS -> VAULT   [label="RBPs partition\nRNP granules" color="#a78bfa" fontcolor="#a78bfa" style=dashed]
     READERS -> FORGE   [label="FMRP represses\ninitiation" color="#a78bfa" fontcolor="#a78bfa" arrowhead=tee]
 
     // ============================================================
@@ -549,7 +553,7 @@ digraph gene_regulation {
     DARTS  -> TIMER  [label="deadenylation\n+ decay" color="#a78bfa" fontcolor="#a78bfa"]
     SPONGE -> DARTS  [label="ceRNA sponge\n(A)" color="#a78bfa" fontcolor="#a78bfa" arrowhead=tee]
     CENSOR -> TIMER  [label="triggers\ndegradation" color="#a78bfa" fontcolor="#a78bfa"]
-    TIMER  -> VAULT  [label="stored or\ndegraded" color="#a78bfa" fontcolor="#a78bfa" dir=both]
+    TIMER  -> VAULT  [label="storage↔decay\ncontext" color="#a78bfa" fontcolor="#a78bfa" dir=both style=dashed]
     CLIPS  -> FORGE  [label="5'UTR rG4\nblocks scanning" color="#a78bfa" fontcolor="#a78bfa" arrowhead=tee]
     CLIPS  -> BYPASS [label="modulates\nIRES activity" color="#a78bfa" fontcolor="#a78bfa"]
     STAMP  -> CLIPS  [label="m6A destab.\nrG4 structure" color="#a78bfa" fontcolor="#a78bfa" style=dashed]
@@ -557,25 +561,30 @@ digraph gene_regulation {
     // ============================================================
     // LAYER 4 → LAYER 5
     // ============================================================
-    DARTS  -> FORGE  [label="blocks\ninitiation" color="#a78bfa" fontcolor="#a78bfa" arrowhead=tee]
+    DARTS  -> FORGE  [label="translation repression\n(context)" color="#a78bfa" fontcolor="#a78bfa" arrowhead=tee style=dashed]
     SHIELD -> FORGE  [label="cap→eIF4E\nbinding" color="#fb923c" fontcolor="#fb923c"]
+    SHIELD -> TIMER  [label="cap protects\nfrom 5' decay" color="#fb923c" fontcolor="#fb923c" style=dashed]
 
     // ============================================================
     // Relations intra-couche 5
     // ============================================================
     BRAKE -> DECOY  [label="eIF2α-P → TC↓\nuORF bypass → ATF4(C)" color="#ef4444" fontcolor="#ef4444" penwidth=2 style=bold]
-    BRAKE -> BYPASS [label="cap-dep blocked\n→ IRES active" color="#ef4444" fontcolor="#ef4444"]
+    BRAKE -> BYPASS [label="stress context\nnoncanonical init." color="#ef4444" fontcolor="#ef4444" style=dashed]
+    BRAKE -> TEMPO [label="stress lowers flux\nchanges elongation context" color="#ef4444" fontcolor="#ef4444" style=dashed]
     DECOY -> FORGE  [label="regulate\ninitiation" color="#ef4444" fontcolor="#ef4444" arrowhead=tee]
-    FORGE -> INSPECTOR [label="elongation stalls\n→ RQC/NGD" color="#ef4444" fontcolor="#ef4444"]
+    FORGE -> INSPECTOR [label="translation exposes\nstall risk" color="#ef4444" fontcolor="#ef4444" style=dashed]
+    FORGE -> TEMPO [label="initiation load\n→ ribosome density" color="#ef4444" fontcolor="#ef4444" style=dashed]
     TEMPO -> INSPECTOR [label="codon/tRNA tempo\n→ ribosome stalls" color="#ef4444" fontcolor="#ef4444"]
+    TEMPO -> TIMER [label="codon optimality\n→ mRNA stability" color="#a78bfa" fontcolor="#a78bfa" style=dashed]
     TEMPO -> MATURE [label="translation speed\n→ co-translational folding" color="#ef4444" fontcolor="#ef4444" style=dashed]
+    INSPECTOR -> TIMER [label="NGD/NSD\n→ mRNA decay" color="#a78bfa" fontcolor="#a78bfa" style=dashed]
     INSPECTOR -> DESTROY [label="RQC ubiquitinates\nnascent chains" color="#94a3b8" fontcolor="#94a3b8"]
 
     // ============================================================
     // LAYER 5 → LAYER 6
     // ============================================================
     FORGE  -> MATURE [label="co-translational\nfolding" color="#f87171" fontcolor="#f87171"]
-    FORGE  -> SWITCH    [label="mTOR→AKT\n→ kinases" color="#f87171" fontcolor="#f87171" style=dashed]
+    FORGE  -> SWITCH    [label="mTORC1→S6K/4E-BP\ngrowth feedback" color="#f87171" fontcolor="#f87171" style=dashed]
 
     // ============================================================
     // Relations intra-couche 6
@@ -585,7 +594,8 @@ digraph gene_regulation {
     TETHER  -> ROUTER        [label="STUbLs:\nSUMO→Ub" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
     LICENSE -> ROUTER        [label="NEDD8 licenses CRLs\n→ Ub routing" color="#e5e7eb" fontcolor="#e5e7eb" penwidth=3 style=bold]
     SWITCH    -> TETHER  [label="phospho-dep.\nSUMO recruit" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
-    PAR        -> DESTROY [label="PARylation →\nproteolytic condensates" color="#94a3b8" fontcolor="#94a3b8"]
+    SWITCH    -> LICENSE [label="signaling tunes\nCRL licensing" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
+    PAR        -> ROUTER [label="PAR repair context\nUb/local turnover" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
     DESTROY    -> FORGE [label="lysosomal AA\n→ mTORC1" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
 
     // ============================================================
@@ -598,6 +608,7 @@ digraph gene_regulation {
     SWITCH    -> PAR    [label="DDR kinases\n→ PARP context" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
     ROUTER    -> KEYS   [label="K63/M1 Ub\n→ NF-κB signaling" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
     ROUTER    -> MATURE [label="Ub-chaperone\nproteostasis" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
+    MATURE    -> ROUTER [label="CHIP/ERAD\nchaperone→Ub" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
     MATURE    -> DESTROY [label="misfolded cargo\ntriage" color="#94a3b8" fontcolor="#94a3b8" style=dashed]
     DESTROY -> KEYS   [label="IκBα decay\n→ NF-κB activ." color="#94a3b8" fontcolor="#94a3b8" style=dashed]
 
