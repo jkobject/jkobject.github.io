@@ -335,6 +335,7 @@ digraph gene_regulation {
                     <TR><TD>tune ribosome speed and pausing</TD></TR>
                     <TR><TD>codon bias + tRNA/rRNA modifications</TD></TR>
                     <TR><TD>stalling + co-translational folding</TD></TR>
+                    <TR><TD>decoding fidelity &#8594; substituted proteoforms</TD></TR>
                 </TABLE>
             > fillcolor="#7f1d1d" fontcolor="#fee2e2" color="#f87171"]
         INSPECTOR [label=<
@@ -576,7 +577,7 @@ digraph gene_regulation {
     FORGE -> TEMPO [label="initiation load\n→ ribosome density" color="#ef4444" fontcolor="#ef4444" style=dashed]
     TEMPO -> INSPECTOR [label="codon/tRNA tempo\n→ ribosome stalls" color="#ef4444" fontcolor="#ef4444"]
     TEMPO -> TIMER [label="codon optimality\n→ mRNA stability" color="#a78bfa" fontcolor="#a78bfa" style=dashed]
-    TEMPO -> MATURE [label="translation speed\n→ co-translational folding" color="#ef4444" fontcolor="#ef4444" style=dashed]
+    TEMPO -> MATURE [label="translation speed → co-translational folding\nalt. decoding → stable substituted proteoforms" color="#ef4444" fontcolor="#ef4444" style=dashed]
     INSPECTOR -> TIMER [label="NGD/NSD\n→ mRNA decay" color="#a78bfa" fontcolor="#a78bfa" style=dashed]
     INSPECTOR -> DESTROY [label="RQC ubiquitinates\nnascent chains" color="#94a3b8" fontcolor="#94a3b8"]
 

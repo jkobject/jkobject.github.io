@@ -124,7 +124,7 @@ examples.
 | `BRAKE` | Translation | Slowing global translation during stress through ISR/eIF2α-P. |
 | `DECOY` | Translation | uORFs that divert scanning ribosomes and gate main ORF translation. |
 | `BYPASS` | Translation | Non-canonical initiation routes; viral IRESs are robust, while many cellular IRES-like claims need strict controls. |
-| `TEMPO` | Translation | Decoding kinetics, tRNA/codon effects, ribosome state, and their regulation by growth, initiation load, and stress context. |
+| `TEMPO` | Translation | Decoding kinetics, tRNA/codon effects, ribosome state, and their regulation by growth, initiation load, and stress context. Also covers decoding *fidelity*: alternate decoding can install non-genomic amino-acid substitutions that yield stable, abundant proteoforms. |
 | `INSPECTOR` | Translation | RQC/NGD/NSD surveillance of stalled or broken translation. |
 | `SWITCH` | Post-translational | Phosphorylation/O-GlcNAc switches for protein activity and interactions. |
 | `ROUTER` | Post-translational | Ubiquitin-chain logic that routes proteins to signaling, proteasome, or autophagy. |
@@ -199,7 +199,15 @@ The map follows the flow from DNA to RNA to protein:
 6. **Translation**: `FORGE`, `BRAKE`, `DECOY`, `BYPASS`, `TEMPO`, and
    `INSPECTOR` describe cap-dependent initiation, the integrated stress
    response, uORFs, non-canonical initiation, decoding kinetics, and ribosome
-   quality control.
+   quality control. `TEMPO` now also folds in decoding *fidelity*: recent
+   proteogenomics across &gt;1,000 human samples found thousands of non-genomic
+   amino-acid substitutions from alternate ribosomal decoding — not explained by
+   DNA variants or A-to-I editing — producing proteoforms that are stable,
+   abundant, and tissue/cancer-specific
+   ([Tsour et al., *Nature* 2026](https://www.nature.com/articles/s41586-026-10678-2)).
+   Because these proteins partly escape `INSPECTOR` surveillance and persist into
+   `MATURE`, this belongs on the speed-vs-fidelity axis of `TEMPO` rather than in
+   `RECODER` (which is transcript-level A-to-I editing).
 7. **Post-translational regulation**: `SWITCH`, `ROUTER`, `TETHER`, `LICENSE`,
    `DESTROY`, `MATURE`, and `PAR` cover phosphorylation/O-GlcNAc, ubiquitin,
    SUMOylation, neddylation, proteasome/autophagy clearance, maturation/UPR,
