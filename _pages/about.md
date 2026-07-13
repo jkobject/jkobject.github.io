@@ -14,18 +14,19 @@ header:
 published: true
 intro:
   - excerpt:
-      "I am a Researcher, Engineer & Developer. My goal is to improve human
-      healthspan through therapeutic abundance. I hold a Ph.D. in Artificial
-      Intelligence from Institut Pasteur and ENS, as well as two Masters in
-      Biomedical Engineering and Machine Learning. I have been a [Senior
-      Associate Computationalist](https://cancerdatascience.org/) at the Broad
-      Institute of MIT and Harvard and a team leader at [Whitelab
-      Genomics](https://whitelabgx.com/). I have studied at ECE Paris, the
-      University of Kent, the TEC de Monterrey, the [Flatiron
-      Institute](https://www.simonsfoundation.org/people/jeremie-kalfon-2/),
-      and Harvard. I am the ex-co-founder of
-      [PiPle](https://apps.apple.com/fr/app/piple/id1399507297), a company to
-      rethink messaging."
+      "I am an AI researcher and computational biologist, focused on applying
+      artificial intelligence to cell biology and therapeutic development. My
+      work has been shaped by a single question: how can we turn complex
+      biological data into useful scientific decisions? I worked at the Broad
+      Institute on multi-omics analysis in cancer, then in biotech on target
+      discovery, cell therapies, and AI products for research. During my Ph.D.
+      at ENS and the Institut Pasteur, I developed AI models for single-cell
+      biology to better understand cellular states, regulatory networks, and
+      responses to perturbations. Today, I want to join or build a biotech
+      company that uses AI as a true discovery engine for therapeutics. What I
+      bring is the ability to connect biological questions, AI systems, and
+      product needs: starting from a complex problem, structuring it with teams,
+      building a strategy, and turning results into concrete decisions."
 ---
 
 {% include feature_row id="intro" type="center" %}
