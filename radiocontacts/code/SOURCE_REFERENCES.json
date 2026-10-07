@@ -1,0 +1,98 @@
+{
+  "dsn": {
+    "label": "Derrick & Isaacson (2023), Earth transmissions to nearby stars",
+    "url": "https://arxiv.org/abs/2304.07400"
+  },
+  "dsn-code": {
+    "label": "Author data and code, Transmission-Encounters",
+    "url": "https://github.com/reillyderrick/Transmission-Encounters"
+  },
+  "gcns": {
+    "label": "Gaia Collaboration (2021), Gaia Catalogue of Nearby Stars",
+    "url": "https://www.cosmos.esa.int/web/gaia/edr3-gcns"
+  },
+  "gaia-time": {
+    "label": "ESA Gaia documentation: astrometric epoch and light arrival",
+    "url": "https://gea.esac.esa.int/archive/documentation/GDR1/Data_processing/chap_cu3ast/sec_cu3ast_intro.html"
+  },
+  "g-occ": {
+    "label": "Bryson et al. (2021), rocky HZ planet occurrence",
+    "url": "https://arxiv.org/abs/2010.14812"
+  },
+  "m-occ": {
+    "label": "Dressing & Charbonneau (2015), M-dwarf planets",
+    "url": "https://arxiv.org/abs/1501.01623"
+  },
+  "census": {
+    "label": "Reyl\u00e9 et al. (2023), the 10-pc census update",
+    "url": "https://arxiv.org/abs/2302.02810"
+  },
+  "goldstone": {
+    "label": "JPL Goldstone observing setup logs",
+    "url": "https://echo.jpl.nasa.gov/Obslogs/index.html"
+  },
+  "radar-history": {
+    "label": "JPL asteroid radar history",
+    "url": "https://echo.jpl.nasa.gov/History/"
+  },
+  "ucla": {
+    "label": "UCLA Small-Body Radar Database",
+    "url": "https://mel.epss.ucla.edu/radar/object/info.php"
+  },
+  "arecibo-runs": {
+    "label": "UCLA 2000 DP107: 2008 actual transmit runs",
+    "url": "https://mel.epss.ucla.edu/radar/object/runs.php?AB=a0185851&year=2008&month=09"
+  },
+  "schedule": {
+    "label": "JPL current Goldstone schedule and modernization",
+    "url": "https://echo.jpl.nasa.gov/asteroids/goldstone_asteroid_schedule.html"
+  },
+  "beam": {
+    "label": "JPL DSN handbook 101E, 70-m beam widths",
+    "url": "https://deepspace.jpl.nasa.gov/dsndocs/810-005/101/101E.pdf"
+  },
+  "nh-band": {
+    "label": "NASA: New Horizons 7.2-GHz Earth uplink",
+    "url": "https://science.nasa.gov/blogs/new-horizons/2015/11/13/radio-signals-from-earth-probe-plutos-atmosphere/"
+  },
+  "radar-beam": {
+    "label": "Goldstone Solar System Radar improved capabilities",
+    "url": "https://deepspace.jpl.nasa.gov/files/GSSR_improved_capabilities_09452079.pdf"
+  },
+  "detectability": {
+    "label": "Sheikh et al. (2025), Earth Detecting Earth",
+    "url": "https://arxiv.org/abs/2502.02614"
+  },
+  "horizons": {
+    "label": "NASA/JPL Horizons API documentation",
+    "url": "https://ssd-api.jpl.nasa.gov/doc/horizons.html"
+  },
+  "messages": {
+    "label": "Zaitsev (2011), primary interstellar message target/date table",
+    "url": "https://fireras.su/126/docs/classificationofirms.pdf"
+  },
+  "altair": {
+    "label": "Narusawa et al. (2025), primary Altair transmission follow-up abstract",
+    "url": "https://www.asj.or.jp/nenkai/archive/2025b/pdf/Y23c.pdf"
+  },
+  "sonar": {
+    "label": "IEEC collaborator record of S\u00f3nar's October 2017 transmissions",
+    "url": "https://www.ieec.cat/en/the-ieec-and-the-s%C3%B3nar-set-the-pace-of-the-universe/"
+  },
+  "altair-type": {
+    "label": "NASA-hosted HST Altair study: A7V spectral class",
+    "url": "https://ntrs.nasa.gov/citations/19950048307"
+  },
+  "all-occ": {
+    "label": "Cassan et al. (2012), planets per star in a finite mass/orbit range",
+    "url": "https://arxiv.org/abs/1202.0903"
+  },
+  "old-radar": {
+    "label": "JPL primary history of radar frequencies and observing targets",
+    "url": "https://echo.jpl.nasa.gov/asteroids/PDS.asteroid.radar.history.html"
+  },
+  "old-aperture": {
+    "label": "NASA history: 1968 Icarus used a 26-m transmitter",
+    "url": "https://ntrs.nasa.gov/api/citations/19960045321/downloads/19960045321.pdf"
+  }
+}
